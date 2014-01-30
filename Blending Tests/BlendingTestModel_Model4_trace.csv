@@ -1,0 +1,546 @@
+Time(Hours),EntityID,ObjectName,ProcessID,StepName,Action
+4,MineFleets,Model4,4.MineFleets_OffShift,[Assign] DisableMineFlow,Assigning state variable 'Output@PitASource.FlowRegulator.Enabled' the value '0' .
+4,--,--,--,--,Object 'DefaultEntity.171' destroyed.
+4,MineFleets,Model4,4.MineFleets_OffShift,[End],Process 'MineFleets_OffShift' ended.
+4,MineFleets,MineFleets,3.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+4, ,Input@Hopper,12.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+4.01666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.01666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.01666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.919330737793368' Kilograms per Hour.
+4.01666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.919330737793368' .
+4.01666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.03333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.03333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.03333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.779690418030863' Kilograms per Hour.
+4.03333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.779690418030863' .
+4.03333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.04999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.04999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.04999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.01341667081414' Kilograms per Hour.
+4.04999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.01341667081414' .
+4.04999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.06666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.06666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.06666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.12174318461638' Kilograms per Hour.
+4.06666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.12174318461638' .
+4.06666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.08333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.08333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.08333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.15227972639599' Kilograms per Hour.
+4.08333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.15227972639599' .
+4.08333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.09999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.09999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.09999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.862271676860747' Kilograms per Hour.
+4.09999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.862271676860747' .
+4.09999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.11666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.11666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.11666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.35109883087201' Kilograms per Hour.
+4.11666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.35109883087201' .
+4.11666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.13333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.13333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.13333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.18581276519887' Kilograms per Hour.
+4.13333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.18581276519887' .
+4.13333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.14999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.14999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.14999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.01441753206282' Kilograms per Hour.
+4.14999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.01441753206282' .
+4.14999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.16666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.16666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.16666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.31734070758431' Kilograms per Hour.
+4.16666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.31734070758431' .
+4.16666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.18333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.18333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.18333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.23015592640951' Kilograms per Hour.
+4.18333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.23015592640951' .
+4.18333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.19999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.19999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.19999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.956214336574694' Kilograms per Hour.
+4.19999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.956214336574694' .
+4.19999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.21666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.21666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.21666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.36395791953112' Kilograms per Hour.
+4.21666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.36395791953112' .
+4.21666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.23333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.23333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.23333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.925138126827808' Kilograms per Hour.
+4.23333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.925138126827808' .
+4.23333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.24999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.24999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.24999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.900095354539704' Kilograms per Hour.
+4.24999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.900095354539704' .
+4.24999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.26666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.26666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.26666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.670401463078113' Kilograms per Hour.
+4.26666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.670401463078113' .
+4.26666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.28333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.28333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.28333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.07749602722287' Kilograms per Hour.
+4.28333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.07749602722287' .
+4.28333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.29999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.29999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.29999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.09674501103436' Kilograms per Hour.
+4.29999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.09674501103436' .
+4.29999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.31666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.31666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.31666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.663325435907609' Kilograms per Hour.
+4.31666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.663325435907609' .
+4.31666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.33333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.33333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.33333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.08325690617474' Kilograms per Hour.
+4.33333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.08325690617474' .
+4.33333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.34999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.34999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.34999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.914071037982456' Kilograms per Hour.
+4.34999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.914071037982456' .
+4.34999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.36666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.36666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.36666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.15140959191879' Kilograms per Hour.
+4.36666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.15140959191879' .
+4.36666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.38333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.38333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.38333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.772343385766019' Kilograms per Hour.
+4.38333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.772343385766019' .
+4.38333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.39999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.39999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.39999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.992048727638246' Kilograms per Hour.
+4.39999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.992048727638246' .
+4.39999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.41666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.41666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.41666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.02361229506284' Kilograms per Hour.
+4.41666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.02361229506284' .
+4.41666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.43333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.43333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.43333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.20110048532044' Kilograms per Hour.
+4.43333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.20110048532044' .
+4.43333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.44999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.44999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.44999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.793328630756049' Kilograms per Hour.
+4.44999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.793328630756049' .
+4.44999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.46666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.46666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.46666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.34385850805251' Kilograms per Hour.
+4.46666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.34385850805251' .
+4.46666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.48333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.48333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.48333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.760683295589809' Kilograms per Hour.
+4.48333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.760683295589809' .
+4.48333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.49999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.49999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.49999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.02670074340355' Kilograms per Hour.
+4.49999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.02670074340355' .
+4.49999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.51666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.51666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.51666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.32454260996928' Kilograms per Hour.
+4.51666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.32454260996928' .
+4.51666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.53333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.53333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.53333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.488037031174208' Kilograms per Hour.
+4.53333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.488037031174208' .
+4.53333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.54999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.54999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.54999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.21727994255308' Kilograms per Hour.
+4.54999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.21727994255308' .
+4.54999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.56666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.56666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.56666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.07240248043205' Kilograms per Hour.
+4.56666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.07240248043205' .
+4.56666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.58333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.58333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.58333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.94673379877278' Kilograms per Hour.
+4.58333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.94673379877278' .
+4.58333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.59999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.59999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.59999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.888334890580827' Kilograms per Hour.
+4.59999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.888334890580827' .
+4.59999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.61666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.61666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.61666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.778989114764702' Kilograms per Hour.
+4.61666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.778989114764702' .
+4.61666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.63333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.63333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.63333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.07659723529494' Kilograms per Hour.
+4.63333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.07659723529494' .
+4.63333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.64999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.64999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.64999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.31475114690253' Kilograms per Hour.
+4.64999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.31475114690253' .
+4.64999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.66666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.66666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.66666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.26015053028548' Kilograms per Hour.
+4.66666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.26015053028548' .
+4.66666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.68333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.68333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.68333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.17237469298152' Kilograms per Hour.
+4.68333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.17237469298152' .
+4.68333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.69999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.69999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.69999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.19071437938567' Kilograms per Hour.
+4.69999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.19071437938567' .
+4.69999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.71666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.71666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.71666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.32983988380269' Kilograms per Hour.
+4.71666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.32983988380269' .
+4.71666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.73333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.73333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.73333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.13310648731151' Kilograms per Hour.
+4.73333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.13310648731151' .
+4.73333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.74999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.74999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.74999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.31213204286202' Kilograms per Hour.
+4.74999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.31213204286202' .
+4.74999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.76666666666666,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.76666666666666,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.76666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.951382269029895' Kilograms per Hour.
+4.76666666666666,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.951382269029895' .
+4.76666666666666,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.78333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.78333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.78333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.797985020630338' Kilograms per Hour.
+4.78333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.797985020630338' .
+4.78333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.79999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.79999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.79999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.627454810013684' Kilograms per Hour.
+4.79999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.627454810013684' .
+4.79999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.81666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.81666666666665,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.81666666666665,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.21835587286259' Kilograms per Hour.
+4.81666666666665,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.21835587286259' .
+4.81666666666665,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.83333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.83333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.83333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.764672721765948' Kilograms per Hour.
+4.83333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.764672721765948' .
+4.83333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.84999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.84999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.84999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.17125026914325' Kilograms per Hour.
+4.84999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.17125026914325' .
+4.84999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.86666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.86666666666665,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.86666666666665,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.33551628400421' Kilograms per Hour.
+4.86666666666665,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.33551628400421' .
+4.86666666666665,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.88333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.88333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.88333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.20358925049688' Kilograms per Hour.
+4.88333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.20358925049688' .
+4.88333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.89999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.89999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.89999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.35552048447966' Kilograms per Hour.
+4.89999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.35552048447966' .
+4.89999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.91666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.91666666666665,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.91666666666665,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.976001899927019' Kilograms per Hour.
+4.91666666666665,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.976001899927019' .
+4.91666666666665,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.93333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.93333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.93333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.725815608840665' Kilograms per Hour.
+4.93333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.725815608840665' .
+4.93333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.94999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.94999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.94999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.00491176055958' Kilograms per Hour.
+4.94999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.00491176055958' .
+4.94999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.96666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.96666666666665,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.96666666666665,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.651743691750967' Kilograms per Hour.
+4.96666666666665,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.651743691750967' .
+4.96666666666665,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.98333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.98333333333332,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.98333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.33369265808828' Kilograms per Hour.
+4.98333333333332,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.33369265808828' .
+4.98333333333332,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+4.99999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+4.99999999999999,Model4,Model4,12.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+4.99999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.24914863349136' Kilograms per Hour.
+4.99999999999999,Model4,Model4,12.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.24914863349136' .
+4.99999999999999,Model4,Model4,12.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5,MineFleets,MineFleets,12.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+5,MineFleets,MineFleets,12.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+5,MineFleets,MineFleets,12.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'True' exit.
+5,MineFleets,MineFleets,12.OnCapacityChanged,[Assign] OnShiftAssignments,Assigning state variable 'ResourceState' the value '0' .
+5,MineFleets,MineFleets,12.OnCapacityChanged,[Execute] OnShift_AddOnProcess,Executing process 'MineFleets_OnShift'.
+5,MineFleets,Model4,4.MineFleets_OnShift,[Begin],Process 'MineFleets_OnShift' initiated.
+5,MineFleets,Model4,4.MineFleets_OnShift,[Assign] EnableMineFlow,Stopped at breakpoint on MineFleets_OnShift.EnableMineFlow
+5,MineFleets,Model4,4.MineFleets_OnShift,[Assign] EnableMineFlow,Assigning state variable 'Output@PitASource.FlowRegulator.Enabled' the value '1' .
+5,DefaultEntity.17,Output@PitASource,0.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'DefaultEntity.314' initiating transfer from '[FreeSpace] Model4' into node 'Input@Hopper'.
+5,DefaultEntity.314,Input@Hopper,3.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+5,DefaultEntity.314,Input@Hopper,3.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'DefaultEntity.314' initiating transfer from '[Node] Input@Hopper' into object 'Hopper'.
+5,DefaultEntity.314,Input@Hopper,3.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'DefaultEntity.314' initiating transfer from '[Node] Input@Hopper' into container location 'Hopper.FlowContainer' via regulator 'Input@Hopper.FlowRegulator'.
+5,MineFleets,Model4,4.MineFleets_OnShift,[End],Process 'MineFleets_OnShift' ended.
+5,MineFleets,MineFleets,12.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+5.01666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.01666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.01666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.00686327107832' Kilograms per Hour.
+5.01666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.00686327107832' .
+5.01666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.03333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.03333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.03333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.37571445954194' Kilograms per Hour.
+5.03333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.37571445954194' .
+5.03333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.04999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.04999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.04999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.955719566597463' Kilograms per Hour.
+5.04999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.955719566597463' .
+5.04999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.06666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.06666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.06666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.912303746333996' Kilograms per Hour.
+5.06666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.912303746333996' .
+5.06666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.08333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.08333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.08333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.967190982229578' Kilograms per Hour.
+5.08333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.967190982229578' .
+5.08333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.09999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.09999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.09999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.02262059754566' Kilograms per Hour.
+5.09999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.02262059754566' .
+5.09999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.11666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.11666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.11666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.3132977244533' Kilograms per Hour.
+5.11666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.3132977244533' .
+5.11666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.13333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.13333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.13333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.656936864423901' Kilograms per Hour.
+5.13333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.656936864423901' .
+5.13333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.14999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.14999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.14999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.16343153979155' Kilograms per Hour.
+5.14999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.16343153979155' .
+5.14999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.16666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.16666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.16666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.905071310810837' Kilograms per Hour.
+5.16666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.905071310810837' .
+5.16666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.18333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.18333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.18333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.09246333884555' Kilograms per Hour.
+5.18333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.09246333884555' .
+5.18333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.19999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.19999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.19999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.37728359505511' Kilograms per Hour.
+5.19999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.37728359505511' .
+5.19999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.21666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.21666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.21666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.1189685140366' Kilograms per Hour.
+5.21666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.1189685140366' .
+5.21666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.23333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.23333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.23333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.20907153088167' Kilograms per Hour.
+5.23333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.20907153088167' .
+5.23333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.24999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.24999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.24999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.85105950577709' Kilograms per Hour.
+5.24999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.85105950577709' .
+5.24999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.26666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.26666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.26666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.18412450362923' Kilograms per Hour.
+5.26666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.18412450362923' .
+5.26666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.28333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.28333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.28333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.953081405754334' Kilograms per Hour.
+5.28333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.953081405754334' .
+5.28333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.29999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.29999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.29999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.19869677354597' Kilograms per Hour.
+5.29999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.19869677354597' .
+5.29999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.31666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.31666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.31666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.06185971305279' Kilograms per Hour.
+5.31666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.06185971305279' .
+5.31666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.33333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.33333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.33333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.05303200422149' Kilograms per Hour.
+5.33333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.05303200422149' .
+5.33333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.34999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.34999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.34999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.04137438570531' Kilograms per Hour.
+5.34999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.04137438570531' .
+5.34999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.36666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.36666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.36666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.12542064094402' Kilograms per Hour.
+5.36666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.12542064094402' .
+5.36666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.38333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.38333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.38333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.831025437721328' Kilograms per Hour.
+5.38333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.831025437721328' .
+5.38333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.39999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.39999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.39999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.709803281388027' Kilograms per Hour.
+5.39999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.709803281388027' .
+5.39999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.41666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.41666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.41666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.13780390874967' Kilograms per Hour.
+5.41666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.13780390874967' .
+5.41666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.43333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.43333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.43333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.28027690848215' Kilograms per Hour.
+5.43333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.28027690848215' .
+5.43333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.44999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.44999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.44999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.91118718740774' Kilograms per Hour.
+5.44999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.91118718740774' .
+5.44999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.46666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.46666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.46666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.11545170253474' Kilograms per Hour.
+5.46666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.11545170253474' .
+5.46666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.48333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.48333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.48333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.92495567492583' Kilograms per Hour.
+5.48333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.92495567492583' .
+5.48333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.49999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.49999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.49999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.866482289824304' Kilograms per Hour.
+5.49999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.866482289824304' .
+5.49999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.51666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.51666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.51666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.918589869217002' Kilograms per Hour.
+5.51666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.918589869217002' .
+5.51666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.53333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.53333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.53333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.12994221639873' Kilograms per Hour.
+5.53333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.12994221639873' .
+5.53333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.54999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.54999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.54999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.962181827630698' Kilograms per Hour.
+5.54999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.962181827630698' .
+5.54999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.56666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.56666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.56666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.23285002023064' Kilograms per Hour.
+5.56666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.23285002023064' .
+5.56666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.58333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.58333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.58333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.06682422892686' Kilograms per Hour.
+5.58333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.06682422892686' .
+5.58333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.59999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.59999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.59999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.531462369652346' Kilograms per Hour.
+5.59999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.531462369652346' .
+5.59999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.61666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.61666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.61666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.07685364943431' Kilograms per Hour.
+5.61666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.07685364943431' .
+5.61666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.63333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.63333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.63333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.777616163268268' Kilograms per Hour.
+5.63333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.777616163268268' .
+5.63333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.64999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.64999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.64999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.18026659045468' Kilograms per Hour.
+5.64999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.18026659045468' .
+5.64999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.66666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.66666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.66666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.23894483517233' Kilograms per Hour.
+5.66666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.23894483517233' .
+5.66666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.68333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.68333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.68333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.11645078475709' Kilograms per Hour.
+5.68333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.11645078475709' .
+5.68333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.69999999999999,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.69999999999999,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.69999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.04876204488746' Kilograms per Hour.
+5.69999999999999,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.04876204488746' .
+5.69999999999999,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.71666666666665,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.71666666666665,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.71666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.36023883951349' Kilograms per Hour.
+5.71666666666665,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.36023883951349' .
+5.71666666666665,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.73333333333332,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.73333333333332,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.73333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '0.762936542590696' Kilograms per Hour.
+5.73333333333332,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '0.762936542590696' .
+5.73333333333332,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+5.74999999999998,--,--,--,--,Firing event 'HopperRateUpdateTimer.Event'.
+5.74999999999998,Model4,Model4,4.UpdateHopperRate,[Begin],Process 'UpdateHopperRate' initiated.
+5.74999999999998,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'HopperOutputRate' the value '1.0641356499105' Kilograms per Hour.
+5.74999999999998,Model4,Model4,4.UpdateHopperRate,[Assign] OutputRate,Assigning state variable 'Output@Hopper.FlowRegulator.CurrentMaximumFlowRate' the value '1.0641356499105' .
+5.74999999999998,Model4,Model4,4.UpdateHopperRate,[End],Process 'UpdateHopperRate' ended.
+
