@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.97.10724.23991" FileVersion="92" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-04T02:55:26" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-05T07:07:39" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
       <ViewInfo />
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="10000" ReplicationNumber="1">
+      <RunSetup AnimationInterval="1000" ReplicationNumber="1">
         <StartDate>2014-02-10T00:00:00</StartDate>
       </RunSetup>
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -20,13 +20,16 @@
           <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
         </Properties>
       </RunnableInstance>
+      <SuppressedWarnings>
+        <Warning Identifier="AllocatedTrain.Name" Location="DefaultEntity" />
+      </SuppressedWarnings>
       <InteractiveStatistics>
         <FileRef Name="Results\RailPortModel\Interactive_Results.stats" />
       </InteractiveStatistics>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="5.80455236347258 83.5295230397518 -19.7217412975566" Direction="0 -1 2.22044604925031E-16" Zoom="83.5295230397518" />
-          <ObjectDisplay Background="ffe4b5" />
+          <Camera Orientation="Top" Location="86.6748823742442 6.81517966290851 -20.4289678973703" Direction="0 -1 2.22044604925031E-16" Zoom="6.81517966290851" />
+          <ObjectDisplay Labels="False" Background="ffe4b5" />
         </Facility>
         <InteractivePivotGrid>
           <DevExpressIncantation Layout="&lt;XtraSerializer version=&quot;1.0&quot; application=&quot;PivotGrid&quot;&gt;&#xD;&#xA;  &lt;property name=&quot;#LayoutVersion&quot; /&gt;&#xD;&#xA;  &lt;property name=&quot;Prefilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Enabled&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Criteria&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;OptionsBehavior&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;ApplyBestFitOnFieldDragging&quot;&gt;true&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Fields&quot; iskey=&quot;true&quot; value=&quot;12&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ScenarioName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldScenarioName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item2&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ObjectType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldObjectType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea, FilterArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;110&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item3&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ObjectName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldObjectName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;120&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item4&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;DataSource&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldDataSource&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;120&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item5&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;4&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StatisticCategory&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldStatisticCategory&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea, FilterArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item6&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;DataItem&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldDataItem&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;4&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;115&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item7&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;6&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StatisticTypeForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;1&quot;&gt;&#xD;&#xA;          &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Minimum&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;        &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldStatisticType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;85&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item8&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;7&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;AverageForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueAverage&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item9&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;8&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;MinimumForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueMinimum&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;53&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item10&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;9&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;MaximumForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueMaximum&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;57&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item11&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;10&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;HalfWidthForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueHalfWidth&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;63&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item12&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;11&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StandardDeviationForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueStandardDeviation&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;59&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;OptionsCustomization&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;AllowExpand&quot;&gt;false&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Groups&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;&lt;/XtraSerializer&gt;" />
@@ -46,6 +49,10 @@
             </Columns>
           </Gantt>
         </OperationalPlanningResourceGantt>
+        <OperationalFacility>
+          <Camera Orientation="Top" Location="5.80455236347258 83.5295230397518 -19.7217412975566" Direction="0 -1 2.22044604925031E-16" Zoom="83.5295230397518" />
+          <ObjectDisplay Labels="False" Background="ffe4b5" />
+        </OperationalFacility>
       </ViewInfo>
     </Model>
     <Model Definition="BerthObject">
@@ -90,15 +97,23 @@
             </Columns>
           </Gantt>
         </OperationalPlanningResourceGantt>
+        <OperationalFacility>
+          <Camera Orientation="Top" Location="1.81498829039995 12.5 -1.81343828842273E-12" Direction="0 -1 2.22044604925031E-16" Zoom="12.5" />
+          <ObjectDisplay Background="ffffff" />
+        </OperationalFacility>
       </ViewInfo>
     </Model>
     <Model Definition="ShipSource" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-2.16354196154951 12.5 2.11448387677716" Direction="0 -1 2.22044604925031E-16" Zoom="16.7582417582418" />
+          <Camera Orientation="Top" Location="1.99637519111027 99.7098926247539 -11.1046812347693" Direction="0 -1 2.22044604925031E-16" Zoom="99.7098926247539" />
           <ObjectDisplay Background="ffffff" />
         </Facility>
+        <OperationalFacility>
+          <Camera Orientation="Top" Location="-2.16354196154951 12.5 2.11448387677716" Direction="0 -1 2.22044604925031E-16" Zoom="16.7582417582418" />
+          <ObjectDisplay Background="ffffff" />
+        </OperationalFacility>
       </ViewInfo>
     </Model>
     <Model Definition="ShipEntity" Runnable="False">
@@ -125,7 +140,7 @@
       </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-0.739404107448984 17.8769442242707 2.07083351824477" Direction="0 -1 2.22044604925031E-16" Zoom="17.8769442242707" />
+          <Camera Orientation="Top" Location="0.975622180250127 25.5384908403669 -2.47764945227021" Direction="0 -1 2.22044604925031E-16" Zoom="25.5384908403669" />
           <ObjectDisplay Background="ffffff" />
         </Facility>
         <External>
@@ -147,6 +162,10 @@
             </Columns>
           </Gantt>
         </OperationalPlanningResourceGantt>
+        <OperationalFacility>
+          <Camera Orientation="Top" Location="-0.739404107448984 17.8769442242707 2.07083351824477" Direction="0 -1 2.22044604925031E-16" Zoom="17.8769442242707" />
+          <ObjectDisplay Background="ffffff" />
+        </OperationalFacility>
       </ViewInfo>
     </Model>
     <Model Definition="TrainEntity" Runnable="False">
@@ -176,7 +195,7 @@
       </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="6.98740701816379 34.2004933841669 5.32412593060467" Direction="0 -1 2.22044604925031E-16" Zoom="34.2004933841669" />
+          <Camera Orientation="Top" Location="1.30353454320495 48.8578469412667 7.59538649684388" Direction="0 -1 2.22044604925031E-16" Zoom="48.8578469412667" />
           <ObjectDisplay Background="ffffff" />
         </Facility>
         <OperationalPlanningOwnerGantt>
@@ -194,6 +213,10 @@
             </Columns>
           </Gantt>
         </OperationalPlanningResourceGantt>
+        <OperationalFacility>
+          <Camera Orientation="Top" Location="6.98740701816379 34.2004933841669 5.32412593060467" Direction="0 -1 2.22044604925031E-16" Zoom="34.2004933841669" />
+          <ObjectDisplay Background="ffffff" />
+        </OperationalFacility>
       </ViewInfo>
     </Model>
   </Models>
@@ -203,7 +226,7 @@
   </Symbols>
   <CommonItems>
     <Definitions>
-      <FixedDefinition Name="BerthObject" Id="9cc748c1-032c-4188-9e43-77bb66e759e0" Revision="38" BaseClass="ContinuousFiller" CheckBaseForAdvancedProperties="True">
+      <FixedDefinition Name="BerthObject" Id="9cc748c1-032c-4188-9e43-77bb66e759e0" Revision="40" BaseClass="ContinuousFiller" CheckBaseForAdvancedProperties="True">
         <Lists>
           <StringList Name="ResourceStateName">
             <Items>
@@ -259,7 +282,7 @@
           <Event Name="EntityFull" />
         </Events>
         <UsedObjects>
-          <UsedObject Name="ShipEntity1" />
+          <UsedObject Name="ShipEntity" />
         </UsedObjects>
         <Elements />
         <Processes>
@@ -439,7 +462,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="DummyPortModel" Id="6f605774-81cb-44d1-b3c1-a310b58758b8" Revision="5" ResourceLogic="True">
+      <FixedDefinition Name="DummyPortModel" Id="6f605774-81cb-44d1-b3c1-a310b58758b8" Revision="7" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -658,7 +681,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <EntityDefinition Name="RequestEntity" Id="337b7c93-2a48-4a37-aafe-ad72ad7b8f31" Revision="2" Description="The default entity definition for your project." CheckBaseForAdvancedProperties="True">
+      <EntityDefinition Name="RequestEntity" Id="337b7c93-2a48-4a37-aafe-ad72ad7b8f31" Revision="5" Description="The default entity definition for your project." CheckBaseForAdvancedProperties="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Travel Logic" Description="Travel Logic" />
@@ -688,7 +711,7 @@
         <States>
           <DiscreteState Name="Picture" Description="A utility state to hold a picture index. This state can then be referenced in an expression for Current Symbol Index." />
           <StringState Name="Animation" Description="A utility state to hold the name of an animation. This state can then be referenced in an expression for Current Animation Index." />
-          <ElementReferenceState Name="RequestedTrain" ElementType="Entity" />
+          <ElementReferenceState Name="AllocatedTrain" ElementType="Entity" />
         </States>
         <Events />
         <Processes />
@@ -706,8 +729,11 @@
             </DefaultFlowMaterial>
           </Graphics>
         </External>
+        <Graphics>
+          <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
+        </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="DummyMineModel" Id="ab516494-1c39-441d-875e-b20a30d5758b" Revision="37" ResourceLogic="True">
+      <FixedDefinition Name="DummyMineModel" Id="ab516494-1c39-441d-875e-b20a30d5758b" Revision="43" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -759,18 +785,6 @@
           <UsedObject Name="Filler" />
         </UsedObjects>
         <Elements>
-          <Element Type="Monitor" Name="NegThresholdMonitor" Scope="Public">
-            <Properties>
-              <Property Name="StateVariableName">
-                <Value>Stockpile.FlowContainer.Contents.Weight</Value>
-              </Property>
-              <Property Name="MonitorType">CrossingStateChange</Property>
-              <Property Name="InitialThresholdValue" Units="Metric Tons">0</Property>
-              <Property Name="CrossingDirection">Negative</Property>
-              <Property Name="TriggeredProcessName">NegThresholdMonitor_TriggeredProcessName</Property>
-              <Property Name="InitiallyEnabled">False</Property>
-            </Properties>
-          </Element>
           <Element Type="Monitor" Name="PosThresholdMonitor" Scope="Public">
             <Properties>
               <Property Name="StateVariableName">
@@ -808,15 +822,12 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="NegThresholdMonitor_TriggeredProcessName" BeginStepID="2" Category="NegThresholdMonitor AddOn Processes">
+          <Process Name="PosThresholdMonitor_TriggeredProcessName" BeginStepID="2" Category="PosThresholdMonitor AddOn Processes">
             <Properties />
             <Steps>
-              <Step Type="Assign" Name="NegThreshold" ID="2">
+              <Step Type="Execute" Name="requestTrain" ID="2">
                 <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>NegThresholdMonitor.CurrentThresholdValue</Value>
-                  </Property>
-                  <Property Name="NewValue">NegThresholdMonitor.CurrentThresholdValue-InitialRequestTrainThreshold</Property>
+                  <Property Name="ProcessName">RequestTrainProcess</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
@@ -825,36 +836,21 @@
                   <Property Name="StateVariableName">
                     <Value>PosThresholdMonitor.CurrentThresholdValue</Value>
                   </Property>
-                  <Property Name="NewValue">PosThresholdMonitor.CurrentThresholdValue-InitialRequestTrainThreshold</Property>
+                  <Property Name="NewValue">PosThresholdMonitor.CurrentThresholdValue+InitialRequestTrainThreshold</Property>
                 </Properties>
               </Step>
             </Steps>
           </Process>
-          <Process Name="PosThresholdMonitor_TriggeredProcessName" BeginStepID="2" Category="PosThresholdMonitor AddOn Processes">
+          <Process Name="Output_TrainLoader_Entered" BeginStepID="2" Category="Output@TrainLoader AddOn Processes">
             <Properties />
             <Steps>
-              <Step Type="Execute" Name="requestTrain" ID="2">
-                <Properties>
-                  <Property Name="ProcessName">RequestTrainProcess</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
-              </Step>
-              <Step Type="Assign" Name="NegThreshold" ID="3">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>NegThresholdMonitor.CurrentThresholdValue</Value>
-                  </Property>
-                  <Property Name="NewValue">NegThresholdMonitor.CurrentThresholdValue+InitialRequestTrainThreshold</Property>
-                </Properties>
-              </Step>
-              <Step Type="Assign" Name="PosThreshold" ID="4">
+              <Step Type="Assign" Name="NegThreshold" ID="2">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>PosThresholdMonitor.CurrentThresholdValue</Value>
                   </Property>
-                  <Property Name="NewValue">PosThresholdMonitor.CurrentThresholdValue+InitialRequestTrainThreshold</Property>
+                  <Property Name="NewValue">PosThresholdMonitor.CurrentThresholdValue-InitialRequestTrainThreshold</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
             </Steps>
           </Process>
@@ -891,6 +887,7 @@
                   <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                  <Property Name="EnteredAddOnProcess">Output_TrainLoader_Entered</Property>
                   <Property Name="BoundExternalOutputNode">TrainOutput</Property>
                 </Properties>
                 <Graphics ExternallyVisible="True" />
@@ -1117,7 +1114,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <EntityDefinition Name="TrainEntity" Id="eda2504a-4cf7-47eb-a302-9c24622fa118" Revision="0" BaseClass="ContainerEntity" CheckBaseForAdvancedProperties="True">
+      <EntityDefinition Name="TrainEntity" Id="eda2504a-4cf7-47eb-a302-9c24622fa118" Revision="3" BaseClass="ContainerEntity" CheckBaseForAdvancedProperties="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Flow Storage Logic" Description="Flow Storage Logic" />
@@ -1131,8 +1128,12 @@
           </Categories>
           <Overrides />
         </PropertyDefinitions>
-        <States />
-        <Events />
+        <States>
+          <BooleanState Name="ToMine" InitialValue="1" />
+        </States>
+        <Events>
+          <Event Name="IsLoaded" />
+        </Events>
         <Elements />
         <Processes />
         <External>
@@ -1140,8 +1141,11 @@
             <StackedBar Center="0 0 -0.55" Width="0.6" Height="0.6" ExternallyVisible="True" Shape="1" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
           </Graphics>
         </External>
+        <Graphics>
+          <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
+        </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="132">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="204">
         <Lists>
           <NodeList Name="MineInputList">
             <Items>
@@ -1192,7 +1196,9 @@
             <Override Name="TransferOutConstraintsType" Visible="False" />
           </Overrides>
         </PropertyDefinitions>
-        <States />
+        <States>
+          <DiscreteState Name="AllocatedTrainIndex" />
+        </States>
         <Events>
           <Event Name="Event_CreateRequest" />
           <Event Name="Event_TrainLoaded" />
@@ -1242,90 +1248,27 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="RequestProcessing_Processing" Category="RequestProcessing AddOn Processes">
-            <Properties />
-            <Steps />
-          </Process>
-          <Process Name="RequestProcessing_BeforeProcessing" BeginStepID="2" Category="RequestProcessing AddOn Processes">
-            <Properties />
-            <Steps>
-              <Step Type="Search" Name="TrainLoadingQueue" ID="2">
-                <Properties>
-                  <Property Name="CollectionType">QueueState</Property>
-                  <Property Name="PopulationName">DefaultEntity</Property>
-                  <Property Name="QueueStateName">
-                    <Value>UnallocatedTrainStation.ParkingStation.Contents</Value>
-                  </Property>
-                  <Property Name="SaveNumberFound">
-                    <Value>Token.ReturnValue</Value>
-                  </Property>
-                </Properties>
-                <Exit Name="Original" Type="Primary" NextID="3" />
-                <Exit Name="Found" Type="Alternate" NextID="5" />
-              </Step>
-              <Step Type="Decide" Name="NoTrainsFound" ID="3">
-                <Properties>
-                  <Property Name="DecideType">ConditionBased</Property>
-                  <Property Name="Expression">Token.ReturnValue&lt;=0</Property>
-                </Properties>
-                <Exit Name="True" Type="Primary" NextID="4" />
-              </Step>
-              <Step Type="Wait" Name="TrainEnterStation" ID="4">
-                <Properties>
-                  <Property Name="EventName">UnallocatedTrainStation.ParkingStation.Entered</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
-              </Step>
-              <Step Type="SetNode" Name="Mine" ID="5">
-                <Properties>
-                  <Property Name="NodeName">TrainInput@DummyMine</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
-              </Step>
-              <Step Type="UnPark" Name="UnPark" ID="6">
-                <Properties />
-              </Step>
-            </Steps>
-          </Process>
-          <Process Name="Section1Entry_Entered" BeginStepID="2" Category="Section1Entry AddOn Processes">
-            <Properties />
-            <Steps>
-              <Step Type="Decide" Name="IsHeadingToMine" ID="2">
-                <Properties>
-                  <Property Name="DecideType">ConditionBased</Property>
-                  <Property Name="Expression">Entity.DestinationNode==TrainInput@DummyMine</Property>
-                </Properties>
-                <Exit Name="False" Type="Alternate" NextID="3" />
-              </Step>
-              <Step Type="Decide" Name="IsHeadingToPort" ID="3">
-                <Properties>
-                  <Property Name="DecideType">ConditionBased</Property>
-                  <Property Name="Expression">Entity.DestinationNode==TrainInput@DummyPort</Property>
-                </Properties>
-                <Exit Name="True" Type="Primary" NextID="4" />
-              </Step>
-              <Step Type="Release" Name="Signal3" ID="4">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">SignalBlock3</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-              </Step>
-            </Steps>
-          </Process>
           <Process Name="Section2Entry_Entered" BeginStepID="2" Category="Section2Entry AddOn Processes">
             <Properties />
             <Steps>
-              <Step Type="Seize" Name="Signal2" ID="2">
+              <Step Type="Seize" Name="Sig2" ID="2">
                 <Properties>
                   <Property Name="ResourceSeizes">
                     <Rows>
                       <Properties>
                         <Property Name="ObjectName">SignalBlock2</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Release" Name="Sig1" ID="3">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">SignalBlock1</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -1336,18 +1279,7 @@
           <Process Name="TrainOutput_DummyMine_Entered" BeginStepID="3" Category="TrainOutput@DummyMine AddOn Processes">
             <Properties />
             <Steps>
-              <Step Type="Release" Name="Signal2" ID="2">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">SignalBlock2</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-              </Step>
-              <Step Type="Seize" Name="Signal3" ID="3">
+              <Step Type="Seize" Name="Sig3" ID="2">
                 <Properties>
                   <Property Name="ResourceSeizes">
                     <Rows>
@@ -1357,13 +1289,464 @@
                     </Rows>
                   </Property>
                 </Properties>
+              </Step>
+              <Step Type="Assign" Name="ToMineFalse" ID="3">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.ToMine</Value>
+                  </Property>
+                  <Property Name="NewValue">False</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Fire" Name="TrainLoaded" ID="4">
+                <Properties>
+                  <Property Name="EventName">Event_TrainLoaded</Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="2" />
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="TrainOutput_DummyPort_Entered" BeginStepID="2" Category="TrainOutput@DummyPort AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Assign" Name="ToMineTrue" ID="2">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.ToMine</Value>
+                  </Property>
+                  <Property Name="NewValue">True</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="T2SidingExit_Entered" BeginStepID="2" Category="T2SidingExit AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Decide" Name="ToMine" ID="2">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">TrainEntity.ToMine</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="3" />
+                <Exit Name="False" Type="Alternate" NextID="5" />
+              </Step>
+              <Step Type="Seize" Name="Sig1" ID="3">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">SignalBlock1</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Seize" Name="T3" ID="4">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T3Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Release" Name="T3" ID="5">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T3Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Release" Name="T2SideRes" ID="6">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T2SideRes</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="Section1Entry_Entered" BeginStepID="2" Category="Section1Entry AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Decide" Name="ToMine" ID="2">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">TrainEntity.ToMine</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="3" />
+                <Exit Name="False" Type="Alternate" NextID="7" />
+              </Step>
+              <Step Type="Release" Name="T3" ID="3">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T3Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Seize" Name="T3" ID="4">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T3Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Release" Name="Sig2" ID="5">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">SignalBlock2</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Release" Name="Sig3" ID="6">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">SignalBlock3</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Seize" Name="T2MainR" ID="7">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T2MainRes</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="T2SidingEntry_Entered" BeginStepID="2" Category="T2SidingEntry AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Decide" Name="ToMine" ID="2">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">TrainEntity.ToMine</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="6" />
+                <Exit Name="False" Type="Alternate" NextID="4" />
+              </Step>
+              <Step Type="Release" Name="LastSiding" ID="3">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T2MainRes</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Seize" Name="T1MainRes" ID="4">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T1MainRes</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Seize" Name="T2Res" ID="5">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T2Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Release" Name="T2" ID="6">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T2Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="T1SideExit_Entered" BeginStepID="2" Category="T1SideExit AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Decide" Name="ToMine" ID="2">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">TrainEntity.ToMine</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="5" />
+                <Exit Name="False" Type="Alternate" NextID="3" />
+              </Step>
+              <Step Type="Release" Name="T2Res" ID="3">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T2Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Release" Name="T1SideRes" ID="4">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T1SideRes</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Seize" Name="T2SideRes" ID="5">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T2SideRes</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Seize" Name="T2" ID="6">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T2Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="T1SideEntry_Entered" BeginStepID="2" Category="T1SideEntry AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Decide" Name="ToMine" ID="2">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">TrainEntity.ToMine</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="5" />
+                <Exit Name="False" Type="Alternate" NextID="4" />
+              </Step>
+              <Step Type="Release" Name="Main" ID="3">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T1MainRes</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Seize" Name="T1Res" ID="4">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T1Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Release" Name="T1" ID="5">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T1Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="TrackStart_Entered" BeginStepID="2" Category="TrackStart AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Decide" Name="ToMine" ID="2">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">TrainEntity.ToMine</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="5" />
+                <Exit Name="False" Type="Alternate" NextID="3" />
+              </Step>
+              <Step Type="Release" Name="T1" ID="3">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T1Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Seize" Name="T1" ID="4">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T1Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Seize" Name="T1SideRes" ID="5">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">T1SideRes</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="RequestProcessing_BeforeProcessing" BeginStepID="2" Category="RequestProcessing AddOn Processes">
+            <Properties>
+              <Property Name="TokenClassName">RequestTrainToken</Property>
+            </Properties>
+            <Steps>
+              <Step Type="Assign" Name="CurrentRequestEntity" ID="2">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>RequestTrainToken.CurrentRequestEntity</Value>
+                  </Property>
+                  <Property Name="NewValue">RequestEntity</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Search" Name="TrainLoadingQueue" ID="3">
+                <Properties>
+                  <Property Name="CollectionType">QueueState</Property>
+                  <Property Name="PopulationName">DefaultEntity</Property>
+                  <Property Name="QueueStateName">
+                    <Value>UnallocatedTrainStation.ParkingStation.Contents</Value>
+                  </Property>
+                  <Property Name="SaveNumberFound">
+                    <Value>RequestTrainToken.ReturnValue</Value>
+                  </Property>
+                </Properties>
+                <Exit Name="Original" Type="Primary" NextID="4" />
+                <Exit Name="Found" Type="Alternate" NextID="6" />
+              </Step>
+              <Step Type="Decide" Name="NoTrainsFound" ID="4">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">RequestTrainToken.ReturnValue&lt;=0</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Wait" Name="TrainEnterStation" ID="5">
+                <Properties>
+                  <Property Name="EventName">UnallocatedTrainStation.ParkingStation.Entered</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="SetNode" Name="Mine" ID="6">
+                <Properties>
+                  <Property Name="NodeName">TrainInput@DummyMine</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="8" />
+              </Step>
+              <Step Type="UnPark" Name="UnPark" ID="7">
+                <Properties />
+              </Step>
+              <Step Type="Assign" Name="CurrentRequestEntity" ID="8">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>RequestTrainToken.CurrentRequestEntity.RequestEntity.AllocatedTrain</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="RequestProcessing_Processing" BeginStepID="2" Category="RequestProcessing AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Wait" Name="TrainLoaded" ID="2">
+                <Properties>
+                  <Property Name="EventName">RequestEntity.AllocatedTrain.TrainEntity.ContainerFull</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Notify" Name="Tell ME" ID="3">
+                <Properties>
+                  <Property Name="MessageHeading">"Tell ME"</Property>
+                  <Property Name="MessageContent">"WHEN SIZ WORKZ"</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
         </Processes>
         <Objects>
-          <Entity Name="DefaultEntity" Type="RequestEntity" Location="0 0 0" Size="0.5 0.5 0.25" Scope="Public" DefaultEntity="True">
+          <Entity Name="DefaultEntity" Type="RequestEntity" Location="81.1748900433074 0 -15.5762802079677" Size="0.5 0.5 0.25" Scope="Public" DefaultEntity="True">
+            <IndexedSizes>
+              <IndexedSize Size="0.5 0.5 0.25" />
+              <IndexedSize Size="0.5 0.5 0.25" />
+            </IndexedSizes>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1371,11 +1754,26 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
-            <Graphics Hidden="True" />
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentAnimationExpression="RequestEntity.Animation">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <FlowDecoration>
+                    <MaterialRef Id="9d181ced-2fd0-4d30-bfcb-ec63c87afc79" />
+                  </FlowDecoration>
+                  <DefaultFlowDecoration>
+                    <MaterialRef Id="9d181ced-2fd0-4d30-bfcb-ec63c87afc79" />
+                  </DefaultFlowDecoration>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="26">
+                <FloorLabel Center="81.3856972848545 0 -17.2180195290709" Width="2.26640633586857" Height="0.459792137125728" Rotation="1.33649648225401" ExternallyVisible="True" BackColor="00ffffff" Text="Allocated Train:&#xD;&#xA;{AllocatedTrain.Name}" />
+              </AttachedObjects>
+            </Graphics>
           </Entity>
-          <Fixed Name="DummyMine" Type="DummyMineModel" Location="-1.53544621186105 0 -1.70445156322061" Size="11.5810348934795 10.7735249594169 1.01239022740954" Scope="Public">
+          <Fixed Name="DummyMine" Type="DummyMineModel" Location="17.5680913318855 0 -19.5621064730092" Size="11.5810348934795 10.7735249594169 1.01239022740954" Scope="Public">
             <AssociatedNodes>
-              <Node Name="TrainInput@DummyMine" Type="BasicNode" Location="3.12662579755828 0 -2.54530365188421" Scope="Public">
+              <Node Name="TrainInput@DummyMine" Type="BasicNode" Location="22.2301633413048 0 -20.4029585616728" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1385,7 +1783,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="TrainOutput@DummyMine" Type="TransferNode" Location="-3.56020637170874 0 -6.15275211470363" Scope="Public">
+              <Node Name="TrainOutput@DummyMine" Type="TransferNode" Location="15.4958491912561 0 -23.9941207050841" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1406,6 +1804,7 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="RequestTrainProcess">RequestTrainProcess</Property>
+              <Property Name="StockpileLoadRate">4500</Property>
             </Properties>
             <Graphics ExternallyVisible="True">
               <SymbolInstances>
@@ -1414,7 +1813,7 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="9">
-                <FloorLabel Center="16.1820347647395 0 3.48897987542448" Width="16.4868105016515" Height="8.51727253490634" ExternallyVisible="True" Text="Mine Stockpile Weight:&#xD;&#xA;{Math.Round(Stockpile.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;PositiveRequestThreshold:&#xD;&#xA;{PosThresholdMonitor.CurrentThresholdValue/1000}&#xD;&#xA;NegativeRequestThreshold:&#xD;&#xA;{NegThresholdMonitor.CurrentThresholdValue/1000}" />
+                <FloorLabel Center="35.2855713705745 0 -14.3686741000623" Width="16.4868105016515" Height="8.51727253490634" ExternallyVisible="True" Text="Mine Stockpile Weight:&#xD;&#xA;{Math.Round(Stockpile.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;PositiveRequestThreshold:&#xD;&#xA;{PosThresholdMonitor.CurrentThresholdValue/1000}&#xD;&#xA;" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
@@ -1461,6 +1860,10 @@
             </Graphics>
           </Fixed>
           <Entity Name="Train" Type="TrainEntity" Location="51.818764172463 0 -100.933522290853" Size="0.5 0.5 0.25" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="0.5 0.5 0.25" />
+              <IndexedSize Size="0.5 0.5 0.25" />
+            </IndexedSizes>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1471,11 +1874,28 @@
               <Property Name="InitialWeightCapacity" Units="Metric Tons">24000</Property>
             </Properties>
             <Graphics ExternallyVisible="True">
-              <SymbolInstances CurrentAnimationExpression="TrainEntity.Animation">
+              <SymbolInstances CurrentAnimationExpression="TrainEntity.Animation" CurrentSymbolIndex="0" CurrentSymbolExpression="TrainEntity.ToMine">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
                   <SymbolRef Id="d208cc87-6060-4dee-a4a4-66b215a1162c" />
                   <FlowDecoration>
                     <MaterialRef Id="d0551458-cb70-4bf7-9832-01a5667107ad" />
+                  </FlowDecoration>
+                  <DefaultFlowDecoration>
+                    <MaterialRef Id="d0551458-cb70-4bf7-9832-01a5667107ad" />
+                  </DefaultFlowDecoration>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="d208cc87-6060-4dee-a4a4-66b215a1162c" />
+                  <Decorations>
+                    <Decoration SurfacePath="0" SurfaceId="0">
+                      <MaterialRef Id="424dfafc-0dea-41fe-ba6f-2367bb971276" />
+                    </Decoration>
+                    <Decoration SurfacePath="0" SurfaceId="1">
+                      <MaterialRef Id="424dfafc-0dea-41fe-ba6f-2367bb971276" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="424dfafc-0dea-41fe-ba6f-2367bb971276" />
                   </FlowDecoration>
                   <DefaultFlowDecoration>
                     <MaterialRef Id="d0551458-cb70-4bf7-9832-01a5667107ad" />
@@ -1498,6 +1918,7 @@
                   <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                  <Property Name="EnteredAddOnProcess">TrainOutput_DummyPort_Entered</Property>
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
@@ -1518,7 +1939,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="TrainUnloadRate">8000</Property>
+              <Property Name="TrainUnloadRate">16000</Property>
             </Properties>
             <Graphics ExternallyVisible="True">
               <SymbolInstances>
@@ -1528,9 +1949,9 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="RequestSource" Type="Source" Location="80.4093180306915 -2.22044604925031E-16 -22.5910687042519" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+          <Fixed Name="RequestSource" Type="Source" Location="74.8919066474427 1.33226762955019E-15 -21.9595577627957" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@RequestSource" Type="TransferNode" Location="81.9093180306915 -2.22044604925031E-16 -22.5910687042519" Scope="Public">
+              <Node Name="Output@RequestSource" Type="TransferNode" Location="76.3919066474427 1.33226762955019E-15 -21.9595577627957" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1563,16 +1984,16 @@
               <AttachedObjects IndexList="2">
                 <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="81.4093171320856 -2.22044604925031E-16 -22.0910711679608" />
-                    <Point Location="84.4093171320856 -2.22044604925031E-16 -22.0910711679608" />
+                    <Point Location="75.8919058553875 1.33226762955019E-15 -21.459560258314" />
+                    <Point Location="78.8919058553875 1.33226762955019E-15 -21.459560258314" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="RequestProcessing" Type="Server" Location="87.9293978657985 -1.11022302462516E-16 -19.5672203756406" Size="2.08920814597344 0.999103702764571 1.000000367302" Scope="Public">
+          <Fixed Name="RequestProcessing" Type="Server" Location="87.9945431450305 -1.11022302462516E-16 -19.5672203756406" Size="2.08920814597344 0.999103702764571 1.000000367302" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@RequestProcessing" Type="BasicNode" Location="86.4629466080984 -1.11022302462516E-16 -19.6678666025403" Scope="Public">
+              <Node Name="Input@RequestProcessing" Type="BasicNode" Location="86.5280918873304 -1.11022302462516E-16 -19.6678666025403" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1582,7 +2003,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@RequestProcessing" Type="TransferNode" Location="89.4293978657985 -1.11022302462516E-16 -19.5672203756406" Scope="Public">
+              <Node Name="Output@RequestProcessing" Type="TransferNode" Location="89.4945431450305 -1.11022302462516E-16 -19.5672203756406" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1606,7 +2027,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="InitialCapacity">Infinity</Property>
+              <Property Name="InitialCapacity">6</Property>
               <Property Name="ProcessingTime">0</Property>
               <Property Name="BeforeProcessingAddOnProcess">RequestProcessing_BeforeProcessing</Property>
               <Property Name="ProcessingAddOnProcess">RequestProcessing_Processing</Property>
@@ -1657,20 +2078,20 @@
               <AttachedObjects IndexList="3 4 5">
                 <Queue Queue="InputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="86.929399786517 -1.11022302462516E-16 -19.0672166496515" />
-                    <Point Location="73.7138075855775 -1.11022302462516E-16 -19.0907007696537" />
+                    <Point Location="86.9945450630039 -1.11022302462516E-16 -19.0672166496515" />
+                    <Point Location="73.7789528620644 -1.11022302462516E-16 -19.0907007696537" />
                   </Points>
                 </Queue>
                 <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="88.929399786517 -1.11022302462516E-16 -19.0672166496515" />
-                    <Point Location="91.929399786517 -1.11022302462516E-16 -19.0672166496515" />
+                    <Point Location="88.9945450630039 -1.11022302462516E-16 -19.0672166496515" />
+                    <Point Location="91.9945450630039 -1.11022302462516E-16 -19.0672166496515" />
                   </Points>
                 </Queue>
                 <Queue Queue="Processing.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="86.929399786517 -1.11022302462516E-16 -20.5672166496515" />
-                    <Point Location="88.929399786517 -1.11022302462516E-16 -20.5672166496515" />
+                    <Point Location="83.9001414498685 -1.11022302462516E-16 -20.5672166496515" />
+                    <Point Location="88.9945450630039 -1.11022302462516E-16 -20.5672166496515" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -1679,6 +2100,7 @@
           <Fixed Name="RequestEnd" Type="Sink" Location="95.7841854405139 0 -16.8129468806166" Size="1.5049811730262 1.02881997857009 1.00000033977415" Scope="Public">
             <AssociatedNodes>
               <Node Name="Input@RequestEnd" Type="BasicNode" Location="94.2841854405139 0 -16.8129468806166" Scope="Public">
+                <Breakpoint Enabled="True" />
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1715,7 +2137,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="SignalBlock2" Type="Resource" Location="12.731731910708 0 -4.84753729539408" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="SignalBlock2" Type="Resource" Location="31.903101810911 0 -22.7051917283455" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -1787,9 +2209,12 @@
                   </Decorations>
                 </SymbolInstance>
               </SymbolInstances>
+              <AttachedObjects IndexList="22">
+                <StatusLabel Center="40.7493493991844 0 -22.9917754124758" Width="12.7523034094219" Height="1.35662802227892" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+              </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="SignalBlock3" Type="Resource" Location="-12.2097529452599 0 -13.7188816676414" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="SignalBlock3" Type="Resource" Location="6.89378483690522 0 -31.57653657743" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -1861,9 +2286,12 @@
                   </Decorations>
                 </SymbolInstance>
               </SymbolInstances>
+              <AttachedObjects IndexList="19">
+                <StatusLabel Center="-0.328406738759121 0 -31.7283076013782" Width="11.1243497826872" Height="1.42445942339286" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+              </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="SignalBlock1" Type="Resource" Location="4.83176140715685 0 -17.4955110522006" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="SignalBlock1" Type="Resource" Location="23.8674684398008 2.55351295663786E-15 -35.3531659619892" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -1935,9 +2363,551 @@
                   </Decorations>
                 </SymbolInstance>
               </SymbolInstances>
+              <AttachedObjects IndexList="13">
+                <StatusLabel Center="33.7588444264461 2.55351295663786E-15 -35.3863810753892" Width="12.3927969835179" Height="1.47194140417263" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+              </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Node Name="Section1Entry" Type="TransferNode" Location="-3.87758220920819 0 -20.6466714681114" Scope="Public">
+          <Fixed Name="T2SideRes" Type="Resource" Location="20.5043582908971 0 -55.1533361134559" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="18">
+                <StatusLabel Center="12.8722622320259 0 -55.0707904170635" Width="12.2313582488668" Height="1.22978330219584" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="T1MainRes" Type="Resource" Location="45.7595044221131 0 -74.7616460267827" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="20">
+                <StatusLabel Center="53.6795855385276 0 -74.5376467816611" Width="12.1316460892293" Height="1.52891978110834" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="T1SideRes" Type="Resource" Location="41.2953957597003 0 -78.1585748516312" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="21">
+                <StatusLabel Center="31.4451305707805 0 -78.0774284487414" Width="15.4553847438126" Height="1.36273284837918" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="T2MainRes" Type="Resource" Location="25.3372774378868 0 -53.2886470327104" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="17">
+                <StatusLabel Center="34.2861680426482 0 -52.7648656028956" Width="12.3310705094698" Height="1.5858981109221" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="T3Res" Type="Resource" Location="15.3995809003988 0 -46.9623387956034" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="23">
+                <StatusLabel Center="6.78013813529562 0 -46.8455455449736" Width="12.3310705094698" Height="1.5858981109221" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="T2Res" Type="Resource" Location="30.8457595040707 0 -64.9458267188596" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="24">
+                <StatusLabel Center="22.2263173813652 0 -64.8290338942629" Width="12.3310705094698" Height="1.5858981109221" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="T1Res" Type="Resource" Location="50.2879001326581 0 -88.2575417135598" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="25">
+                <StatusLabel Center="41.6684588729731 0 -88.1407497356234" Width="12.3310705094698" Height="1.5858981109221" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Node Name="Section1Entry" Type="TransferNode" Location="15.2937869757391 0 -38.5142995012114" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1948,7 +2918,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="Section2Entry" Type="BasicNode" Location="6.87760109670394 0 -9.61756517181342" Scope="Public">
+          <Node Name="Section2Entry" Type="BasicNode" Location="25.9811381636133 0 -27.475220081602" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1984,17 +2954,18 @@
               </AttachedObjects>
             </Graphics>
           </Node>
-          <Node Name="BasicNode2" Type="BasicNode" Location="57.6508952101767 0 -86.8905082845394" Scope="Public">
+          <Node Name="TrackStart" Type="BasicNode" Location="57.5152263887822 0 -87.4331596473107" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EnteredAddOnProcess">TrackStart_Entered</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="TransferNode1" Type="TransferNode" Location="63.7266029812772 0 -88.2774724162084" Scope="Public">
+          <Node Name="TransferNode1" Type="TransferNode" Location="65.4223880091259 0 -86.9886757950434" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2091,36 +3062,53 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="EnteredAddOnProcess">Section1Entry_Entered</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Link Name="Path1" Type="Path" Size="16.42 0 0" Scope="Public" Start="Section1Entry" End="Section2Entry">
-            <Points>
-              <Point Location="-2.68325105263247 0 -15.7115305969977" />
-            </Points>
+          <Node Name="T2SidingEntry" Type="BasicNode" Location="25.606035102579 0 -56.8179924706106" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EnteredAddOnProcess">T2SidingEntry_Entered</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
-          </Link>
-          <Link Name="Path2" Type="Path" Size="11.3 0 0" Scope="Public" Start="Section2Entry" End="TrainInput@DummyMine">
-            <Points>
-              <Point Location="8.55983088916894 0 -4.27783780045216" />
-            </Points>
+          </Node>
+          <Node Name="T2SidingExit" Type="BasicNode" Location="21.6136707824371 0 -51.0038760871582" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EnteredAddOnProcess">T2SidingExit_Entered</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
-          </Link>
+          </Node>
+          <Node Name="T1SideEntry" Type="BasicNode" Location="48.2919650970847 0 -79.7715045157072" Scope="Public">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EnteredAddOnProcess">T1SideEntry_Entered</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Node>
+          <Node Name="T1SideExit" Type="BasicNode" Location="41.1251522601913 0 -71.8611368991771" Scope="Public">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EnteredAddOnProcess">T1SideExit_Entered</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Node>
           <Link Name="Connector1" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@TrainSource" End="UnallocatedTrainStation">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -2131,7 +3119,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Path5" Type="Path" Size="6.08 0 0" Scope="Public" Start="TransferNode1" End="TrainInput@DummyPort">
+          <Link Name="Path5" Type="Path" Size="5.34 0 0" Scope="Public" Start="TransferNode1" End="TrainInput@DummyPort">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2164,7 +3152,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Path8" Type="Path" Size="6.14 0 0" Scope="Public" Start="UnallocatedTrainStation" End="BasicNode2">
+          <Link Name="Path8" Type="Path" Size="5.69 0 0" Scope="Public" Start="UnallocatedTrainStation" End="TrackStart">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2194,20 +3182,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Path9" Type="Path" Size="6.23 0 0" Scope="Public" Start="BasicNode2" End="TransferNode1">
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True" />
-          </Link>
-          <Link Name="Path3" Type="Path" Size="16.24 0 0" Scope="Public" Start="TrainOutput@DummyMine" End="Section1Entry">
-            <Points>
-              <Point Location="-7.33939735448755 0 -12.4329893189829" />
-            </Points>
+          <Link Name="Path9" Type="Path" Size="7.92 0 0" Scope="Public" Start="TrackStart" End="TransferNode1">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2343,20 +3318,78 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="TimePath1" Type="TimePath" Size="90.41 0 0" Scope="Public" Start="BasicNode2" End="Section1Entry">
+          <Link Name="T3" Type="Path" Size="10000 0 0" Scope="Public" Start="Section1Entry" End="T2SidingExit">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="TravelTime" Units="Hours">10</Property>
+              <Property Name="Type">Bidirectional</Property>
+              <Property Name="InitialTravelerCapacity">1</Property>
+              <Property Name="DrawnToScale">False</Property>
+              <Property Name="LogicalLength" Units="Kilometers">10.0</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="TimePath2" Type="TimePath" Size="90.72 0 0" Scope="Public" Start="Section1Entry" End="BasicNode2">
+          <Link Name="T2M" Type="Path" Size="5000 0 0" Scope="Public" Start="T2SidingExit" End="T2SidingEntry">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="InitialTravelerCapacity">1</Property>
+              <Property Name="DrawnToScale">False</Property>
+              <Property Name="LogicalLength" Units="Kilometers">5</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="T2" Type="Path" Size="10000 0 0" Scope="Public" Start="T2SidingEntry" End="T1SideExit">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="Type">Bidirectional</Property>
+              <Property Name="InitialTravelerCapacity">1</Property>
+              <Property Name="DrawnToScale">False</Property>
+              <Property Name="LogicalLength" Units="Kilometers">10.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="T1M" Type="Path" Size="5000 0 0" Scope="Public" Start="T1SideExit" End="T1SideEntry">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="InitialTravelerCapacity">1</Property>
+              <Property Name="DrawnToScale">False</Property>
+              <Property Name="LogicalLength" Units="Kilometers">5</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="T1" Type="Path" Size="10000 0 0" Scope="Public" Start="T1SideEntry" End="TrackStart">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="Type">Bidirectional</Property>
+              <Property Name="InitialTravelerCapacity">1</Property>
+              <Property Name="DrawnToScale">False</Property>
+              <Property Name="LogicalLength" Units="Kilometers">10.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="T1S" Type="Path" Size="5000 0 0" Scope="Public" Start="T1SideEntry" End="T1SideExit">
             <Points>
-              <Point Location="27.509078687018 0 -59.9509088229657" />
+              <Point Location="44.780276049809 0 -79.5481552860545" />
+              <Point Location="40.7917895938784 0 -75.1323309955599" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -2364,12 +3397,79 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="SelectionWeight">Math.If(Entity.DestinationNode==TrainInput@DummyMine,0,1)</Property>
-              <Property Name="TravelTime" Units="Hours">10</Property>
+              <Property Name="InitialTravelerCapacity">1</Property>
+              <Property Name="DrawnToScale">False</Property>
+              <Property Name="LogicalLength" Units="Kilometers">5</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="T2S" Type="Path" Size="5000 0 0" Scope="Public" Start="T2SidingEntry" End="T2SidingExit">
+            <Points>
+              <Point Location="23.6444253025647 0 -56.5972255215839" />
+              <Point Location="20.937952350326 0 -52.6562210472714" />
+            </Points>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="InitialTravelerCapacity">1</Property>
+              <Property Name="DrawnToScale">False</Property>
+              <Property Name="LogicalLength" Units="Kilometers">5</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="TimePath1" Type="TimePath" Size="16.44 0 0" Scope="Public" Start="Section1Entry" End="Section2Entry">
+            <Points>
+              <Point Location="16.4202867295326 0 -33.5013541056621" />
+            </Points>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="TravelTime">20</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="TimePath2" Type="TimePath" Size="11.3 0 0" Scope="Public" Start="Section2Entry" End="TrainInput@DummyMine">
+            <Points>
+              <Point Location="27.6633693865898 0 -22.1354927102408" />
+            </Points>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="TravelTime">20</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="TimePath3" Type="TimePath" Size="16.28 0 0" Scope="Public" Start="TrainOutput@DummyMine" End="Section1Entry">
+            <Points>
+              <Point Location="11.7641406660961 0 -30.1278498197621" />
+            </Points>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="TravelTime">20</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
         </Objects>
+        <Tokens>
+          <Token Name="RequestTrainToken">
+            <States>
+              <ElementReferenceState Name="CurrentRequestEntity" ElementType="Entity" />
+            </States>
+          </Token>
+        </Tokens>
         <Schedules>
           <Schedule Name="StandardWeek" CycleDays="7" StartDate="2011-01-03T00:00:00" Description="Standard Work Week Schedule">
             <DayPatternRefs>
@@ -2390,24 +3490,27 @@
           </DayPattern>
         </DayPatterns>
         <Graphics>
-          <Rectangle Center="88.4188980276144 0 -18.8912576033906" Width="21.5580660938073" Height="13.4135085682561" ExternallyVisible="True">
+          <Rectangle Center="88.4029374196153 -0.114695889921963 -18.8912576033906" Width="21.5580660938073" Height="13.4135085682561" ExternallyVisible="True" Locked="True">
             <Decorations>
               <Decoration SurfaceId="0">
                 <MaterialRef Id="f0891be3-634c-47cd-9ff2-af19a222b590" />
               </Decoration>
             </Decorations>
           </Rectangle>
-          <Rectangle Center="88.4275515212008 0 -27.238859593546" Width="21.5580660938073" Height="3.28041905727424" ExternallyVisible="True">
+          <Rectangle Center="88.4275515212008 -0.114695889921963 -27.238859593546" Width="21.5580660938073" Height="3.28041905727424" ExternallyVisible="True" Locked="True">
             <Decorations>
               <Decoration SurfaceId="0">
                 <MaterialRef Id="990be0ae-6fa1-4f40-9768-2ec4a1d41937" />
               </Decoration>
             </Decorations>
           </Rectangle>
+          <FloorLabel Center="38.7377502895346 0 -91.9950060565731" Width="25.8866775679754" Height="4.56823721787795" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="10" Text="Track 1" />
+          <FloorLabel Center="25.872626003891 0 -68.844427181527" Width="25.8866775679754" Height="4.56823721787795" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="10" Text="Track 2" />
+          <FloorLabel Center="3.71529061400312 0 -50.8068114565376" Width="25.8866775679754" Height="4.56823721787795" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="10" Text="Track 3" />
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <EntityDefinition Name="ShipEntity" Id="3373bfbf-a338-4665-a33f-776c2d8a4a53" Revision="30" Version="14">
+      <EntityDefinition Name="ShipEntity" Id="3373bfbf-a338-4665-a33f-776c2d8a4a53" Revision="32" Version="14">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -2484,7 +3587,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipSource" Id="92dd330b-733d-4878-89bf-2ea9523e1989" Revision="226" Author="Michael Kerkow, Solosi">
+      <FixedDefinition Name="ShipSource" Id="92dd330b-733d-4878-89bf-2ea9523e1989" Revision="228" Author="Michael Kerkow, Solosi">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -2543,7 +3646,7 @@
         <Events />
         <UsedObjects>
           <UsedObject Name="TransferNode" />
-          <UsedObject Name="ShipEntity1" />
+          <UsedObject Name="ShipEntity" />
         </UsedObjects>
         <Elements>
           <Element Type="Station" Name="OutputBuffer" Scope="Public">
@@ -2783,43 +3886,39 @@
     <DefinitionRefs>
       <DefinitionRef Name="RequestEntity">
         <Id>337b7c93-2a48-4a37-aafe-ad72ad7b8f31</Id>
-        <Revision>2</Revision>
+        <Revision>5</Revision>
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>132</Revision>
+        <Revision>204</Revision>
       </DefinitionRef>
       <DefinitionRef Name="BerthObject">
         <Id>9cc748c1-032c-4188-9e43-77bb66e759e0</Id>
-        <Revision>38</Revision>
+        <Revision>40</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipSource">
         <Id>92dd330b-733d-4878-89bf-2ea9523e1989</Id>
-        <Revision>226</Revision>
+        <Revision>228</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipEntity">
         <Id>3373bfbf-a338-4665-a33f-776c2d8a4a53</Id>
-        <Revision>30</Revision>
+        <Revision>32</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
-        <Revision>37</Revision>
+        <Revision>43</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TrainEntity">
         <Id>eda2504a-4cf7-47eb-a302-9c24622fa118</Id>
-        <Revision>0</Revision>
+        <Revision>3</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyPortModel">
         <Id>6f605774-81cb-44d1-b3c1-a310b58758b8</Id>
-        <Revision>5</Revision>
+        <Revision>7</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ContinuousFiller">
         <Id>0ef6d41d-6364-4d67-b262-8f24a6218c83</Id>
         <Revision>1</Revision>
-      </DefinitionRef>
-      <DefinitionRef Name="ShipEntity1">
-        <Id>f0868e7e-cdf2-4845-9f7c-63e0c0b5a3a4</Id>
-        <Revision>30</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TransferNode">
         <Id>0d40fbf0-8206-443f-b771-65f85633a2f6</Id>
@@ -2877,13 +3976,13 @@
         <Id>5f44138f-a5f7-40d1-ab9a-eea7c5f0254e</Id>
         <Revision>57</Revision>
       </DefinitionRef>
-      <DefinitionRef Name="Path">
-        <Id>93d39da5-5ba1-4ae1-a526-15bdb27d48e4</Id>
-        <Revision>59</Revision>
-      </DefinitionRef>
       <DefinitionRef Name="Connector">
         <Id>078e9330-0f90-4770-a474-3cb06fae1db5</Id>
         <Revision>32</Revision>
+      </DefinitionRef>
+      <DefinitionRef Name="Path">
+        <Id>93d39da5-5ba1-4ae1-a526-15bdb27d48e4</Id>
+        <Revision>59</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -2904,6 +4003,7 @@
       <ColorMaterial Id="c97cbc0a-9c03-400e-8d40-b36c06b9bad8" Color="ffffff" />
       <ColorMaterial Id="9d8d37e4-9db4-4716-b5a2-15c7b9007e57" Color="808080" />
       <ColorMaterial Id="d0551458-cb70-4bf7-9832-01a5667107ad" Color="008000" />
+      <ColorMaterial Id="424dfafc-0dea-41fe-ba6f-2367bb971276" Color="0000cd" />
       <ColorMaterial Id="c2ec0d92-56af-434f-a0c8-eda45c376667" Color="008000" />
       <ColorMaterial Id="2a5c3fe3-b875-47da-bf16-749b2b22a686" Color="ffff00" />
       <ColorMaterial Id="40ee6518-2dbb-4ae8-8e53-41db0ab4623e" Color="ff0000" />
@@ -10925,83 +12025,6 @@ The entity will be processed though the filler without a filling attempt. Howeve
           </Graphics>
         </Dashboard>
       </FixedDefinition>
-      <EntityDefinition Name="ShipEntity" Id="f0868e7e-cdf2-4845-9f7c-63e0c0b5a3a4" Revision="30" Version="14">
-        <PropertyDefinitions>
-          <Categories>
-            <Category Name="Basic Logic" Description="Basic Logic" />
-            <Category Name="Process Logic" Description="Process Logic" />
-            <Category Name="Crossing Logic" Description="Crossing Logic" />
-            <Category Name="Transport Logic" Description="Transport Logic" />
-            <Category Name="Travel Logic" Description="Travel Logic" />
-            <Category Name="Routing Logic" Description="Routing Logic" />
-            <Category Name="Population" Description="Population" InitiallyExpanded="False" />
-            <Category Name="Results Classification" Description="Results Classification" InitiallyExpanded="False" />
-            <Category Name="Stopping Conditions" Description="Stopping Conditions" InitiallyExpanded="False" />
-            <Category Name="Input Flow Control" Description="Input Flow Control" />
-            <Category Name="Financials" Description="Financials" InitiallyExpanded="False" />
-            <Category Name="Financials/Transport Costs" Description="Transport Costs" InitiallyExpanded="False" />
-            <Category Name="Financials/Resource Costs" Description="Resource Costs" InitiallyExpanded="False" />
-            <Category Name="Advanced Options" Description="Advanced Options" InitiallyExpanded="False" />
-            <Category Name="Advanced Options/Token Actions" Description="Token Action Options" InitiallyExpanded="False" />
-          </Categories>
-          <Overrides>
-            <Override Name="ResourceIdleCostRate" Visible="False" />
-            <Override Name="ResourceCostPerUse" Visible="False" />
-            <Override Name="ResourceUsageCostRate" Visible="False" />
-            <Override Name="LogResourceUsage" Visible="False" />
-            <Override Name="DisplayCategory" Visible="False" />
-            <Override Name="DisplayColor" Visible="False" />
-            <Override Name="CapacityType" Visible="False" />
-            <Override Name="WorkSchedule" Visible="False" />
-            <Override Name="WorkDayExceptions" Visible="False" />
-            <Override Name="WorkPeriodExceptions" Visible="False" />
-            <Override Name="InitialCapacity" Visible="False" />
-            <Override Name="RankingRule" Visible="False" />
-            <Override Name="RankingExpression" Visible="False" />
-            <Override Name="DynamicSelectionRule" Visible="False" />
-          </Overrides>
-        </PropertyDefinitions>
-        <States>
-          <DateTimeState Name="Time_ApproachBerth" />
-          <DateTimeState Name="Time_ArriveBerth" />
-          <DateTimeState Name="Time_ReadyToLoad" />
-          <DateTimeState Name="Time_EndLoading" />
-          <DateTimeState Name="Time_DepartPort" />
-          <DateTimeState Name="Time_DepartBerth" />
-          <DateTimeState Name="Time_StartLoading" />
-          <DateTimeState Name="ScheduledArrivalTime" />
-          <DiscreteState Name="Draft" />
-          <ElementReferenceState Name="Product" ElementType="Entity" />
-          <DateTimeState Name="ActualArrivalTime" />
-          <DateTimeState Name="Time_FinishedPostLoading" />
-        </States>
-        <Events>
-          <Event Name="ShipFullEvent" Description="Fired when the ship is fully loaded" />
-        </Events>
-        <Elements>
-          <Element Type="Container" Name="Container1" Scope="Public">
-            <Properties>
-              <Property Name="InitialWeightCapacity" Units="Metric Tons">Infinity</Property>
-              <Property Name="OnFullProcess">Container1_OnFullProcess</Property>
-            </Properties>
-          </Element>
-        </Elements>
-        <Processes>
-          <Process Name="Container1_OnFullProcess" BeginStepID="2" Category="Container1 AddOn Processes">
-            <Properties />
-            <Steps>
-              <Step Type="Fire" Name="shipFull" ID="2">
-                <Properties>
-                  <Property Name="EventName">ShipFullEvent</Property>
-                </Properties>
-              </Step>
-            </Steps>
-          </Process>
-        </Processes>
-        <Graphics>
-          <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
-        </Graphics>
-      </EntityDefinition>
       <FixedDefinition Name="Sink" Id="5f44138f-a5f7-40d1-ab9a-eea7c5f0254e" Revision="57" Description="The Sink object may be used to destroy entity objects that have finished processing in the model." CheckBaseForAdvancedProperties="True">
         <ChangeDescriptions>
           <ChangeDescription Version="34">Version 2.37: Updated the Sink object to use the string '[DynamicObjects]' as the Data Source field for classifying the sink's 'Time In System' tally statistic results.</ChangeDescription>
@@ -13947,4 +14970,4 @@ It is recommended to verify that a followable network path has been drawn from t
     </Materials>
   </CommonItems>
 </Project>
-<!-- /LrgAJ9vS79Ktked0pg+o8/STAfoWv6vcakXrtbanfGdsaeKY/tUBvIX4yH/L2jeOWvtNGQ9OatgoKGVQE3qbA== -->
+<!-- jEuqyLbuCJz/rF9FrbEalbYli3rMXN1ujgBXHwSgrw6bOR6lNhe/gpjTq3lSDKwm3kTFa4hjjLik/YTBvBhKug== -->
