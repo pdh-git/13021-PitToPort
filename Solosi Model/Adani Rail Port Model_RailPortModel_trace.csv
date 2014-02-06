@@ -1,4 +1,8 @@
 Time(Hours),EntityID,ObjectName,ProcessID,StepName,Action
-5.33333333333333,DefaultEntity.103,RailPortModel,11.RequestProcessing_BeforeProcessing,[Decide] NoTrainsFound,Token branching on condition 'RequestTrainToken.ReturnValue<=0'.
-5.33333333333333,DefaultEntity.103,RailPortModel,11.RequestProcessing_BeforeProcessing,[Decide] NoTrainsFound,Token sent to 'True' exit.
+0,--,--,--,--,Unable to evaluate status expression for graphic.
+0,--,--,--,--,Item: TrainEntity 'Train'
+0.0277777777777778,--,--,--,--,Unable to evaluate status expression for graphic.
+0.0277777777777778,--,--,--,--,Item: TrainEntity 'Train'
+0.0277777777777778,--,--,--,--,Unable to evaluate status expression for graphic.
+0.0277777777777778,--,--,--,--,Item: TrainEntity 'Train'
 
