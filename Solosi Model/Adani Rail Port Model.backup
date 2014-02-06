@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.97.10724.23991" FileVersion="92" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-06T04:19:49" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-06T04:24:27" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -30,7 +30,7 @@
       </InteractiveStatistics>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="27.1614836936498 75.2667619323731 -44.7914627061248" Direction="0 -1 2.22044604925031E-16" Zoom="75.2667619323731" />
+          <Camera Orientation="Top" Location="39.6620488774763 75.2667617797852 -34.808089177588" Direction="0 -1 2.22044604925031E-16" Zoom="75.2667617797852" />
           <ObjectDisplay Background="ffe4b5" />
         </Facility>
         <StandardTables>
@@ -1039,7 +1039,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="284">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="286">
         <Lists>
           <NodeList Name="MineInputList">
             <Items>
@@ -3097,7 +3097,7 @@
           </Rectangle>
           <FloorLabel Center="38.7602924769307 0 -91.9950060565731" Width="25.8866775679754" Height="4.56823721787795" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="10" Text="Track 1" />
           <FloorLabel Center="25.872626003891 0 -68.844427181527" Width="25.8866775679754" Height="4.56823721787795" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="10" Text="Track 2" />
-          <FloorLabel Center="3.71529061400312 0 -50.8068114565376" Width="25.8866775679754" Height="4.56823721787795" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="10" Text="Track 3" />
+          <FloorLabel Center="3.53902185069545 0 -50.2780051666146" Width="25.8866775679754" Height="4.56823721787795" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="10" Text="Track 3" />
           <FloorLabel Center="34.1626215962609 0 6.54038838085231" Width="28.2764459860509" Height="14.0547577531145" ExternallyVisible="True" Text="{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].DestinationNode, 0)}&#xD;&#xA;" />
           <FloorLabel Center="91.8248405829406 0 6.6488405460057" Width="28.1074500243561" Height="14.1861990758091" ExternallyVisible="True" Text="{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;" />
           <FloorLabel Center="5.34307399172574 0 6.49851011312911" Width="28.1450046633561" Height="13.9890370917672" ExternallyVisible="True" Text="{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].Name, 0)}&#xD;&#xA;" />
@@ -3224,7 +3224,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>284</Revision>
+        <Revision>286</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -17709,4 +17709,4 @@ It is recommended to verify that a followable network path has been drawn from t
     </Materials>
   </CommonItems>
 </Project>
-<!-- Iw8/a/qcKNrIWxjAhQTbZDZcFyAsGQS65P0V1Vxr3E2EKT/IMdapaHQQm8XiZjgwaHWVWN8xBYFpOoay2Y5Y/Q== -->
+<!-- +lXwgdkX9ibLQN1i8h7Ed9aVr9TPJv4qTZiuuA0zjGXmQiM4YcoE3u8RPqpfiquVS9OdXBDUiBPVb6TnLJc1YA== -->
