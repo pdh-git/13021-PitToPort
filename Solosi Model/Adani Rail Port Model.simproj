@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.97.10724.23991" FileVersion="92" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-06T06:47:43" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-11T06:57:03" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -30,13 +30,14 @@
         <Warning Identifier="Train[5].ResourceState" />
         <Warning Identifier="Train[6].ResourceState" />
         <Warning Identifier="Train[3].ResourceState" />
+        <Warning Identifier="Math.If(Train.Population.NumberInSystem &gt;5, Train[6].DisplayName, 0)" />
       </SuppressedWarnings>
       <InteractiveStatistics>
         <FileRef Name="Results\RailPortModel\Interactive_Results.stats" />
       </InteractiveStatistics>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="48.7900736203598 171.407512568978 -53.765077266577" Direction="0 -1 2.22044604925031E-16" Zoom="171.407512568978" />
+          <Camera Orientation="Top" Location="89.2104217137724 152.129654488122 -83.7863235325301" Direction="0 -1 2.22044604925031E-16" Zoom="152.129654488122" />
           <ObjectDisplay Labels="False" Background="ffe4b5" />
         </Facility>
         <StandardTables>
@@ -144,7 +145,7 @@
       </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="1.30353454320495 48.8578453063965 7.59538649684388" Direction="0 -1 2.22044604925031E-16" Zoom="48.8578453063965" />
+          <Camera Orientation="Top" Location="-2.4981197823511 11.7307686580658 0.11287141977883" Direction="0 -1 2.22044604925031E-16" Zoom="11.7307686580658" />
           <ObjectDisplay Background="ffffff" />
         </Facility>
         <OperationalPlanningOwnerGantt>
@@ -219,10 +220,17 @@
   <Symbols>
     <SymbolRef Id="53ce25f8-a844-4432-9b42-21e99be2f18e" />
     <SymbolRef Id="cc8e029a-3d85-4683-aa10-598a2b4f682a" />
+    <SymbolRef Id="7f46d21d-244e-4167-a478-13da837da784" />
+    <SymbolRef Id="c709ed5e-58cf-499d-8b56-3c286033c63b" />
+    <SymbolRef Id="1a2b8714-b15c-4ad6-8270-425336f45d86" />
+    <SymbolRef Id="70c5c597-bda1-45ff-97a8-36fbd6ce093e" />
+    <SymbolRef Id="fa85ffe5-b96c-422a-9787-2d9beeea58fb" />
+    <SymbolRef Id="538111b6-850e-4d21-a2eb-25d57fb49474" />
+    <SymbolRef Id="15fee571-73b7-4515-9d2d-d7770aab3a02" />
   </Symbols>
   <CommonItems>
     <Definitions>
-      <FixedDefinition Name="DummyPortModel" Id="6f605774-81cb-44d1-b3c1-a310b58758b8" Revision="9" ResourceLogic="True">
+      <FixedDefinition Name="DummyPortModel" Id="6f605774-81cb-44d1-b3c1-a310b58758b8" Revision="11" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -359,8 +367,8 @@
               <AttachedObjects IndexList="0">
                 <Queue Queue="Processing.Contents" Alignment="Inline" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-2.39003290939355 0 0.957658828881547" />
-                    <Point Location="-0.0360104681345725 0 -4.29445147299456" />
+                    <Point Location="-0.0108734980859502 0 -4.27924234930304" />
+                    <Point Location="-2.39890384118182 0 1.01049003015305" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -441,7 +449,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <EntityDefinition Name="RequestEntity" Id="337b7c93-2a48-4a37-aafe-ad72ad7b8f31" Revision="7" Description="The default entity definition for your project." CheckBaseForAdvancedProperties="True">
+      <EntityDefinition Name="RequestEntity" Id="337b7c93-2a48-4a37-aafe-ad72ad7b8f31" Revision="8" Description="The default entity definition for your project." CheckBaseForAdvancedProperties="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Travel Logic" Description="Travel Logic" />
@@ -493,7 +501,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="DummyMineModel" Id="ab516494-1c39-441d-875e-b20a30d5758b" Revision="45" ResourceLogic="True">
+      <FixedDefinition Name="DummyMineModel" Id="ab516494-1c39-441d-875e-b20a30d5758b" Revision="46" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -874,7 +882,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <EntityDefinition Name="ShipEntity" Id="a4bd7d4c-271b-46c4-a317-347c5fa5036f" Revision="2" BaseClass="ContainerEntity" CheckBaseForAdvancedProperties="True">
+      <EntityDefinition Name="ShipEntity" Id="a4bd7d4c-271b-46c4-a317-347c5fa5036f" Revision="3" BaseClass="ContainerEntity" CheckBaseForAdvancedProperties="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Flow Storage Logic" Description="Flow Storage Logic" />
@@ -901,7 +909,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipLoader" Id="2b848702-2e02-44a8-bf6e-e45244ec5088" Revision="2" BaseClass="Filler1" CheckBaseForAdvancedProperties="True">
+      <FixedDefinition Name="ShipLoader" Id="2b848702-2e02-44a8-bf6e-e45244ec5088" Revision="3" BaseClass="Filler1" CheckBaseForAdvancedProperties="True">
         <Lists />
         <PropertyDefinitions>
           <Categories>
@@ -1004,7 +1012,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <EntityDefinition Name="TrainEntity" Id="eda2504a-4cf7-47eb-a302-9c24622fa118" Revision="14" BaseClass="ContainerEntity" CheckBaseForAdvancedProperties="True">
+      <EntityDefinition Name="TrainEntity" Id="eda2504a-4cf7-47eb-a302-9c24622fa118" Revision="18" BaseClass="ContainerEntity" CheckBaseForAdvancedProperties="True">
         <Lists>
           <StringList Name="ResourceStatesList">
             <Items>
@@ -1047,8 +1055,43 @@
         <Events>
           <Event Name="IsLoaded" />
         </Events>
-        <Elements />
-        <Processes />
+        <Elements>
+          <Element Type="Failure" Name="TrainFailure" Scope="Public">
+            <Properties>
+              <Property Name="OnFailedProcess">TrainFailure_OnFailedProcess</Property>
+              <Property Name="OnRepairedProcess">TrainFailure_OnRepairedProcess</Property>
+            </Properties>
+          </Element>
+          <Element Type="Monitor" Name="Monitor1" Scope="Public">
+            <Properties>
+              <Property Name="MonitorType">CrossingStateChange</Property>
+            </Properties>
+          </Element>
+        </Elements>
+        <Processes>
+          <Process Name="TrainFailure_OnFailedProcess" BeginStepID="2" Category="TrainFailure AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Suspend" Name="Train" ID="2">
+                <Properties>
+                  <Property Name="SuspendType">ObjectMovement</Property>
+                  <Property Name="ObjectType">ParentObject</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="TrainFailure_OnRepairedProcess" BeginStepID="2" Category="TrainFailure AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Resume" Name="Train" ID="2">
+                <Properties>
+                  <Property Name="ResumeType">ObjectMovement</Property>
+                  <Property Name="ObjectType">ParentObject</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+        </Processes>
         <External>
           <Graphics>
             <StackedBar Center="0 0 -0.55" Width="0.6" Height="0.6" ExternallyVisible="True" Shape="1" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
@@ -1058,11 +1101,11 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="332">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="367">
         <Lists>
           <NodeList Name="MineInputList">
             <Items>
-              <Item Value="TrainInput@DummyMine" />
+              <Item Value="TrainInput@Mine" />
             </Items>
           </NodeList>
         </Lists>
@@ -1149,7 +1192,7 @@
           </Element>
           <Element Type="OutputStatistic" Name="Output_TonnesUnloadedPort" Scope="Public">
             <Properties>
-              <Property Name="Expression">DummyPort.FlowOutput@Emptier1.FlowRegulator.CurrentWeightFlowOut</Property>
+              <Property Name="Expression">Port.FlowOutput@Emptier1.FlowRegulator.CurrentWeightFlowOut</Property>
               <Property Name="DataItem">Tonnes Unloaded at Port</Property>
             </Properties>
           </Element>
@@ -1166,7 +1209,7 @@
               <Step Type="Decide" Name="ToMine" ID="3">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
-                  <Property Name="Expression">TrainEntity.DestinationNode == TrainInput@DummyMine</Property>
+                  <Property Name="Expression">TrainEntity.DestinationNode == TrainInput@Mine</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="5" />
                 <Exit Name="False" Type="Alternate" NextID="4" />
@@ -1174,7 +1217,7 @@
               <Step Type="Decide" Name="ToPort" ID="4">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
-                  <Property Name="Expression">Entity.DestinationNode==TrainInput@DummyPort</Property>
+                  <Property Name="Expression">Entity.DestinationNode == TrainInput@Port</Property>
                 </Properties>
                 <Exit Name="False" Type="Alternate" NextID="7" />
               </Step>
@@ -1278,7 +1321,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="TrainOutput_DummyMine_Entered" BeginStepID="3" Category="TrainOutput@DummyMine AddOn Processes">
+          <Process Name="TrainOutput_Mine_Entered" BeginStepID="3" Category="TrainOutput@DummyMine AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Seize" Name="Sig3" ID="2">
@@ -1352,7 +1395,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="TrainOutput_DummyPort_Entered" BeginStepID="3" Category="TrainOutput@DummyPort AddOn Processes">
+          <Process Name="TrainOutput_Port_Entered" BeginStepID="3" Category="TrainOutput@DummyPort AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="ToMineTrue" ID="2">
@@ -1585,7 +1628,7 @@
               </Step>
               <Step Type="SetNode" Name="Mine" ID="6">
                 <Properties>
-                  <Property Name="NodeName">TrainInput@DummyMine</Property>
+                  <Property Name="NodeName">TrainInput@Mine</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
@@ -1613,7 +1656,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="TrainInput_DummyMine_Entered" BeginStepID="3" Category="TrainInput@DummyMine AddOn Processes">
+          <Process Name="TrainInput_Mine_Entered" BeginStepID="3" Category="TrainInput@DummyMine AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="Stamp_StartLoading" ID="2">
@@ -1635,7 +1678,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="TrainInput_DummyPort_Entered" BeginStepID="3" Category="TrainInput@DummyPort AddOn Processes">
+          <Process Name="TrainInput_Port_Entered" BeginStepID="3" Category="TrainInput@DummyPort AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="Stamp_StartUnloading" ID="2">
@@ -2187,7 +2230,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="TransferNode1_Entered" BeginStepID="2" Category="TransferNode1 AddOn Processes">
+          <Process Name="PortQueueBlock_Entered" BeginStepID="2" Category="PortQueueBlock AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Release" Name="Sig1Port" ID="2">
@@ -2212,13 +2255,9 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="TrainResouce2_Failed" Category="TrainResouce2 AddOn Processes">
-            <Properties />
-            <Steps />
-          </Process>
         </Processes>
         <Objects>
-          <Entity Name="Request" Type="RequestEntity" Location="3.63403427082998 1.77635683940025E-15 -99.7702028289742" Size="0.5 0.5 0.25" Scope="Public" DefaultEntity="True">
+          <Entity Name="Request" Type="RequestEntity" Location="-68.1213004534208 5.81756864903582E-14 -176.418322489638" Size="0.5 0.5 0.25" Scope="Public" DefaultEntity="True">
             <IndexedSizes>
               <IndexedSize Size="0.5 0.5 0.25" />
               <IndexedSize Size="0.5 0.5 0.25" />
@@ -2242,25 +2281,25 @@
                   </DefaultFlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="12">
-                <FloorLabel Center="4.07141357822002 1.77635683940025E-15 -101.357863702821" Width="2.26640633586857" Height="0.925664685312551" Rotation="1.33649648225401" ExternallyVisible="True" BackColor="00ffffff" Text="Allocated Train:&#xD;&#xA;{AllocatedTrain.Name}" />
+              <AttachedObjects IndexList="11">
+                <FloorLabel Center="-67.6839250980538 5.81756864903582E-14 -178.005985007631" Width="2.26640633586857" Height="0.925664685312551" Rotation="1.33649648225401" ExternallyVisible="True" BackColor="00ffffff" Text="Allocated Train:&#xD;&#xA;{AllocatedTrain.Name}" />
               </AttachedObjects>
             </Graphics>
           </Entity>
-          <Fixed Name="DummyMine" Type="DummyMineModel" Location="17.7688027002441 0 -19.5621064730092" Size="11.5810348934795 10.7735249594169 1.01239022740954" Scope="Public">
+          <Fixed Name="Mine" Type="DummyMineModel" Location="297.54953898014 4.73316514920743E-30 -26.738756073145" Size="11.5810348934795 10.7735249594169 1.01239022740954" Scope="Public">
             <AssociatedNodes>
-              <Node Name="TrainInput@DummyMine" Type="BasicNode" Location="22.3976372924111 0 -20.4029585616728" Scope="Public">
+              <Node Name="TrainInput@Mine" Type="BasicNode" Location="302.178373572307 4.73316514920743E-30 -27.5796081618086" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-                  <Property Name="EnteredAddOnProcess">TrainInput_DummyMine_Entered</Property>
+                  <Property Name="EnteredAddOnProcess">TrainInput_Mine_Entered</Property>
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="TrainOutput@DummyMine" Type="TransferNode" Location="15.7730030482175 0 -24.0246977005252" Scope="Public">
+              <Node Name="TrainOutput@Mine" Type="TransferNode" Location="295.553739328114 4.73316514920743E-30 -31.201347300661" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2268,8 +2307,8 @@
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="DestinationType">Specific</Property>
-                  <Property Name="DestinationNodeName">TrainInput@DummyPort</Property>
-                  <Property Name="EnteredAddOnProcess">TrainOutput_DummyMine_Entered</Property>
+                  <Property Name="DestinationNodeName">TrainInput@Port</Property>
+                  <Property Name="EnteredAddOnProcess">TrainOutput_Mine_Entered</Property>
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
@@ -2288,14 +2327,14 @@
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="8">
-                <FloorLabel Center="36.0449083371204 0 -14.9601600263308" Width="22.0730664719654" Height="7.46574199931783" ExternallyVisible="True" Text="Mine Stockpile Weight:&#xD;&#xA;{Math.Round(Stockpile.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Next Request Threshold:&#xD;&#xA;{PosThresholdMonitor.CurrentThresholdValue/1000}&#xD;&#xA;" />
+              <AttachedObjects IndexList="7">
+                <FloorLabel Center="322.612946382093 -2.00156125003466E-22 -26.9539087103549" Width="22.0730664719654" Height="7.46574199931783" ExternallyVisible="True" BackColor="00ffffff" Text="Mine Stockpile Weight:&#xD;&#xA;{Math.Round(Stockpile.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Next Request Threshold:&#xD;&#xA;{PosThresholdMonitor.CurrentThresholdValue/1000}&#xD;&#xA;" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="TrainSource" Type="Source" Location="54.5372650624168 5.55111512312578E-16 -96.9812605170705" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+          <Fixed Name="TrainSource" Type="Source" Location="339.555240104976 5.55111499042417E-16 -93.6518382817968" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@TrainSource" Type="TransferNode" Location="56.0372650624169 5.55111512312578E-16 -96.9812605170705" Scope="Public">
+              <Node Name="Output@TrainSource" Type="TransferNode" Location="341.055240104976 5.55111499042417E-16 -93.6518382817968" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2314,7 +2353,7 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="EntityType">Train</Property>
               <Property Name="InterarrivalTime">0</Property>
-              <Property Name="MaximumArrivals">6</Property>
+              <Property Name="MaximumArrivals">7</Property>
               <Property Name="CapitalCost" Units="USD">0.0</Property>
               <Property Name="OutputBufferCostPerUse" Units="USD">0.0</Property>
               <Property Name="OutputBufferHoldingCostRate" Units="USD per Hour">0.0</Property>
@@ -2325,17 +2364,9 @@
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="0">
-                <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
-                  <Points>
-                    <Point Location="55.5372693389654 5.55111512312578E-16 -96.4812551736832" />
-                    <Point Location="58.5372693389654 5.55111512312578E-16 -96.4812551736832" />
-                  </Points>
-                </Queue>
-              </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Entity Name="Train" Type="TrainEntity" Location="51.7511379712659 0 -101.001148853041" Size="0.5 0.5 0.25" Scope="Public">
+          <Entity Name="Train" Type="TrainEntity" Location="342.053800499752 -1.32701613496428E-23 -94.8701324394461" Size="0.5 0.5 0.25" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.5 0.5 0.25" />
               <IndexedSize Size="0.5 0.5 0.25" />
@@ -2380,32 +2411,30 @@
                   </DefaultFlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="13">
-                <FloorLabel Center="50.4837901139844 0 -101.010203874676" Width="1.93171244543107" Height="0.3511333867595" ExternallyVisible="True" BackColor="c0c0c0" CharsPerLine="30" Text="{Name}&#xD;&#xA;Dest: {DestinationNode}&#xD;&#xA;Contents: {Math.Round(FlowContainer.Contents.Weight / 1000,0)}/{FlowContainer.CurrentWeightCapacity / 1000}t&#xD;&#xA;" />
+              <AttachedObjects IndexList="12">
+                <FloorLabel Center="340.791482645455 -1.32701550387558E-23 -94.8540245579622" Width="1.93171244543107" Height="0.3511333867595" ExternallyVisible="True" BackColor="c0c0c0" CharsPerLine="30" Text="{Name}&#xD;&#xA;Dest: {DestinationNode}&#xD;&#xA;Contents: {Math.Round(FlowContainer.Contents.Weight / 1000,0)}/{FlowContainer.CurrentWeightCapacity / 1000}t&#xD;&#xA;" />
               </AttachedObjects>
             </Graphics>
           </Entity>
-          <Fixed Name="DummyPort" Type="DummyPortModel" Location="73.1535500182907 0 -92.2042581797796" Size="9.39102824569546 9.67977746335741 1.01239022930029" Scope="Public">
+          <Fixed Name="Port" Type="DummyPortModel" Location="353.588464788293 -1.32701613496428E-23 -91.0424064006005" Size="9.39102824569546 9.67977746335741 1.01239022930029" Scope="Public">
             <AssociatedNodes>
-              <Node Name="TrainOutput@DummyPort" Type="TransferNode" Location="71.7111060089391 0 -95.8308628414815" Scope="Public">
+              <Node Name="TrainOutput@Port" Type="TransferNode" Location="352.122852427199 -1.32701613496428E-23 -94.7037635899171" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-                  <Property Name="EnteredAddOnProcess">TrainOutput_DummyPort_Entered</Property>
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="TrainInput@DummyPort" Type="BasicNode" Location="69.3066668597455 0 -90.5360721148918" Scope="Public">
+              <Node Name="TrainInput@Port" Type="BasicNode" Location="349.741581629748 -1.32701613496428E-23 -89.3742203357127" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-                  <Property Name="EnteredAddOnProcess">TrainInput_DummyPort_Entered</Property>
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
@@ -2426,9 +2455,9 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="RequestSource" Type="Source" Location="2.50907654946809 -2.2204460492503E-16 -107.44319843784" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+          <Fixed Name="RequestSource" Type="Source" Location="-69.2462576979455 5.61772850460329E-14 -184.091325727898" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@RequestSource" Type="TransferNode" Location="4.00907654946809 -2.2204460492503E-16 -107.44319843784" Scope="Public">
+              <Node Name="Output@RequestSource" Type="TransferNode" Location="-67.7462576979455 5.61772850460329E-14 -184.091325727898" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2458,19 +2487,19 @@
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="2">
+              <AttachedObjects IndexList="1">
                 <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="3.50907602533701 -2.2204460492503E-16 -106.943201487884" />
-                    <Point Location="6.50907602533701 -2.2204460492503E-16 -106.943201487884" />
+                    <Point Location="-68.2462621740996 5.61772850460329E-14 -183.591330422089" />
+                    <Point Location="-65.2462621740996 5.61772850460329E-14 -183.591330422089" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="RequestProcessing" Type="Server" Location="10.787539124022 1.66533453693773E-15 -103.669134070761" Size="2.08920814597344 0.999103702764571 1.000000367302" Scope="Public">
+          <Fixed Name="RequestProcessing" Type="Server" Location="-60.9677956002288 5.80646641878957E-14 -180.317261360819" Size="2.08920814597344 0.999103702764571 1.000000367302" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@RequestProcessing" Type="BasicNode" Location="9.32108786632189 1.66533453693773E-15 -103.76978029766" Scope="Public">
+              <Node Name="Input@RequestProcessing" Type="BasicNode" Location="-62.4342468579289 5.80646641878957E-14 -180.417907587718" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2480,7 +2509,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@RequestProcessing" Type="TransferNode" Location="12.287539124022 1.66533453693773E-15 -103.669134070761" Scope="Public">
+              <Node Name="Output@RequestProcessing" Type="TransferNode" Location="-59.4677956002288 5.80646641878957E-14 -180.317261360819" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2552,31 +2581,31 @@
                   </Decorations>
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="3 4 5">
+              <AttachedObjects IndexList="2 3 4">
                 <Queue Queue="InputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="9.78754132799801 1.66533453693773E-15 -103.169130846858" />
-                    <Point Location="5.28183119963842 1.66533453693773E-15 -103.175157078889" />
+                    <Point Location="-61.9677973482758 5.80646641878957E-14 -179.817259781063" />
+                    <Point Location="-66.4735074766354 5.80646641878957E-14 -179.823286013094" />
                   </Points>
                 </Queue>
                 <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="11.787541327998 1.66533453693773E-15 -103.169130846858" />
-                    <Point Location="14.787541327998 1.66533453693773E-15 -103.169130846858" />
+                    <Point Location="-59.9677973482758 5.80646641878957E-14 -179.817259781063" />
+                    <Point Location="-56.9677973482758 5.80646641878957E-14 -179.817259781063" />
                   </Points>
                 </Queue>
                 <Queue Queue="Processing.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="8.05587188406611 1.66533453693773E-15 -104.569418590575" />
-                    <Point Location="11.754303909237 1.66533453693773E-15 -104.569418590575" />
+                    <Point Location="-63.6695271775194 5.80646641878957E-14 -181.21754752478" />
+                    <Point Location="-59.9710951523485 5.80646641878957E-14 -181.21754752478" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="RequestEnd" Type="Sink" Location="18.1973252050933 1.77635683940025E-15 -100.914860575737" Size="1.5049811730262 1.02881997857009 1.00000033977415" Scope="Public">
+          <Fixed Name="RequestEnd" Type="Sink" Location="-53.5580104728318 5.81756864903582E-14 -177.562987865795" Size="1.5049811730262 1.02881997857009 1.00000033977415" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@RequestEnd" Type="BasicNode" Location="16.6973252050933 1.77635683940025E-15 -100.914860575737" Scope="Public">
+              <Node Name="Input@RequestEnd" Type="BasicNode" Location="-55.0580104728318 5.81756864903582E-14 -177.562987865795" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2603,94 +2632,17 @@
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="6">
+              <AttachedObjects IndexList="5">
                 <Queue Queue="InputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="17.1973254512995 1.77635683940025E-15 -100.414863029495" />
-                    <Point Location="14.1973254512995 1.77635683940025E-15 -100.414863029495" />
+                    <Point Location="-54.5580141786486 5.81756864903582E-14 -177.0629919637" />
+                    <Point Location="-57.5580141786486 5.81756864903582E-14 -177.0629919637" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="SignalBlock2" Type="Resource" Location="31.903101810911 0 -22.7051917283455" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
-            <IndexedSizes>
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-            </IndexedSizes>
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="CapitalCost" Units="USD">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True">
-              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-              </SymbolInstances>
-              <AttachedObjects IndexList="11">
-                <StatusLabel Center="37.9562214140274 0 -22.6631721201044" Width="7.16604743910798" Height="0.69942143753611" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
-              </AttachedObjects>
-            </Graphics>
-          </Fixed>
-          <Fixed Name="SignalBlock3" Type="Resource" Location="6.89378483690522 0 -31.57653657743" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="SignalBlock2" Type="Resource" Location="307.470606684297 -2.00156125003466E-22 -29.5340726181256" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -2763,11 +2715,11 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="10">
-                <StatusLabel Center="1.38033038157219 0 -31.7940282598525" Width="7.70687554202458" Height="0.635811521701473" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+                <StatusLabel Center="307.487899733385 -2.00156125003466E-22 -28.6537429458437" Width="2.13619208663873" Height="0.322182286100915" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="SignalBlock1" Type="Resource" Location="23.8674684398008 2.55351295663786E-15 -35.3531659619892" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="SignalBlock3" Type="Resource" Location="292.749780973311 -2.00156125003466E-22 -35.9034083421375" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -2840,13 +2792,90 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="9">
-                <StatusLabel Center="30.2756495273092 0 -35.5506827215749" Width="7.79235089031821" Height="0.749014160955575" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+                <StatusLabel Center="292.719467430555 -2.00156125003466E-22 -35.1709151712801" Width="2.1979863464628" Height="0.276536139382216" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Source1" Type="Source" Location="66.9045951197773 1.33226762955019E-15 -123.663576225987" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+          <Fixed Name="SignalBlock1" Type="Resource" Location="308.955421794616 2.55351275648174E-15 -36.0646764389705" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="8">
+                <StatusLabel Center="308.89814279629 -2.00156125003466E-22 -35.2143058347956" Width="2.07089042688422" Height="0.246028625708647" ExternallyVisible="True" Expression="ResourceOwners.FirstItem" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="Source1" Type="Source" Location="-39.003921179514 1.33226762955019E-15 -181.702786415563" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@Source1" Type="TransferNode" Location="68.4045951197772 1.33226762955019E-15 -123.663576225987" Scope="Public">
+              <Node Name="Output@Source1" Type="TransferNode" Location="-37.5039211795141 1.33226762955019E-15 -181.702786415563" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2877,9 +2906,9 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="Sink1" Type="Sink" Location="71.9186103673862 -7.7715611723761E-16 -121.680798072257" Size="1.5049811730262 1.02881997857009 1.00000033977415" Scope="Public">
+          <Fixed Name="Sink1" Type="Sink" Location="-33.989905931905 -7.7715611723761E-16 -179.720008261833" Size="1.5049811730262 1.02881997857009 1.00000033977415" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@Sink1" Type="BasicNode" Location="70.4186103673862 -7.7715611723761E-16 -121.680798072257" Scope="Public">
+              <Node Name="Input@Sink1" Type="BasicNode" Location="-35.489905931905 -7.7715611723761E-16 -179.720008261833" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2908,7 +2937,7 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Entity Name="Ship" Type="ShipEntity" Location="100.775846371509 0 -92.1380139618073" Size="0.5 0.5 0.25" Scope="Public">
+          <Entity Name="Ship" Type="ShipEntity" Location="-37.2930234929538 0 -175.993552723894" Size="0.5 0.5 0.25" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2928,12 +2957,397 @@
                   </DefaultFlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="14">
-                <StackedBar Center="100.775844801217 0 -92.6880134373903" Width="0.6" Height="0.6" ExternallyVisible="True" Shape="1" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
+              <AttachedObjects IndexList="13">
+                <StackedBar Center="-37.2930276356641 0 -176.543552960455" Width="0.6" Height="0.6" ExternallyVisible="True" Shape="1" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
               </AttachedObjects>
             </Graphics>
           </Entity>
-          <Fixed Name="R_Main" Type="Resource" Location="20.3677997769549 2.35922392732846E-16 -112.190527126315" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+          <Fixed Name="R_Main" Type="Resource" Location="-51.39352452083 5.66352520436908E-14 -188.844644943581" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="21">
+                <FloorLabel Center="-51.3890421632582 5.64548408021892E-14 -188.700680424354" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="R_Side" Type="Resource" Location="-52.0751025931813 5.65797408924595E-14 -189.491527507234" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="22">
+                <FloorLabel Center="-52.0706202088535 5.6399329650958E-14 -189.347562977903" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="R_Side1" Type="Resource" Location="335.003525565588 1.80411041345463E-16 -82.9146346053261" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="24">
+                <FloorLabel Center="335.008013474132 -2.00156125003466E-22 -82.7706683473351" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="R_Main1" Type="Resource" Location="335.702664776118 4.02455646270494E-16 -82.2617538850711" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="25">
+                <FloorLabel Center="335.70715265787 2.22044404768906E-16 -82.1177876372871" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="R_Side2" Type="Resource" Location="326.840596282744 1.80411041345463E-16 -75.243443365623" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="26">
+                <FloorLabel Center="326.845082606924 -2.00156125003466E-22 -75.0994770792211" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="R_Main2" Type="Resource" Location="327.528164882304 2.35922192576721E-16 -74.590562645368" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
@@ -3006,11 +3420,11 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="27">
-                <FloorLabel Center="20.3722860864459 5.55111512312578E-17 -112.046560963045" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+                <FloorLabel Center="327.532651179624 5.55109510751328E-17 -74.4465963691731" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="R_Side" Type="Resource" Location="19.6802311773952 1.80411241501588E-16 -112.84340784657" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+          <Fixed Name="R_Side3" Type="Resource" Location="319.071058416198 1.80411041345463E-16 -66.6871141501721" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
@@ -3083,11 +3497,88 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="28">
-                <FloorLabel Center="19.684717513746 0 -112.699441673093" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+                <FloorLabel Center="319.075544627452 -2.00156125003466E-22 -66.5431489179657" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="R_Side1" Type="Resource" Location="49.9155722107734 1.80411241501588E-16 -82.2031241283448" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+          <Fixed Name="R_Main3" Type="Resource" Location="319.758627015758 2.35922192576721E-16 -66.0342334299171" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="29">
+                <FloorLabel Center="319.763113200152 5.55109510751328E-17 -65.8902682079177" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="R_Side4" Type="Resource" Location="310.613082014026 1.80411041345463E-16 -57.4423502592862" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
@@ -3160,11 +3651,11 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="30">
-                <FloorLabel Center="49.9200603041644 0 -82.0591587023499" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+                <FloorLabel Center="310.617568236747 -2.00156125003466E-22 -57.2983829459" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="R_Main1" Type="Resource" Location="50.6147114213034 4.02455846426619E-16 -81.5502434080898" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+          <Fixed Name="R_Main4" Type="Resource" Location="311.300650613586 2.35922192576721E-16 -56.7894695390312" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
@@ -3237,11 +3728,11 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="31">
-                <FloorLabel Center="50.6191994879016 2.22044604925031E-16 -81.4062779923019" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+                <FloorLabel Center="311.305136809447 5.55109510751328E-17 -56.645502235852" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="R_Side2" Type="Resource" Location="41.7526429279292 1.80411241501588E-16 -74.5319328886417" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+          <Fixed Name="R_Side5" Type="Resource" Location="303.827031041186 1.80411041345463E-16 -48.6893318286156" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
@@ -3314,11 +3805,11 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="32">
-                <FloorLabel Center="41.757129436956 0 -74.3879674342359" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+                <FloorLabel Center="303.83151717965 -2.00156125003466E-22 -48.5453646907219" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="R_Main2" Type="Resource" Location="42.4402115274889 2.35922392732846E-16 -73.8790521683867" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+          <Fixed Name="R_Main5" Type="Resource" Location="304.514599640745 2.35922192576721E-16 -48.0364511083606" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
@@ -3391,473 +3882,11 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="33">
-                <FloorLabel Center="42.4446980096559 5.55111512312578E-17 -73.7350867241879" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+                <FloorLabel Center="304.51908575235 5.55109510751328E-17 -47.8924839806739" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="R_Side3" Type="Resource" Location="33.983105061383 1.80411241501588E-16 -65.9756036731908" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
-            <IndexedSizes>
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-            </IndexedSizes>
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="CapitalCost" Units="USD">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True">
-              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-              </SymbolInstances>
-              <AttachedObjects IndexList="34">
-                <FloorLabel Center="33.9875914574842 0 -65.8316392729805" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
-              </AttachedObjects>
-            </Graphics>
-          </Fixed>
-          <Fixed Name="R_Main3" Type="Resource" Location="34.6706736609427 2.35922392732846E-16 -65.3227229529358" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
-            <IndexedSizes>
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-            </IndexedSizes>
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="CapitalCost" Units="USD">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True">
-              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-              </SymbolInstances>
-              <AttachedObjects IndexList="35">
-                <FloorLabel Center="34.6751600301841 5.55111512312578E-17 -65.1787585629325" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
-              </AttachedObjects>
-            </Graphics>
-          </Fixed>
-          <Fixed Name="R_Side4" Type="Resource" Location="25.5251286592115 1.80411241501588E-16 -56.7308397823049" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
-            <IndexedSizes>
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-            </IndexedSizes>
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="CapitalCost" Units="USD">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True">
-              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-              </SymbolInstances>
-              <AttachedObjects IndexList="36">
-                <FloorLabel Center="25.5296150667793 0 -56.5868733009148" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
-              </AttachedObjects>
-            </Graphics>
-          </Fixed>
-          <Fixed Name="R_Main4" Type="Resource" Location="26.2126972587712 2.35922392732846E-16 -56.0779590620499" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
-            <IndexedSizes>
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-            </IndexedSizes>
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="CapitalCost" Units="USD">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True">
-              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-              </SymbolInstances>
-              <AttachedObjects IndexList="37">
-                <FloorLabel Center="26.2171836394792 5.55111512312578E-17 -55.9339925908668" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
-              </AttachedObjects>
-            </Graphics>
-          </Fixed>
-          <Fixed Name="R_Side5" Type="Resource" Location="18.7390776863709 1.80411241501588E-16 -47.9778213516343" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
-            <IndexedSizes>
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-            </IndexedSizes>
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="CapitalCost" Units="USD">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True">
-              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-              </SymbolInstances>
-              <AttachedObjects IndexList="38">
-                <FloorLabel Center="18.7435640096816 0 -47.8338550457367" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
-              </AttachedObjects>
-            </Graphics>
-          </Fixed>
-          <Fixed Name="R_Main5" Type="Resource" Location="19.4266462859306 2.35922392732846E-16 -47.3249406313793" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
-            <IndexedSizes>
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-              <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
-            </IndexedSizes>
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="CapitalCost" Units="USD">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True">
-              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="409b05a5-006f-46bc-a033-5b9565086386" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="b2408bc6-0faa-4154-8f9a-aadac1bc34f1" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="1b78eb86-3a90-451a-95ed-bd202d3d2714" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="985248a3-8514-44ef-895d-57c9a5a4a0ed" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="872ea56d-0392-4e65-9970-035b87d45202" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="3d297d07-5300-46ca-986c-7401aaa10121" />
-                    </Decoration>
-                  </Decorations>
-                </SymbolInstance>
-              </SymbolInstances>
-              <AttachedObjects IndexList="39">
-                <FloorLabel Center="19.4311325823815 5.55111512312578E-17 -47.1809743356887" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
-              </AttachedObjects>
-            </Graphics>
-          </Fixed>
-          <Fixed Name="Sig1Port" Type="Resource" Location="60.9529903365383 0 -85.4833515436202" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="Sig1Port" Type="Resource" Location="346.040945371303 -1.32701613496428E-23 -86.1948636540196" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -3931,7 +3960,7 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Node Name="ExitT6" Type="TransferNode" Location="15.1010237775675 0 -38.5182236091742" Scope="Public">
+          <Node Name="ExitT6" Type="TransferNode" Location="297.583623124442 -2.00156125003466E-22 -38.9402503074955" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3942,7 +3971,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="Section2Entry" Type="BasicNode" Location="25.9811381636133 0 -27.475220081602" Scope="Public">
+          <Node Name="Section2Entry" Type="BasicNode" Location="304.941684870124 -2.00156125003466E-22 -32.6737291278137" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3953,7 +3982,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="UnallocatedTrainStation" Type="TransferNode" Location="59.7919139370092 0 -92.6242107534523" Scope="Public">
+          <Node Name="UnallocatedTrainStation" Type="TransferNode" Location="344.151218169602 -1.32701613496428E-23 -89.6840124392307" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3964,21 +3993,21 @@
             </Properties>
             <Graphics ExternallyVisible="True">
               <AutoQueues ParkingQueue="False" />
-              <AttachedObjects IndexList="1">
+              <AttachedObjects IndexList="0">
                 <Queue Queue="ParkingStation.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="60.231882528023 0 -93.5096466494572" Direction="-0.472849125085874 0 0.480417989734178" />
-                    <Point Location="59.7622962049532 0 -94.1372457190116" />
-                    <Point Location="59.2383915452533 0 -94.8374408925281" />
-                    <Point Location="58.6907747041121 0 -95.5693272424664" />
-                    <Point Location="58.1511224331003 0 -96.2905689961782" />
-                    <Point Location="57.5779978176408 0 -96.9581237681205" />
+                    <Point Location="344.591186440258 -1.32701550387558E-23 -90.5694478573125" Direction="-0.472849125085874 0 0.480417989734178" />
+                    <Point Location="344.121600117188 -1.32701550387558E-23 -91.1970469268669" />
+                    <Point Location="343.597695457488 -1.32701550387558E-23 -91.8972421003834" />
+                    <Point Location="343.050078616347 -1.32701550387558E-23 -92.6291284503217" />
+                    <Point Location="342.510426345335 -1.32701550387558E-23 -93.3503702040335" />
+                    <Point Location="341.937301729875 -1.32701550387558E-23 -94.0179249759758" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Node>
-          <Node Name="EnterT1" Type="BasicNode" Location="57.5152263887822 0 -87.3856776226645" Scope="Public">
+          <Node Name="EnterT1" Type="BasicNode" Location="342.603181423547 -1.32701613496428E-23 -88.0971897330639" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3989,28 +4018,18 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="TransferNode1" Type="TransferNode" Location="65.4526181020332 0 -86.8375253305071" Scope="Public">
+          <Node Name="PortQueueBlock" Type="TransferNode" Location="345.971850530987 -1.32701613496428E-23 -87.65762659074" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="EnteredAddOnProcess">TransferNode1_Entered</Property>
+              <Property Name="EnteredAddOnProcess">PortQueueBlock_Entered</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="BasicNode3" Type="BasicNode" Location="65.4453337734266 0 -99.4784227660919" Scope="Public">
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True" />
-          </Node>
-          <Node Name="BasicNode1" Type="BasicNode" Location="68.3985636595692 0 -121.690963973873" Scope="Public">
+          <Node Name="BasicNode3" Type="BasicNode" Location="347.685381983895 -1.32701613496428E-23 -97.2737988955782" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4020,7 +4039,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="TransferNode2" Type="TransferNode" Location="64.4092595572243 0 -117.700767209452" Scope="Public">
+          <Node Name="BasicNode1" Type="BasicNode" Location="-37.509952639722 0 -179.730174163449" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4030,7 +4049,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="EnterT" Type="BasicNode" Location="19.6367031731408 0 -111.937908474363" Scope="Public">
+          <Node Name="TransferNode2" Type="TransferNode" Location="-41.4992567420669 0 -175.739977399028" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4040,7 +4059,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="ExitT" Type="BasicNode" Location="20.6014772888728 0 -112.86317406131" Scope="Public">
+          <Node Name="EnterT" Type="BasicNode" Location="-52.1186305974357 5.6399329650958E-14 -188.586035764421" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4050,7 +4069,17 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="EnterT2" Type="BasicNode" Location="49.8801436341982 0 -81.2976247561378" Scope="Public">
+          <Node Name="ExitT" Type="BasicNode" Location="-51.1538583890523 5.6399329650958E-14 -189.511301351368" Scope="Public">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Node>
+          <Node Name="EnterT2" Type="BasicNode" Location="334.968096989013 -2.00156125003466E-22 -82.0091352331191" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4061,7 +4090,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="ExitT1" Type="BasicNode" Location="50.8328496026882 0 -82.2228903430848" Scope="Public">
+          <Node Name="ExitT1" Type="BasicNode" Location="335.920802957503 -2.00156125003466E-22 -82.9344008200661" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4072,7 +4101,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="EnterT3" Type="BasicNode" Location="41.7091149236748 0 -73.6264335164347" Scope="Public">
+          <Node Name="EnterT3" Type="BasicNode" Location="326.79706827849 -2.00156125003466E-22 -74.337943993416" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4083,7 +4112,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="ExitT2" Type="BasicNode" Location="42.6657896118735 0 -74.5516991033817" Scope="Public">
+          <Node Name="ExitT2" Type="BasicNode" Location="327.753742966688 -2.00156125003466E-22 -75.263209580363" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4094,7 +4123,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="EnterT4" Type="BasicNode" Location="33.9395770571286 0 -65.0701043009838" Scope="Public">
+          <Node Name="EnterT4" Type="BasicNode" Location="319.027527825538 -2.00156125003466E-22 -65.7816178399049" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4105,7 +4134,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="ExitT3" Type="BasicNode" Location="34.9043511728606 0 -65.9992592331023" Scope="Public">
+          <Node Name="ExitT3" Type="BasicNode" Location="319.992304527675 -2.00156125003466E-22 -66.7107697100836" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4116,7 +4145,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="EnterT5" Type="BasicNode" Location="25.4816006549571 0 -55.8253404100979" Scope="Public">
+          <Node Name="EnterT5" Type="BasicNode" Location="310.569554009772 -2.00156125003466E-22 -56.5368508870792" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4127,7 +4156,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="ExitT4" Type="BasicNode" Location="26.4463747706891 0 -56.750605997045" Scope="Public">
+          <Node Name="ExitT4" Type="BasicNode" Location="311.534328125504 -2.00156125003466E-22 -57.4621164740263" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4138,7 +4167,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="EnterT6" Type="BasicNode" Location="18.6955496821165 0 -47.0723219794273" Scope="Public">
+          <Node Name="EnterT6" Type="BasicNode" Location="303.783503036931 -2.00156125003466E-22 -47.7838324564086" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4149,7 +4178,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="ExitT5" Type="BasicNode" Location="19.6603237978485 0 -47.9975894625942" Scope="Public">
+          <Node Name="ExitT5" Type="BasicNode" Location="304.748277152663 -2.00156125003466E-22 -48.7090999395755" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4157,6 +4186,48 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="EnteredAddOnProcess">ExitT5_Entered</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Node>
+          <Node Name="BasicNode2" Type="BasicNode" Location="349.347621338299 -1.32701487278678E-23 -88.5056853337435" Scope="Public">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EnteredAddOnProcess">TrainInput_Port_Entered</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Node>
+          <Node Name="TransferNode3" Type="TransferNode" Location="352.558238970316 -2.00156118692579E-22 -95.7454983753444" Scope="Public">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EnteredAddOnProcess">TrainOutput_Port_Entered</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Node>
+          <Node Name="MineTrainOutput" Type="TransferNode" Location="294.937317684912 -2.00156125003466E-22 -31.5457300458816" Scope="Public">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Node>
+          <Node Name="MineTrainInput" Type="BasicNode" Location="302.943170787592 -2.00156125003466E-22 -27.1416126509515" Scope="Public">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
@@ -4170,7 +4241,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Path5" Type="Path" Size="5.34 0 0" Scope="Public" Start="TransferNode1" End="TrainInput@DummyPort">
+          <Link Name="Path7" Type="Path" Size="8.37 0 0" Scope="Public" Start="BasicNode3" End="UnallocatedTrainStation">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4180,30 +4251,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Path6" Type="Path" Size="10.17 0 0" Scope="Public" Start="TrainOutput@DummyPort" End="BasicNode3">
-            <Points>
-              <Point Location="71.2161086879818 0 -100.163090976293" />
-            </Points>
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True" />
-          </Link>
-          <Link Name="Path7" Type="Path" Size="8.88 0 0" Scope="Public" Start="BasicNode3" End="UnallocatedTrainStation">
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True" />
-          </Link>
-          <Link Name="Path8" Type="Path" Size="5.71 0 0" Scope="Public" Start="UnallocatedTrainStation" End="EnterT1">
+          <Link Name="Path8" Type="Path" Size="2.22 0 0" Scope="Public" Start="UnallocatedTrainStation" End="EnterT1">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4233,7 +4281,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Path9" Type="Path" Size="7.96 0 0" Scope="Public" Start="EnterT1" End="TransferNode1">
+          <Link Name="Path9" Type="Path" Size="3.4 0 0" Scope="Public" Start="EnterT1" End="PortQueueBlock">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4243,37 +4291,9 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="TimePath1" Type="TimePath" Size="16.49 0 0" Scope="Public" Start="ExitT6" End="Section2Entry">
+          <Link Name="TimePath1" Type="TimePath" Size="10.04 0 0" Scope="Public" Start="ExitT6" End="Section2Entry">
             <Points>
-              <Point Location="16.4202867295326 0 -33.5013541056621" />
-            </Points>
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="TravelTime">20</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True" />
-          </Link>
-          <Link Name="TimePath2" Type="TimePath" Size="11.14 0 0" Scope="Public" Start="Section2Entry" End="TrainInput@DummyMine">
-            <Points>
-              <Point Location="27.6633693865898 0 -22.1354927102408" />
-            </Points>
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="TravelTime">20</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True" />
-          </Link>
-          <Link Name="TimePath3" Type="TimePath" Size="16.33 0 0" Scope="Public" Start="TrainOutput@DummyMine" End="ExitT6">
-            <Points>
-              <Point Location="11.7641406660961 0 -30.1278498197621" />
+              <Point Location="298.902886076407 -2.00156125003466E-22 -36.1910037368202" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -4330,8 +4350,8 @@
           </Link>
           <Link Name="Side" Type="Path" Size="5000 0 0" Scope="Public" Start="ExitT" End="EnterT">
             <Points>
-              <Point Location="20.1439919315332 0 -112.865970761228" />
-              <Point Location="19.6382289645156 0 -112.401852075287" />
+              <Point Location="-51.6113418390433 5.6399329650958E-14 -189.514090421892" />
+              <Point Location="-52.1171048060609 5.6399329650958E-14 -189.049971735951" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -4347,8 +4367,8 @@
           </Link>
           <Link Name="Side1" Type="Path" Size="5000 0 0" Scope="Public" Start="ExitT1" End="EnterT2">
             <Points>
-              <Point Location="50.3793329649114 0 -82.2256870430028" />
-              <Point Location="49.8735699978938 0 -81.7615683570618" />
+              <Point Location="335.467286319726 -2.00156125003466E-22 -82.9371975199841" />
+              <Point Location="334.961523352709 -2.00156125003466E-22 -82.4730788340431" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -4377,8 +4397,8 @@
           </Link>
           <Link Name="Side2" Type="Path" Size="5000 0 0" Scope="Public" Start="ExitT2" End="EnterT3">
             <Points>
-              <Point Location="42.2164036820672 0 -74.5544958032997" />
-              <Point Location="41.7106407150496 0 -74.0903771173587" />
+              <Point Location="327.304357036882 -2.00156125003466E-22 -75.266006280281" />
+              <Point Location="326.798594069864 -2.00156125003466E-22 -74.80188759434" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -4407,8 +4427,8 @@
           </Link>
           <Link Name="Side3" Type="Path" Size="5000 0 0" Scope="Public" Start="ExitT3" End="EnterT4">
             <Points>
-              <Point Location="34.446865815521 0 -65.9981665878487" />
-              <Point Location="33.9411028485034 0 -65.5340479019078" />
+              <Point Location="319.534819170336 -2.00156125003466E-22 -66.70967706483" />
+              <Point Location="319.029056203318 -2.00156125003466E-22 -66.2455583788891" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -4437,8 +4457,8 @@
           </Link>
           <Link Name="Side4" Type="Path" Size="5000 0 0" Scope="Public" Start="ExitT4" End="EnterT5">
             <Points>
-              <Point Location="25.9888894133495 0 -56.7534026969629" />
-              <Point Location="25.4831264463319 0 -56.2892840110219" />
+              <Point Location="311.076842768164 -2.00156125003466E-22 -57.4649131739442" />
+              <Point Location="310.571079801147 -2.00156125003466E-22 -57.0007944880032" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -4467,8 +4487,8 @@
           </Link>
           <Link Name="Side5" Type="Path" Size="5000 0 0" Scope="Public" Start="ExitT5" End="EnterT6">
             <Points>
-              <Point Location="19.2028384405089 0 -48.0003842662923" />
-              <Point Location="18.6970754734913 0 -47.5362655803513" />
+              <Point Location="304.290791795324 -2.00156125003466E-22 -48.7118947432736" />
+              <Point Location="303.785028828306 -2.00156125003466E-22 -48.2477760573326" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -4579,6 +4599,97 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
+          <Link Name="Connector4" Type="Connector" Size="0 0 0" Scope="Public" Start="BasicNode2" End="TrainInput@Port">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="Path4" Type="Path" Size="3.48 0 0" Scope="Public" Start="PortQueueBlock" End="BasicNode2">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="Path5" Type="Path" Size="5.77 0 0" Scope="Public" Start="TransferNode3" End="BasicNode3">
+            <Points>
+              <Point Location="350.691217526 -1.32701542498948E-23 -97.7376817642087" />
+            </Points>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="Connector5" Type="Connector" Size="0 0 0" Scope="Public" Start="TrainOutput@Port" End="TransferNode3">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="Connector6" Type="Connector" Size="0 0 0" Scope="Public" Start="TrainOutput@Mine" End="MineTrainOutput">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="Connector7" Type="Connector" Size="0 0 0" Scope="Public" Start="MineTrainInput" End="TrainInput@Mine">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="TimePath4" Type="TimePath" Size="8.03 0 0" Scope="Public" Start="MineTrainOutput" End="ExitT6">
+            <Points>
+              <Point Location="295.155876875823 -2.00156125003466E-22 -34.5576553343246" />
+            </Points>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="TravelTime">20</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="TimePath5" Type="TimePath" Size="6.73 0 0" Scope="Public" Start="Section2Entry" End="MineTrainInput">
+            <Points>
+              <Point Location="305.508995809656 -2.00156125003466E-22 -29.4319932132367" />
+            </Points>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="TravelTime">20</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
         </Objects>
         <Tokens>
           <Token Name="RequestTrainToken">
@@ -4613,36 +4724,85 @@
           </DayPattern>
         </DayPatterns>
         <Graphics>
-          <Rectangle Center="10.8160771841947 -0.114695889921961 -102.899284643547" Width="21.5580660938073" Height="13.4135085682561" ExternallyVisible="True" Locked="True">
+          <Rectangle Center="-60.9392573866844 -0.114695889921904 -179.547407858014" Width="21.5580660938073" Height="13.4135085682561" ExternallyVisible="True">
             <Decorations>
               <Decoration SurfaceId="0">
                 <MaterialRef Id="f0891be3-634c-47cd-9ff2-af19a222b590" />
               </Decoration>
             </Decorations>
           </Rectangle>
-          <FloorLabel Center="34.1626215962609 0 6.54038838085231" Width="28.2764459860509" Height="14.0547577531145" ExternallyVisible="True" Text="{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].DestinationNode, 0)}&#xD;&#xA;" />
-          <FloorLabel Center="91.8248405829406 0 6.6488405460057" Width="28.1074500243561" Height="14.1861990758091" ExternallyVisible="True" Text="{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;" />
-          <FloorLabel Center="5.34307399172574 0 6.49851011312911" Width="28.1450046633561" Height="13.9890370917672" ExternallyVisible="True" Text="{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].Name, 0)}&#xD;&#xA;" />
-          <FloorLabel Center="62.9278132241504 0 6.5785277325935" Width="28.3102452154947" Height="14.0923124167414" ExternallyVisible="True" Text="{Math.If(Train.Population.NumberInSystem &gt;0, Math.Round(Train[1].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Math.Round(Train[2].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Math.Round(Train[3].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Math.Round(Train[4].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Math.Round(Train[5].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Math.Round(Train[6].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Math.Round(Train[7].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Math.Round(Train[8].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Math.Round(Train[9].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Math.Round(Train[10].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Math.Round(Train[11].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Math.Round(Train[12].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Math.Round(Train[13].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Math.Round(Train[14].FlowContainer.Contents.Weight/1000,0), 0)}" />
-          <FloorLabel Center="5.38560680390291 0 -2.40734256424059" Width="28.2598831439409" Height="2.62882633897125" ExternallyVisible="True" Text="Train Name:" />
-          <FloorLabel Center="34.2557527286462 0 -2.40734266696655" Width="28.2598831439409" Height="2.62882633897125" ExternallyVisible="True" Text="Destination:" />
-          <FloorLabel Center="62.9869443285787 0 -2.3575827144342" Width="28.2598831439409" Height="2.62882633897125" ExternallyVisible="True" Text="Contents (t):" />
-          <FloorLabel Center="91.9613114620171 0 -2.31721141811903" Width="28.2598831439409" Height="2.62882633897125" ExternallyVisible="True" Text="Capacity (t):" />
-          <FloorLabel Center="104.805079240455 0 -73.0779698694806" Width="32.6731645927246" Height="18.7499410446885" ExternallyVisible="True" Text="Train Unloading Time(h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_TrainUnloadingTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_TrainUnloadingTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_TrainUnloadingTime.Minimum,2)}" />
-          <FloorLabel Center="95.8393638334685 0 -50.0281036170873" Width="32.6731645927246" Height="18.7499410446885" ExternallyVisible="True" Text="Train Cycle Time(h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_TrainCycleTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_TrainCycleTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_TrainCycleTime.Minimum,2)}" />
-          <FloorLabel Center="81.2914672135431 0 -26.5141276507838" Width="32.6731645927246" Height="18.7499410446885" ExternallyVisible="True" Text="Train Loading Time(h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_TrainLoadingTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_TrainLoadingTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_TrainLoadingTime.Minimum,2)}" />
-          <FloorLabel Center="105.654800110999 0 -93.2311132093434" Width="36.1280461649501" Height="12.1638038780947" ExternallyVisible="True" Text="Trains Unloaded:&#xD;&#xA;{Tally_TrainUnloadingTime.NumberObservations}&#xD;&#xA;Tonnes Unloaded: &#xD;&#xA;{Math.Round(DummyPort.FlowOutput@Emptier1.FlowRegulator.CurrentWeightFlowOut/1000,0)}" />
-          <FloorLabel Center="20.5537284574559 0 -113.734494773355" Width="5.17024139842246" Height="0.584231509583148" ExternallyVisible="True" Locked="True" Text="Siding Template" />
-          <Pie Center="-26.5405691619414 0 -104.656229189302" Width="25.8164997551285" Height="16.0406518478532" ExternallyVisible="True" Title="Train 1 Utilisation" ListState="Train[1].ResourceState" TextScale="1.7" />
-          <Pie Center="-26.6222271717767 0 -88.2297024191973" Width="25.8164997551285" Height="16.1094958472002" ExternallyVisible="True" Title="Train 2 Utilisation" ListState="Train[2].ResourceState" TextScale="1.7" />
-          <Pie Center="-26.614849141367 0 -71.8787630006755" Width="25.782077755455" Height="15.8960794492245" ExternallyVisible="True" Title="Train 3 Utilisation" ListState="Train[3].ResourceState" TextScale="1.7" />
-          <Pie Center="-26.4274487297584 0 -55.599927720043" Width="25.8164997551285" Height="15.9718078485062" ExternallyVisible="True" Title="Train 4 Utilisation" ListState="Train[4].ResourceState" TextScale="1.7" />
-          <Pie Center="-26.5681158818914 0 -39.2520798063343" Width="25.6788117564342" Height="16.0406518478532" ExternallyVisible="True" Title="Train 5 Utilisation" ListState="Train[5].ResourceState" TextScale="1.7" />
-          <Pie Center="-26.6138952272288 0 -22.8130200209663" Width="25.6423244899918" Height="15.9346321842223" ExternallyVisible="True" Title="Train 6 Utilisation" ListState="Train[6].ResourceState" TextScale="1.7" />
+          <FloorLabel Center="38.4524727742926 0 15.8232068251277" Width="83.8990573626285" Height="47.0511087518433" ExternallyVisible="True" Locked="True" BackColor="deb887" Text="&lt;b&gt;Destination&lt;/b&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].DestinationNode, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].DestinationNode, 0)}&#xD;&#xA;" />
+          <FloorLabel Center="207.141786626377 0 15.8116704746939" Width="83.002968441763" Height="47.0952625647894" ExternallyVisible="True" Locked="True" BackColor="deb887" Text="&lt;b&gt;Capacity (t):&lt;/b&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;" />
+          <FloorLabel Center="122.513083947133 0 15.9558864388851" Width="82.2605427859791" Height="47.066886981343" ExternallyVisible="True" Locked="True" BackColor="deb887" Text="&lt;b&gt;Contents (t):&lt;/b&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Math.Round(Train[1].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Math.Round(Train[2].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Math.Round(Train[3].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Math.Round(Train[4].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Math.Round(Train[5].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Math.Round(Train[6].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Math.Round(Train[7].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Math.Round(Train[8].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Math.Round(Train[9].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Math.Round(Train[10].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Math.Round(Train[11].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Math.Round(Train[12].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Math.Round(Train[13].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Math.Round(Train[14].FlowContainer.Contents.Weight/1000,0), 0)}" />
+          <FloorLabel Center="215.648324831987 0 -112.959018881025" Width="62.1817136494457" Height="34.7459865393012" ExternallyVisible="True" Locked="True" BackColor="deb887" Text="Train Unloading Time(h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_TrainUnloadingTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_TrainUnloadingTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_TrainUnloadingTime.Minimum,2)}" />
+          <FloorLabel Center="215.396558684301 0 -76.6584022894632" Width="62.2892195408502" Height="35.3847896531753" ExternallyVisible="True" Locked="True" BackColor="deb887" Text="Train Cycle Time(h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_TrainCycleTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_TrainCycleTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_TrainCycleTime.Minimum,2)}" />
+          <FloorLabel Center="215.328328000604 0 -39.9224480788505" Width="62.0498512039416" Height="35.4367248505148" ExternallyVisible="True" Locked="True" BackColor="deb887" Text="Train Loading Time(h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_TrainLoadingTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_TrainLoadingTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_TrainLoadingTime.Minimum,2)}" />
+          <FloorLabel Center="215.725788389487 0 -142.864089166515" Width="62.5135618372656" Height="22.2587626639579" ExternallyVisible="True" Locked="True" BackColor="deb887" Text="Trains Unloaded:&#xD;&#xA;{Tally_TrainUnloadingTime.NumberObservations}&#xD;&#xA;Tonnes Unloaded: &#xD;&#xA;{Math.Round(Port.FlowOutput@Emptier1.FlowRegulator.CurrentWeightFlowOut/1000,0)}" />
+          <FloorLabel Center="-51.3063966768347 5.6399329650958E-14 -190.932768445732" Width="5.17024139842246" Height="0.584231509583148" ExternallyVisible="True" Text="Siding Template" />
+          <Pie Center="-60.0568095008551 0 -93.757963924327" Width="51.7737183975315" Height="32.8364992047018" ExternallyVisible="True" Locked="True" Title="Train 1 Utilisation" ListState="Train[1].ResourceState" TextScale="3" />
+          <Pie Center="-60.2513123379537 0 -127.591919730155" Width="52.0282009332414" Height="32.650860668339" ExternallyVisible="True" Locked="True" Title="Train 2 Utilisation" ListState="Train[2].ResourceState" TextScale="3" />
+          <Pie Center="-59.9563690421919 0 -60.1561560932409" Width="51.4848138621481" Height="32.9464093417833" ExternallyVisible="True" Locked="True" Title="Train 3 Utilisation" ListState="Train[3].ResourceState" TextScale="3" />
+          <Pie Center="-5.01567172721124 0 -127.39594029067" Width="51.8246149046735" Height="32.5386209232167" ExternallyVisible="True" Locked="True" Title="Train 4 Utilisation" ListState="Train[4].ResourceState" TextScale="3" />
+          <Pie Center="-4.97820110543094 0 -93.8221695374722" Width="51.7688702824777" Height="32.9637404725572" ExternallyVisible="True" Locked="True" Title="Train 5 Utilisation" ListState="Train[5].ResourceState" TextScale="3" />
+          <Pie Center="-4.95272534347874 0 -60.3273084850278" Width="52.0031524340306" Height="32.955696585175" ExternallyVisible="True" Locked="True" Title="Train 6 Utilisation" ListState="Train[6].ResourceState" TextScale="3" />
+          <FloorLabel Center="-46.3532326864057 0 15.9460332872716" Width="82.313430121592" Height="47.43622207983" ExternallyVisible="True" Locked="True" BackColor="deb887" Text="&lt;B&gt;Train Name:&lt;/b&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].Name, 0)}&#xD;&#xA;" />
+          <SymbolInstance Center="120.091654543891 0 -143.679161826841" Locked="True" ExternallyVisible="True">
+            <SymbolRef Id="70c5c597-bda1-45ff-97a8-36fbd6ce093e" />
+          </SymbolInstance>
+          <SymbolInstance Center="114.540067146837 0 -96.5845156308242" Locked="True" ExternallyVisible="True">
+            <SymbolRef Id="fa85ffe5-b96c-422a-9787-2d9beeea58fb" />
+          </SymbolInstance>
+          <SymbolInstance Center="83.6357483024746 0 -42.7455494648792" Locked="True" ExternallyVisible="True">
+            <SymbolRef Id="538111b6-850e-4d21-a2eb-25d57fb49474" />
+          </SymbolInstance>
+          <Rectangle Center="101.649339478203 -0.00649512801267349 -89.2962832424055" Width="138.947459135126" Height="153.961928162548" ExternallyVisible="True" Locked="True">
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="ca774b9e-d66e-442d-ae93-354e3e553107" />
+              </Decoration>
+            </Decorations>
+          </Rectangle>
+          <FloorLabel Center="96.5398073241232 0.97648841667138 -155.708105806015" Width="19.7157537624339" Height="3.65984044606552" ExternallyVisible="True" BackColor="ffd700" CharsPerLine="19" Text="Train Depot? Holding? Waiting Station? Capacity?" />
+          <FloorLabel Center="38.5022893045751 0.97648841667138 -26.986230414706" Width="17.9026675584885" Height="3.39548399817257" ExternallyVisible="True" BackColor="ffd700" CharsPerLine="19" Text="Is Mine Rail Loop? Is Last siding?" />
+          <FloorLabel Center="54.1030630886563 0.976488416671373 -134.324922218548" Width="33.9438717848609" Height="53.0498090705076" ExternallyVisible="True" BackColor="ffd700" CharsPerLine="19" Text="Questions-&#xD;&#xA;Which sidings will be disabled?&#xD;&#xA;Length of the rail marks?&#xD;&#xA;Port Signal Blocks?" />
+          <FloorLabel Center="129.993717162915 0.97648841667138 -168.018969360797" Width="20.8380217016022" Height="2.54779761478744" ExternallyVisible="True" BackColor="ffd700" CharsPerLine="19" Text="Port Diagram" />
+          <FloorLabel Center="51.6528376289633 0.976488416671373 -12.5407753738391" Width="27.8829464629373" Height="2.63905046788559" ExternallyVisible="True" BackColor="ffd700" CharsPerLine="19" Text="Mine Diagram" />
+          <SymbolInstance Center="111.708638062343 0 -154.200705066394" Scale="0.411870225803457" ExternallyVisible="True">
+            <SymbolRef Id="15fee571-73b7-4515-9d2d-d7770aab3a02" />
+          </SymbolInstance>
+          <SymbolInstance Center="99.8280569659622 0 -131.680897848665" Scale="0.411870225803457" ExternallyVisible="True">
+            <SymbolRef Id="15fee571-73b7-4515-9d2d-d7770aab3a02" />
+          </SymbolInstance>
+          <SymbolInstance Center="94.7653822474656 0 -114.485259916556" Scale="0.411870225803457" ExternallyVisible="True">
+            <SymbolRef Id="15fee571-73b7-4515-9d2d-d7770aab3a02" />
+          </SymbolInstance>
+          <SymbolInstance Center="104.9780220514 0 -91.8777939789704" Scale="0.411870225803457" ExternallyVisible="True">
+            <SymbolRef Id="15fee571-73b7-4515-9d2d-d7770aab3a02" />
+          </SymbolInstance>
+          <SymbolInstance Center="98.5100195885191 0 -66.2589103377997" Scale="0.411870225803457" ExternallyVisible="True">
+            <SymbolRef Id="15fee571-73b7-4515-9d2d-d7770aab3a02" />
+          </SymbolInstance>
+          <SymbolInstance Center="91.4484601210547 0 -46.8636284522077" Scale="0.411870225803457" ExternallyVisible="True">
+            <SymbolRef Id="15fee571-73b7-4515-9d2d-d7770aab3a02" />
+          </SymbolInstance>
+          <SymbolInstance Center="66.8665557366648 0 -38.0659199623709" Scale="0.411870225803457" ExternallyVisible="True">
+            <SymbolRef Id="15fee571-73b7-4515-9d2d-d7770aab3a02" />
+          </SymbolInstance>
+          <SymbolInstance Center="50.6991615595436 0 -20.3587771875868" Scale="0.411870225803457" ExternallyVisible="True">
+            <SymbolRef Id="15fee571-73b7-4515-9d2d-d7770aab3a02" />
+          </SymbolInstance>
+          <FloorLabel Center="157.480026298692 0.831652642831813 -153.956639646596" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 1&lt;/B&gt;&lt;/Blue&gt;" />
+          <FloorLabel Center="157.597136118682 0.831652642831813 -131.249140329457" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 2&lt;/B&gt;&lt;/Blue&gt;" />
+          <FloorLabel Center="157.971100436278 0.831652642831813 -113.884801729414" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 3&lt;/B&gt;&lt;/Blue&gt;" />
+          <FloorLabel Center="158.035053072087 0.831652642831813 -91.5965548941126" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 4&lt;/B&gt;&lt;/Blue&gt;" />
+          <FloorLabel Center="157.818107706781 0.831652642831813 -65.6436958407772" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 5&lt;/B&gt;&lt;/Blue&gt;" />
+          <FloorLabel Center="157.594547962406 0.831652642831813 -46.4705479589504" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 6&lt;/B&gt;&lt;/Blue&gt;" />
+          <FloorLabel Center="157.716035413161 0.831652642831813 -37.52250949758" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 7&lt;/B&gt;&lt;/Blue&gt;" />
+          <FloorLabel Center="157.564726312479 0.831652642831813 -20.0783694510351" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 8&lt;/B&gt;&lt;/Blue&gt;" />
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="TrainUnloader" Id="7ac082ac-d443-43b6-a50a-16218e7be43c" Revision="2" BaseClass="Emptier1" CheckBaseForAdvancedProperties="True">
+      <FixedDefinition Name="TrainUnloader" Id="7ac082ac-d443-43b6-a50a-16218e7be43c" Revision="3" BaseClass="Emptier1" CheckBaseForAdvancedProperties="True">
         <Lists />
         <PropertyDefinitions>
           <Categories>
@@ -4749,35 +4909,35 @@
     <DefinitionRefs>
       <DefinitionRef Name="RequestEntity">
         <Id>337b7c93-2a48-4a37-aafe-ad72ad7b8f31</Id>
-        <Revision>7</Revision>
+        <Revision>8</Revision>
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>332</Revision>
+        <Revision>367</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
-        <Revision>45</Revision>
+        <Revision>46</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TrainEntity">
         <Id>eda2504a-4cf7-47eb-a302-9c24622fa118</Id>
-        <Revision>14</Revision>
+        <Revision>18</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyPortModel">
         <Id>6f605774-81cb-44d1-b3c1-a310b58758b8</Id>
-        <Revision>9</Revision>
+        <Revision>11</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipEntity">
         <Id>a4bd7d4c-271b-46c4-a317-347c5fa5036f</Id>
-        <Revision>2</Revision>
+        <Revision>3</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipLoader">
         <Id>2b848702-2e02-44a8-bf6e-e45244ec5088</Id>
-        <Revision>2</Revision>
+        <Revision>3</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TrainUnloader">
         <Id>7ac082ac-d443-43b6-a50a-16218e7be43c</Id>
-        <Revision>2</Revision>
+        <Revision>3</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TransferNode">
         <Id>0d40fbf0-8206-443f-b771-65f85633a2f6</Id>
@@ -4883,17 +5043,18 @@
       <ColorMaterial Id="3d297d07-5300-46ca-986c-7401aaa10121" Color="ffffff" />
       <ColorMaterial Id="9efa07fc-2d25-4e81-8d58-c516543179a7" Color="008000" />
       <ColorMaterial Id="f0891be3-634c-47cd-9ff2-af19a222b590" Color="deb887" />
+      <ColorMaterial Id="ca774b9e-d66e-442d-ae93-354e3e553107" Color="ffffff" />
     </Materials>
     <Symbols>
-      <Symbol Name="B7805-0200-CE-PR-002-SK-006_Rev B" Description="3311 x 2338 pixels" Id="53ce25f8-a844-4432-9b42-21e99be2f18e">
+      <Symbol Name="Mine_Diagram" Description="3311 x 2338 pixels" Id="53ce25f8-a844-4432-9b42-21e99be2f18e">
         <Thumbnail>
-          <FileRef Name="Data\Thumbnails\B7805-0200-CE-PR-002-SK-006_Rev B.png" />
+          <FileRef Name="Data\Thumbnails\Mine_Diagram.png" />
         </Thumbnail>
         <Graphics>
           <Geometry Center="0 0 0" Scale="1">
             <GeometryData>
               <MeshData>
-                <FileRef Name="Data\Geometry\B7805-0200-CE-PR-002-SK-006_Rev B.s3d" />
+                <FileRef Name="Data\Geometry\Mine_Diagram.s3d" />
               </MeshData>
               <GeometryDataPieces>
                 <GeometryDataPiece Id="0">
@@ -4909,15 +5070,15 @@
           </Geometry>
         </Graphics>
       </Symbol>
-      <Symbol Name="B7805-0200-CE-PR-000-SK-001" Description="1654 x 1169 pixels" Id="cc8e029a-3d85-4683-aa10-598a2b4f682a">
+      <Symbol Name="Mine_Process_Flow_Diagram" Description="1654 x 1169 pixels" Id="cc8e029a-3d85-4683-aa10-598a2b4f682a">
         <Thumbnail>
-          <FileRef Name="Data\Thumbnails\B7805-0200-CE-PR-000-SK-001.png" />
+          <FileRef Name="Data\Thumbnails\Mine_Process_Flow_Diagram.png" />
         </Thumbnail>
         <Graphics>
           <Geometry Center="0 0 0" Scale="1">
             <GeometryData>
               <MeshData>
-                <FileRef Name="Data\Geometry\B7805-0200-CE-PR-000-SK-001.s3d" />
+                <FileRef Name="Data\Geometry\Mine_Process_Flow_Diagram.s3d" />
               </MeshData>
               <GeometryDataPieces>
                 <GeometryDataPiece Id="0">
@@ -4931,6 +5092,166 @@
               </Decoration>
             </Decorations>
           </Geometry>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="Port_Rail_Diagram" Description="1653 x 1168 pixels" Id="7f46d21d-244e-4167-a478-13da837da784">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\Port_Rail_Diagram.png" />
+        </Thumbnail>
+        <Graphics>
+          <Geometry Center="0 0 0" Scale="10">
+            <GeometryData>
+              <MeshData>
+                <FileRef Name="Data\Geometry\Port_Rail_Diagram.s3d" />
+              </MeshData>
+              <GeometryDataPieces>
+                <GeometryDataPiece Id="0">
+                  <MaterialRef Id="cf61a829-ede1-4b55-b6b8-3dbd3781f1df" />
+                </GeometryDataPiece>
+              </GeometryDataPieces>
+            </GeometryData>
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="cf61a829-ede1-4b55-b6b8-3dbd3781f1df" />
+              </Decoration>
+            </Decorations>
+          </Geometry>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="Mid_Rail_Diagram" Description="1653 x 1168 pixels" Id="c709ed5e-58cf-499d-8b56-3c286033c63b">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\Mid_Rail_Diagram.png" />
+        </Thumbnail>
+        <Graphics>
+          <Geometry Center="0 0 0" Scale="10">
+            <GeometryData>
+              <MeshData>
+                <FileRef Name="Data\Geometry\Mid_Rail_Diagram.s3d" />
+              </MeshData>
+              <GeometryDataPieces>
+                <GeometryDataPiece Id="0">
+                  <MaterialRef Id="c8f35f47-f15a-4734-8f2c-ba945c44debc" />
+                </GeometryDataPiece>
+              </GeometryDataPieces>
+            </GeometryData>
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="c8f35f47-f15a-4734-8f2c-ba945c44debc" />
+              </Decoration>
+            </Decorations>
+          </Geometry>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="Mine_Rail_Diagram" Description="1653 x 1168 pixels" Id="1a2b8714-b15c-4ad6-8270-425336f45d86">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\Mine_Rail_Diagram.png" />
+        </Thumbnail>
+        <Graphics>
+          <Geometry Center="0 0 0" Scale="10">
+            <GeometryData>
+              <MeshData>
+                <FileRef Name="Data\Geometry\Mine_Rail_Diagram.s3d" />
+              </MeshData>
+              <GeometryDataPieces>
+                <GeometryDataPiece Id="0">
+                  <MaterialRef Id="10f98005-51fb-42fe-a791-dad67ad4ba2a" />
+                </GeometryDataPiece>
+              </GeometryDataPieces>
+            </GeometryData>
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="10f98005-51fb-42fe-a791-dad67ad4ba2a" />
+              </Decoration>
+            </Decorations>
+          </Geometry>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="Port_Rail_Diagram_Cropped" Description="1653 x 727 pixels" Id="70c5c597-bda1-45ff-97a8-36fbd6ce093e">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\Port_Rail_Diagram_Cropped.png" />
+        </Thumbnail>
+        <Graphics>
+          <Geometry Center="0 0 0" Scale="10">
+            <GeometryData>
+              <MeshData>
+                <FileRef Name="Data\Geometry\Port_Rail_Diagram_Cropped.s3d" />
+              </MeshData>
+              <GeometryDataPieces>
+                <GeometryDataPiece Id="0">
+                  <MaterialRef Id="c63b9a92-5c93-4f70-9c2c-429416a5f52d" />
+                </GeometryDataPiece>
+              </GeometryDataPieces>
+            </GeometryData>
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="c63b9a92-5c93-4f70-9c2c-429416a5f52d" />
+              </Decoration>
+            </Decorations>
+          </Geometry>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="Mid_Rail_Diagram_Cropped" Description="1653 x 834 pixels" Id="fa85ffe5-b96c-422a-9787-2d9beeea58fb">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\Mid_Rail_Diagram_Cropped.png" />
+        </Thumbnail>
+        <Graphics>
+          <Geometry Center="0 0 0" Scale="10">
+            <GeometryData>
+              <MeshData>
+                <FileRef Name="Data\Geometry\Mid_Rail_Diagram_Cropped.s3d" />
+              </MeshData>
+              <GeometryDataPieces>
+                <GeometryDataPiece Id="0">
+                  <MaterialRef Id="d1c5f45c-b9ca-4d9f-92ad-3c1020b801f7" />
+                </GeometryDataPiece>
+              </GeometryDataPieces>
+            </GeometryData>
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="d1c5f45c-b9ca-4d9f-92ad-3c1020b801f7" />
+              </Decoration>
+            </Decorations>
+          </Geometry>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="Mine_Rail_Diagram_Cropped" Description="1653 x 947 pixels" Id="538111b6-850e-4d21-a2eb-25d57fb49474">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\Mine_Rail_Diagram_Cropped.png" />
+        </Thumbnail>
+        <Graphics>
+          <Geometry Center="0 0 0" Scale="10">
+            <GeometryData>
+              <MeshData>
+                <FileRef Name="Data\Geometry\Mine_Rail_Diagram_Cropped.s3d" />
+              </MeshData>
+              <GeometryDataPieces>
+                <GeometryDataPiece Id="0">
+                  <MaterialRef Id="7b90e057-0a75-4ea8-99c9-ba4a37e84f4b" />
+                </GeometryDataPiece>
+              </GeometryDataPieces>
+            </GeometryData>
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="7b90e057-0a75-4ea8-99c9-ba4a37e84f4b" />
+              </Decoration>
+            </Decorations>
+          </Geometry>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="Symbol9" Id="15fee571-73b7-4515-9d2d-d7770aab3a02">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\Symbol9.png" />
+        </Thumbnail>
+        <Graphics>
+          <Line Center="-0.0073185010088634 0 -1.31291158500524E-12" LineWidth="0.5" LineStyle="Dash" YHeight="2" ExternallyVisible="True">
+            <Points>
+              <Point Location="-4.99525832216387 0 -5.02985528183932" />
+              <Point Location="-4.99525832216387 0 5.05081301217668" />
+              <Point Location="4.98062132014713 0 5.05081301217668" />
+              <Point Location="4.98062132014713 0 -5.05081301218031" />
+              <Point Location="-4.99525832216387 0 -5.05081301218031" />
+            </Points>
+          </Line>
         </Graphics>
       </Symbol>
       <Symbol Name="Filler" Id="41407493-27b7-44a5-8015-58b81108af6c">
@@ -18954,6 +19275,36 @@ It is recommended to verify that a followable network path has been drawn from t
           <FileRef Name="Data\Textures\B7805-0200-CE-PR-000-SK-001.png" />
         </Image>
       </TextureMaterial>
+      <TextureMaterial Id="cf61a829-ede1-4b55-b6b8-3dbd3781f1df" Name="CCMP-ADRail-TCK-GA-0001-Rev 0">
+        <Image>
+          <FileRef Name="Data\Textures\CCMP-ADRail-TCK-GA-0001-Rev 0.png" />
+        </Image>
+      </TextureMaterial>
+      <TextureMaterial Id="c8f35f47-f15a-4734-8f2c-ba945c44debc" Name="CCMP-ADRail-TCK-GA-0002-Rev 0">
+        <Image>
+          <FileRef Name="Data\Textures\CCMP-ADRail-TCK-GA-0002-Rev 0.png" />
+        </Image>
+      </TextureMaterial>
+      <TextureMaterial Id="10f98005-51fb-42fe-a791-dad67ad4ba2a" Name="CCMP-ADRail-TCK-GA-0003-Rev 0">
+        <Image>
+          <FileRef Name="Data\Textures\CCMP-ADRail-TCK-GA-0003-Rev 0.png" />
+        </Image>
+      </TextureMaterial>
+      <TextureMaterial Id="c63b9a92-5c93-4f70-9c2c-429416a5f52d" Name="CROPPED_CCMP-ADRail-TCK-GA-0001-Rev 0">
+        <Image>
+          <FileRef Name="Data\Textures\CROPPED_CCMP-ADRail-TCK-GA-0001-Rev 0.png" />
+        </Image>
+      </TextureMaterial>
+      <TextureMaterial Id="d1c5f45c-b9ca-4d9f-92ad-3c1020b801f7" Name="CROPPED_CCMP-ADRail-TCK-GA-0002-Rev 0">
+        <Image>
+          <FileRef Name="Data\Textures\CROPPED_CCMP-ADRail-TCK-GA-0002-Rev 0.png" />
+        </Image>
+      </TextureMaterial>
+      <TextureMaterial Id="7b90e057-0a75-4ea8-99c9-ba4a37e84f4b" Name="CROPPED_CCMP-ADRail-TCK-GA-0003-Rev 0">
+        <Image>
+          <FileRef Name="Data\Textures\CROPPED_CCMP-ADRail-TCK-GA-0003-Rev 0.png" />
+        </Image>
+      </TextureMaterial>
       <TextureMaterial Id="6f5ef915-3da8-44b2-bc8c-3e489c722f43" Name="ARROW2">
         <Image>
           <FileRef Name="Data\Textures\ARROW2.jpg" />
@@ -19238,4 +19589,4 @@ It is recommended to verify that a followable network path has been drawn from t
     </Materials>
   </CommonItems>
 </Project>
-<!-- NJ1yLqfT1jFBtBLmE+y9u7Hx7qjgn1j+RfpQAvPGm9t/dpcWjozLE6TixEJ/kPNAn/KQIyYgxu963Ryy+YL0tw== -->
+<!-- gWLiUWbG6sQP07iovT3bLv6Bbz0FQ7/BVRJKdz2Hgq2rOdRKRX9qwa5H4UxNAt4MFg+rJcpIYAUeWOlLZ4mS5w== -->
