@@ -1,46 +1,4 @@
 Time(Hours),EntityID,ObjectName,ProcessID,StepName,Action
-0,--,--,--,--,Unable to evaluate status expression for graphic.
-0,--,--,--,--,Item: TrainEntity 'Train'
-0.277777777777778,--,--,--,--,Unable to evaluate status expression for graphic.
-0.277777777777778,--,--,--,--,Item: TrainEntity 'Train'
-0.277777777777778,--,--,--,--,Unable to evaluate status expression for graphic.
-0.277777777777778,--,--,--,--,Item: TrainEntity 'Train'
-0.277777777777778,--,--,--,--,Unable to evaluate status expression for graphic.
-0.277777777777778,--,--,--,--,Item: TrainEntity 'Train'
-0.277777777777778,--,--,--,--,Unable to evaluate status expression for graphic.
-0.277777777777778,--,--,--,--,Item: TrainEntity 'Train'
-0.277777777777778,--,--,--,--,Unable to evaluate status expression for graphic.
-0.277777777777778,--,--,--,--,Item: TrainEntity 'Train'
-0.277777777777778,--,--,--,--,Unable to evaluate status expression for graphic.
-0.277777777777778,--,--,--,--,Item: TrainEntity 'Train'
-0.277777777777778,--,--,--,--,Unable to evaluate status expression for graphic.
-0.277777777777778,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
-0.555555555555556,--,--,--,--,Unable to evaluate status expression for graphic.
-0.555555555555556,--,--,--,--,Item: TrainEntity 'Train'
+3.42857142857143,Train 1 (Train.149),TrainYard,13.TransferFailureLogic,[Notify] DestroyingEntity,Entity 'Train.149' failed to initiate transfer from node.
+3.42857142857143,Train 1 (Train.149),TrainYard,13.TransferFailureLogic,[Notify] DestroyingEntity,"Entity 'Train.149' failed to initiate transfer from node 'TrainYard' onto an outbound link. The entity is being automatically destroyed. However, this warning may indicate a problem in the modeled logic. "
 
