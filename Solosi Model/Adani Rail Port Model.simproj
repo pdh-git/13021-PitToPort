@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.97.10724.23991" FileVersion="92" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-12T07:19:42" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-13T00:03:25" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -37,7 +37,7 @@
       </InteractiveStatistics>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="89.9243120508302 179.779769691938 14.2389366895171" Direction="0 -1 2.22044604925031E-16" Zoom="179.779769691938" />
+          <Camera Orientation="Top" Location="48.6892558899564 256.828242710659 -48.6460846047529" Direction="0 -1 2.22044604925031E-16" Zoom="256.828242710659" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
         </Facility>
         <StandardTables>
@@ -896,7 +896,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="410">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="411">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -1792,7 +1792,7 @@
                   <Property Name="Expression">IncludeSiding4</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="3" />
-                <Exit Name="False" Type="Alternate" NextID="9" />
+                <Exit Name="False" Type="Alternate" NextID="8" />
               </Step>
               <Step Type="Seize" Name="R_Side5" ID="8">
                 <Properties>
@@ -1804,7 +1804,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Release" Name="R_Side3" ID="9">
                 <Properties>
@@ -1828,7 +1828,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
               <Step Type="Release" Name="R_Side2" ID="11">
                 <Properties>
@@ -1961,7 +1961,7 @@
                   <Property Name="Expression">IncludeSiding6</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="3" />
-                <Exit Name="False" Type="Alternate" NextID="11" />
+                <Exit Name="False" Type="Alternate" NextID="8" />
               </Step>
               <Step Type="Seize" Name="R_Side7" ID="8">
                 <Properties>
@@ -1973,7 +1973,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
+                <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
               <Step Type="Release" Name="R_Side5" ID="9">
                 <Properties>
@@ -1997,7 +1997,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
               <Step Type="Release" Name="R_Side4" ID="11">
                 <Properties>
@@ -2662,7 +2662,7 @@
                   <Property Name="Expression">IncludeSiding8</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="4" />
-                <Exit Name="False" Type="Alternate" NextID="9" />
+                <Exit Name="False" Type="Alternate" NextID="8" />
               </Step>
               <Step Type="Seize" Name="R_Side9" ID="8">
                 <Properties>
@@ -2674,7 +2674,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
+                <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
               <Step Type="Release" Name="R_Side7" ID="9">
                 <Properties>
@@ -2686,7 +2686,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
+                <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
               <Step Type="Seize" Name="R_Side8" ID="10">
                 <Properties>
@@ -2698,7 +2698,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
               <Step Type="Release" Name="R_Side6" ID="11">
                 <Properties>
@@ -2710,7 +2710,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
             </Steps>
           </Process>
@@ -7530,7 +7530,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>410</Revision>
+        <Revision>411</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -22221,4 +22221,4 @@ It is recommended to verify that a followable network path has been drawn from t
     </Materials>
   </CommonItems>
 </Project>
-<!-- o1J9c2i3zboA0DfzgI4TwxluKtVlMeqbjDZ6WXhNgTI8rFWu+YAI+HtEW/trVGyeIM02HDe/D4WWDzD0S28ybA== -->
+<!-- uW/Lw9SOe26EbyRBqcBnD3JnTNKNKvPG7fpUS4bMueNL4c3z116H0vgzgajjKCFkKj7HK7CgakhNRELSMP8B1g== -->
