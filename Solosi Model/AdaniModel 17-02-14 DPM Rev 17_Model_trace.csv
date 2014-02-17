@@ -1,12 +1,1435 @@
 Time(Hours),EntityID,ObjectName,ProcessID,StepName,Action
-1.00027777777778,Model,Model,85.Monitor1_TriggeredProcessName,[Notify] Notify1,Why the fuck.
-1.00027777777778,Model,Model,58.Monitor1_TriggeredProcessName,[Notify] Notify1,Why the fuck.
-1.00027777777778,Model,Model,43.Monitor1_TriggeredProcessName,[Notify] Notify1,Why the fuck.
-1.00027777777778,Model,Model,38.Monitor1_TriggeredProcessName,[Notify] Notify1,Why the fuck.
-4.75027777777778,Model,Model,91.Monitor1_TriggeredProcessName,[Notify] Notify1,Why the fuck.
-4.75027777777778,Model,Model,63.Monitor1_TriggeredProcessName,[Notify] Notify1,Why the fuck.
-4.75027777777778,Model,Model,84.Monitor1_TriggeredProcessName,[Notify] Notify1,Why the fuck.
-4.75027777777778,Model,Model,84.Monitor1_TriggeredProcessName,[Notify] Notify1,Why the fuck.
-8.50027777777778,Model,Model,55.Monitor1_TriggeredProcessName,[Notify] Notify1,Why the fuck.
-8.50027777777778,Model,Model,86.Monitor1_TriggeredProcessName,[Notify] Notify1,Why the fuck.
+14.1869981616759,TrainWagon.464,Model,60.TrainLoadStation_AfterProcessing,[Assign] TrainThroughput,Assigning state variable 'TotalTonnesLoaded' the value '24000' Metric Tons.
+14.1869981616759,TrainWagon.464,Model,60.TrainLoadStation_AfterProcessing,[End],Process 'TrainLoadStation_AfterProcessing' ended.
+14.1869981616759,TrainWagon.464,TrainLoadStation,84.OnEnteredProcessing,[Transfer] ToOutputNode,Entity 'TrainWagon.464' initiating transfer from '[Station] TrainLoadStation.Processing' into node 'Output@TrainLoadStation'.
+14.1869981616759,TrainWagon.464,Output@TrainLoadStation,38.OnEnteredFromAssociatedObject,[Begin],Process 'OnEnteredFromAssociatedObject' initiated.
+14.1869981616759,TrainWagon.464,Output@TrainLoadStation,38.OnEnteredFromAssociatedObject,[Fire] EnteredEvent,Firing event 'Output@TrainLoadStation.Entered'.
+14.1869981616759,TrainWagon.464,Output@TrainLoadStation,38.OnEnteredFromAssociatedObject,[Decide] IfTransporter,Token branching on condition 'Entity.Is.Transporter'.
+14.1869981616759,TrainWagon.464,Output@TrainLoadStation,38.OnEnteredFromAssociatedObject,[Decide] IfTransporter,Token sent to 'False' exit.
+14.1869981616759,TrainWagon.464,Output@TrainLoadStation,38.OnEnteredFromAssociatedObject,[Execute] RoutingOutLogic,Executing process 'Output@TrainLoadStation.RoutingOutLogic'.
+14.1869981616759,TrainWagon.464,Output@TrainLoadStation,93.RoutingOutLogic,[Begin],Process 'RoutingOutLogic' initiated.
+14.1869981616759,TrainWagon.464,Output@TrainLoadStation,93.RoutingOutLogic,[SetNode] ToSpecificDestination,Destination node of entity 'TrainWagon.464' set to value 'Input@TrainSink'.
+14.1869981616759,TrainWagon.464,Output@TrainLoadStation,93.RoutingOutLogic,[End],Process 'RoutingOutLogic' ended.
+14.1869981616759,TrainWagon.464,Output@TrainLoadStation,38.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'TrainWagon.464' initiating transfer from '[Node] Output@TrainLoadStation' onto link 'TimePath1'.
+14.1869981616759,TrainWagon.464,TimePath1,93.OnEntered,[Begin],Process 'OnEntered' initiated.
+14.1869981616759,TrainWagon.464,TimePath1,93.OnEntered,[Assign] EntityMovementRate,Assigning state variable 'Token.93.ReturnValue' the value '0.166666666666667' .
+14.1869981616759,TrainWagon.464,TimePath1,93.OnEntered,[Assign] EntityMovementRate,Assigning state variable 'TrainWagon.464.Movement.Rate' the value '1165.38' Meters per Hour.
+14.1869981616759,TrainWagon.464,TimePath1,93.OnEntered,[EndTransfer] OntoTimePath,Entity 'TrainWagon.464' ending transfer onto link 'TimePath1'.
+14.1869981616759,TrainWagon.464,TimePath1,93.OnEntered,[End],Process 'OnEntered' ended.
+14.1869981616759,TrainWagon.464,TrainLoadStation,95.OnExitedProcessing,[Begin],Process 'OnExitedProcessing' initiated.
+14.1869981616759,TrainWagon.464,TrainLoadStation,95.OnExitedProcessing,[Decide] IfTokenAssociatedObject,Token branching on condition 'Token.AssociatedObject != Nothing'.
+14.1869981616759,TrainWagon.464,TrainLoadStation,95.OnExitedProcessing,[Decide] IfTokenAssociatedObject,Token sent to 'True' exit.
+14.1869981616759,TrainWagon.464,TrainLoadStation,95.OnExitedProcessing,[Release] Filler,Releasing resource(s) owned by object 'TrainWagon.464'.
+14.1869981616759,--,--,--,--,Object 'TrainWagon.464' released '1' capacity unit(s) of resource 'TrainLoadStation'.
+14.1869981616759,TrainWagon.464,TrainLoadStation,95.OnExitedProcessing,[Execute] Exited_AddOnProcess,Executing process 'TrainLoadStation_Exited'.
+14.1869981616759,TrainWagon.464,Model,60.TrainLoadStation_Exited,[Begin],Process 'TrainLoadStation_Exited' initiated.
+14.1869981616759,TrainWagon.464,Model,60.TrainLoadStation_Exited,[Tally] LoadingTimeTally,Recorded '1' observation(s) of value '3.00000010612037' for tally statistic 'Tally_TrainLoadingTime'.
+14.1869981616759,TrainWagon.464,Model,60.TrainLoadStation_Exited,[End],Process 'TrainLoadStation_Exited' ended.
+14.1869981616759,TrainWagon.464,TrainLoadStation,95.OnExitedProcessing,[End],Process 'OnExitedProcessing' ended.
+14.1869981616759,TrainWagon.464,TrainLoadStation,84.OnEnteredProcessing,[End],Process 'OnEnteredProcessing' ended.
+14.1869981616759,TrainWagon.464,Output@TrainLoadStation,38.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+14.1869981616759,--,--,--,--,Object 'LAC.466' destroyed.
+14.1869981616759,--,--,--,--,Object 'LAC.467' destroyed.
+14.1869981616759,--,--,--,--,Object 'LAC.468' destroyed.
+14.1869981616759,--,--,--,--,Object 'LAC.469' destroyed.
+14.1869981616759,--,--,--,--,Object 'LAC.470' destroyed.
+14.1869981616759,--,--,--,--,Object 'LAC.471' destroyed.
+14.1869981616759,--,--,--,--,Object 'LAC.472' destroyed.
+14.1869981616759, ,CV_3304N,26.OnEntered,[End],Process 'OnEntered' ended.
+14.1869981616759, ,CV_3304T,30.OnEntered,[End],Process 'OnEntered' ended.
+14.1869981616759, ,CV_3306H,85.OnEntered,[End],Process 'OnEntered' ended.
+14.1869981616759, ,CV_3306T,86.OnEntered,[End],Process 'OnEntered' ended.
+14.1869981616759, ,Input@TrainLoadBin,28.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+14.1869981616759, ,TrainLoadBin,24.OnEnteredFlowContainer,[End],Process 'OnEnteredFlowContainer' ended.
+14.1869981616759, ,Output@TrainLoadBin,39.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+14.1869981616759, ,FlowInput@TrainLoadStation,43.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+14.1874272062794,TrainWagon.464,Output@TrainLoadStation,43.OnExited,[Begin],Process 'OnExited' initiated.
+14.1874272062794,TrainWagon.464,Output@TrainLoadStation,43.OnExited,[Fire] ExitedEvent,Firing event 'Output@TrainLoadStation.Exited'.
+14.1874272062794,TrainWagon.464,Output@TrainLoadStation,43.OnExited,[End],Process 'OnExited' ended.
+14.3536648283426,TrainWagon.464,TimePath1,43.OnReachedEnd,[Begin],Process 'OnReachedEnd' initiated.
+14.3536648283426,TrainWagon.464,TimePath1,43.OnReachedEnd,[Transfer] FromTimePath,Entity 'TrainWagon.464' initiating transfer from '[EndOfLink] TimePath1' into node 'BasicNode1'.
+14.3536648283426,TrainWagon.464,BasicNode1,39.OnEntered,[Begin],Process 'OnEntered' initiated.
+14.3536648283426,TrainWagon.464,BasicNode1,39.OnEntered,[Fire] EnteredEvent,Firing event 'BasicNode1.Entered'.
+14.3536648283426,TrainWagon.464,BasicNode1,39.OnEntered,[Execute] Entered_AddOnProcess,Executing process 'BasicNode1_Entered'.
+14.3536648283426,TrainWagon.464,Model,24.BasicNode1_Entered,[Begin],Process 'BasicNode1_Entered' initiated.
+14.3536648283426,TrainWagon.464,Model,24.BasicNode1_Entered,[Release] SigBlock3,Releasing resource(s) owned by object 'TrainWagon.464'.
+14.3536648283426,--,--,--,--,Object 'TrainWagon.464' released '1' capacity unit(s) of resource 'SigBlock2'.
+14.3536648283426,TrainWagon.464,SigBlock2,28.OnCapacityReleased,[Begin],Process 'OnCapacityReleased' initiated.
+14.3536648283426,TrainWagon.464,SigBlock2,28.OnCapacityReleased,[Assign] ResourceState,Assigning state variable 'ResourceState' the value '0' .
+14.3536648283426,TrainWagon.464,SigBlock2,28.OnCapacityReleased,[Fire] ReleasedEvent,Firing event 'SigBlock2.Released'.
+14.3536648283426,TrainWagon.464,SigBlock2,28.OnCapacityReleased,[End],Process 'OnCapacityReleased' ended.
+14.3536648283426,TrainWagon.464,Model,24.BasicNode1_Entered,[End],Process 'BasicNode1_Entered' ended.
+14.3536648283426,TrainWagon.464,BasicNode1,39.OnEntered,[Transfer] ToOutboundLink,Entity 'TrainWagon.464' initiating transfer from '[Node] BasicNode1' into node 'Input@TrainSink'.
+14.3536648283426,TrainWagon.464,Input@TrainSink,24.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+14.3536648283426,TrainWagon.464,Input@TrainSink,24.OnEnteredToAssociatedObject,[Fire] EnteredEvent,Firing event 'Input@TrainSink.Entered'.
+14.3536648283426,TrainWagon.464,Input@TrainSink,24.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'TrainWagon.464' initiating transfer from '[Node] Input@TrainSink' into object 'TrainSink'.
+14.3536648283426,TrainWagon.464,Input@TrainSink,24.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'TrainWagon.464' initiating transfer from '[Node] Input@TrainSink' into station location 'TrainSink.InputBuffer'.
+14.3536648283426,TrainWagon.464,TrainSink,28.OnEnteredInputBuffer,[Begin],Process 'OnEnteredInputBuffer' initiated.
+14.3536648283426,TrainWagon.464,TrainSink,28.OnEnteredInputBuffer,[Delay] TransferInTime,Delaying token for '0' Hours until time '14.3536648283426' Hours.
+14.3536648283426,TrainWagon.464,TrainSink,28.OnEnteredInputBuffer,[EndTransfer] IntoInputBuffer,Entity 'TrainWagon.464' ending transfer into station 'TrainSink.InputBuffer'.
+14.3536648283426,TrainWagon.464,BasicNode1,86.OnExited,[Begin],Process 'OnExited' initiated.
+14.3536648283426,TrainWagon.464,BasicNode1,86.OnExited,[Fire] ExitedEvent,Firing event 'BasicNode1.Exited'.
+14.3536648283426,TrainWagon.464,BasicNode1,86.OnExited,[End],Process 'OnExited' ended.
+14.3536648283426,TrainWagon.464,Input@TrainSink,86.OnExited,[Begin],Process 'OnExited' initiated.
+14.3536648283426,TrainWagon.464,Input@TrainSink,86.OnExited,[Fire] ExitedEvent,Firing event 'Input@TrainSink.Exited'.
+14.3536648283426,TrainWagon.464,Input@TrainSink,86.OnExited,[End],Process 'OnExited' ended.
+14.3536648283426,TrainWagon.464,TrainSink,28.OnEnteredInputBuffer,[Execute] DestroyingEntity_AddOnProcess,Executing process 'TrainSink_DestroyingEntity'.
+14.3536648283426,TrainWagon.464,Model,86.TrainSink_DestroyingEntity,[Begin],Process 'TrainSink_DestroyingEntity' initiated.
+14.3536648283426,TrainWagon.464,Model,86.TrainSink_DestroyingEntity,[Decide] WasLoaded,Token branching on condition 'MyContainerEntity.FlowContainer.Contents.Weight>0'.
+14.3536648283426,TrainWagon.464,Model,86.TrainSink_DestroyingEntity,[Decide] WasLoaded,Token sent to 'True' exit.
+14.3536648283426,TrainWagon.464,Model,86.TrainSink_DestroyingEntity,[Tally] TimeInSys,Recorded '1' observation(s) of value '3.5214125' for tally statistic 'Tally_TrainTimeInSystem'.
+14.3536648283426,TrainWagon.464,Model,86.TrainSink_DestroyingEntity,[End],Process 'TrainSink_DestroyingEntity' ended.
+14.3536648283426,TrainWagon.464,TrainSink,28.OnEnteredInputBuffer,[Tally] EntityTimeInSystem,Recorded '1' observation(s) of value '3.5214125' Hours for tally statistic 'TrainSink.TimeInSystem'.
+14.3536648283426,TrainWagon.464,TrainSink,28.OnEnteredInputBuffer,[Destroy] Entity,Destroying object 'TrainWagon.464'.
+14.3536648283426,TrainWagon.464,TrainWagon.464,86.OnDestroying,[Begin],Process 'OnDestroying' initiated.
+14.3536648283426,TrainWagon.464,TrainWagon.464,86.OnDestroying,[Assign] ToDisableContainerLevelMonitoring,Assigning state variable 'TrainWagon.464.OnFlowContainerEmpty.Enabled' the value '0' .
+14.3536648283426,TrainWagon.464,TrainWagon.464,86.OnDestroying,[End],Process 'OnDestroying' ended.
+14.3536648283426,--,--,--,--,Object 'LAC.473' destroyed.
+14.3536648283426,--,--,--,--,Object 'TrainWagon.464' destroyed.
+14.3536648283426, ,TrainSink,28.OnEnteredInputBuffer,[End],Process 'OnEnteredInputBuffer' ended.
+14.3536648283426, ,TimePath1,43.OnReachedEnd,[End],Process 'OnReachedEnd' ended.
+14.3536648283426, ,BasicNode1,39.OnEntered,[End],Process 'OnEntered' ended.
+14.3536648283426, ,Input@TrainSink,24.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+15,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '22416.2655555556' Metric Tons for tally statistic 'Tally_Stockpile1Contents'.
+15,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '22599.0277775114' Metric Tons for tally statistic 'Tally_Stockpile2Contents'.
+15,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '0' Metric Tons for tally statistic 'Tally_HAC_ROMContents'.
+15,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '23938.978723656' Metric Tons for tally statistic 'Tally_LAC_ROMContents'.
+15,Model,Model,1.TallyStockpileContents,[Delay] 1Hour,Delaying token for '1' Hours until time '16' Hours.
+15,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token branching on condition 'UC_Stockpile.FlowContainer.Contents.Weight > UCStockpile_Max'.
+15,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token sent to 'False' exit.
+15,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Delay] Delay1Hour,Delaying token for '1' Hours until time '16' Hours.
+15.2976129434427,--,--,--,--,Firing event 'LAC_Feeder.WeightLevelFallingBelowMidMark.Event'.
+15.2976129434427,LAC_Feeder,LAC_Feeder,24.OnFlowContainerLevelFallingBelowMidMark,[Begin],Process 'OnFlowContainerLevelFallingBelowMidMark' initiated.
+15.2976129434427,LAC_Feeder,LAC_Feeder,24.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9001H.FlowRegulator.Enabled' the value '1' .
+15.2976129434427,LAC.494,LCV_9001H,63.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.515' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+15.2976129434427,LAC.515,FlowNode4_1,39.OnEntered,[Begin],Process 'OnEntered' initiated.
+15.2976129434427,LAC.515,FlowNode4_1,39.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.515' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+15.2976129434427,LAC_Feeder,LAC_Feeder,24.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9003H.FlowRegulator.Enabled' the value '1' .
+15.2976129434427,LAC.389,LCV_9003H,76.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.516' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+15.2976129434427,LAC.516,FlowNode4_1,43.OnEntered,[Begin],Process 'OnEntered' initiated.
+15.2976129434427,LAC.516,FlowNode4_1,43.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.516' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+15.2976129434427,LAC_Feeder,LAC_Feeder,24.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9002H.FlowRegulator.Enabled' the value '0' .
+15.2976129434427,LAC_Feeder,LAC_Feeder,24.OnFlowContainerLevelFallingBelowMidMark,[End],Process 'OnFlowContainerLevelFallingBelowMidMark' ended.
+15.2976129434427,--,--,--,--,Firing event 'LAC_Feeder.WeightLevelRisingAboveMidMark.Event'.
+15.2976129434427,--,--,--,--,Object 'LAC.514' destroyed.
+15.2976129434427, ,Input@LAC_ROMPAD,94.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+15.3507829385511,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[Begin],Process 'OnFlowContainerFull' initiated.
+15.3507829385511,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[Fire] TankFullEvent,Firing event 'LAC_Feeder.TankFull'.
+15.3507829385511,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9001H.FlowRegulator.Enabled' the value '0' .
+15.3507829385511,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9003H.FlowRegulator.Enabled' the value '0' .
+15.3507829385511,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9002H.FlowRegulator.Enabled' the value '1' .
+15.3507829385511,LAC.495,LCV_9002H,66.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.517' initiating transfer from '[FreeSpace] Model' into node 'Input@LAC_ROMPAD'.
+15.3507829385511,LAC.517,Input@LAC_ROMPAD,24.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+15.3507829385511,LAC.517,Input@LAC_ROMPAD,24.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.517' initiating transfer from '[Node] Input@LAC_ROMPAD' into object 'LAC_ROMPAD'.
+15.3507829385511,LAC.517,Input@LAC_ROMPAD,24.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.517' to location type 'Container' using flow regulator 'Input@LAC_ROMPAD.FlowRegulator'.
+15.3507829385511,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[End],Process 'OnFlowContainerFull' ended.
+15.3507829385511,--,--,--,--,Object 'LAC.515' destroyed.
+15.3507829385511, ,FlowNode4_1,39.OnEntered,[End],Process 'OnEntered' ended.
+15.3507829385511,--,--,--,--,Object 'LAC.516' destroyed.
+15.3507829385511, ,FlowNode4_1,43.OnEntered,[End],Process 'OnEntered' ended.
+16,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '24916.2655555556' Metric Tons for tally statistic 'Tally_Stockpile1Contents'.
+16,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '26099.0277774416' Metric Tons for tally statistic 'Tally_Stockpile2Contents'.
+16,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '0' Metric Tons for tally statistic 'Tally_HAC_ROMContents'.
+16,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '26196.355586201' Metric Tons for tally statistic 'Tally_LAC_ROMContents'.
+16,Model,Model,1.TallyStockpileContents,[Delay] 1Hour,Delaying token for '1' Hours until time '17' Hours.
+16,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token branching on condition 'UC_Stockpile.FlowContainer.Contents.Weight > UCStockpile_Max'.
+16,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token sent to 'False' exit.
+16,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Delay] Delay1Hour,Delaying token for '1' Hours until time '17' Hours.
+16.0002777777778,LW1GenServer,LW1GenServer,43.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+16.0002777777778,LW1GenServer,LW1GenServer,43.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LW1GenServer.Processing.CurrentCapacity' the value '0' .
+16.0002777777778,LW1GenServer,LW1GenServer,43.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+16.0002777777778,LW1GenServer,LW1GenServer,43.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+16.0002777777778,LW1GenServer,LW1GenServer,43.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+16.0002777777778,LW1GenServer,LW1GenServer,43.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+16.0002777777778,LW1GenServer,LW1GenServer,43.OnCapacityChanged,[Suspend] Processing,Suspending process 'LW1GenServer.OnEnteredProcessing'.
+16.0002777777778,--,--,--,--,The number of suspensions applied to process 'LW1GenServer.OnEnteredProcessing' is now '1'.
+16.0002777777778,LW1GenServer,LW1GenServer,43.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'LW1GenServer_OffShift'.
+16.0002777777778,LW1GenServer,Model,39.LW1GenServer_OffShift,[Begin],Process 'LW1GenServer_OffShift' initiated.
+16.0002777777778,LW1GenServer,Model,39.LW1GenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@LW1_Input.FlowRegulator.Enabled' the value '0' .
+16.0002777777778,LW1GenServer,Model,39.LW1GenServer_OffShift,[End],Process 'LW1GenServer_OffShift' ended.
+16.0002777777778,LW1GenServer,LW1GenServer,43.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+16.0002777777778,LW2GenServer,LW2GenServer,43.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+16.0002777777778,LW2GenServer,LW2GenServer,43.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LW2GenServer.Processing.CurrentCapacity' the value '0' .
+16.0002777777778,LW2GenServer,LW2GenServer,43.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+16.0002777777778,LW2GenServer,LW2GenServer,43.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+16.0002777777778,LW2GenServer,LW2GenServer,43.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+16.0002777777778,LW2GenServer,LW2GenServer,43.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+16.0002777777778,LW2GenServer,LW2GenServer,43.OnCapacityChanged,[Suspend] Processing,Suspending process 'LW2GenServer.OnEnteredProcessing'.
+16.0002777777778,--,--,--,--,The number of suspensions applied to process 'LW2GenServer.OnEnteredProcessing' is now '1'.
+16.0002777777778,LW2GenServer,LW2GenServer,43.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'LW2GenServer_OffShift'.
+16.0002777777778,LW2GenServer,Model,39.LW2GenServer_OffShift,[Begin],Process 'LW2GenServer_OffShift' initiated.
+16.0002777777778,LW2GenServer,Model,39.LW2GenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@LW2_Input.FlowRegulator.Enabled' the value '0' .
+16.0002777777778,LW2GenServer,Model,39.LW2GenServer_OffShift,[End],Process 'LW2GenServer_OffShift' ended.
+16.0002777777778,LW2GenServer,LW2GenServer,43.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+16.0002777777778,LWDevGenServer,LWDevGenServer,43.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+16.0002777777778,LWDevGenServer,LWDevGenServer,43.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LWDevGenServer.Processing.CurrentCapacity' the value '0' .
+16.0002777777778,LWDevGenServer,LWDevGenServer,43.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+16.0002777777778,LWDevGenServer,LWDevGenServer,43.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+16.0002777777778,LWDevGenServer,LWDevGenServer,43.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+16.0002777777778,LWDevGenServer,LWDevGenServer,43.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+16.0002777777778,LWDevGenServer,LWDevGenServer,43.OnCapacityChanged,[Suspend] Processing,Suspending process 'LWDevGenServer.OnEnteredProcessing'.
+16.0002777777778,--,--,--,--,The number of suspensions applied to process 'LWDevGenServer.OnEnteredProcessing' is now '1'.
+16.0002777777778,LWDevGenServer,LWDevGenServer,43.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'LWDevGenServer_OffShift'.
+16.0002777777778,LWDevGenServer,Model,39.LWDevGenServer_OffShift,[Begin],Process 'LWDevGenServer_OffShift' initiated.
+16.0002777777778,LWDevGenServer,Model,39.LWDevGenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@LWDev_Input.FlowRegulator.Enabled' the value '0' .
+16.0002777777778,LWDevGenServer,Model,39.LWDevGenServer_OffShift,[End],Process 'LWDevGenServer_OffShift' ended.
+16.0002777777778,LWDevGenServer,LWDevGenServer,43.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+16.0002777777778,--,--,--,--,Object 'UC.474' destroyed.
+16.0002777777778, ,FlowNode12,53.OnEntered,[End],Process 'OnEntered' ended.
+16.0002777777778,--,--,--,--,Object 'UC.475' destroyed.
+16.0002777777778, ,FlowNode12,37.OnEntered,[End],Process 'OnEntered' ended.
+16.0002777777778,--,--,--,--,Object 'UC.476' destroyed.
+16.0002777777778,--,--,--,--,Object 'UC.477' destroyed.
+16.0002777777778,--,--,--,--,Object 'UC.479' destroyed.
+16.0002777777778,--,--,--,--,Object 'UC.481' destroyed.
+16.0002777777778,--,--,--,--,Object 'UC.478' destroyed.
+16.0002777777778,--,--,--,--,Object 'UC.480' destroyed.
+16.0002777777778,--,--,--,--,Object 'UC.482' destroyed.
+16.0002777777778, ,FlowNode12,80.OnEntered,[End],Process 'OnEntered' ended.
+16.0002777777778, ,DCV_1701H,48.OnEntered,[End],Process 'OnEntered' ended.
+16.0002777777778, ,DCV_1702H,35.OnEntered,[End],Process 'OnEntered' ended.
+16.0002777777778, ,DCV_1701T,51.OnEntered,[End],Process 'OnEntered' ended.
+16.0002777777778, ,Input@UC_Stockpile,56.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+16.0002777777778, ,DCV_1702T,47.OnEntered,[End],Process 'OnEntered' ended.
+16.0002777777778, ,Input@UC_Stockpile,74.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+16.0002777777778,UC.483,UC_Stockpile,78.OnEnteredFlowContainer,[End],Process 'OnEnteredFlowContainer' ended.
+16.0002777777778,UC.483,Output@UC_Stockpile,68.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+16.1523385939774,--,--,--,--,Firing event 'TrainGen.EntityArrivals.Event'.
+16.1523385939774,TrainGen,TrainGen,68.OnEntityArrival,[Begin],Process 'OnEntityArrival' initiated.
+16.1523385939774,TrainGen,TrainGen,68.OnEntityArrival,[Create] EntitiesPerArrival,Creating '1' object(s) of entity type 'TrainWagon' using creation method 'NewObject'.
+16.1523385939774,--,--,--,--,Object 'TrainWagon.518' created.
+16.1523385939774,TrainWagon.518,TrainGen,78.OnEntityArrival,[Transfer] ToOutputBuffer,Entity 'TrainWagon.518' initiating transfer from '[FreeSpace] TrainGen' into station location 'TrainGen.OutputBuffer'.
+16.1523385939774,TrainGen,TrainGen,68.OnEntityArrival,[End],Process 'OnEntityArrival' ended.
+16.1523385939774,TrainWagon.518,TrainGen,74.OnEnteredOutputBuffer,[Begin],Process 'OnEnteredOutputBuffer' initiated.
+16.1523385939774,TrainWagon.518,TrainGen,74.OnEnteredOutputBuffer,[EndTransfer] IntoOutputBuffer,Entity 'TrainWagon.518' ending transfer into station 'TrainGen.OutputBuffer'.
+16.1523385939774,TrainWagon.518,TrainGen,74.OnEnteredOutputBuffer,[Transfer] ToOutputNode,Entity 'TrainWagon.518' initiating transfer from '[Station] TrainGen.OutputBuffer' into node 'Output@TrainGen'.
+16.1523385939774,TrainWagon.518,Output@TrainGen,68.OnEnteredFromAssociatedObject,[Begin],Process 'OnEnteredFromAssociatedObject' initiated.
+16.1523385939774,TrainWagon.518,Output@TrainGen,68.OnEnteredFromAssociatedObject,[Fire] EnteredEvent,Firing event 'Output@TrainGen.Entered'.
+16.1523385939774,TrainWagon.518,Output@TrainGen,68.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'TrainWagon.518' initiating transfer from '[Node] Output@TrainGen' onto link 'Path2'.
+16.1523385939774,TrainWagon.518,TrainGen,78.OnEntityArrival,[End],Process 'OnEntityArrival' ended.
+16.1524080384218,TrainWagon.518,Output@TrainGen,78.OnExited,[Begin],Process 'OnExited' initiated.
+16.1524080384218,TrainWagon.518,Output@TrainGen,78.OnExited,[Fire] ExitedEvent,Firing event 'Output@TrainGen.Exited'.
+16.1524080384218,TrainWagon.518,Output@TrainGen,78.OnExited,[End],Process 'OnExited' ended.
+16.1524080384218,TrainWagon.518,Path2,78.OnTrailingEdgeEntered,[Begin],Process 'OnTrailingEdgeEntered' initiated.
+16.1524080384218,TrainWagon.518,Path2,78.OnTrailingEdgeEntered,[EndTransfer] OntoPath,Entity 'TrainWagon.518' ending transfer onto link 'Path2'.
+16.1524080384218,TrainWagon.518,Path2,78.OnTrailingEdgeEntered,[End],Process 'OnTrailingEdgeEntered' ended.
+16.1524080384218,TrainWagon.518,TrainGen,74.OnEnteredOutputBuffer,[End],Process 'OnEnteredOutputBuffer' ended.
+16.1524080384218,TrainWagon.518,Output@TrainGen,68.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+16.1737510939774,TrainWagon.518,Path2,68.OnReachedEnd,[Begin],Process 'OnReachedEnd' initiated.
+16.1737510939774,TrainWagon.518,Path2,68.OnReachedEnd,[Transfer] FromPath,Entity 'TrainWagon.518' initiating transfer from '[EndOfLink] Path2' into node 'TrainTransferNode1'.
+16.1737510939774,TrainWagon.518,TrainTransferNode1,74.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.1737510939774,TrainWagon.518,TrainTransferNode1,74.OnEntered,[Fire] EnteredEvent,Firing event 'TrainTransferNode1.Entered'.
+16.1737510939774,TrainWagon.518,TrainTransferNode1,74.OnEntered,[Execute] Entered_AddOnProcess,Executing process 'TrainTransferNode1_Entered'.
+16.1737510939774,TrainWagon.518,Model,78.TrainTransferNode1_Entered,[Begin],Process 'TrainTransferNode1_Entered' initiated.
+16.1737510939774,TrainWagon.518,Model,78.TrainTransferNode1_Entered,[Seize] SigBlock2,Requesting seize of resource(s) in behalf of owner 'TrainWagon.518'.
+16.1737510939774,--,--,--,--,Object 'TrainWagon.518' seized '1' capacity unit(s) of resource 'SigBlock2'.
+16.1737510939774,TrainWagon.518,SigBlock2,47.OnCapacityAllocated,[Begin],Process 'OnCapacityAllocated' initiated.
+16.1737510939774,TrainWagon.518,SigBlock2,47.OnCapacityAllocated,[Fire] AllocatedEvent,Firing event 'SigBlock2.Allocated'.
+16.1737510939774,TrainWagon.518,SigBlock2,47.OnCapacityAllocated,[End],Process 'OnCapacityAllocated' ended.
+16.1737510939774,TrainWagon.518,Model,78.TrainTransferNode1_Entered,[Decide] stockpileContents>TrainLoad,Token branching on condition 'Stockpile1.FlowContainer.Contents.Weight>MyContainerEntity.FlowContainer.CurrentWeightCapacity||Stockpile2.FlowContainer.Contents.Weight>MyContainerEntity.FlowContainer.CurrentWeightCapacity'.
+16.1737510939774,TrainWagon.518,Model,78.TrainTransferNode1_Entered,[Decide] stockpileContents>TrainLoad,Token sent to 'True' exit.
+16.1737510939774,TrainWagon.518,Model,78.TrainTransferNode1_Entered,[SetNode] trainLoad,Destination node of entity 'TrainWagon.518' set to value 'ContainerInput@TrainLoadStation'.
+16.1737510939774,TrainWagon.518,Model,78.TrainTransferNode1_Entered,[End],Process 'TrainTransferNode1_Entered' ended.
+16.1737510939774,TrainWagon.518,TrainTransferNode1,74.OnEntered,[Transfer] ToOutboundLink,Entity 'TrainWagon.518' initiating transfer from '[Node] TrainTransferNode1' onto link 'TimePath3'.
+16.1737510939774,TrainWagon.518,TimePath3,78.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.1737510939774,TrainWagon.518,TimePath3,78.OnEntered,[Assign] EntityMovementRate,Assigning state variable 'Token.78.ReturnValue' the value '0.333333333333333' .
+16.1737510939774,TrainWagon.518,TimePath3,78.OnEntered,[Assign] EntityMovementRate,Assigning state variable 'TrainWagon.518.Movement.Rate' the value '1420.14' Meters per Hour.
+16.1737510939774,TrainWagon.518,TimePath3,78.OnEntered,[EndTransfer] OntoTimePath,Entity 'TrainWagon.518' ending transfer onto link 'TimePath3'.
+16.1737510939774,TrainWagon.518,TimePath3,78.OnEntered,[End],Process 'OnEntered' ended.
+16.1737510939774,TrainWagon.518,Path2,68.OnReachedEnd,[End],Process 'OnReachedEnd' ended.
+16.1737510939774,TrainWagon.518,TrainTransferNode1,74.OnEntered,[End],Process 'OnEntered' ended.
+16.1741031719415,TrainWagon.518,TrainTransferNode1,74.OnExited,[Begin],Process 'OnExited' initiated.
+16.1741031719415,TrainWagon.518,TrainTransferNode1,74.OnExited,[Fire] ExitedEvent,Firing event 'TrainTransferNode1.Exited'.
+16.1741031719415,TrainWagon.518,TrainTransferNode1,74.OnExited,[End],Process 'OnExited' ended.
+16.5002777777778,LACGenServer,LACGenServer,74.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+16.5002777777778,LACGenServer,LACGenServer,74.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LACGenServer.Processing.CurrentCapacity' the value '0' .
+16.5002777777778,LACGenServer,LACGenServer,74.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+16.5002777777778,LACGenServer,LACGenServer,74.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+16.5002777777778,LACGenServer,LACGenServer,74.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+16.5002777777778,LACGenServer,LACGenServer,74.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+16.5002777777778,LACGenServer,LACGenServer,74.OnCapacityChanged,[Suspend] Processing,Suspending process 'LACGenServer.OnEnteredProcessing'.
+16.5002777777778,--,--,--,--,The number of suspensions applied to process 'LACGenServer.OnEnteredProcessing' is now '1'.
+16.5002777777778,LACGenServer,LACGenServer,74.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'LACGenServer_OffShift'.
+16.5002777777778,LACGenServer,Model,68.LACGenServer_OffShift,[Begin],Process 'LACGenServer_OffShift' initiated.
+16.5002777777778,LACGenServer,Model,68.LACGenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@LAC_Input.FlowRegulator.Enabled' the value '0' .
+16.5002777777778,LACGenServer,Model,68.LACGenServer_OffShift,[End],Process 'LACGenServer_OffShift' ended.
+16.5002777777778,LACGenServer,LACGenServer,74.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+16.5002777777778,HAC1GenServer,HAC1GenServer,74.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+16.5002777777778,HAC1GenServer,HAC1GenServer,74.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'HAC1GenServer.Processing.CurrentCapacity' the value '0' .
+16.5002777777778,HAC1GenServer,HAC1GenServer,74.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+16.5002777777778,HAC1GenServer,HAC1GenServer,74.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+16.5002777777778,HAC1GenServer,HAC1GenServer,74.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+16.5002777777778,HAC1GenServer,HAC1GenServer,74.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+16.5002777777778,HAC1GenServer,HAC1GenServer,74.OnCapacityChanged,[Suspend] Processing,Suspending process 'HAC1GenServer.OnEnteredProcessing'.
+16.5002777777778,--,--,--,--,The number of suspensions applied to process 'HAC1GenServer.OnEnteredProcessing' is now '1'.
+16.5002777777778,HAC1GenServer,HAC1GenServer,74.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'HAC1GenServer_OffShift'.
+16.5002777777778,HAC1GenServer,Model,68.HAC1GenServer_OffShift,[Begin],Process 'HAC1GenServer_OffShift' initiated.
+16.5002777777778,HAC1GenServer,Model,68.HAC1GenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@HAC1_Input.FlowRegulator.Enabled' the value '0' .
+16.5002777777778,HAC1GenServer,Model,68.HAC1GenServer_OffShift,[End],Process 'HAC1GenServer_OffShift' ended.
+16.5002777777778,HAC1GenServer,HAC1GenServer,74.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+16.5002777777778,HAC2GenServer,HAC2GenServer,74.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+16.5002777777778,HAC2GenServer,HAC2GenServer,74.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'HAC2GenServer.Processing.CurrentCapacity' the value '0' .
+16.5002777777778,HAC2GenServer,HAC2GenServer,74.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+16.5002777777778,HAC2GenServer,HAC2GenServer,74.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+16.5002777777778,HAC2GenServer,HAC2GenServer,74.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+16.5002777777778,HAC2GenServer,HAC2GenServer,74.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+16.5002777777778,HAC2GenServer,HAC2GenServer,74.OnCapacityChanged,[Suspend] Processing,Suspending process 'HAC2GenServer.OnEnteredProcessing'.
+16.5002777777778,--,--,--,--,The number of suspensions applied to process 'HAC2GenServer.OnEnteredProcessing' is now '1'.
+16.5002777777778,HAC2GenServer,HAC2GenServer,74.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'HAC2GenServer_OffShift'.
+16.5002777777778,HAC2GenServer,Model,68.HAC2GenServer_OffShift,[Begin],Process 'HAC2GenServer_OffShift' initiated.
+16.5002777777778,HAC2GenServer,Model,68.HAC2GenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@HAC2_Input.FlowRegulator.Enabled' the value '0' .
+16.5002777777778,HAC2GenServer,Model,68.HAC2GenServer_OffShift,[End],Process 'HAC2GenServer_OffShift' ended.
+16.5002777777778,HAC2GenServer,HAC2GenServer,74.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+16.5002777777778,--,--,--,--,Object 'LAC.494' destroyed.
+16.5002777777778,--,--,--,--,Object 'LAC.495' destroyed.
+16.5002777777778,--,--,--,--,Object 'LAC.517' destroyed.
+16.5002777777778, ,LCV_9001H,63.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,LCV_9002H,66.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,Input@LAC_ROMPAD,24.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+16.5002777777778,--,--,--,--,Object 'HAC.496' destroyed.
+16.5002777777778,--,--,--,--,Object 'HAC.499' destroyed.
+16.5002777777778,--,--,--,--,Object 'HAC.501' destroyed.
+16.5002777777778, ,HCV_9001H,69.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,FlowNode1,52.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,FlowNode4,75.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778,HAC.504,Input@HAC_Feeder,70.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+16.5002777777778,--,--,--,--,Object 'LAC.497' destroyed.
+16.5002777777778,--,--,--,--,Object 'LAC.500' destroyed.
+16.5002777777778,--,--,--,--,Object 'LAC.502' destroyed.
+16.5002777777778,--,--,--,--,Object 'LAC.493' destroyed.
+16.5002777777778,--,--,--,--,Object 'LAC.503' destroyed.
+16.5002777777778,--,--,--,--,Object 'HAC.504' destroyed.
+16.5002777777778,--,--,--,--,Object 'HAC.505' destroyed.
+16.5002777777778,--,--,--,--,Object 'HAC.506' destroyed.
+16.5002777777778,--,--,--,--,Object 'HAC.507' destroyed.
+16.5002777777778,--,--,--,--,Object 'HAC.508' destroyed.
+16.5002777777778,--,--,--,--,Object 'HAC.509' destroyed.
+16.5002777777778,--,--,--,--,Object 'HAC.510' destroyed.
+16.5002777777778,--,--,--,--,Object 'HAC.511' destroyed.
+16.5002777777778,--,--,--,--,Object 'Washed.512' destroyed.
+16.5002777777778,--,--,--,--,Object 'Washed.513' destroyed.
+16.5002777777778, ,Input@Optional_ROMPAD,42.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+16.5002777777778, ,Optional_ROMPAD,57.OnEnteredFlowContainer,[End],Process 'OnEnteredFlowContainer' ended.
+16.5002777777778, ,Output@Optional_ROMPAD,81.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+16.5002777777778, ,FlowNode4_1,79.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,FlowNode4,32.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,Input@LAC_Feeder,46.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+16.5002777777778, ,HAC_Feeder,73.OnEnteredFlowContainer,[End],Process 'OnEnteredFlowContainer' ended.
+16.5002777777778, ,Output@HAC_Feeder,67.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+16.5002777777778, ,CV_1301H,72.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,CV_1301T,82.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,CV_2301H,54.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,CV_2301T,61.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,HAC_Washing,40.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,CV_3301H,64.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,CV_3301T,58.OnEntered,[End],Process 'OnEntered' ended.
+16.5002777777778, ,FlowNode8,92.OnEntered,[End],Process 'OnEntered' ended.
+16.5070844273107,TrainWagon.518,TimePath3,92.OnReachedEnd,[Begin],Process 'OnReachedEnd' initiated.
+16.5070844273107,TrainWagon.518,TimePath3,92.OnReachedEnd,[Transfer] FromTimePath,Entity 'TrainWagon.518' initiating transfer from '[EndOfLink] TimePath3' into node 'ContainerInput@TrainLoadStation'.
+16.5070844273107,TrainWagon.518,ContainerInput@TrainLoadStation,58.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+16.5070844273107,TrainWagon.518,ContainerInput@TrainLoadStation,58.OnEnteredToAssociatedObject,[Fire] EnteredEvent,Firing event 'ContainerInput@TrainLoadStation.Entered'.
+16.5070844273107,TrainWagon.518,ContainerInput@TrainLoadStation,58.OnEnteredToAssociatedObject,[Execute] Entered_AddOnProcess,Executing process 'ContainerInput_TrainLoadStation_Entered'.
+16.5070844273107,TrainWagon.518,Model,64.ContainerInput_TrainLoadStation_Entered,[Begin],Process 'ContainerInput_TrainLoadStation_Entered' initiated.
+16.5070844273107,TrainWagon.518,Model,64.ContainerInput_TrainLoadStation_Entered,[Tally] Tally_TimeBetweenTrains,Recorded '1' observation(s) of value '5.32008626563477' Hours for tally statistic 'Tally_TimeBetweenTrains'.
+16.5070844273107,TrainWagon.518,Model,64.ContainerInput_TrainLoadStation_Entered,[End],Process 'ContainerInput_TrainLoadStation_Entered' ended.
+16.5070844273107,TrainWagon.518,ContainerInput@TrainLoadStation,58.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'TrainWagon.518' initiating transfer from '[Node] ContainerInput@TrainLoadStation' into object 'TrainLoadStation'.
+16.5070844273107,TrainWagon.518,ContainerInput@TrainLoadStation,58.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'TrainWagon.518' initiating transfer from '[Node] ContainerInput@TrainLoadStation' into station location 'TrainLoadStation.Processing'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Begin],Process 'OnEnteredProcessing' initiated.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Delay] TransferInTime,Delaying token for '0' Hours until time '16.5070844273107' Hours.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Seize] Filler,Requesting seize of resource(s) in behalf of owner 'TrainWagon.518'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,40.OnEvaluatingSeizeRequest,[Begin],Process 'OnEvaluatingSeizeRequest' initiated.
+16.5070844273107,TrainWagon.518,TrainLoadStation,40.OnEvaluatingSeizeRequest,[Decide] IfFillerAvailable,Token branching on condition '!Failure.Active && (ProcessingCountBasedFailures.EventCount==0) && (EventCountBasedFailures.EventCount==0) && (CalendarTimeBasedFailures.EventCount==0) && (ProcessingTimeBasedFailures.EventCount==0)'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,40.OnEvaluatingSeizeRequest,[Decide] IfFillerAvailable,Token sent to 'True' exit.
+16.5070844273107,TrainWagon.518,TrainLoadStation,40.OnEvaluatingSeizeRequest,[End],Process 'OnEvaluatingSeizeRequest' ended.
+16.5070844273107,--,--,--,--,Object 'TrainWagon.518' seized '1' capacity unit(s) of resource 'TrainLoadStation'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Execute] BeforeProcessing_AddOnProcess,Executing process 'TrainLoadStation_BeforeProcessing'.
+16.5070844273107,TrainWagon.518,Model,40.TrainLoadStation_BeforeProcessing,[Begin],Process 'TrainLoadStation_BeforeProcessing' initiated.
+16.5070844273107,TrainWagon.518,Model,40.TrainLoadStation_BeforeProcessing,[Decide] MoreFull,Token branching on condition 'Stockpile1.FlowContainer.Contents.Weight>Stockpile2.FlowContainer.Contents.Weight'.
+16.5070844273107,TrainWagon.518,Model,40.TrainLoadStation_BeforeProcessing,[Decide] MoreFull,Token sent to 'False' exit.
+16.5070844273107,TrainWagon.518,Model,40.TrainLoadStation_BeforeProcessing,[Assign] LoadFromS2,Assigning state variable 'Output@Stockpile2.FlowRegulator.Enabled' the value '1' .
+16.5070844273107,LAC.385,Output@Stockpile2,33.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.519' initiating transfer from '[FreeSpace] Model' into node 'CV_3304N'.
+16.5070844273107,LAC.519,CV_3304N,61.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.5070844273107,LAC.519,CV_3304N,61.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.519' to location type 'OutboundLink' using flow regulator 'CV_3304N.FlowRegulator'.
+16.5070844273107,TrainWagon.518,Model,40.TrainLoadStation_BeforeProcessing,[End],Process 'TrainLoadStation_BeforeProcessing' ended.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[EndTransfer] IntoProcessing,Entity 'TrainWagon.518' ending transfer into station 'TrainLoadStation.Processing'.
+16.5070844273107,TrainWagon.518,ContainerInput@TrainLoadStation,40.OnExited,[Begin],Process 'OnExited' initiated.
+16.5070844273107,TrainWagon.518,ContainerInput@TrainLoadStation,40.OnExited,[Fire] ExitedEvent,Firing event 'ContainerInput@TrainLoadStation.Exited'.
+16.5070844273107,TrainWagon.518,ContainerInput@TrainLoadStation,40.OnExited,[End],Process 'OnExited' ended.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Find] FlowContainer,Searching for result that satisfies the condition 'Entity.Elements.ItemAtIndex(CurrentElementIndex).Is.Container'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Find] FlowContainer,Using index variable 'CurrentElementIndex' with index range from starting index '1' to ending index '1'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Find] FlowContainer,Result found that satisfied search condition.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Find] FlowContainer,Saving index found. Assigning index variable 'CurrentElementIndex' the value '1'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Find] FlowContainer,Token sent to 'Found' exit.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] FillTarget,Assigning state variable 'CurrentFlowContainer' the value 'TrainWagon.518.FlowContainer'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] FillTarget,Assigning state variable 'DesiredAddedVolume' the value 'Infinity' Cubic Meters.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] FillTarget,Assigning state variable 'DesiredAddedWeight' the value 'Infinity' Metric Tons.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Decide] IfCanFill,Token branching on condition '(CurrentFlowContainer.Contents.Volume < CurrentFlowContainer.CurrentVolumeCapacity) && (CurrentFlowContainer.Contents.Weight < CurrentFlowContainer.CurrentWeightCapacity) && (DesiredAddedVolume > 0.0 || DesiredAddedWeight > 0.0)'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Decide] IfCanFill,Token sent to 'True' exit.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Execute] FillingContainer_AddOnProcess,Executing process 'TrainLoadStation_FillingContainer'.
+16.5070844273107,TrainWagon.518,Model,40.TrainLoadStation_FillingContainer,[Begin],Process 'TrainLoadStation_FillingContainer' initiated.
+16.5070844273107,TrainWagon.518,Model,40.TrainLoadStation_FillingContainer,[Assign] TrainArrivalTime,Assigning state variable 'TrainWagon.518.Time_StartLoading' the value '16.5070844273107' Hours.
+16.5070844273107,TrainWagon.518,Model,40.TrainLoadStation_FillingContainer,[End],Process 'TrainLoadStation_FillingContainer' ended.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'FlowInput@TrainLoadStation.FlowRegulator.Enabled' the value '1' .
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedVolume.CurrentThresholdValue' the value 'Infinity' Cubic Meters.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedVolume.Enabled' the value '0' .
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedWeight.CurrentThresholdValue' the value '24000' Metric Tons.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedWeight.Enabled' the value '0' .
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'ResourceState' the value '0' .
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Wait] UntilFillTarget,Token waiting for event 'TrainWagon.518.FlowContainer.Full'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Wait] UntilFillTarget,Token waiting for event 'TrainLoadStation.ReachedDesiredAddedVolume.Event'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Wait] UntilFillTarget,Token waiting for event 'TrainLoadStation.ReachedDesiredAddedWeight.Event'.
+16.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Wait] UntilFillTarget,Token waiting at Wait step for '3' event(s). The wait is until any one of the events occurs.
+16.5070844273107,TrainWagon.518,TimePath3,92.OnReachedEnd,[End],Process 'OnReachedEnd' ended.
+16.5070844273107,TrainWagon.518,ContainerInput@TrainLoadStation,58.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+16.5070844273107,--,--,--,--,Firing event 'Stockpile2OutputQuantity_Monitor.Event'.
+16.5070844273107,LAC.519,CV_3304N,61.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.520' initiating transfer from '[FreeSpace] Model' into node 'CV_3304T'.
+16.5070844273107,LAC.520,CV_3304T,58.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.5070844273107,LAC.520,CV_3304T,58.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.520' to location type 'OutboundLink' using flow regulator 'CV_3304T.FlowRegulator'.
+16.5070844273107,LAC.520,CV_3304T,58.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.521' initiating transfer from '[FreeSpace] Model' into node 'CV_3306H'.
+16.5070844273107,LAC.521,CV_3306H,92.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.5070844273107,LAC.521,CV_3306H,92.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.521' to location type 'OutboundLink' using flow regulator 'CV_3306H.FlowRegulator'.
+16.5070844273107,LAC.521,CV_3306H,92.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.522' initiating transfer from '[FreeSpace] Model' into node 'CV_3306T'.
+16.5070844273107,LAC.522,CV_3306T,40.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.5070844273107,LAC.522,CV_3306T,40.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.522' to location type 'OutboundLink' using flow regulator 'CV_3306T.FlowRegulator'.
+16.5070844273107,LAC.522,CV_3306T,40.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.523' initiating transfer from '[FreeSpace] Model' into node 'Input@TrainLoadBin'.
+16.5070844273107,LAC.523,Input@TrainLoadBin,54.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+16.5070844273107,LAC.523,Input@TrainLoadBin,54.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.523' initiating transfer from '[Node] Input@TrainLoadBin' into object 'TrainLoadBin'.
+16.5070844273107,LAC.523,Input@TrainLoadBin,54.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.523' to location type 'Container' using flow regulator 'Input@TrainLoadBin.FlowRegulator'.
+16.5070844273107,LAC.523,Input@TrainLoadBin,54.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.524' initiating transfer from '[FreeSpace] Model' into container location 'TrainLoadBin.FlowContainer'.
+16.5070844273107,LAC.524,TrainLoadBin,82.OnEnteredFlowContainer,[Begin],Process 'OnEnteredFlowContainer' initiated.
+16.5070844273107,LAC.524,TrainLoadBin,82.OnEnteredFlowContainer,[Transfer] ToOutputNode,Entity 'LAC.524' initiating transfer from '[Container] TrainLoadBin.FlowContainer' into node 'Output@TrainLoadBin'.
+16.5070844273107,LAC.524,Output@TrainLoadBin,72.OnEnteredFromAssociatedObject,[Begin],Process 'OnEnteredFromAssociatedObject' initiated.
+16.5070844273107,LAC.524,Output@TrainLoadBin,72.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.524' to location type 'OutboundLink' using flow regulator 'Output@TrainLoadBin.FlowRegulator'.
+16.5070844273107,--,--,--,--,Firing event 'TrainLoadBin.WeightLevelRisingAboveLowMark.Event'.
+16.5070844273107,--,--,--,--,Firing event 'TrainLoadBin.WeightLevelRisingAboveMidMark.Event'.
+16.5070844273107,--,--,--,--,Firing event 'TrainLoadBin.WeightLevelRisingAboveHighMark.Event'.
+16.5070844273107,LAC.524,Output@TrainLoadBin,72.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.525' initiating transfer from '[FreeSpace] Model' into node 'FlowInput@TrainLoadStation'.
+16.5070844273107,LAC.525,FlowInput@TrainLoadStation,67.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+16.5070844273107,LAC.525,FlowInput@TrainLoadStation,67.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.525' initiating transfer from '[Node] FlowInput@TrainLoadStation' into object 'TrainLoadStation'.
+16.5070844273107,LAC.525,FlowInput@TrainLoadStation,67.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.525' to location type 'Container' using flow regulator 'FlowInput@TrainLoadStation.FlowRegulator'.
+16.5070844273107,LAC.525,FlowInput@TrainLoadStation,67.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.526' initiating transfer from '[FreeSpace] Model' into container location 'TrainWagon.518.FlowContainer'.
+16.5070844273107,--,--,--,--,Firing event 'TrainLoadStation.FillingRateChanged.Event'.
+16.5070844273107,TrainLoadStation,TrainLoadStation,73.OnFillingRateChanged,[Begin],Process 'OnFillingRateChanged' initiated.
+16.5070844273107,TrainLoadStation,TrainLoadStation,73.OnFillingRateChanged,[Assign] ResourceState,Assigning state variable 'ResourceState' the value '1' .
+16.5070844273107,TrainLoadStation,TrainLoadStation,73.OnFillingRateChanged,[End],Process 'OnFillingRateChanged' ended.
+16.5532978973039,--,--,--,--,Firing event 'LAC_Feeder.WeightLevelFallingBelowMidMark.Event'.
+16.5532978973039,LAC_Feeder,LAC_Feeder,73.OnFlowContainerLevelFallingBelowMidMark,[Begin],Process 'OnFlowContainerLevelFallingBelowMidMark' initiated.
+16.5532978973039,LAC_Feeder,LAC_Feeder,73.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9001H.FlowRegulator.Enabled' the value '1' .
+16.5532978973039,LAC_Feeder,LAC_Feeder,73.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9003H.FlowRegulator.Enabled' the value '1' .
+16.5532978973039,LAC.389,LCV_9003H,76.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.527' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+16.5532978973039,LAC.527,FlowNode4_1,46.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.5532978973039,LAC.527,FlowNode4_1,46.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.527' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+16.5532978973039,LAC_Feeder,LAC_Feeder,73.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9002H.FlowRegulator.Enabled' the value '0' .
+16.5532978973039,LAC_Feeder,LAC_Feeder,73.OnFlowContainerLevelFallingBelowMidMark,[End],Process 'OnFlowContainerLevelFallingBelowMidMark' ended.
+16.5532978973039,LAC.527,FlowNode4_1,46.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.528' initiating transfer from '[FreeSpace] Model' into node 'Input@LAC_Feeder'.
+16.5532978973039,LAC.528,Input@LAC_Feeder,73.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+16.5532978973039,LAC.528,Input@LAC_Feeder,73.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.528' initiating transfer from '[Node] Input@LAC_Feeder' into object 'LAC_Feeder'.
+16.5532978973039,LAC.528,Input@LAC_Feeder,73.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.528' to location type 'Container' using flow regulator 'Input@LAC_Feeder.FlowRegulator'.
+16.7502777777778,LACGenServer,LACGenServer,32.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+16.7502777777778,LACGenServer,LACGenServer,32.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LACGenServer.Processing.CurrentCapacity' the value '1' .
+16.7502777777778,LACGenServer,LACGenServer,32.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+16.7502777777778,LACGenServer,LACGenServer,32.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'True' exit.
+16.7502777777778,LACGenServer,LACGenServer,32.OnCapacityChanged,[Resume] Processing,Resuming process 'LACGenServer.OnEnteredProcessing'.
+16.7502777777778,--,--,--,--,The number of suspensions applied to process 'LACGenServer.OnEnteredProcessing' is now '0'.
+16.7502777777778,LACGenServer,LACGenServer,32.OnCapacityChanged,[Execute] OnShift_AddOnProcess,Executing process 'LACGenServer_OnShift'.
+16.7502777777778,LACGenServer,Model,79.LACGenServer_OnShift,[Begin],Process 'LACGenServer_OnShift' initiated.
+16.7502777777778,LACGenServer,Model,79.LACGenServer_OnShift,[Assign] FlowOn,Assigning state variable 'Output@LAC_Input.FlowRegulator.Enabled' the value '1' .
+16.7502777777778,LAC.288,Output@LAC_Input,10.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.529' initiating transfer from '[FreeSpace] Model' into node 'LCV_9001H'.
+16.7502777777778,LAC.529,LCV_9001H,81.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,LAC.529,LCV_9001H,81.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.529' to location type 'OutboundLink' using flow regulator 'LCV_9001H.FlowRegulator'.
+16.7502777777778,LAC.288,Output@LAC_Input,10.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.530' initiating transfer from '[FreeSpace] Model' into node 'LCV_9002H'.
+16.7502777777778,LAC.530,LCV_9002H,57.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,LAC.530,LCV_9002H,57.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.530' to location type 'OutboundLink' using flow regulator 'LCV_9002H.FlowRegulator'.
+16.7502777777778,LACGenServer,Model,79.LACGenServer_OnShift,[End],Process 'LACGenServer_OnShift' ended.
+16.7502777777778,LACGenServer,LACGenServer,32.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+16.7502777777778,HAC1GenServer,HAC1GenServer,32.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+16.7502777777778,HAC1GenServer,HAC1GenServer,32.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'HAC1GenServer.Processing.CurrentCapacity' the value '1' .
+16.7502777777778,HAC1GenServer,HAC1GenServer,32.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+16.7502777777778,HAC1GenServer,HAC1GenServer,32.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'True' exit.
+16.7502777777778,HAC1GenServer,HAC1GenServer,32.OnCapacityChanged,[Resume] Processing,Resuming process 'HAC1GenServer.OnEnteredProcessing'.
+16.7502777777778,--,--,--,--,The number of suspensions applied to process 'HAC1GenServer.OnEnteredProcessing' is now '0'.
+16.7502777777778,HAC1GenServer,HAC1GenServer,32.OnCapacityChanged,[Execute] OnShift_AddOnProcess,Executing process 'HAC1GenServer_OnShift'.
+16.7502777777778,HAC1GenServer,Model,79.HAC1GenServer_OnShift,[Begin],Process 'HAC1GenServer_OnShift' initiated.
+16.7502777777778,HAC1GenServer,Model,79.HAC1GenServer_OnShift,[Assign] FlowOn,Assigning state variable 'Output@HAC1_Input.FlowRegulator.Enabled' the value '1' .
+16.7502777777778,HAC.287,Output@HAC1_Input,0.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'HAC.531' initiating transfer from '[FreeSpace] Model' into node 'HCV_9001H'.
+16.7502777777778,HAC.531,HCV_9001H,42.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,HAC.531,HCV_9001H,42.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.531' to location type 'OutboundLink' using flow regulator 'HCV_9001H.FlowRegulator'.
+16.7502777777778,HAC1GenServer,Model,79.HAC1GenServer_OnShift,[End],Process 'HAC1GenServer_OnShift' ended.
+16.7502777777778,HAC1GenServer,HAC1GenServer,32.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+16.7502777777778,HAC2GenServer,HAC2GenServer,32.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+16.7502777777778,HAC2GenServer,HAC2GenServer,32.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'HAC2GenServer.Processing.CurrentCapacity' the value '1' .
+16.7502777777778,HAC2GenServer,HAC2GenServer,32.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+16.7502777777778,HAC2GenServer,HAC2GenServer,32.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'True' exit.
+16.7502777777778,HAC2GenServer,HAC2GenServer,32.OnCapacityChanged,[Resume] Processing,Resuming process 'HAC2GenServer.OnEnteredProcessing'.
+16.7502777777778,--,--,--,--,The number of suspensions applied to process 'HAC2GenServer.OnEnteredProcessing' is now '0'.
+16.7502777777778,HAC2GenServer,HAC2GenServer,32.OnCapacityChanged,[Execute] OnShift_AddOnProcess,Executing process 'HAC2GenServer_OnShift'.
+16.7502777777778,HAC2GenServer,Model,79.HAC2GenServer_OnShift,[Begin],Process 'HAC2GenServer_OnShift' initiated.
+16.7502777777778,HAC2GenServer,Model,79.HAC2GenServer_OnShift,[Assign] FlowOn,Assigning state variable 'Output@HAC2_Input.FlowRegulator.Enabled' the value '1' .
+16.7502777777778,LAC.293,Output@HAC2_Input,15.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.532' initiating transfer from '[FreeSpace] Model' into node 'Input@Optional_ROMPAD'.
+16.7502777777778,LAC.532,Input@Optional_ROMPAD,70.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+16.7502777777778,LAC.532,Input@Optional_ROMPAD,70.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.532' initiating transfer from '[Node] Input@Optional_ROMPAD' into object 'Optional_ROMPAD'.
+16.7502777777778,LAC.532,Input@Optional_ROMPAD,70.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.532' to location type 'Container' using flow regulator 'Input@Optional_ROMPAD.FlowRegulator'.
+16.7502777777778,HAC2GenServer,Model,79.HAC2GenServer_OnShift,[End],Process 'HAC2GenServer_OnShift' ended.
+16.7502777777778,HAC2GenServer,HAC2GenServer,32.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+16.7502777777778,LAC.529,LCV_9001H,81.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.533' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+16.7502777777778,LAC.533,FlowNode4_1,32.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,LAC.533,FlowNode4_1,32.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.533' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+16.7502777777778,HAC.531,HCV_9001H,42.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.534' initiating transfer from '[FreeSpace] Model' into node 'FlowNode1'.
+16.7502777777778,HAC.534,FlowNode1,79.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,HAC.534,FlowNode1,79.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.534' to location type 'OutboundLink' using flow regulator 'FlowNode1.FlowRegulator'.
+16.7502777777778,LAC.532,Input@Optional_ROMPAD,70.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.535' initiating transfer from '[FreeSpace] Model' into container location 'Optional_ROMPAD.FlowContainer'.
+16.7502777777778,LAC.535,Optional_ROMPAD,75.OnEnteredFlowContainer,[Begin],Process 'OnEnteredFlowContainer' initiated.
+16.7502777777778,LAC.535,Optional_ROMPAD,75.OnEnteredFlowContainer,[Transfer] ToOutputNode,Entity 'LAC.535' initiating transfer from '[Container] Optional_ROMPAD.FlowContainer' into node 'Output@Optional_ROMPAD'.
+16.7502777777778,LAC.535,Output@Optional_ROMPAD,52.OnEnteredFromAssociatedObject,[Begin],Process 'OnEnteredFromAssociatedObject' initiated.
+16.7502777777778,LAC.535,Output@Optional_ROMPAD,52.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.535' to location type 'OutboundLink' using flow regulator 'Output@Optional_ROMPAD.FlowRegulator'.
+16.7502777777778,--,--,--,--,Firing event 'Optional_ROMPAD.WeightLevelRisingAboveLowMark.Event'.
+16.7502777777778,--,--,--,--,Firing event 'Optional_ROMPAD.WeightLevelRisingAboveMidMark.Event'.
+16.7502777777778,--,--,--,--,Firing event 'Optional_ROMPAD.WeightLevelRisingAboveHighMark.Event'.
+16.7502777777778,--,--,--,--,Firing event 'LAC_Feeder.WeightLevelRisingAboveMidMark.Event'.
+16.7502777777778,HAC.534,FlowNode1,79.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.536' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4'.
+16.7502777777778,HAC.536,FlowNode4,69.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,HAC.536,FlowNode4,69.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.536' to location type 'OutboundLink' using flow regulator 'FlowNode4.FlowRegulator'.
+16.7502777777778,LAC.535,Output@Optional_ROMPAD,52.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.537' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+16.7502777777778,LAC.537,FlowNode4_1,24.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,LAC.537,FlowNode4_1,24.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.537' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+16.7502777777778,LAC.535,Output@Optional_ROMPAD,52.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.538' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4'.
+16.7502777777778,LAC.538,FlowNode4,66.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,LAC.538,FlowNode4,66.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.538' to location type 'OutboundLink' using flow regulator 'FlowNode4.FlowRegulator'.
+16.7502777777778,HAC.536,FlowNode4,69.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.539' initiating transfer from '[FreeSpace] Model' into node 'Input@HAC_Feeder'.
+16.7502777777778,HAC.539,Input@HAC_Feeder,63.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+16.7502777777778,HAC.539,Input@HAC_Feeder,63.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'HAC.539' initiating transfer from '[Node] Input@HAC_Feeder' into object 'HAC_Feeder'.
+16.7502777777778,HAC.539,Input@HAC_Feeder,63.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'HAC.539' to location type 'Container' using flow regulator 'Input@HAC_Feeder.FlowRegulator'.
+16.7502777777778,HAC.539,Input@HAC_Feeder,63.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'HAC.540' initiating transfer from '[FreeSpace] Model' into container location 'HAC_Feeder.FlowContainer'.
+16.7502777777778,HAC.540,HAC_Feeder,74.OnEnteredFlowContainer,[Begin],Process 'OnEnteredFlowContainer' initiated.
+16.7502777777778,HAC.540,HAC_Feeder,74.OnEnteredFlowContainer,[Transfer] ToOutputNode,Entity 'HAC.540' initiating transfer from '[Container] HAC_Feeder.FlowContainer' into node 'Output@HAC_Feeder'.
+16.7502777777778,HAC.540,Output@HAC_Feeder,68.OnEnteredFromAssociatedObject,[Begin],Process 'OnEnteredFromAssociatedObject' initiated.
+16.7502777777778,HAC.540,Output@HAC_Feeder,68.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.540' to location type 'OutboundLink' using flow regulator 'Output@HAC_Feeder.FlowRegulator'.
+16.7502777777778,--,--,--,--,Firing event 'HAC_Feeder.WeightLevelRisingAboveLowMark.Event'.
+16.7502777777778,--,--,--,--,Firing event 'HAC_Feeder.WeightLevelRisingAboveHighMark.Event'.
+16.7502777777778,HAC.540,Output@HAC_Feeder,68.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'HAC.541' initiating transfer from '[FreeSpace] Model' into node 'CV_1301H'.
+16.7502777777778,HAC.541,CV_1301H,78.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,HAC.541,CV_1301H,78.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.541' to location type 'OutboundLink' using flow regulator 'CV_1301H.FlowRegulator'.
+16.7502777777778,HAC.541,CV_1301H,78.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.542' initiating transfer from '[FreeSpace] Model' into node 'CV_1301T'.
+16.7502777777778,HAC.542,CV_1301T,47.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,HAC.542,CV_1301T,47.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.542' to location type 'OutboundLink' using flow regulator 'CV_1301T.FlowRegulator'.
+16.7502777777778,HAC.542,CV_1301T,47.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.543' initiating transfer from '[FreeSpace] Model' into node 'CV_2301H'.
+16.7502777777778,HAC.543,CV_2301H,56.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,HAC.543,CV_2301H,56.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.543' to location type 'OutboundLink' using flow regulator 'CV_2301H.FlowRegulator'.
+16.7502777777778,HAC.543,CV_2301H,56.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.544' initiating transfer from '[FreeSpace] Model' into node 'CV_2301T'.
+16.7502777777778,HAC.544,CV_2301T,51.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,HAC.544,CV_2301T,51.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.544' to location type 'OutboundLink' using flow regulator 'CV_2301T.FlowRegulator'.
+16.7502777777778,HAC.544,CV_2301T,51.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.545' initiating transfer from '[FreeSpace] Model' into node 'HAC_Washing'.
+16.7502777777778,HAC.545,HAC_Washing,35.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,HAC.545,HAC_Washing,35.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.545' to location type 'OutboundLink' using flow regulator 'HAC_Washing.FlowRegulator'.
+16.7502777777778,HAC.545,HAC_Washing,35.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.546' initiating transfer from '[FreeSpace] Model' into node 'CV_3301H'.
+16.7502777777778,HAC.546,CV_3301H,48.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,HAC.546,CV_3301H,48.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.546' to location type 'OutboundLink' using flow regulator 'CV_3301H.FlowRegulator'.
+16.7502777777778,HAC.546,CV_3301H,48.OnEntered,[Transfer] ToOutboundLink,Entity 'Washed.547' initiating transfer from '[FreeSpace] Model' into node 'CV_3301T'.
+16.7502777777778,Washed.547,CV_3301T,80.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,Washed.547,CV_3301T,80.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'Washed.547' to location type 'OutboundLink' using flow regulator 'CV_3301T.FlowRegulator'.
+16.7502777777778,Washed.547,CV_3301T,80.OnEntered,[Transfer] ToOutboundLink,Entity 'Washed.548' initiating transfer from '[FreeSpace] Model' into node 'FlowNode8'.
+16.7502777777778,Washed.548,FlowNode8,37.OnEntered,[Begin],Process 'OnEntered' initiated.
+16.7502777777778,Washed.548,FlowNode8,37.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'Washed.548' to location type 'OutboundLink' using flow regulator 'FlowNode8.FlowRegulator'.
+16.8034477728861,LAC_Feeder,LAC_Feeder,53.OnFlowContainerFull,[Begin],Process 'OnFlowContainerFull' initiated.
+16.8034477728861,LAC_Feeder,LAC_Feeder,53.OnFlowContainerFull,[Fire] TankFullEvent,Firing event 'LAC_Feeder.TankFull'.
+16.8034477728861,LAC_Feeder,LAC_Feeder,53.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9001H.FlowRegulator.Enabled' the value '0' .
+16.8034477728861,LAC_Feeder,LAC_Feeder,53.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9003H.FlowRegulator.Enabled' the value '0' .
+16.8034477728861,LAC_Feeder,LAC_Feeder,53.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9002H.FlowRegulator.Enabled' the value '1' .
+16.8034477728861,LAC.530,LCV_9002H,57.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.549' initiating transfer from '[FreeSpace] Model' into node 'Input@LAC_ROMPAD'.
+16.8034477728861,LAC.549,Input@LAC_ROMPAD,43.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+16.8034477728861,LAC.549,Input@LAC_ROMPAD,43.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.549' initiating transfer from '[Node] Input@LAC_ROMPAD' into object 'LAC_ROMPAD'.
+16.8034477728861,LAC.549,Input@LAC_ROMPAD,43.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.549' to location type 'Container' using flow regulator 'Input@LAC_ROMPAD.FlowRegulator'.
+16.8034477728861,LAC_Feeder,LAC_Feeder,53.OnFlowContainerFull,[End],Process 'OnFlowContainerFull' ended.
+16.8034477728861,--,--,--,--,Object 'LAC.533' destroyed.
+16.8034477728861, ,FlowNode4_1,32.OnEntered,[End],Process 'OnEntered' ended.
+16.8034477728861,--,--,--,--,Object 'LAC.527' destroyed.
+16.8034477728861, ,FlowNode4_1,46.OnEntered,[End],Process 'OnEntered' ended.
+17,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '27416.2655555556' Metric Tons for tally statistic 'Tally_Stockpile1Contents'.
+17,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '25355.7031958286' Metric Tons for tally statistic 'Tally_Stockpile2Contents'.
+17,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '0' Metric Tons for tally statistic 'Tally_HAC_ROMContents'.
+17,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '27372.353723656' Metric Tons for tally statistic 'Tally_LAC_ROMContents'.
+17,Model,Model,1.TallyStockpileContents,[Delay] 1Hour,Delaying token for '1' Hours until time '18' Hours.
+17,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token branching on condition 'UC_Stockpile.FlowContainer.Contents.Weight > UCStockpile_Max'.
+17,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token sent to 'False' exit.
+17,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Delay] Delay1Hour,Delaying token for '1' Hours until time '18' Hours.
+17.9670617777778,--,--,--,--,Firing event 'UC_Stockpile.WeightLevelFallingBelowLowMark.Event'.
+17.9670617777778,--,--,--,--,Firing event 'UC_Stockpile.WeightLevelFallingBelowMidMark.Event'.
+17.9670617777778,--,--,--,--,Firing event 'UC_Stockpile.WeightLevelFallingBelowHighMark.Event'.
+17.9670617777778,UC_Stockpile,UC_Stockpile,46.OnFlowContainerEmpty,[Begin],Process 'OnFlowContainerEmpty' initiated.
+17.9670617777778,UC_Stockpile,UC_Stockpile,46.OnFlowContainerEmpty,[Fire] TankEmptyEvent,Firing event 'UC_Stockpile.TankEmpty'.
+17.9670617777778,UC_Stockpile,UC_Stockpile,46.OnFlowContainerEmpty,[End],Process 'OnFlowContainerEmpty' ended.
+17.9670617777778,--,--,--,--,Object 'UC.483' destroyed.
+17.9670617777778,--,--,--,--,Object 'UC.484' destroyed.
+17.9670617777778,--,--,--,--,Object 'UC.485' destroyed.
+17.9670617777778,--,--,--,--,Object 'UC.486' destroyed.
+17.9670617777778,--,--,--,--,Object 'UC.487' destroyed.
+17.9670617777778,--,--,--,--,Object 'UC.488' destroyed.
+17.9670617777778,--,--,--,--,Object 'UC.489' destroyed.
+17.9670617777778,--,--,--,--,Object 'UC.490' destroyed.
+17.9670617777778,--,--,--,--,Object 'UC.491' destroyed.
+17.9670617777778, ,CV_1701H,62.OnEntered,[End],Process 'OnEntered' ended.
+17.9670617777778, ,CV_1701T,50.OnEntered,[End],Process 'OnEntered' ended.
+17.9670617777778, ,FlowNode2,49.OnEntered,[End],Process 'OnEntered' ended.
+17.9670617777778, ,CV_1705H,87.OnEntered,[End],Process 'OnEntered' ended.
+17.9670617777778, ,CV_1705T,88.OnEntered,[End],Process 'OnEntered' ended.
+17.9670617777778, ,CV_3703H,89.OnEntered,[End],Process 'OnEntered' ended.
+17.9670617777778, ,CV_3703T,90.OnEntered,[End],Process 'OnEntered' ended.
+17.9670617777778, ,Input@Stockpile1,91.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+18,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '29833.92' Metric Tons for tally statistic 'Tally_Stockpile1Contents'.
+18,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '20855.7031957006' Metric Tons for tally statistic 'Tally_Stockpile2Contents'.
+18,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '0' Metric Tons for tally statistic 'Tally_HAC_ROMContents'.
+18,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '29885.653723656' Metric Tons for tally statistic 'Tally_LAC_ROMContents'.
+18,Model,Model,1.TallyStockpileContents,[Delay] 1Hour,Delaying token for '1' Hours until time '19' Hours.
+18,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token branching on condition 'UC_Stockpile.FlowContainer.Contents.Weight > UCStockpile_Max'.
+18,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token sent to 'False' exit.
+18,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Delay] Delay1Hour,Delaying token for '1' Hours until time '19' Hours.
+19,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '29833.92' Metric Tons for tally statistic 'Tally_Stockpile1Contents'.
+19,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '16355.7031955725' Metric Tons for tally statistic 'Tally_Stockpile2Contents'.
+19,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '0' Metric Tons for tally statistic 'Tally_HAC_ROMContents'.
+19,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '32398.953723656' Metric Tons for tally statistic 'Tally_LAC_ROMContents'.
+19,Model,Model,1.TallyStockpileContents,[Delay] 1Hour,Delaying token for '1' Hours until time '20' Hours.
+19,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token branching on condition 'UC_Stockpile.FlowContainer.Contents.Weight > UCStockpile_Max'.
+19,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token sent to 'False' exit.
+19,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Delay] Delay1Hour,Delaying token for '1' Hours until time '20' Hours.
+19.0476129434427,--,--,--,--,Firing event 'LAC_Feeder.WeightLevelFallingBelowMidMark.Event'.
+19.0476129434427,LAC_Feeder,LAC_Feeder,91.OnFlowContainerLevelFallingBelowMidMark,[Begin],Process 'OnFlowContainerLevelFallingBelowMidMark' initiated.
+19.0476129434427,LAC_Feeder,LAC_Feeder,91.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9001H.FlowRegulator.Enabled' the value '1' .
+19.0476129434427,LAC.529,LCV_9001H,81.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.550' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+19.0476129434427,LAC.550,FlowNode4_1,90.OnEntered,[Begin],Process 'OnEntered' initiated.
+19.0476129434427,LAC.550,FlowNode4_1,90.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.550' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+19.0476129434427,LAC_Feeder,LAC_Feeder,91.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9003H.FlowRegulator.Enabled' the value '1' .
+19.0476129434427,LAC.389,LCV_9003H,76.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.551' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+19.0476129434427,LAC.551,FlowNode4_1,89.OnEntered,[Begin],Process 'OnEntered' initiated.
+19.0476129434427,LAC.551,FlowNode4_1,89.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.551' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+19.0476129434427,LAC_Feeder,LAC_Feeder,91.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9002H.FlowRegulator.Enabled' the value '0' .
+19.0476129434427,LAC_Feeder,LAC_Feeder,91.OnFlowContainerLevelFallingBelowMidMark,[End],Process 'OnFlowContainerLevelFallingBelowMidMark' ended.
+19.0476129434427,--,--,--,--,Firing event 'LAC_Feeder.WeightLevelRisingAboveMidMark.Event'.
+19.0476129434427,--,--,--,--,Object 'LAC.549' destroyed.
+19.0476129434427, ,Input@LAC_ROMPAD,43.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+19.100782938551,LAC_Feeder,LAC_Feeder,43.OnFlowContainerFull,[Begin],Process 'OnFlowContainerFull' initiated.
+19.100782938551,LAC_Feeder,LAC_Feeder,43.OnFlowContainerFull,[Fire] TankFullEvent,Firing event 'LAC_Feeder.TankFull'.
+19.100782938551,LAC_Feeder,LAC_Feeder,43.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9001H.FlowRegulator.Enabled' the value '0' .
+19.100782938551,LAC_Feeder,LAC_Feeder,43.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9003H.FlowRegulator.Enabled' the value '0' .
+19.100782938551,LAC_Feeder,LAC_Feeder,43.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9002H.FlowRegulator.Enabled' the value '1' .
+19.100782938551,LAC.530,LCV_9002H,57.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.552' initiating transfer from '[FreeSpace] Model' into node 'Input@LAC_ROMPAD'.
+19.100782938551,LAC.552,Input@LAC_ROMPAD,91.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+19.100782938551,LAC.552,Input@LAC_ROMPAD,91.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.552' initiating transfer from '[Node] Input@LAC_ROMPAD' into object 'LAC_ROMPAD'.
+19.100782938551,LAC.552,Input@LAC_ROMPAD,91.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.552' to location type 'Container' using flow regulator 'Input@LAC_ROMPAD.FlowRegulator'.
+19.100782938551,LAC_Feeder,LAC_Feeder,43.OnFlowContainerFull,[End],Process 'OnFlowContainerFull' ended.
+19.100782938551,--,--,--,--,Object 'LAC.550' destroyed.
+19.100782938551, ,FlowNode4_1,90.OnEntered,[End],Process 'OnEntered' ended.
+19.100782938551,--,--,--,--,Object 'LAC.551' destroyed.
+19.100782938551, ,FlowNode4_1,89.OnEntered,[End],Process 'OnEntered' ended.
+19.5070844273107,TrainWagon.518,TrainWagon.518,89.OnFlowContainerFull,[Begin],Process 'OnFlowContainerFull' initiated.
+19.5070844273107,TrainWagon.518,TrainWagon.518,89.OnFlowContainerFull,[Fire] ContainerFullEvent,Firing event 'TrainWagon.518.ContainerFull'.
+19.5070844273107,TrainWagon.518,TrainWagon.518,89.OnFlowContainerFull,[End],Process 'OnFlowContainerFull' ended.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] ToStopFilling,Assigning state variable 'FlowInput@TrainLoadStation.FlowRegulator.Enabled' the value '0' .
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] ToStopFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedVolume.Enabled' the value '0' .
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] ToStopFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedWeight.Enabled' the value '0' .
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Assign] ToStopFilling,Assigning state variable 'CurrentFlowContainer' the value 'Nothing'.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Decide] IfFlowInputStillTransferring,Token branching on condition 'FlowInput.FlowRegulator.OutputFlowReceivers.FirstItem != Nothing'.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Decide] IfFlowInputStillTransferring,Token sent to 'True' exit.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[EndTransfer] OfAddedFlow,Firing 'LAC.526.Transferring' and 'LAC.526.Transferred' events.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Execute] FilledContainer_AddOnProcess,Executing process 'TrainLoadStation_FilledContainer'.
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_FilledContainer,[Begin],Process 'TrainLoadStation_FilledContainer' initiated.
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_FilledContainer,[Assign] TotalTonnes,Assigning state variable 'TotalTonnesLoaded' the value '48000' Metric Tons.
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_FilledContainer,[End],Process 'TrainLoadStation_FilledContainer' ended.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Find] FlowContainer,Searching for result that satisfies the condition 'Entity.Elements.ItemAtIndex(CurrentElementIndex).Is.Container'.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Find] FlowContainer,Using index variable 'CurrentElementIndex' with index range from starting index '0' to ending index '0'.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Find] FlowContainer,No result found that satisfied search condition.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Find] FlowContainer,Saving index found. Assigning index variable 'CurrentElementIndex' the value '0'.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Find] FlowContainer,Token sent to 'NotFound' exit.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Execute] AfterProcessing_AddOnProcess,Executing process 'TrainLoadStation_AfterProcessing'.
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_AfterProcessing,[Begin],Process 'TrainLoadStation_AfterProcessing' initiated.
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_AfterProcessing,[Assign] StopStockpileOutputs,Assigning state variable 'Output@Stockpile1.FlowRegulator.Enabled' the value '0' .
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_AfterProcessing,[Assign] StopStockpileOutputs,Assigning state variable 'Output@Stockpile2.FlowRegulator.Enabled' the value '0' .
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_AfterProcessing,[Assign] TrainThroughput,Stopped at breakpoint on TrainLoadStation_AfterProcessing.TrainThroughput
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_AfterProcessing,[Assign] TrainThroughput,Assigning state variable 'TotalTonnesLoaded' the value '48000' Metric Tons.
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_AfterProcessing,[End],Process 'TrainLoadStation_AfterProcessing' ended.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[Transfer] ToOutputNode,Entity 'TrainWagon.518' initiating transfer from '[Station] TrainLoadStation.Processing' into node 'Output@TrainLoadStation'.
+19.5070844273107,TrainWagon.518,Output@TrainLoadStation,90.OnEnteredFromAssociatedObject,[Begin],Process 'OnEnteredFromAssociatedObject' initiated.
+19.5070844273107,TrainWagon.518,Output@TrainLoadStation,90.OnEnteredFromAssociatedObject,[Fire] EnteredEvent,Firing event 'Output@TrainLoadStation.Entered'.
+19.5070844273107,TrainWagon.518,Output@TrainLoadStation,90.OnEnteredFromAssociatedObject,[Decide] IfTransporter,Token branching on condition 'Entity.Is.Transporter'.
+19.5070844273107,TrainWagon.518,Output@TrainLoadStation,90.OnEnteredFromAssociatedObject,[Decide] IfTransporter,Token sent to 'False' exit.
+19.5070844273107,TrainWagon.518,Output@TrainLoadStation,90.OnEnteredFromAssociatedObject,[Execute] RoutingOutLogic,Executing process 'Output@TrainLoadStation.RoutingOutLogic'.
+19.5070844273107,TrainWagon.518,Output@TrainLoadStation,43.RoutingOutLogic,[Begin],Process 'RoutingOutLogic' initiated.
+19.5070844273107,TrainWagon.518,Output@TrainLoadStation,43.RoutingOutLogic,[SetNode] ToSpecificDestination,Destination node of entity 'TrainWagon.518' set to value 'Input@TrainSink'.
+19.5070844273107,TrainWagon.518,Output@TrainLoadStation,43.RoutingOutLogic,[End],Process 'RoutingOutLogic' ended.
+19.5070844273107,TrainWagon.518,Output@TrainLoadStation,90.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'TrainWagon.518' initiating transfer from '[Node] Output@TrainLoadStation' onto link 'TimePath1'.
+19.5070844273107,TrainWagon.518,TimePath1,43.OnEntered,[Begin],Process 'OnEntered' initiated.
+19.5070844273107,TrainWagon.518,TimePath1,43.OnEntered,[Assign] EntityMovementRate,Assigning state variable 'Token.43.ReturnValue' the value '0.166666666666667' .
+19.5070844273107,TrainWagon.518,TimePath1,43.OnEntered,[Assign] EntityMovementRate,Assigning state variable 'TrainWagon.518.Movement.Rate' the value '1165.38' Meters per Hour.
+19.5070844273107,TrainWagon.518,TimePath1,43.OnEntered,[EndTransfer] OntoTimePath,Entity 'TrainWagon.518' ending transfer onto link 'TimePath1'.
+19.5070844273107,TrainWagon.518,TimePath1,43.OnEntered,[End],Process 'OnEntered' ended.
+19.5070844273107,TrainWagon.518,TrainLoadStation,88.OnExitedProcessing,[Begin],Process 'OnExitedProcessing' initiated.
+19.5070844273107,TrainWagon.518,TrainLoadStation,88.OnExitedProcessing,[Decide] IfTokenAssociatedObject,Token branching on condition 'Token.AssociatedObject != Nothing'.
+19.5070844273107,TrainWagon.518,TrainLoadStation,88.OnExitedProcessing,[Decide] IfTokenAssociatedObject,Token sent to 'True' exit.
+19.5070844273107,TrainWagon.518,TrainLoadStation,88.OnExitedProcessing,[Release] Filler,Releasing resource(s) owned by object 'TrainWagon.518'.
+19.5070844273107,--,--,--,--,Object 'TrainWagon.518' released '1' capacity unit(s) of resource 'TrainLoadStation'.
+19.5070844273107,TrainWagon.518,TrainLoadStation,88.OnExitedProcessing,[Execute] Exited_AddOnProcess,Executing process 'TrainLoadStation_Exited'.
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_Exited,[Begin],Process 'TrainLoadStation_Exited' initiated.
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_Exited,[Tally] LoadingTimeTally,Recorded '1' observation(s) of value '2.99999998286625' for tally statistic 'Tally_TrainLoadingTime'.
+19.5070844273107,TrainWagon.518,Model,89.TrainLoadStation_Exited,[End],Process 'TrainLoadStation_Exited' ended.
+19.5070844273107,TrainWagon.518,TrainLoadStation,88.OnExitedProcessing,[End],Process 'OnExitedProcessing' ended.
+19.5070844273107,TrainWagon.518,TrainLoadStation,64.OnEnteredProcessing,[End],Process 'OnEnteredProcessing' ended.
+19.5070844273107,TrainWagon.518,Output@TrainLoadStation,90.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+19.5070844273107,--,--,--,--,Object 'LAC.519' destroyed.
+19.5070844273107,--,--,--,--,Object 'LAC.520' destroyed.
+19.5070844273107,--,--,--,--,Object 'LAC.521' destroyed.
+19.5070844273107,--,--,--,--,Object 'LAC.522' destroyed.
+19.5070844273107,--,--,--,--,Object 'LAC.523' destroyed.
+19.5070844273107,--,--,--,--,Object 'LAC.524' destroyed.
+19.5070844273107,--,--,--,--,Object 'LAC.525' destroyed.
+19.5070844273107, ,CV_3304N,61.OnEntered,[End],Process 'OnEntered' ended.
+19.5070844273107, ,CV_3304T,58.OnEntered,[End],Process 'OnEntered' ended.
+19.5070844273107, ,CV_3306H,92.OnEntered,[End],Process 'OnEntered' ended.
+19.5070844273107, ,CV_3306T,40.OnEntered,[End],Process 'OnEntered' ended.
+19.5070844273107, ,Input@TrainLoadBin,54.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+19.5070844273107, ,TrainLoadBin,82.OnEnteredFlowContainer,[End],Process 'OnEnteredFlowContainer' ended.
+19.5070844273107, ,Output@TrainLoadBin,72.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+19.5070844273107, ,FlowInput@TrainLoadStation,67.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+19.5075134719142,TrainWagon.518,Output@TrainLoadStation,67.OnExited,[Begin],Process 'OnExited' initiated.
+19.5075134719142,TrainWagon.518,Output@TrainLoadStation,67.OnExited,[Fire] ExitedEvent,Firing event 'Output@TrainLoadStation.Exited'.
+19.5075134719142,TrainWagon.518,Output@TrainLoadStation,67.OnExited,[End],Process 'OnExited' ended.
+19.6737510939774,TrainWagon.518,TimePath1,67.OnReachedEnd,[Begin],Process 'OnReachedEnd' initiated.
+19.6737510939774,TrainWagon.518,TimePath1,67.OnReachedEnd,[Transfer] FromTimePath,Entity 'TrainWagon.518' initiating transfer from '[EndOfLink] TimePath1' into node 'BasicNode1'.
+19.6737510939774,TrainWagon.518,BasicNode1,72.OnEntered,[Begin],Process 'OnEntered' initiated.
+19.6737510939774,TrainWagon.518,BasicNode1,72.OnEntered,[Fire] EnteredEvent,Firing event 'BasicNode1.Entered'.
+19.6737510939774,TrainWagon.518,BasicNode1,72.OnEntered,[Execute] Entered_AddOnProcess,Executing process 'BasicNode1_Entered'.
+19.6737510939774,TrainWagon.518,Model,82.BasicNode1_Entered,[Begin],Process 'BasicNode1_Entered' initiated.
+19.6737510939774,TrainWagon.518,Model,82.BasicNode1_Entered,[Release] SigBlock3,Releasing resource(s) owned by object 'TrainWagon.518'.
+19.6737510939774,--,--,--,--,Object 'TrainWagon.518' released '1' capacity unit(s) of resource 'SigBlock2'.
+19.6737510939774,TrainWagon.518,SigBlock2,54.OnCapacityReleased,[Begin],Process 'OnCapacityReleased' initiated.
+19.6737510939774,TrainWagon.518,SigBlock2,54.OnCapacityReleased,[Assign] ResourceState,Assigning state variable 'ResourceState' the value '0' .
+19.6737510939774,TrainWagon.518,SigBlock2,54.OnCapacityReleased,[Fire] ReleasedEvent,Firing event 'SigBlock2.Released'.
+19.6737510939774,TrainWagon.518,SigBlock2,54.OnCapacityReleased,[End],Process 'OnCapacityReleased' ended.
+19.6737510939774,TrainWagon.518,Model,82.BasicNode1_Entered,[End],Process 'BasicNode1_Entered' ended.
+19.6737510939774,TrainWagon.518,BasicNode1,72.OnEntered,[Transfer] ToOutboundLink,Entity 'TrainWagon.518' initiating transfer from '[Node] BasicNode1' into node 'Input@TrainSink'.
+19.6737510939774,TrainWagon.518,Input@TrainSink,82.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+19.6737510939774,TrainWagon.518,Input@TrainSink,82.OnEnteredToAssociatedObject,[Fire] EnteredEvent,Firing event 'Input@TrainSink.Entered'.
+19.6737510939774,TrainWagon.518,Input@TrainSink,82.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'TrainWagon.518' initiating transfer from '[Node] Input@TrainSink' into object 'TrainSink'.
+19.6737510939774,TrainWagon.518,Input@TrainSink,82.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'TrainWagon.518' initiating transfer from '[Node] Input@TrainSink' into station location 'TrainSink.InputBuffer'.
+19.6737510939774,TrainWagon.518,TrainSink,54.OnEnteredInputBuffer,[Begin],Process 'OnEnteredInputBuffer' initiated.
+19.6737510939774,TrainWagon.518,TrainSink,54.OnEnteredInputBuffer,[Delay] TransferInTime,Delaying token for '0' Hours until time '19.6737510939774' Hours.
+19.6737510939774,TrainWagon.518,TrainSink,54.OnEnteredInputBuffer,[EndTransfer] IntoInputBuffer,Entity 'TrainWagon.518' ending transfer into station 'TrainSink.InputBuffer'.
+19.6737510939774,TrainWagon.518,BasicNode1,40.OnExited,[Begin],Process 'OnExited' initiated.
+19.6737510939774,TrainWagon.518,BasicNode1,40.OnExited,[Fire] ExitedEvent,Firing event 'BasicNode1.Exited'.
+19.6737510939774,TrainWagon.518,BasicNode1,40.OnExited,[End],Process 'OnExited' ended.
+19.6737510939774,TrainWagon.518,Input@TrainSink,40.OnExited,[Begin],Process 'OnExited' initiated.
+19.6737510939774,TrainWagon.518,Input@TrainSink,40.OnExited,[Fire] ExitedEvent,Firing event 'Input@TrainSink.Exited'.
+19.6737510939774,TrainWagon.518,Input@TrainSink,40.OnExited,[End],Process 'OnExited' ended.
+19.6737510939774,TrainWagon.518,TrainSink,54.OnEnteredInputBuffer,[Execute] DestroyingEntity_AddOnProcess,Executing process 'TrainSink_DestroyingEntity'.
+19.6737510939774,TrainWagon.518,Model,40.TrainSink_DestroyingEntity,[Begin],Process 'TrainSink_DestroyingEntity' initiated.
+19.6737510939774,TrainWagon.518,Model,40.TrainSink_DestroyingEntity,[Decide] WasLoaded,Token branching on condition 'MyContainerEntity.FlowContainer.Contents.Weight>0'.
+19.6737510939774,TrainWagon.518,Model,40.TrainSink_DestroyingEntity,[Decide] WasLoaded,Token sent to 'True' exit.
+19.6737510939774,TrainWagon.518,Model,40.TrainSink_DestroyingEntity,[Tally] TimeInSys,Recorded '1' observation(s) of value '3.5214125' for tally statistic 'Tally_TrainTimeInSystem'.
+19.6737510939774,TrainWagon.518,Model,40.TrainSink_DestroyingEntity,[End],Process 'TrainSink_DestroyingEntity' ended.
+19.6737510939774,TrainWagon.518,TrainSink,54.OnEnteredInputBuffer,[Tally] EntityTimeInSystem,Recorded '1' observation(s) of value '3.5214125' Hours for tally statistic 'TrainSink.TimeInSystem'.
+19.6737510939774,TrainWagon.518,TrainSink,54.OnEnteredInputBuffer,[Destroy] Entity,Destroying object 'TrainWagon.518'.
+19.6737510939774,TrainWagon.518,TrainWagon.518,40.OnDestroying,[Begin],Process 'OnDestroying' initiated.
+19.6737510939774,TrainWagon.518,TrainWagon.518,40.OnDestroying,[Assign] ToDisableContainerLevelMonitoring,Assigning state variable 'TrainWagon.518.OnFlowContainerEmpty.Enabled' the value '0' .
+19.6737510939774,TrainWagon.518,TrainWagon.518,40.OnDestroying,[End],Process 'OnDestroying' ended.
+19.6737510939774,--,--,--,--,Object 'LAC.526' destroyed.
+19.6737510939774,--,--,--,--,Object 'TrainWagon.518' destroyed.
+19.6737510939774, ,TrainSink,54.OnEnteredInputBuffer,[End],Process 'OnEnteredInputBuffer' ended.
+19.6737510939774, ,TimePath1,67.OnReachedEnd,[End],Process 'OnReachedEnd' ended.
+19.6737510939774, ,BasicNode1,72.OnEntered,[End],Process 'OnEntered' ended.
+19.6737510939774, ,Input@TrainSink,82.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+19.7502777777778,LACGenServer,LACGenServer,82.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+19.7502777777778,LACGenServer,LACGenServer,82.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LACGenServer.Processing.CurrentCapacity' the value '0' .
+19.7502777777778,LACGenServer,LACGenServer,82.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+19.7502777777778,LACGenServer,LACGenServer,82.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+19.7502777777778,LACGenServer,LACGenServer,82.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+19.7502777777778,LACGenServer,LACGenServer,82.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+19.7502777777778,LACGenServer,LACGenServer,82.OnCapacityChanged,[Suspend] Processing,Suspending process 'LACGenServer.OnEnteredProcessing'.
+19.7502777777778,--,--,--,--,The number of suspensions applied to process 'LACGenServer.OnEnteredProcessing' is now '1'.
+19.7502777777778,LACGenServer,LACGenServer,82.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'LACGenServer_OffShift'.
+19.7502777777778,LACGenServer,Model,72.LACGenServer_OffShift,[Begin],Process 'LACGenServer_OffShift' initiated.
+19.7502777777778,LACGenServer,Model,72.LACGenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@LAC_Input.FlowRegulator.Enabled' the value '0' .
+19.7502777777778,LACGenServer,Model,72.LACGenServer_OffShift,[End],Process 'LACGenServer_OffShift' ended.
+19.7502777777778,LACGenServer,LACGenServer,82.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+19.7502777777778,HAC1GenServer,HAC1GenServer,82.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+19.7502777777778,HAC1GenServer,HAC1GenServer,82.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'HAC1GenServer.Processing.CurrentCapacity' the value '0' .
+19.7502777777778,HAC1GenServer,HAC1GenServer,82.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+19.7502777777778,HAC1GenServer,HAC1GenServer,82.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+19.7502777777778,HAC1GenServer,HAC1GenServer,82.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+19.7502777777778,HAC1GenServer,HAC1GenServer,82.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+19.7502777777778,HAC1GenServer,HAC1GenServer,82.OnCapacityChanged,[Suspend] Processing,Suspending process 'HAC1GenServer.OnEnteredProcessing'.
+19.7502777777778,--,--,--,--,The number of suspensions applied to process 'HAC1GenServer.OnEnteredProcessing' is now '1'.
+19.7502777777778,HAC1GenServer,HAC1GenServer,82.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'HAC1GenServer_OffShift'.
+19.7502777777778,HAC1GenServer,Model,72.HAC1GenServer_OffShift,[Begin],Process 'HAC1GenServer_OffShift' initiated.
+19.7502777777778,HAC1GenServer,Model,72.HAC1GenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@HAC1_Input.FlowRegulator.Enabled' the value '0' .
+19.7502777777778,HAC1GenServer,Model,72.HAC1GenServer_OffShift,[End],Process 'HAC1GenServer_OffShift' ended.
+19.7502777777778,HAC1GenServer,HAC1GenServer,82.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+19.7502777777778,HAC2GenServer,HAC2GenServer,82.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+19.7502777777778,HAC2GenServer,HAC2GenServer,82.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'HAC2GenServer.Processing.CurrentCapacity' the value '0' .
+19.7502777777778,HAC2GenServer,HAC2GenServer,82.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+19.7502777777778,HAC2GenServer,HAC2GenServer,82.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+19.7502777777778,HAC2GenServer,HAC2GenServer,82.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+19.7502777777778,HAC2GenServer,HAC2GenServer,82.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+19.7502777777778,HAC2GenServer,HAC2GenServer,82.OnCapacityChanged,[Suspend] Processing,Suspending process 'HAC2GenServer.OnEnteredProcessing'.
+19.7502777777778,--,--,--,--,The number of suspensions applied to process 'HAC2GenServer.OnEnteredProcessing' is now '1'.
+19.7502777777778,HAC2GenServer,HAC2GenServer,82.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'HAC2GenServer_OffShift'.
+19.7502777777778,HAC2GenServer,Model,72.HAC2GenServer_OffShift,[Begin],Process 'HAC2GenServer_OffShift' initiated.
+19.7502777777778,HAC2GenServer,Model,72.HAC2GenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@HAC2_Input.FlowRegulator.Enabled' the value '0' .
+19.7502777777778,HAC2GenServer,Model,72.HAC2GenServer_OffShift,[End],Process 'HAC2GenServer_OffShift' ended.
+19.7502777777778,HAC2GenServer,HAC2GenServer,82.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+19.7502777777778,--,--,--,--,Object 'LAC.529' destroyed.
+19.7502777777778,--,--,--,--,Object 'LAC.530' destroyed.
+19.7502777777778,--,--,--,--,Object 'LAC.552' destroyed.
+19.7502777777778, ,LCV_9001H,81.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,LCV_9002H,57.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,Input@LAC_ROMPAD,91.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+19.7502777777778,--,--,--,--,Object 'HAC.531' destroyed.
+19.7502777777778,--,--,--,--,Object 'HAC.534' destroyed.
+19.7502777777778,--,--,--,--,Object 'HAC.536' destroyed.
+19.7502777777778, ,HCV_9001H,42.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,FlowNode1,79.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,FlowNode4,69.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778,HAC.539,Input@HAC_Feeder,63.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+19.7502777777778,--,--,--,--,Object 'LAC.532' destroyed.
+19.7502777777778,--,--,--,--,Object 'LAC.535' destroyed.
+19.7502777777778,--,--,--,--,Object 'LAC.537' destroyed.
+19.7502777777778,--,--,--,--,Object 'LAC.528' destroyed.
+19.7502777777778,--,--,--,--,Object 'LAC.538' destroyed.
+19.7502777777778,--,--,--,--,Object 'HAC.539' destroyed.
+19.7502777777778,--,--,--,--,Object 'HAC.540' destroyed.
+19.7502777777778,--,--,--,--,Object 'HAC.541' destroyed.
+19.7502777777778,--,--,--,--,Object 'HAC.542' destroyed.
+19.7502777777778,--,--,--,--,Object 'HAC.543' destroyed.
+19.7502777777778,--,--,--,--,Object 'HAC.544' destroyed.
+19.7502777777778,--,--,--,--,Object 'HAC.545' destroyed.
+19.7502777777778,--,--,--,--,Object 'HAC.546' destroyed.
+19.7502777777778,--,--,--,--,Object 'Washed.547' destroyed.
+19.7502777777778,--,--,--,--,Object 'Washed.548' destroyed.
+19.7502777777778, ,Input@Optional_ROMPAD,70.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+19.7502777777778, ,Optional_ROMPAD,75.OnEnteredFlowContainer,[End],Process 'OnEnteredFlowContainer' ended.
+19.7502777777778, ,Output@Optional_ROMPAD,52.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+19.7502777777778, ,FlowNode4_1,24.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,FlowNode4,66.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,Input@LAC_Feeder,73.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+19.7502777777778, ,HAC_Feeder,74.OnEnteredFlowContainer,[End],Process 'OnEnteredFlowContainer' ended.
+19.7502777777778, ,Output@HAC_Feeder,68.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+19.7502777777778, ,CV_1301H,78.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,CV_1301T,47.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,CV_2301H,56.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,CV_2301T,51.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,HAC_Washing,35.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,CV_3301H,48.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,CV_3301T,80.OnEntered,[End],Process 'OnEntered' ended.
+19.7502777777778, ,FlowNode8,37.OnEntered,[End],Process 'OnEntered' ended.
+19.8275152886083,--,--,--,--,Firing event 'LAC_Feeder.WeightLevelFallingBelowMidMark.Event'.
+19.8275152886083,LAC_Feeder,LAC_Feeder,37.OnFlowContainerLevelFallingBelowMidMark,[Begin],Process 'OnFlowContainerLevelFallingBelowMidMark' initiated.
+19.8275152886083,LAC_Feeder,LAC_Feeder,37.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9001H.FlowRegulator.Enabled' the value '1' .
+19.8275152886083,LAC_Feeder,LAC_Feeder,37.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9003H.FlowRegulator.Enabled' the value '1' .
+19.8275152886083,LAC.389,LCV_9003H,76.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.553' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+19.8275152886083,LAC.553,FlowNode4_1,80.OnEntered,[Begin],Process 'OnEntered' initiated.
+19.8275152886083,LAC.553,FlowNode4_1,80.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.553' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+19.8275152886083,LAC_Feeder,LAC_Feeder,37.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9002H.FlowRegulator.Enabled' the value '0' .
+19.8275152886083,LAC_Feeder,LAC_Feeder,37.OnFlowContainerLevelFallingBelowMidMark,[End],Process 'OnFlowContainerLevelFallingBelowMidMark' ended.
+19.8275152886083,LAC.553,FlowNode4_1,80.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.554' initiating transfer from '[FreeSpace] Model' into node 'Input@LAC_Feeder'.
+19.8275152886083,LAC.554,Input@LAC_Feeder,37.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+19.8275152886083,LAC.554,Input@LAC_Feeder,37.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.554' initiating transfer from '[Node] Input@LAC_Feeder' into object 'LAC_Feeder'.
+19.8275152886083,LAC.554,Input@LAC_Feeder,37.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.554' to location type 'Container' using flow regulator 'Input@LAC_Feeder.FlowRegulator'.
+20,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '29833.92' Metric Tons for tally statistic 'Tally_Stockpile1Contents'.
+20,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '15499.3611102922' Metric Tons for tally statistic 'Tally_Stockpile2Contents'.
+20,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '0' Metric Tons for tally statistic 'Tally_HAC_ROMContents'.
+20,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '33631.9888888889' Metric Tons for tally statistic 'Tally_LAC_ROMContents'.
+20,Model,Model,1.TallyStockpileContents,[Delay] 1Hour,Delaying token for '1' Hours until time '21' Hours.
+20,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token branching on condition 'UC_Stockpile.FlowContainer.Contents.Weight > UCStockpile_Max'.
+20,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token sent to 'False' exit.
+20,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Delay] Delay1Hour,Delaying token for '1' Hours until time '21' Hours.
+20.0002777777778,LW1GenServer,LW1GenServer,48.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+20.0002777777778,LW1GenServer,LW1GenServer,48.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LW1GenServer.Processing.CurrentCapacity' the value '1' .
+20.0002777777778,LW1GenServer,LW1GenServer,48.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+20.0002777777778,LW1GenServer,LW1GenServer,48.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'True' exit.
+20.0002777777778,LW1GenServer,LW1GenServer,48.OnCapacityChanged,[Resume] Processing,Resuming process 'LW1GenServer.OnEnteredProcessing'.
+20.0002777777778,--,--,--,--,The number of suspensions applied to process 'LW1GenServer.OnEnteredProcessing' is now '0'.
+20.0002777777778,LW1GenServer,LW1GenServer,48.OnCapacityChanged,[Execute] OnShift_AddOnProcess,Executing process 'LW1GenServer_OnShift'.
+20.0002777777778,LW1GenServer,Model,35.LW1GenServer_OnShift,[Begin],Process 'LW1GenServer_OnShift' initiated.
+20.0002777777778,LW1GenServer,Model,35.LW1GenServer_OnShift,[Assign] FlowOn,Assigning state variable 'Output@LW1_Input.FlowRegulator.Enabled' the value '1' .
+20.0002777777778,UC.289,Output@LW1_Input,11.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'UC.555' initiating transfer from '[FreeSpace] Model' into node 'FlowNode12'.
+20.0002777777778,UC.555,FlowNode12,51.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.555,FlowNode12,51.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.555' to location type 'OutboundLink' using flow regulator 'FlowNode12.FlowRegulator'.
+20.0002777777778,LW1GenServer,Model,35.LW1GenServer_OnShift,[End],Process 'LW1GenServer_OnShift' ended.
+20.0002777777778,LW1GenServer,LW1GenServer,48.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+20.0002777777778,LW2GenServer,LW2GenServer,48.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+20.0002777777778,LW2GenServer,LW2GenServer,48.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LW2GenServer.Processing.CurrentCapacity' the value '1' .
+20.0002777777778,LW2GenServer,LW2GenServer,48.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+20.0002777777778,LW2GenServer,LW2GenServer,48.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'True' exit.
+20.0002777777778,LW2GenServer,LW2GenServer,48.OnCapacityChanged,[Resume] Processing,Resuming process 'LW2GenServer.OnEnteredProcessing'.
+20.0002777777778,--,--,--,--,The number of suspensions applied to process 'LW2GenServer.OnEnteredProcessing' is now '0'.
+20.0002777777778,LW2GenServer,LW2GenServer,48.OnCapacityChanged,[Execute] OnShift_AddOnProcess,Executing process 'LW2GenServer_OnShift'.
+20.0002777777778,LW2GenServer,Model,35.LW2GenServer_OnShift,[Begin],Process 'LW2GenServer_OnShift' initiated.
+20.0002777777778,LW2GenServer,Model,35.LW2GenServer_OnShift,[Assign] FlowOn,Assigning state variable 'Output@LW2_Input.FlowRegulator.Enabled' the value '1' .
+20.0002777777778,UC.290,Output@LW2_Input,12.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'UC.556' initiating transfer from '[FreeSpace] Model' into node 'FlowNode12'.
+20.0002777777778,UC.556,FlowNode12,56.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.556,FlowNode12,56.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.556' to location type 'OutboundLink' using flow regulator 'FlowNode12.FlowRegulator'.
+20.0002777777778,LW2GenServer,Model,35.LW2GenServer_OnShift,[End],Process 'LW2GenServer_OnShift' ended.
+20.0002777777778,LW2GenServer,LW2GenServer,48.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+20.0002777777778,LWDevGenServer,LWDevGenServer,48.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+20.0002777777778,LWDevGenServer,LWDevGenServer,48.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LWDevGenServer.Processing.CurrentCapacity' the value '1' .
+20.0002777777778,LWDevGenServer,LWDevGenServer,48.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+20.0002777777778,LWDevGenServer,LWDevGenServer,48.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'True' exit.
+20.0002777777778,LWDevGenServer,LWDevGenServer,48.OnCapacityChanged,[Resume] Processing,Resuming process 'LWDevGenServer.OnEnteredProcessing'.
+20.0002777777778,--,--,--,--,The number of suspensions applied to process 'LWDevGenServer.OnEnteredProcessing' is now '0'.
+20.0002777777778,LWDevGenServer,LWDevGenServer,48.OnCapacityChanged,[Execute] OnShift_AddOnProcess,Executing process 'LWDevGenServer_OnShift'.
+20.0002777777778,LWDevGenServer,Model,35.LWDevGenServer_OnShift,[Begin],Process 'LWDevGenServer_OnShift' initiated.
+20.0002777777778,LWDevGenServer,Model,35.LWDevGenServer_OnShift,[Assign] FlowOn,Assigning state variable 'Output@LWDev_Input.FlowRegulator.Enabled' the value '1' .
+20.0002777777778,UC.291,Output@LWDev_Input,13.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'UC.557' initiating transfer from '[FreeSpace] Model' into node 'FlowNode12'.
+20.0002777777778,UC.557,FlowNode12,47.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.557,FlowNode12,47.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.557' to location type 'OutboundLink' using flow regulator 'FlowNode12.FlowRegulator'.
+20.0002777777778,LWDevGenServer,Model,35.LWDevGenServer_OnShift,[End],Process 'LWDevGenServer_OnShift' ended.
+20.0002777777778,LWDevGenServer,LWDevGenServer,48.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+20.0002777777778,UC.555,FlowNode12,51.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.558' initiating transfer from '[FreeSpace] Model' into node 'DCV_1701H'.
+20.0002777777778,UC.558,DCV_1701H,48.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.558,DCV_1701H,48.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.558' to location type 'OutboundLink' using flow regulator 'DCV_1701H.FlowRegulator'.
+20.0002777777778,UC.555,FlowNode12,51.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.559' initiating transfer from '[FreeSpace] Model' into node 'DCV_1702H'.
+20.0002777777778,UC.559,DCV_1702H,35.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.559,DCV_1702H,35.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.559' to location type 'OutboundLink' using flow regulator 'DCV_1702H.FlowRegulator'.
+20.0002777777778,UC.558,DCV_1701H,48.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.560' initiating transfer from '[FreeSpace] Model' into node 'DCV_1701T'.
+20.0002777777778,UC.560,DCV_1701T,78.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.560,DCV_1701T,78.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.560' to location type 'OutboundLink' using flow regulator 'DCV_1701T.FlowRegulator'.
+20.0002777777778,UC.559,DCV_1702H,35.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.561' initiating transfer from '[FreeSpace] Model' into node 'DCV_1702T'.
+20.0002777777778,UC.561,DCV_1702T,68.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.561,DCV_1702T,68.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.561' to location type 'OutboundLink' using flow regulator 'DCV_1702T.FlowRegulator'.
+20.0002777777778,UC.560,DCV_1701T,78.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.562' initiating transfer from '[FreeSpace] Model' into node 'Input@UC_Stockpile'.
+20.0002777777778,UC.562,Input@UC_Stockpile,74.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+20.0002777777778,UC.562,Input@UC_Stockpile,74.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'UC.562' initiating transfer from '[Node] Input@UC_Stockpile' into object 'UC_Stockpile'.
+20.0002777777778,UC.562,Input@UC_Stockpile,74.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'UC.562' to location type 'Container' using flow regulator 'Input@UC_Stockpile.FlowRegulator'.
+20.0002777777778,UC.561,DCV_1702T,68.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.563' initiating transfer from '[FreeSpace] Model' into node 'Input@UC_Stockpile'.
+20.0002777777778,UC.563,Input@UC_Stockpile,73.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+20.0002777777778,UC.563,Input@UC_Stockpile,73.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'UC.563' initiating transfer from '[Node] Input@UC_Stockpile' into object 'UC_Stockpile'.
+20.0002777777778,UC.563,Input@UC_Stockpile,73.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'UC.563' to location type 'Container' using flow regulator 'Input@UC_Stockpile.FlowRegulator'.
+20.0002777777778,UC.562,Input@UC_Stockpile,74.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'UC.564' initiating transfer from '[FreeSpace] Model' into container location 'UC_Stockpile.FlowContainer'.
+20.0002777777778,UC.564,UC_Stockpile,66.OnEnteredFlowContainer,[Begin],Process 'OnEnteredFlowContainer' initiated.
+20.0002777777778,UC.564,UC_Stockpile,66.OnEnteredFlowContainer,[Transfer] ToOutputNode,Entity 'UC.564' initiating transfer from '[Container] UC_Stockpile.FlowContainer' into node 'Output@UC_Stockpile'.
+20.0002777777778,UC.564,Output@UC_Stockpile,24.OnEnteredFromAssociatedObject,[Begin],Process 'OnEnteredFromAssociatedObject' initiated.
+20.0002777777778,UC.564,Output@UC_Stockpile,24.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.564' to location type 'OutboundLink' using flow regulator 'Output@UC_Stockpile.FlowRegulator'.
+20.0002777777778,--,--,--,--,Firing event 'UC_Stockpile.WeightLevelRisingAboveLowMark.Event'.
+20.0002777777778,--,--,--,--,Firing event 'UC_Stockpile.WeightLevelRisingAboveMidMark.Event'.
+20.0002777777778,--,--,--,--,Firing event 'UC_Stockpile.WeightLevelRisingAboveHighMark.Event'.
+20.0002777777778,UC.564,Output@UC_Stockpile,24.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'UC.565' initiating transfer from '[FreeSpace] Model' into node 'CV_1701H'.
+20.0002777777778,UC.565,CV_1701H,52.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.565,CV_1701H,52.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.565' to location type 'OutboundLink' using flow regulator 'CV_1701H.FlowRegulator'.
+20.0002777777778,UC.565,CV_1701H,52.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.566' initiating transfer from '[FreeSpace] Model' into node 'CV_1701T'.
+20.0002777777778,UC.566,CV_1701T,75.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.566,CV_1701T,75.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.566' to location type 'OutboundLink' using flow regulator 'CV_1701T.FlowRegulator'.
+20.0002777777778,UC.566,CV_1701T,75.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.567' initiating transfer from '[FreeSpace] Model' into node 'FlowNode2'.
+20.0002777777778,UC.567,FlowNode2,70.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.567,FlowNode2,70.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.567' to location type 'OutboundLink' using flow regulator 'FlowNode2.FlowRegulator'.
+20.0002777777778,UC.567,FlowNode2,70.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.568' initiating transfer from '[FreeSpace] Model' into node 'CV_1705H'.
+20.0002777777778,UC.568,CV_1705H,63.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.568,CV_1705H,63.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.568' to location type 'OutboundLink' using flow regulator 'CV_1705H.FlowRegulator'.
+20.0002777777778,UC.568,CV_1705H,63.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.569' initiating transfer from '[FreeSpace] Model' into node 'CV_1705T'.
+20.0002777777778,UC.569,CV_1705T,69.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.569,CV_1705T,69.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.569' to location type 'OutboundLink' using flow regulator 'CV_1705T.FlowRegulator'.
+20.0002777777778,UC.569,CV_1705T,69.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.570' initiating transfer from '[FreeSpace] Model' into node 'CV_3703H'.
+20.0002777777778,UC.570,CV_3703H,79.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.570,CV_3703H,79.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.570' to location type 'OutboundLink' using flow regulator 'CV_3703H.FlowRegulator'.
+20.0002777777778,UC.570,CV_3703H,79.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.571' initiating transfer from '[FreeSpace] Model' into node 'CV_3703T'.
+20.0002777777778,UC.571,CV_3703T,42.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.0002777777778,UC.571,CV_3703T,42.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.571' to location type 'OutboundLink' using flow regulator 'CV_3703T.FlowRegulator'.
+20.0002777777778,UC.571,CV_3703T,42.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.572' initiating transfer from '[FreeSpace] Model' into node 'Input@Stockpile1'.
+20.0002777777778,UC.572,Input@Stockpile1,91.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+20.0002777777778,UC.572,Input@Stockpile1,91.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'UC.572' initiating transfer from '[Node] Input@Stockpile1' into object 'Stockpile1'.
+20.0002777777778,UC.572,Input@Stockpile1,91.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'UC.572' to location type 'Container' using flow regulator 'Input@Stockpile1.FlowRegulator'.
+20.5002777777778,LACGenServer,LACGenServer,57.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+20.5002777777778,LACGenServer,LACGenServer,57.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LACGenServer.Processing.CurrentCapacity' the value '1' .
+20.5002777777778,LACGenServer,LACGenServer,57.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+20.5002777777778,LACGenServer,LACGenServer,57.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'True' exit.
+20.5002777777778,LACGenServer,LACGenServer,57.OnCapacityChanged,[Resume] Processing,Resuming process 'LACGenServer.OnEnteredProcessing'.
+20.5002777777778,--,--,--,--,The number of suspensions applied to process 'LACGenServer.OnEnteredProcessing' is now '0'.
+20.5002777777778,LACGenServer,LACGenServer,57.OnCapacityChanged,[Execute] OnShift_AddOnProcess,Executing process 'LACGenServer_OnShift'.
+20.5002777777778,LACGenServer,Model,81.LACGenServer_OnShift,[Begin],Process 'LACGenServer_OnShift' initiated.
+20.5002777777778,LACGenServer,Model,81.LACGenServer_OnShift,[Assign] FlowOn,Assigning state variable 'Output@LAC_Input.FlowRegulator.Enabled' the value '1' .
+20.5002777777778,LAC.288,Output@LAC_Input,10.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.573' initiating transfer from '[FreeSpace] Model' into node 'LCV_9001H'.
+20.5002777777778,LAC.573,LCV_9001H,82.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,LAC.573,LCV_9001H,82.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.573' to location type 'OutboundLink' using flow regulator 'LCV_9001H.FlowRegulator'.
+20.5002777777778,LAC.288,Output@LAC_Input,10.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.574' initiating transfer from '[FreeSpace] Model' into node 'LCV_9002H'.
+20.5002777777778,LAC.574,LCV_9002H,72.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,LAC.574,LCV_9002H,72.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.574' to location type 'OutboundLink' using flow regulator 'LCV_9002H.FlowRegulator'.
+20.5002777777778,LACGenServer,Model,81.LACGenServer_OnShift,[End],Process 'LACGenServer_OnShift' ended.
+20.5002777777778,LACGenServer,LACGenServer,57.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+20.5002777777778,HAC1GenServer,HAC1GenServer,57.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+20.5002777777778,HAC1GenServer,HAC1GenServer,57.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'HAC1GenServer.Processing.CurrentCapacity' the value '1' .
+20.5002777777778,HAC1GenServer,HAC1GenServer,57.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+20.5002777777778,HAC1GenServer,HAC1GenServer,57.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'True' exit.
+20.5002777777778,HAC1GenServer,HAC1GenServer,57.OnCapacityChanged,[Resume] Processing,Resuming process 'HAC1GenServer.OnEnteredProcessing'.
+20.5002777777778,--,--,--,--,The number of suspensions applied to process 'HAC1GenServer.OnEnteredProcessing' is now '0'.
+20.5002777777778,HAC1GenServer,HAC1GenServer,57.OnCapacityChanged,[Execute] OnShift_AddOnProcess,Executing process 'HAC1GenServer_OnShift'.
+20.5002777777778,HAC1GenServer,Model,81.HAC1GenServer_OnShift,[Begin],Process 'HAC1GenServer_OnShift' initiated.
+20.5002777777778,HAC1GenServer,Model,81.HAC1GenServer_OnShift,[Assign] FlowOn,Assigning state variable 'Output@HAC1_Input.FlowRegulator.Enabled' the value '1' .
+20.5002777777778,HAC.287,Output@HAC1_Input,0.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'HAC.575' initiating transfer from '[FreeSpace] Model' into node 'HCV_9001H'.
+20.5002777777778,HAC.575,HCV_9001H,67.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,HAC.575,HCV_9001H,67.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.575' to location type 'OutboundLink' using flow regulator 'HCV_9001H.FlowRegulator'.
+20.5002777777778,HAC1GenServer,Model,81.HAC1GenServer_OnShift,[End],Process 'HAC1GenServer_OnShift' ended.
+20.5002777777778,HAC1GenServer,HAC1GenServer,57.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+20.5002777777778,HAC2GenServer,HAC2GenServer,57.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+20.5002777777778,HAC2GenServer,HAC2GenServer,57.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'HAC2GenServer.Processing.CurrentCapacity' the value '1' .
+20.5002777777778,HAC2GenServer,HAC2GenServer,57.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+20.5002777777778,HAC2GenServer,HAC2GenServer,57.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'True' exit.
+20.5002777777778,HAC2GenServer,HAC2GenServer,57.OnCapacityChanged,[Resume] Processing,Resuming process 'HAC2GenServer.OnEnteredProcessing'.
+20.5002777777778,--,--,--,--,The number of suspensions applied to process 'HAC2GenServer.OnEnteredProcessing' is now '0'.
+20.5002777777778,HAC2GenServer,HAC2GenServer,57.OnCapacityChanged,[Execute] OnShift_AddOnProcess,Executing process 'HAC2GenServer_OnShift'.
+20.5002777777778,HAC2GenServer,Model,81.HAC2GenServer_OnShift,[Begin],Process 'HAC2GenServer_OnShift' initiated.
+20.5002777777778,HAC2GenServer,Model,81.HAC2GenServer_OnShift,[Assign] FlowOn,Assigning state variable 'Output@HAC2_Input.FlowRegulator.Enabled' the value '1' .
+20.5002777777778,LAC.293,Output@HAC2_Input,15.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.576' initiating transfer from '[FreeSpace] Model' into node 'Input@Optional_ROMPAD'.
+20.5002777777778,LAC.576,Input@Optional_ROMPAD,54.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+20.5002777777778,LAC.576,Input@Optional_ROMPAD,54.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.576' initiating transfer from '[Node] Input@Optional_ROMPAD' into object 'Optional_ROMPAD'.
+20.5002777777778,LAC.576,Input@Optional_ROMPAD,54.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.576' to location type 'Container' using flow regulator 'Input@Optional_ROMPAD.FlowRegulator'.
+20.5002777777778,HAC2GenServer,Model,81.HAC2GenServer_OnShift,[End],Process 'HAC2GenServer_OnShift' ended.
+20.5002777777778,HAC2GenServer,HAC2GenServer,57.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+20.5002777777778,LAC.573,LCV_9001H,82.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.577' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+20.5002777777778,LAC.577,FlowNode4_1,57.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,LAC.577,FlowNode4_1,57.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.577' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+20.5002777777778,HAC.575,HCV_9001H,67.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.578' initiating transfer from '[FreeSpace] Model' into node 'FlowNode1'.
+20.5002777777778,HAC.578,FlowNode1,81.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,HAC.578,FlowNode1,81.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.578' to location type 'OutboundLink' using flow regulator 'FlowNode1.FlowRegulator'.
+20.5002777777778,LAC.576,Input@Optional_ROMPAD,54.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.579' initiating transfer from '[FreeSpace] Model' into container location 'Optional_ROMPAD.FlowContainer'.
+20.5002777777778,LAC.579,Optional_ROMPAD,40.OnEnteredFlowContainer,[Begin],Process 'OnEnteredFlowContainer' initiated.
+20.5002777777778,LAC.579,Optional_ROMPAD,40.OnEnteredFlowContainer,[Transfer] ToOutputNode,Entity 'LAC.579' initiating transfer from '[Container] Optional_ROMPAD.FlowContainer' into node 'Output@Optional_ROMPAD'.
+20.5002777777778,LAC.579,Output@Optional_ROMPAD,92.OnEnteredFromAssociatedObject,[Begin],Process 'OnEnteredFromAssociatedObject' initiated.
+20.5002777777778,LAC.579,Output@Optional_ROMPAD,92.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.579' to location type 'OutboundLink' using flow regulator 'Output@Optional_ROMPAD.FlowRegulator'.
+20.5002777777778,--,--,--,--,Firing event 'Optional_ROMPAD.WeightLevelRisingAboveLowMark.Event'.
+20.5002777777778,--,--,--,--,Firing event 'Optional_ROMPAD.WeightLevelRisingAboveMidMark.Event'.
+20.5002777777778,--,--,--,--,Firing event 'Optional_ROMPAD.WeightLevelRisingAboveHighMark.Event'.
+20.5002777777778,--,--,--,--,Firing event 'LAC_Feeder.WeightLevelRisingAboveMidMark.Event'.
+20.5002777777778,HAC.578,FlowNode1,81.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.580' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4'.
+20.5002777777778,HAC.580,FlowNode4,58.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,HAC.580,FlowNode4,58.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.580' to location type 'OutboundLink' using flow regulator 'FlowNode4.FlowRegulator'.
+20.5002777777778,LAC.579,Output@Optional_ROMPAD,92.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.581' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+20.5002777777778,LAC.581,FlowNode4_1,61.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,LAC.581,FlowNode4_1,61.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.581' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+20.5002777777778,LAC.579,Output@Optional_ROMPAD,92.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'LAC.582' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4'.
+20.5002777777778,LAC.582,FlowNode4,90.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,LAC.582,FlowNode4,90.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.582' to location type 'OutboundLink' using flow regulator 'FlowNode4.FlowRegulator'.
+20.5002777777778,HAC.580,FlowNode4,58.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.583' initiating transfer from '[FreeSpace] Model' into node 'Input@HAC_Feeder'.
+20.5002777777778,HAC.583,Input@HAC_Feeder,64.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+20.5002777777778,HAC.583,Input@HAC_Feeder,64.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'HAC.583' initiating transfer from '[Node] Input@HAC_Feeder' into object 'HAC_Feeder'.
+20.5002777777778,HAC.583,Input@HAC_Feeder,64.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'HAC.583' to location type 'Container' using flow regulator 'Input@HAC_Feeder.FlowRegulator'.
+20.5002777777778,HAC.583,Input@HAC_Feeder,64.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'HAC.584' initiating transfer from '[FreeSpace] Model' into container location 'HAC_Feeder.FlowContainer'.
+20.5002777777778,HAC.584,HAC_Feeder,88.OnEnteredFlowContainer,[Begin],Process 'OnEnteredFlowContainer' initiated.
+20.5002777777778,HAC.584,HAC_Feeder,88.OnEnteredFlowContainer,[Transfer] ToOutputNode,Entity 'HAC.584' initiating transfer from '[Container] HAC_Feeder.FlowContainer' into node 'Output@HAC_Feeder'.
+20.5002777777778,HAC.584,Output@HAC_Feeder,89.OnEnteredFromAssociatedObject,[Begin],Process 'OnEnteredFromAssociatedObject' initiated.
+20.5002777777778,HAC.584,Output@HAC_Feeder,89.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.584' to location type 'OutboundLink' using flow regulator 'Output@HAC_Feeder.FlowRegulator'.
+20.5002777777778,--,--,--,--,Firing event 'HAC_Feeder.WeightLevelRisingAboveLowMark.Event'.
+20.5002777777778,--,--,--,--,Firing event 'HAC_Feeder.WeightLevelRisingAboveHighMark.Event'.
+20.5002777777778,HAC.584,Output@HAC_Feeder,89.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'HAC.585' initiating transfer from '[FreeSpace] Model' into node 'CV_1301H'.
+20.5002777777778,HAC.585,CV_1301H,43.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,HAC.585,CV_1301H,43.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.585' to location type 'OutboundLink' using flow regulator 'CV_1301H.FlowRegulator'.
+20.5002777777778,HAC.585,CV_1301H,43.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.586' initiating transfer from '[FreeSpace] Model' into node 'CV_1301T'.
+20.5002777777778,HAC.586,CV_1301T,87.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,HAC.586,CV_1301T,87.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.586' to location type 'OutboundLink' using flow regulator 'CV_1301T.FlowRegulator'.
+20.5002777777778,HAC.586,CV_1301T,87.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.587' initiating transfer from '[FreeSpace] Model' into node 'CV_2301H'.
+20.5002777777778,HAC.587,CV_2301H,49.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,HAC.587,CV_2301H,49.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.587' to location type 'OutboundLink' using flow regulator 'CV_2301H.FlowRegulator'.
+20.5002777777778,HAC.587,CV_2301H,49.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.588' initiating transfer from '[FreeSpace] Model' into node 'CV_2301T'.
+20.5002777777778,HAC.588,CV_2301T,50.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,HAC.588,CV_2301T,50.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.588' to location type 'OutboundLink' using flow regulator 'CV_2301T.FlowRegulator'.
+20.5002777777778,HAC.588,CV_2301T,50.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.589' initiating transfer from '[FreeSpace] Model' into node 'HAC_Washing'.
+20.5002777777778,HAC.589,HAC_Washing,62.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,HAC.589,HAC_Washing,62.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.589' to location type 'OutboundLink' using flow regulator 'HAC_Washing.FlowRegulator'.
+20.5002777777778,HAC.589,HAC_Washing,62.OnEntered,[Transfer] ToOutboundLink,Entity 'HAC.590' initiating transfer from '[FreeSpace] Model' into node 'CV_3301H'.
+20.5002777777778,HAC.590,CV_3301H,46.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,HAC.590,CV_3301H,46.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'HAC.590' to location type 'OutboundLink' using flow regulator 'CV_3301H.FlowRegulator'.
+20.5002777777778,HAC.590,CV_3301H,46.OnEntered,[Transfer] ToOutboundLink,Entity 'Washed.591' initiating transfer from '[FreeSpace] Model' into node 'CV_3301T'.
+20.5002777777778,Washed.591,CV_3301T,32.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,Washed.591,CV_3301T,32.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'Washed.591' to location type 'OutboundLink' using flow regulator 'CV_3301T.FlowRegulator'.
+20.5002777777778,Washed.591,CV_3301T,32.OnEntered,[Transfer] ToOutboundLink,Entity 'Washed.592' initiating transfer from '[FreeSpace] Model' into node 'FlowNode8'.
+20.5002777777778,Washed.592,FlowNode8,53.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.5002777777778,Washed.592,FlowNode8,53.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'Washed.592' to location type 'OutboundLink' using flow regulator 'FlowNode8.FlowRegulator'.
+20.5534477728861,LAC_Feeder,LAC_Feeder,39.OnFlowContainerFull,[Begin],Process 'OnFlowContainerFull' initiated.
+20.5534477728861,LAC_Feeder,LAC_Feeder,39.OnFlowContainerFull,[Fire] TankFullEvent,Firing event 'LAC_Feeder.TankFull'.
+20.5534477728861,LAC_Feeder,LAC_Feeder,39.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9001H.FlowRegulator.Enabled' the value '0' .
+20.5534477728861,LAC_Feeder,LAC_Feeder,39.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9003H.FlowRegulator.Enabled' the value '0' .
+20.5534477728861,LAC_Feeder,LAC_Feeder,39.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9002H.FlowRegulator.Enabled' the value '1' .
+20.5534477728861,LAC.574,LCV_9002H,72.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.593' initiating transfer from '[FreeSpace] Model' into node 'Input@LAC_ROMPAD'.
+20.5534477728861,LAC.593,Input@LAC_ROMPAD,94.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+20.5534477728861,LAC.593,Input@LAC_ROMPAD,94.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.593' initiating transfer from '[Node] Input@LAC_ROMPAD' into object 'LAC_ROMPAD'.
+20.5534477728861,LAC.593,Input@LAC_ROMPAD,94.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.593' to location type 'Container' using flow regulator 'Input@LAC_ROMPAD.FlowRegulator'.
+20.5534477728861,LAC_Feeder,LAC_Feeder,39.OnFlowContainerFull,[End],Process 'OnFlowContainerFull' ended.
+20.5534477728861,--,--,--,--,Object 'LAC.577' destroyed.
+20.5534477728861, ,FlowNode4_1,57.OnEntered,[End],Process 'OnEntered' ended.
+20.5534477728861,--,--,--,--,Object 'LAC.553' destroyed.
+20.5534477728861, ,FlowNode4_1,80.OnEntered,[End],Process 'OnEntered' ended.
+20.8057350484233,--,--,--,--,Firing event 'TrainGen.EntityArrivals.Event'.
+20.8057350484233,TrainGen,TrainGen,80.OnEntityArrival,[Begin],Process 'OnEntityArrival' initiated.
+20.8057350484233,TrainGen,TrainGen,80.OnEntityArrival,[Create] EntitiesPerArrival,Creating '1' object(s) of entity type 'TrainWagon' using creation method 'NewObject'.
+20.8057350484233,--,--,--,--,Object 'TrainWagon.594' created.
+20.8057350484233,TrainWagon.594,TrainGen,57.OnEntityArrival,[Transfer] ToOutputBuffer,Entity 'TrainWagon.594' initiating transfer from '[FreeSpace] TrainGen' into station location 'TrainGen.OutputBuffer'.
+20.8057350484233,TrainGen,TrainGen,80.OnEntityArrival,[End],Process 'OnEntityArrival' ended.
+20.8057350484233,TrainWagon.594,TrainGen,39.OnEnteredOutputBuffer,[Begin],Process 'OnEnteredOutputBuffer' initiated.
+20.8057350484233,TrainWagon.594,TrainGen,39.OnEnteredOutputBuffer,[EndTransfer] IntoOutputBuffer,Entity 'TrainWagon.594' ending transfer into station 'TrainGen.OutputBuffer'.
+20.8057350484233,TrainWagon.594,TrainGen,39.OnEnteredOutputBuffer,[Transfer] ToOutputNode,Entity 'TrainWagon.594' initiating transfer from '[Station] TrainGen.OutputBuffer' into node 'Output@TrainGen'.
+20.8057350484233,TrainWagon.594,Output@TrainGen,80.OnEnteredFromAssociatedObject,[Begin],Process 'OnEnteredFromAssociatedObject' initiated.
+20.8057350484233,TrainWagon.594,Output@TrainGen,80.OnEnteredFromAssociatedObject,[Fire] EnteredEvent,Firing event 'Output@TrainGen.Entered'.
+20.8057350484233,TrainWagon.594,Output@TrainGen,80.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'TrainWagon.594' initiating transfer from '[Node] Output@TrainGen' onto link 'Path2'.
+20.8057350484233,TrainWagon.594,TrainGen,57.OnEntityArrival,[End],Process 'OnEntityArrival' ended.
+20.8058044928678,TrainWagon.594,Output@TrainGen,57.OnExited,[Begin],Process 'OnExited' initiated.
+20.8058044928678,TrainWagon.594,Output@TrainGen,57.OnExited,[Fire] ExitedEvent,Firing event 'Output@TrainGen.Exited'.
+20.8058044928678,TrainWagon.594,Output@TrainGen,57.OnExited,[End],Process 'OnExited' ended.
+20.8058044928678,TrainWagon.594,Path2,57.OnTrailingEdgeEntered,[Begin],Process 'OnTrailingEdgeEntered' initiated.
+20.8058044928678,TrainWagon.594,Path2,57.OnTrailingEdgeEntered,[EndTransfer] OntoPath,Entity 'TrainWagon.594' ending transfer onto link 'Path2'.
+20.8058044928678,TrainWagon.594,Path2,57.OnTrailingEdgeEntered,[End],Process 'OnTrailingEdgeEntered' ended.
+20.8058044928678,TrainWagon.594,TrainGen,39.OnEnteredOutputBuffer,[End],Process 'OnEnteredOutputBuffer' ended.
+20.8058044928678,TrainWagon.594,Output@TrainGen,80.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+20.8271475484233,TrainWagon.594,Path2,80.OnReachedEnd,[Begin],Process 'OnReachedEnd' initiated.
+20.8271475484233,TrainWagon.594,Path2,80.OnReachedEnd,[Transfer] FromPath,Entity 'TrainWagon.594' initiating transfer from '[EndOfLink] Path2' into node 'TrainTransferNode1'.
+20.8271475484233,TrainWagon.594,TrainTransferNode1,39.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.8271475484233,TrainWagon.594,TrainTransferNode1,39.OnEntered,[Fire] EnteredEvent,Firing event 'TrainTransferNode1.Entered'.
+20.8271475484233,TrainWagon.594,TrainTransferNode1,39.OnEntered,[Execute] Entered_AddOnProcess,Executing process 'TrainTransferNode1_Entered'.
+20.8271475484233,TrainWagon.594,Model,57.TrainTransferNode1_Entered,[Begin],Process 'TrainTransferNode1_Entered' initiated.
+20.8271475484233,TrainWagon.594,Model,57.TrainTransferNode1_Entered,[Seize] SigBlock2,Requesting seize of resource(s) in behalf of owner 'TrainWagon.594'.
+20.8271475484233,--,--,--,--,Object 'TrainWagon.594' seized '1' capacity unit(s) of resource 'SigBlock2'.
+20.8271475484233,TrainWagon.594,SigBlock2,28.OnCapacityAllocated,[Begin],Process 'OnCapacityAllocated' initiated.
+20.8271475484233,TrainWagon.594,SigBlock2,28.OnCapacityAllocated,[Fire] AllocatedEvent,Firing event 'SigBlock2.Allocated'.
+20.8271475484233,TrainWagon.594,SigBlock2,28.OnCapacityAllocated,[End],Process 'OnCapacityAllocated' ended.
+20.8271475484233,TrainWagon.594,Model,57.TrainTransferNode1_Entered,[Decide] stockpileContents>TrainLoad,Token branching on condition 'Stockpile1.FlowContainer.Contents.Weight>MyContainerEntity.FlowContainer.CurrentWeightCapacity||Stockpile2.FlowContainer.Contents.Weight>MyContainerEntity.FlowContainer.CurrentWeightCapacity'.
+20.8271475484233,TrainWagon.594,Model,57.TrainTransferNode1_Entered,[Decide] stockpileContents>TrainLoad,Token sent to 'True' exit.
+20.8271475484233,TrainWagon.594,Model,57.TrainTransferNode1_Entered,[SetNode] trainLoad,Destination node of entity 'TrainWagon.594' set to value 'ContainerInput@TrainLoadStation'.
+20.8271475484233,TrainWagon.594,Model,57.TrainTransferNode1_Entered,[End],Process 'TrainTransferNode1_Entered' ended.
+20.8271475484233,TrainWagon.594,TrainTransferNode1,39.OnEntered,[Transfer] ToOutboundLink,Entity 'TrainWagon.594' initiating transfer from '[Node] TrainTransferNode1' onto link 'TimePath3'.
+20.8271475484233,TrainWagon.594,TimePath3,57.OnEntered,[Begin],Process 'OnEntered' initiated.
+20.8271475484233,TrainWagon.594,TimePath3,57.OnEntered,[Assign] EntityMovementRate,Assigning state variable 'Token.57.ReturnValue' the value '0.333333333333333' .
+20.8271475484233,TrainWagon.594,TimePath3,57.OnEntered,[Assign] EntityMovementRate,Assigning state variable 'TrainWagon.594.Movement.Rate' the value '1420.14' Meters per Hour.
+20.8271475484233,TrainWagon.594,TimePath3,57.OnEntered,[EndTransfer] OntoTimePath,Entity 'TrainWagon.594' ending transfer onto link 'TimePath3'.
+20.8271475484233,TrainWagon.594,TimePath3,57.OnEntered,[End],Process 'OnEntered' ended.
+20.8271475484233,TrainWagon.594,Path2,80.OnReachedEnd,[End],Process 'OnReachedEnd' ended.
+20.8271475484233,TrainWagon.594,TrainTransferNode1,39.OnEntered,[End],Process 'OnEntered' ended.
+20.8274996263875,TrainWagon.594,TrainTransferNode1,39.OnExited,[Begin],Process 'OnExited' initiated.
+20.8274996263875,TrainWagon.594,TrainTransferNode1,39.OnExited,[Fire] ExitedEvent,Firing event 'TrainTransferNode1.Exited'.
+20.8274996263875,TrainWagon.594,TrainTransferNode1,39.OnExited,[End],Process 'OnExited' ended.
+21,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '32333.2255555556' Metric Tons for tally statistic 'Tally_Stockpile1Contents'.
+21,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '18399.0277768308' Metric Tons for tally statistic 'Tally_Stockpile2Contents'.
+21,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '0' Metric Tons for tally statistic 'Tally_HAC_ROMContents'.
+21,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '33481.3787236561' Metric Tons for tally statistic 'Tally_LAC_ROMContents'.
+21,Model,Model,1.TallyStockpileContents,[Delay] 1Hour,Delaying token for '1' Hours until time '22' Hours.
+21,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token branching on condition 'UC_Stockpile.FlowContainer.Contents.Weight > UCStockpile_Max'.
+21,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token sent to 'False' exit.
+21,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Delay] Delay1Hour,Delaying token for '1' Hours until time '22' Hours.
+21.1604808817566,TrainWagon.594,TimePath3,39.OnReachedEnd,[Begin],Process 'OnReachedEnd' initiated.
+21.1604808817566,TrainWagon.594,TimePath3,39.OnReachedEnd,[Transfer] FromTimePath,Entity 'TrainWagon.594' initiating transfer from '[EndOfLink] TimePath3' into node 'ContainerInput@TrainLoadStation'.
+21.1604808817566,TrainWagon.594,ContainerInput@TrainLoadStation,80.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+21.1604808817566,TrainWagon.594,ContainerInput@TrainLoadStation,80.OnEnteredToAssociatedObject,[Fire] EnteredEvent,Firing event 'ContainerInput@TrainLoadStation.Entered'.
+21.1604808817566,TrainWagon.594,ContainerInput@TrainLoadStation,80.OnEnteredToAssociatedObject,[Execute] Entered_AddOnProcess,Executing process 'ContainerInput_TrainLoadStation_Entered'.
+21.1604808817566,TrainWagon.594,Model,57.ContainerInput_TrainLoadStation_Entered,[Begin],Process 'ContainerInput_TrainLoadStation_Entered' initiated.
+21.1604808817566,TrainWagon.594,Model,57.ContainerInput_TrainLoadStation_Entered,[Tally] Tally_TimeBetweenTrains,Recorded '1' observation(s) of value '4.65339645444595' Hours for tally statistic 'Tally_TimeBetweenTrains'.
+21.1604808817566,TrainWagon.594,Model,57.ContainerInput_TrainLoadStation_Entered,[End],Process 'ContainerInput_TrainLoadStation_Entered' ended.
+21.1604808817566,TrainWagon.594,ContainerInput@TrainLoadStation,80.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'TrainWagon.594' initiating transfer from '[Node] ContainerInput@TrainLoadStation' into object 'TrainLoadStation'.
+21.1604808817566,TrainWagon.594,ContainerInput@TrainLoadStation,80.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'TrainWagon.594' initiating transfer from '[Node] ContainerInput@TrainLoadStation' into station location 'TrainLoadStation.Processing'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Begin],Process 'OnEnteredProcessing' initiated.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Delay] TransferInTime,Delaying token for '0' Hours until time '21.1604808817566' Hours.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Seize] Filler,Requesting seize of resource(s) in behalf of owner 'TrainWagon.594'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,28.OnEvaluatingSeizeRequest,[Begin],Process 'OnEvaluatingSeizeRequest' initiated.
+21.1604808817566,TrainWagon.594,TrainLoadStation,28.OnEvaluatingSeizeRequest,[Decide] IfFillerAvailable,Token branching on condition '!Failure.Active && (ProcessingCountBasedFailures.EventCount==0) && (EventCountBasedFailures.EventCount==0) && (CalendarTimeBasedFailures.EventCount==0) && (ProcessingTimeBasedFailures.EventCount==0)'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,28.OnEvaluatingSeizeRequest,[Decide] IfFillerAvailable,Token sent to 'True' exit.
+21.1604808817566,TrainWagon.594,TrainLoadStation,28.OnEvaluatingSeizeRequest,[End],Process 'OnEvaluatingSeizeRequest' ended.
+21.1604808817566,--,--,--,--,Object 'TrainWagon.594' seized '1' capacity unit(s) of resource 'TrainLoadStation'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Execute] BeforeProcessing_AddOnProcess,Executing process 'TrainLoadStation_BeforeProcessing'.
+21.1604808817566,TrainWagon.594,Model,28.TrainLoadStation_BeforeProcessing,[Begin],Process 'TrainLoadStation_BeforeProcessing' initiated.
+21.1604808817566,TrainWagon.594,Model,28.TrainLoadStation_BeforeProcessing,[Decide] MoreFull,Token branching on condition 'Stockpile1.FlowContainer.Contents.Weight>Stockpile2.FlowContainer.Contents.Weight'.
+21.1604808817566,TrainWagon.594,Model,28.TrainLoadStation_BeforeProcessing,[Decide] MoreFull,Token sent to 'True' exit.
+21.1604808817566,TrainWagon.594,Model,28.TrainLoadStation_BeforeProcessing,[Assign] LoadFromS1,Assigning state variable 'Output@Stockpile1.FlowRegulator.Enabled' the value '1' .
+21.1604808817566, ,[None],86., ,Entity 'UC.595' initiating transfer from '[FreeSpace] Model' into node 'CV_3304H'.
+21.1604808817566,UC.595,CV_3304H,86.OnEntered,[Begin],Process 'OnEntered' initiated.
+21.1604808817566,UC.595,CV_3304H,86.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.595' to location type 'OutboundLink' using flow regulator 'CV_3304H.FlowRegulator'.
+21.1604808817566,TrainWagon.594,Model,28.TrainLoadStation_BeforeProcessing,[End],Process 'TrainLoadStation_BeforeProcessing' ended.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[EndTransfer] IntoProcessing,Entity 'TrainWagon.594' ending transfer into station 'TrainLoadStation.Processing'.
+21.1604808817566,TrainWagon.594,ContainerInput@TrainLoadStation,28.OnExited,[Begin],Process 'OnExited' initiated.
+21.1604808817566,TrainWagon.594,ContainerInput@TrainLoadStation,28.OnExited,[Fire] ExitedEvent,Firing event 'ContainerInput@TrainLoadStation.Exited'.
+21.1604808817566,TrainWagon.594,ContainerInput@TrainLoadStation,28.OnExited,[End],Process 'OnExited' ended.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Find] FlowContainer,Searching for result that satisfies the condition 'Entity.Elements.ItemAtIndex(CurrentElementIndex).Is.Container'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Find] FlowContainer,Using index variable 'CurrentElementIndex' with index range from starting index '1' to ending index '1'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Find] FlowContainer,Result found that satisfied search condition.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Find] FlowContainer,Saving index found. Assigning index variable 'CurrentElementIndex' the value '1'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Find] FlowContainer,Token sent to 'Found' exit.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] FillTarget,Assigning state variable 'CurrentFlowContainer' the value 'TrainWagon.594.FlowContainer'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] FillTarget,Assigning state variable 'DesiredAddedVolume' the value 'Infinity' Cubic Meters.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] FillTarget,Assigning state variable 'DesiredAddedWeight' the value 'Infinity' Metric Tons.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Decide] IfCanFill,Token branching on condition '(CurrentFlowContainer.Contents.Volume < CurrentFlowContainer.CurrentVolumeCapacity) && (CurrentFlowContainer.Contents.Weight < CurrentFlowContainer.CurrentWeightCapacity) && (DesiredAddedVolume > 0.0 || DesiredAddedWeight > 0.0)'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Decide] IfCanFill,Token sent to 'True' exit.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Execute] FillingContainer_AddOnProcess,Executing process 'TrainLoadStation_FillingContainer'.
+21.1604808817566,TrainWagon.594,Model,28.TrainLoadStation_FillingContainer,[Begin],Process 'TrainLoadStation_FillingContainer' initiated.
+21.1604808817566,TrainWagon.594,Model,28.TrainLoadStation_FillingContainer,[Assign] TrainArrivalTime,Assigning state variable 'TrainWagon.594.Time_StartLoading' the value '21.1604808817566' Hours.
+21.1604808817566,TrainWagon.594,Model,28.TrainLoadStation_FillingContainer,[End],Process 'TrainLoadStation_FillingContainer' ended.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'FlowInput@TrainLoadStation.FlowRegulator.Enabled' the value '1' .
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedVolume.CurrentThresholdValue' the value 'Infinity' Cubic Meters.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedVolume.Enabled' the value '0' .
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedWeight.CurrentThresholdValue' the value '24000' Metric Tons.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedWeight.Enabled' the value '0' .
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] ToStartFilling,Assigning state variable 'ResourceState' the value '0' .
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Wait] UntilFillTarget,Token waiting for event 'TrainWagon.594.FlowContainer.Full'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Wait] UntilFillTarget,Token waiting for event 'TrainLoadStation.ReachedDesiredAddedVolume.Event'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Wait] UntilFillTarget,Token waiting for event 'TrainLoadStation.ReachedDesiredAddedWeight.Event'.
+21.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Wait] UntilFillTarget,Token waiting at Wait step for '3' event(s). The wait is until any one of the events occurs.
+21.1604808817566,TrainWagon.594,TimePath3,39.OnReachedEnd,[End],Process 'OnReachedEnd' ended.
+21.1604808817566,TrainWagon.594,ContainerInput@TrainLoadStation,80.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+21.1604808817566,UC.595,CV_3304H,86.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.596' initiating transfer from '[FreeSpace] Model' into node 'CV_3304N'.
+21.1604808817566,UC.596,CV_3304N,80.OnEntered,[Begin],Process 'OnEntered' initiated.
+21.1604808817566,UC.596,CV_3304N,80.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.596' to location type 'OutboundLink' using flow regulator 'CV_3304N.FlowRegulator'.
+21.1604808817566,UC.596,CV_3304N,80.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.597' initiating transfer from '[FreeSpace] Model' into node 'CV_3304T'.
+21.1604808817566,UC.597,CV_3304T,39.OnEntered,[Begin],Process 'OnEntered' initiated.
+21.1604808817566,UC.597,CV_3304T,39.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.597' to location type 'OutboundLink' using flow regulator 'CV_3304T.FlowRegulator'.
+21.1604808817566,UC.597,CV_3304T,39.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.598' initiating transfer from '[FreeSpace] Model' into node 'CV_3306H'.
+21.1604808817566,UC.598,CV_3306H,28.OnEntered,[Begin],Process 'OnEntered' initiated.
+21.1604808817566,UC.598,CV_3306H,28.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.598' to location type 'OutboundLink' using flow regulator 'CV_3306H.FlowRegulator'.
+21.1604808817566,UC.598,CV_3306H,28.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.599' initiating transfer from '[FreeSpace] Model' into node 'CV_3306T'.
+21.1604808817566,UC.599,CV_3306T,85.OnEntered,[Begin],Process 'OnEntered' initiated.
+21.1604808817566,UC.599,CV_3306T,85.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.599' to location type 'OutboundLink' using flow regulator 'CV_3306T.FlowRegulator'.
+21.1604808817566,UC.599,CV_3306T,85.OnEntered,[Transfer] ToOutboundLink,Entity 'UC.600' initiating transfer from '[FreeSpace] Model' into node 'Input@TrainLoadBin'.
+21.1604808817566,UC.600,Input@TrainLoadBin,30.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+21.1604808817566,UC.600,Input@TrainLoadBin,30.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'UC.600' initiating transfer from '[Node] Input@TrainLoadBin' into object 'TrainLoadBin'.
+21.1604808817566,UC.600,Input@TrainLoadBin,30.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'UC.600' to location type 'Container' using flow regulator 'Input@TrainLoadBin.FlowRegulator'.
+21.1604808817566,UC.600,Input@TrainLoadBin,30.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'UC.601' initiating transfer from '[FreeSpace] Model' into container location 'TrainLoadBin.FlowContainer'.
+21.1604808817566,UC.601,TrainLoadBin,26.OnEnteredFlowContainer,[Begin],Process 'OnEnteredFlowContainer' initiated.
+21.1604808817566,UC.601,TrainLoadBin,26.OnEnteredFlowContainer,[Transfer] ToOutputNode,Entity 'UC.601' initiating transfer from '[Container] TrainLoadBin.FlowContainer' into node 'Output@TrainLoadBin'.
+21.1604808817566,UC.601,Output@TrainLoadBin,38.OnEnteredFromAssociatedObject,[Begin],Process 'OnEnteredFromAssociatedObject' initiated.
+21.1604808817566,UC.601,Output@TrainLoadBin,38.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'UC.601' to location type 'OutboundLink' using flow regulator 'Output@TrainLoadBin.FlowRegulator'.
+21.1604808817566,--,--,--,--,Firing event 'TrainLoadBin.WeightLevelRisingAboveLowMark.Event'.
+21.1604808817566,--,--,--,--,Firing event 'TrainLoadBin.WeightLevelRisingAboveMidMark.Event'.
+21.1604808817566,--,--,--,--,Firing event 'TrainLoadBin.WeightLevelRisingAboveHighMark.Event'.
+21.1604808817566,UC.601,Output@TrainLoadBin,38.OnEnteredFromAssociatedObject,[Transfer] ToOutboundLink,Entity 'UC.602' initiating transfer from '[FreeSpace] Model' into node 'FlowInput@TrainLoadStation'.
+21.1604808817566,UC.602,FlowInput@TrainLoadStation,84.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+21.1604808817566,UC.602,FlowInput@TrainLoadStation,84.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'UC.602' initiating transfer from '[Node] FlowInput@TrainLoadStation' into object 'TrainLoadStation'.
+21.1604808817566,UC.602,FlowInput@TrainLoadStation,84.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'UC.602' to location type 'Container' using flow regulator 'FlowInput@TrainLoadStation.FlowRegulator'.
+21.1604808817566,UC.602,FlowInput@TrainLoadStation,84.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'UC.603' initiating transfer from '[FreeSpace] Model' into container location 'TrainWagon.594.FlowContainer'.
+21.1604808817566,--,--,--,--,Firing event 'TrainLoadStation.FillingRateChanged.Event'.
+21.1604808817566,TrainLoadStation,TrainLoadStation,95.OnFillingRateChanged,[Begin],Process 'OnFillingRateChanged' initiated.
+21.1604808817566,TrainLoadStation,TrainLoadStation,95.OnFillingRateChanged,[Assign] ResourceState,Assigning state variable 'ResourceState' the value '1' .
+21.1604808817566,TrainLoadStation,TrainLoadStation,95.OnFillingRateChanged,[End],Process 'OnFillingRateChanged' ended.
+22,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '28117.0726096576' Metric Tons for tally statistic 'Tally_Stockpile1Contents'.
+22,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '21899.0277767028' Metric Tons for tally statistic 'Tally_Stockpile2Contents'.
+22,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '0' Metric Tons for tally statistic 'Tally_HAC_ROMContents'.
+22,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '35994.678723656' Metric Tons for tally statistic 'Tally_LAC_ROMContents'.
+22,Model,Model,1.TallyStockpileContents,[Delay] 1Hour,Delaying token for '1' Hours until time '23' Hours.
+22,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token branching on condition 'UC_Stockpile.FlowContainer.Contents.Weight > UCStockpile_Max'.
+22,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token sent to 'False' exit.
+22,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Delay] Delay1Hour,Delaying token for '1' Hours until time '23' Hours.
+22.7976129434427,--,--,--,--,Firing event 'LAC_Feeder.WeightLevelFallingBelowMidMark.Event'.
+22.7976129434427,LAC_Feeder,LAC_Feeder,95.OnFlowContainerLevelFallingBelowMidMark,[Begin],Process 'OnFlowContainerLevelFallingBelowMidMark' initiated.
+22.7976129434427,LAC_Feeder,LAC_Feeder,95.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9001H.FlowRegulator.Enabled' the value '1' .
+22.7976129434427,LAC.573,LCV_9001H,82.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.604' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+22.7976129434427,LAC.604,FlowNode4_1,60.OnEntered,[Begin],Process 'OnEntered' initiated.
+22.7976129434427,LAC.604,FlowNode4_1,60.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.604' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+22.7976129434427,LAC_Feeder,LAC_Feeder,95.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9003H.FlowRegulator.Enabled' the value '1' .
+22.7976129434427,LAC.389,LCV_9003H,76.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.605' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+22.7976129434427,LAC.605,FlowNode4_1,93.OnEntered,[Begin],Process 'OnEntered' initiated.
+22.7976129434427,LAC.605,FlowNode4_1,93.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.605' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+22.7976129434427,LAC_Feeder,LAC_Feeder,95.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9002H.FlowRegulator.Enabled' the value '0' .
+22.7976129434427,LAC_Feeder,LAC_Feeder,95.OnFlowContainerLevelFallingBelowMidMark,[End],Process 'OnFlowContainerLevelFallingBelowMidMark' ended.
+22.7976129434427,--,--,--,--,Firing event 'LAC_Feeder.WeightLevelRisingAboveMidMark.Event'.
+22.7976129434427,--,--,--,--,Object 'LAC.593' destroyed.
+22.7976129434427, ,Input@LAC_ROMPAD,94.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+22.850782938551,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[Begin],Process 'OnFlowContainerFull' initiated.
+22.850782938551,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[Fire] TankFullEvent,Firing event 'LAC_Feeder.TankFull'.
+22.850782938551,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9001H.FlowRegulator.Enabled' the value '0' .
+22.850782938551,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9003H.FlowRegulator.Enabled' the value '0' .
+22.850782938551,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[Assign] OnTankFullAssignments,Assigning state variable 'LCV_9002H.FlowRegulator.Enabled' the value '1' .
+22.850782938551,LAC.574,LCV_9002H,72.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.606' initiating transfer from '[FreeSpace] Model' into node 'Input@LAC_ROMPAD'.
+22.850782938551,LAC.606,Input@LAC_ROMPAD,95.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+22.850782938551,LAC.606,Input@LAC_ROMPAD,95.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.606' initiating transfer from '[Node] Input@LAC_ROMPAD' into object 'LAC_ROMPAD'.
+22.850782938551,LAC.606,Input@LAC_ROMPAD,95.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.606' to location type 'Container' using flow regulator 'Input@LAC_ROMPAD.FlowRegulator'.
+22.850782938551,LAC_Feeder,LAC_Feeder,94.OnFlowContainerFull,[End],Process 'OnFlowContainerFull' ended.
+22.850782938551,--,--,--,--,Object 'LAC.604' destroyed.
+22.850782938551, ,FlowNode4_1,60.OnEntered,[End],Process 'OnEntered' ended.
+22.850782938551,--,--,--,--,Object 'LAC.605' destroyed.
+22.850782938551, ,FlowNode4_1,93.OnEntered,[End],Process 'OnEntered' ended.
+23,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '22617.0726097158' Metric Tons for tally statistic 'Tally_Stockpile1Contents'.
+23,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '25399.0277765747' Metric Tons for tally statistic 'Tally_Stockpile2Contents'.
+23,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '0' Metric Tons for tally statistic 'Tally_HAC_ROMContents'.
+23,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '38252.055586201' Metric Tons for tally statistic 'Tally_LAC_ROMContents'.
+23,Model,Model,1.TallyStockpileContents,[Delay] 1Hour,Delaying token for '1' Hours until time '24' Hours.
+23,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token branching on condition 'UC_Stockpile.FlowContainer.Contents.Weight > UCStockpile_Max'.
+23,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token sent to 'False' exit.
+23,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Delay] Delay1Hour,Delaying token for '1' Hours until time '24' Hours.
+24,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '17117.072609774' Metric Tons for tally statistic 'Tally_Stockpile1Contents'.
+24,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '28899.0277764467' Metric Tons for tally statistic 'Tally_Stockpile2Contents'.
+24,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '0' Metric Tons for tally statistic 'Tally_HAC_ROMContents'.
+24,Model,Model,1.TallyStockpileContents,[Tally] Contents,Recorded '1' observation(s) of value '40765.355586201' Metric Tons for tally statistic 'Tally_LAC_ROMContents'.
+24,Model,Model,1.TallyStockpileContents,[Delay] 1Hour,Delaying token for '1' Hours until time '25' Hours.
+24,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token branching on condition 'UC_Stockpile.FlowContainer.Contents.Weight > UCStockpile_Max'.
+24,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Decide] LargerthanMax?,Token sent to 'False' exit.
+24,UC_Stockpile,Model,6.HourlyTally_ProcessName,[Delay] Delay1Hour,Delaying token for '1' Hours until time '25' Hours.
+24.0002777777778,LW1GenServer,LW1GenServer,93.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+24.0002777777778,LW1GenServer,LW1GenServer,93.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LW1GenServer.Processing.CurrentCapacity' the value '0' .
+24.0002777777778,LW1GenServer,LW1GenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+24.0002777777778,LW1GenServer,LW1GenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+24.0002777777778,LW1GenServer,LW1GenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+24.0002777777778,LW1GenServer,LW1GenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+24.0002777777778,LW1GenServer,LW1GenServer,93.OnCapacityChanged,[Suspend] Processing,Suspending process 'LW1GenServer.OnEnteredProcessing'.
+24.0002777777778,--,--,--,--,The number of suspensions applied to process 'LW1GenServer.OnEnteredProcessing' is now '1'.
+24.0002777777778,LW1GenServer,LW1GenServer,93.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'LW1GenServer_OffShift'.
+24.0002777777778,LW1GenServer,Model,60.LW1GenServer_OffShift,[Begin],Process 'LW1GenServer_OffShift' initiated.
+24.0002777777778,LW1GenServer,Model,60.LW1GenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@LW1_Input.FlowRegulator.Enabled' the value '0' .
+24.0002777777778,LW1GenServer,Model,60.LW1GenServer_OffShift,[End],Process 'LW1GenServer_OffShift' ended.
+24.0002777777778,LW1GenServer,LW1GenServer,93.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+24.0002777777778,LW2GenServer,LW2GenServer,93.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+24.0002777777778,LW2GenServer,LW2GenServer,93.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LW2GenServer.Processing.CurrentCapacity' the value '0' .
+24.0002777777778,LW2GenServer,LW2GenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+24.0002777777778,LW2GenServer,LW2GenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+24.0002777777778,LW2GenServer,LW2GenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+24.0002777777778,LW2GenServer,LW2GenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+24.0002777777778,LW2GenServer,LW2GenServer,93.OnCapacityChanged,[Suspend] Processing,Suspending process 'LW2GenServer.OnEnteredProcessing'.
+24.0002777777778,--,--,--,--,The number of suspensions applied to process 'LW2GenServer.OnEnteredProcessing' is now '1'.
+24.0002777777778,LW2GenServer,LW2GenServer,93.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'LW2GenServer_OffShift'.
+24.0002777777778,LW2GenServer,Model,60.LW2GenServer_OffShift,[Begin],Process 'LW2GenServer_OffShift' initiated.
+24.0002777777778,LW2GenServer,Model,60.LW2GenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@LW2_Input.FlowRegulator.Enabled' the value '0' .
+24.0002777777778,LW2GenServer,Model,60.LW2GenServer_OffShift,[End],Process 'LW2GenServer_OffShift' ended.
+24.0002777777778,LW2GenServer,LW2GenServer,93.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+24.0002777777778,LWDevGenServer,LWDevGenServer,93.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+24.0002777777778,LWDevGenServer,LWDevGenServer,93.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LWDevGenServer.Processing.CurrentCapacity' the value '0' .
+24.0002777777778,LWDevGenServer,LWDevGenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+24.0002777777778,LWDevGenServer,LWDevGenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+24.0002777777778,LWDevGenServer,LWDevGenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+24.0002777777778,LWDevGenServer,LWDevGenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+24.0002777777778,LWDevGenServer,LWDevGenServer,93.OnCapacityChanged,[Suspend] Processing,Suspending process 'LWDevGenServer.OnEnteredProcessing'.
+24.0002777777778,--,--,--,--,The number of suspensions applied to process 'LWDevGenServer.OnEnteredProcessing' is now '1'.
+24.0002777777778,LWDevGenServer,LWDevGenServer,93.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'LWDevGenServer_OffShift'.
+24.0002777777778,LWDevGenServer,Model,60.LWDevGenServer_OffShift,[Begin],Process 'LWDevGenServer_OffShift' initiated.
+24.0002777777778,LWDevGenServer,Model,60.LWDevGenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@LWDev_Input.FlowRegulator.Enabled' the value '0' .
+24.0002777777778,LWDevGenServer,Model,60.LWDevGenServer_OffShift,[End],Process 'LWDevGenServer_OffShift' ended.
+24.0002777777778,LWDevGenServer,LWDevGenServer,93.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+24.0002777777778,LACGenServer,LACGenServer,93.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+24.0002777777778,LACGenServer,LACGenServer,93.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'LACGenServer.Processing.CurrentCapacity' the value '0' .
+24.0002777777778,LACGenServer,LACGenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+24.0002777777778,LACGenServer,LACGenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+24.0002777777778,LACGenServer,LACGenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+24.0002777777778,LACGenServer,LACGenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+24.0002777777778,LACGenServer,LACGenServer,93.OnCapacityChanged,[Suspend] Processing,Suspending process 'LACGenServer.OnEnteredProcessing'.
+24.0002777777778,--,--,--,--,The number of suspensions applied to process 'LACGenServer.OnEnteredProcessing' is now '1'.
+24.0002777777778,LACGenServer,LACGenServer,93.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'LACGenServer_OffShift'.
+24.0002777777778,LACGenServer,Model,60.LACGenServer_OffShift,[Begin],Process 'LACGenServer_OffShift' initiated.
+24.0002777777778,LACGenServer,Model,60.LACGenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@LAC_Input.FlowRegulator.Enabled' the value '0' .
+24.0002777777778,LACGenServer,Model,60.LACGenServer_OffShift,[End],Process 'LACGenServer_OffShift' ended.
+24.0002777777778,LACGenServer,LACGenServer,93.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+24.0002777777778,HAC1GenServer,HAC1GenServer,93.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+24.0002777777778,HAC1GenServer,HAC1GenServer,93.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'HAC1GenServer.Processing.CurrentCapacity' the value '0' .
+24.0002777777778,HAC1GenServer,HAC1GenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+24.0002777777778,HAC1GenServer,HAC1GenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+24.0002777777778,HAC1GenServer,HAC1GenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+24.0002777777778,HAC1GenServer,HAC1GenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+24.0002777777778,HAC1GenServer,HAC1GenServer,93.OnCapacityChanged,[Suspend] Processing,Suspending process 'HAC1GenServer.OnEnteredProcessing'.
+24.0002777777778,--,--,--,--,The number of suspensions applied to process 'HAC1GenServer.OnEnteredProcessing' is now '1'.
+24.0002777777778,HAC1GenServer,HAC1GenServer,93.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'HAC1GenServer_OffShift'.
+24.0002777777778,HAC1GenServer,Model,60.HAC1GenServer_OffShift,[Begin],Process 'HAC1GenServer_OffShift' initiated.
+24.0002777777778,HAC1GenServer,Model,60.HAC1GenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@HAC1_Input.FlowRegulator.Enabled' the value '0' .
+24.0002777777778,HAC1GenServer,Model,60.HAC1GenServer_OffShift,[End],Process 'HAC1GenServer_OffShift' ended.
+24.0002777777778,HAC1GenServer,HAC1GenServer,93.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+24.0002777777778,HAC2GenServer,HAC2GenServer,93.OnCapacityChanged,[Begin],Process 'OnCapacityChanged' initiated.
+24.0002777777778,HAC2GenServer,HAC2GenServer,93.OnCapacityChanged,[Assign] ProcessingCapacity,Assigning state variable 'HAC2GenServer.Processing.CurrentCapacity' the value '0' .
+24.0002777777778,HAC2GenServer,HAC2GenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token branching on condition '(Capacity.Previous==0)&&(Capacity>0)'.
+24.0002777777778,HAC2GenServer,HAC2GenServer,93.OnCapacityChanged,[Decide] IfOnShift,Token sent to 'False' exit.
+24.0002777777778,HAC2GenServer,HAC2GenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token branching on condition '(Capacity.Previous>0)&&(Capacity<=0)'.
+24.0002777777778,HAC2GenServer,HAC2GenServer,93.OnCapacityChanged,[Decide] IfOffShift,Token sent to 'True' exit.
+24.0002777777778,HAC2GenServer,HAC2GenServer,93.OnCapacityChanged,[Suspend] Processing,Suspending process 'HAC2GenServer.OnEnteredProcessing'.
+24.0002777777778,--,--,--,--,The number of suspensions applied to process 'HAC2GenServer.OnEnteredProcessing' is now '1'.
+24.0002777777778,HAC2GenServer,HAC2GenServer,93.OnCapacityChanged,[Execute] OffShift_AddOnProcess,Executing process 'HAC2GenServer_OffShift'.
+24.0002777777778,HAC2GenServer,Model,60.HAC2GenServer_OffShift,[Begin],Process 'HAC2GenServer_OffShift' initiated.
+24.0002777777778,HAC2GenServer,Model,60.HAC2GenServer_OffShift,[Assign] FlowOff,Assigning state variable 'Output@HAC2_Input.FlowRegulator.Enabled' the value '0' .
+24.0002777777778,HAC2GenServer,Model,60.HAC2GenServer_OffShift,[End],Process 'HAC2GenServer_OffShift' ended.
+24.0002777777778,HAC2GenServer,HAC2GenServer,93.OnCapacityChanged,[End],Process 'OnCapacityChanged' ended.
+24.0002777777778,--,--,--,--,Object 'UC.555' destroyed.
+24.0002777777778, ,FlowNode12,51.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778,--,--,--,--,Object 'UC.556' destroyed.
+24.0002777777778, ,FlowNode12,56.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778,--,--,--,--,Object 'UC.557' destroyed.
+24.0002777777778,--,--,--,--,Object 'UC.558' destroyed.
+24.0002777777778,--,--,--,--,Object 'UC.560' destroyed.
+24.0002777777778,--,--,--,--,Object 'UC.562' destroyed.
+24.0002777777778,--,--,--,--,Object 'UC.559' destroyed.
+24.0002777777778,--,--,--,--,Object 'UC.561' destroyed.
+24.0002777777778,--,--,--,--,Object 'UC.563' destroyed.
+24.0002777777778, ,FlowNode12,47.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,DCV_1701H,48.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,DCV_1702H,35.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,DCV_1701T,78.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,Input@UC_Stockpile,74.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+24.0002777777778, ,DCV_1702T,68.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,Input@UC_Stockpile,73.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+24.0002777777778,UC.564,UC_Stockpile,66.OnEnteredFlowContainer,[End],Process 'OnEnteredFlowContainer' ended.
+24.0002777777778,UC.564,Output@UC_Stockpile,24.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+24.0002777777778,--,--,--,--,Object 'LAC.573' destroyed.
+24.0002777777778,--,--,--,--,Object 'LAC.574' destroyed.
+24.0002777777778,--,--,--,--,Object 'LAC.606' destroyed.
+24.0002777777778, ,LCV_9001H,82.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,LCV_9002H,72.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,Input@LAC_ROMPAD,95.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+24.0002777777778,--,--,--,--,Object 'HAC.575' destroyed.
+24.0002777777778,--,--,--,--,Object 'HAC.578' destroyed.
+24.0002777777778,--,--,--,--,Object 'HAC.580' destroyed.
+24.0002777777778, ,HCV_9001H,67.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,FlowNode1,81.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,FlowNode4,58.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778,HAC.583,Input@HAC_Feeder,64.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+24.0002777777778,--,--,--,--,Object 'LAC.576' destroyed.
+24.0002777777778,--,--,--,--,Object 'LAC.579' destroyed.
+24.0002777777778,--,--,--,--,Object 'LAC.581' destroyed.
+24.0002777777778,--,--,--,--,Object 'LAC.554' destroyed.
+24.0002777777778,--,--,--,--,Object 'LAC.582' destroyed.
+24.0002777777778,--,--,--,--,Object 'HAC.583' destroyed.
+24.0002777777778,--,--,--,--,Object 'HAC.584' destroyed.
+24.0002777777778,--,--,--,--,Object 'HAC.585' destroyed.
+24.0002777777778,--,--,--,--,Object 'HAC.586' destroyed.
+24.0002777777778,--,--,--,--,Object 'HAC.587' destroyed.
+24.0002777777778,--,--,--,--,Object 'HAC.588' destroyed.
+24.0002777777778,--,--,--,--,Object 'HAC.589' destroyed.
+24.0002777777778,--,--,--,--,Object 'HAC.590' destroyed.
+24.0002777777778,--,--,--,--,Object 'Washed.591' destroyed.
+24.0002777777778,--,--,--,--,Object 'Washed.592' destroyed.
+24.0002777777778, ,Input@Optional_ROMPAD,54.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+24.0002777777778, ,Optional_ROMPAD,40.OnEnteredFlowContainer,[End],Process 'OnEnteredFlowContainer' ended.
+24.0002777777778, ,Output@Optional_ROMPAD,92.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+24.0002777777778, ,FlowNode4_1,61.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,FlowNode4,90.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,Input@LAC_Feeder,37.OnEnteredToAssociatedObject,[End],Process 'OnEnteredToAssociatedObject' ended.
+24.0002777777778, ,HAC_Feeder,88.OnEnteredFlowContainer,[End],Process 'OnEnteredFlowContainer' ended.
+24.0002777777778, ,Output@HAC_Feeder,89.OnEnteredFromAssociatedObject,[End],Process 'OnEnteredFromAssociatedObject' ended.
+24.0002777777778, ,CV_1301H,43.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,CV_1301T,87.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,CV_2301H,49.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,CV_2301T,50.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,HAC_Washing,62.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,CV_3301H,46.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,CV_3301T,32.OnEntered,[End],Process 'OnEntered' ended.
+24.0002777777778, ,FlowNode8,53.OnEntered,[End],Process 'OnEntered' ended.
+24.0532978973039,--,--,--,--,Firing event 'LAC_Feeder.WeightLevelFallingBelowMidMark.Event'.
+24.0532978973039,LAC_Feeder,LAC_Feeder,53.OnFlowContainerLevelFallingBelowMidMark,[Begin],Process 'OnFlowContainerLevelFallingBelowMidMark' initiated.
+24.0532978973039,LAC_Feeder,LAC_Feeder,53.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9001H.FlowRegulator.Enabled' the value '1' .
+24.0532978973039,LAC_Feeder,LAC_Feeder,53.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9003H.FlowRegulator.Enabled' the value '1' .
+24.0532978973039,LAC.389,LCV_9003H,76.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.607' initiating transfer from '[FreeSpace] Model' into node 'FlowNode4_1'.
+24.0532978973039,LAC.607,FlowNode4_1,32.OnEntered,[Begin],Process 'OnEntered' initiated.
+24.0532978973039,LAC.607,FlowNode4_1,32.OnEntered,[Transfer] ToOutboundLink,Adding request to transfer flow from entity 'LAC.607' to location type 'OutboundLink' using flow regulator 'FlowNode4_1.FlowRegulator'.
+24.0532978973039,LAC_Feeder,LAC_Feeder,53.OnFlowContainerLevelFallingBelowMidMark,[Assign] OnTankLevelFallingBelowMidMarkAssignments,Assigning state variable 'LCV_9002H.FlowRegulator.Enabled' the value '0' .
+24.0532978973039,LAC_Feeder,LAC_Feeder,53.OnFlowContainerLevelFallingBelowMidMark,[End],Process 'OnFlowContainerLevelFallingBelowMidMark' ended.
+24.0532978973039,LAC.607,FlowNode4_1,32.OnEntered,[Transfer] ToOutboundLink,Entity 'LAC.608' initiating transfer from '[FreeSpace] Model' into node 'Input@LAC_Feeder'.
+24.0532978973039,LAC.608,Input@LAC_Feeder,53.OnEnteredToAssociatedObject,[Begin],Process 'OnEnteredToAssociatedObject' initiated.
+24.0532978973039,LAC.608,Input@LAC_Feeder,53.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Entity 'LAC.608' initiating transfer from '[Node] Input@LAC_Feeder' into object 'LAC_Feeder'.
+24.0532978973039,LAC.608,Input@LAC_Feeder,53.OnEnteredToAssociatedObject,[Transfer] ToAssociatedObject,Adding request to transfer flow from entity 'LAC.608' to location type 'Container' using flow regulator 'Input@LAC_Feeder.FlowRegulator'.
+24.1604808817566,--,--,--,--,Firing event 'Stockpile1OutputQuantity_Monitor.Event'.
+24.1604808817566,TrainWagon.594,TrainWagon.594,46.OnFlowContainerFull,[Begin],Process 'OnFlowContainerFull' initiated.
+24.1604808817566,TrainWagon.594,TrainWagon.594,46.OnFlowContainerFull,[Fire] ContainerFullEvent,Firing event 'TrainWagon.594.ContainerFull'.
+24.1604808817566,TrainWagon.594,TrainWagon.594,46.OnFlowContainerFull,[End],Process 'OnFlowContainerFull' ended.
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] ToStopFilling,Assigning state variable 'FlowInput@TrainLoadStation.FlowRegulator.Enabled' the value '0' .
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] ToStopFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedVolume.Enabled' the value '0' .
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] ToStopFilling,Assigning state variable 'TrainLoadStation.ReachedDesiredAddedWeight.Enabled' the value '0' .
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Assign] ToStopFilling,Assigning state variable 'CurrentFlowContainer' the value 'Nothing'.
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Decide] IfFlowInputStillTransferring,Token branching on condition 'FlowInput.FlowRegulator.OutputFlowReceivers.FirstItem != Nothing'.
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Decide] IfFlowInputStillTransferring,Token sent to 'True' exit.
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[EndTransfer] OfAddedFlow,Firing 'UC.603.Transferring' and 'UC.603.Transferred' events.
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Execute] FilledContainer_AddOnProcess,Executing process 'TrainLoadStation_FilledContainer'.
+24.1604808817566,TrainWagon.594,Model,46.TrainLoadStation_FilledContainer,[Begin],Process 'TrainLoadStation_FilledContainer' initiated.
+24.1604808817566,TrainWagon.594,Model,46.TrainLoadStation_FilledContainer,[Assign] TotalTonnes,Assigning state variable 'TotalTonnesLoaded' the value '72000' Metric Tons.
+24.1604808817566,TrainWagon.594,Model,46.TrainLoadStation_FilledContainer,[End],Process 'TrainLoadStation_FilledContainer' ended.
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Find] FlowContainer,Searching for result that satisfies the condition 'Entity.Elements.ItemAtIndex(CurrentElementIndex).Is.Container'.
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Find] FlowContainer,Using index variable 'CurrentElementIndex' with index range from starting index '0' to ending index '0'.
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Find] FlowContainer,No result found that satisfied search condition.
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Find] FlowContainer,Saving index found. Assigning index variable 'CurrentElementIndex' the value '0'.
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Find] FlowContainer,Token sent to 'NotFound' exit.
+24.1604808817566,TrainWagon.594,TrainLoadStation,57.OnEnteredProcessing,[Execute] AfterProcessing_AddOnProcess,Executing process 'TrainLoadStation_AfterProcessing'.
+24.1604808817566,TrainWagon.594,Model,46.TrainLoadStation_AfterProcessing,[Begin],Process 'TrainLoadStation_AfterProcessing' initiated.
+24.1604808817566,TrainWagon.594,Model,46.TrainLoadStation_AfterProcessing,[Assign] StopStockpileOutputs,Assigning state variable 'Output@Stockpile1.FlowRegulator.Enabled' the value '0' .
+24.1604808817566,TrainWagon.594,Model,46.TrainLoadStation_AfterProcessing,[Assign] StopStockpileOutputs,Assigning state variable 'Output@Stockpile2.FlowRegulator.Enabled' the value '0' .
+24.1604808817566,TrainWagon.594,Model,46.TrainLoadStation_AfterProcessing,[Assign] TrainThroughput,Stopped at breakpoint on TrainLoadStation_AfterProcessing.TrainThroughput
+24.1604808817566,TrainWagon.594,Model,46.TrainLoadStation_AfterProcessing,[Assign] TrainThroughput,Assigning state variable 'TotalTonnesLoaded' the value '72000' Metric Tons.
 
