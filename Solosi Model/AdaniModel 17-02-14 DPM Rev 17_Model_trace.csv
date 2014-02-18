@@ -1,53 +1,166 @@
 Time(Hours),EntityID,ObjectName,ProcessID,StepName,Action
-0,CPPWorkSchedule,Model,7.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-0,CPPWorkSchedule,Model,7.DowntimeLogger,[Notify] Resource,State
-0,CPPWorkSchedule,Model,7.DowntimeLogger,[Notify] Resource,Busy
-157.266732609706,CPPWorkSchedule,Model,48.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-157.266732609706,CPPWorkSchedule,Model,48.DowntimeLogger,[Notify] Resource,State
-157.266732609706,CPPWorkSchedule,Model,48.DowntimeLogger,[Notify] Resource,FailedBusy
-167.015512355149,CPPWorkSchedule,Model,47.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-167.015512355149,CPPWorkSchedule,Model,47.DowntimeLogger,[Notify] Resource,State
-167.015512355149,CPPWorkSchedule,Model,47.DowntimeLogger,[Notify] Resource,Busy
-240.000277777778,CPPWorkSchedule,Model,95.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-240.000277777778,CPPWorkSchedule,Model,95.DowntimeLogger,[Notify] Resource,State
-240.000277777778,CPPWorkSchedule,Model,95.DowntimeLogger,[Notify] Resource,OffshiftBusy
-288.000277777778,CPPWorkSchedule,Model,42.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-288.000277777778,CPPWorkSchedule,Model,42.DowntimeLogger,[Notify] Resource,State
-288.000277777778,CPPWorkSchedule,Model,42.DowntimeLogger,[Notify] Resource,Busy
-394.678536109038,CPPWorkSchedule,Model,28.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-394.678536109038,CPPWorkSchedule,Model,28.DowntimeLogger,[Notify] Resource,State
-394.678536109038,CPPWorkSchedule,Model,28.DowntimeLogger,[Notify] Resource,FailedBusy
-401.868889859798,CPPWorkSchedule,Model,39.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-401.868889859798,CPPWorkSchedule,Model,39.DowntimeLogger,[Notify] Resource,State
-401.868889859798,CPPWorkSchedule,Model,39.DowntimeLogger,[Notify] Resource,Busy
-603.939087621542,CPPWorkSchedule,Model,62.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-603.939087621542,CPPWorkSchedule,Model,62.DowntimeLogger,[Notify] Resource,State
-603.939087621542,CPPWorkSchedule,Model,62.DowntimeLogger,[Notify] Resource,FailedBusy
-611.287113670491,CPPWorkSchedule,Model,54.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-611.287113670491,CPPWorkSchedule,Model,54.DowntimeLogger,[Notify] Resource,State
-611.287113670491,CPPWorkSchedule,Model,54.DowntimeLogger,[Notify] Resource,Busy
-672.868632771253,CPPWorkSchedule,Model,56.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-672.868632771253,CPPWorkSchedule,Model,56.DowntimeLogger,[Notify] Resource,State
-672.868632771253,CPPWorkSchedule,Model,56.DowntimeLogger,[Notify] Resource,FailedBusy
-684.009889081621,CPPWorkSchedule,Model,89.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-684.009889081621,CPPWorkSchedule,Model,89.DowntimeLogger,[Notify] Resource,State
-684.009889081621,CPPWorkSchedule,Model,89.DowntimeLogger,[Notify] Resource,Busy
-689.332135203243,CPPWorkSchedule,Model,72.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-689.332135203243,CPPWorkSchedule,Model,72.DowntimeLogger,[Notify] Resource,State
-689.332135203243,CPPWorkSchedule,Model,72.DowntimeLogger,[Notify] Resource,FailedBusy
-696.15409239645,CPPWorkSchedule,Model,92.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-696.15409239645,CPPWorkSchedule,Model,92.DowntimeLogger,[Notify] Resource,State
-696.15409239645,CPPWorkSchedule,Model,92.DowntimeLogger,[Notify] Resource,Busy
-856.646965998686,CPPWorkSchedule,Model,30.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-856.646965998686,CPPWorkSchedule,Model,30.DowntimeLogger,[Notify] Resource,State
-856.646965998686,CPPWorkSchedule,Model,30.DowntimeLogger,[Notify] Resource,FailedBusy
-866.568389599309,CPPWorkSchedule,Model,32.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-866.568389599309,CPPWorkSchedule,Model,32.DowntimeLogger,[Notify] Resource,State
-866.568389599309,CPPWorkSchedule,Model,32.DowntimeLogger,[Notify] Resource,Busy
-883.122563834818,CPPWorkSchedule,Model,55.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-883.122563834818,CPPWorkSchedule,Model,55.DowntimeLogger,[Notify] Resource,State
-883.122563834818,CPPWorkSchedule,Model,55.DowntimeLogger,[Notify] Resource,FailedBusy
-890.74936421957,CPPWorkSchedule,Model,96.DowntimeLogger,[Notify] Tellme,CPPWorkSchedule
-890.74936421957,CPPWorkSchedule,Model,96.DowntimeLogger,[Notify] Resource,State
-890.74936421957,CPPWorkSchedule,Model,96.DowntimeLogger,[Notify] Resource,Busy
+192.490361975853,HAC_Feeder,Model,74.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+192.490361975853,HAC_Feeder,Model,74.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,2.70665623247623E-12
+288.000277777778,HAC_Feeder,Model,68.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+288.000277777778,HAC_Feeder,Model,68.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,2.75377942671184E-11
+528.548086441454,HAC_Feeder,Model,57.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+528.548086441454,HAC_Feeder,Model,57.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-2.38942448049784E-11
+564.266605427301,HAC_Feeder,Model,73.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+564.266605427301,HAC_Feeder,Model,73.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,5.78875187784433E-11
+679.978264131118,HAC_Feeder,Model,30.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+679.978264131118,HAC_Feeder,Model,30.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,4.94474079459906E-11
+823.921456248046,HAC_Feeder,Model,76.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+823.921456248046,HAC_Feeder,Model,76.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,3.14321368932724E-11
+828.051902777778,HAC_Feeder,Model,45.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+828.051902777778,HAC_Feeder,Model,45.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,8.87957867234945E-11
+832.551902777778,HAC_Feeder,Model,104.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+832.551902777778,HAC_Feeder,Model,104.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,8.87957867234945E-11
+835.794527777778,HAC_Feeder,Model,78.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+835.794527777778,HAC_Feeder,Model,78.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-5.38129825145006E-11
+840.051902777778,HAC_Feeder,Model,86.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+840.051902777778,HAC_Feeder,Model,86.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,8.87957867234945E-11
+844.551902777778,HAC_Feeder,Model,91.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+844.551902777778,HAC_Feeder,Model,91.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,8.87957867234945E-11
+847.794527777778,HAC_Feeder,Model,66.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+847.794527777778,HAC_Feeder,Model,66.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-5.38129825145006E-11
+852.051902777778,HAC_Feeder,Model,68.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+852.051902777778,HAC_Feeder,Model,68.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,8.87957867234945E-11
+856.551902777778,HAC_Feeder,Model,29.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+856.551902777778,HAC_Feeder,Model,29.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,8.87957867234945E-11
+859.794527777778,HAC_Feeder,Model,95.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+859.794527777778,HAC_Feeder,Model,95.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-5.38129825145006E-11
+864.051902777778,HAC_Feeder,Model,76.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+864.051902777778,HAC_Feeder,Model,76.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,8.87957867234945E-11
+868.551902777778,HAC_Feeder,Model,87.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+868.551902777778,HAC_Feeder,Model,87.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,8.87957867234945E-11
+871.794527777778,HAC_Feeder,Model,84.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+871.794527777778,HAC_Feeder,Model,84.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-5.38129825145006E-11
+1152.71017065557,HAC_Feeder,Model,42.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1152.71017065557,HAC_Feeder,Model,42.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.42899807542562E-11
+1156.55190277778,HAC_Feeder,Model,94.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1156.55190277778,HAC_Feeder,Model,94.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1159.79452777778,HAC_Feeder,Model,96.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1159.79452777778,HAC_Feeder,Model,96.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1164.05190277778,HAC_Feeder,Model,77.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1164.05190277778,HAC_Feeder,Model,77.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1212.78133741266,HAC_Feeder,Model,72.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1212.78133741266,HAC_Feeder,Model,72.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-1.50292180478573E-10
+1216.55190277778,HAC_Feeder,Model,86.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1216.55190277778,HAC_Feeder,Model,86.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1219.79452777778,HAC_Feeder,Model,31.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1219.79452777778,HAC_Feeder,Model,31.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1224.05190277778,HAC_Feeder,Model,105.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1224.05190277778,HAC_Feeder,Model,105.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1228.55190277778,HAC_Feeder,Model,94.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1228.55190277778,HAC_Feeder,Model,94.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1231.79452777778,HAC_Feeder,Model,60.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1231.79452777778,HAC_Feeder,Model,60.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1236.05190277778,HAC_Feeder,Model,93.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1236.05190277778,HAC_Feeder,Model,93.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1284.45707124266,HAC_Feeder,Model,26.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1284.45707124266,HAC_Feeder,Model,26.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.42899807542562E-11
+1288.55190277778,HAC_Feeder,Model,95.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1288.55190277778,HAC_Feeder,Model,95.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1291.79452777778,HAC_Feeder,Model,90.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1291.79452777778,HAC_Feeder,Model,90.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1296.05190277778,HAC_Feeder,Model,31.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1296.05190277778,HAC_Feeder,Model,31.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1300.55190277778,HAC_Feeder,Model,86.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1300.55190277778,HAC_Feeder,Model,86.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1303.79452777778,HAC_Feeder,Model,31.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1303.79452777778,HAC_Feeder,Model,31.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1308.05190277778,HAC_Feeder,Model,59.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1308.05190277778,HAC_Feeder,Model,59.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1312.55190277778,HAC_Feeder,Model,28.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1312.55190277778,HAC_Feeder,Model,28.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1315.79452777778,HAC_Feeder,Model,96.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1315.79452777778,HAC_Feeder,Model,96.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1320.05190277778,HAC_Feeder,Model,42.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1320.05190277778,HAC_Feeder,Model,42.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1324.55190277778,HAC_Feeder,Model,95.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1324.55190277778,HAC_Feeder,Model,95.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1327.79452777778,HAC_Feeder,Model,56.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1327.79452777778,HAC_Feeder,Model,56.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1332.05190277778,HAC_Feeder,Model,94.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1332.05190277778,HAC_Feeder,Model,94.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1336.55190277778,HAC_Feeder,Model,88.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1336.55190277778,HAC_Feeder,Model,88.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1339.79452777778,HAC_Feeder,Model,72.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1339.79452777778,HAC_Feeder,Model,72.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1344.05190277778,HAC_Feeder,Model,76.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1344.05190277778,HAC_Feeder,Model,76.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1348.55190277778,HAC_Feeder,Model,64.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1348.55190277778,HAC_Feeder,Model,64.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1351.79452777778,HAC_Feeder,Model,66.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1351.79452777778,HAC_Feeder,Model,66.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1356.05190277778,HAC_Feeder,Model,34.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1356.05190277778,HAC_Feeder,Model,34.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1360.55190277778,HAC_Feeder,Model,72.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1360.55190277778,HAC_Feeder,Model,72.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1363.79452777778,HAC_Feeder,Model,100.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1363.79452777778,HAC_Feeder,Model,100.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1368.05190277778,HAC_Feeder,Model,95.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1368.05190277778,HAC_Feeder,Model,95.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1372.55190277778,HAC_Feeder,Model,33.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1372.55190277778,HAC_Feeder,Model,33.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1375.79452777778,HAC_Feeder,Model,64.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1375.79452777778,HAC_Feeder,Model,64.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1448.29237945418,HAC_Feeder,Model,97.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1448.29237945418,HAC_Feeder,Model,97.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,6.26896508038044E-11
+1452.05190277778,HAC_Feeder,Model,72.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1452.05190277778,HAC_Feeder,Model,72.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1456.55190277778,HAC_Feeder,Model,38.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1456.55190277778,HAC_Feeder,Model,38.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1459.79452777778,HAC_Feeder,Model,37.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1459.79452777778,HAC_Feeder,Model,37.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.28085957840085E-10
+1464.05190277778,HAC_Feeder,Model,74.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1464.05190277778,HAC_Feeder,Model,74.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-9.31031536310911E-11
+1536.09146801156,HAC_Feeder,Model,38.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1536.09146801156,HAC_Feeder,Model,38.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,9.95059963315725E-11
+1734.54846981208,HAC_Feeder,Model,50.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1734.54846981208,HAC_Feeder,Model,50.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,5.5733835324645E-11
+1916.31296721404,HAC_Feeder,Model,55.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+1916.31296721404,HAC_Feeder,Model,55.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.41502823680639E-10
+2057.08159092931,HAC_Feeder,Model,46.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+2057.08159092931,HAC_Feeder,Model,46.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,2.28523276746273E-10
+2099.58509376426,HAC_Feeder,Model,70.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+2099.58509376426,HAC_Feeder,Model,70.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-1.88592821359634E-10
+2104.40234520051,LAC_Feeder,Model,71.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+2104.40234520051,LAC_Feeder,Model,71.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-2.23808456212282E-10
+2173.87801431819,HAC_Feeder,Model,80.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+2173.87801431819,HAC_Feeder,Model,80.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.3748649507761E-10
+2235.91823855452,HAC_Feeder,Model,105.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,HAC Feeder
+2235.91823855452,HAC_Feeder,Model,105.HAC_Feeder_BelowLowMark,[Notify] Tell Me when,-4.40923031419516E-11
+3492.97158212585,LAC_Feeder,Model,48.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3492.97158212585,LAC_Feeder,Model,48.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.24915163218975E-10
+3636.94766908212,LAC_Feeder,Model,44.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3636.94766908212,LAC_Feeder,Model,44.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+3648.94766908212,LAC_Feeder,Model,83.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3648.94766908212,LAC_Feeder,Model,83.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+3660.94766908212,LAC_Feeder,Model,68.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3660.94766908212,LAC_Feeder,Model,68.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+3672.94766908212,LAC_Feeder,Model,102.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3672.94766908212,LAC_Feeder,Model,102.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+3684.94766908212,LAC_Feeder,Model,86.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3684.94766908212,LAC_Feeder,Model,86.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+3696.94766908212,LAC_Feeder,Model,31.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3696.94766908212,LAC_Feeder,Model,31.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+3708.94766908212,LAC_Feeder,Model,97.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3708.94766908212,LAC_Feeder,Model,97.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+3720.94766908212,LAC_Feeder,Model,56.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3720.94766908212,LAC_Feeder,Model,56.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+3732.94766908212,LAC_Feeder,Model,104.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3732.94766908212,LAC_Feeder,Model,104.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+3744.94766908212,LAC_Feeder,Model,83.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3744.94766908212,LAC_Feeder,Model,83.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+3756.94766908212,LAC_Feeder,Model,43.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3756.94766908212,LAC_Feeder,Model,43.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+3768.94766908212,LAC_Feeder,Model,99.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+3768.94766908212,LAC_Feeder,Model,99.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-3.42115527018905E-10
+4623.67506038641,LAC_Feeder,Model,84.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+4623.67506038641,LAC_Feeder,Model,84.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,-6.89295120537281E-10
+5880.45472764596,LAC_Feeder,Model,81.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+5880.45472764596,LAC_Feeder,Model,81.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,7.83591531217098E-10
+8431.0474005112,LAC_Feeder,Model,47.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,LAC Feeder
+8431.0474005112,LAC_Feeder,Model,47.LAC_Feeder_BelowLowMark,[Notify] Tell Me when,1.35507434606552E-09
 
