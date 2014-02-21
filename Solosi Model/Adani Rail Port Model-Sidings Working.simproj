@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10914.24456" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-21T07:08:20" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-21T07:07:21" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -20,10 +20,6 @@
           <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
           <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
           <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-          <Property Name="Enable2">False</Property>
-          <Property Name="Enable4">False</Property>
-          <Property Name="Enable6">False</Property>
-          <Property Name="Enable8">False</Property>
         </Properties>
       </RunnableInstance>
       <SuppressedWarnings>
@@ -130,7 +126,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="98.2127807061218 189.007705688477 -52.8193614536815" Direction="0 -1 2.22044604925031E-16" Zoom="189.007705688477" />
+          <Camera Orientation="Top" Location="123.552849235238 189.007705688477 -86.9612047217638" Direction="0 -1 2.22044604925031E-16" Zoom="189.007705688477" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -20302,4 +20298,4 @@ It is recommended to verify that a followable network path has been drawn from t
     </Materials>
   </CommonItems>
 </Project>
-<!-- 7rUx5sUX9+gM54xyXleLUQFgmo75hGsCnR9tsd5Q/Ge79VOpESNKRSnApMu+/Qwj7wEvMGazjXxvajcPhGQdVw== -->
+<!-- etE4TM1keiHEnSMuq3wiXhr5/Da1gNVqZ9r1NUXqUB2mqCvo7kFFRpT+ep+nMPs2UD2tkOFeO3/QqhvljcHQUg== -->

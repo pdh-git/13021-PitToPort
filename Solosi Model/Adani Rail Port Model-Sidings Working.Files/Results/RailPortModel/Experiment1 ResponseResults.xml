@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResponseResults Model="RailPortModel" Experiment="Experiment1" FileVersion="94" xmlns="http://www.simio.com/projects/v1">
+  <Observations Scenario="Scenario1" Response="TrainsUnloaded">
+    <Observation Value="1764" />
+    <Observation Value="1764" />
+    <Observation Value="1764" />
+    <Observation Value="1764" />
+    <Observation Value="1764" />
+    <Observation Value="1764" />
+    <Observation Value="1764" />
+    <Observation Value="1764" />
+    <Observation Value="1764" />
+    <Observation Value="1764" />
+  </Observations>
+  <Observations Scenario="Scenario1" Response="MaxCycleTime">
+    <Observation Value="32.6833333666667" />
+    <Observation Value="32.6833333666667" />
+    <Observation Value="32.6833333666667" />
+    <Observation Value="32.6833333666667" />
+    <Observation Value="32.6833333666667" />
+    <Observation Value="32.6833333666667" />
+    <Observation Value="32.6833333666667" />
+    <Observation Value="32.6833333666667" />
+    <Observation Value="32.6833333666667" />
+    <Observation Value="32.6833333666667" />
+  </Observations>
+  <Observations Scenario="Scenario1" Response="AveCycleTime">
+    <Observation Value="29.7171441121675" />
+    <Observation Value="29.7171441121675" />
+    <Observation Value="29.7171441121675" />
+    <Observation Value="29.7171441121675" />
+    <Observation Value="29.7171441121675" />
+    <Observation Value="29.7171441121675" />
+    <Observation Value="29.7171441121675" />
+    <Observation Value="29.7171441121675" />
+    <Observation Value="29.7171441121675" />
+    <Observation Value="29.7171441121675" />
+  </Observations>
+  <Observations Scenario="Scenario2" Response="TrainsUnloaded">
+    <Observation Value="1891" />
+    <Observation Value="1891" />
+    <Observation Value="1891" />
+    <Observation Value="1891" />
+    <Observation Value="1891" />
+    <Observation Value="1891" />
+    <Observation Value="1891" />
+    <Observation Value="1891" />
+    <Observation Value="1891" />
+    <Observation Value="1891" />
+  </Observations>
+  <Observations Scenario="Scenario2" Response="MaxCycleTime">
+    <Observation Value="30.9166951" />
+    <Observation Value="30.9166951" />
+    <Observation Value="30.9166951" />
+    <Observation Value="30.9166951" />
+    <Observation Value="30.9166951" />
+    <Observation Value="30.9166951" />
+    <Observation Value="30.9166951" />
+    <Observation Value="30.9166951" />
+    <Observation Value="30.9166951" />
+    <Observation Value="30.9166951" />
+  </Observations>
+  <Observations Scenario="Scenario2" Response="AveCycleTime">
+    <Observation Value="27.7180370913583" />
+    <Observation Value="27.7180370913583" />
+    <Observation Value="27.7180370913583" />
+    <Observation Value="27.7180370913583" />
+    <Observation Value="27.7180370913583" />
+    <Observation Value="27.7180370913583" />
+    <Observation Value="27.7180370913583" />
+    <Observation Value="27.7180370913583" />
+    <Observation Value="27.7180370913583" />
+    <Observation Value="27.7180370913583" />
+  </Observations>
+  <Observations Scenario="Scenario3" Response="TrainsUnloaded">
+    <Observation Value="1985" />
+    <Observation Value="1985" />
+    <Observation Value="1985" />
+    <Observation Value="1985" />
+    <Observation Value="1985" />
+    <Observation Value="1985" />
+    <Observation Value="1985" />
+    <Observation Value="1985" />
+    <Observation Value="1985" />
+    <Observation Value="1985" />
+  </Observations>
+  <Observations Scenario="Scenario3" Response="MaxCycleTime">
+    <Observation Value="32.5500434333334" />
+    <Observation Value="32.5500434333334" />
+    <Observation Value="32.5500434333334" />
+    <Observation Value="32.5500434333334" />
+    <Observation Value="32.5500434333334" />
+    <Observation Value="32.5500434333334" />
+    <Observation Value="32.5500434333334" />
+    <Observation Value="32.5500434333334" />
+    <Observation Value="32.5500434333334" />
+    <Observation Value="32.5500434333334" />
+  </Observations>
+  <Observations Scenario="Scenario3" Response="AveCycleTime">
+    <Observation Value="26.4097863907274" />
+    <Observation Value="26.4097863907274" />
+    <Observation Value="26.4097863907274" />
+    <Observation Value="26.4097863907274" />
+    <Observation Value="26.4097863907274" />
+    <Observation Value="26.4097863907274" />
+    <Observation Value="26.4097863907274" />
+    <Observation Value="26.4097863907274" />
+    <Observation Value="26.4097863907274" />
+    <Observation Value="26.4097863907274" />
+  </Observations>
+  <Observations Scenario="Scenario4" Response="TrainsUnloaded">
+    <Observation Value="2003" />
+    <Observation Value="2003" />
+    <Observation Value="2003" />
+    <Observation Value="2003" />
+    <Observation Value="2003" />
+    <Observation Value="2003" />
+    <Observation Value="2003" />
+    <Observation Value="2003" />
+    <Observation Value="2003" />
+    <Observation Value="2003" />
+  </Observations>
+  <Observations Scenario="Scenario4" Response="MaxCycleTime">
+    <Observation Value="29.4000284333333" />
+    <Observation Value="29.4000284333333" />
+    <Observation Value="29.4000284333333" />
+    <Observation Value="29.4000284333333" />
+    <Observation Value="29.4000284333333" />
+    <Observation Value="29.4000284333333" />
+    <Observation Value="29.4000284333333" />
+    <Observation Value="29.4000284333333" />
+    <Observation Value="29.4000284333333" />
+    <Observation Value="29.4000284333333" />
+  </Observations>
+  <Observations Scenario="Scenario4" Response="AveCycleTime">
+    <Observation Value="26.1705024897283" />
+    <Observation Value="26.1705024897283" />
+    <Observation Value="26.1705024897283" />
+    <Observation Value="26.1705024897283" />
+    <Observation Value="26.1705024897283" />
+    <Observation Value="26.1705024897283" />
+    <Observation Value="26.1705024897283" />
+    <Observation Value="26.1705024897283" />
+    <Observation Value="26.1705024897283" />
+    <Observation Value="26.1705024897283" />
+  </Observations>
+</ResponseResults>
