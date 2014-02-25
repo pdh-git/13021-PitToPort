@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10914.24456" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-24T03:37:47" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-02-25T04:14:23" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,7 +9,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="1000" ReplicationNumber="1">
+      <RunSetup AnimationInterval="10000" ReplicationNumber="1">
         <StartDate>2014-02-10T00:00:00</StartDate>
         <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
@@ -22,6 +22,10 @@
           <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
           <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
           <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+          <Property Name="Enable2">False</Property>
+          <Property Name="Enable4">False</Property>
+          <Property Name="Enable6">False</Property>
+          <Property Name="Enable8">False</Property>
           <Property Name="DistanceToNextFailure">Random.Exponential(1000)</Property>
           <Property Name="TimeToRepair">Random.Triangular(2, 8, 20)</Property>
         </Properties>
@@ -144,7 +148,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="19.0308832587316 328.428681042732 -40.9230820765804" Direction="0 -1 2.22044604925031E-16" Zoom="328.428681042732" />
+          <Camera Orientation="Top" Location="49.468268112773 328.428671700614 -38.9627027654888" Direction="0 -1 2.22044604925031E-16" Zoom="328.428671700614" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -390,6 +394,7 @@
       <ViewInfo>
         <Process>
           <Categories>
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
         </Process>
@@ -1185,7 +1190,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="553">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="566">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -5592,9 +5597,9 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="Mine" Type="DummyMineModel" Location="11.9167816564315 1.090794081663E-14 46.9685317267458" Size="11.5810348934795 10.7735249594169 1.01239022740954" Scope="Public">
+          <Fixed Name="Mine" Type="DummyMineModel" Location="11.726106260906 -4.00312163232232E-22 46.968531507848" Size="11.5810348934795 10.7735249594169 1.01239022740954" Scope="Public">
             <AssociatedNodes>
-              <Node Name="TrainInput@Mine" Type="BasicNode" Location="16.5456162485985 1.090794081663E-14 46.1276796380822" Scope="Public">
+              <Node Name="TrainInput@Mine" Type="BasicNode" Location="16.354940853073 -4.00312163232232E-22 46.1276794191844" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -5604,7 +5609,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="TrainOutput@Mine" Type="TransferNode" Location="9.94822386076424 1.090794081663E-14 42.5059404992299" Scope="Public">
+              <Node Name="TrainOutput@Mine" Type="TransferNode" Location="9.75754846523875 -4.00312163232232E-22 42.5059402803321" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -5624,6 +5629,7 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="StockpileCapacity">15000000000</Property>
               <Property Name="RequestTrainProcess">RequestTrainProcess</Property>
+              <Property Name="StockpileLoadRate">6500</Property>
             </Properties>
             <Graphics ExternallyVisible="True">
               <SymbolInstances>
@@ -5632,7 +5638,7 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="47">
-                <FloorLabel Center="36.9801888194375 1.09079406164738E-14 46.7533780535814" Width="22.0730664719654" Height="7.46574199931783" ExternallyVisible="True" BackColor="00ffffff" Text="Mine Stockpile Weight:&#xD;&#xA;{Math.Round(Stockpile.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Next Request Threshold:&#xD;&#xA;{PosThresholdMonitor.CurrentThresholdValue/1000}&#xD;&#xA;" />
+                <FloorLabel Center="36.7895134266906 -6.00468362388623E-22 46.7533778346836" Width="22.0730664719654" Height="7.46574199931783" ExternallyVisible="True" BackColor="00ffffff" Text="Mine Stockpile Weight:&#xD;&#xA;{Math.Round(Stockpile.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Next Request Threshold:&#xD;&#xA;{PosThresholdMonitor.CurrentThresholdValue/1000}&#xD;&#xA;" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
@@ -5829,14 +5835,13 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Node Name="ExitT10" Type="TransferNode" Location="7.6253097048571 1.09079406164738E-14 32.9769901769048" Scope="Public">
+          <Node Name="ExitT10b" Type="TransferNode" Location="7.69071137348053 1.09079406164738E-14 32.9769901769048" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="EnteredAddOnProcess">ZExitT10_Entered</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
@@ -5865,26 +5870,25 @@
               <AttachedObjects IndexList="0">
                 <Queue Queue="ParkingStation.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="95.2080496303859 -1.32701550387558E-23 -163.073004473985" Direction="1 0 0" />
-                    <Point Location="95.2080496303859 -1.32701550387558E-23 -161.519672387981" />
-                    <Point Location="95.2128896402179 -1.32701550387558E-23 -159.822513607803" />
-                    <Point Location="95.2125492683711 -1.32701550387558E-23 -158.03146130505" />
-                    <Point Location="95.2121815717273 -1.32701550387558E-23 -156.096624664052" />
-                    <Point Location="95.211813873115 -1.32701550387558E-23 -154.16177766532" />
-                    <Point Location="95.2114887678379 -1.32701550387558E-23 -152.45105875334" />
+                    <Point Location="111.368801947236 -1.32701550387558E-23 -168.108932957989" Direction="1 0 0" />
+                    <Point Location="111.368801947236 -1.32701550387558E-23 -166.555600871985" />
+                    <Point Location="111.373641957068 -1.32701550387558E-23 -164.858442091807" />
+                    <Point Location="111.373301585221 -1.32701550387558E-23 -163.067389789054" />
+                    <Point Location="111.372933888577 -1.32701550387558E-23 -161.132553148056" />
+                    <Point Location="111.372566189965 -1.32701550387558E-23 -159.197706149324" />
+                    <Point Location="111.372241084688 -1.32701550387558E-23 -157.486987237344" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Node>
-          <Node Name="EnterT1" Type="BasicNode" Location="163.741350813271 -2.77556021559516E-17 -150.969511958418" Scope="Public">
+          <Node Name="EnterT1B" Type="BasicNode" Location="163.647919858095 -2.77556021559516E-17 -150.969511958418" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="EnteredAddOnProcess">EnterT1_Entered</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
@@ -5930,7 +5934,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="EnterT2" Type="BasicNode" Location="110.641585441735 -2.00156125003466E-22 -155.152667129273" Scope="Public">
+          <Node Name="EnterT2" Type="BasicNode" Location="110.633891000823 -2.00156125003466E-22 -155.206528215656" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6150,13 +6154,14 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="BasicNode2" Type="BasicNode" Location="126.747108540781 0 -161.103597448573" Scope="Public">
+          <Node Name="EnterT1a" Type="BasicNode" Location="126.653677585605 0 -161.010166493397" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EnteredAddOnProcess">EnterT1_Entered</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
@@ -6182,13 +6187,14 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="BasicNode4" Type="BasicNode" Location="3.62351413767303 0 -1.87035287070663" Scope="Public">
+          <Node Name="ExitT10a" Type="BasicNode" Location="3.62351413767303 0 -1.87035287070663" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EnteredAddOnProcess">ZExitT10_Entered</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
@@ -6262,7 +6268,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="MS3" Type="TimePath" Size="9.43 0 0" Scope="Public" Start="MineTrainOutput" End="ExitT10">
+          <Link Name="MS3" Type="TimePath" Size="9.43 0 0" Scope="Public" Start="MineTrainOutput" End="ExitT10b">
             <Points>
               <Point Location="7.656791938409 1.09079406164739E-14 38.9278332636914" />
             </Points>
@@ -6330,7 +6336,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Connector9" Type="Connector" Size="0 0 0" Scope="Public" Start="EnterT1" End="BasicNode2">
+          <Link Name="Connector9" Type="Connector" Size="0 0 0" Scope="Public" Start="EnterT1B" End="EnterT1a">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6340,7 +6346,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Connector10" Type="Connector" Size="0 0 0" Scope="Public" Start="BasicNode2" End="EnterT1">
+          <Link Name="Connector10" Type="Connector" Size="0 0 0" Scope="Public" Start="EnterT1a" End="EnterT1B">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6350,7 +6356,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="T1" Type="Track" Size="18839 0 0" Scope="Public" Start="BasicNode2" End="ExitT1">
+          <Link Name="T1" Type="Track" Size="18839 0 0" Scope="Public" Start="EnterT1a" End="ExitT1">
             <Points>
               <Point Location="125.864997376305 0 -161.251842389004" />
               <Point Location="125.238434680054 0 -160.952181969058" />
@@ -6794,7 +6800,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="MS1" Type="TimePath" Size="14.01 0 0" Scope="Public" Start="ExitT10" End="Section2Entry">
+          <Link Name="MS1" Type="TimePath" Size="13.96 0 0" Scope="Public" Start="ExitT10b" End="Section2Entry">
             <Points>
               <Point Location="12.9182459741138 1.09079406164738E-14 37.3617292193117" />
             </Points>
@@ -6808,7 +6814,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="PS1" Type="TimePath" Size="17.77 0 0" Scope="Public" Start="EnterT1" End="PortQueueBlock">
+          <Link Name="PS1" Type="TimePath" Size="17.87 0 0" Scope="Public" Start="EnterT1B" End="PortQueueBlock">
             <Points>
               <Point Location="166.612904925516 -1.84925546705318E-17 -151.297497008601" />
               <Point Location="168.015863816392 -1.39467936509248E-17 -152.911258389295" />
@@ -6834,7 +6840,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="PS4" Type="TimePath" Size="23.52 0 0" Scope="Public" Start="PortSig4" End="EnterT1">
+          <Link Name="PS4" Type="TimePath" Size="23.61 0 0" Scope="Public" Start="PortSig4" End="EnterT1B">
             <Points>
               <Point Location="165.651145784437 -2.64697796016969E-23 -166.825596435481" />
               <Point Location="166.563297090415 -2.64697796016969E-23 -161.044791677647" />
@@ -6914,7 +6920,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="T10" Type="Track" Size="32000 0 0" Scope="Public" Start="BasicNode4" End="EnterT10">
+          <Link Name="T10" Type="Track" Size="32000 0 0" Scope="Public" Start="ExitT10a" End="EnterT10">
             <Points>
               <Point Location="3.94624494588729 1.19086967267544E-14 -2.90885419469301" />
               <Point Location="8.24646154071013 2.27288404592829E-14 -5.34440871176521" />
@@ -6937,7 +6943,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Connector11" Type="Connector" Size="0 0 0" Scope="Public" Start="ExitT10" End="BasicNode4">
+          <Link Name="Connector11" Type="Connector" Size="0 0 0" Scope="Public" Start="ExitT10b" End="ExitT10a">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6947,7 +6953,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Connector12" Type="Connector" Size="0 0 0" Scope="Public" Start="BasicNode4" End="ExitT10">
+          <Link Name="Connector12" Type="Connector" Size="0 0 0" Scope="Public" Start="ExitT10a" End="ExitT10b">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -7168,7 +7174,7 @@
           <FloorLabel Center="258.27734388868 0 -27.3276903745673" Width="62.0498512039416" Height="35.4367248505148" ExternallyVisible="True" BackColor="deb887" Text="Train Loading Time(h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_TrainLoadingTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_TrainLoadingTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_TrainLoadingTime.Minimum,2)}" />
           <FloorLabel Center="194.324172911311 0 -20.0619209422182" Width="62.0815963833186" Height="20.896795414589" ExternallyVisible="True" BackColor="deb887" Text="Trains Unloaded:&#xD;&#xA;{Tally_TrainUnloadingTime.NumberObservations}&#xD;&#xA;Tonnes Unloaded: &#xD;&#xA;{Math.Round(Port.FlowOutput@Emptier1.FlowRegulator.CurrentWeightFlowOut/1000,0)}" />
           <FloorLabel Center="-143.947256658065 5.6024629380147E-14 -216.309017433157" Width="5.17024139842246" Height="0.584231509583148" ExternallyVisible="True" Text="Siding Template" />
-          <Pie Center="-43.3425699814062 -5.6843418860808E-14 -161.178057974491" Width="51.7737183975315" Height="32.8364992047018" ExternallyVisible="True" Title="Train 1 Utilisation" ListState="Train[1].ResourceState" TextScale="3" />
+          <Pie Center="-43.3425699814062 -5.6843418860808E-14 -161.178057974491" Width="51.7737183975315" Height="32.8364992047018" ExternallyVisible="True" Title="Train 1 Utilisation" Look="Nature Colors" ListState="Train[1].ResourceState" TextScale="3" />
           <Pie Center="-43.3057106314852 -5.6843418860808E-14 -128.157785086191" Width="52.0282009332414" Height="32.650860668339" ExternallyVisible="True" Title="Train 2 Utilisation" ListState="Train[2].ResourceState" TextScale="3" />
           <Pie Center="-43.0107673357232 -5.6843418860808E-14 -94.5009007541568" Width="51.4848138621481" Height="32.9464093417833" ExternallyVisible="True" Title="Train 3 Utilisation" ListState="Train[3].ResourceState" TextScale="3" />
           <Pie Center="-42.9378934953152 -5.6843418860808E-14 -60.5659749984727" Width="51.8246149046735" Height="32.5386209232167" ExternallyVisible="True" Title="Train 4 Utilisation" ListState="Train[4].ResourceState" TextScale="3" />
@@ -7185,7 +7191,7 @@
               </Decoration>
             </Decorations>
           </Rectangle>
-          <Rectangle Center="20.4093448987713 -0.148573552807818 43.8794929242686" Width="51.0354409523437" Height="23.1088523736497" ExternallyVisible="True">
+          <Rectangle Center="20.4093448987713 -0.148573552807818 44.0701683429958" Width="51.0354409523437" Height="23.1088523736497" ExternallyVisible="True" Locked="True">
             <Decorations>
               <Decoration SurfaceId="0">
                 <MaterialRef Id="13b400ab-e387-4ce4-b4ca-e918f62e01fe" />
@@ -7202,17 +7208,18 @@
           <FloorLabel Center="78.691357437719 0.831652642831841 -32.2070958402583" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" Locked="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 7&lt;/B&gt;&lt;/Blue&gt;" />
           <FloorLabel Center="65.4061516156182 0.831652642831841 -15.3316467830215" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" Locked="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 8&lt;/B&gt;&lt;/Blue&gt;" />
           <FloorLabel Center="38.5995832887572 0.831652642831841 -5.72594496114204" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" Locked="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 9&lt;/B&gt;&lt;/Blue&gt;" />
-          <FloorLabel Center="8.94361144684852 0 -10.3604092647883" Width="15.9585384186061" Height="1.43024636770528" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Red&gt;How LONG T10&lt;/Red&gt;" />
           <SymbolInstance Center="69.4755975499944 -0.0653916559490426 -73.6891446911043" Scale="2.11429113161272" Locked="True" ExternallyVisible="True">
             <SymbolRef Id="c301ae83-f9dd-444b-aa05-6f78038c704b" />
           </SymbolInstance>
-          <FloorLabel Center="-155.80431506195 0 -29.3808398575542" Width="97.687920878378" Height="295.89313373002" ExternallyVisible="True" CharsPerLine="15" Text="&lt;Red&gt;Questions&lt;/Red&gt;&#xD;&#xA;Differences in rail drawings&#xD;&#xA;-Track shape/lengths different&#xD;&#xA;Signal Blocks at port/mine&#xD;&#xA;-Number of, Shape, length, delays&#xD;&#xA;Train Unload rate at port&#xD;&#xA;-Unload rate causes trains to block up on sidings, if not close then delays may be missed&#xD;&#xA;Length of track 10&#xD;&#xA;-Length of track between siding 9 and the mine rail loop&#xD;&#xA;Train Depot? Holding? Waiting Station? Capacity?&#xD;&#xA;Initialized Train Locations? If needed due to path constraints?&#xD;&#xA;" />
+          <FloorLabel Center="-226.960154563776 0 -35.4957948147423" Width="97.687920878378" Height="295.89313373002" ExternallyVisible="True" CharsPerLine="15" Text="&lt;Red&gt;Questions&lt;/Red&gt;&#xD;&#xA;Differences in rail drawings&#xD;&#xA;-Track shape/lengths different&#xD;&#xA;Signal Blocks at port/mine&#xD;&#xA;-Number of, Shape, length, delays&#xD;&#xA;Train Unload rate at port&#xD;&#xA;-Unload rate causes trains to block up on sidings, if not close then delays may be missed&#xD;&#xA;Length of track 10&#xD;&#xA;-Length of track between siding 9 and the mine rail loop&#xD;&#xA;Train Depot? Holding? Waiting Station? Capacity?&#xD;&#xA;Initialized Train Locations? If needed due to path constraints?&#xD;&#xA;" />
           <FloorLabel Center="322.235159314785 0 -27.4720655552484" Width="62.0498512039416" Height="35.4367248505148" ExternallyVisible="True" BackColor="deb887" Text="Mine Interarrival Time (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_MineInterarrivalTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_MineInterarrivalTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_MineInterarrivalTime.Minimum,2)}" />
           <FloorLabel Center="322.297968655575 0 9.35608590981623" Width="62.0498512039416" Height="35.0553740206915" ExternallyVisible="True" BackColor="deb887" Text="Port Interarrival Time (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_PortInterarrivalTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_PortInterarrivalTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_PortInterarrivalTime.Minimum,2)}" />
           <FloorLabel Center="287.200426809505 0 94.2460493496888" Width="83.002968441763" Height="47.0952625647894" ExternallyVisible="True" BackColor="deb887" Text="&lt;B&gt;Distance Travelled (km)&lt;/B&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].DistanceTravelled/1000, 0)}" />
-          <StatusLabel Center="131.959552831298 0 -238.367512223022" Width="219.582474898242" Height="30.0188699860888" ExternallyVisible="True" />
           <FloorLabel Center="274.056818787745 0 165.77859582701" Width="83.002968441763" Height="40.5578196246024" ExternallyVisible="True" BackColor="deb887" Text="{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].ResourceState.TotalTime(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].ResourceState.TotalTime(5), 0)}&#xD;&#xA;" />
           <FloorLabel Center="359.320392192094 0 165.96899889448" Width="83.002968441763" Height="40.5578196246024" ExternallyVisible="True" BackColor="deb887" Text="{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].ResourceState.NumberOccurrences(5), 0)}&#xD;&#xA;" />
+          <SymbolInstance Center="279.534965783188 -4.2410519540681E-14 -143.177394284736" ExternallyVisible="True">
+            <SymbolRef Id="4a4a6f0b-e003-4433-9fae-9916ef0cebb5" />
+          </SymbolInstance>
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
@@ -7727,7 +7734,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>553</Revision>
+        <Revision>566</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -20682,4 +20689,4 @@ It is recommended to verify that a followable network path has been drawn from t
     </Materials>
   </CommonItems>
 </Project>
-<!-- RTrTD+mkMP5jdIyAdHmnr84S2kC/1g7u4vm8lnVUvzimhUV95t3YK+5F1AnnJ0NeR3gPDf4LmJIqmHdov+2Fag== -->
+<!-- B7oZFgXUJ7Tb1jMwTaLgoPHXZ1hmQVyxqmivjlQj9pno2ICZYFqgN+t+xNJQplU+hd0BoWrTRUTLn6mtRhyI8A== -->
