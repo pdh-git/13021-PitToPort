@@ -1,4 +1,169 @@
 Time(Hours),EntityID,ObjectName,ProcessID,StepName,Action
-6344.79575163425,--,--,--,--,The maximum number in system limit for objects of type 'Request' has been exceeded.
-6344.79575163425,--,--,--,--,Possible causes:
+5.0221396250808,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Token branching on condition 'Run.TimeNow-TimeStopped>StoppingThreshold'.
+5.0221396250808,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Token sent to 'False' exit.
+5.0221396250808,Train 1 (Train.152),Train 1,8.OnVisitingNode,[End],Process 'OnVisitingNode' ended.
+5.0221396250808,Train 1 (Train.152),EnterT5,10.OnEntered,[Transfer] ToOutboundLink,Entity 'Train.152' initiating transfer from '[Node] EnterT5' onto link 'T5'.
+5.0221396250808,Train 1 (Train.152),T5,11.OnEntered,[Begin],Process 'OnEntered' initiated.
+5.0221396250808,Train 1 (Train.152),T5,11.OnEntered,[EndTransfer] OntoPath,Entity 'Train.152' ending transfer onto link 'T5'.
+5.0221396250808,Train 1 (Train.152),T5,11.OnEntered,[End],Process 'OnEntered' ended.
+5.0221396250808,Train 1 (Train.152),S4,15.OnReachedEnd,[End],Process 'OnReachedEnd' ended.
+5.0221396250808,Train 1 (Train.152),EnterT5,10.OnEntered,[End],Process 'OnEntered' ended.
+5.0221454607484,Train 1 (Train.152),EnterT5,10.OnExited,[Begin],Process 'OnExited' initiated.
+5.0221454607484,Train 1 (Train.152),EnterT5,10.OnExited,[Fire] ExitedEvent,Firing event 'EnterT5.Exited'.
+5.0221454607484,Train 1 (Train.152),EnterT5,10.OnExited,[End],Process 'OnExited' ended.
+5.45514616102851,Train 1 (Train.152),T5,10.OnReachedEnd,[Begin],Process 'OnReachedEnd' initiated.
+5.45514616102851,Train 1 (Train.152),T5,10.OnReachedEnd,[Transfer] FromPath,Entity 'Train.152' initiating transfer from '[EndOfLink] T5' into node 'ExitT5'.
+5.45514616102851,Train 1 (Train.152),ExitT5,15.OnEntered,[Begin],Process 'OnEntered' initiated.
+5.45514616102851,Train 1 (Train.152),ExitT5,15.OnEntered,[Fire] EnteredEvent,Firing event 'ExitT5.Entered'.
+5.45514616102851,Train 1 (Train.152),ExitT5,15.OnEntered,[Execute] Entered_AddOnProcess,Executing process 'ExitT5_Entered'.
+5.45514616102851,Train 1 (Train.152),RailPortModel,8.ExitT5_Entered,[Begin],Process 'ExitT5_Entered' initiated.
+5.45514616102851,Train 1 (Train.152),RailPortModel,8.ExitT5_Entered,[Decide] ToMine,Token branching on condition 'TrainEntity.ToMine'.
+5.45514616102851,Train 1 (Train.152),RailPortModel,8.ExitT5_Entered,[Decide] ToMine,Token sent to 'True' exit.
+5.45514616102851,Train 1 (Train.152),RailPortModel,8.ExitT5_Entered,[End],Process 'ExitT5_Entered' ended.
+5.45514616102851,Train 1 (Train.152),ExitT5,15.OnEntered,[VisitNode] Traveler,Executing process 'Train.152.OnVisitingNode'.
+5.45514616102851,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Begin],Process 'OnVisitingNode' initiated.
+5.45514616102851,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Assign] TimeStopped,Assigning state variable 'TimeStopped' the value '5.45514616102851' .
+5.45514616102851,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Assign] DistanceTravelled,Assigning state variable 'DistanceTravelled' the value '153540' Meters.
+5.45514616102851,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Stopped at breakpoint on OnVisitingNode.RequiresStartDelay
+5.45514616102851,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Token branching on condition 'Run.TimeNow-TimeStopped>StoppingThreshold'.
+5.45514616102851,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Token sent to 'False' exit.
+5.45514616102851,Train 1 (Train.152),Train 1,8.OnVisitingNode,[End],Process 'OnVisitingNode' ended.
+5.45514616102851,Train 1 (Train.152),ExitT5,15.OnEntered,[Transfer] ToOutboundLink,Entity 'Train.152' initiating transfer from '[Node] ExitT5' onto link 'S5'.
+5.45514616102851,Train 1 (Train.152),S5,11.OnEntered,[Begin],Process 'OnEntered' initiated.
+5.45514616102851,Train 1 (Train.152),S5,11.OnEntered,[EndTransfer] OntoPath,Entity 'Train.152' ending transfer onto link 'S5'.
+5.45514616102851,Train 1 (Train.152),S5,11.OnEntered,[End],Process 'OnEntered' ended.
+5.45514616102851,Train 1 (Train.152),T5,10.OnReachedEnd,[End],Process 'OnReachedEnd' ended.
+5.45514616102851,Train 1 (Train.152),ExitT5,15.OnEntered,[End],Process 'OnEntered' ended.
+5.45515199669611,Train 1 (Train.152),ExitT5,15.OnExited,[Begin],Process 'OnExited' initiated.
+5.45515199669611,Train 1 (Train.152),ExitT5,15.OnExited,[Fire] ExitedEvent,Firing event 'ExitT5.Exited'.
+5.45515199669611,Train 1 (Train.152),ExitT5,15.OnExited,[End],Process 'OnExited' ended.
+5.51350283703225,Train 1 (Train.152),S5,15.OnReachedEnd,[Begin],Process 'OnReachedEnd' initiated.
+5.51350283703225,Train 1 (Train.152),S5,15.OnReachedEnd,[Transfer] FromPath,Entity 'Train.152' initiating transfer from '[EndOfLink] S5' into node 'EnterT6'.
+5.51350283703225,Train 1 (Train.152),EnterT6,10.OnEntered,[Begin],Process 'OnEntered' initiated.
+5.51350283703225,Train 1 (Train.152),EnterT6,10.OnEntered,[Fire] EnteredEvent,Firing event 'EnterT6.Entered'.
+5.51350283703225,Train 1 (Train.152),EnterT6,10.OnEntered,[Execute] Entered_AddOnProcess,Executing process 'EnterT6_Entered'.
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[Begin],Process 'EnterT6_Entered' initiated.
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[Decide] ToMine,Token branching on condition 'TrainEntity.ToMine'.
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[Decide] ToMine,Token sent to 'True' exit.
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[Assign] Blocked,Assigning state variable 'Train 1.ResourceState' the value '2' .
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[Release] R_Side4,Releasing resource(s) owned by object 'Train.152'.
+5.51350283703225,--,--,--,--,Object 'Train 1' released '1' capacity unit(s) of resource 'R_Side4'.
+5.51350283703225,Train 1 (Train.152),R_Side4,11.OnCapacityReleased,[Begin],Process 'OnCapacityReleased' initiated.
+5.51350283703225,Train 1 (Train.152),R_Side4,11.OnCapacityReleased,[Assign] ResourceState,Assigning state variable 'ResourceState' the value '0' .
+5.51350283703225,Train 1 (Train.152),R_Side4,11.OnCapacityReleased,[Fire] ReleasedEvent,Firing event 'R_Side4.Released'.
+5.51350283703225,Train 1 (Train.152),R_Side4,11.OnCapacityReleased,[End],Process 'OnCapacityReleased' ended.
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[Release] R_Main4,Releasing resource(s) owned by object 'Train.152'.
+5.51350283703225,--,--,--,--,Object 'Train 1' released '1' capacity unit(s) of resource 'R_Main4'.
+5.51350283703225,Train 1 (Train.152),R_Main4,11.OnCapacityReleased,[Begin],Process 'OnCapacityReleased' initiated.
+5.51350283703225,Train 1 (Train.152),R_Main4,11.OnCapacityReleased,[Assign] ResourceState,Assigning state variable 'ResourceState' the value '0' .
+5.51350283703225,Train 1 (Train.152),R_Main4,11.OnCapacityReleased,[Fire] ReleasedEvent,Firing event 'R_Main4.Released'.
+5.51350283703225,Train 1 (Train.152),R_Main4,11.OnCapacityReleased,[End],Process 'OnCapacityReleased' ended.
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[Seize] Next R_Side7,Requesting seize of resource(s) in behalf of owner 'Train.152'.
+5.51350283703225,--,--,--,--,Object 'Train 1' seized '1' capacity unit(s) of resource 'R_Side7'.
+5.51350283703225,Train 1 (Train.152),R_Side7,11.OnCapacityAllocated,[Begin],Process 'OnCapacityAllocated' initiated.
+5.51350283703225,Train 1 (Train.152),R_Side7,11.OnCapacityAllocated,[Fire] AllocatedEvent,Firing event 'R_Side7.Allocated'.
+5.51350283703225,Train 1 (Train.152),R_Side7,11.OnCapacityAllocated,[End],Process 'OnCapacityAllocated' ended.
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[Seize] Next R_Side6,Requesting seize of resource(s) in behalf of owner 'Train.152'.
+5.51350283703225,--,--,--,--,Object 'Train 1' seized '1' capacity unit(s) of resource 'R_Side6'.
+5.51350283703225,Train 1 (Train.152),R_Side6,11.OnCapacityAllocated,[Begin],Process 'OnCapacityAllocated' initiated.
+5.51350283703225,Train 1 (Train.152),R_Side6,11.OnCapacityAllocated,[Fire] AllocatedEvent,Firing event 'R_Side6.Allocated'.
+5.51350283703225,Train 1 (Train.152),R_Side6,11.OnCapacityAllocated,[End],Process 'OnCapacityAllocated' ended.
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[Seize] Next R_Main6,Requesting seize of resource(s) in behalf of owner 'Train.152'.
+5.51350283703225,--,--,--,--,Object 'Train 1' seized '1' capacity unit(s) of resource 'R_Main6'.
+5.51350283703225,Train 1 (Train.152),R_Main6,11.OnCapacityAllocated,[Begin],Process 'OnCapacityAllocated' initiated.
+5.51350283703225,Train 1 (Train.152),R_Main6,11.OnCapacityAllocated,[Fire] AllocatedEvent,Firing event 'R_Main6.Allocated'.
+5.51350283703225,Train 1 (Train.152),R_Main6,11.OnCapacityAllocated,[End],Process 'OnCapacityAllocated' ended.
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[Release] R_Side5,Releasing resource(s) owned by object 'Train.152'.
+5.51350283703225,--,--,--,--,Object 'Train 1' released '1' capacity unit(s) of resource 'R_Side5'.
+5.51350283703225,Train 1 (Train.152),R_Side5,11.OnCapacityReleased,[Begin],Process 'OnCapacityReleased' initiated.
+5.51350283703225,Train 1 (Train.152),R_Side5,11.OnCapacityReleased,[Assign] ResourceState,Assigning state variable 'ResourceState' the value '0' .
+5.51350283703225,Train 1 (Train.152),R_Side5,11.OnCapacityReleased,[Fire] ReleasedEvent,Firing event 'R_Side5.Released'.
+5.51350283703225,Train 1 (Train.152),R_Side5,11.OnCapacityReleased,[End],Process 'OnCapacityReleased' ended.
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[Assign] Transporting,Assigning state variable 'Train 1.ResourceState' the value '1' .
+5.51350283703225,Train 1 (Train.152),RailPortModel,8.EnterT6_Entered,[End],Process 'EnterT6_Entered' ended.
+5.51350283703225,Train 1 (Train.152),EnterT6,10.OnEntered,[VisitNode] Traveler,Executing process 'Train.152.OnVisitingNode'.
+5.51350283703225,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Begin],Process 'OnVisitingNode' initiated.
+5.51350283703225,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Assign] TimeStopped,Assigning state variable 'TimeStopped' the value '5.51350283703225' .
+5.51350283703225,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Assign] DistanceTravelled,Assigning state variable 'DistanceTravelled' the value '158540' Meters.
+5.51350283703225,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Stopped at breakpoint on OnVisitingNode.RequiresStartDelay
+5.51350283703225,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Token branching on condition 'Run.TimeNow-TimeStopped>StoppingThreshold'.
+5.51350283703225,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Token sent to 'False' exit.
+5.51350283703225,Train 1 (Train.152),Train 1,8.OnVisitingNode,[End],Process 'OnVisitingNode' ended.
+5.51350283703225,Train 1 (Train.152),EnterT6,10.OnEntered,[Transfer] ToOutboundLink,Entity 'Train.152' initiating transfer from '[Node] EnterT6' onto link 'T6'.
+5.51350283703225,Train 1 (Train.152),T6,11.OnEntered,[Begin],Process 'OnEntered' initiated.
+5.51350283703225,Train 1 (Train.152),T6,11.OnEntered,[EndTransfer] OntoPath,Entity 'Train.152' ending transfer onto link 'T6'.
+5.51350283703225,Train 1 (Train.152),T6,11.OnEntered,[End],Process 'OnEntered' ended.
+5.51350283703225,Train 1 (Train.152),S5,15.OnReachedEnd,[End],Process 'OnReachedEnd' ended.
+5.51350283703225,Train 1 (Train.152),EnterT6,10.OnEntered,[End],Process 'OnEntered' ended.
+5.51350867269985,Train 1 (Train.152),EnterT6,10.OnExited,[Begin],Process 'OnExited' initiated.
+5.51350867269985,Train 1 (Train.152),EnterT6,10.OnExited,[Fire] ExitedEvent,Firing event 'EnterT6.Exited'.
+5.51350867269985,Train 1 (Train.152),EnterT6,10.OnExited,[End],Process 'OnExited' ended.
+5.89515549809667,Train 1 (Train.152),T6,10.OnReachedEnd,[Begin],Process 'OnReachedEnd' initiated.
+5.89515549809667,Train 1 (Train.152),T6,10.OnReachedEnd,[Transfer] FromPath,Entity 'Train.152' initiating transfer from '[EndOfLink] T6' into node 'ExitT6'.
+5.89515549809667,Train 1 (Train.152),ExitT6,15.OnEntered,[Begin],Process 'OnEntered' initiated.
+5.89515549809667,Train 1 (Train.152),ExitT6,15.OnEntered,[Fire] EnteredEvent,Firing event 'ExitT6.Entered'.
+5.89515549809667,Train 1 (Train.152),ExitT6,15.OnEntered,[Execute] Entered_AddOnProcess,Executing process 'ExitT6_Entered'.
+5.89515549809667,Train 1 (Train.152),RailPortModel,8.ExitT6_Entered,[Begin],Process 'ExitT6_Entered' initiated.
+5.89515549809667,Train 1 (Train.152),RailPortModel,8.ExitT6_Entered,[Decide] ToMine,Token branching on condition 'TrainEntity.ToMine'.
+5.89515549809667,Train 1 (Train.152),RailPortModel,8.ExitT6_Entered,[Decide] ToMine,Token sent to 'True' exit.
+5.89515549809667,Train 1 (Train.152),RailPortModel,8.ExitT6_Entered,[End],Process 'ExitT6_Entered' ended.
+5.89515549809667,Train 1 (Train.152),ExitT6,15.OnEntered,[VisitNode] Traveler,Executing process 'Train.152.OnVisitingNode'.
+5.89515549809667,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Begin],Process 'OnVisitingNode' initiated.
+5.89515549809667,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Assign] TimeStopped,Assigning state variable 'TimeStopped' the value '5.89515549809667' .
+5.89515549809667,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Assign] DistanceTravelled,Assigning state variable 'DistanceTravelled' the value '191240' Meters.
+5.89515549809667,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Stopped at breakpoint on OnVisitingNode.RequiresStartDelay
+5.89515549809667,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Token branching on condition 'Run.TimeNow-TimeStopped>StoppingThreshold'.
+5.89515549809667,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Token sent to 'False' exit.
+5.89515549809667,Train 1 (Train.152),Train 1,8.OnVisitingNode,[End],Process 'OnVisitingNode' ended.
+5.89515549809667,Train 1 (Train.152),ExitT6,15.OnEntered,[Transfer] ToOutboundLink,Entity 'Train.152' initiating transfer from '[Node] ExitT6' onto link 'S6'.
+5.89515549809667,Train 1 (Train.152),S6,11.OnEntered,[Begin],Process 'OnEntered' initiated.
+5.89515549809667,Train 1 (Train.152),S6,11.OnEntered,[EndTransfer] OntoPath,Entity 'Train.152' ending transfer onto link 'S6'.
+5.89515549809667,Train 1 (Train.152),S6,11.OnEntered,[End],Process 'OnEntered' ended.
+5.89515549809667,Train 1 (Train.152),T6,10.OnReachedEnd,[End],Process 'OnReachedEnd' ended.
+5.89515549809667,Train 1 (Train.152),ExitT6,15.OnEntered,[End],Process 'OnEntered' ended.
+5.89516133376428,Train 1 (Train.152),ExitT6,15.OnExited,[Begin],Process 'OnExited' initiated.
+5.89516133376428,Train 1 (Train.152),ExitT6,15.OnExited,[Fire] ExitedEvent,Firing event 'ExitT6.Exited'.
+5.89516133376428,Train 1 (Train.152),ExitT6,15.OnExited,[End],Process 'OnExited' ended.
+5.95351217410041,Train 1 (Train.152),S6,15.OnReachedEnd,[Begin],Process 'OnReachedEnd' initiated.
+5.95351217410041,Train 1 (Train.152),S6,15.OnReachedEnd,[Transfer] FromPath,Entity 'Train.152' initiating transfer from '[EndOfLink] S6' into node 'EnterT7'.
+5.95351217410041,Train 1 (Train.152),EnterT7,10.OnEntered,[Begin],Process 'OnEntered' initiated.
+5.95351217410041,Train 1 (Train.152),EnterT7,10.OnEntered,[Fire] EnteredEvent,Firing event 'EnterT7.Entered'.
+5.95351217410041,Train 1 (Train.152),EnterT7,10.OnEntered,[Execute] Entered_AddOnProcess,Executing process 'EnterT7_Entered'.
+5.95351217410041,Train 1 (Train.152),RailPortModel,8.EnterT7_Entered,[Begin],Process 'EnterT7_Entered' initiated.
+5.95351217410041,Train 1 (Train.152),RailPortModel,8.EnterT7_Entered,[Decide] ToMine,Token branching on condition 'TrainEntity.ToMine'.
+5.95351217410041,Train 1 (Train.152),RailPortModel,8.EnterT7_Entered,[Decide] ToMine,Token sent to 'True' exit.
+5.95351217410041,Train 1 (Train.152),RailPortModel,8.EnterT7_Entered,[Assign] Blocked,Assigning state variable 'Train 1.ResourceState' the value '2' .
+5.95351217410041,Train 1 (Train.152),RailPortModel,8.EnterT7_Entered,[Assign] Transporting,Assigning state variable 'Train 1.ResourceState' the value '1' .
+5.95351217410041,Train 1 (Train.152),RailPortModel,8.EnterT7_Entered,[End],Process 'EnterT7_Entered' ended.
+5.95351217410041,Train 1 (Train.152),EnterT7,10.OnEntered,[VisitNode] Traveler,Executing process 'Train.152.OnVisitingNode'.
+5.95351217410041,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Begin],Process 'OnVisitingNode' initiated.
+5.95351217410041,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Assign] TimeStopped,Assigning state variable 'TimeStopped' the value '5.95351217410041' .
+5.95351217410041,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Assign] DistanceTravelled,Assigning state variable 'DistanceTravelled' the value '196240' Meters.
+5.95351217410041,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Stopped at breakpoint on OnVisitingNode.RequiresStartDelay
+5.95351217410041,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Token branching on condition 'Run.TimeNow-TimeStopped>StoppingThreshold'.
+5.95351217410041,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Token sent to 'False' exit.
+5.95351217410041,Train 1 (Train.152),Train 1,8.OnVisitingNode,[End],Process 'OnVisitingNode' ended.
+5.95351217410041,Train 1 (Train.152),EnterT7,10.OnEntered,[Transfer] ToOutboundLink,Entity 'Train.152' initiating transfer from '[Node] EnterT7' onto link 'T7'.
+5.95351217410041,Train 1 (Train.152),T7,11.OnEntered,[Begin],Process 'OnEntered' initiated.
+5.95351217410041,Train 1 (Train.152),T7,11.OnEntered,[EndTransfer] OntoPath,Entity 'Train.152' ending transfer onto link 'T7'.
+5.95351217410041,Train 1 (Train.152),T7,11.OnEntered,[End],Process 'OnEntered' ended.
+5.95351217410041,Train 1 (Train.152),S6,15.OnReachedEnd,[End],Process 'OnReachedEnd' ended.
+5.95351217410041,Train 1 (Train.152),EnterT7,10.OnEntered,[End],Process 'OnEntered' ended.
+5.95351800976801,Train 1 (Train.152),EnterT7,10.OnExited,[Begin],Process 'OnExited' initiated.
+5.95351800976801,Train 1 (Train.152),EnterT7,10.OnExited,[Fire] ExitedEvent,Firing event 'EnterT7.Exited'.
+5.95351800976801,Train 1 (Train.152),EnterT7,10.OnExited,[End],Process 'OnExited' ended.
+6.37951590892767,Train 1 (Train.152),T7,10.OnReachedEnd,[Begin],Process 'OnReachedEnd' initiated.
+6.37951590892767,Train 1 (Train.152),T7,10.OnReachedEnd,[Transfer] FromPath,Entity 'Train.152' initiating transfer from '[EndOfLink] T7' into node 'ExitT7'.
+6.37951590892767,Train 1 (Train.152),ExitT7,15.OnEntered,[Begin],Process 'OnEntered' initiated.
+6.37951590892767,Train 1 (Train.152),ExitT7,15.OnEntered,[Fire] EnteredEvent,Firing event 'ExitT7.Entered'.
+6.37951590892767,Train 1 (Train.152),ExitT7,15.OnEntered,[Execute] Entered_AddOnProcess,Executing process 'ExitT7_Entered'.
+6.37951590892767,Train 1 (Train.152),RailPortModel,8.ExitT7_Entered,[Begin],Process 'ExitT7_Entered' initiated.
+6.37951590892767,Train 1 (Train.152),RailPortModel,8.ExitT7_Entered,[Decide] ToMine,Token branching on condition 'TrainEntity.ToMine'.
+6.37951590892767,Train 1 (Train.152),RailPortModel,8.ExitT7_Entered,[Decide] ToMine,Token sent to 'True' exit.
+6.37951590892767,Train 1 (Train.152),RailPortModel,8.ExitT7_Entered,[End],Process 'ExitT7_Entered' ended.
+6.37951590892767,Train 1 (Train.152),ExitT7,15.OnEntered,[VisitNode] Traveler,Executing process 'Train.152.OnVisitingNode'.
+6.37951590892767,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Begin],Process 'OnVisitingNode' initiated.
+6.37951590892767,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Assign] TimeStopped,Assigning state variable 'TimeStopped' the value '6.37951590892767' .
+6.37951590892767,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Assign] DistanceTravelled,Assigning state variable 'DistanceTravelled' the value '232740' Meters.
+6.37951590892767,Train 1 (Train.152),Train 1,8.OnVisitingNode,[Decide] RequiresStartDelay,Stopped at breakpoint on OnVisitingNode.RequiresStartDelay
 
