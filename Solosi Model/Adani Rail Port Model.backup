@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-03T06:51:31" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-03T23:21:21" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,7 +9,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="11000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="110000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2016-12-31T23:59:59</StartDate>
         <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
@@ -121,7 +121,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="207.681245704626 72.0321319580081 -156.690382907809" Direction="0 -1 2.22044604925031E-16" Zoom="72.0321319580081" />
+          <Camera Orientation="Top" Location="231.396175667477 102.903038024902 -195.824046461855" Direction="0 -1 2.22044604925031E-16" Zoom="102.903038024902" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -1284,7 +1284,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="738">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="744">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -7187,7 +7187,7 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="70">
-                <Pie Center="222.153451832704 -2.8421709430404E-14 -114.795585410018" Width="61.2885271894524" Height="35.7652605332225" ExternallyVisible="True" Title="Track Resource" ListState="ResourceState" TextScale="3" />
+                <Pie Center="222.153451832704 -2.8421709430404E-14 -114.546762898109" Width="61.2885271894524" Height="35.7652605332225" ExternallyVisible="True" Title="Track Resource" ListState="ResourceState" TextScale="3" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
@@ -9451,6 +9451,7 @@
             </Decorations>
           </Rectangle>
           <FloorLabel Center="258.579402825127 0.976488416671373 -221.006475841696" Width="71.7207498977624" Height="7.24805700646937" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="19" Text="Anchorage" />
+          <FloorLabel Center="181.05786326276 0 -211.712139845444" Width="39.7712930796836" Height="29.017681646121" ExternallyVisible="True" Text="{Port.P1.FlowContainer.Contents.Weight}&#xD;&#xA;{Port.P2.FlowContainer.Contents.Weight}&#xD;&#xA;{Port.P3.FlowContainer.Contents.Weight}&#xD;&#xA;{Port.P4.FlowContainer.Contents.Weight}&#xD;&#xA;{Port.P5.FlowContainer.Contents.Weight}&#xD;&#xA;{Port.P6.FlowContainer.Contents.Weight}" />
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
@@ -9961,7 +9962,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>738</Revision>
+        <Revision>744</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -10045,7 +10046,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>343</Revision>
+        <Revision>349</Revision>
       </DefinitionRef>
       <DefinitionRef Name="Source">
         <Id>1d0ccf22-61f9-4fc0-9b3c-01d17e71402d</Id>
@@ -21970,7 +21971,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </LinkDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="343" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="349" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -22131,12 +22132,12 @@ The entity will be processed though the filler without a filling attempt. Howeve
                   <Property Name="PopulationName">Prod2</Property>
                   <Property Name="ObjectListName">Stockpiles</Property>
                   <Property Name="SearchType">Backward</Property>
-                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.NumberWaiting &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity</Property>
+                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity</Property>
                   <Property Name="SaveNumberFound">
                     <Value>UnloadingToken.NumberFound</Value>
                   </Property>
                 </Properties>
-                <Exit Name="Original" Type="Primary" NextID="5" />
+                <Exit Name="Original" Type="Primary" NextID="7" />
                 <Exit Name="Found" Type="Alternate" NextID="6" />
               </Step>
               <Step Type="Execute" Name="LoadToTank" ID="3">
@@ -22184,6 +22185,20 @@ The entity will be processed though the filler without a filling attempt. Howeve
                   <Property Name="ProcessName">UnloadingNodesOff</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Decide" Name="FoundTank" ID="7">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">UnloadingToken.NumberFound&gt;0</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="5" />
+                <Exit Name="False" Type="Alternate" NextID="8" />
+              </Step>
+              <Step Type="Wait" Name="ShipFull" ID="8">
+                <Properties>
+                  <Property Name="EventName">ShipFull</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
             </Steps>
           </Process>
@@ -30754,4 +30769,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- mI4ItJAGeC5CxPrOeB5ZDOR9NBk4Xa2vwFkeKJaJAjncCbcdbshmuQzIRKsltWJ6S1Cpf5Dxxfj2quEnDojTkA== -->
+<!-- NdmBX9Hz9KMuqjXPlvlncwJg9l0GUhBKefjVz26H47SUChmjzV2xDcK9dJNCPk71idpelPeBL3wdOWZqtg8rfA== -->

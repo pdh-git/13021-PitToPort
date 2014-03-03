@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="48e0008e-d241-40f4-8078-d68634561892" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-03T06:49:04" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-03T23:17:41" />
   <Models>
     <Model Definition="ModelEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -31,9 +31,9 @@
       <InteractiveStatistics>
         <FileRef Name="Results\PortModel\Interactive_Results.stats" />
       </InteractiveStatistics>
-      <ViewInfo ActiveModel="True" ActiveView="Facility">
+      <ViewInfo ActiveModel="True" ActiveView="Process">
         <Facility>
-          <Camera Orientation="Top" Location="-17.3407394538346 63.6173676471322 5.02490435461447" Direction="0 -1 2.22044604925031E-16" Zoom="63.6173676471322" />
+          <Camera Orientation="Top" Location="3.90514777482108 90.8819548937739 1.63098326189479" Direction="0 -1 2.22044604925031E-16" Zoom="90.8819548937739" />
           <ObjectDisplay Background="ffffff" />
         </Facility>
         <Process PanelWidth="130">
@@ -426,7 +426,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="343" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="349" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -587,12 +587,12 @@
                   <Property Name="PopulationName">Prod2</Property>
                   <Property Name="ObjectListName">Stockpiles</Property>
                   <Property Name="SearchType">Backward</Property>
-                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.NumberWaiting &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity</Property>
+                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity</Property>
                   <Property Name="SaveNumberFound">
                     <Value>UnloadingToken.NumberFound</Value>
                   </Property>
                 </Properties>
-                <Exit Name="Original" Type="Primary" NextID="5" />
+                <Exit Name="Original" Type="Primary" NextID="7" />
                 <Exit Name="Found" Type="Alternate" NextID="6" />
               </Step>
               <Step Type="Execute" Name="LoadToTank" ID="3">
@@ -640,6 +640,20 @@
                   <Property Name="ProcessName">UnloadingNodesOff</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Decide" Name="FoundTank" ID="7">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">UnloadingToken.NumberFound&gt;0</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="5" />
+                <Exit Name="False" Type="Alternate" NextID="8" />
+              </Step>
+              <Step Type="Wait" Name="ShipFull" ID="8">
+                <Properties>
+                  <Property Name="EventName">ShipFull</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
             </Steps>
           </Process>
@@ -5526,7 +5540,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>343</Revision>
+        <Revision>349</Revision>
       </DefinitionRef>
       <DefinitionRef Name="StockpileTank">
         <Id>90391288-72ad-45e0-99bb-82059bd606bf</Id>
@@ -16862,4 +16876,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- 462bKl5VaHOS/pT5l4NEiy9XSz8sdvpe/bk2Y/GimrKrjY1vMDE6HV4eck8aoUFSVMsBM4dTEQTH7Xeu1VjZRQ== -->
+<!-- F6XA544seaN3e92DY/wkfb9lxW4/L836rGEz9k3ApcHTyRDorWLfrXwgJAtUzgZt8aG/C+ZavGuVVeJtKYma/w== -->
