@@ -54,31 +54,4 @@
     <Observation Value="28.3235257101554" />
     <Observation Value="29.7177791141398" />
   </Observations>
-  <Observations Scenario="Scenario1" Response="MillionTonnesUnloaded">
-    <Observation Value="42.6492000000009" />
-    <Observation Value="43.4808000000007" />
-    <Observation Value="43.8609600000008" />
-    <Observation Value="44.0035200000007" />
-    <Observation Value="43.9084800000008" />
-    <Observation Value="43.8847200000008" />
-    <Observation Value="43.5045600000008" />
-    <Observation Value="45.0014400000007" />
-    <Observation Value="42.0552000000008" />
-    <Observation Value="42.9580800000009" />
-    <Observation Value="42.6254400000007" />
-    <Observation Value="43.6471200000008" />
-    <Observation Value="42.6492000000008" />
-    <Observation Value="42.7917600000009" />
-    <Observation Value="42.007680000001" />
-    <Observation Value="42.7204800000009" />
-    <Observation Value="43.9560000000007" />
-    <Observation Value="42.9818400000009" />
-    <Observation Value="43.3620000000008" />
-    <Observation Value="43.9084800000008" />
-    <Observation Value="43.2907200000008" />
-    <Observation Value="44.7638400000006" />
-    <Observation Value="42.1264800000008" />
-    <Observation Value="43.9084800000006" />
-    <Observation Value="41.841360000001" />
-  </Observations>
 </ResponseResults>
