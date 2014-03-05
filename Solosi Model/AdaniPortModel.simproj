@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="48e0008e-d241-40f4-8078-d68634561892" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-05T02:58:53" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-05T03:40:52" />
   <Models>
     <Model Definition="ModelEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -32,9 +32,9 @@
       <InteractiveStatistics>
         <FileRef Name="Results\PortModel\Interactive_Results.stats" />
       </InteractiveStatistics>
-      <ViewInfo ActiveModel="True" ActiveView="Facility">
+      <ViewInfo ActiveModel="True" ActiveView="Process">
         <Facility>
-          <Camera Orientation="Top" Location="-42.565387444148 98.1317479791215 1.46140490160936" Direction="0 -1 2.22044604925031E-16" Zoom="98.1317479791215" />
+          <Camera Orientation="Top" Location="-35.8288553252692 140.188206263951 -102.946537952489" Direction="0 -1 2.22044604925031E-16" Zoom="140.188206263951" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process PanelWidth="130">
@@ -528,7 +528,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="540" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="541" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -1251,7 +1251,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="7" />
               </Step>
               <Step Type="Execute" Name="ShipLoadingManager" ID="3">
                 <Properties>
@@ -1282,6 +1282,12 @@
                   <Property Name="DelayTime">LoadingDelay</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Execute" Name="BeginLoading" ID="7">
+                <Properties>
+                  <Property Name="ProcessName">BeginLoadingProcess</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
             </Steps>
           </Process>
@@ -3302,9 +3308,9 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
-              <Step Type="Execute" Name="BeginLoading" ID="4">
+              <Step Type="Execute" Name="ReadyToLoad" ID="4">
                 <Properties>
-                  <Property Name="ProcessName">BeginLoadingProcess</Property>
+                  <Property Name="ProcessName">ReadyToLoadProcess</Property>
                 </Properties>
               </Step>
             </Steps>
@@ -7110,7 +7116,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>540</Revision>
+        <Revision>541</Revision>
       </DefinitionRef>
       <DefinitionRef Name="StockpileTank">
         <Id>90391288-72ad-45e0-99bb-82059bd606bf</Id>
@@ -20423,4 +20429,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- 1HngUdvtAKq3D1xTJzPVYg11XGw21lTCkVS9RwnKjoFoZTDEmjAraT3lpCzJEF65SJj2nICZGXAeIpH3QLkq1Q== -->
+<!-- 8naMNpgzGjw3M3/qn/XooSi708QFTCZlzd5JfnZdiwv2jIUAWDnu7/I86wpjlMj166bXa5rQuI09Cld5ouH0Og== -->
