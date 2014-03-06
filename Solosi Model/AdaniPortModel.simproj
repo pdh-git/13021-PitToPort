@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="48e0008e-d241-40f4-8078-d68634561892" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-05T06:09:58" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-06T06:15:29" />
   <Models>
     <Model Definition="ModelEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -32,9 +32,9 @@
       <InteractiveStatistics>
         <FileRef Name="Results\PortModel\Interactive_Results.stats" />
       </InteractiveStatistics>
-      <ViewInfo ActiveModel="True" ActiveView="Process">
+      <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="-59.1473327585491 8.08157086526093 12.7880532615203" Direction="0 -1 2.22044604925031E-16" Zoom="8.08157086526093" />
+          <Camera Orientation="Top" Location="22.4877749982773 217.073602009017 -136.847408253802" Direction="0 -1 2.22044604925031E-16" Zoom="217.073602009017" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process PanelWidth="130">
@@ -528,7 +528,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="543" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="546" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -1196,7 +1196,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="7" />
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
               <Step Type="Execute" Name="ShipLoadingManager" ID="3">
                 <Properties>
@@ -1220,15 +1220,9 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
-              </Step>
-              <Step Type="Delay" Name="LoadingDelay" ID="6">
-                <Properties>
-                  <Property Name="DelayTime">LoadingDelay</Property>
-                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
-              <Step Type="Execute" Name="BeginLoading" ID="7">
+              <Step Type="Execute" Name="BeginLoading" ID="6">
                 <Properties>
                   <Property Name="ProcessName">BeginLoadingProcess</Property>
                 </Properties>
@@ -1251,7 +1245,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="7" />
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
               <Step Type="Execute" Name="ShipLoadingManager" ID="3">
                 <Properties>
@@ -1275,15 +1269,9 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
-              </Step>
-              <Step Type="Delay" Name="LoadingDelay" ID="6">
-                <Properties>
-                  <Property Name="DelayTime">LoadingDelay</Property>
-                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
-              <Step Type="Execute" Name="BeginLoading" ID="7">
+              <Step Type="Execute" Name="BeginLoading" ID="6">
                 <Properties>
                   <Property Name="ProcessName">BeginLoadingProcess</Property>
                 </Properties>
@@ -2188,13 +2176,19 @@
                 <Properties>
                   <Property Name="DelayTime">Math.EPSILON</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Execute" Name="LoadingNodesOFF" ID="8">
                 <Properties>
                   <Property Name="ProcessName">LoadingNodesOff</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Delay" Name="LoadingDelay" ID="9">
+                <Properties>
+                  <Property Name="DelayTime">LoadingDelay</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
             </Steps>
           </Process>
@@ -3870,9 +3864,9 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="TrainDumper" Type="Emptier" Location="-56.1854372369907 -1.77635683940025E-15 12.061593895454" Size="2.3288663855793 2.27136034003985 0.5" Scope="Public">
+          <Fixed Name="TrainDumper" Type="Emptier" Location="-55.3474216009084 -1.77635683940025E-15 12.8789122185047" Size="4.00488865421988 3.9059970601138 0.859836502218153" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@TrainDumper" Type="BasicNode" Location="-56.9842989210096 -1.77635683940025E-15 11.1809973961835" Scope="Public">
+              <Node Name="Input@TrainDumper" Type="BasicNode" Location="-56.1462832849273 -1.77635683940025E-15 11.9983157192342" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3882,7 +3876,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="ContainerOutput@TrainDumper" Type="TransferNode" Location="-55.6306947374377 -1.77635683940025E-15 12.9526373021479" Scope="Public">
+              <Node Name="ContainerOutput@TrainDumper" Type="TransferNode" Location="-54.7926791013554 -1.77635683940025E-15 13.7699556251986" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3892,7 +3886,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="FlowOutput@TrainDumper" Type="FlowNode" Location="-55.7761301251163 -1.77635683940025E-15 11.4725387068359" Scope="Public">
+              <Node Name="FlowOutput@TrainDumper" Type="FlowNode" Location="-54.9792002573375 -1.77635683940025E-15 11.783132554143" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3910,11 +3904,11 @@
               </Node>
             </AssociatedNodes>
             <IndexedSizes>
-              <IndexedSize Size="2.3288663855793 2.27136034003985 0.5" />
-              <IndexedSize Size="2.3288663855793 2.27136034003985 0.5" />
-              <IndexedSize Size="2.3288663855793 2.27136034003985 0.5" />
-              <IndexedSize Size="2.3288663855793 2.27136034003985 0.5" />
-              <IndexedSize Size="2.3288663855793 2.27136034003985 0.5" />
+              <IndexedSize Size="4.00488865421988 3.9059970601138 0.859836502218153" />
+              <IndexedSize Size="4.00488865421988 3.9059970601138 0.859836502218153" />
+              <IndexedSize Size="4.00488865421988 3.9059970601138 0.859836502218153" />
+              <IndexedSize Size="4.00488865421988 3.9059970601138 0.859836502218153" />
+              <IndexedSize Size="4.00488865421988 3.9059970601138 0.859836502218153" />
             </IndexedSizes>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -3924,6 +3918,8 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="InputBufferCapacity">0</Property>
               <Property Name="OutputBufferCapacity">0</Property>
+              <Property Name="FailureType">Processing Time Based</Property>
+              <Property Name="TimeToRepair">Random.Triangular(0.5,1.0,6)</Property>
               <Property Name="BeforeProcessingAddOnProcess">TrainUnloader_BeforeProcessing</Property>
               <Property Name="EmptiedContainerAddOnProcess">TrainUnloader_EmptiedContainer</Property>
               <Property Name="AfterProcessingAddOnProcess">TrainUnloader_AfterProcessing</Property>
@@ -4003,10 +3999,10 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="4">
-                <Queue Queue="Processing.Contents" Alignment="Inline" ExternallyVisible="True">
+                <Queue Queue="Processing.Contents" Alignment="Inline">
                   <Points>
-                    <Point Location="-55.7357696017668 -1.77635683940025E-15 12.8141390260819" />
-                    <Point Location="-56.8727500464434 -1.77635683940025E-15 11.2734848061862" />
+                    <Point Location="-56.2703316512386 -1.66533453693773E-15 14.1480026904328" />
+                    <Point Location="-57.4073120959152 -1.66533453693773E-15 12.6073484705371" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -4075,9 +4071,9 @@
               </SymbolInstances>
             </Graphics>
           </Entity>
-          <Fixed Name="Berth1" Type="Filler" Location="-44.400476522739 1.22124532708767E-15 -148.535670146914" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
+          <Fixed Name="Berth1" Type="Filler" Location="-44.400476522739 1.22124532708767E-15 -148.555234798487" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
             <AssociatedNodes>
-              <Node Name="ContainerInput@Berth1" Type="BasicNode" Location="-45.2225823122357 1.22124532708767E-15 -151.551964460021" Scope="Public">
+              <Node Name="ContainerInput@Berth1" Type="BasicNode" Location="-45.2225823122357 1.22124532708767E-15 -151.571529111594" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4087,7 +4083,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="FlowInput@Berth1" Type="FlowNode" Location="-43.4019426408461 1.22124532708767E-15 -150.37821202458" Scope="Public">
+              <Node Name="FlowInput@Berth1" Type="FlowNode" Location="-43.4019426408461 1.22124532708767E-15 -150.397776676153" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4099,7 +4095,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@Berth1" Type="TransferNode" Location="-41.5056059022795 1.22124532708767E-15 -150.388112681673" Scope="Public">
+              <Node Name="Output@Berth1" Type="TransferNode" Location="-41.5056059022795 1.22124532708767E-15 -150.407677333246" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4126,6 +4122,7 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="InputBufferCapacity">0</Property>
               <Property Name="OutputBufferCapacity">0</Property>
+              <Property Name="TimeToRepair">Random.Triangular(0.5,1.0,6)</Property>
               <Property Name="BeforeProcessingAddOnProcess">Berth1_BeforeProcessing</Property>
               <Property Name="FillingContainerAddOnProcess">Berth1_FillingContainer</Property>
               <Property Name="FilledContainerAddOnProcess">Berth1_FilledContainer</Property>
@@ -4172,8 +4169,8 @@
               <AttachedObjects IndexList="6">
                 <Queue Queue="Processing.Contents" Alignment="Inline" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-41.5171422906198 1.22124532708768E-15 -150.397753634238" />
-                    <Point Location="-45.1866927936665 1.22124532708768E-15 -151.527403911229" />
+                    <Point Location="-41.5171422906198 1.22124532708768E-15 -150.417318285191" />
+                    <Point Location="-45.1866927936665 1.22124532708768E-15 -151.546968562182" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -4594,9 +4591,9 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Berth2" Type="Filler" Location="-39.5733381464481 1.22124532708767E-15 -146.462509209124" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
+          <Fixed Name="Berth2" Type="Filler" Location="-39.5733381464481 1.22124532708767E-15 -146.482073860697" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
             <AssociatedNodes>
-              <Node Name="ContainerInput@Berth2" Type="BasicNode" Location="-40.6924166152133 1.22124532708767E-15 -150.129908563694" Scope="Public">
+              <Node Name="ContainerInput@Berth2" Type="BasicNode" Location="-40.6924166152133 1.22124532708767E-15 -150.149473215267" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4606,7 +4603,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="FlowInput@Berth2" Type="FlowNode" Location="-39.2641103347458 1.22124532708767E-15 -149.085823939509" Scope="Public">
+              <Node Name="FlowInput@Berth2" Type="FlowNode" Location="-39.2641103347458 1.22124532708767E-15 -149.105388591082" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4618,7 +4615,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@Berth2" Type="TransferNode" Location="-36.8254328104435 1.22124532708767E-15 -148.93369581359" Scope="Public">
+              <Node Name="Output@Berth2" Type="TransferNode" Location="-36.8254328104435 1.22124532708767E-15 -148.953260465163" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4644,6 +4641,7 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="InputBufferCapacity">0</Property>
               <Property Name="OutputBufferCapacity">0</Property>
+              <Property Name="TimeToRepair">Random.Triangular(0.5,1.0,6)</Property>
               <Property Name="BeforeProcessingAddOnProcess">Berth2_BeforeProcessing</Property>
               <Property Name="FillingContainerAddOnProcess">Berth2_FillingContainer</Property>
               <Property Name="FilledContainerAddOnProcess">Berth2_FilledContainer</Property>
@@ -4690,8 +4688,8 @@
               <AttachedObjects IndexList="8">
                 <Queue Queue="Processing.Contents" Alignment="Inline" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-36.846063549714 1.22124532708768E-15 -148.944306607605" />
-                    <Point Location="-40.7038638039011 1.22124532708768E-15 -150.119734681089" />
+                    <Point Location="-36.846063549714 1.22124532708768E-15 -148.963871258558" />
+                    <Point Location="-40.7038638039011 1.22124532708768E-15 -150.139299332042" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -6425,7 +6423,7 @@
               </Decorations>
             </Graphics>
           </Link>
-          <Link Name="TimePath5" Type="TimePath" Size="8.03 0 0" Scope="Public" Start="ChannelExit" End="ContainerInput@Berth1">
+          <Link Name="TimePath5" Type="TimePath" Size="8.02 0 0" Scope="Public" Start="ChannelExit" End="ContainerInput@Berth1">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6674,7 +6672,7 @@
             </Properties>
             <Graphics />
           </Link>
-          <Link Name="TimePath3" Type="TimePath" Size="6.66 0 0" Scope="Public" Start="ChannelExit" End="ContainerInput@Berth2">
+          <Link Name="TimePath3" Type="TimePath" Size="6.64 0 0" Scope="Public" Start="ChannelExit" End="ContainerInput@Berth2">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6956,7 +6954,7 @@
               </Decorations>
             </Graphics>
           </Link>
-          <Link Name="Path1" Type="Path" Size="82.43 0 0" Scope="Public" Start="Output@Filler1" End="Input@TrainDumper">
+          <Link Name="Path1" Type="Path" Size="83.21 0 0" Scope="Public" Start="Output@Filler1" End="Input@TrainDumper">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6967,7 +6965,7 @@
             </Properties>
             <Graphics />
           </Link>
-          <Link Name="Path2" Type="Path" Size="83.46 0 0" Scope="Public" Start="Output@Filler1_1" End="Input@TrainDumper">
+          <Link Name="Path2" Type="Path" Size="84.17 0 0" Scope="Public" Start="Output@Filler1_1" End="Input@TrainDumper">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -7116,7 +7114,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>543</Revision>
+        <Revision>546</Revision>
       </DefinitionRef>
       <DefinitionRef Name="StockpileTank">
         <Id>90391288-72ad-45e0-99bb-82059bd606bf</Id>
@@ -20429,4 +20427,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- eZUOnQToI54XYSI9Hh03YCPHaP6GuMXeQ3W1MDbpQm+hl1ScxTz4NS17LcRGuG6KduSx1+GGKkkOq3VpnpEqkg== -->
+<!-- ZeNLnN1bSXcxdzoUG3Yzult4Ct7rCpmOfAQZbL1XTUdbrFL8CF/6VmtiNilaV8cxqh/b8TfHFp8GefnQ1oPRUA== -->
