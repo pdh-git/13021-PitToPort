@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="48e0008e-d241-40f4-8078-d68634561892" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-05T03:40:52" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-05T06:09:58" />
   <Models>
     <Model Definition="ModelEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -34,7 +34,7 @@
       </InteractiveStatistics>
       <ViewInfo ActiveModel="True" ActiveView="Process">
         <Facility>
-          <Camera Orientation="Top" Location="-35.8288553252692 140.188206263951 -102.946537952489" Direction="0 -1 2.22044604925031E-16" Zoom="140.188206263951" />
+          <Camera Orientation="Top" Location="-59.1473327585491 8.08157086526093 12.7880532615203" Direction="0 -1 2.22044604925031E-16" Zoom="8.08157086526093" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process PanelWidth="130">
@@ -528,7 +528,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="541" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="543" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -3870,9 +3870,9 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="TrainDumper" Type="Emptier" Location="-56.1854372369907 -1.77635683940025E-15 12.0711805750095" Size="2.3288663855793 2.27136034003985 0.5" Scope="Public">
+          <Fixed Name="TrainDumper" Type="Emptier" Location="-56.1854372369907 -1.77635683940025E-15 12.061593895454" Size="2.3288663855793 2.27136034003985 0.5" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@TrainDumper" Type="BasicNode" Location="-56.9842989210096 -1.77635683940025E-15 11.190584075739" Scope="Public">
+              <Node Name="Input@TrainDumper" Type="BasicNode" Location="-56.9842989210096 -1.77635683940025E-15 11.1809973961835" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3882,7 +3882,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="ContainerOutput@TrainDumper" Type="TransferNode" Location="-55.6306947374377 -1.77635683940025E-15 12.9622239817034" Scope="Public">
+              <Node Name="ContainerOutput@TrainDumper" Type="TransferNode" Location="-55.6306947374377 -1.77635683940025E-15 12.9526373021479" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3892,7 +3892,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="FlowOutput@TrainDumper" Type="FlowNode" Location="-55.7761304704433 -1.77635683940025E-15 11.4821257317183" Scope="Public">
+              <Node Name="FlowOutput@TrainDumper" Type="FlowNode" Location="-55.7761301251163 -1.77635683940025E-15 11.4725387068359" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4005,8 +4005,8 @@
               <AttachedObjects IndexList="4">
                 <Queue Queue="Processing.Contents" Alignment="Inline" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-55.7357696017668 -1.77635683940025E-15 12.8237257058311" />
-                    <Point Location="-56.8727500464434 -1.77635683940025E-15 11.2830714859354" />
+                    <Point Location="-55.7357696017668 -1.77635683940025E-15 12.8141390260819" />
+                    <Point Location="-56.8727500464434 -1.77635683940025E-15 11.2734848061862" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -7116,7 +7116,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>541</Revision>
+        <Revision>543</Revision>
       </DefinitionRef>
       <DefinitionRef Name="StockpileTank">
         <Id>90391288-72ad-45e0-99bb-82059bd606bf</Id>
@@ -20429,4 +20429,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- 8naMNpgzGjw3M3/qn/XooSi708QFTCZlzd5JfnZdiwv2jIUAWDnu7/I86wpjlMj166bXa5rQuI09Cld5ouH0Og== -->
+<!-- eZUOnQToI54XYSI9Hh03YCPHaP6GuMXeQ3W1MDbpQm+hl1ScxTz4NS17LcRGuG6KduSx1+GGKkkOq3VpnpEqkg== -->
