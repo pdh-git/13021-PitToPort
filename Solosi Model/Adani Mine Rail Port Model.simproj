@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-06T07:32:40" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-06T08:46:57" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -11,7 +11,7 @@
     <Model Definition="RailPortModel">
       <RunSetup AnimationInterval="150" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
-        <RunLength Units="Hours">8760</RunLength>
+        <RunLength Units="Hours">35040</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
       </RunSetup>
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -24,6 +24,7 @@
           <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
           <Property Name="DistanceToNextFailure">Random.Exponential(1000)</Property>
           <Property Name="TimeToRepair">Random.Triangular(2, 8, 20)</Property>
+          <Property Name="WriteAnnualPortSummary">True</Property>
         </Properties>
       </RunnableInstance>
       <SuppressedWarnings>
@@ -81,6 +82,7 @@
             <Control Name="WriteShipLogToFile" />
             <Control Name="WriteShipSummariesToFile" />
             <Control Name="InitialRequestTrainThreshold" />
+            <Control Name="WriteAnnualPortSummary" />
           </Controls>
           <Responses>
             <Response Name="AveTrainCycleTime" Expression="Tally_TrainCycleTime.Average" UnitType="Time" Units="Hours" />
@@ -128,9 +130,9 @@
           </ViewInfo>
         </Experiment>
       </Experiments>
-      <ViewInfo ActiveModel="True" ActiveView="Process">
+      <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="389.074289932407 107.466556854248 28.7722703450468" Direction="0 -1 2.22044604925031E-16" Zoom="107.466556854248" />
+          <Camera Orientation="Top" Location="88.6034254646789 313.313587066384 106.259226681629" Direction="0 -1 2.22044604925031E-16" Zoom="313.313587066384" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" Queues="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -159,7 +161,7 @@
             <Category Name="T10 AddOn Processes" Expanded="True" />
             <Category Name="MS1 AddOn Processes" Expanded="True" />
             <Category Name="Track1 AddOn Processes" Expanded="True" />
-            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
+            <Category Name="ChannelExit AddOn Processes" />
             <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
             <Category Name="B1Exit AddOn Processes" Expanded="True" />
             <Category Name="B2Exit AddOn Processes" Expanded="True" />
@@ -494,7 +496,7 @@
       </DashboardReports>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-78.6701291722329 97.0192645092823 287.887833489379" Direction="0 -1 2.22044604925031E-16" Zoom="97.0192645092823" />
+          <Camera Orientation="Top" Location="-89.6180012183213 404.078568184887 305.014588698037" Direction="0 -1 2.22044604925031E-16" Zoom="404.078568184887" />
           <ObjectDisplay Background="ffffff" />
         </Facility>
         <Process>
@@ -502,36 +504,38 @@
             <Category Name="Data Collection" Expanded="True" />
             <Category Name="TrainSink AddOn Processes" Expanded="True" />
             <Category Name="UC_Stockpile AddOn Processes" Expanded="True" />
-            <Category Name="LWDevGenServer AddOn Processes" Expanded="True" />
             <Category Name="Raw Coal Events" Expanded="True" />
             <Category Name="WeatherShutdownSchedule AddOn Processes" Expanded="True" />
             <Category Name="TLOStockpileControl_Processes" Expanded="True" />
             <Category Name="TrainLoadStation AddOn Processes" Expanded="True" />
-            <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
             <Category Name="LACGenServer AddOn Processes" Expanded="True" />
-            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
             <Category Name="Conveyor Control Events" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="LW1GenServer AddOn Processes" Expanded="True" />
             <Category Name="CPPWorkSchedule AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="LW2GenServer AddOn Processes" Expanded="True" />
+            <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
+            <Category Name="Output@Stockpile AddOn Processes" Expanded="True" />
+            <Category Name="LAC_Feeder AddOn Processes" Expanded="True" />
+            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="LWDevGenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="TrainTransferNode1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
+            <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Output@Stockpile AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="HAC_Feeder AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="LAC_Feeder AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
@@ -1305,7 +1309,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="599" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="611" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -14385,7 +14389,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="44" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="54" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -14415,6 +14419,7 @@
           <RepeatingProperty Name="ShipTable" Category="Generation Parameters" NullString="null">
             <PropertyDefinitions>
               <DynamicObjectInstanceProperty Name="ShipType" Description="The entity type of the ship" DefaultValue="null" NullString="null" ValidObjectType="Agent" />
+              <StringProperty Name="ShipTypeString" NullString="null" />
               <ExpressionProperty Name="ShipCargo" Description="The amount of cargo on this ship type" DefaultValue="0.0" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
               <ExpressionProperty Name="PercentOfShips" DefaultValue="0.0" NullString="null" />
               <ExpressionProperty Name="Draft" Description="The vessel draft to under keel clearance as required for tidal windows" DefaultValue="0.0" NullString="null" UnitType="Length" />
@@ -14615,7 +14620,7 @@
                   </Property>
                   <Property Name="NewValue">ShipTable.ShipType.Entity</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
+                <Exit Name="Exit" Type="Primary" NextID="12" />
               </Step>
               <Step Type="Delay" Name="untilThreshold" ID="7">
                 <Properties>
@@ -14669,6 +14674,15 @@
                   </Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Assign" Name="ShipType" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipToken.ShipTypeString</Value>
+                  </Property>
+                  <Property Name="NewValue">ShipTable.ShipTypeString</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
             </Steps>
           </Process>
@@ -14755,7 +14769,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Assign" Name="trackGenerationAmounts" ID="6">
                 <Properties>
@@ -14796,6 +14810,15 @@
                   <Property Name="NewValue">ShipToken.ShipCargo</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Assign" Name="ShipType" ID="9">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.ShipTypeString</Value>
+                  </Property>
+                  <Property Name="NewValue">ShipToken.ShipTypeString</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
             </Steps>
           </Process>
@@ -14842,6 +14865,7 @@
               <DiscreteState Name="PreLoadingDelay" />
               <DiscreteState Name="LoadingDelay" />
               <DiscreteState Name="PostLoadingDelay" />
+              <StringState Name="ShipTypeString" />
             </States>
           </Token>
         </Tokens>
@@ -14902,7 +14926,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1032">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1054">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -14957,6 +14981,7 @@
           <BooleanProperty Name="WriteShipLogToFile" DefaultValue="False" NullString="null" />
           <BooleanProperty Name="WriteShipSummariesToFile" DefaultValue="False" NullString="null" />
           <RealProperty Name="InitialRequestTrainThreshold" DefaultValue="23760000" NullString="null" />
+          <BooleanProperty Name="WriteAnnualPortSummary" DefaultValue="False" NullString="null" />
           <Overrides>
             <Override Name="ReportStatistics" Visible="False" />
             <Override Name="ParentCostCenter" Visible="False" />
@@ -14993,7 +15018,21 @@
           <DiscreteState Name="Annual_SCape" />
           <DiscreteState Name="Annual_Cape" />
           <DiscreteState Name="Annual_VLCape" />
-          <DiscreteState Name="Annual_NumbTrainsLoaded" />
+          <DiscreteState Name="Annual_NumbTrainsUnloaded" />
+          <DiscreteState Name="Prev_TrainsUnloaded" />
+          <DiscreteState Name="Prev_Pana" />
+          <DiscreteState Name="Prev_Handy" />
+          <DiscreteState Name="Prev_SCape" />
+          <DiscreteState Name="Prev_Cape" />
+          <DiscreteState Name="Prev_VLCape" />
+          <DiscreteState Name="Prev_TDProcessing" />
+          <DiscreteState Name="Prev_TDFailed" />
+          <DiscreteState Name="Prev_TDBlocked" />
+          <DiscreteState Name="Prev_TDStarved" />
+          <DiscreteState Name="Prev_SLBusy" />
+          <DiscreteState Name="Prev_SLIdle" />
+          <DiscreteState Name="Prev_Product1Loaded" />
+          <DiscreteState Name="Prev_Product2Loaded" />
         </States>
         <Events>
           <Event Name="Event_CreateRequest" />
@@ -15173,6 +15212,11 @@
           <Element Type="TallyStatistic" Name="Annual_TimeBerthQueue" Scope="Public">
             <Properties />
           </Element>
+          <Element Type="517f0463-a69a-49c0-aa8f-830a8c3a9ff9" ReadableType="File" Name="AnnualPortSummary" Scope="Public">
+            <Properties>
+              <Property Name="FilePath">AnnualPortSummary.csv</Property>
+            </Properties>
+          </Element>
         </Elements>
         <Processes>
           <Process Name="OnRunInitialized" IsOverride="True" InterfaceProcessID="Object.OnRunInitialized" BeginStepID="2">
@@ -15187,6 +15231,13 @@
               <Step Type="Execute" Name="Hourly" ID="3">
                 <Properties>
                   <Property Name="ProcessName">Hourly</Property>
+                  <Property Name="TokenWaitAction">None (Continue)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Execute" Name="Annuals" ExclusionExpression="!WriteAnnualPortSummary" ID="4">
+                <Properties>
+                  <Property Name="ProcessName">Annuals</Property>
                   <Property Name="TokenWaitAction">None (Continue)</Property>
                 </Properties>
               </Step>
@@ -19894,14 +19945,14 @@
                   <Property Name="TallyStatisticName">Tally_ShipTotalTimeInPort</Property>
                   <Property Name="Value">Run.TimeNow - ShipEntity.T_ArriveAtAnchorage</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
+                <Exit Name="Exit" Type="Primary" NextID="17" />
               </Step>
               <Step Type="Tally" Name="Tally_ShipTotalTimeInBerth" ID="3">
                 <Properties>
                   <Property Name="TallyStatisticName">Tally_ShipTotalTimeInBerth</Property>
                   <Property Name="Value">ShipEntity.T_DepartBerth-ShipEntity.T_ArriveAtBerth</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="16" />
               </Step>
               <Step Type="Tally" Name="Tally_ShipTotalLoadingTime" ID="4">
                 <Properties>
@@ -19961,6 +20012,114 @@
                     </Rows>
                   </Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="18" />
+              </Step>
+              <Step Type="Decide" Name="IsHandy" ID="6">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">ShipEntity.ShipTypeString=="Handymax"</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="11" />
+                <Exit Name="False" Type="Alternate" NextID="7" />
+              </Step>
+              <Step Type="Decide" Name="IsPana" ID="7">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">ShipEntity.ShipTypeString=="Panamax"</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="12" />
+                <Exit Name="False" Type="Alternate" NextID="8" />
+              </Step>
+              <Step Type="Decide" Name="IsSCape" ID="8">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">ShipEntity.ShipTypeString=="SmallCape"</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="13" />
+                <Exit Name="False" Type="Alternate" NextID="9" />
+              </Step>
+              <Step Type="Decide" Name="IsCape" ID="9">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">ShipEntity.ShipTypeString=="Capesize"</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="14" />
+                <Exit Name="False" Type="Alternate" NextID="10" />
+              </Step>
+              <Step Type="Decide" Name="IsVLCape" ID="10">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">ShipEntity.ShipTypeString=="VeryLargeCape"</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="15" />
+              </Step>
+              <Step Type="Assign" Name="Annual" ID="11">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Annual_Handy</Value>
+                  </Property>
+                  <Property Name="NewValue">Annual_Handy+1</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="Annual" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Annual_Pana</Value>
+                  </Property>
+                  <Property Name="NewValue">Annual_Pana+1</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="Annual" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Annual_SCape</Value>
+                  </Property>
+                  <Property Name="NewValue">Annual_SCape+1</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="Annual" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Annual_Cape</Value>
+                  </Property>
+                  <Property Name="NewValue">Annual_Cape+1</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="Annual" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Annual_VLCape</Value>
+                  </Property>
+                  <Property Name="NewValue">Annual_VLCape+1</Property>
+                </Properties>
+              </Step>
+              <Step Type="Tally" Name="AnnualGrossLoadingTime" ID="16">
+                <Properties>
+                  <Property Name="TallyStatisticName">Annual_GrossLoadingTime</Property>
+                  <Property Name="Value">ShipEntity.T_FinishedLoading-ShipEntity.T_BeginLoading </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Tally" Name="AnnualTTIP" ID="17">
+                <Properties>
+                  <Property Name="TallyStatisticName">Annual_TTIP</Property>
+                  <Property Name="Value">Run.TimeNow - ShipEntity.T_ArriveAtAnchorage</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Tally" Name="AnnualQueueForProduct" ID="18">
+                <Properties>
+                  <Property Name="TallyStatisticName">Annual_TimeBerthQueue</Property>
+                  <Property Name="Value">ShipEntity.T_AllocatedProduct-ShipEntity.T_ArriveAtAnchorage</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="19" />
+              </Step>
+              <Step Type="Tally" Name="AnnualQueueForBerth" ID="19">
+                <Properties>
+                  <Property Name="TallyStatisticName">Annual_TimeProductQueue</Property>
+                  <Property Name="Value">ShipEntity.T_AllocatedBerth-ShipEntity.T_AllocatedProduct</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
             </Steps>
           </Process>
@@ -20166,13 +20325,326 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="Annuals" BeginStepID="2">
+          <Process Name="Annuals" BeginStepID="6">
             <Properties />
             <Steps>
-              <Step Type="ClearStatistics" Name="ClearStatistics1" ID="2">
+              <Step Type="ClearStatistics" Name="AnnualTallies" ID="2">
                 <Properties>
                   <Property Name="ClearStatisticsType">ClearSpecific</Property>
+                  <Property Name="ObjectsOrElements">
+                    <Rows>
+                      <Properties>
+                        <Property Name="RepeatingObjectOrElement">Annual_Prod1Stockpile</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="RepeatingObjectOrElement">Annual_Prod2Stockpile</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="RepeatingObjectOrElement">Annual_TotalStockpile</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="RepeatingObjectOrElement">Annual_TTIP</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="RepeatingObjectOrElement">Annual_GrossLoadingTime</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="RepeatingObjectOrElement">Annual_TimeProductQueue</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="RepeatingObjectOrElement">Annual_TimeBerthQueue</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Assign" Name="PreviousAnnual" ID="3">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Prev_Handy</Value>
+                  </Property>
+                  <Property Name="NewValue">Annual_Handy</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_Pana</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Annual_Pana</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_SCape</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Annual_SCape</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_Cape</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Annual_Cape</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_VLCape</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Annual_VLCape</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_TDStarved</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Port.TrainDumper.ResourceState.TotalTime(0)</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_TDProcessing</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Port.TrainDumper.ResourceState.TotalTime(1)</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_TDBlocked</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Port.TrainDumper.ResourceState.TotalTime(2)</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_TDFailed</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Port.TrainDumper.ResourceState.TotalTime(3)</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_SLIdle</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Port.ShipLoader[1].ResourceState.TotalTime(0)</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_SLBusy</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Port.ShipLoader[1].ResourceState.TotalTime(1)</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_Product1Loaded</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Port.Product1Inspector.FlowRegulator.CurrentWeightFlowOut</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>Prev_Product2Loaded</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Port.Product2Inspector.FlowRegulator.CurrentWeightFlowOut</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
+              </Step>
+              <Step Type="Delay" Name="8760" ID="4">
+                <Properties>
+                  <Property Name="DelayTime">8760</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="0f716535-c1ef-4c87-88f6-59805466ef5b" ReadableType="Write" Name="Annuals" ID="5">
+                <Properties>
+                  <Property Name="File">AnnualPortSummary</Property>
+                  <Property Name="Format">{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28}</Property>
+                  <Property Name="Items">
+                    <Rows>
+                      <Properties>
+                        <Property Name="Expression">DateTime.ToString(Run.TimeNow, "yyyy")</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_Handy-Prev_Handy</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_Pana-Prev_Pana</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_SCape-Prev_SCape</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_Cape-Prev_Cape</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_VLCape-Prev_VLCape</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_TTIP.Average</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_TTIP.Maximum</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_TimeProductQueue.Average</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_TimeProductQueue.Maximum</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_TimeProductQueue.Minimum</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_TimeBerthQueue.Average</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_TimeBerthQueue.Maximum</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_TimeBerthQueue.Minimum</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_GrossLoadingTime.Average</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_GrossLoadingTime.Maximum</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">(Port.Product1Inspector.FlowRegulator.CurrentWeightFlowOut-Prev_Product1Loaded)/1000</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">(Port.Product2Inspector.FlowRegulator.CurrentWeightFlowOut-Prev_Product2Loaded)/1000</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">((Port.Product1Inspector.FlowRegulator.CurrentWeightFlowOut-Prev_Product1Loaded)+(Port.Product2Inspector.FlowRegulator.CurrentWeightFlowOut-Prev_Product2Loaded))/1000</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_Prod1Stockpile.Average/1000</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_Prod1Stockpile.Maximum/1000</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_Prod2Stockpile.Average/1000</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Annual_Prod2Stockpile.Maximum/1000</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Port.TrainDumper.ResourceState.TotalTime(0)-Prev_TDStarved</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Port.TrainDumper.ResourceState.TotalTime(1)-Prev_TDProcessing</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Port.TrainDumper.ResourceState.TotalTime(2)-Prev_TDBlocked</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Port.TrainDumper.ResourceState.TotalTime(3)-Prev_TDFailed</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Port.ShipLoader[1].ResourceState.TotalTime(0) - Prev_SLIdle</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">Port.ShipLoader[1].ResourceState.TotalTime(1) - Prev_SLBusy</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="0f716535-c1ef-4c87-88f6-59805466ef5b" ReadableType="Write" Name="Annuals" ID="6">
+                <Properties>
+                  <Property Name="File">AnnualPortSummary</Property>
+                  <Property Name="Format">{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20},{21},{22},{23},{24},{25},{26},{27},{28}</Property>
+                  <Property Name="Items">
+                    <Rows>
+                      <Properties>
+                        <Property Name="Expression">"Year"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"No. Handy"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"No. Pana"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"No. SCape"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"No. Cape"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"No. VLCape"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"TTIP Ave"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"TTIP Max"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Time Queue For Product Ave"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Time Queue For Product Max"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Time Queue For Product Min"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Time Queue For Berth Ave"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Time Queue For Berth Max"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Time Queue For Berth Min"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Gross Ship Loading Time Ave"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Gross Ship Loading Time Max"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Total Product 1 LAC"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Total Product 2 UGC"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Total Product Shipped"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Ave Product 1 in Stockpile"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Max Product 1 in Stockpile"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Ave Product 2 in Stockpile"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Max Product 2 in Stockpile"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Hours Train Dumper Starved"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Hours Train Dumper Busy"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Hours Train Dumper Blocked"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Hours Train Dumper Failed"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Hours Shiploader Idle"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Hours Shiploader Busy"</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
             </Steps>
           </Process>
@@ -20183,6 +20655,26 @@
                 <Properties>
                   <Property Name="DelayTime">1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Tally" Name="Annuals" ID="3">
+                <Properties>
+                  <Property Name="TallyStatisticName">Annual_Prod1Stockpile</Property>
+                  <Property Name="Value">Port.TotalProduct1</Property>
+                  <Property Name="Tallies">
+                    <Rows>
+                      <Properties>
+                        <Property Name="TalliesTallyStatisticName">Annual_Prod2Stockpile</Property>
+                        <Property Name="TalliesValue">Port.TotalProduct2</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="TalliesTallyStatisticName">Annual_TotalStockpile</Property>
+                        <Property Name="TalliesValue">Port.TotalStockpileContents</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
             </Steps>
           </Process>
@@ -22635,7 +23127,7 @@
           </Fixed>
           <Fixed Name="Port" Type="PortModel" Location="117.94390724648 -9.21485129127477E-15 -306.912715457248" Size="121.992630979396 216.658942960486 1.00951098320057" Scope="Public">
             <AssociatedNodes>
-              <Node Name="TrainOutput@Port" Type="TransferNode" Location="120.115709952079 -9.4368958961998E-15 -239.886643852569" Scope="Public">
+              <Node Name="TrainOutput@Port" Type="TransferNode" Location="120.115709952079 -9.4368958961998E-15 -239.824252129135" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -23174,7 +23666,7 @@
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="107">
+              <AttachedObjects IndexList="106">
                 <StatusLabel Center="-7.87211637315354 0 162.791917535103" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="FlowNode6.FlowRegulator.CurrentWeightFlowOut.Rate / 1000" />
               </AttachedObjects>
             </Graphics>
@@ -23215,30 +23707,35 @@
                 <Rows>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
+                    <Property Name="ShipTypeString">Handymax</Property>
                     <Property Name="ShipCargo">52000</Property>
                     <Property Name="PercentOfShips">5</Property>
                     <Property Name="LoadingDelay">2.3</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
+                    <Property Name="ShipTypeString">Panamax</Property>
                     <Property Name="ShipCargo">70000</Property>
                     <Property Name="PercentOfShips">53</Property>
                     <Property Name="LoadingDelay">5</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
+                    <Property Name="ShipTypeString">SmallCape</Property>
                     <Property Name="ShipCargo">90000</Property>
                     <Property Name="PercentOfShips">5</Property>
                     <Property Name="LoadingDelay">4.3</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
+                    <Property Name="ShipTypeString">Capesize</Property>
                     <Property Name="ShipCargo">150000</Property>
                     <Property Name="PercentOfShips">35</Property>
                     <Property Name="LoadingDelay">4.3</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
+                    <Property Name="ShipTypeString">VeryLargeCape</Property>
                     <Property Name="ShipCargo">170000</Property>
                     <Property Name="PercentOfShips">2</Property>
                     <Property Name="LoadingDelay">4.3</Property>
@@ -24613,7 +25110,7 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="Type">Bidirectional</Property>
-              <Property Name="TravelTime" Units="Hours">2</Property>
+              <Property Name="TravelTime" Units="Hours">0</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
@@ -25046,10 +25543,10 @@
           <FloorLabel Center="323.201685333137 0 177.057652888868" Width="35.8312580495667" Height="32.4487872896874" ExternallyVisible="True" BackColor="00ffffff" Text="Train Loader Hours:&#xD;&#xA;Operating:&#xD;&#xA;{Math.Round(Mine.WeatherShutdownSchedule.ResourceState.TotalTime(1),2)}&#xD;&#xA;Shut Down:&#xD;&#xA;{Math.Round(Mine.WeatherShutdownSchedule.ResourceState.TotalTime(6),2)}" />
           <FloorLabel Center="337.682994793754 0 -286.995378185033" Width="95.9096159298234" Height="53.7581766594993" ExternallyVisible="True" Text="Open Cut Stockpile Contents:&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct1LAC.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct1LAC.Maximum/1000,0)}&#xD;&#xA;" />
           <FloorLabel Center="337.683003806647 0 -231.311682994277" Width="95.9096159298234" Height="53.7581766594993" ExternallyVisible="True" Text="Underground Coal Stockpile &#xD;&#xA;Contents:&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct2UGC.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct2UGC.Maximum/1000,0)}&#xD;&#xA;" />
-          <StatusLabel Center="265.176103361414 0 127.858082367137" Width="85.3816619335839" Height="18.5612308551269" ExternallyVisible="True" Expression="Mine.HAC_Feeder.FlowContainer.Contents.Weight / 1000" />
           <StatusLabel Center="-7.87821104581145 0 162.460595609914" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="Mine.FlowNode6.FlowRegulator.CurrentMaximumFlowRate / 1000" />
           <StatusLabel Center="-8.45809629405119 0 161.454980305734" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="Mine.FlowNode5.FlowRegulator.CurrentMaximumFlowRate / 1000" />
           <StatusLabel Center="-8.516819616219 0 161.785290609134" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="Mine.FlowNode5.FlowRegulator.CurrentWeightFlowOut.Rate / 1000" />
+          <FloorLabel Center="125.540271818427 0 140.783123940486" Width="74.3785881378759" Height="13.5469316147751" ExternallyVisible="True" Text="Total Loaded On Trains(t):&#xD;&#xA;{Math.Round((Mine.Output@Stockpile1.FlowRegulator.CurrentWeightFlowOut+Mine.Output@Stockpile2.FlowRegulator.CurrentWeightFlowOut)/1000,0)}" />
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
@@ -25603,7 +26100,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1032</Revision>
+        <Revision>1054</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -25639,11 +26136,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>599</Revision>
+        <Revision>611</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>44</Revision>
+        <Revision>54</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TransferNode">
         <Id>0d40fbf0-8206-443f-b771-65f85633a2f6</Id>
@@ -25723,7 +26220,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>252</Revision>
+        <Revision>253</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -33722,7 +34219,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="252" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="253" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -48976,4 +49473,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- jIX2thq7D9P2PMnxYtiSZiSyz511ut3qU4RInrSfINhqKMs3w/kWJ6cLGEDIDP+D8hsx2y9jsRGMOKUV0iC4kA== -->
+<!-- vW+VsQu0ttwK/AfzMukaKl3kJqnf/31NWtPrVVSOv+6xdI/yMtqIRqWx8kFXJgqeuUXfpKltHZSa2eETAIScYg== -->
