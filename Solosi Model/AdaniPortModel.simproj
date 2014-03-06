@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="48e0008e-d241-40f4-8078-d68634561892" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-06T06:15:29" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-06T23:08:17" />
   <Models>
     <Model Definition="ModelEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -13,8 +13,8 @@
         </Process>
       </ViewInfo>
     </Model>
-    <Model Definition="PortModel">
-      <RunSetup AnimationInterval="10000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+    <Model Definition="PortModel" Trace="True">
+      <RunSetup AnimationInterval="10" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2014-02-24T00:00:00</StartDate>
         <RunLength Units="Hours">8760</RunLength>
       </RunSetup>
@@ -27,6 +27,9 @@
           <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
           <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
           <Property Name="PortStockpileSize">1000000000</Property>
+          <Property Name="LoadingDelay" Units="Hours">4</Property>
+          <Property Name="PreLoadingDelay" Units="Hours">1.5</Property>
+          <Property Name="PostLoadingDelay" Units="Hours">0.5</Property>
         </Properties>
       </RunnableInstance>
       <InteractiveStatistics>
@@ -34,7 +37,7 @@
       </InteractiveStatistics>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="22.4877749982773 217.073602009017 -136.847408253802" Direction="0 -1 2.22044604925031E-16" Zoom="217.073602009017" />
+          <Camera Orientation="Top" Location="-60.446501172401 283.168663814964 -57.6650908737769" Direction="0 -1 2.22044604925031E-16" Zoom="283.168663814964" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process PanelWidth="130">
@@ -528,7 +531,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="546" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="552" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -2966,7 +2969,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="Berth1_AfterProcessing" BeginStepID="3" Category="Berth1 AddOn Processes">
+          <Process Name="Berth1_AfterProcessing" BeginStepID="6" Category="Berth1 AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="Prod1AllocatedContents" ID="2">
@@ -2976,6 +2979,7 @@
                   </Property>
                   <Property Name="NewValue">Product1AllocatedContents - ContainerEntity.FlowContainer.CurrentWeightCapacity</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
               </Step>
               <Step Type="Decide" Name="IsProduct1" ID="3">
                 <Properties>
@@ -2992,10 +2996,34 @@
                   </Property>
                   <Property Name="NewValue">Product2AllocatedContents - ContainerEntity.FlowContainer.CurrentWeightCapacity</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Delay" Name="PostLoadingDelay" ID="5">
+                <Properties>
+                  <Property Name="DelayTime">PostLoadingDelay</Property>
+                </Properties>
+              </Step>
+              <Step Type="Wait" Name="ShipFull" ID="6">
+                <Properties>
+                  <Property Name="EventName">ShipFull</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Release" Name="Shiploader" ID="7">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">ShipLoader</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
             </Steps>
           </Process>
-          <Process Name="Berth2_AfterProcessing" BeginStepID="2" Category="Berth2 AddOn Processes">
+          <Process Name="Berth2_AfterProcessing" BeginStepID="6" Category="Berth2 AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Decide" Name="IsProduct1" ID="2">
@@ -3013,6 +3041,7 @@
                   </Property>
                   <Property Name="NewValue">Product1AllocatedContents - ContainerEntity.FlowContainer.CurrentWeightCapacity</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
               </Step>
               <Step Type="Assign" Name="Prod2AllocatedContents" ID="4">
                 <Properties>
@@ -3021,6 +3050,30 @@
                   </Property>
                   <Property Name="NewValue">Product2AllocatedContents - ContainerEntity.FlowContainer.CurrentWeightCapacity</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Delay" Name="PostLoadingDelay" ID="5">
+                <Properties>
+                  <Property Name="DelayTime">PostLoadingDelay</Property>
+                </Properties>
+              </Step>
+              <Step Type="Wait" Name="ShipFull" ID="6">
+                <Properties>
+                  <Property Name="EventName">ShipFull</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
+              </Step>
+              <Step Type="Release" Name="Shiploader" ID="7">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">ShipLoader</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
             </Steps>
           </Process>
@@ -3194,21 +3247,15 @@
                 <Properties>
                   <Property Name="ProcessName">LoadingNodesOff</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="5" />
+                <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
-              <Step Type="Delay" Name="PostLoadingDelay" ID="4">
-                <Properties>
-                  <Property Name="DelayTime">PostLoadingDelay</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
-              </Step>
-              <Step Type="Execute" Name="FinishLoading" ID="5">
+              <Step Type="Execute" Name="FinishLoading" ID="4">
                 <Properties>
                   <Property Name="ProcessName">FinishLoadingProcess</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
-              <Step Type="Execute" Name="ReadyToDepart" ID="6">
+              <Step Type="Execute" Name="ReadyToDepart" ID="5">
                 <Properties>
                   <Property Name="ProcessName">ReadyToDepartProcess</Property>
                 </Properties>
@@ -3604,6 +3651,14 @@
                 <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
             </Steps>
+          </Process>
+          <Process Name="Berth1_Exited" Category="Berth1 AddOn Processes">
+            <Properties />
+            <Steps />
+          </Process>
+          <Process Name="Berth2_Exited" Category="Berth2 AddOn Processes">
+            <Properties />
+            <Steps />
           </Process>
         </Processes>
         <Objects>
@@ -4008,9 +4063,9 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Sink1" Type="Sink" Location="-123.876368861486 -4.44089209850063E-16 23.579013343602" Size="1.5049811730262 1.02881997857009 1.00000033977415" Scope="Public">
+          <Fixed Name="Sink1" Type="Sink" Location="-121.781927272942 -4.44089209850063E-16 25.7540103778594" Size="1.5049811730262 1.02881997857009 1.00000033977415" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@Sink1" Type="BasicNode" Location="-125.126368861486 -4.44089209850063E-16 23.579013343602" Scope="Public">
+              <Node Name="Input@Sink1" Type="BasicNode" Location="-123.031927272942 -4.44089209850063E-16 25.7540103778594" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4040,8 +4095,8 @@
               <AttachedObjects IndexList="5">
                 <Queue Queue="InputBuffer.Contents">
                   <Points>
-                    <Point Location="-124.876368779689 -4.44089209850063E-16 24.0790135767311" />
-                    <Point Location="-127.876368779689 -4.44089209850063E-16 24.0790135767311" />
+                    <Point Location="-122.781927172095 -4.44089209850063E-16 26.2540106307715" />
+                    <Point Location="-125.781927172095 -4.44089209850063E-16 26.2540106307715" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -4074,6 +4129,7 @@
           <Fixed Name="Berth1" Type="Filler" Location="-44.400476522739 1.22124532708767E-15 -148.555234798487" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
             <AssociatedNodes>
               <Node Name="ContainerInput@Berth1" Type="BasicNode" Location="-45.2225823122357 1.22124532708767E-15 -151.571529111594" Scope="Public">
+                <Breakpoint Enabled="True" />
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4127,6 +4183,7 @@
               <Property Name="FillingContainerAddOnProcess">Berth1_FillingContainer</Property>
               <Property Name="FilledContainerAddOnProcess">Berth1_FilledContainer</Property>
               <Property Name="AfterProcessingAddOnProcess">Berth1_AfterProcessing</Property>
+              <Property Name="ExitedAddOnProcess">Berth1_Exited</Property>
             </Properties>
             <Graphics>
               <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Filler.ResourceState">
@@ -4646,6 +4703,7 @@
               <Property Name="FillingContainerAddOnProcess">Berth2_FillingContainer</Property>
               <Property Name="FilledContainerAddOnProcess">Berth2_FilledContainer</Property>
               <Property Name="AfterProcessingAddOnProcess">Berth2_AfterProcessing</Property>
+              <Property Name="ExitedAddOnProcess">Berth2_Exited</Property>
             </Properties>
             <Graphics>
               <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Filler.ResourceState">
@@ -4918,111 +4976,6 @@
               </SymbolInstances>
             </Graphics>
           </Entity>
-          <Transporter Name="ShipLoader" Type="Vehicle" Location="1.75908348124828 -1.22124532708767E-15 -13.4375444932316" Size="0.537915350760266 1.80125697271835 1.51723700948708" Scope="Public">
-            <IndexedSizes>
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-            </IndexedSizes>
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="NetworkTurnaroundMethod">Reverse</Property>
-              <Property Name="TransportCostPerRider" Units="USD">0.0</Property>
-              <Property Name="TransportCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="InitialNode">SLHome</Property>
-              <Property Name="IdleAction">Go To Home</Property>
-              <Property Name="OffShiftAction">Go To Home</Property>
-              <Property Name="CapitalCostPerVehicle" Units="USD">0.0</Property>
-            </Properties>
-            <Graphics>
-              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Vehicle.ResourceState">
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
-                    </Decoration>
-                    <Decoration SurfacePath="1,0" SurfaceId="0">
-                      <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
-                    </Decoration>
-                  </Decorations>
-                  <FlowDecoration>
-                    <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
-                  </FlowDecoration>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
-                    </Decoration>
-                    <Decoration SurfacePath="1,0" SurfaceId="0">
-                      <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
-                    </Decoration>
-                  </Decorations>
-                  <FlowDecoration>
-                    <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
-                  </FlowDecoration>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
-                    </Decoration>
-                    <Decoration SurfacePath="1,0" SurfaceId="0">
-                      <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
-                    </Decoration>
-                  </Decorations>
-                  <FlowDecoration>
-                    <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
-                  </FlowDecoration>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
-                    </Decoration>
-                    <Decoration SurfacePath="1,0" SurfaceId="0">
-                      <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
-                    </Decoration>
-                  </Decorations>
-                  <FlowDecoration>
-                    <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
-                  </FlowDecoration>
-                </SymbolInstance>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
-                  <Decorations>
-                    <Decoration SurfacePath="0,0" SurfaceId="0">
-                      <MaterialRef Id="5c5accb6-54f0-4ab3-a6aa-ec00d8c824c8" />
-                    </Decoration>
-                    <Decoration SurfacePath="1,0" SurfaceId="0">
-                      <MaterialRef Id="5c5accb6-54f0-4ab3-a6aa-ec00d8c824c8" />
-                    </Decoration>
-                  </Decorations>
-                  <FlowDecoration>
-                    <MaterialRef Id="5c5accb6-54f0-4ab3-a6aa-ec00d8c824c8" />
-                  </FlowDecoration>
-                </SymbolInstance>
-              </SymbolInstances>
-            </Graphics>
-          </Transporter>
           <Fixed Name="Berth1Location" Type="Resource" Location="-45.7548410440961 7.7715611723761E-16 -149.86826319945" Size="1.07990885277285 0.530514603846346 0.322756208211982" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.07990885277285 0.530514603846346 0.322756208211982" />
@@ -5782,6 +5735,111 @@
                   </Decorations>
                   <FlowDecoration>
                     <MaterialRef Id="aaa8350f-5b9a-4716-9b49-dd77b5018f45" />
+                  </FlowDecoration>
+                </SymbolInstance>
+              </SymbolInstances>
+            </Graphics>
+          </Transporter>
+          <Transporter Name="ShipLoader" Type="Vehicle" Location="1.75908348124828 -1.22124532708767E-15 -13.4375444932316" Size="0.537915350760266 1.80125697271835 1.51723700948708" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
+              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
+              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
+              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
+              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
+              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
+              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="NetworkTurnaroundMethod">Reverse</Property>
+              <Property Name="TransportCostPerRider" Units="USD">0.0</Property>
+              <Property Name="TransportCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="InitialNode">SLHome</Property>
+              <Property Name="IdleAction">Go To Home</Property>
+              <Property Name="OffShiftAction">Go To Home</Property>
+              <Property Name="CapitalCostPerVehicle" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics>
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Vehicle.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
+                    </Decoration>
+                    <Decoration SurfacePath="1,0" SurfaceId="0">
+                      <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
+                  </FlowDecoration>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
+                    </Decoration>
+                    <Decoration SurfacePath="1,0" SurfaceId="0">
+                      <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
+                  </FlowDecoration>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
+                    </Decoration>
+                    <Decoration SurfacePath="1,0" SurfaceId="0">
+                      <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="dc12d914-9745-4de3-83f9-eb286dd0309d" />
+                  </FlowDecoration>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
+                    </Decoration>
+                    <Decoration SurfacePath="1,0" SurfaceId="0">
+                      <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" />
+                  </FlowDecoration>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="6918903c-7f5f-456d-8e36-919d0ca03f04" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="5c5accb6-54f0-4ab3-a6aa-ec00d8c824c8" />
+                    </Decoration>
+                    <Decoration SurfacePath="1,0" SurfaceId="0">
+                      <MaterialRef Id="5c5accb6-54f0-4ab3-a6aa-ec00d8c824c8" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="5c5accb6-54f0-4ab3-a6aa-ec00d8c824c8" />
                   </FlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
@@ -7067,7 +7125,7 @@
           <SymbolInstance Center="-36.4260152533057 -0.600259163277376 -138.575632298855" Scale="0.788777192069843" Locked="True" ExternallyVisible="True">
             <SymbolRef Id="672015d6-94d3-47e3-869f-f824180d9ca1" />
           </SymbolInstance>
-          <Rectangle Center="-42.398074734193 -0.171853588428244 -149.741849475525" Width="9.37895045504845" Height="0.61136690733349" Rotation="-0.302782102546189" ExternallyVisible="True" YHeight="0.0900000035762787">
+          <Rectangle Center="-42.2829955260312 -0.171853588428244 -149.741849475525" Width="9.37895045504845" Height="0.61136690733349" Rotation="-0.302782102546189" ExternallyVisible="True" YHeight="0.0900000035762787">
             <Decorations>
               <Decoration SurfaceId="1">
                 <MaterialRef Id="724f37fd-909e-4f66-bca3-b0739a8fed2b" />
@@ -7114,7 +7172,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>546</Revision>
+        <Revision>552</Revision>
       </DefinitionRef>
       <DefinitionRef Name="StockpileTank">
         <Id>90391288-72ad-45e0-99bb-82059bd606bf</Id>
@@ -7223,9 +7281,6 @@
       <ColorMaterial Id="1ab2c368-374d-4363-a4e8-80729c9da7cd" Color="00bfff" />
       <ColorMaterial Id="b58761a0-d015-4315-8892-ca540263448a" Color="008000" />
       <ColorMaterial Id="0081c97e-5480-4794-b850-ca5cb7ed18cc" Color="5f9ea0" />
-      <ColorMaterial Id="dc12d914-9745-4de3-83f9-eb286dd0309d" Color="a9a9a9" />
-      <ColorMaterial Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" Color="ff0000" />
-      <ColorMaterial Id="5c5accb6-54f0-4ab3-a6aa-ec00d8c824c8" Color="ffff00" />
       <ColorMaterial Id="8c0c50f3-89e0-4d0e-9832-25105adb3f21" Color="008000" />
       <ColorMaterial Id="9485882c-6983-4fde-a66c-16c0a638323b" Color="ffff00" />
       <ColorMaterial Id="368a58b3-9ba7-4936-8bea-cfae7df6308d" Color="ff0000" />
@@ -7240,6 +7295,9 @@
       <ColorMaterial Id="c012b690-51f0-4241-901f-dd24d4ed0c3c" Color="ffff00" />
       <ColorMaterial Id="36c56047-d251-4204-950a-c005c35835e5" Color="ff0000" />
       <ColorMaterial Id="50dd3f3e-855c-4b36-b198-9422bff1db53" Color="1e90ff" />
+      <ColorMaterial Id="dc12d914-9745-4de3-83f9-eb286dd0309d" Color="a9a9a9" />
+      <ColorMaterial Id="0a6dc256-8c28-4b9f-9f9b-a80ec5e884cd" Color="ff0000" />
+      <ColorMaterial Id="5c5accb6-54f0-4ab3-a6aa-ec00d8c824c8" Color="ffff00" />
       <ColorMaterial Id="7ec127bc-0d9a-46b0-81fe-a76635f49b38" Color="c0c0c0" />
       <ColorMaterial Id="724f37fd-909e-4f66-bca3-b0739a8fed2b" Color="808080" />
       <ColorMaterial Id="cb967173-e6e9-4e72-b822-9dda034c59ce" Color="696969" />
@@ -20427,4 +20485,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- ZeNLnN1bSXcxdzoUG3Yzult4Ct7rCpmOfAQZbL1XTUdbrFL8CF/6VmtiNilaV8cxqh/b8TfHFp8GefnQ1oPRUA== -->
+<!-- QtW3ZTytvMK4OrsRgJRUoRXlfdq6yj3p4hT0HBAVo9CVZsLkHKM0nQGPyDKjZWHcQWJHLI+HCqaQvUw/j0xnyg== -->
