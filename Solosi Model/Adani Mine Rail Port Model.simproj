@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" UserName="Sales and Support" Organization="Solosi Pty Ltd" SerialNumber="4106" SaveDate="2014-03-06T15:19:47" />
+  <DocumentInfo LicenseInfo="9:1" UserName="Sales and Support" Organization="Solosi Pty Ltd" SerialNumber="4106" SaveDate="2014-03-06T23:08:27" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,7 +9,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="150" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="1500" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
         <RunLength Units="Hours">43800</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
@@ -134,25 +134,21 @@
           </ViewInfo>
         </Experiment>
       </Experiments>
-      <ViewInfo>
+      <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="70.1732672264724 219.319519042969 101.955153949042" Direction="0 -1 2.22044604925031E-16" Zoom="219.319519042969" />
+          <Camera Orientation="Top" Location="-8.73671893229302 6.19523357522229 163.716439009338" Direction="0 -1 2.22044604925031E-16" Zoom="6.19523357522229" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" Queues="False" Background="ffdead" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="TrainYard AddOn Processes" Expanded="True" />
-            <Category Name="Section2Entry AddOn Processes" Expanded="True" />
             <Category Name="TrainOutput@DummyMine AddOn Processes" Expanded="True" />
             <Category Name="TrainOutput@DummyPort AddOn Processes" Expanded="True" />
-            <Category Name="To Port" Expanded="True" />
             <Category Name="To Mine" Expanded="True" />
-            <Category Name="RequestProcessing AddOn Processes" Expanded="True" />
             <Category Name="TrainInput@DummyMine AddOn Processes" Expanded="True" />
             <Category Name="TrainInput@DummyPort AddOn Processes" Expanded="True" />
             <Category Name="PortSig4 AddOn Processes" Expanded="True" />
             <Category Name="Resource1 AddOn Processes" Expanded="True" />
-            <Category Name="TrackResource AddOn Processes" Expanded="True" />
             <Category Name="T1 AddOn Processes" Expanded="True" />
             <Category Name="T2 AddOn Processes" Expanded="True" />
             <Category Name="T3 AddOn Processes" Expanded="True" />
@@ -162,18 +158,28 @@
             <Category Name="T7 AddOn Processes" Expanded="True" />
             <Category Name="T8 AddOn Processes" Expanded="True" />
             <Category Name="T9 AddOn Processes" Expanded="True" />
-            <Category Name="T10 AddOn Processes" Expanded="True" />
-            <Category Name="MS1 AddOn Processes" Expanded="True" />
             <Category Name="Track1 AddOn Processes" Expanded="True" />
             <Category Name="ChannelExit AddOn Processes" />
             <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
-            <Category Name="B1Exit AddOn Processes" Expanded="True" />
             <Category Name="B2Exit AddOn Processes" Expanded="True" />
             <Category Name="Port AddOn Processes" Expanded="True" />
-            <Category Name="Input@ShipExit AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Section2Entry AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="To Port" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="RequestProcessing AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="TrackResource AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="MS1 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="T10 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -184,25 +190,10 @@
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="B1Exit AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
+            <Category Name="Input@ShipExit AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
         </Process>
@@ -492,45 +483,54 @@
       <DashboardReports>
         <DashboardReport Name="Stockpile Dashboard" Data="Data\Dashboards\MineModelRev18_StockpileDashboard.xml" />
       </DashboardReports>
-      <ViewInfo ActiveModel="True" ActiveView="Facility">
+      <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-135.112562244563 197.998505554199 318.768554830219" Direction="0 -1 2.22044604925031E-16" Zoom="197.998505554199" />
+          <Camera Orientation="Top" Location="-78.4045165669601 138.59895324707 240.444639168662" Direction="0 -1 2.22044604925031E-16" Zoom="138.59895324707" />
           <ObjectDisplay Axis="False" Grid="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="Data Collection" Expanded="True" />
             <Category Name="TrainSink AddOn Processes" Expanded="True" />
+            <Category Name="CPPWorkSchedule AddOn Processes" Expanded="True" />
+            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="UC_Stockpile AddOn Processes" Expanded="True" />
+            <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
+            <Category Name="LACGenServer AddOn Processes" Expanded="True" />
+            <Category Name="LW1GenServer AddOn Processes" Expanded="True" />
+            <Category Name="LW2GenServer AddOn Processes" Expanded="True" />
+            <Category Name="LWDevGenServer AddOn Processes" Expanded="True" />
+            <Category Name="Raw Coal Events" Expanded="True" />
+            <Category Name="Conveyor Control Events" Expanded="True" />
             <Category Name="WeatherShutdownSchedule AddOn Processes" Expanded="True" />
             <Category Name="TLOStockpileControl_Processes" Expanded="True" />
-            <Category Name="TrainLoadStation AddOn Processes" Expanded="True" />
-            <Category Name="LW1GenServer AddOn Processes" Expanded="True" />
-            <Category Name="CPPWorkSchedule AddOn Processes" Expanded="True" />
-            <Category Name="LW2GenServer AddOn Processes" Expanded="True" />
             <Category Name="Output@Stockpile AddOn Processes" Expanded="True" />
-            <Category Name="LAC_Feeder AddOn Processes" Expanded="True" />
             <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
-            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
-            <Category Name="Conveyor Control Events" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Raw Coal Events" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
+            <Category Name="TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="TrainTransferNode1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="LACGenServer AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="LWDevGenServer AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="HAC_Feeder AddOn Processes" Expanded="True" />
+            <Category Name="LAC_Feeder AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
@@ -619,7 +619,7 @@
         </OperationalPlanningResourceGantt>
         <OperationalFacility>
           <Camera Orientation="Top" Location="474.057333297479 2632.93060528458 79.5048668584623" Direction="0 -1 2.22044604925031E-16" Zoom="2632.93060528458" />
-          <ObjectDisplay Grid="False" LineArrows="False" Background="ffffff" />
+          <ObjectDisplay Axis="False" Grid="False" LineArrows="False" Background="ffffff" />
         </OperationalFacility>
       </ViewInfo>
     </Model>
@@ -702,6 +702,10 @@
             </Columns>
           </Gantt>
         </OperationalPlanningResourceGantt>
+        <OperationalFacility>
+          <Camera Orientation="Top" Location="-0.265392781314529 12.5 -0.663481953292689" Direction="0 -1 2.22044604925031E-16" Zoom="12.5" />
+          <ObjectDisplay Background="ffffff" />
+        </OperationalFacility>
       </ViewInfo>
     </Model>
   </Models>
@@ -1414,7 +1418,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="613" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="616" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -2780,6 +2784,12 @@
                   </Property>
                   <Property Name="NewValue">True</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Execute" Name="ResetFeeds" ID="4">
+                <Properties>
+                  <Property Name="ProcessName">Feeder_TankEmpty</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -2840,6 +2850,12 @@
                 <Properties>
                   <Property Name="ProcessName">DowntimeLogger</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Execute" Name="ResetFeeds" ID="4">
+                <Properties>
+                  <Property Name="ProcessName">Feeder_TankEmpty</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -2858,6 +2874,12 @@
               <Step Type="Execute" Name="DowntimeLogger" ID="3">
                 <Properties>
                   <Property Name="ProcessName">DowntimeLogger</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Execute" Name="ResetFeeds" ID="4">
+                <Properties>
+                  <Property Name="ProcessName">Feeder_TankEmpty</Property>
                 </Properties>
               </Step>
             </Steps>
@@ -3761,6 +3783,28 @@
               </Step>
             </Steps>
           </Process>
+          <Process Name="Feeder_TankEmpty" BeginStepID="2" Category="LAC_Feeder AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Execute" Name="ResetBypass" ID="2">
+                <Properties>
+                  <Property Name="ProcessName">Output@LAC_ROMPAD.ResetFlowRegulator</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Execute" Name="ResetWashed" ID="3">
+                <Properties>
+                  <Property Name="ProcessName">Output@HAC_ROMPAD.ResetFlowRegulator</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Execute" Name="ResetOptional" ID="4">
+                <Properties>
+                  <Property Name="ProcessName">Output@Optional_ROMPAD.ResetFlowRegulator</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
         </Processes>
         <Objects>
           <Fixed Name="HAC1_Input" Type="MyFlowSource" Location="-87.2250982712906 -3.33066907387545E-15 386.452690040141" Size="15 10 10" Scope="Public">
@@ -3798,9 +3842,9 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="HAC_Feeder" Type="MyTank" Location="-60.6893274554447 -4.41868763800812E-14 282.533668732927" Size="15 10 10" Scope="Public">
+          <Fixed Name="HAC_Feeder" Type="MyTank" Location="-60.6538850920919 -4.24105195406809E-14 282.549242314406" Size="15 10 10" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@HAC_Feeder" Type="FlowNode" Location="-65.2159098772578 -4.41868763800812E-14 287.982516704721" Scope="Public">
+              <Node Name="Input@HAC_Feeder" Type="FlowNode" Location="-65.180467513905 -4.24105195406809E-14 287.9980902862" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3813,7 +3857,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" NodeLinkMergeType="None" />
               </Node>
-              <Node Name="Output@HAC_Feeder" Type="FlowNode" Location="-57.4557565465166 -4.41868763800812E-14 276.131559826726" Scope="Public">
+              <Node Name="Output@HAC_Feeder" Type="FlowNode" Location="-57.4203141831638 -4.24105195406809E-14 276.147133408205" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3838,6 +3882,7 @@
               <Property Name="TankLevelMidMark" Units="Metric Tons">HAC_FeederCapacity/2</Property>
               <Property Name="TankLevelFallingBelowMidMarkAddOnProcess">HAC_Feeder_BelowMidMark</Property>
               <Property Name="TankLevelFallingBelowLowMarkAddOnProcess">HAC_Feeder_BelowLowMark</Property>
+              <Property Name="TankEmptyAddOnProcess">Feeder_TankEmpty</Property>
             </Properties>
             <Graphics ExternallyVisible="True">
               <SymbolInstances>
@@ -3847,9 +3892,9 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="LAC_Feeder" Type="MyTank" Location="-93.0491758826435 -3.69704267200178E-14 234.922127132462" Size="15 10 10" Scope="Public">
+          <Fixed Name="LAC_Feeder" Type="MyTank" Location="-93.0912961436068 -3.87467835594181E-14 234.945473113284" Size="15 10 10" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@LAC_Feeder" Type="FlowNode" Location="-92.9163351034401 -3.69704267200178E-14 243.325400540787" Scope="Public">
+              <Node Name="Input@LAC_Feeder" Type="FlowNode" Location="-92.9584553644034 -3.87467835594181E-14 243.348746521609" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3862,7 +3907,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" NodeLinkMergeType="None" />
               </Node>
-              <Node Name="Output@LAC_Feeder" Type="FlowNode" Location="-83.9805639421562 -3.69704267200178E-14 236.756035719707" Scope="Public">
+              <Node Name="Output@LAC_Feeder" Type="FlowNode" Location="-84.0226842031195 -3.87467835594181E-14 236.779381700529" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3886,6 +3931,7 @@
               <Property Name="RefillEntityType">Washed</Property>
               <Property Name="TankLevelMidMark" Units="Metric Tons">LAC_FeederCapacity/2</Property>
               <Property Name="TankLevelFallingBelowLowMarkAddOnProcess">LAC_Feeder_BelowLowMark</Property>
+              <Property Name="TankEmptyAddOnProcess">Feeder_TankEmpty</Property>
             </Properties>
             <Graphics ExternallyVisible="True">
               <SymbolInstances>
@@ -4387,7 +4433,7 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="5 12">
-                <FloorLabel Center="-221.389822120548 0 302.879885782344" Width="131.432965620351" Height="47.068925215188" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="15" Text="LAC ROM PAD&#xD;&#xA;{Math.Round(FlowContainer.Contents.Weight/1000,0)}/&#xD;&#xA;{FlowContainer.CurrentWeightCapacity/1000}" />
+                <FloorLabel Center="-246.359438158462 0 254.699077371157" Width="131.432965620351" Height="47.068925215188" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="15" Text="LAC ROM PAD&#xD;&#xA;{Math.Round(FlowContainer.Contents.Weight/1000,0)}/&#xD;&#xA;{FlowContainer.CurrentWeightCapacity/1000}" />
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
                     <Point Location="-154.208472859595 -6.66133814775094E-16 264.018245637474" Direction="0.00340201179384914 0 -0.748270908196708" />
@@ -6700,6 +6746,8 @@
                   <Property Name="FlowSplitAllocationRule">Proportional Based On Link Weights</Property>
                   <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
                   <Property Name="InitialMaximumFlowRate">Unconstrained</Property>
+                  <Property Name="DynamicUpdateInterval" Units="Minutes">1.0</Property>
+                  <Property Name="DynamicMaximumFlowRateEquation">Unconstrained</Property>
                 </Properties>
                 <Graphics ExternallyVisible="True">
                   <AttachedObjects IndexList="93">
@@ -6723,6 +6771,9 @@
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
+              <AttachedObjects IndexList="97">
+                <FloorLabel Center="-245.232212216383 0 313.943653453896" Width="127.661558052998" Height="40.7954290196915" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="15" Text="Optional ROM PAD&#xD;&#xA;{Math.Round(FlowContainer.Contents.Weight/1000,0)}/&#xD;&#xA;{FlowContainer.CurrentWeightCapacity/1000}" />
+              </AttachedObjects>
             </Graphics>
           </Fixed>
           <Fixed Name="NodeReader3_2" Type="NodeReader" Location="-8.0073198495911 -2.48980278905856E-25 283.434851762481" Size="48.9222072739354 21.703927611053 1.08703939512759" Scope="Public">
@@ -6762,7 +6813,7 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="NodeReader3_2_2" Type="NodeReader" Location="-131.775195533737 4.44089209601082E-16 229.208626053055" Size="48.9222072739354 21.703927611053 1.08703939512759" Scope="Public">
+          <Fixed Name="NodeReader3_2_2" Type="NodeReader" Location="-131.775195533737 -2.48980624032502E-25 229.03630053392" Size="48.9222072739354 21.703927611053 1.08703939512759" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -8643,7 +8694,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="SelectionWeight">Math.If(Output@HAC2_Input.FlowRegulator.CurrentWeightFlowOut.Rate &gt; 0, Math.Min(1, Math.Max(CV_1301T_FlowRate - Output@HAC1_Input.FlowRegulator.CurrentWeightFlowOut.Rate, 0)/Math.min(Output@HAC2_Input.FlowRegulator.CurrentWeightFlowOut.Rate, (CV_1401T_FlowRate - Output@LAC_Input.FlowRegulator.CurrentWeightFlowOut.Rate) + (CV_1301T_FlowRate - Output@HAC1_Input.FlowRegulator.CurrentWeightFlowOut.Rate) )), 0)</Property>
+              <Property Name="SelectionWeight">Math.Max(0, Math.If(Output@HAC2_Input.FlowRegulator.CurrentWeightFlowOut.Rate &gt; 0, Math.Min(1, Math.Max(CV_1301T_FlowRate - Output@HAC1_Input.FlowRegulator.CurrentWeightFlowOut.Rate, 0)/Math.min(Output@HAC2_Input.FlowRegulator.CurrentWeightFlowOut.Rate, Math.max(1, (CV_1401T_FlowRate - Output@LAC_Input.FlowRegulator.CurrentWeightFlowOut.Rate)) + Math.Max(1,(CV_1301T_FlowRate - Output@HAC1_Input.FlowRegulator.CurrentWeightFlowOut.Rate)) )), 0))</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
@@ -14769,7 +14820,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1056" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1059" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -25744,7 +25795,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="56" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="59" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -26831,7 +26882,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1056</Revision>
+        <Revision>1059</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -26867,11 +26918,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>613</Revision>
+        <Revision>616</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>56</Revision>
+        <Revision>59</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -26955,7 +27006,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>254</Revision>
+        <Revision>255</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -35118,7 +35169,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="254" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="255" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -50373,4 +50424,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- J2a6GNRLFIAHJziUzKiSkn3uWIeVMDryv2YN0p7yQBt7F2JB+Bi4NecUaXGwljKSqe3uZG9yp0vxMsfKZn9oRw== -->
+<!-- NX02uOu2yllXMbP92G5GzM/NGpRgAeVWxYauSpZsrXrwsJzIBIAtqDBJ9aMkg0zyfg2cOrKzoHMmK00Ga6ETdw== -->
