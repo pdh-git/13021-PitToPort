@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="48e0008e-d241-40f4-8078-d68634561892" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-06T23:08:17" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-06T23:13:06" />
   <Models>
     <Model Definition="ModelEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -13,8 +13,8 @@
         </Process>
       </ViewInfo>
     </Model>
-    <Model Definition="PortModel" Trace="True">
-      <RunSetup AnimationInterval="10" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+    <Model Definition="PortModel">
+      <RunSetup AnimationInterval="10000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2014-02-24T00:00:00</StartDate>
         <RunLength Units="Hours">8760</RunLength>
       </RunSetup>
@@ -37,7 +37,7 @@
       </InteractiveStatistics>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="-60.446501172401 283.168663814964 -57.6650908737769" Direction="0 -1 2.22044604925031E-16" Zoom="283.168663814964" />
+          <Camera Orientation="Top" Location="-53.405142977544 283.168670654297 -80.037512040497" Direction="0 -1 2.22044604925031E-16" Zoom="283.168670654297" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process PanelWidth="130">
@@ -531,7 +531,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="552" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="553" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -4129,7 +4129,6 @@
           <Fixed Name="Berth1" Type="Filler" Location="-44.400476522739 1.22124532708767E-15 -148.555234798487" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
             <AssociatedNodes>
               <Node Name="ContainerInput@Berth1" Type="BasicNode" Location="-45.2225823122357 1.22124532708767E-15 -151.571529111594" Scope="Public">
-                <Breakpoint Enabled="True" />
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -7172,7 +7171,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>552</Revision>
+        <Revision>553</Revision>
       </DefinitionRef>
       <DefinitionRef Name="StockpileTank">
         <Id>90391288-72ad-45e0-99bb-82059bd606bf</Id>
@@ -20485,4 +20484,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- QtW3ZTytvMK4OrsRgJRUoRXlfdq6yj3p4hT0HBAVo9CVZsLkHKM0nQGPyDKjZWHcQWJHLI+HCqaQvUw/j0xnyg== -->
+<!-- 1mI5DwnjfVb1FNOJIzd/4cDg83XpA38vllvF8cKlY9SWn5hCaz7BTEJTGikb4UoYUFaAudqFAn7OStZr2dA72g== -->
