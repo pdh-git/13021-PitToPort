@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-07T00:58:06" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-07T01:19:15" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -11,7 +11,7 @@
     <Model Definition="RailPortModel">
       <RunSetup AnimationInterval="100" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
-        <RunLength Units="Hours">43800</RunLength>
+        <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
       </RunSetup>
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -134,9 +134,9 @@
           </ViewInfo>
         </Experiment>
       </Experiments>
-      <ViewInfo ActiveModel="True" ActiveView="Facility">
+      <ViewInfo ActiveModel="True" ActiveView="Process">
         <Facility>
-          <Camera Orientation="Top" Location="54.5526890579546 913.450743034671 -138.206958567528" Direction="0 -1 2.22044604925031E-16" Zoom="913.450743034671" />
+          <Camera Orientation="Top" Location="138.97112280328 913.450744628906 -178.251600215952" Direction="0 -1 2.22044604925031E-16" Zoom="913.450744628906" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -1431,7 +1431,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="637" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="638" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -14833,7 +14833,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1086" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1087" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -20185,7 +20185,7 @@
                   </Property>
                   <Property Name="NewValue">6</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
               <Step Type="Decide" Name="IsOutage" ID="3">
                 <Properties>
@@ -20197,6 +20197,24 @@
               <Step Type="Wait" Name="Go" ID="4">
                 <Properties>
                   <Property Name="EventName">TrackResumed</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Assign" Name="TrackBlockedStart" ID="5">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TrackBlockedStart</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Assign" Name="AccumulateBlockedTime" ID="6">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TrackBlockedTotal</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity.TrackBlockedTotal + Math.If(TrainEntity.TrackBlockedStart &gt; 0, Run.TimeNow - TrainEntity.TrackBlockedStart, 0)</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
@@ -26547,7 +26565,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </LinkDefinition>
-      <EntityDefinition Name="TrainEntity" Id="eda2504a-4cf7-47eb-a302-9c24622fa118" Revision="70" BaseClass="ContainerEntity" Author="Sales and Support" CheckBaseForAdvancedProperties="True">
+      <EntityDefinition Name="TrainEntity" Id="eda2504a-4cf7-47eb-a302-9c24622fa118" Revision="71" BaseClass="ContainerEntity" Author="Sales and Support" CheckBaseForAdvancedProperties="True">
         <Lists>
           <StringList Name="ResourceStatesList">
             <Items>
@@ -26824,35 +26842,17 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="TimeFailedBlockTime" BeginStepID="2">
+          <Process Name="TimeFailedBlockTime">
             <Properties>
               <Property Name="TriggeringEventName">TrackFailedEvent</Property>
             </Properties>
-            <Steps>
-              <Step Type="Assign" Name="TrackBlockedStart" ID="2">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>TrackBlockedStart</Value>
-                  </Property>
-                  <Property Name="NewValue">Run.TimeNow</Property>
-                </Properties>
-              </Step>
-            </Steps>
+            <Steps />
           </Process>
-          <Process Name="AccumulatedTimeFailed" BeginStepID="2">
+          <Process Name="AccumulatedTimeFailed">
             <Properties>
               <Property Name="TriggeringEventName">TrackRepairedEvent</Property>
             </Properties>
-            <Steps>
-              <Step Type="Assign" Name="AccumulateBlockedTime" ID="2">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>TrackBlockedTotal</Value>
-                  </Property>
-                  <Property Name="NewValue">TrackBlockedTotal + Math.If(TrackBlockedStart &gt; 0, Run.TimeNow - TrackBlockedStart, 0)</Property>
-                </Properties>
-              </Step>
-            </Steps>
+            <Steps />
           </Process>
         </Processes>
         <External>
@@ -26975,7 +26975,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1086</Revision>
+        <Revision>1087</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -26983,7 +26983,7 @@
       </DefinitionRef>
       <DefinitionRef Name="TrainEntity">
         <Id>eda2504a-4cf7-47eb-a302-9c24622fa118</Id>
-        <Revision>70</Revision>
+        <Revision>71</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyPortModel">
         <Id>6f605774-81cb-44d1-b3c1-a310b58758b8</Id>
@@ -27011,7 +27011,7 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>637</Revision>
+        <Revision>638</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
@@ -27099,7 +27099,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>260</Revision>
+        <Revision>261</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -35262,7 +35262,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="260" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="261" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -50581,4 +50581,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- AkGjMc9LssPsJOIdIZpFrGW6Fq8E5GVg3M7dbzE21BAoU66WnrqMGNjxS6i/PMhog3BAija0CXm0kkbbtkxrGQ== -->
+<!-- rywNvo2pQ0TtXrs6hr1H+/t/mo8PqpMuJ8nDsNGfUSP5XNefydnsAVZVTw8dj2SykkRzCs/wFnOpyK2Jio+5fg== -->
