@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="48e0008e-d241-40f4-8078-d68634561892" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-06T23:13:06" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-07T00:28:46" />
   <Models>
     <Model Definition="ModelEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -14,7 +14,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="PortModel">
-      <RunSetup AnimationInterval="10000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="100" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2014-02-24T00:00:00</StartDate>
         <RunLength Units="Hours">8760</RunLength>
       </RunSetup>
@@ -37,7 +37,7 @@
       </InteractiveStatistics>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="-53.405142977544 283.168670654297 -80.037512040497" Direction="0 -1 2.22044604925031E-16" Zoom="283.168670654297" />
+          <Camera Orientation="Top" Location="-44.0403357537178 19.8558798751831 -151.022639006236" Direction="0 -1 2.22044604925031E-16" Zoom="19.8558798751831" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process PanelWidth="130">
@@ -531,7 +531,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="553" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="561" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -786,7 +786,7 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">ContainerEntity.FlowContainer.Contents.Weight &lt;= 0</Property>
                 </Properties>
-                <Exit Name="False" Type="Alternate" NextID="2" />
+                <Exit Name="False" Type="Alternate" NextID="10" />
               </Step>
               <Step Type="Wait" Name="Finished" ID="5">
                 <Properties>
@@ -841,6 +841,22 @@
                   <Property Name="ProcessName">UnloadingNodesOff</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Search" Name="Berths" ExclusionExpression="1" ID="10">
+                <Properties>
+                  <Property Name="CollectionType">ObjectList</Property>
+                  <Property Name="PopulationName">Prod1</Property>
+                  <Property Name="ObjectListName">BerthList</Property>
+                  <Property Name="MatchCondition">Math.If(Candidate.Filler.Processing.Contents.NumberWaiting&gt;0,Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.Priority==ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority&amp;&amp;Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.FlowContainer.CurrentWeightCapacity-Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.FlowContainer.Contents.Weight&gt;ContainerEntity.FlowContainer.CurrentWeightCapacity,False)</Property>
+                </Properties>
+                <Exit Name="Original" Type="Primary" NextID="2" />
+                <Exit Name="Found" Type="Alternate" NextID="11" />
+              </Step>
+              <Step Type="Notify" Name="Can Direct Load" ExclusionExpression="1" ID="11">
+                <Properties>
+                  <Property Name="MessageHeading">"Alert"</Property>
+                  <Property Name="MessageContent">"Can Direct Load"</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -3002,12 +3018,13 @@
                 <Properties>
                   <Property Name="DelayTime">PostLoadingDelay</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Wait" Name="ShipFull" ID="6">
                 <Properties>
                   <Property Name="EventName">ShipFull</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
+                <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
               <Step Type="Release" Name="Shiploader" ID="7">
                 <Properties>
@@ -3020,6 +3037,17 @@
                   </Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Execute" Name="FinishLoading" ID="8">
+                <Properties>
+                  <Property Name="ProcessName">FinishLoadingProcess</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Execute" Name="ReadyToDepart" ID="9">
+                <Properties>
+                  <Property Name="ProcessName">ReadyToDepartProcess</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -3056,12 +3084,13 @@
                 <Properties>
                   <Property Name="DelayTime">PostLoadingDelay</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Wait" Name="ShipFull" ID="6">
                 <Properties>
                   <Property Name="EventName">ShipFull</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
+                <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
               <Step Type="Release" Name="Shiploader" ID="7">
                 <Properties>
@@ -3074,6 +3103,17 @@
                   </Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Execute" Name="FinishLoading" ID="8">
+                <Properties>
+                  <Property Name="ProcessName">FinishLoadingProcess</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
+              </Step>
+              <Step Type="Execute" Name="ReadyToDepart" ID="9">
+                <Properties>
+                  <Property Name="ProcessName">ReadyToDepartProcess</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -3247,18 +3287,6 @@
                 <Properties>
                   <Property Name="ProcessName">LoadingNodesOff</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
-              </Step>
-              <Step Type="Execute" Name="FinishLoading" ID="4">
-                <Properties>
-                  <Property Name="ProcessName">FinishLoadingProcess</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="5" />
-              </Step>
-              <Step Type="Execute" Name="ReadyToDepart" ID="5">
-                <Properties>
-                  <Property Name="ProcessName">ReadyToDepartProcess</Property>
-                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -3274,24 +3302,6 @@
               <Step Type="Execute" Name="LoadingNodesOFF" ID="3">
                 <Properties>
                   <Property Name="ProcessName">LoadingNodesOff</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="5" />
-              </Step>
-              <Step Type="Delay" Name="PostLoadingDelay" ID="4">
-                <Properties>
-                  <Property Name="DelayTime">PostLoadingDelay</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
-              </Step>
-              <Step Type="Execute" Name="FinishLoading" ID="5">
-                <Properties>
-                  <Property Name="ProcessName">FinishLoadingProcess</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
-              </Step>
-              <Step Type="Execute" Name="ReadyToDepart" ID="6">
-                <Properties>
-                  <Property Name="ProcessName">ReadyToDepartProcess</Property>
                 </Properties>
               </Step>
             </Steps>
@@ -6536,7 +6546,7 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="Type">Bidirectional</Property>
-              <Property Name="TravelTime" Units="Hours">1.5</Property>
+              <Property Name="TravelTime" Units="Hours">0</Property>
             </Properties>
             <Graphics />
           </Link>
@@ -7171,7 +7181,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>553</Revision>
+        <Revision>561</Revision>
       </DefinitionRef>
       <DefinitionRef Name="StockpileTank">
         <Id>90391288-72ad-45e0-99bb-82059bd606bf</Id>
@@ -20484,4 +20494,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- 1mI5DwnjfVb1FNOJIzd/4cDg83XpA38vllvF8cKlY9SWn5hCaz7BTEJTGikb4UoYUFaAudqFAn7OStZr2dA72g== -->
+<!-- eA6rfYd7pUUzjvlK2exOQqggQ2gcBEvvJA/QEUF9dv1jsZsPrzSsBRguDGqvT0pQ3mZs3VbeKQZgEc2JbxXF3g== -->
