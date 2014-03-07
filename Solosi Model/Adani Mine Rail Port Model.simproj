@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-06T23:47:04" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-07T00:58:06" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,7 +9,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="1500" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="100" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
         <RunLength Units="Hours">43800</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
@@ -134,10 +134,10 @@
           </ViewInfo>
         </Experiment>
       </Experiments>
-      <ViewInfo ActiveModel="True" ActiveView="Process">
+      <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="57.1358057092588 913.450690936764 -194.830583534009" Direction="0 -1 2.22044604925031E-16" Zoom="913.450690936764" />
-          <ObjectDisplay Axis="False" Grid="False" Labels="False" Queues="False" Background="ffdead" />
+          <Camera Orientation="Top" Location="54.5526890579546 913.450743034671 -138.206958567528" Direction="0 -1 2.22044604925031E-16" Zoom="913.450743034671" />
+          <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
         </Facility>
         <Process>
           <Categories>
@@ -260,7 +260,7 @@
         </OperationalPlanningResourceGantt>
         <OperationalFacility>
           <Camera Orientation="Top" Location="5.80455236347258 83.5295230397518 -19.7217412975566" Direction="0 -1 2.22044604925031E-16" Zoom="83.5295230397518" />
-          <ObjectDisplay Axis="False" Grid="False" Labels="False" Queues="False" Background="ffdead" />
+          <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
         </OperationalFacility>
       </ViewInfo>
     </Model>
@@ -1431,7 +1431,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="624" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="637" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -14833,7 +14833,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1071" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1086" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -20027,14 +20027,14 @@
               </Step>
               <Step Type="Tally" Name="AnnualQueueForProduct" ID="18">
                 <Properties>
-                  <Property Name="TallyStatisticName">Annual_TimeBerthQueue</Property>
+                  <Property Name="TallyStatisticName">Annual_TimeProductQueue</Property>
                   <Property Name="Value">ShipEntity.T_AllocatedProduct-ShipEntity.T_ArriveAtAnchorage</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="19" />
               </Step>
               <Step Type="Tally" Name="AnnualQueueForBerth" ID="19">
                 <Properties>
-                  <Property Name="TallyStatisticName">Annual_TimeProductQueue</Property>
+                  <Property Name="TallyStatisticName">Annual_TimeBerthQueue</Property>
                   <Property Name="Value">ShipEntity.T_AllocatedBerth-ShipEntity.T_AllocatedProduct</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="6" />
@@ -23124,7 +23124,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Berth1ShipInput@Port" Type="BasicNode" Location="130.730113810925 6.32827105347742E-15 -404.025120091268" Scope="Public">
+              <Node Name="Berth1ShipInput@Port" Type="BasicNode" Location="130.709141457584 6.32827105347742E-15 -404.05657862128" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -23172,9 +23172,9 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="PortStockpileSize">7000000000</Property>
-              <Property Name="LoadingDelay">ShipEntity.LoadingDelay</Property>
-              <Property Name="PreLoadingDelay">ShipEntity.PreLoadingDelay</Property>
-              <Property Name="PostLoadingDelay">ShipEntity.PostLoadingDelay</Property>
+              <Property Name="LoadingDelay" Units="Hours">ShipEntity.LoadingDelay</Property>
+              <Property Name="PreLoadingDelay" Units="Hours">ShipEntity.PreLoadingDelay</Property>
+              <Property Name="PostLoadingDelay" Units="Hours">ShipEntity.PostLoadingDelay</Property>
               <Property Name="ArriveBerthProcess">Port_ArriveBerthProcess</Property>
               <Property Name="BeginLoadingProcess">Port_BeginLoadingProcess</Property>
               <Property Name="FinishLoadingProcess">Port_FinishLoadingProcess</Property>
@@ -23652,9 +23652,9 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="ShipGenerator1" Type="ShipGenerator" Location="173.847807677271 -8.88178419700125E-16 -521.872896203403" Size="4.14132007233273 3.03372513562387 2.01252392801819" Scope="Public">
+          <Fixed Name="ShipGenerator1" Type="ShipGenerator" Location="173.585762423966 -8.88178419700125E-16 -522.964751425508" Size="4.14132007233273 3.03372513562387 2.01252392801819" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@ShipGenerator1" Type="TransferNode" Location="176.464746412974 -8.88178419700125E-16 -521.838227095187" Scope="Public">
+              <Node Name="Output@ShipGenerator1" Type="TransferNode" Location="176.202701159669 -8.88178419700125E-16 -522.930082317292" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -23676,7 +23676,7 @@
                 <Rows>
                   <Properties>
                     <Property Name="ProductName">LAC</Property>
-                    <Property Name="Throughput" Units="Kilograms">25000000</Property>
+                    <Property Name="Throughput" Units="Kilograms">20000000</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ProductName">UGC</Property>
@@ -23732,11 +23732,11 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="85 86">
-                <FloorLabel Center="173.316927285795 0 -518.13191440156" Width="6.8050193050193" Height="3.72873073128483" ExternallyVisible="True" Text="&lt;b&gt;Ship Generator&lt;/b&gt;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt; 1, ProductionTable[1].ProductName, &quot;&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt; 1, ProductionTable[1].UnallocatedAmount, &quot;&quot;)}&#xD;&#xA;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt; 2,ProductionTable[2].ProductName, &quot;&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt; 2, ProductionTable[2].UnallocatedAmount, &quot;&quot;)}" />
+                <FloorLabel Center="173.054882036452 0 -519.223769614606" Width="6.8050193050193" Height="3.72873073128483" ExternallyVisible="True" Text="&lt;b&gt;Ship Generator&lt;/b&gt;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt; 1, ProductionTable[1].ProductName, &quot;&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt; 1, ProductionTable[1].UnallocatedAmount, &quot;&quot;)}&#xD;&#xA;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt; 2,ProductionTable[2].ProductName, &quot;&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt; 2, ProductionTable[2].UnallocatedAmount, &quot;&quot;)}" />
                 <Queue Queue="OutputBuffer.Contents" Alignment="Inline" ExternallyVisible="True">
                   <Points>
-                    <Point Location="175.970352742218 -8.88178419700125E-16 -524.323886159378" />
-                    <Point Location="170.347765869631 -8.88178419700125E-16 -524.323886159378" />
+                    <Point Location="175.708307492875 -8.88178419700125E-16 -525.415741372424" />
+                    <Point Location="170.085720620288 -8.88178419700125E-16 -525.415741372424" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -24225,7 +24225,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="ChannelEntrance" Type="TransferNode" Location="198.756030519732 -2.77555756156289E-17 -508.314533155337" Scope="Public">
+          <Node Name="ChannelEntrance" Type="TransferNode" Location="198.725458573513 -2.77555756156289E-17 -508.314533155337" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -25083,8 +25083,8 @@
           </Link>
           <Link Name="TimePath5" Type="TimePath" Size="118.98 0 0" Scope="Public" Start="ChannelExit" End="ChannelEntrance">
             <Points>
-              <Point Location="158.468769677642 -1.03174998589303E-17 -461.247127317568" />
-              <Point Location="192.62915999979 -2.00878046343487E-17 -484.853028841968" />
+              <Point Location="158.468769677642 -1.03174998589303E-17 -461.065227254226" />
+              <Point Location="192.62915999979 -2.00878046343487E-17 -484.671128778626" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -25882,7 +25882,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="66" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="75" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -26975,7 +26975,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1071</Revision>
+        <Revision>1086</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -27011,11 +27011,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>624</Revision>
+        <Revision>637</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>66</Revision>
+        <Revision>75</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -27099,7 +27099,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>256</Revision>
+        <Revision>260</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -27115,7 +27115,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>553</Revision>
+        <Revision>561</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ModelEntity1">
         <Id>58e7e600-e341-4d80-a59e-887026abdd4d</Id>
@@ -35262,7 +35262,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="256" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="260" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -39514,7 +39514,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="553" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="561" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -39769,7 +39769,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">ContainerEntity.FlowContainer.Contents.Weight &lt;= 0</Property>
                 </Properties>
-                <Exit Name="False" Type="Alternate" NextID="2" />
+                <Exit Name="False" Type="Alternate" NextID="10" />
               </Step>
               <Step Type="Wait" Name="Finished" ID="5">
                 <Properties>
@@ -39824,6 +39824,22 @@ The entity will be processed though the filler without a filling attempt. Howeve
                   <Property Name="ProcessName">UnloadingNodesOff</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Search" Name="Berths" ExclusionExpression="1" ID="10">
+                <Properties>
+                  <Property Name="CollectionType">ObjectList</Property>
+                  <Property Name="PopulationName">Prod1</Property>
+                  <Property Name="ObjectListName">BerthList</Property>
+                  <Property Name="MatchCondition">Math.If(Candidate.Filler.Processing.Contents.NumberWaiting&gt;0,Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.Priority==ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority&amp;&amp;Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.FlowContainer.CurrentWeightCapacity-Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.FlowContainer.Contents.Weight&gt;ContainerEntity.FlowContainer.CurrentWeightCapacity,False)</Property>
+                </Properties>
+                <Exit Name="Original" Type="Primary" NextID="2" />
+                <Exit Name="Found" Type="Alternate" NextID="11" />
+              </Step>
+              <Step Type="Notify" Name="Can Direct Load" ExclusionExpression="1" ID="11">
+                <Properties>
+                  <Property Name="MessageHeading">"Alert"</Property>
+                  <Property Name="MessageContent">"Can Direct Load"</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -41985,12 +42001,13 @@ The entity will be processed though the filler without a filling attempt. Howeve
                 <Properties>
                   <Property Name="DelayTime">PostLoadingDelay</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Wait" Name="ShipFull" ID="6">
                 <Properties>
                   <Property Name="EventName">ShipFull</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
+                <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
               <Step Type="Release" Name="Shiploader" ID="7">
                 <Properties>
@@ -42003,6 +42020,17 @@ The entity will be processed though the filler without a filling attempt. Howeve
                   </Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Execute" Name="FinishLoading" ID="8">
+                <Properties>
+                  <Property Name="ProcessName">FinishLoadingProcess</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Execute" Name="ReadyToDepart" ID="9">
+                <Properties>
+                  <Property Name="ProcessName">ReadyToDepartProcess</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -42039,12 +42067,13 @@ The entity will be processed though the filler without a filling attempt. Howeve
                 <Properties>
                   <Property Name="DelayTime">PostLoadingDelay</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Wait" Name="ShipFull" ID="6">
                 <Properties>
                   <Property Name="EventName">ShipFull</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
+                <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
               <Step Type="Release" Name="Shiploader" ID="7">
                 <Properties>
@@ -42057,6 +42086,17 @@ The entity will be processed though the filler without a filling attempt. Howeve
                   </Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Execute" Name="FinishLoading" ID="8">
+                <Properties>
+                  <Property Name="ProcessName">FinishLoadingProcess</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
+              </Step>
+              <Step Type="Execute" Name="ReadyToDepart" ID="9">
+                <Properties>
+                  <Property Name="ProcessName">ReadyToDepartProcess</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -42230,18 +42270,6 @@ The entity will be processed though the filler without a filling attempt. Howeve
                 <Properties>
                   <Property Name="ProcessName">LoadingNodesOff</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
-              </Step>
-              <Step Type="Execute" Name="FinishLoading" ID="4">
-                <Properties>
-                  <Property Name="ProcessName">FinishLoadingProcess</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="5" />
-              </Step>
-              <Step Type="Execute" Name="ReadyToDepart" ID="5">
-                <Properties>
-                  <Property Name="ProcessName">ReadyToDepartProcess</Property>
-                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -42257,24 +42285,6 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Step Type="Execute" Name="LoadingNodesOFF" ID="3">
                 <Properties>
                   <Property Name="ProcessName">LoadingNodesOff</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="5" />
-              </Step>
-              <Step Type="Delay" Name="PostLoadingDelay" ID="4">
-                <Properties>
-                  <Property Name="DelayTime">PostLoadingDelay</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
-              </Step>
-              <Step Type="Execute" Name="FinishLoading" ID="5">
-                <Properties>
-                  <Property Name="ProcessName">FinishLoadingProcess</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
-              </Step>
-              <Step Type="Execute" Name="ReadyToDepart" ID="6">
-                <Properties>
-                  <Property Name="ProcessName">ReadyToDepartProcess</Property>
                 </Properties>
               </Step>
             </Steps>
@@ -45519,7 +45529,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="Type">Bidirectional</Property>
-              <Property Name="TravelTime" Units="Hours">1.5</Property>
+              <Property Name="TravelTime" Units="Hours">0</Property>
             </Properties>
             <Graphics />
           </Link>
@@ -50571,4 +50581,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- aQx7jXcO0o9ruotQW3YiP77He7NzMS9VsydQmvwvFCrmqpo0KewvWgTW+Asg+mBAWjKRF4KF6ICyXbL7axzc/g== -->
+<!-- AkGjMc9LssPsJOIdIZpFrGW6Fq8E5GVg3M7dbzE21BAoU66WnrqMGNjxS6i/PMhog3BAija0CXm0kkbbtkxrGQ== -->
