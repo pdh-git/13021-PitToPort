@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-07T03:55:18" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-07T04:59:15" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,9 +9,9 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="100" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="10000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
-        <RunLength Units="Hours">43800</RunLength>
+        <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
       </RunSetup>
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -31,7 +31,8 @@
         </Properties>
       </RunnableInstance>
       <SuppressedWarnings>
-        <Warning Identifier="AllocatedTrain.Name" Location="Request" />
+        <Warning Identifier="AllocatedTrain.Name" Location="LACRequest" />
+        <Warning Identifier="AllocatedTrain.Name" Location="UGCRequest" />
         <Warning Identifier="Math.If(Train.Population.NumberInSystem&lt;=10,Train[10].Name,0)" />
         <Warning Identifier="Train[2].ResourceState" />
         <Warning Identifier="Train[1].ResourceState" />
@@ -287,7 +288,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="227.254581681709 313.313605407715 -300.57375718899" Direction="0 -1 2.22044604925031E-16" Zoom="313.313605407715" />
+          <Camera Orientation="Top" Location="253.944097704198 313.313598632821 -269.018963224938" Direction="0 -1 2.22044604925031E-16" Zoom="313.313598632821" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -441,6 +442,7 @@
           <Categories>
             <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
             <Category Name="TrainLoader AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Output@TrainLoader AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -649,7 +651,7 @@
       </DashboardReports>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="110.391186484783 47.5394409637451 97.2448146434245" Direction="0 -1 2.22044604925031E-16" Zoom="47.5394409637451" />
+          <Camera Orientation="Top" Location="64.9710294966504 138.598950889298 107.994463127426" Direction="0 -1 2.22044604925031E-16" Zoom="138.598950889298" />
           <ObjectDisplay Axis="False" Grid="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
@@ -657,34 +659,33 @@
             <Category Name="Data Collection" Expanded="True" />
             <Category Name="TrainSink AddOn Processes" Expanded="True" />
             <Category Name="UC_Stockpile AddOn Processes" Expanded="True" />
-            <Category Name="LW1GenServer AddOn Processes" Expanded="True" />
             <Category Name="LW2GenServer AddOn Processes" Expanded="True" />
             <Category Name="LWDevGenServer AddOn Processes" Expanded="True" />
             <Category Name="Raw Coal Events" Expanded="True" />
-            <Category Name="Conveyor Control Events" Expanded="True" />
             <Category Name="WeatherShutdownSchedule AddOn Processes" Expanded="True" />
             <Category Name="TLOStockpileControl_Processes" Expanded="True" />
             <Category Name="TrainLoadStation AddOn Processes" Expanded="True" />
-            <Category Name="LAC_Feeder AddOn Processes" Expanded="True" />
             <Category Name="CPPWorkSchedule AddOn Processes" Expanded="True" />
             <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
             <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
-            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="LACGenServer AddOn Processes" Expanded="True" />
+            <Category Name="HAC_Feeder AddOn Processes" Expanded="True" />
+            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
+            <Category Name="Conveyor Control Events" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="LW1GenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="TrainTransferNode1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="HAC_Feeder AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
+            <Category Name="LAC_Feeder AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Output@Stockpile AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -1576,7 +1577,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="655" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="665" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -3333,10 +3334,10 @@
               <Step Type="Decide" Name="MoreFull" ID="2">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
-                  <Property Name="Expression">Math.If(TrainEntity.RequiredProduct=="UGC",1,0)</Property>
+                  <Property Name="Expression">Math.If(TrainEntity.RequiredProduct=="LAC",1,0)</Property>
                 </Properties>
-                <Exit Name="True" Type="Primary" NextID="3" />
-                <Exit Name="False" Type="Alternate" NextID="4" />
+                <Exit Name="True" Type="Primary" NextID="4" />
+                <Exit Name="False" Type="Alternate" NextID="3" />
               </Step>
               <Step Type="Assign" Name="LoadFromS1" ID="3">
                 <Properties>
@@ -4243,9 +4244,9 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Stockpile2" Type="MyTank" Location="-43.0069408109365 -3.99680288865056E-15 111.705628179714" Size="50 15 15" Scope="Public">
+          <Fixed Name="Stockpile2" Type="MyTank" Location="-43.0069383040458 -3.99680288865056E-15 111.705628321046" Size="50 15 15" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@Stockpile2" Type="FlowNode" Location="-26.8257492078489 -3.99680288865056E-15 132.997424950883" Scope="Public">
+              <Node Name="Input@Stockpile2" Type="FlowNode" Location="-26.8257467009582 -3.99680288865056E-15 132.997425092215" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4258,7 +4259,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@Stockpile2" Type="FlowNode" Location="-20.6039804472538 -3.99680288865056E-15 120.90525285888" Scope="Public">
+              <Node Name="Output@Stockpile2" Type="FlowNode" Location="-20.6039779403631 -3.99680288865056E-15 120.905253000212" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4272,7 +4273,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True">
                   <AttachedObjects IndexList="69">
-                    <StatusLabel Center="3.92462603122275 0 114.136571582544" Width="31.8872834780633" Height="5.20710587529531" Expression="math.round(FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
+                    <StatusLabel Center="3.92462865382712 0 114.136571820963" Width="31.8872834780633" Height="5.20710587529531" Expression="math.round(FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
                   </AttachedObjects>
                 </Graphics>
               </Node>
@@ -4298,12 +4299,12 @@
               <AttachedObjects IndexList="8">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-78.3875321948243 -3.99680288865056E-15 122.838282040415" Direction="0.0115695072980095 0 -2.21453614018681" />
-                    <Point Location="-76.4500679069695 -3.99680288865056E-15 122.838814767571" />
-                    <Point Location="-74.4539496613156 -3.99680288865056E-15 122.839363622279" />
-                    <Point Location="-72.2581701935904 -3.99680288865056E-15 122.839967376041" />
-                    <Point Location="-70.0909462412103 -3.99680288865056E-15 122.840563278149" />
-                    <Point Location="-68.1113500490441 -3.99680288865056E-15 122.841107589937" />
+                    <Point Location="-78.3875295722199 -3.99680288865056E-15 122.838282278834" Direction="0.0115695072980095 0 -2.21453614018681" />
+                    <Point Location="-76.4500652843651 -3.99680288865056E-15 122.83881500599" />
+                    <Point Location="-74.4539470387112 -3.99680288865056E-15 122.839363860698" />
+                    <Point Location="-72.258167570986 -3.99680288865056E-15 122.83996761446" />
+                    <Point Location="-70.0909436186059 -3.99680288865056E-15 122.840563516568" />
+                    <Point Location="-68.1113474264397 -3.99680288865056E-15 122.841107828356" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -14996,7 +14997,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1107" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1118" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -15108,11 +15109,12 @@
           <StringState Name="CurrentRequestingProduct" />
         </States>
         <Events>
-          <Event Name="Event_CreateRequest" />
+          <Event Name="Event_CreateRequestLAC" />
           <Event Name="Event_TrainLoaded" />
           <Event Name="Event_TrainUnloaded" />
           <Event Name="TrackFailed" />
           <Event Name="TrackResumed" />
+          <Event Name="Event_CreateRequestUGC" />
         </Events>
         <UsedObjects>
           <UsedObject Name="TransferNode" />
@@ -16233,7 +16235,7 @@
               <Step Type="Decide" Name="LoadedProd1" ID="13">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
-                  <Property Name="Expression">TrainEntity.FlowContainer.Contents.FirstItem.Entity.Priority==1</Property>
+                  <Property Name="Expression">TrainEntity.RequiredProduct=="UGC"</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="12" />
                 <Exit Name="False" Type="Alternate" NextID="14" />
@@ -16556,7 +16558,7 @@
               <Step Type="Search" Name="TrainLoadingQueue" ID="3">
                 <Properties>
                   <Property Name="CollectionType">QueueState</Property>
-                  <Property Name="PopulationName">Request</Property>
+                  <Property Name="PopulationName">LACRequest</Property>
                   <Property Name="QueueStateName">
                     <Value>TrainYard.ParkingStation.Contents</Value>
                   </Property>
@@ -16567,7 +16569,7 @@
                   </Property>
                 </Properties>
                 <Exit Name="Original" Type="Primary" NextID="4" />
-                <Exit Name="Found" Type="Alternate" NextID="11" />
+                <Exit Name="Found" Type="Alternate" NextID="6" />
               </Step>
               <Step Type="Decide" Name="FoundATrain" ID="4">
                 <Properties>
@@ -16586,7 +16588,7 @@
                 <Properties>
                   <Property Name="NodeName">MineTrainInput</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
+                <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
               <Step Type="UnPark" Name="UnPark" ID="7">
                 <Properties />
@@ -16614,7 +16616,7 @@
                   <Property Name="StateVariableName">
                     <Value>RequestTrainToken.RequestingProduct</Value>
                   </Property>
-                  <Property Name="NewValue">CurrentRequestingProduct</Property>
+                  <Property Name="NewValue">RequestEntity.RequestingProduct</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
@@ -16625,14 +16627,14 @@
                   </Property>
                   <Property Name="NewValue">RequestTrainToken.RequestingProduct</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
+                <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
             </Steps>
           </Process>
           <Process Name="RequestProcessing_Processing" BeginStepID="2" Category="RequestProcessing AddOn Processes">
             <Properties />
             <Steps>
-              <Step Type="Wait" Name="TrainLoaded" ID="2">
+              <Step Type="Wait" Name="TrainLoaded" ExclusionExpression="1" ID="2">
                 <Properties>
                   <Property Name="EventName">RequestEntity.AllocatedTrain.TrainEntity.ContainerFull</Property>
                 </Properties>
@@ -20422,7 +20424,7 @@
             <Steps>
               <Step Type="Fire" Name="CreateRequest" ID="2">
                 <Properties>
-                  <Property Name="EventName">Event_CreateRequest</Property>
+                  <Property Name="EventName">Event_CreateRequestUGC</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
@@ -20434,12 +20436,9 @@
                   <Property Name="NewValue">PosThresholdMonitor_Stockpile1UGC.CurrentThresholdValue + InitialRequestTrainThreshold</Property>
                 </Properties>
               </Step>
-              <Step Type="Assign" Name="CurrentRequestingProduct" ID="4">
+              <Step Type="Delay" Name="Epsilon" ID="4">
                 <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>CurrentRequestingProduct</Value>
-                  </Property>
-                  <Property Name="NewValue">"UGC"</Property>
+                  <Property Name="DelayTime">Math.EPSILON</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
@@ -20458,16 +20457,13 @@
               </Step>
               <Step Type="Fire" Name="CreateRequest" ID="3">
                 <Properties>
-                  <Property Name="EventName">Event_CreateRequest</Property>
+                  <Property Name="EventName">Event_CreateRequestLAC</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
-              <Step Type="Assign" Name="CurrentRequestingProduct" ID="4">
+              <Step Type="Delay" Name="Epsilon" ID="4">
                 <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>CurrentRequestingProduct</Value>
-                  </Property>
-                  <Property Name="NewValue">"LAC"</Property>
+                  <Property Name="DelayTime">Math.EPSILON</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
@@ -20890,7 +20886,7 @@
           </Process>
         </Processes>
         <Objects>
-          <Entity Name="Request" Type="RequestEntity" Location="498.853830764833 5.70515856779252E-14 197.607729728069" Size="0.5 0.5 0.25" Scope="Public" DefaultEntity="True">
+          <Entity Name="LACRequest" Type="RequestEntity" Location="498.450112937064 5.68295410730002E-14 197.373459966045" Size="0.5 0.5 0.25" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.5 0.5 0.25" />
               <IndexedSize Size="0.5 0.5 0.25" />
@@ -20906,8 +20902,13 @@
               <SymbolInstances CurrentAnimationExpression="RequestEntity.Animation">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
                   <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0" SurfaceId="0">
+                      <MaterialRef Id="70dd6722-3265-4bc5-93a1-bed15e0bf611" />
+                    </Decoration>
+                  </Decorations>
                   <FlowDecoration>
-                    <MaterialRef Id="9d181ced-2fd0-4d30-bfcb-ec63c87afc79" />
+                    <MaterialRef Id="70dd6722-3265-4bc5-93a1-bed15e0bf611" />
                   </FlowDecoration>
                   <DefaultFlowDecoration>
                     <MaterialRef Id="9d181ced-2fd0-4d30-bfcb-ec63c87afc79" />
@@ -20915,7 +20916,7 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="9">
-                <FloorLabel Center="499.291208052762 5.70515856779252E-14 196.020070492281" Width="2.26640633586857" Height="0.925664685312551" Rotation="1.33649648225401" ExternallyVisible="True" BackColor="00ffffff" Text="Allocated Train:&#xD;&#xA;{AllocatedTrain.Name}" />
+                <FloorLabel Center="498.887490224779 5.68295410730002E-14 195.785800729869" Width="2.26640633586857" Height="0.925664685312551" Rotation="1.33649648225401" ExternallyVisible="True" BackColor="00ffffff" Text="Allocated Train:&#xD;&#xA;{AllocatedTrain.Name}&#xD;&#xA;{RequestingProduct}" />
               </AttachedObjects>
             </Graphics>
           </Entity>
@@ -20943,7 +20944,7 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="EntityType">Train</Property>
               <Property Name="InterarrivalTime">0</Property>
-              <Property Name="TriggeringEventName">Event_CreateRequest</Property>
+              <Property Name="TriggeringEventName">Event_CreateRequestLAC</Property>
               <Property Name="EntitiesPerArrival">MaximumCyclingTrains</Property>
               <Property Name="MaximumArrivals">1</Property>
               <Property Name="CapitalCost" Units="USD">0.0</Property>
@@ -20958,7 +20959,7 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Entity Name="Train" Type="TrainEntity" Location="499.296056849267 -1.62370119998407E-15 199.102869768642" Size="1.19530330630266 0.17285834593531 0.279246407405165" Scope="Public">
+          <Entity Name="Train" Type="TrainEntity" Location="499.253256125411 -1.62370119998407E-15 199.102869768642" Size="1.19530330630266 0.17285834593531 0.279246407405165" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.19530330630266 0.17285834593531 0.279246407405165" />
               <IndexedSize Size="1.19530330630266 0.17285834593531 0.279246407405165" />
@@ -20989,14 +20990,14 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="10 43">
-                <FloorLabel Center="497.624463964991 0.770656552430378 199.12150446449" Width="1.69232449938204" Height="0.491860991983316" ExternallyVisible="True" BackColor="c0c0c0" CharsPerLine="30" Text="{Name}&#xD;&#xA;Dest: {DestinationNode}&#xD;&#xA;Contents: {Math.Round(FlowContainer.Contents.Weight / 1000,0)}/{FlowContainer.CurrentWeightCapacity / 1000}t&#xD;&#xA;Speed: {DesiredSpeed}&#xD;&#xA;Product: {TrainEntity.RequiredProduct}" />
-                <FloorLabel Center="496.715902200236 30.5658326455447 199.094502471121" Width="6.67941725880237" Height="1.32079321062861" ExternallyVisible="True" BackColor="48d1cc" CharsPerLine="8" Text="{Name}" />
+                <FloorLabel Center="497.581663240485 0.770656552430378 199.12150446449" Width="1.69232449938204" Height="0.491860991983316" ExternallyVisible="True" BackColor="c0c0c0" CharsPerLine="30" Text="{Name}&#xD;&#xA;Dest: {DestinationNode}&#xD;&#xA;Contents: {Math.Round(FlowContainer.Contents.Weight / 1000,0)}/{FlowContainer.CurrentWeightCapacity / 1000}t&#xD;&#xA;Speed: {DesiredSpeed}&#xD;&#xA;Product: {TrainEntity.RequiredProduct}" />
+                <FloorLabel Center="496.67310147573 30.5658326455447 199.094502471121" Width="6.67941725880237" Height="1.32079321062861" ExternallyVisible="True" BackColor="48d1cc" CharsPerLine="8" Text="{Name}" />
               </AttachedObjects>
             </Graphics>
           </Entity>
-          <Fixed Name="RequestSource" Type="Source" Location="497.751589394344 5.50531842335999E-14 189.957442363844" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+          <Fixed Name="RequestSourceLAC" Type="Source" Location="497.913620706084 5.36098943015872E-14 191.406552585817" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@RequestSource" Type="TransferNode" Location="499.251589394344 5.50531842335999E-14 189.957442363844" Scope="Public">
+              <Node Name="Output@RequestSourceLAC" Type="TransferNode" Location="499.413620706084 5.36098943015872E-14 191.406552585817" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21013,16 +21014,16 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="EntityType">Request</Property>
+              <Property Name="EntityType">LACRequest</Property>
               <Property Name="ArrivalMode">On Event</Property>
-              <Property Name="TriggeringEventName">Event_CreateRequest</Property>
+              <Property Name="TriggeringEventName">Event_CreateRequestLAC</Property>
               <Property Name="AssignmentsBeforeExiting">
                 <Rows>
                   <Properties>
                     <Property Name="AssignmentsBeforeExitingStateVariableName">
                       <Value>RequestEntity.RequestingProduct</Value>
                     </Property>
-                    <Property Name="AssignmentsBeforeExitingNewValue">CurrentRequestingProduct</Property>
+                    <Property Name="AssignmentsBeforeExitingNewValue">"LAC"</Property>
                   </Properties>
                 </Rows>
               </Property>
@@ -21039,16 +21040,16 @@
               <AttachedObjects IndexList="1">
                 <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="498.751586850732 5.50531842335999E-14 190.457440951839" />
-                    <Point Location="501.751586850732 5.50531842335999E-14 190.457440951839" />
+                    <Point Location="498.913618158549 5.36098943015872E-14 191.90655114688" />
+                    <Point Location="501.913618158549 5.36098943015872E-14 191.90655114688" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="RequestProcessing" Type="Server" Location="505.983352769507 5.82728310050128E-14 193.733062393046" Size="2.08920814597344 0.999103702764571 1.000000367302" Scope="Public">
+          <Fixed Name="RequestProcessing" Type="Server" Location="506.013924715118 5.68295410730001E-14 193.733062393046" Size="2.08920814597344 0.999103702764571 1.000000367302" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@RequestProcessing" Type="BasicNode" Location="504.516901511806 5.82728310050128E-14 193.632416166148" Scope="Public">
+              <Node Name="Input@RequestProcessing" Type="BasicNode" Location="504.547473457417 5.68295410730001E-14 193.632416166148" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21058,7 +21059,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@RequestProcessing" Type="TransferNode" Location="507.483352769507 5.82728310050128E-14 193.733062393046" Scope="Public">
+              <Node Name="Output@RequestProcessing" Type="TransferNode" Location="507.513924715118 5.68295410730001E-14 193.733062393046" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21133,20 +21134,20 @@
               <AttachedObjects IndexList="2 3 4">
                 <Queue Queue="InputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="509.443742280271 5.64964741656127E-14 200.264317970686" />
-                    <Point Location="500.477642827071 5.82728310050128E-14 194.227041023436" />
+                    <Point Location="509.474314225283 5.50531842336E-14 200.264317970686" />
+                    <Point Location="441.848101154453 5.50531842335998E-14 233.795879334008" />
                   </Points>
                 </Queue>
                 <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="506.983352955431 5.82728310050128E-14 194.233067255467" />
-                    <Point Location="509.983352955431 5.82728310050128E-14 194.233067255467" />
+                    <Point Location="507.013924900443 5.68295410730001E-14 194.233067255467" />
+                    <Point Location="510.013924900443 5.68295410730001E-14 194.233067255467" />
                   </Points>
                 </Queue>
                 <Queue Queue="Processing.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="503.281623126187 5.82728310050128E-14 192.83277951175" />
-                    <Point Location="506.980055151358 5.82728310050128E-14 192.83277951175" />
+                    <Point Location="503.312195071199 5.68295410730001E-14 192.83277951175" />
+                    <Point Location="507.01062709637 5.68295410730001E-14 192.83277951175" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -23894,8 +23895,8 @@
                 <StatusLabel Center="-7.87211637315354 0 162.791917535103" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="FlowNode6.FlowRegulator.CurrentWeightFlowOut.Rate / 1000" />
                 <Queue Queue="TrainLoadStation.Processing.Contents" Alignment="Inline" ExternallyVisible="True">
                   <Points>
-                    <Point Location="1.88427308362262 0 150.910799619654" />
-                    <Point Location="2.62564583792073 0 151.813659508551" />
+                    <Point Location="1.79112853957416 0 150.776758232102" />
+                    <Point Location="3.03604752996262 0 152.332172937157" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -24095,6 +24096,92 @@
                   <Points>
                     <Point Location="191.102820893793 -1.80411241501588E-15 -519.637906115287" />
                     <Point Location="198.803607702656 -1.80411241501588E-15 -519.638804930207" />
+                  </Points>
+                </Queue>
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Entity Name="UGCRequest" Type="RequestEntity" Location="500.615417754436 5.68295410730002E-14 197.539163531852" Size="0.5 0.5 0.25" Scope="Public" DefaultEntity="True">
+            <IndexedSizes>
+              <IndexedSize Size="0.5 0.5 0.25" />
+              <IndexedSize Size="0.5 0.5 0.25" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentAnimationExpression="RequestEntity.Animation">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0" SurfaceId="0">
+                      <MaterialRef Id="bc6ff687-1b04-4e2e-9a00-125075a8b908" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="bc6ff687-1b04-4e2e-9a00-125075a8b908" />
+                  </FlowDecoration>
+                  <DefaultFlowDecoration>
+                    <MaterialRef Id="9d181ced-2fd0-4d30-bfcb-ec63c87afc79" />
+                  </DefaultFlowDecoration>
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="112">
+                <FloorLabel Center="501.052795046753 5.68295410730002E-14 195.95150429242" Width="2.26640633586857" Height="0.925664685312551" Rotation="1.33649648225401" ExternallyVisible="True" BackColor="00ffffff" Text="Allocated Train:&#xD;&#xA;{AllocatedTrain.Name}&#xD;&#xA;{RequestingProduct}" />
+              </AttachedObjects>
+            </Graphics>
+          </Entity>
+          <Fixed Name="RequestSourceUGC" Type="Source" Location="499.646367318322 5.50531842335999E-14 189.363774430904" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+            <AssociatedNodes>
+              <Node Name="Output@RequestSourceUGC" Type="TransferNode" Location="501.146367318322 5.50531842335999E-14 189.363774430904" Scope="Public">
+                <Properties>
+                  <Property Name="InitialCost" Units="USD">0.0</Property>
+                  <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                  <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                  <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                  <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                </Properties>
+                <Graphics ExternallyVisible="True" />
+              </Node>
+            </AssociatedNodes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EntityType">UGCRequest</Property>
+              <Property Name="ArrivalMode">On Event</Property>
+              <Property Name="TriggeringEventName">Event_CreateRequestUGC</Property>
+              <Property Name="AssignmentsBeforeExiting">
+                <Rows>
+                  <Properties>
+                    <Property Name="AssignmentsBeforeExitingStateVariableName">
+                      <Value>RequestEntity.RequestingProduct</Value>
+                    </Property>
+                    <Property Name="AssignmentsBeforeExitingNewValue">"UGC"</Property>
+                  </Properties>
+                </Rows>
+              </Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+              <Property Name="OutputBufferCostPerUse" Units="USD">0.0</Property>
+              <Property Name="OutputBufferHoldingCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="113">
+                <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
+                  <Points>
+                    <Point Location="500.646364855212 5.50531842335999E-14 189.863772942569" />
+                    <Point Location="503.646364855212 5.50531842335999E-14 189.863772942569" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -24543,7 +24630,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Connector2" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@RequestSource" End="Input@RequestProcessing">
+          <Link Name="Connector2" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@RequestSourceLAC" End="Input@RequestProcessing">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -25512,6 +25599,16 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
+          <Link Name="Connector13" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@RequestSourceUGC" End="Input@RequestProcessing">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
         </Objects>
         <Tokens>
           <Token Name="RequestTrainToken">
@@ -25685,7 +25782,7 @@
           <Pie Center="245.060673990449 0 -90.0271352502006" Width="51.8246149046735" Height="32.5386209232167" ExternallyVisible="True" Title="Train 4 Utilisation" ListState="Train[4].ResourceState" TextScale="3" />
           <Pie Center="245.098144612229 0 -56.453364497003" Width="51.7688702824777" Height="32.9637404725572" ExternallyVisible="True" Title="Train 5 Utilisation" ListState="Train[5].ResourceState" TextScale="3" />
           <Pie Center="245.123620374181 0 -22.9585034445585" Width="52.0031524340306" Height="32.955696585175" ExternallyVisible="True" Title="Train 6 Utilisation" ListState="Train[6].ResourceState" TextScale="3" />
-          <FloorLabel Center="177.422176860604 0 14.1686922892686" Width="58.0634358862159" Height="32.8762255575861" ExternallyVisible="True" BackColor="dcdcdc" Text="&lt;B&gt;Train Name:&lt;/b&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].Name, 0)}&#xD;&#xA;" />
+          <FloorLabel Center="177.422176860604 0 14.5399169321985" Width="58.0634358862159" Height="32.8762255575861" ExternallyVisible="True" BackColor="dcdcdc" Text="&lt;B&gt;Train Name:&lt;/b&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].Name, 0)}&#xD;&#xA;" />
           <FloorLabel Center="-231.227385093392 0.976488416671373 72.1133999745311" Width="284.000107218147" Height="50.1004891583327" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Mine Model" />
           <FloorLabel Center="-231.45435328674 0.976488416671373 -157.33886746721" Width="281.07087022994" Height="52.4263325307857" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Rail Map" />
           <FloorLabel Center="127.5066118341 0.831652642831841 -152.409250451036" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 1/Yard&lt;/B&gt;&lt;/Blue&gt;" />
@@ -25702,7 +25799,7 @@
           </SymbolInstance>
           <FloorLabel Center="-42.1744193625694 0 -20.5445749250602" Width="62.0498512039416" Height="35.4367248505148" ExternallyVisible="True" BackColor="dcdcdc" Text="Mine Interarrival Time (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_MineInterarrivalTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_MineInterarrivalTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_MineInterarrivalTime.Minimum,2)}" />
           <FloorLabel Center="-42.1116100217794 0 16.2835765400045" Width="62.0498512039416" Height="35.0553740206915" ExternallyVisible="True" BackColor="dcdcdc" Text="Port Interarrival Time (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_PortInterarrivalTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_PortInterarrivalTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_PortInterarrivalTime.Minimum,2)}" />
-          <Rectangle Center="506.021568902024 -0.114695889921904 194.661493401679" Width="21.5580660938073" Height="13.4135085682561" ExternallyVisible="True">
+          <Rectangle Center="506.001483133757 -0.114695889921904 194.794267361469" Width="21.5580660938073" Height="13.4135085682561" ExternallyVisible="True">
             <Decorations>
               <Decoration SurfaceId="0">
                 <MaterialRef Id="7780abff-280d-4792-b50e-52fd52c51a33" />
@@ -25761,7 +25858,7 @@
           </Rectangle>
           <FloorLabel Center="-244.365547422627 0 -485.851902950544" Width="256.834183186645" Height="39.0850502144528" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Channel" />
           <FloorLabel Center="86.830774855443 0 73.4440200204821" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" Text="Stockpile 1 UGC Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.Stockpile1.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile1Contents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile1Contents.Maximum/1000,0)}&#xD;&#xA;" />
-          <FloorLabel Center="164.134360044851 0 73.4732768310109" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" Text="Stockpile 2 LAC Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.Stockpile2.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile2Contents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile2Contents.Maximum/1000,0)}&#xD;&#xA;" />
+          <FloorLabel Center="164.134360044851 0 73.21341958096" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" Text="Stockpile 2 LAC Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.Stockpile2.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile2Contents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile2Contents.Maximum/1000,0)}&#xD;&#xA;" />
           <FloorLabel Center="423.595924513851 0 82.4278418291748" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" Text="HAC ROM Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.HAC_ROMPAD.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_HAC_ROMContents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_HAC_ROMContents.Maximum/1000,0)}&#xD;&#xA;" />
           <FloorLabel Center="423.370282760701 0 126.378056917144" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" Text="LAC ROM Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.LAC_ROMPAD.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_LAC_ROMContents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_LAC_ROMContents.Maximum/1000,0)}&#xD;&#xA;" />
           <Pie Center="84.2681914952823 0 181.30182556808" Width="67.781246094604" Height="41.7214113131057" ExternallyVisible="True" Title="CPP Utilisation" ListState="Mine.CPPWorkSchedule.ResourceState" TextScale="3" />
@@ -26132,7 +26229,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="90" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="99" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -27204,7 +27301,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1107</Revision>
+        <Revision>1118</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -27240,11 +27337,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>655</Revision>
+        <Revision>665</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>90</Revision>
+        <Revision>99</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -27328,7 +27425,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>264</Revision>
+        <Revision>265</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -27415,12 +27512,14 @@
       <ColorMaterial Id="29733097-ba11-47b9-b98d-84d3ef7c8644" Color="faebd7" />
       <ColorMaterial Id="8155271a-43c1-45dc-97e2-5aa3c7c08b9f" Color="696969" />
       <ColorMaterial Id="9d181ced-2fd0-4d30-bfcb-ec63c87afc79" Color="008000" />
+      <ColorMaterial Id="70dd6722-3265-4bc5-93a1-bed15e0bf611" Color="9acd32" />
       <ColorMaterial Id="ce65f937-247f-4dec-9ef9-1d1be3324427" Color="8fbc8b" />
       <ColorMaterial Id="cd64dc61-7631-4004-8afb-415a71f51218" Color="5f9ea0" />
       <ColorMaterial Id="028c8175-74d9-41ea-90ec-e30365fe5c96" Color="008000" />
       <ColorMaterial Id="b8f4ab95-b498-4b0e-a3ed-26a82c120593" Color="ffff00" />
       <ColorMaterial Id="653b4a69-6862-4cff-9712-517cadf302ef" Color="ff0000" />
       <ColorMaterial Id="fb208fec-d1dd-41b5-9afa-719e0b89f39e" Color="ffffff" />
+      <ColorMaterial Id="bc6ff687-1b04-4e2e-9a00-125075a8b908" Color="48d1cc" />
       <ColorMaterial Id="7780abff-280d-4792-b50e-52fd52c51a33" Color="d3d3d3" />
       <ColorMaterial Id="63ebf191-290e-4184-bb90-b95c1c60efac" Color="4682b4" />
       <ColorMaterial Id="9ec42d53-b2f7-452f-9327-59ffcba7a148" Color="40e0d0" />
@@ -35491,7 +35590,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="264" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="265" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -50810,4 +50909,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- ZJakoeWNqY6ufVraQua4FGskMdCUSesMW0tEld97rjOiecb8DRG7uTcAv4jENlm4blNsQr8lgLDR1xsnhJobMg== -->
+<!-- +TBuTsmdVm65rqY8OZtmNrJfGfcs5NOV7tUJDz9bwJ78+hchLojlGRYSdKyxdZTBIVYHvZve5d1chyHTiBe6pg== -->
