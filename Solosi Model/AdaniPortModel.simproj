@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="48e0008e-d241-40f4-8078-d68634561892" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-07T02:14:30" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-07T07:09:12" />
   <Models>
     <Model Definition="ModelEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -37,7 +37,7 @@
       </InteractiveStatistics>
       <ViewInfo ActiveModel="True" ActiveView="Process">
         <Facility>
-          <Camera Orientation="Perspective" Location="-83.8302105045892 16.3768544124 -0.878699631422817" Direction="0.597147788759069 -0.577350269225473 -0.556849337797423" Zoom="13.8991165161133" />
+          <Camera Orientation="Top" Location="-39.0088435777329 16.5622177124023 -145.741732925624" Direction="0 -1 2.22044604925031E-16" Zoom="16.5622177124023" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process PanelWidth="130">
@@ -55,6 +55,10 @@
             <Category Name="SR2 AddOn Processes" Expanded="True" />
             <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
             <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
+            <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
+            <Category Name="ShipLoader AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -531,7 +535,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="562" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="575" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -592,6 +596,13 @@
           <ElementProperty Name="FinishLoadingProcess" Required="False" NullString="null" Type="Process" />
           <ElementProperty Name="ReadyToDepartProcess" Required="False" NullString="null" Type="Process" />
           <ElementProperty Name="ReadyToLoadProcess" Required="False" NullString="null" Type="Process" />
+          <BooleanProperty Name="EnableShiploaderFailures" DefaultValue="True" NullString="null" />
+          <ExpressionProperty Name="ShiploaderUptimeBetweenFailures" DefaultValue="Random.Exponential(250)" NullString="null" UnitType="Time">
+            <Switch Property="EnableShiploaderFailures" Value="True" />
+          </ExpressionProperty>
+          <ExpressionProperty Name="ShiploaderTimeToRepair" DefaultValue="Random.Triangular(1,2,8)" NullString="null" UnitType="Time">
+            <Switch Property="EnableShiploaderFailures" Value="True" />
+          </ExpressionProperty>
           <Overrides>
             <Override Name="ReportStatistics" Visible="False" />
             <Override Name="ParentCostCenter" Visible="False" />
@@ -3670,6 +3681,96 @@
             <Properties />
             <Steps />
           </Process>
+          <Process Name="ShiploaderReliability_Failed" BeginStepID="2" Category="ShiploaderReliability AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Fail" Name="Fail" ExclusionExpression="!EnableShiploaderFailures" ID="2">
+                <Properties>
+                  <Property Name="FailureName">ShipLoader[1].Vehicle.Failure</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Suspend" Name="SLManager" ExclusionExpression="!EnableShiploaderFailures" ID="3">
+                <Properties>
+                  <Property Name="ProcessName">ShipLoadingManager</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="BerthNodes" ExclusionExpression="!EnableShiploaderFailures" ID="4">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Input@SurgeBin.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">Input@SurgeBin.FlowRegulator.Enabled</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="ShiploaderReliability_Repaired" BeginStepID="2" Category="ShiploaderReliability AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Repair" Name="Repair" ExclusionExpression="!EnableShiploaderFailures" ID="2">
+                <Properties>
+                  <Property Name="FailureName">ShipLoader[1].Vehicle.Failure</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Resume" Name="SLManager" ExclusionExpression="!EnableShiploaderFailures" ID="3">
+                <Properties>
+                  <Property Name="ProcessName">ShipLoadingManager</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="BerthNodes" ExclusionExpression="!EnableShiploaderFailures" ID="4">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Input@SurgeBin.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">Input@SurgeBin.FlowRegulator.Enabled</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="ShipLoader_Allocated" BeginStepID="2" Category="ShipLoader AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Seize" Name="Seize1" ID="2">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">ShiploaderReliability</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="ShipLoader_Released" BeginStepID="2" Category="ShipLoader AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Release" Name="Release1" ID="2">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">ShiploaderReliability</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="ShipLoader_Failed" Category="ShipLoader AddOn Processes">
+            <Properties />
+            <Steps />
+          </Process>
+          <Process Name="ShipLoader_Repaired" Category="ShipLoader AddOn Processes">
+            <Properties />
+            <Steps />
+          </Process>
         </Processes>
         <Objects>
           <Entity Name="Prod2" Type="ModelEntity" Location="-4.65314078426918 0 -30.1467161318431" Size="4 4 2" Scope="Public" Density="130000000">
@@ -5749,7 +5850,7 @@
               </SymbolInstances>
             </Graphics>
           </Transporter>
-          <Transporter Name="ShipLoader" Type="Vehicle" Location="1.75908348124828 -1.22124532708767E-15 -13.4375444932316" Size="0.537915350760266 1.80125697271835 1.51723700948708" Scope="Public">
+          <Transporter Name="ShipLoader" Type="Vehicle" Location="1.72610813174361 -4.4408920985006E-16 -13.3880814482895" Size="0.537915350760266 1.80125697271835 1.51723700948708" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
               <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
@@ -5771,6 +5872,10 @@
               <Property Name="InitialNode">SLHome</Property>
               <Property Name="IdleAction">Go To Home</Property>
               <Property Name="OffShiftAction">Go To Home</Property>
+              <Property Name="AllocatedAddOnProcess">ShipLoader_Allocated</Property>
+              <Property Name="ReleasedAddOnProcess">ShipLoader_Released</Property>
+              <Property Name="FailedAddOnProcess">ShipLoader_Failed</Property>
+              <Property Name="RepairedAddOnProcess">ShipLoader_Repaired</Property>
               <Property Name="CapitalCostPerVehicle" Units="USD">0.0</Property>
             </Properties>
             <Graphics>
@@ -5854,6 +5959,85 @@
               </SymbolInstances>
             </Graphics>
           </Transporter>
+          <Fixed Name="ShiploaderReliability" Type="Resource" Location="-42.9848467304315 6.66133814775094E-16 -143.216727413507" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="FailureType">Usage Time Based</Property>
+              <Property Name="UptimeBetweenFailures">ShiploaderUptimeBetweenFailures</Property>
+              <Property Name="TimeToRepair">ShiploaderTimeToRepair</Property>
+              <Property Name="FailedAddOnProcess">ShiploaderReliability_Failed</Property>
+              <Property Name="RepairedAddOnProcess">ShiploaderReliability_Repaired</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="0e322bcf-50f2-4d87-a359-d23aa2368e0d" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="4dbf8c5f-af51-40b5-b4b2-90bb6353467a" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="4d7d92ee-1e70-41b6-a58b-5182bdba7497" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="56d971db-7dc5-402a-9b99-59c2abee3f81" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="72ac2183-24f2-4308-baee-99bf5163256e" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="a7a8029d-2fbb-4d2c-9b81-88ca3dc98415" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+            </Graphics>
+          </Fixed>
           <Node Name="SJ1" Type="FlowNode" Location="-66.4124677683728 -1.33226762955019E-15 -12.5265297807426" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -7181,7 +7365,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>562</Revision>
+        <Revision>575</Revision>
       </DefinitionRef>
       <DefinitionRef Name="StockpileTank">
         <Id>90391288-72ad-45e0-99bb-82059bd606bf</Id>
@@ -20494,4 +20678,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- Vb3j8ozMuWX+E9lYlxlmaz2e1q1tLW+r4ONFRRYduYUT/hIcLUTIAVz1dyk8PqpHkdUh5D6blp8kx8M4YC5hlQ== -->
+<!-- Ul1IYWphBuJf2QXM8+dCZOgySAm77cwLruHwKVwCLMrMllEHIOx7IYI1zJCaX94VdlQAQPQc6hER8IHEVHuVKQ== -->
