@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="48e0008e-d241-40f4-8078-d68634561892" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-12T01:26:26" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-12T03:35:44" />
   <Models>
     <Model Definition="ModelEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -27,19 +27,18 @@
           <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
           <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
           <Property Name="PortStockpileSize">1000000000</Property>
-          <Property Name="LoadingDelay" Units="Hours">4</Property>
+          <Property Name="LoadingDelay" Units="Hours">12</Property>
           <Property Name="PreLoadingDelay" Units="Hours">1.5</Property>
           <Property Name="PostLoadingDelay" Units="Hours">0.5</Property>
-          <Property Name="EnableDirectLoading">True</Property>
         </Properties>
       </RunnableInstance>
       <InteractiveStatistics>
         <FileRef Name="Results\PortModel\Interactive_Results.stats" />
       </InteractiveStatistics>
-      <ViewInfo ActiveModel="True" ActiveView="Facility">
+      <ViewInfo ActiveModel="True" ActiveView="Process">
         <Facility>
-          <Camera Orientation="Top" Location="-38.8402999864677 98.5435730514309 -154.413930990397" Direction="0 -1 2.22044604925031E-16" Zoom="98.5435730514309" />
-          <ObjectDisplay Axis="False" Grid="False" Background="ffffff" />
+          <Camera Orientation="Top" Location="-63.3619410041405 18.0619042104935 -19.510906062771" Direction="0 -1 2.22044604925031E-16" Zoom="18.0619042104935" />
+          <ObjectDisplay Axis="False" Grid="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process PanelWidth="130">
           <Categories>
@@ -50,7 +49,7 @@
             <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="Berth1 AddOn Processes" Expanded="True" />
             <Category Name="Berth2 AddOn Processes" Expanded="True" />
-            <Category Name="ToLoad AddOn Processes" />
+            <Category Name="ToLoad AddOn Processes" Expanded="True" />
             <Category Name="LoadFrom AddOn Processes" Expanded="True" />
             <Category Name="SR1 AddOn Processes" />
             <Category Name="SR2 AddOn Processes" />
@@ -100,7 +99,7 @@
         </OperationalPlanningResourceGantt>
         <OperationalFacility>
           <Camera Orientation="Top" Location="4.84312916262321 19.5558080673218 -0.74446510115063" Direction="0 -1 2.22044604925031E-16" Zoom="19.5558080673218" />
-          <ObjectDisplay Axis="False" Grid="False" Background="ffffff" />
+          <ObjectDisplay Axis="False" Grid="False" LineArrows="False" Background="ffffff" />
         </OperationalFacility>
       </ViewInfo>
     </Model>
@@ -111,7 +110,7 @@
       </Icon>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-2.35588153451424 11.4142189025879 -0.145073076727838" Direction="0 -1 2.22044604925031E-16" Zoom="11.4142189025879" />
+          <Camera Orientation="Top" Location="-2.38292944660568 11.4142189025879 -0.145073076727838" Direction="0 -1 2.22044604925031E-16" Zoom="11.4142189025879" />
           <ObjectDisplay Background="ffffff" />
         </Facility>
         <Process>
@@ -536,7 +535,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="607" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="629" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -601,11 +600,11 @@
           </Categories>
           <RealProperty Name="PortStockpileSize" DefaultValue="700000" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
           <RealProperty Name="RoundingThreshold" DefaultValue="1" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
+          <ExpressionProperty Name="StockpileStackingRate" DefaultValue="9000" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
           <ExpressionProperty Name="StockpileReclaimRate" DefaultValue="6400" NullString="null" UnitType="WeightFlowRate" DefaultUnits="Metric Tons per Hour" />
           <ExpressionProperty Name="LoadingDelay" DefaultValue="20" NullString="null" UnitType="Time" DefaultUnits="Minutes" />
           <ExpressionProperty Name="PreLoadingDelay" DefaultValue="20" NullString="null" UnitType="Time" DefaultUnits="Minutes" />
           <ExpressionProperty Name="PostLoadingDelay" DefaultValue="20" NullString="null" UnitType="Time" DefaultUnits="Minutes" />
-          <ExpressionProperty Name="StockpileStackingRate" DefaultValue="9000" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
           <ElementProperty Name="ArriveBerthProcess" Required="False" NullString="null" Type="Process" />
           <ElementProperty Name="BeginLoadingProcess" Required="False" NullString="null" Type="Process" />
           <ElementProperty Name="FinishLoadingProcess" Required="False" NullString="null" Type="Process" />
@@ -797,7 +796,7 @@
                   <Property Name="PopulationName">Prod2</Property>
                   <Property Name="ObjectListName">StockpilesProd1</Property>
                   <Property Name="SearchType">Backward</Property>
-                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity&amp;&amp;Candidate.StockpileTank.Res.Capacity.Remaining</Property>
+                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity&amp;&amp;Candidate.StockpileTank.Res.Capacity.Remaining&amp;&amp;Math.If(Candidate.StockpileTank==P5, SR2[1].Capacity.Remaining,True)&amp;&amp;Math.If(Candidate.StockpileTank==P1, SR1[1].Capacity.Remaining,True) </Property>
                   <Property Name="SearchExpression">Candidate.StockpileTank.FlowContainer.Contents.Weight</Property>
                   <Property Name="SaveNumberFound">
                     <Value>UnloadingToken.NumberEligibleSPFound</Value>
@@ -885,7 +884,7 @@
                   </Property>
                 </Properties>
                 <Exit Name="Original" Type="Primary" NextID="21" />
-                <Exit Name="Found" Type="Alternate" NextID="27" />
+                <Exit Name="Found" Type="Alternate" NextID="23" />
               </Step>
               <Step Type="Decide" Name="IsProd1" ID="11">
                 <Properties>
@@ -901,7 +900,7 @@
                   <Property Name="PopulationName">Prod2</Property>
                   <Property Name="ObjectListName">StockpilesProd2</Property>
                   <Property Name="SearchType">Backward</Property>
-                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity&amp;&amp;Candidate.StockpileTank.Res.Capacity.Remaining</Property>
+                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity&amp;&amp;Candidate.StockpileTank.Res.Capacity.Remaining&amp;&amp;Math.If(Candidate.StockpileTank==P6, SR2[1].Capacity.Remaining,True)&amp;&amp;Math.If(Candidate.StockpileTank==P2, SR1[1].Capacity.Remaining,True) </Property>
                   <Property Name="SearchExpression">Candidate.StockpileTank.FlowContainer.Contents.Weight</Property>
                   <Property Name="SaveNumberFound">
                     <Value>UnloadingToken.NumberEligibleSPFound</Value>
@@ -1001,12 +1000,6 @@
                 <Properties>
                   <Property Name="MessageContent">"Error No Berth Despite Found Direct load opportunity"</Property>
                 </Properties>
-              </Step>
-              <Step Type="Notify" Name="DirectLoad" ID="27">
-                <Properties>
-                  <Property Name="MessageContent">"DirectLoad"</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="23" />
               </Step>
             </Steps>
           </Process>
@@ -1828,30 +1821,24 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
-              <Step Type="Seize" Name="P3P4" ID="10">
+              <Step Type="Seize" Name="P3" ID="10">
                 <Properties>
                   <Property Name="ResourceSeizes">
                     <Rows>
                       <Properties>
                         <Property Name="ObjectName">P3.Res</Property>
                       </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P4.Res</Property>
-                      </Properties>
                     </Rows>
                   </Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
-              <Step Type="Release" Name="P3P4" ID="11">
+              <Step Type="Release" Name="P3" ID="11">
                 <Properties>
                   <Property Name="ResourceReleases">
                     <Rows>
                       <Properties>
                         <Property Name="ObjectName">P3.Res</Property>
-                      </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P4.Res</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -1966,13 +1953,10 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
-              <Step Type="Seize" Name="P3P4" ID="10">
+              <Step Type="Seize" Name="P4" ID="10">
                 <Properties>
                   <Property Name="ResourceSeizes">
                     <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P3.Res</Property>
-                      </Properties>
                       <Properties>
                         <Property Name="ObjectName">P4.Res</Property>
                       </Properties>
@@ -1981,13 +1965,10 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
-              <Step Type="Release" Name="P3P4" ID="11">
+              <Step Type="Release" Name="P4" ID="11">
                 <Properties>
                   <Property Name="ResourceReleases">
                     <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P3.Res</Property>
-                      </Properties>
                       <Properties>
                         <Property Name="ObjectName">P4.Res</Property>
                       </Properties>
@@ -4060,7 +4041,7 @@
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
-                  <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">8000</Property>
+                  <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">10000</Property>
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
@@ -4072,7 +4053,7 @@
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
-                  <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">9000</Property>
+                  <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">10000</Property>
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
@@ -4933,8 +4914,8 @@
               <AttachedObjects IndexList="18">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-68.7937158716761 1.77635683940025E-15 -22.6824107920426" Direction="0.00206057104924917 0 -0.506737984723276" />
-                    <Point Location="-65.7946543294363 1.77635683940025E-15 -22.6824107920426" />
+                    <Point Location="-68.7937158819206 1.77635683940025E-15 -22.682410784592" Direction="0.00206057104924917 0 -0.506737984723276" />
+                    <Point Location="-65.7946543396808 1.77635683940025E-15 -22.682410784592" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -4965,8 +4946,8 @@
               <AttachedObjects IndexList="14 15 40 41">
                 <StatusLabel Center="-0.748564757953829 0 -24.7155156882957" Width="2.5001160711987" Height="0.44908251144856" Expression="FlowContainer.Contents.Weight / 1000" />
                 <StatusLabel Center="-0.748564757953829 0 -24.1960545743067" Width="2.48671062309578" Height="0.455785235500031" Expression="FlowContainer.CurrentWeightCapacity / 1000" />
-                <StackedBar Center="0.531635271551449 0 -25.7290108868612" Width="1.47176105429211" Height="1.05966795909032" ExternallyVisible="True" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
-                <StatusLabel Center="-0.759708577579152 0 -25.5493724336493" Width="0.617469595907808" Height="0.785870394791754" ExternallyVisible="True" Expression="Priority" />
+                <StackedBar Center="0.531635271551449 0 -25.7290108868612" Width="1.47176105429211" Height="1.05966795909032" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
+                <StatusLabel Center="-0.759708577579152 0 -25.5493724336493" Width="0.617469595907808" Height="0.785870394791754" Expression="Priority" />
               </AttachedObjects>
             </Graphics>
           </Entity>
@@ -5821,7 +5802,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Transporter Name="SR2" Type="SRVehicle" Location="-2.79360818429899 1.33226762955019E-15 -14.5260564682671" Size="1.64770652998674 0.211199332658509 0.603103855503776" Scope="Public">
+          <Transporter Name="SR2" Type="SRVehicle" Location="-3.20466628266373 1.33226762955019E-15 -13.9681919062007" Size="1.64770652998674 0.211199332658509 0.603103855503776" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="2.77511753421286 0.355708350126765 1.01576588664328" />
               <IndexedSize Size="2.77511753421286 0.355708350126765 1.01576588664328" />
@@ -5959,9 +5940,12 @@
                   </FlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
+              <AttachedObjects IndexList="42">
+                <StatusLabel Center="-3.69742270483622 0 -14.1497547718276" Width="0.600257564452517" Height="0.124668878770906" Expression="2" />
+              </AttachedObjects>
             </Graphics>
           </Transporter>
-          <Transporter Name="SR1" Type="SRVehicle" Location="-3.28618400749525 8.88178419700127E-16 -15.140233520368" Size="1.64770652998674 0.211199332658509 0.603103855503776" Scope="Public">
+          <Transporter Name="SR1" Type="SRVehicle" Location="-3.29352433241619 8.32667268468869E-16 -15.1297473441526" Size="1.64770652998674 0.211199332658509 0.603103855503776" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="2.77511753421286 0.355708350126765 1.01576588664328" />
               <IndexedSize Size="2.77511753421286 0.355708350126765 1.01576588664328" />
@@ -6099,6 +6083,9 @@
                   </FlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
+              <AttachedObjects IndexList="43">
+                <StatusLabel Center="-3.76813927588577 -5.55111512312578E-17 -15.3054711120104" Width="0.602566247392718" Height="0.108508098189475" Expression="1" />
+              </AttachedObjects>
             </Graphics>
           </Transporter>
           <Transporter Name="ShipLoader" Type="Vehicle" Location="1.72610813174361 -4.4408920985006E-16 -13.3880814482895" Size="0.537915350760266 1.80125697271835 1.51723700948708" Scope="Public">
@@ -6289,7 +6276,7 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Node Name="SJ1" Type="FlowNode" Location="-66.4124677683728 -1.33226762955019E-15 -12.5265297807426" Scope="Public">
+          <Node Name="SJ1" Type="FlowNode" Location="-66.4124668092124 -1.33226762955019E-15 -12.5265297807426" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6305,7 +6292,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="SJ2" Type="FlowNode" Location="-66.422258660639 4.44089209850063E-16 -17.700468601186" Scope="Public">
+          <Node Name="SJ2" Type="FlowNode" Location="-66.4222577014786 4.44089209850063E-16 -17.700468601186" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6321,7 +6308,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="SJ3" Type="FlowNode" Location="-66.4169612152237 1.33226762955019E-15 -22.3800744812398" Scope="Public">
+          <Node Name="SJ3" Type="FlowNode" Location="-66.4169602560633 1.33226762955019E-15 -22.3800744812398" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6383,7 +6370,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="RJ2" Type="FlowNode" Location="-65.5064802849674 4.44089209850063E-16 -18.4213803535617" Scope="Public">
+          <Node Name="RJ2" Type="FlowNode" Location="-65.506479325807 4.44089209850063E-16 -18.4213803535617" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6396,7 +6383,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="RJ3" Type="FlowNode" Location="-65.5124210753244 1.33226762955019E-15 -23.0778300529461" Scope="Public">
+          <Node Name="RJ3" Type="FlowNode" Location="-65.512420116164 1.33226762955019E-15 -23.0778300529461" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6428,7 +6415,7 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
-              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">9000</Property>
+              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">10000</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
@@ -6582,13 +6569,15 @@
             </Properties>
             <Graphics />
           </Node>
-          <Node Name="InspectorEntry" Type="FlowNode" Location="-74.6099465054077 0 -75.3361318781479" Scope="Public">
+          <Node Name="InspectorEntry" Type="FlowNode" Location="-74.6099465054077 0 -75.3498683149904" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
+              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">10000</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
@@ -6600,11 +6589,11 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
-              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">9000</Property>
+              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">10000</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="Product1Inspector" Type="FlowNode" Location="-74.3050096297701 0 -76.0508953367205" Scope="Public">
+          <Node Name="Product1Inspector" Type="FlowNode" Location="-74.1791754456112 0 -76.3654817727761" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6612,11 +6601,11 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
-              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">9000</Property>
+              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">10000</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="Product2Inspector" Type="FlowNode" Location="-74.3312256454797 0 -76.0444973077757" Scope="Public">
+          <Node Name="Product2Inspector" Type="FlowNode" Location="-74.331225716034 0 -76.0444914770014" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -6624,7 +6613,7 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
-              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">9000</Property>
+              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">10000</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
@@ -6636,7 +6625,7 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
-              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">9000</Property>
+              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">10000</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
@@ -7138,26 +7127,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True" />
-          </Link>
-          <Link Name="TimePath10" Type="TimePath" Size="2.31 0 0" Scope="Public" Start="Pile1N" End="SR1MaintenanceNode">
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True" />
-          </Link>
-          <Link Name="TimePath11" Type="TimePath" Size="5.09 0 0" Scope="Public" Start="Pile1N" End="Pile2N">
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="Type">Bidirectional</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
@@ -7168,16 +7138,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True" />
-          </Link>
-          <Link Name="TimePath13" Type="TimePath" Size="5.36 0 0" Scope="Public" Start="Pile2N" End="Pile3N">
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="Type">Bidirectional</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
@@ -7188,6 +7149,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="Type">Bidirectional</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
@@ -7198,16 +7160,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True" />
-          </Link>
-          <Link Name="TimePath16" Type="TimePath" Size="1.76 0 0" Scope="Public" Start="SR2MaintenanceNode" End="Pile3N">
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="Type">Bidirectional</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
@@ -7567,7 +7520,7 @@
               </Decoration>
             </Decorations>
           </Rectangle>
-          <Rectangle Center="-63.1172108932146 -0.0542071099128598 -17.8646857654804" Width="4.10656180811245" Height="13.9363739677415" ExternallyVisible="True">
+          <Rectangle Center="-63.1172108932146 -0.0542071099128598 -17.8646857654804" Width="4.10656180811245" Height="13.9363739677415" ExternallyVisible="True" Locked="True">
             <Decorations>
               <Decoration SurfaceId="0">
                 <MaterialRef Id="c8731b6d-b9fe-4b83-bf35-40524e26054e" />
@@ -7581,10 +7534,10 @@
               </Decoration>
             </Decorations>
           </Rectangle>
-          <Line Center="-65.9151175963218 -0.0307242253858624 -18.6475306402282" LineWidth="0.5" ExternallyVisible="True">
+          <Line Center="-65.9150151611115 -0.0307242253858624 -18.6536990808828" LineWidth="0.5" Locked="True" ExternallyVisible="True">
             <Points>
-              <Point Location="-65.9450781004996 -0.0307242253858624 -25.1216540036483" />
-              <Point Location="-65.9254963909612 -0.0307242253858624 -10.6096837223733" />
+              <Point Location="-65.9449756652892 -0.0307242253858624 -25.1278224443029" />
+              <Point Location="-65.9253939557508 -0.0307242253858624 -10.6158521630279" />
             </Points>
             <PathDecoratorUsage>
               <PathDecoratorRef Id="dfd1de44-6ec9-4a90-931f-7ff649352ccd" />
@@ -7604,7 +7557,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>607</Revision>
+        <Revision>629</Revision>
       </DefinitionRef>
       <DefinitionRef Name="StockpileTank">
         <Id>90391288-72ad-45e0-99bb-82059bd606bf</Id>
@@ -20917,4 +20870,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- mNFO5xYaJvNn0stHKNCKYkGtf/bm4xEXFgwdUtJj97wxA8uwJHttH7IdGAyQv5dXb9McDJqBfy0+2ukDHPU7Sw== -->
+<!-- 3wewJYsEiOnNcMLELEOAmX0J7ZUFw0CoXwKma3iVe5KVMef4Va2LDonp2IBS5yLr+WwvEXVgU5445HnWGUiwxQ== -->
