@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-10T00:19:07" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-11T05:51:24" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,7 +9,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="100000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="1000000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
         <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
@@ -297,7 +297,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="110.510280661687 913.450743034666 -209.220086352157" Direction="0 -1 2.22044604925031E-16" Zoom="913.450743034666" />
+          <Camera Orientation="Top" Location="81.6655229954993 75.2265966583924 -115.715618183985" Direction="0 -1 2.22044604925031E-16" Zoom="75.3158334278566" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -1582,7 +1582,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="694" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="695" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -15000,7 +15000,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1152" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1153" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -15840,7 +15840,7 @@
                   </Property>
                   <Property Name="NewValue">Run.TimeNow</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="25" />
+                <Exit Name="Exit" Type="Primary" NextID="24" />
               </Step>
               <Step Type="Notify" Name="TrainNotParked" ID="8">
                 <Properties>
@@ -15854,7 +15854,7 @@
                   <Property Name="TallyStatisticName">Tally_RailOperatingCycleTime</Property>
                   <Property Name="Value">(Run.TimeNow - TrainEntity.Time_TrainAllocated)-TrainEntity.TrackBlockedTotal</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="7" />
+                <Exit Name="Exit" Type="Primary" NextID="25" />
               </Step>
               <Step Type="Assign" Name="Time_TrainAllocated" ID="10">
                 <Properties>
@@ -16057,7 +16057,7 @@
                   </Property>
                   <Property Name="NewValue">Run.TimeNow</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="24" />
+                <Exit Name="Exit" Type="Primary" NextID="7" />
               </Step>
               <Step Type="Assign" Name="CurrentTotalTimeBlocked" ID="28">
                 <Properties>
@@ -20437,6 +20437,15 @@
                   </Property>
                   <Property Name="NewValue">TrainEntity.TrackBlockedTotal + Math.If(TrainEntity.TrackBlockedStart &gt; 0, Run.TimeNow - TrainEntity.TrackBlockedStart, 0)</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Assign" Name="TrackBlockedStart" ID="7">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TrackBlockedStart</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
             </Steps>
@@ -24335,7 +24344,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="TrainYard" Type="TransferNode" Location="111.046733094216 -1.32701613496428E-23 -155.738983077437" Scope="Public">
+          <Node Name="TrainYard" Type="TransferNode" Location="111.051877416394 -1.32701613496428E-23 -155.733838755259" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -24349,13 +24358,13 @@
               <AttachedObjects IndexList="0">
                 <Queue Queue="ParkingStation.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="111.765838206386 -1.32701550387558E-23 -168.148412392941" Direction="1 0 0" />
-                    <Point Location="111.765838206386 -1.32701550387558E-23 -166.595080306937" />
-                    <Point Location="111.770678216218 -1.32701550387558E-23 -164.897921526759" />
-                    <Point Location="111.770337844371 -1.32701550387558E-23 -163.106869224006" />
-                    <Point Location="111.769970147727 -1.32701550387558E-23 -161.172032583008" />
-                    <Point Location="111.769602449115 -1.32701550387558E-23 -159.237185584276" />
-                    <Point Location="111.769277343838 -1.32701550387558E-23 -157.526466672296" />
+                    <Point Location="111.770982528677 -1.32701550387558E-23 -168.14326807065" Direction="1 0 0" />
+                    <Point Location="111.770982528677 -1.32701550387558E-23 -166.589935984646" />
+                    <Point Location="111.775822538509 -1.32701550387558E-23 -164.892777204468" />
+                    <Point Location="111.775482166662 -1.32701550387558E-23 -163.101724901715" />
+                    <Point Location="111.775114470018 -1.32701550387558E-23 -161.166888260717" />
+                    <Point Location="111.774746771406 -1.32701550387558E-23 -159.232041261985" />
+                    <Point Location="111.774421666129 -1.32701550387558E-23 -157.521322350005" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -24457,7 +24466,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="EnterT5" Type="BasicNode" Location="108.648801833058 6.66133614618969E-16 -89.8803130747777" Scope="Public">
+          <Node Name="EnterT5" Type="BasicNode" Location="108.62737608471 6.66133614618969E-16 -89.8803130747777" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -26315,7 +26324,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="118" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="119" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -27387,7 +27396,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1152</Revision>
+        <Revision>1153</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -27423,11 +27432,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>694</Revision>
+        <Revision>695</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>118</Revision>
+        <Revision>119</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -27507,7 +27516,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>272</Revision>
+        <Revision>273</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -27523,7 +27532,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>575</Revision>
+        <Revision>585</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ModelEntity1">
         <Id>58e7e600-e341-4d80-a59e-887026abdd4d</Id>
@@ -35649,7 +35658,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="272" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="273" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -39901,7 +39910,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="575" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="585" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -39931,6 +39940,20 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Item Value="SR1" />
             </Items>
           </TransporterList>
+          <ObjectList Name="StockpilesProd1">
+            <Items>
+              <Item Value="P1" />
+              <Item Value="P3" />
+              <Item Value="P5" />
+            </Items>
+          </ObjectList>
+          <ObjectList Name="StockpilesProd2">
+            <Items>
+              <Item Value="P2" />
+              <Item Value="P4" />
+              <Item Value="P6" />
+            </Items>
+          </ObjectList>
         </Lists>
         <PropertyDefinitions>
           <Categories>
@@ -39969,6 +39992,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <ExpressionProperty Name="ShiploaderTimeToRepair" DefaultValue="Random.Triangular(1,2,8)" NullString="null" UnitType="Time">
             <Switch Property="EnableShiploaderFailures" Value="True" />
           </ExpressionProperty>
+          <BooleanProperty Name="EnableDirectLoading" DefaultValue="False" NullString="null" />
           <Overrides>
             <Override Name="ReportStatistics" Visible="False" />
             <Override Name="ParentCostCenter" Visible="False" />
@@ -40000,6 +40024,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <BooleanState Name="DirectLoadResetter" />
           <DiscreteState Name="Product1AllocatedContents" />
           <DiscreteState Name="Product2AllocatedContents" />
+          <DiscreteState Name="NumberDLShipsFound" />
         </States>
         <Events>
           <Event Name="B1Loaded" />
@@ -40007,6 +40032,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <Event Name="TrainEmpty" />
           <Event Name="TrainSearchFinished" />
           <Event Name="ShipFull" />
+          <Event Name="DLComplete" />
         </Events>
         <ExpressionFunctions>
           <ExpressionFunction Name="TotalStockpileContents" ReturnType="Any" UnitType="Weight" Public="True">
@@ -40131,7 +40157,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
               </Step>
             </Steps>
           </Process>
-          <Process Name="TrainUnloaderManager" BeginStepID="4" Category="TrainUnloader AddOn Processes">
+          <Process Name="TrainUnloaderManager" BeginStepID="10" Category="TrainUnloader AddOn Processes">
             <Properties>
               <Property Name="TokenClassName">UnloadingToken</Property>
               <Property Name="TokenActionOnAssociatedObjectDestroyed">EndProcess</Property>
@@ -40142,12 +40168,12 @@ The entity will be processed though the filler without a filling attempt. Howeve
                 <Properties>
                   <Property Name="CollectionType">ObjectList</Property>
                   <Property Name="PopulationName">Prod2</Property>
-                  <Property Name="ObjectListName">Stockpiles</Property>
+                  <Property Name="ObjectListName">StockpilesProd1</Property>
                   <Property Name="SearchType">Backward</Property>
                   <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity&amp;&amp;Candidate.StockpileTank.Res.Capacity.Remaining</Property>
                   <Property Name="SearchExpression">Candidate.StockpileTank.FlowContainer.Contents.Weight</Property>
                   <Property Name="SaveNumberFound">
-                    <Value>UnloadingToken.NumberFound</Value>
+                    <Value>UnloadingToken.NumberEligibleSPFound</Value>
                   </Property>
                 </Properties>
                 <Exit Name="Original" Type="Primary" NextID="7" />
@@ -40163,7 +40189,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">ContainerEntity.FlowContainer.Contents.Weight &lt;= 0</Property>
                 </Properties>
-                <Exit Name="False" Type="Alternate" NextID="10" />
+                <Exit Name="False" Type="Alternate" NextID="11" />
               </Step>
               <Step Type="Wait" Name="Finished" ID="5">
                 <Properties>
@@ -40202,7 +40228,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Step Type="Decide" Name="FoundTank" ID="7">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
-                  <Property Name="Expression">UnloadingToken.NumberFound&gt;0</Property>
+                  <Property Name="Expression">UnloadingToken.NumberEligibleSPFound &gt; 0</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="5" />
                 <Exit Name="False" Type="Alternate" NextID="8" />
@@ -40219,21 +40245,107 @@ The entity will be processed though the filler without a filling attempt. Howeve
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
-              <Step Type="Search" Name="Berths" ExclusionExpression="1" ID="10">
+              <Step Type="Search" Name="Berths" ExclusionExpression="!EnableDirectLoading" ID="10">
                 <Properties>
                   <Property Name="CollectionType">ObjectList</Property>
                   <Property Name="PopulationName">Prod1</Property>
                   <Property Name="ObjectListName">BerthList</Property>
                   <Property Name="MatchCondition">Math.If(Candidate.Filler.Processing.Contents.NumberWaiting&gt;0,Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.Priority==ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority&amp;&amp;Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.FlowContainer.CurrentWeightCapacity-Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.FlowContainer.Contents.Weight&gt;ContainerEntity.FlowContainer.CurrentWeightCapacity,False)</Property>
+                  <Property Name="SaveNumberFound">
+                    <Value>UnloadingToken.NumberDLShipsFound</Value>
+                  </Property>
                 </Properties>
-                <Exit Name="Original" Type="Primary" NextID="2" />
-                <Exit Name="Found" Type="Alternate" NextID="11" />
+                <Exit Name="Original" Type="Primary" NextID="18" />
+                <Exit Name="Found" Type="Alternate" NextID="16" />
               </Step>
-              <Step Type="Notify" Name="Can Direct Load" ExclusionExpression="1" ID="11">
+              <Step Type="Decide" Name="IsProd1" ID="11">
                 <Properties>
-                  <Property Name="MessageHeading">"Alert"</Property>
-                  <Property Name="MessageContent">"Can Direct Load"</Property>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority==1</Property>
                 </Properties>
+                <Exit Name="True" Type="Primary" NextID="2" />
+                <Exit Name="False" Type="Alternate" NextID="12" />
+              </Step>
+              <Step Type="Search" Name="Tank" ID="12">
+                <Properties>
+                  <Property Name="CollectionType">ObjectList</Property>
+                  <Property Name="PopulationName">Prod2</Property>
+                  <Property Name="ObjectListName">StockpilesProd2</Property>
+                  <Property Name="SearchType">Backward</Property>
+                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity&amp;&amp;Candidate.StockpileTank.Res.Capacity.Remaining</Property>
+                  <Property Name="SearchExpression">Candidate.StockpileTank.FlowContainer.Contents.Weight</Property>
+                  <Property Name="SaveNumberFound">
+                    <Value>UnloadingToken.NumberEligibleSPFound</Value>
+                  </Property>
+                </Properties>
+                <Exit Name="Original" Type="Primary" NextID="7" />
+                <Exit Name="Found" Type="Alternate" NextID="13" />
+              </Step>
+              <Step Type="Execute" Name="NodesOff" ID="13">
+                <Properties>
+                  <Property Name="ProcessName">UnloadingNodesOff</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="14" />
+              </Step>
+              <Step Type="Execute" Name="LoadToTank" ID="14">
+                <Properties>
+                  <Property Name="ProcessName">StockpileTank.LoadToProcess</Property>
+                </Properties>
+              </Step>
+              <Step Type="Execute" Name="DirectLoadProcess" ID="15">
+                <Properties>
+                  <Property Name="ProcessName">DirectLoadProcess</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="17" />
+              </Step>
+              <Step Type="Seize" Name="DirectLoad" ID="16">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">DirectLoad</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="15" />
+              </Step>
+              <Step Type="Release" Name="DirectLoad" ID="17">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">DirectLoad</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="21" />
+              </Step>
+              <Step Type="Decide" Name="IsDL" ExclusionExpression="!EnableDirectLoading" ID="18">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">UnloadingToken.NumberDLShipsFound&lt;=0</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="4" />
+                <Exit Name="False" Type="Alternate" NextID="19" />
+              </Step>
+              <Step Type="Wait" Name="DLComplete" ExclusionExpression="!EnableDirectLoading" ID="19">
+                <Properties>
+                  <Property Name="EventName">DLComplete</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Fire" Name="DLComplete" ID="20">
+                <Properties>
+                  <Property Name="EventName">DLComplete</Property>
+                </Properties>
+              </Step>
+              <Step Type="Delay" Name="Epsilon" ID="21">
+                <Properties>
+                  <Property Name="DelayTime">Math.EPSILON</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="20" />
               </Step>
             </Steps>
           </Process>
@@ -40280,7 +40392,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
               </Step>
             </Steps>
           </Process>
-          <Process Name="UnloadingNodesOff" BeginStepID="11" Category="Loading Processes">
+          <Process Name="UnloadingNodesOff" BeginStepID="2" Category="Loading Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -40362,15 +40474,6 @@ The entity will be processed though the filler without a filling attempt. Howeve
                   </Property>
                   <Property Name="NewValue">0</Property>
                 </Properties>
-              </Step>
-              <Step Type="Assign" Name="DJ1" ID="11">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DJ1.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">0</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
             </Steps>
           </Process>
@@ -42579,64 +42682,22 @@ The entity will be processed though the filler without a filling attempt. Howeve
               </Step>
             </Steps>
           </Process>
-          <Process Name="DirectLoadProcess" BeginStepID="2" Category="Loading Processes">
+          <Process Name="DirectLoadProcess" BeginStepID="3" Category="Loading Processes">
             <Properties />
             <Steps>
-              <Step Type="Execute" Name="loadingOff" ID="2">
+              <Step Type="Wait" Name="TrainEmpty" ID="2">
                 <Properties>
-                  <Property Name="ProcessName">LoadingNodesOff</Property>
+                  <Property Name="EventName">TrainEmpty</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
-              <Step Type="Execute" Name="UnloadingOff" ID="3">
-                <Properties>
-                  <Property Name="ProcessName">UnloadingNodesOff</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="7" />
-              </Step>
-              <Step Type="Assign" Name="DJ1" ID="4">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DJ1.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">1</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
-              </Step>
-              <Step Type="Assign" Name="RJ2" ID="5">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>RJ2.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">1</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
-              </Step>
-              <Step Type="Assign" Name="RJ3" ID="6">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>RJ3.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">1</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
-              </Step>
-              <Step Type="Assign" Name="RJ1" ID="7">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>RJ1.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">1</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="5" />
-              </Step>
-              <Step Type="Assign" Name="DirectLoadResetter" ID="8">
+              <Step Type="Assign" Name="DirectLoadResetter" ID="3">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>DirectLoadResetter</Value>
                   </Property>
                   <Property Name="NewValue">!DirectLoadResetter</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
             </Steps>
           </Process>
@@ -42784,7 +42845,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
                 <Exit Name="True" Type="Primary" NextID="14" />
                 <Exit Name="False" Type="Alternate" NextID="10" />
               </Step>
-              <Step Type="Decide" Name="CanAccess" ID="7">
+              <Step Type="Decide" Name="CanAccess" ExclusionExpression="1" ID="7">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">(SR2[1].SRVehicle.CurrentNode != Pile2N &amp;&amp; Pile2N.NumberTravelers.RoutingIn+Pile2N.NumberTravelers&lt;=0)||SR1[1].SRVehicle.CurrentNode==Pile2N</Property>
@@ -42891,7 +42952,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
                 <Exit Name="True" Type="Primary" NextID="12" />
                 <Exit Name="False" Type="Alternate" NextID="11" />
               </Step>
-              <Step Type="Decide" Name="CanAccess" ID="7">
+              <Step Type="Decide" Name="CanAccess" ExclusionExpression="1" ID="7">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">(SR1[1].SRVehicle.CurrentNode != Pile2N &amp;&amp; Pile2N.NumberTravelers.RoutingIn+Pile2N.NumberTravelers&lt;=0)||SR2[1].SRVehicle.CurrentNode==Pile2N</Property>
@@ -43745,7 +43806,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
-              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize/6</Property>
+              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.1</Property>
               <Property Name="RefillEntityType">Prod2</Property>
               <Property Name="LoadToProcess">P1_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P1_LoadFromProcess</Property>
@@ -43803,7 +43864,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
-              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize/6</Property>
+              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.1</Property>
               <Property Name="RefillEntityType">Prod2</Property>
               <Property Name="LoadToProcess">P2_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P2_LoadFromProcess</Property>
@@ -43861,7 +43922,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
-              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize/6</Property>
+              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.3</Property>
               <Property Name="RefillEntityType">Prod2</Property>
               <Property Name="LoadToProcess">P3_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P3_LoadFromProcess</Property>
@@ -43919,7 +43980,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
-              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize/6</Property>
+              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.3</Property>
               <Property Name="RefillEntityType">Prod2</Property>
               <Property Name="LoadToProcess">P4_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P4_LoadFromProcess</Property>
@@ -43977,7 +44038,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
-              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize/6</Property>
+              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.1</Property>
               <Property Name="RefillEntityType">Prod2</Property>
               <Property Name="LoadToProcess">P6_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P6_LoadFromProcess</Property>
@@ -44001,7 +44062,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           </Fixed>
           <Fixed Name="P5" Type="StockpileTank" Location="-68.802363727951 1.66533453693773E-15 -22.8123810997825" Size="1.99999996042496 1.03323161626161 1.00951097244363" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P5" Type="FlowNode" Location="-68.7325815876707 1.66533453693773E-15 -22.6211427806532" Scope="Public">
+              <Node Name="Input@P5" Type="FlowNode" Location="-68.7325797158467 1.66533453693773E-15 -22.6211433062453" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -44014,7 +44075,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P5" Type="FlowNode" Location="-68.6800390416224 1.66533453693773E-15 -22.8877160339745" Scope="Public">
+              <Node Name="Output@P5" Type="FlowNode" Location="-68.6800390416224 1.66533453693773E-15 -22.9157495778344" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -44035,7 +44096,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
-              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize/6</Property>
+              <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.1</Property>
               <Property Name="RefillEntityType">Prod2</Property>
               <Property Name="LoadToProcess">P5_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P5_LoadFromProcess</Property>
@@ -44079,9 +44140,10 @@ The entity will be processed though the filler without a filling attempt. Howeve
                   </DefaultFlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="14 15">
+              <AttachedObjects IndexList="14 15 40">
                 <StatusLabel Center="-0.748564757953829 0 -24.7155156882957" Width="2.5001160711987" Height="0.44908251144856" Expression="FlowContainer.Contents.Weight / 1000" />
                 <StatusLabel Center="-0.748564757953829 0 -24.1960545743067" Width="2.48671062309578" Height="0.455785235500031" Expression="FlowContainer.CurrentWeightCapacity / 1000" />
+                <StackedBar Center="0.531635271551449 0 -25.7290108868612" Width="1.47176105429211" Height="1.05966795909032" ExternallyVisible="True" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
               </AttachedObjects>
             </Graphics>
           </Entity>
@@ -44229,9 +44291,9 @@ The entity will be processed though the filler without a filling attempt. Howeve
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="ShipGen" Type="Source" Location="-47.0627617307864 2.8865798640254E-15 -188.088707672839" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+          <Fixed Name="ShipGen" Type="Source" Location="-48.1000028547637 2.8865798640254E-15 -188.312976023969" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@ShipGen" Type="TransferNode" Location="-45.8127617307864 2.8865798640254E-15 -188.088707672839" Scope="Public">
+              <Node Name="Output@ShipGen" Type="TransferNode" Location="-46.8500028547637 2.8865798640254E-15 -188.312976023969" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -44275,8 +44337,8 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <AttachedObjects IndexList="9">
                 <Queue Queue="OutputBuffer.Contents">
                   <Points>
-                    <Point Location="-46.062759993598 2.8865798640254E-15 -187.58870754391" />
-                    <Point Location="-43.062759993598 2.8865798640254E-15 -187.58870754391" />
+                    <Point Location="-47.1000011060388 2.8865798640254E-15 -187.812975890935" />
+                    <Point Location="-44.1000011060388 2.8865798640254E-15 -187.812975890935" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -44423,7 +44485,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Entity Name="Prod1" Type="ModelEntity3" Location="-0.393450126897967 0 -30.505150146044" Size="4 4 2" Scope="Public" DefaultEntity="True" Density="130000000">
+          <Entity Name="Prod1" Type="ModelEntity3" Location="-0.311719678235349 0 -30.505150146044" Size="4 4 2" Scope="Public" DefaultEntity="True" Density="130000000">
             <IndexedSizes>
               <IndexedSize Size="4 4 2" />
               <IndexedSize Size="4 4 2" />
@@ -44832,9 +44894,9 @@ The entity will be processed though the filler without a filling attempt. Howeve
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Server2" Type="Server" Location="-44.3589615524408 -1.22124532708767E-15 -183.564992313098" Size="2.08920814597344 0.999103702764571 1.000000367302" Scope="Public">
+          <Fixed Name="Server2" Type="Server" Location="-44.3589615524408 -1.22124532708767E-15 -183.536958769207" Size="2.08920814597344 0.999103702764571 1.000000367302" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@Server2" Type="BasicNode" Location="-45.8589615524408 -1.22124532708767E-15 -183.564992313098" Scope="Public">
+              <Node Name="Input@Server2" Type="BasicNode" Location="-45.8589615524408 -1.22124532708767E-15 -183.536958769207" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -44844,7 +44906,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
                 </Properties>
                 <Graphics />
               </Node>
-              <Node Name="Output@Server2" Type="TransferNode" Location="-42.8589615524408 -1.22124532708767E-15 -183.564992313098" Scope="Public">
+              <Node Name="Output@Server2" Type="TransferNode" Location="-42.8589615524408 -1.22124532708767E-15 -183.536958769207" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -44917,20 +44979,20 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <AttachedObjects IndexList="25 26 27">
                 <Queue Queue="InputBuffer.Contents">
                   <Points>
-                    <Point Location="-45.3589613941171 -1.22124532708767E-15 -183.064993514985" />
-                    <Point Location="-48.3589613941171 -1.22124532708767E-15 -183.064993514985" />
+                    <Point Location="-45.3589613941171 -1.22124532708767E-15 -183.036959971607" />
+                    <Point Location="-48.3589613941171 -1.22124532708767E-15 -183.036959971607" />
                   </Points>
                 </Queue>
                 <Queue Queue="OutputBuffer.Contents">
                   <Points>
-                    <Point Location="-43.3589613941171 -1.22124532708767E-15 -183.064993514985" />
-                    <Point Location="-40.3589613941171 -1.22124532708767E-15 -183.064993514985" />
+                    <Point Location="-43.3589613941171 -1.22124532708767E-15 -183.036959971607" />
+                    <Point Location="-40.3589613941171 -1.22124532708767E-15 -183.036959971607" />
                   </Points>
                 </Queue>
                 <Queue Queue="Processing.Contents">
                   <Points>
-                    <Point Location="-45.3589613941171 -1.22124532708767E-15 -184.564993514985" />
-                    <Point Location="-43.3589613941171 -1.22124532708767E-15 -184.564993514985" />
+                    <Point Location="-45.3589613941171 -1.22124532708767E-15 -184.536959971607" />
+                    <Point Location="-43.3589613941171 -1.22124532708767E-15 -184.536959971607" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -45404,6 +45466,80 @@ The entity will be processed though the filler without a filling attempt. Howeve
               </SymbolInstances>
             </Graphics>
           </Fixed>
+          <Fixed Name="DirectLoad" Type="Resource" Location="-73.2952726888662 0 -17.0938510690943" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+            <IndexedSizes>
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+            </IndexedSizes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="0e322bcf-50f2-4d87-a359-d23aa2368e0d" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="4dbf8c5f-af51-40b5-b4b2-90bb6353467a" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="4d7d92ee-1e70-41b6-a58b-5182bdba7497" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="56d971db-7dc5-402a-9b99-59c2abee3f81" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="72ac2183-24f2-4308-baee-99bf5163256e" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <Decorations>
+                    <Decoration SurfacePath="0,0" SurfaceId="0">
+                      <MaterialRef Id="a7a8029d-2fbb-4d2c-9b81-88ca3dc98415" />
+                    </Decoration>
+                  </Decorations>
+                </SymbolInstance>
+              </SymbolInstances>
+            </Graphics>
+          </Fixed>
           <Node Name="SJ1" Type="FlowNode" Location="-66.4124677683728 -1.33226762955019E-15 -12.5265297807426" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -45452,7 +45588,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="Pile2N" Type="BasicNode" Location="-65.9256346331856 -1.77635683940025E-15 -17.9944233257807" Scope="Public">
+          <Node Name="Pile2N" Type="BasicNode" Location="-65.9256354121505 -1.77635683940025E-15 -17.9944233172595" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -45558,19 +45694,6 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Property Name="EnteredAddOnProcess">ChannelEntrance_Entered</Property>
             </Properties>
             <Graphics />
-          </Node>
-          <Node Name="DJ1" Type="FlowNode" Location="-65.5178353483261 -1.33226762955019E-15 -10.6652238987314" Scope="Public">
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
-              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">9000</Property>
-              <Property Name="RegulatorInitiallyEnabled">False</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True" />
           </Node>
           <Node Name="SL1" Type="BasicNode" Location="-43.7536038590175 3.33066907387547E-16 -150.361162423339" Scope="Public">
             <Properties>
@@ -45756,6 +45879,18 @@ The entity will be processed though the filler without a filling attempt. Howeve
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
+          <Node Name="DLRoute" Type="FlowNode" Location="-65.498345579466 0 -25.7646565079567" Scope="Public">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
+              <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">9000</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Node>
           <Link Name="FlowConnector2" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="SJ1" End="SJ2">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -45909,26 +46044,6 @@ The entity will be processed though the filler without a filling attempt. Howeve
             </Graphics>
           </Link>
           <Link Name="FlowConnector12" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="RJ2" End="RJ3">
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True">
-              <Decorations>
-                <Decoration SurfaceId="0">
-                  <MaterialRef Id="724f37fd-909e-4f66-bca3-b0739a8fed2b" />
-                </Decoration>
-              </Decorations>
-            </Graphics>
-          </Link>
-          <Link Name="FlowConnector13" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="RJ3" End="Input@SurgeBin">
-            <Points>
-              <Point Location="-65.1845106046074 8.31373409582381E-16 -58.7658750274673" />
-              <Point Location="-70.7280399877125 6.383275336666E-16 -58.7886415988288" />
-            </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -46100,22 +46215,6 @@ The entity will be processed though the filler without a filling attempt. Howeve
             </Properties>
             <Graphics />
           </Link>
-          <Link Name="FlowConnector24" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="DJ1" End="RJ1">
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True">
-              <Decorations>
-                <Decoration SurfaceId="0">
-                  <MaterialRef Id="724f37fd-909e-4f66-bca3-b0739a8fed2b" />
-                </Decoration>
-              </Decorations>
-            </Graphics>
-          </Link>
           <Link Name="Connector1" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@Source1" End="ContainerInput@Filler1">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -46162,7 +46261,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           </Link>
           <Link Name="FlowConnector25" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="DumperSplit" End="SJ1">
             <Points>
-              <Point Location="-66.4126606124829 -1.10432846185525E-16 -1.5990201383131" />
+              <Point Location="-66.4126606124829 -1.10432846185525E-16 -1.5793966575892" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -46170,29 +46269,12 @@ The entity will be processed though the filler without a filling attempt. Howeve
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="SelectionWeight">1.0 + SJ1.FlowRegulator.Enabled</Property>
+              <Property Name="SelectionWeight">DirectLoad.Capacity.Remaining</Property>
             </Properties>
             <Graphics ExternallyVisible="True">
               <Decorations>
                 <Decoration SurfaceId="0">
                   <MaterialRef Id="7ec127bc-0d9a-46b0-81fe-a76635f49b38" />
-                </Decoration>
-              </Decorations>
-            </Graphics>
-          </Link>
-          <Link Name="FlowConnector26" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="DumperSplit" End="DJ1">
-            <Properties>
-              <Property Name="InitialCost" Units="USD">0.0</Property>
-              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="SelectionWeight">1.0 + DJ1.FlowRegulator.Enabled</Property>
-            </Properties>
-            <Graphics ExternallyVisible="True">
-              <Decorations>
-                <Decoration SurfaceId="0">
-                  <MaterialRef Id="724f37fd-909e-4f66-bca3-b0739a8fed2b" />
                 </Decoration>
               </Decorations>
             </Graphics>
@@ -46593,11 +46675,52 @@ The entity will be processed though the filler without a filling attempt. Howeve
             </Properties>
             <Graphics />
           </Link>
+          <Link Name="FlowConnector13" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="DLRoute" End="Input@SurgeBin">
+            <Points>
+              <Point Location="-65.1419698708085 0 -59.4986486662759" />
+              <Point Location="-70.6179099312039 0 -59.907300909589" />
+            </Points>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="FlowConnector30" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="RJ3" End="DLRoute">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="SelectionWeight">0.9</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="FlowConnector31" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="DumperSplit" End="DLRoute">
+            <Points>
+              <Point Location="-64.9066100518909 0 -2.17980610649141" />
+              <Point Location="-64.8961471895636 0 -25.7173893277739" />
+            </Points>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="SelectionWeight">DirectLoad.Capacity.Allocated</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
         </Objects>
         <Tokens>
           <Token Name="UnloadingToken">
             <States>
-              <DiscreteState Name="NumberFound" />
+              <DiscreteState Name="NumberEligibleSPFound" />
+              <DiscreteState Name="NumberDLShipsFound" />
             </States>
           </Token>
           <Token Name="LoadingToken">
@@ -51141,4 +51264,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- +kjKbvwFpzVmyMy7vzC9+Gp193G6SFZsrSA6rxjAtJpuJmmPdxI4h+gGm4XmksfW4UBS02Ox+O/q25tsK+EaYg== -->
+<!-- jN0/fOzHgRGiSsiEpEQAZik1k3GRj5U2zHZYrHckYX71CUtaeAcDpAiMh5lgfCboJdM5kg0aac6gPE5Pm6cs1Q== -->
