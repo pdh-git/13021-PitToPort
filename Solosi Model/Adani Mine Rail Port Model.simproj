@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-13T07:13:15" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-13T23:53:56" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -297,7 +297,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="72.0493763940176 994.742256261615 -138.723837186734" Direction="0 -1 2.22044604925031E-16" Zoom="994.742256261615" />
+          <Camera Orientation="Top" Location="89.7031160989983 238.837613873294 -248.581161263062" Direction="0 -1 2.22044604925031E-16" Zoom="238.837613873294" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -544,6 +544,8 @@
           <Categories>
             <Category Name="Group " Expanded="True" />
             <Category Name="NextHatchChange AddOn Processes" Expanded="True" />
+            <Category Name="ShipFullMonitor AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
@@ -858,7 +860,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="PortModelRev2">
-      <RunSetup AnimationInterval="1000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="10000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2014-02-24T00:00:00</StartDate>
         <RunLength Units="Hours">8760</RunLength>
       </RunSetup>
@@ -881,35 +883,38 @@
       </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-6.35510141294689 219.319500648445 -71.7092137234321" Direction="0 -1 2.22044604925031E-16" Zoom="219.319500648445" />
+          <Camera Orientation="Top" Location="-50.2701359919743 107.466555317738 -4.80774122641557" Direction="0 -1 2.22044604925031E-16" Zoom="107.466555317738" />
           <ObjectDisplay Background="ffffff" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="TrainUnloader AddOn Processes" Expanded="True" />
-            <Category Name="Loading Processes" Expanded="True" />
             <Category Name="ChannelExit AddOn Processes" Expanded="True" />
-            <Category Name="Berth2 AddOn Processes" Expanded="True" />
             <Category Name="ToLoad AddOn Processes" Expanded="True" />
-            <Category Name="LoadFrom AddOn Processes" Expanded="True" />
             <Category Name="SR2 AddOn Processes" Expanded="True" />
-            <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
             <Category Name="ShipLoader AddOn Processes" Expanded="True" />
             <Category Name="TrainDumper AddOn Processes" Expanded="True" />
-            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
             <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
+            <Category Name="SR1 AddOn Processes" Expanded="True" />
+            <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
+            <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
+            <Category Name="Loading Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Berth2 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="LoadFrom AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Berth1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="SR1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -1644,7 +1649,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="764" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="772" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -15009,7 +15014,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="779" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="792" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -15144,6 +15149,7 @@
           <BooleanState Name="DirectLoadingTrain" />
           <ListState Name="DumperStates" List="DumperStatesList" InitialListValue="Starved" />
           <DiscreteState Name="PreviousDumperState" />
+          <DiscreteState Name="PreviousSurgeFlowIn" />
         </States>
         <Events>
           <Event Name="B1Loaded" />
@@ -15268,6 +15274,16 @@
             <Properties>
               <Property Name="TimeOffset">4526</Property>
               <Property Name="TimeInterval">4526</Property>
+            </Properties>
+          </Element>
+          <Element Type="Monitor" Name="SurgeBinMonitor" Scope="Public">
+            <Properties>
+              <Property Name="StateVariableName">
+                <Value>Input@SurgeBin.FlowRegulator.CurrentWeightFlowOut</Value>
+              </Property>
+              <Property Name="MonitorType">CrossingStateChange</Property>
+              <Property Name="InitialThresholdValue">0</Property>
+              <Property Name="TriggeredProcessName">SurgeBinMonitor_TriggeredProcessName</Property>
             </Properties>
           </Element>
         </Elements>
@@ -15407,7 +15423,6 @@
                   <Property Name="CollectionType">ObjectList</Property>
                   <Property Name="PopulationName">Prod2</Property>
                   <Property Name="ObjectListName">StockpilesProd2</Property>
-                  <Property Name="SearchType">Backward</Property>
                   <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity&amp;&amp;Candidate.StockpileTank.Res.Capacity.Remaining&amp;&amp;Math.If(Candidate.StockpileTank==P6, SR2[1].Capacity.Remaining,True)&amp;&amp;Math.If(Candidate.StockpileTank==P2, SR1[1].Capacity.Remaining,True)</Property>
                   <Property Name="SearchExpression">Candidate.StockpileTank.FlowContainer.Contents.Weight</Property>
                   <Property Name="SaveNumberFound">
@@ -15909,7 +15924,7 @@
                 <Properties>
                   <Property Name="ProcessName">BeginLoadingProcess</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="20" />
               </Step>
               <Step Type="Delay" Name="PreLoadingDelay" ID="7">
                 <Properties>
@@ -16009,6 +16024,33 @@
                 <Exit Name="True" Type="Primary" NextID="18" />
                 <Exit Name="False" Type="Alternate" NextID="14" />
               </Step>
+              <Step Type="Assign" Name="Previous" ID="20">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>PreviousSurgeFlowIn</Value>
+                  </Property>
+                  <Property Name="NewValue">Input@SurgeBin.FlowRegulator.CurrentWeightFlowOut</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="21" />
+              </Step>
+              <Step Type="Assign" Name="SurgeBin" ID="21">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>SurgeBinMonitor.CurrentThresholdValue</Value>
+                  </Property>
+                  <Property Name="NewValue">PreviousSurgeFlowIn+ShipEntity.FlowContainer.CurrentWeightCapacity</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="22" />
+              </Step>
+              <Step Type="Assign" Name="InflowOn" ID="22">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Input@SurgeBin.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">True</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
             </Steps>
           </Process>
           <Process Name="Berth2_FillingContainer" BeginStepID="7" Category="Berth2 AddOn Processes">
@@ -16057,7 +16099,7 @@
                 <Properties>
                   <Property Name="ProcessName">BeginLoadingProcess</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="20" />
               </Step>
               <Step Type="Delay" Name="PreLoadingDelay" ID="7">
                 <Properties>
@@ -16156,6 +16198,33 @@
                   <Property Name="NewValue">3</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="10" />
+              </Step>
+              <Step Type="Assign" Name="Previous" ID="20">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>PreviousSurgeFlowIn</Value>
+                  </Property>
+                  <Property Name="NewValue">Input@SurgeBin.FlowRegulator.CurrentWeightFlowOut</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="21" />
+              </Step>
+              <Step Type="Assign" Name="SurgeBin" ID="21">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>SurgeBinMonitor.CurrentThresholdValue</Value>
+                  </Property>
+                  <Property Name="NewValue">PreviousSurgeFlowIn+ShipEntity.FlowContainer.CurrentWeightCapacity</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="22" />
+              </Step>
+              <Step Type="Assign" Name="InflowOn" ID="22">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Input@SurgeBin.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">True</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
             </Steps>
           </Process>
@@ -19074,6 +19143,19 @@
               </Step>
             </Steps>
           </Process>
+          <Process Name="SurgeBinMonitor_TriggeredProcessName" BeginStepID="2" Category="SurgeBinMonitor AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Assign" Name="InflowOff" ID="2">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Input@SurgeBin.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">False</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
         </Processes>
         <Objects>
           <Fixed Name="SurgeBin" Type="Tank" Location="-70.6708292124801 0 -72.5300789573029" Size="1.5000000659115 1.02541471142509 1.00951097244363" Scope="Public">
@@ -19119,6 +19201,15 @@
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
+              <AttachedObjects IndexList="43 44">
+                <Plot Center="-35.8594501206579 0 -73.8931438405368" Width="36.8747807149024" Height="21.8116364727332" ExternallyVisible="True" Title="Surge Bin Contents (t)" Look="Dark;In A Fog" TextScale="2">
+                  <Range Type="Days">7</Range>
+                  <PlotLines>
+                    <PlotLine Expression="FlowContainer.Contents.Weight / 1000" />
+                  </PlotLines>
+                </Plot>
+                <StackedBar Center="-66.6611177297565 0 -71.9350384182105" Width="5.16665844883785" Height="2.96547851797203" ExternallyVisible="True" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
+              </AttachedObjects>
             </Graphics>
           </Fixed>
           <Fixed Name="FlowSource1" Type="FlowSource" Location="-147.79424439013 0 20.2006521382237" Size="1.5000000659115 1.02541474951797 0.99035049319138" Scope="Public">
@@ -22904,7 +22995,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <EntityDefinition Name="ShipEntity" Id="a4bd7d4c-271b-46c4-a317-347c5fa5036f" Revision="19" BaseClass="ContainerEntity" Author="Sales and Support" CheckBaseForAdvancedProperties="True">
+      <EntityDefinition Name="ShipEntity" Id="a4bd7d4c-271b-46c4-a317-347c5fa5036f" Revision="23" BaseClass="ContainerEntity" Author="Sales and Support" CheckBaseForAdvancedProperties="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Flow Storage Logic" Description="Flow Storage Logic" />
@@ -22955,6 +23046,16 @@
               <Property Name="MonitorType">CrossingStateChange</Property>
               <Property Name="InitialThresholdValue">0</Property>
               <Property Name="TriggeredProcessName">NextHatchChange_TriggeredProcessName</Property>
+            </Properties>
+          </Element>
+          <Element Type="Monitor" Name="ShipFullMonitor" Scope="Public">
+            <Properties>
+              <Property Name="StateVariableName">
+                <Value>FlowContainer.Contents.Weight</Value>
+              </Property>
+              <Property Name="MonitorType">CrossingStateChange</Property>
+              <Property Name="InitialThresholdValue">0</Property>
+              <Property Name="TriggeredProcessName">ShipFullMonitor_TriggeredProcessName</Property>
             </Properties>
           </Element>
         </Elements>
@@ -23044,12 +23145,21 @@
                   </Property>
                   <Property Name="NewValue">FlowContainer.CurrentWeightCapacity/NumberHatchChanges</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="12" />
               </Step>
               <Step Type="Delay" Name="Epsilon" ID="11">
                 <Properties>
                   <Property Name="DelayTime">Math.EPSILON</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="10" />
+              </Step>
+              <Step Type="Assign" Name="ShipFullMonitor" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipFullMonitor.CurrentThresholdValue</Value>
+                  </Property>
+                  <Property Name="NewValue">FlowContainer.CurrentWeightCapacity-1</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -23066,6 +23176,19 @@
               </Step>
             </Steps>
           </Process>
+          <Process Name="ShipFullMonitor_TriggeredProcessName" BeginStepID="2" Category="ShipFullMonitor AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Assign" Name="FlowContainer.Contents.Weight" ID="2">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowContainer.Contents.FirstItem.Entity.Weight</Value>
+                  </Property>
+                  <Property Name="NewValue">FlowContainer.CurrentWeightCapacity</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
         </Processes>
         <External>
           <Graphics>
@@ -23076,7 +23199,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="204" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="216" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -23984,7 +24107,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1263" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1277" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -33096,7 +33219,6 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="PortStockpileSize">700000000</Property>
               <Property Name="LoadingDelay" Units="Hours">ShipEntity.LoadingDelay</Property>
               <Property Name="PreLoadingDelay" Units="Hours">ShipEntity.PreLoadingDelay</Property>
               <Property Name="PostLoadingDelay">ShipEntity.PostLoadingDelay</Property>
@@ -33105,6 +33227,7 @@
               <Property Name="FinishLoadingProcess">Port_FinishLoadingProcess</Property>
               <Property Name="ReadyToDepartProcess">Port_ReadyToDepartProcess</Property>
               <Property Name="ReadyToLoadProcess">Port_ReadyToLoadProcess</Property>
+              <Property Name="EnableDirectLoading">True</Property>
             </Properties>
             <Graphics EditsLocked="True" ExternallyVisible="True">
               <SymbolInstances>
@@ -33113,7 +33236,7 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="108">
-                <Pie Center="-24.1075292164251 0 -287.918154171243" Width="95.5003399721544" Height="63.1187677431862" ExternallyVisible="True" Title="Train Dumper Utilisation" Look="Aspect" ListState="DumperStates" TextScale="5" />
+                <Pie Center="-24.1075292164251 0 -287.682429369873" Width="95.5003399721544" Height="63.1187677431862" ExternallyVisible="True" Title="Train Dumper Utilisation" Look="Aspect" ListState="DumperStates" TextScale="5" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
@@ -34748,7 +34871,7 @@
           <FloorLabel Center="164.056156574526 0 122.803898776617" Width="74.3785881378759" Height="13.5469316147751" ExternallyVisible="True" Text="Total LAC Loaded On Trains(t):&#xD;&#xA;{Math.Round(Mine.Output@Stockpile2.FlowRegulator.CurrentWeightFlowOut/1000,0)}" />
           <Pie Center="270.176857923788 0 180.87226676116" Width="67.781246094604" Height="41.7214113131057" ExternallyVisible="True" Title="Weather Shutdowns" ListState="Mine.WeatherShutdownSchedule.ResourceState" TextScale="3" />
           <FloorLabel Center="323.201685333137 0 177.057652888868" Width="35.8312580495667" Height="32.4487872896874" ExternallyVisible="True" BackColor="00ffffff" Text="Train Loader Hours:&#xD;&#xA;Operating:&#xD;&#xA;{Math.Round(Mine.WeatherShutdownSchedule.ResourceState.TotalTime(1),2)}&#xD;&#xA;Shut Down:&#xD;&#xA;{Math.Round(Mine.WeatherShutdownSchedule.ResourceState.TotalTime(6),2)}" />
-          <FloorLabel Center="337.682994793754 0 -286.995378185033" Width="95.9096159298234" Height="53.7581766594993" ExternallyVisible="True" Text="Open Cut Stockpile Contents:&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct1LAC.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct1LAC.Maximum/1000,0)}&#xD;&#xA;" />
+          <FloorLabel Center="338.491517521829 0 -286.995378185033" Width="95.9096159298234" Height="53.7581766594993" ExternallyVisible="True" Text="Open Cut Stockpile Contents:&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct1LAC.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct1LAC.Maximum/1000,0)}&#xD;&#xA;" />
           <FloorLabel Center="337.683003806647 0 -231.311682994277" Width="95.9096159298234" Height="53.7581766594993" ExternallyVisible="True" Text="Underground Coal Stockpile &#xD;&#xA;Contents:&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct2UGC.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct2UGC.Maximum/1000,0)}&#xD;&#xA;" />
           <StatusLabel Center="-7.87821104581145 0 162.460595609914" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="Mine.FlowNode6.FlowRegulator.CurrentMaximumFlowRate / 1000" />
           <StatusLabel Center="-8.45809629405119 0 161.454980305734" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="Mine.FlowNode5.FlowRegulator.CurrentMaximumFlowRate / 1000" />
@@ -35020,7 +35143,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1263</Revision>
+        <Revision>1277</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -35036,7 +35159,7 @@
       </DefinitionRef>
       <DefinitionRef Name="ShipEntity">
         <Id>a4bd7d4c-271b-46c4-a317-347c5fa5036f</Id>
-        <Revision>19</Revision>
+        <Revision>23</Revision>
       </DefinitionRef>
       <DefinitionRef Name="Track">
         <Id>60506a88-f865-4039-8367-a618147627fe</Id>
@@ -35048,11 +35171,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>764</Revision>
+        <Revision>772</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>204</Revision>
+        <Revision>216</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -35068,7 +35191,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>779</Revision>
+        <Revision>792</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TransferNode">
         <Id>0d40fbf0-8206-443f-b771-65f85633a2f6</Id>
@@ -35144,7 +35267,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>290</Revision>
+        <Revision>291</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -41761,7 +41884,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="290" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="291" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -52243,4 +52366,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- b8160KqQCiPAWsFa1Bg5a0lsKxADgA3dEnS4m9Lmeovi54gmbqUGf/ODdp/urEVWNUbuyVkpDGb4yf+OGXefQg== -->
+<!-- NkcRF3+BksN3BbaSwzAZscPXXC4oOBaHs548IPy0c/7tXorBbY11277vp/UtbAKgMp1iagAKIvltyUl0Qt86Kg== -->
