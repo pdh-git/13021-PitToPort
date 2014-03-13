@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="48e0008e-d241-40f4-8078-d68634561892" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-12T03:35:44" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-13T02:24:14" />
   <Models>
     <Model Definition="ModelEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -26,18 +26,18 @@
           <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
           <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
           <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-          <Property Name="PortStockpileSize">1000000000</Property>
           <Property Name="LoadingDelay" Units="Hours">12</Property>
           <Property Name="PreLoadingDelay" Units="Hours">1.5</Property>
           <Property Name="PostLoadingDelay" Units="Hours">0.5</Property>
+          <Property Name="EnableDirectLoading">True</Property>
         </Properties>
       </RunnableInstance>
       <InteractiveStatistics>
         <FileRef Name="Results\PortModel\Interactive_Results.stats" />
       </InteractiveStatistics>
-      <ViewInfo ActiveModel="True" ActiveView="Process">
+      <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="-63.3619410041405 18.0619042104935 -19.510906062771" Direction="0 -1 2.22044604925031E-16" Zoom="18.0619042104935" />
+          <Camera Orientation="Top" Location="-149.043755490599 632.867586707036 -61.9324929628858" Direction="0 -1 2.22044604925031E-16" Zoom="632.867586707036" />
           <ObjectDisplay Axis="False" Grid="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process PanelWidth="130">
@@ -49,14 +49,16 @@
             <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="Berth1 AddOn Processes" Expanded="True" />
             <Category Name="Berth2 AddOn Processes" Expanded="True" />
-            <Category Name="ToLoad AddOn Processes" Expanded="True" />
-            <Category Name="LoadFrom AddOn Processes" Expanded="True" />
+            <Category Name="ToLoad AddOn Processes" />
+            <Category Name="LoadFrom AddOn Processes" />
             <Category Name="SR1 AddOn Processes" />
             <Category Name="SR2 AddOn Processes" />
             <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
             <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
             <Category Name="ShiploaderReliability AddOn Processes" />
             <Category Name="ShipLoader AddOn Processes" />
+            <Category Name="TrainDumper AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -143,6 +145,19 @@
         </Process>
       </ViewInfo>
     </Model>
+    <Model Definition="TestShipEntity" Runnable="False">
+      <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
+      <Icon>
+        <FileRef Name="Data\Icons\TestShipEntity.png" />
+      </Icon>
+      <ViewInfo>
+        <Process>
+          <Categories>
+            <Category Name="Group " Expanded="True" />
+          </Categories>
+        </Process>
+      </ViewInfo>
+    </Model>
   </Models>
   <Symbols>
     <SymbolRef Id="a2ae49ca-8f0b-441d-8bcc-b2237f3b169f" />
@@ -155,6 +170,7 @@
     <SymbolRef Id="fc3e0e73-d453-4717-850c-0c599fd47097" />
     <SymbolRef Id="c9f2f860-a9f7-4752-954d-8a262529ed1b" />
     <SymbolRef Id="7adf8d10-0fd5-418d-9acd-fe4f81421e51" />
+    <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
   </Symbols>
   <PathDecorators>
     <PathDecoratorRef Id="dfd1de44-6ec9-4a90-931f-7ff649352ccd" />
@@ -420,7 +436,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </TransporterDefinition>
-      <FixedDefinition Name="StockpileTank" Id="90391288-72ad-45e0-99bb-82059bd606bf" Revision="11" BaseClass="Tank" CheckBaseForAdvancedProperties="True">
+      <FixedDefinition Name="StockpileTank" Id="90391288-72ad-45e0-99bb-82059bd606bf" Revision="13" BaseClass="Tank" CheckBaseForAdvancedProperties="True">
         <Lists />
         <PropertyDefinitions>
           <Categories>
@@ -437,9 +453,12 @@
           <ElementProperty Name="LoadToProcess" Category="Management Processes" DefaultValue="null" Required="False" NullString="null" Type="Process" />
           <ElementProperty Name="LoadFromProcess" Category="Management Processes" DefaultValue="null" Required="False" NullString="null" Type="Process" />
           <ExpressionProperty Name="Position" DefaultValue="0.0" NullString="null" />
+          <ExpressionProperty Name="SRCapacity" DefaultValue="1" NullString="null" />
           <Overrides />
         </PropertyDefinitions>
-        <States />
+        <States>
+          <DiscreteState Name="TankOperation" />
+        </States>
         <Events />
         <UsedObjects>
           <UsedObject Name="Resource" />
@@ -463,6 +482,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="InitialCapacity">SRCapacity</Property>
               <Property Name="CapitalCost" Units="USD">0.0</Property>
             </Properties>
             <Graphics ExternallyVisible="True">
@@ -535,7 +555,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="629" ResourceLogic="True">
+      <FixedDefinition Name="PortModel" Id="cd948010-3378-4f8e-931a-608d2edd7a67" Revision="707" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -550,16 +570,14 @@
           <ObjectList Name="BerthList">
             <Items>
               <Item Value="Berth1" />
-              <Item Value="Berth2" />
             </Items>
           </ObjectList>
           <ObjectList Name="BerthLocationList">
             <Items>
               <Item Value="Berth1Location" />
-              <Item Value="Berth2Location" />
             </Items>
           </ObjectList>
-          <TransporterList Name="SRList">
+          <TransporterList Name="SRList2">
             <Items>
               <Item Value="SR2" />
               <Item Value="SR1" />
@@ -579,6 +597,25 @@
               <Item Value="P6" />
             </Items>
           </ObjectList>
+          <TransporterList Name="SRList1">
+            <Items>
+              <Item Value="SR1" />
+              <Item Value="SR2" />
+            </Items>
+          </TransporterList>
+          <StringList Name="DumperStatesList">
+            <Items>
+              <Item Value="Starved" />
+              <Item Value="PreLoading" />
+              <Item Value="Unloading To Stockpile" />
+              <Item Value="Direct Loading Ship" />
+              <Item Value="Blocked by Stockpile" />
+              <Item Value="Blocked by Ship" />
+              <Item Value="PostLoading" />
+              <Item Value="Failed" />
+              <Item Value="Offshift" />
+            </Items>
+          </StringList>
         </Lists>
         <PropertyDefinitions>
           <Categories>
@@ -651,6 +688,8 @@
           <DiscreteState Name="Product2AllocatedContents" />
           <DiscreteState Name="NumberDLShipsFound" />
           <BooleanState Name="DirectLoadingTrain" />
+          <ListState Name="DumperStates" List="DumperStatesList" InitialListValue="Starved" />
+          <DiscreteState Name="PreviousDumperState" />
         </States>
         <Events>
           <Event Name="B1Loaded" />
@@ -665,20 +704,20 @@
             <Expression>P1.FlowContainer.Contents.Weight + P2.FlowContainer.Contents.Weight + P3.FlowContainer.Contents.Weight + P4.FlowContainer.Contents.Weight + P5.FlowContainer.Contents.Weight + P6.FlowContainer.Contents.Weight</Expression>
             <Description />
           </ExpressionFunction>
-          <ExpressionFunction Name="TotalProduct2" ReturnType="Any" UnitType="Weight" Public="True">
+          <ExpressionFunction Name="TotalProductUGC" ReturnType="Any" UnitType="Weight" Public="True">
             <Expression>Math.If(P1.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P1.FlowContainer.Contents.FirstItem.Entity.Priority == 2, P1.FlowContainer.Contents.Weight, 0), 0) + Math.If(P2.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P2.FlowContainer.Contents.FirstItem.Entity.Priority == 2, P2.FlowContainer.Contents.Weight, 0), 0) + Math.If(P3.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P3.FlowContainer.Contents.FirstItem.Entity.Priority == 2, P3.FlowContainer.Contents.Weight, 0), 0) + Math.If(P4.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P4.FlowContainer.Contents.FirstItem.Entity.Priority == 2, P4.FlowContainer.Contents.Weight, 0), 0) + Math.If(P5.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P5.FlowContainer.Contents.FirstItem.Entity.Priority == 2, P5.FlowContainer.Contents.Weight, 0), 0) + Math.If(P6.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P6.FlowContainer.Contents.FirstItem.Entity.Priority == 2, P6.FlowContainer.Contents.Weight, 0), 0)</Expression>
             <Description />
           </ExpressionFunction>
-          <ExpressionFunction Name="TotalProduct1" ReturnType="Any" UnitType="Weight" Public="True">
+          <ExpressionFunction Name="TotalProductLAC" ReturnType="Any" UnitType="Weight" Public="True">
             <Expression>Math.If(P1.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P1.FlowContainer.Contents.FirstItem.Entity.Priority == 1, P1.FlowContainer.Contents.Weight, 0), 0) + Math.If(P2.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P2.FlowContainer.Contents.FirstItem.Entity.Priority == 1, P2.FlowContainer.Contents.Weight, 0), 0) + Math.If(P3.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P3.FlowContainer.Contents.FirstItem.Entity.Priority == 1, P3.FlowContainer.Contents.Weight, 0), 0) + Math.If(P4.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P4.FlowContainer.Contents.FirstItem.Entity.Priority == 1, P4.FlowContainer.Contents.Weight, 0), 0) + Math.If(P5.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P5.FlowContainer.Contents.FirstItem.Entity.Priority == 1, P5.FlowContainer.Contents.Weight, 0), 0) + Math.If(P6.FlowContainer.Contents.NumberWaiting &gt; 0, Math.If(P6.FlowContainer.Contents.FirstItem.Entity.Priority == 1, P6.FlowContainer.Contents.Weight, 0), 0)</Expression>
             <Description />
           </ExpressionFunction>
-          <ExpressionFunction Name="UnallocatedProduct1" ReturnType="Any" UnitType="Weight" Public="True">
-            <Expression>TotalProduct1 - Product1AllocatedContents</Expression>
+          <ExpressionFunction Name="UnallocatedProductLAC" ReturnType="Any" UnitType="Weight" Public="True">
+            <Expression>TotalProductLAC - Product1AllocatedContents</Expression>
             <Description />
           </ExpressionFunction>
-          <ExpressionFunction Name="UnallocatedProduct2" ReturnType="Any" UnitType="Weight" Public="True">
-            <Expression>TotalProduct2 - Product2AllocatedContents</Expression>
+          <ExpressionFunction Name="UnallocatedProductUGC" ReturnType="Any" UnitType="Weight" Public="True">
+            <Expression>TotalProductUGC - Product2AllocatedContents</Expression>
             <Description />
           </ExpressionFunction>
         </ExpressionFunctions>
@@ -790,25 +829,26 @@
               <Property Name="TokenActionOnAssociatedObjectTransferRequested">EndProcess</Property>
             </Properties>
             <Steps>
-              <Step Type="Search" Name="Tank" ID="2">
+              <Step Type="Search" Name="LACTank" ID="2">
                 <Properties>
                   <Property Name="CollectionType">ObjectList</Property>
-                  <Property Name="PopulationName">Prod2</Property>
+                  <Property Name="PopulationName">Prod1</Property>
                   <Property Name="ObjectListName">StockpilesProd1</Property>
                   <Property Name="SearchType">Backward</Property>
-                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity&amp;&amp;Candidate.StockpileTank.Res.Capacity.Remaining&amp;&amp;Math.If(Candidate.StockpileTank==P5, SR2[1].Capacity.Remaining,True)&amp;&amp;Math.If(Candidate.StockpileTank==P1, SR1[1].Capacity.Remaining,True) </Property>
+                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank) &amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity</Property>
                   <Property Name="SearchExpression">Candidate.StockpileTank.FlowContainer.Contents.Weight</Property>
                   <Property Name="SaveNumberFound">
                     <Value>UnloadingToken.NumberEligibleSPFound</Value>
                   </Property>
                 </Properties>
                 <Exit Name="Original" Type="Primary" NextID="7" />
-                <Exit Name="Found" Type="Alternate" NextID="6" />
+                <Exit Name="Found" Type="Alternate" NextID="3" />
               </Step>
               <Step Type="Execute" Name="LoadToTank" ID="3">
                 <Properties>
                   <Property Name="ProcessName">StockpileTank.LoadToProcess</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
               <Step Type="Decide" Name="TrainEmpty" ID="4">
                 <Properties>
@@ -849,7 +889,6 @@
                 <Properties>
                   <Property Name="ProcessName">UnloadingNodesOff</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
               <Step Type="Decide" Name="FoundTank" ID="7">
                 <Properties>
@@ -863,17 +902,18 @@
                 <Properties>
                   <Property Name="EventName">ShipFull</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
+                <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
               <Step Type="Execute" Name="NodesOff" ID="9">
                 <Properties>
                   <Property Name="ProcessName">UnloadingNodesOff</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
               <Step Type="Search" Name="Berths" ExclusionExpression="!EnableDirectLoading" ID="10">
                 <Properties>
                   <Property Name="CollectionType">ObjectList</Property>
-                  <Property Name="PopulationName">Prod1</Property>
+                  <Property Name="PopulationName">Prod2</Property>
                   <Property Name="ObjectListName">BerthList</Property>
                   <Property Name="MatchCondition">Math.If(Candidate.Filler.Processing.Contents.NumberWaiting&gt;0, ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority ==Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.Priority&amp;&amp;Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.FlowContainer.CurrentWeightCapacity-Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.FlowContainer.Contents.Weight&gt;ContainerEntity.FlowContainer.CurrentWeightCapacity&amp;&amp;Candidate.Filler.Processing.Contents.FirstItem.ContainerEntity.SeizedResources.Contains(ShipLoader[1]),0)</Property>
                   <Property Name="SaveIndexFound">
@@ -886,39 +926,39 @@
                 <Exit Name="Original" Type="Primary" NextID="21" />
                 <Exit Name="Found" Type="Alternate" NextID="23" />
               </Step>
-              <Step Type="Decide" Name="IsProd1" ID="11">
+              <Step Type="Decide" Name="isLAC" ID="11">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority==1</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="2" />
-                <Exit Name="False" Type="Alternate" NextID="12" />
+                <Exit Name="False" Type="Alternate" NextID="27" />
               </Step>
-              <Step Type="Search" Name="Tank" ID="12">
+              <Step Type="Search" Name="UGCTank" ID="12">
                 <Properties>
                   <Property Name="CollectionType">ObjectList</Property>
-                  <Property Name="PopulationName">Prod2</Property>
+                  <Property Name="PopulationName">Prod1</Property>
                   <Property Name="ObjectListName">StockpilesProd2</Property>
                   <Property Name="SearchType">Backward</Property>
-                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank)&amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity&amp;&amp;Candidate.StockpileTank.Res.Capacity.Remaining&amp;&amp;Math.If(Candidate.StockpileTank==P6, SR2[1].Capacity.Remaining,True)&amp;&amp;Math.If(Candidate.StockpileTank==P2, SR1[1].Capacity.Remaining,True) </Property>
+                  <Property Name="MatchCondition">Math.If(Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority, Candidate.Object.Is.StockpileTank) &amp;&amp;Candidate.StockpileTank.FlowContainer.Contents.Weight&lt;Candidate.StockpileTank.FlowContainer.CurrentWeightCapacity</Property>
                   <Property Name="SearchExpression">Candidate.StockpileTank.FlowContainer.Contents.Weight</Property>
                   <Property Name="SaveNumberFound">
                     <Value>UnloadingToken.NumberEligibleSPFound</Value>
                   </Property>
                 </Properties>
                 <Exit Name="Original" Type="Primary" NextID="7" />
-                <Exit Name="Found" Type="Alternate" NextID="13" />
+                <Exit Name="Found" Type="Alternate" NextID="14" />
               </Step>
               <Step Type="Execute" Name="NodesOff" ID="13">
                 <Properties>
                   <Property Name="ProcessName">UnloadingNodesOff</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="14" />
               </Step>
               <Step Type="Execute" Name="LoadToTank" ID="14">
                 <Properties>
                   <Property Name="ProcessName">StockpileTank.LoadToProcess</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
               </Step>
               <Step Type="Execute" Name="DirectLoadProcess" ID="15">
                 <Properties>
@@ -999,6 +1039,19 @@
               <Step Type="Notify" Name="Error" ID="26">
                 <Properties>
                   <Property Name="MessageContent">"Error No Berth Despite Found Direct load opportunity"</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="IsUGC" ID="27">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority==2</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="12" />
+                <Exit Name="False" Type="Alternate" NextID="28" />
+              </Step>
+              <Step Type="Notify" Name="Error" ID="28">
+                <Properties>
+                  <Property Name="MessageContent">"Train Attempting to load unrecognised product"</Property>
                 </Properties>
               </Step>
             </Steps>
@@ -1137,7 +1190,7 @@
               <Step Type="Decide" Name="Total" ID="2">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
-                  <Property Name="Expression">Math.If(ContainerEntity.Priority==1,UnallocatedProduct1&gt;ContainerEntity.FlowContainer.CurrentWeightCapacity,UnallocatedProduct2&gt;ContainerEntity.FlowContainer.CurrentWeightCapacity)</Property>
+                  <Property Name="Expression">Math.If(ContainerEntity.Priority == 1, UnallocatedProductLAC &gt; ContainerEntity.FlowContainer.CurrentWeightCapacity, UnallocatedProductUGC &gt; ContainerEntity.FlowContainer.CurrentWeightCapacity)</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="5" />
                 <Exit Name="False" Type="Alternate" NextID="3" />
@@ -1457,7 +1510,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="P1_LoadToProcess" BeginStepID="6" Category="ToLoad AddOn Processes">
+          <Process Name="P1_LoadToProcess" BeginStepID="11" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -1501,17 +1554,15 @@
                   <Property Name="ResourceSeizes">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList1</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile1N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
+                <Exit Name="Exit" Type="Primary" NextID="13" />
               </Step>
               <Step Type="Wait" Name="Finished" ID="7">
                 <Properties>
@@ -1546,9 +1597,8 @@
                   <Property Name="ResourceReleases">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -1567,7 +1617,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
               <Step Type="Release" Name="P1P2" ID="10">
                 <Properties>
@@ -1584,9 +1634,36 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
+              <Step Type="Assign" Name="TankOperation" ID="11">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="12" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="9" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
             </Steps>
           </Process>
-          <Process Name="P2_LoadToProcess" BeginStepID="7" Category="ToLoad AddOn Processes">
+          <Process Name="P2_LoadToProcess" BeginStepID="11" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -1658,26 +1735,23 @@
                   <Property Name="ResourceSeizes">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList1</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile1N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
+                <Exit Name="Exit" Type="Primary" NextID="13" />
               </Step>
               <Step Type="Release" Name="SR" ID="8">
                 <Properties>
                   <Property Name="ResourceReleases">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -1696,7 +1770,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
+                <Exit Name="Exit" Type="Primary" NextID="7" />
               </Step>
               <Step Type="Release" Name="P1P2" ID="10">
                 <Properties>
@@ -1713,9 +1787,36 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
+              <Step Type="Assign" Name="TankOperation" ID="11">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="12" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="9" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
             </Steps>
           </Process>
-          <Process Name="P3_LoadToProcess" BeginStepID="7" Category="ToLoad AddOn Processes">
+          <Process Name="P3_LoadToProcess" BeginStepID="12" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -1770,15 +1871,14 @@
                       <Properties>
                         <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList1</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile2N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
+                <Exit Name="Exit" Type="Primary" NextID="14" />
               </Step>
               <Step Type="Release" Name="SR" ID="8">
                 <Properties>
@@ -1787,7 +1887,7 @@
                       <Properties>
                         <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -1821,7 +1921,7 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
-              <Step Type="Seize" Name="P3" ID="10">
+              <Step Type="Seize" Name="P3Res" ID="10">
                 <Properties>
                   <Property Name="ResourceSeizes">
                     <Rows>
@@ -1831,7 +1931,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="7" />
               </Step>
               <Step Type="Release" Name="P3" ID="11">
                 <Properties>
@@ -1845,9 +1945,36 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
+              <Step Type="Assign" Name="TankOperation" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="10" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
             </Steps>
           </Process>
-          <Process Name="P4_LoadToProcess" BeginStepID="7" Category="ToLoad AddOn Processes">
+          <Process Name="P4_LoadToProcess" BeginStepID="12" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -1902,15 +2029,14 @@
                       <Properties>
                         <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList1</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile2N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
+                <Exit Name="Exit" Type="Primary" NextID="14" />
               </Step>
               <Step Type="Release" Name="SR" ID="8">
                 <Properties>
@@ -1919,7 +2045,7 @@
                       <Properties>
                         <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -1953,7 +2079,7 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
-              <Step Type="Seize" Name="P4" ID="10">
+              <Step Type="Seize" Name="P4Res" ID="10">
                 <Properties>
                   <Property Name="ResourceSeizes">
                     <Rows>
@@ -1963,7 +2089,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="7" />
               </Step>
               <Step Type="Release" Name="P4" ID="11">
                 <Properties>
@@ -1977,9 +2103,36 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
+              <Step Type="Assign" Name="TankOperation" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="10" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
             </Steps>
           </Process>
-          <Process Name="P5_LoadToProcess" BeginStepID="8" Category="ToLoad AddOn Processes">
+          <Process Name="P5_LoadToProcess" BeginStepID="13" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -2041,17 +2194,15 @@
                   <Property Name="ResourceSeizes">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR2</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile3N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
+                <Exit Name="Exit" Type="Primary" NextID="15" />
               </Step>
               <Step Type="Wait" Name="Finished" ID="9">
                 <Properties>
@@ -2086,9 +2237,8 @@
                   <Property Name="ResourceReleases">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
-                        <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectName">SR2</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -2107,7 +2257,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
               <Step Type="Release" Name="P5P6" ID="12">
                 <Properties>
@@ -2124,9 +2274,36 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
+              <Step Type="Assign" Name="TankOperation" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="14" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="11" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
             </Steps>
           </Process>
-          <Process Name="P6_LoadToProcess" BeginStepID="9" Category="ToLoad AddOn Processes">
+          <Process Name="P6_LoadToProcess" BeginStepID="13" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -2216,26 +2393,23 @@
                   <Property Name="ResourceSeizes">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR2</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile3N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
+                <Exit Name="Exit" Type="Primary" NextID="15" />
               </Step>
               <Step Type="Release" Name="SR" ID="10">
                 <Properties>
                   <Property Name="ResourceReleases">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
-                        <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectName">SR2</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -2254,7 +2428,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Release" Name="P5P6" ID="12">
                 <Properties>
@@ -2271,6 +2445,33 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
+              <Step Type="Assign" Name="TankOperation" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="14" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="11" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
             </Steps>
           </Process>
           <Process Name="ShipLoadingManager" BeginStepID="4">
@@ -2281,7 +2482,7 @@
               <Step Type="Search" Name="MatchingProduct" ID="2">
                 <Properties>
                   <Property Name="CollectionType">ObjectList</Property>
-                  <Property Name="PopulationName">Prod1</Property>
+                  <Property Name="PopulationName">Prod2</Property>
                   <Property Name="ObjectListName">Stockpiles</Property>
                   <Property Name="MatchCondition">Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0 &amp;&amp; Math.If(Candidate.StockpileTank.FlowContainer.Contents.NumberWaiting &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.Priority, 1)</Property>
                   <Property Name="SearchExpression">Candidate.StockpileTank.FlowContainer.Contents.Weight</Property>
@@ -2358,7 +2559,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="P5_LoadFromProcess" BeginStepID="5" Category="LoadFrom AddOn Processes">
+          <Process Name="P5_LoadFromProcess" BeginStepID="10" Category="LoadFrom AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="P5" ID="2">
@@ -2393,26 +2594,23 @@
                   <Property Name="ResourceSeizes">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR2</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile3N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
               <Step Type="Release" Name="SR" ID="6">
                 <Properties>
                   <Property Name="ResourceReleases">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
-                        <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectName">SR2</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -2474,11 +2672,20 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
+                <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="10">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
             </Steps>
           </Process>
-          <Process Name="P6_LoadFromProcess" BeginStepID="5" Category="LoadFrom AddOn Processes">
+          <Process Name="P6_LoadFromProcess" BeginStepID="10" Category="LoadFrom AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="P6" ID="2">
@@ -2513,26 +2720,23 @@
                   <Property Name="ResourceSeizes">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR2</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile3N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
               <Step Type="Release" Name="SR" ID="6">
                 <Properties>
                   <Property Name="ResourceReleases">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
-                        <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectName">SR2</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -2594,11 +2798,20 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
+                <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="10">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
             </Steps>
           </Process>
-          <Process Name="P4_LoadFromProcess" BeginStepID="6" Category="LoadFrom AddOn Processes">
+          <Process Name="P4_LoadFromProcess" BeginStepID="11" Category="LoadFrom AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="P4" ID="2">
@@ -2644,15 +2857,14 @@
                       <Properties>
                         <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile2N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
               <Step Type="Release" Name="SR" ID="7">
                 <Properties>
@@ -2661,7 +2873,7 @@
                       <Properties>
                         <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -2695,13 +2907,10 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
-              <Step Type="Release" Name="P3P4" ID="9">
+              <Step Type="Release" Name="P4Res" ID="9">
                 <Properties>
                   <Property Name="ResourceReleases">
                     <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P3.Res</Property>
-                      </Properties>
                       <Properties>
                         <Property Name="ObjectName">P4.Res</Property>
                       </Properties>
@@ -2710,24 +2919,30 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="7" />
               </Step>
-              <Step Type="Seize" Name="P3P4" ID="10">
+              <Step Type="Seize" Name="P4Res" ID="10">
                 <Properties>
                   <Property Name="ResourceSeizes">
                     <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P3.Res</Property>
-                      </Properties>
                       <Properties>
                         <Property Name="ObjectName">P4.Res</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="11">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
             </Steps>
           </Process>
-          <Process Name="P3_LoadFromProcess" BeginStepID="6" Category="LoadFrom AddOn Processes">
+          <Process Name="P3_LoadFromProcess" BeginStepID="11" Category="LoadFrom AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="P3" ID="2">
@@ -2773,15 +2988,14 @@
                       <Properties>
                         <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile2N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
               <Step Type="Release" Name="SR" ID="7">
                 <Properties>
@@ -2790,7 +3004,7 @@
                       <Properties>
                         <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -2824,39 +3038,42 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
-              <Step Type="Release" Name="P3P4" ID="9">
+              <Step Type="Release" Name="P3Res" ID="9">
                 <Properties>
                   <Property Name="ResourceReleases">
                     <Rows>
                       <Properties>
                         <Property Name="ObjectName">P3.Res</Property>
                       </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P4.Res</Property>
-                      </Properties>
                     </Rows>
                   </Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="7" />
               </Step>
-              <Step Type="Seize" Name="P3P4" ID="10">
+              <Step Type="Seize" Name="P3Res" ID="10">
                 <Properties>
                   <Property Name="ResourceSeizes">
                     <Rows>
                       <Properties>
                         <Property Name="ObjectName">P3.Res</Property>
                       </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P4.Res</Property>
-                      </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="11">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
             </Steps>
           </Process>
-          <Process Name="P1_LoadFromProcess" BeginStepID="9" Category="LoadFrom AddOn Processes">
+          <Process Name="P1_LoadFromProcess" BeginStepID="12" Category="LoadFrom AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="P1" ID="2">
@@ -2937,9 +3154,8 @@
                   <Property Name="ResourceReleases">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -2950,17 +3166,15 @@
                   <Property Name="ResourceSeizes">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList1</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile1N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
               <Step Type="Release" Name="P1P2" ID="10">
                 <Properties>
@@ -2990,11 +3204,20 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
             </Steps>
           </Process>
-          <Process Name="P2_LoadFromProcess" BeginStepID="7" Category="LoadFrom AddOn Processes">
+          <Process Name="P2_LoadFromProcess" BeginStepID="12" Category="LoadFrom AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="P2" ID="2">
@@ -3047,26 +3270,23 @@
                   <Property Name="ResourceSeizes">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
-                        <Property Name="SelectionGoal">SmallestDistance</Property>
+                        <Property Name="ObjectListName">SRList1</Property>
                         <Property Name="RequestMove">ToNode</Property>
                         <Property Name="DestinationNode">Pile1N</Property>
                       </Properties>
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
               <Step Type="Release" Name="SR" ID="8">
                 <Properties>
                   <Property Name="ResourceReleases">
                     <Rows>
                       <Properties>
-                        <Property Name="ObjectType">FromList</Property>
                         <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -3128,7 +3348,16 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
             </Steps>
           </Process>
@@ -3349,7 +3578,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="DirectLoadProcess_Berth2" BeginStepID="6" Category="Loading Processes">
+          <Process Name="DirectLoadProcess_Berth2" BeginStepID="8" Category="Loading Processes">
             <Properties />
             <Steps>
               <Step Type="Wait" Name="TrainEmpty" ID="2">
@@ -3433,6 +3662,15 @@
                     </Rows>
                   </Property>
                 </Properties>
+              </Step>
+              <Step Type="Assign" Name="Directloading" ID="8">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">3</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
             </Steps>
           </Process>
@@ -3785,11 +4023,11 @@
                       </Properties>
                       <Properties>
                         <Property Name="TalliesTallyStatisticName">Hourly_StockpileProduct1LAC</Property>
-                        <Property Name="TalliesValue" Units="Metric Tons">TotalProduct1</Property>
+                        <Property Name="TalliesValue" Units="Metric Tons">TotalProductLAC</Property>
                       </Properties>
                       <Properties>
                         <Property Name="TalliesTallyStatisticName">Hourly_StockpileProduct2UGC</Property>
-                        <Property Name="TalliesValue" Units="Metric Tons">TotalProduct2</Property>
+                        <Property Name="TalliesValue" Units="Metric Tons">TotalProductUGC</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -3902,7 +4140,7 @@
             <Properties />
             <Steps />
           </Process>
-          <Process Name="DirectLoadProcess_Berth1" BeginStepID="6" Category="Loading Processes">
+          <Process Name="DirectLoadProcess_Berth1" BeginStepID="8" Category="Loading Processes">
             <Properties />
             <Steps>
               <Step Type="Wait" Name="TrainEmpty" ID="2">
@@ -3987,6 +4225,15 @@
                   </Property>
                 </Properties>
               </Step>
+              <Step Type="Assign" Name="Directloading" ID="8">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">3</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
             </Steps>
           </Process>
           <Process Name="TrainUnloader_EmptyingContainer" BeginStepID="2" Category="TrainUnloader AddOn Processes">
@@ -3997,12 +4244,117 @@
                   <Property Name="ProcessName">TrainUnloaderManager</Property>
                   <Property Name="TokenWaitAction">None (Continue)</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="PostLoading" ID="3">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">6</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="TrainDumper_Entered" BeginStepID="2" Category="TrainDumper AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Assign" Name="Preloading" ID="2">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="TrainDumper_Exited" BeginStepID="2" Category="TrainDumper AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Assign" Name="Starved" ID="2">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="TrainDumper_Failed" BeginStepID="3" Category="TrainDumper AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Assign" Name="Failed" ID="2">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">7</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="PreviousState" ID="3">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>PreviousDumperState</Value>
+                  </Property>
+                  <Property Name="NewValue">DumperStates</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="TrainDumper_Repaired" BeginStepID="2" Category="TrainDumper AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Assign" Name="PreviousState" ID="2">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">PreviousDumperState</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="TrainDumper_OnShift" BeginStepID="2" Category="TrainDumper AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Assign" Name="PreviousState" ID="2">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">PreviousDumperState</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="TrainDumper_OffShift" BeginStepID="2" Category="TrainDumper AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Assign" Name="PreviousState" ID="2">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>PreviousDumperState</Value>
+                  </Property>
+                  <Property Name="NewValue">DumperStates</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="Offshift" ID="3">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">8</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
         </Processes>
         <Objects>
-          <Entity Name="Prod2" Type="ModelEntity" Location="-4.65314078426918 0 -30.1467161318431" Size="4 4 2" Scope="Public" Density="130000000">
+          <Entity Name="Prod1" Type="ModelEntity" Location="-4.65314078426918 0 -30.0849633225474" Size="4 4 2" Scope="Public" Density="130000000">
             <IndexedSizes>
               <IndexedSize Size="4 4 2" />
               <IndexedSize Size="4 4 2" />
@@ -4013,7 +4365,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="InitialPriority">2</Property>
+              <Property Name="InitialPriority">1</Property>
             </Properties>
             <Graphics>
               <SymbolInstances CurrentAnimationExpression="ModelEntity.Animation">
@@ -4066,7 +4418,7 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
               <Property Name="InitialWeightCapacity" Units="Metric Tons">1500</Property>
-              <Property Name="RefillEntityType">Prod2</Property>
+              <Property Name="RefillEntityType">Prod1</Property>
             </Properties>
             <Graphics ExternallyVisible="True">
               <SymbolInstances>
@@ -4097,7 +4449,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="EntityType">Prod1</Property>
+              <Property Name="EntityType">Prod2</Property>
               <Property Name="MaximumWeight" Units="Metric Tons">Math.If(Run.ModelName==Name,Infinity,0)</Property>
             </Properties>
             <Graphics>
@@ -4217,9 +4569,9 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Source1" Type="Source" Location="-150.147281897132 5.5511151231258E-16 15.5231418440289" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+          <Fixed Name="Source1" Type="Source" Location="-150.086764144022 5.5511151231258E-16 15.5534007205838" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@Source1" Type="TransferNode" Location="-148.897281897132 5.5511151231258E-16 15.5231418440289" Scope="Public">
+              <Node Name="Output@Source1" Type="TransferNode" Location="-148.836764144022 5.5511151231258E-16 15.5534007205838" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4237,7 +4589,7 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="EntityType">TestTrain</Property>
-              <Property Name="InterarrivalTime" Units="Hours">Random.Exponential(4.9)</Property>
+              <Property Name="InterarrivalTime" Units="Hours">Random.Exponential(4.5)</Property>
               <Property Name="EntitiesPerArrival">Run.ModelName==Name</Property>
               <Property Name="CapitalCost" Units="USD">0.0</Property>
               <Property Name="OutputBufferCostPerUse" Units="USD">0.0</Property>
@@ -4252,16 +4604,16 @@
               <AttachedObjects IndexList="3">
                 <Queue Queue="OutputBuffer.Contents">
                   <Points>
-                    <Point Location="-149.147279722616 5.5511151231258E-16 16.0231419038027" />
-                    <Point Location="-146.147279722616 5.5511151231258E-16 16.0231419038027" />
+                    <Point Location="-149.08676196821 5.5511151231258E-16 16.0534007810056" />
+                    <Point Location="-146.08676196821 5.5511151231258E-16 16.0534007810056" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="TrainDumper" Type="Emptier" Location="-55.3679608195752 -1.77635683940025E-15 12.8789122339606" Size="4.00488865421988 3.9059970601138 0.859836502218153" Scope="Public">
+          <Fixed Name="TrainDumper" Type="Emptier" Location="-55.3467795925841 -3.5527136788005E-15 12.8789122551368" Size="4.00488865421988 3.9059970601138 0.859836502218153" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@TrainDumper" Type="BasicNode" Location="-56.1668225035941 -1.77635683940025E-15 11.9983157346901" Scope="Public">
+              <Node Name="Input@TrainDumper" Type="BasicNode" Location="-56.145641276603 -3.5527136788005E-15 11.9983157558663" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4271,7 +4623,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="ContainerOutput@TrainDumper" Type="TransferNode" Location="-54.8132183200222 -1.77635683940025E-15 13.7699556406545" Scope="Public">
+              <Node Name="ContainerOutput@TrainDumper" Type="TransferNode" Location="-54.7920370930311 -3.5527136788005E-15 13.7699556618307" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4281,7 +4633,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="FlowOutput@TrainDumper" Type="FlowNode" Location="-54.9997394760043 -1.77635683940025E-15 11.7831325695989" Scope="Public">
+              <Node Name="FlowOutput@TrainDumper" Type="FlowNode" Location="-54.9785582490132 -3.5527136788005E-15 11.7831325907751" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4315,13 +4667,19 @@
               <Property Name="OutputBufferCapacity">0</Property>
               <Property Name="FailureType">Processing Time Based</Property>
               <Property Name="TimeToRepair">Random.Triangular(0.5,1.0,6)</Property>
+              <Property Name="EnteredAddOnProcess">TrainDumper_Entered</Property>
               <Property Name="BeforeProcessingAddOnProcess">TrainUnloader_BeforeProcessing</Property>
               <Property Name="EmptyingContainerAddOnProcess">TrainUnloader_EmptyingContainer</Property>
               <Property Name="EmptiedContainerAddOnProcess">TrainUnloader_EmptiedContainer</Property>
               <Property Name="AfterProcessingAddOnProcess">TrainUnloader_AfterProcessing</Property>
+              <Property Name="ExitedAddOnProcess">TrainDumper_Exited</Property>
+              <Property Name="FailedAddOnProcess">TrainDumper_Failed</Property>
+              <Property Name="RepairedAddOnProcess">TrainDumper_Repaired</Property>
+              <Property Name="OnShiftAddOnProcess">TrainDumper_OnShift</Property>
+              <Property Name="OffShiftAddOnProcess">TrainDumper_OffShift</Property>
             </Properties>
             <Graphics ExternallyVisible="True">
-              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Emptier.ResourceState">
+              <SymbolInstances CurrentSymbolIndex="4" CurrentSymbolExpression="Emptier.ResourceState">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
                   <SymbolRef Id="7adf8d10-0fd5-418d-9acd-fe4f81421e51" />
                 </SymbolInstance>
@@ -4397,8 +4755,8 @@
               <AttachedObjects IndexList="4">
                 <Queue Queue="Processing.Contents" Alignment="Inline">
                   <Points>
-                    <Point Location="-56.2908708697984 -1.66533453693773E-15 14.1480027058887" />
-                    <Point Location="-57.427851314475 -1.66533453693773E-15 12.607348485993" />
+                    <Point Location="-56.2696896437092 -3.44169137633798E-15 14.1480027282404" />
+                    <Point Location="-57.4066700883858 -3.44169137633798E-15 12.6073485083447" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -4573,9 +4931,9 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P1" Type="StockpileTank" Location="-68.7227232094478 -1.22124532708767E-15 -12.9498392492599" Size="1.99999996042496 1.03323161626161 1.00951097244363" Scope="Public">
+          <Fixed Name="P1" Type="StockpileTank" Location="-68.7529834961208 2.16936748935778E-30 -12.9195806663965" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P1" Type="FlowNode" Location="-68.7216247372475 -1.22124532708767E-15 -12.7749915742968" Scope="Public">
+              <Node Name="Input@P1" Type="FlowNode" Location="-68.7437141085833 0 -12.757544119184" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4588,7 +4946,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P1" Type="FlowNode" Location="-68.7013330945882 -1.22124532708767E-15 -12.9781992227466" Scope="Public">
+              <Node Name="Output@P1" Type="FlowNode" Location="-68.7415784577207 0 -12.7638985962483" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4602,6 +4960,10 @@
                 <Graphics ExternallyVisible="True" />
               </Node>
             </AssociatedNodes>
+            <IndexedSizes>
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+            </IndexedSizes>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4610,30 +4972,41 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
               <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.1</Property>
-              <Property Name="RefillEntityType">Prod2</Property>
+              <Property Name="RefillEntityType">Prod1</Property>
               <Property Name="LoadToProcess">P1_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P1_LoadFromProcess</Property>
               <Property Name="Position">1</Property>
             </Properties>
             <Graphics>
-              <SymbolInstances>
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="P1.Res.Capacity.Allocated">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                  <Decorations>
+                    <Decoration SurfacePath="0" SurfaceId="0">
+                      <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                  </FlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="16">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-68.7386691018057 -1.11022302462516E-15 -12.8239229642986" Direction="0.0145475931781887 0 -0.904889258434423" />
-                    <Point Location="-65.5634537738965 -1.11022302462516E-15 -12.8239229642986" />
+                    <Point Location="-68.7689293629539 1.11022302462512E-16 -12.7936643497287" Direction="0.0145475931781887 0 -0.904889258434423" />
+                    <Point Location="-65.5937140350447 1.11022302462512E-16 -12.7936643497287" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P2" Type="StockpileTank" Location="-63.2327338151605 -2.88657986402541E-15 -12.8016150446247" Size="1.99999996042496 1.03323161626161 1.00951097244363" Scope="Public">
+          <Fixed Name="P2" Type="StockpileTank" Location="-63.2327352252796 -3.5527136788005E-15 -12.7410975852017" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P2" Type="FlowNode" Location="-63.1761581397838 -2.88657986402541E-15 -12.7745510157723" Scope="Public">
+              <Node Name="Input@P2" Type="FlowNode" Location="-63.0495171261813 -3.5527136788005E-15 -12.7767103408853" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4646,7 +5019,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P2" Type="FlowNode" Location="-63.208906847922 -2.88657986402541E-15 -12.9822723014579" Scope="Public">
+              <Node Name="Output@P2" Type="FlowNode" Location="-63.0593448041407 -3.5527136788005E-15 -12.8607718751624" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4660,6 +5033,10 @@
                 <Graphics ExternallyVisible="True" />
               </Node>
             </AssociatedNodes>
+            <IndexedSizes>
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+            </IndexedSizes>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4668,30 +5045,41 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
               <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.1</Property>
-              <Property Name="RefillEntityType">Prod2</Property>
+              <Property Name="RefillEntityType">Prod1</Property>
               <Property Name="LoadToProcess">P2_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P2_LoadFromProcess</Property>
               <Property Name="Position">1</Property>
             </Properties>
             <Graphics>
-              <SymbolInstances>
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="P2.Res.Capacity.Allocated">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                  <Decorations>
+                    <Decoration SurfacePath="0" SurfaceId="0">
+                      <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                  </FlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="19">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-63.0936468701468 -2.77555756156289E-15 -12.8816022469342" Direction="-0.00405906542744305 0 -0.542933555060653" />
-                    <Point Location="-59.9911694126574 -2.77555756156289E-15 -12.8816022469342" />
+                    <Point Location="-63.0936482699246 -3.44169137633798E-15 -12.8210847509705" Direction="-0.00405906542744305 0 -0.542933555060653" />
+                    <Point Location="-59.9911708124352 -3.44169137633798E-15 -12.8210847509705" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P3" Type="StockpileTank" Location="-68.7639407427256 8.88178419700124E-16 -18.0666470554477" Size="1.99999996042496 1.03323161626161 1.00951097244363" Scope="Public">
+          <Fixed Name="P3" Type="StockpileTank" Location="-68.7851233664324 -1.18329135783152E-30 -18.0152073811574" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P3" Type="FlowNode" Location="-68.755045028918 8.88178419700124E-16 -17.9466874647012" Scope="Public">
+              <Node Name="Input@P3" Type="FlowNode" Location="-68.8451670839287 0 -17.8531701187199" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4704,7 +5092,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P3" Type="FlowNode" Location="-68.8009981876287 8.88178419700124E-16 -18.2259244514917" Scope="Public">
+              <Node Name="Output@P3" Type="FlowNode" Location="-68.8106921061143 0 -17.9018870229527" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4718,6 +5106,11 @@
                 <Graphics ExternallyVisible="True" />
               </Node>
             </AssociatedNodes>
+            <IndexedSizes>
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+            </IndexedSizes>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4726,30 +5119,53 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
               <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.3</Property>
-              <Property Name="RefillEntityType">Prod2</Property>
+              <Property Name="RefillEntityType">Prod1</Property>
               <Property Name="LoadToProcess">P3_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P3_LoadFromProcess</Property>
               <Property Name="Position">2</Property>
+              <Property Name="SRCapacity">2</Property>
             </Properties>
             <Graphics>
-              <SymbolInstances>
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="P3.Res.Capacity.Allocated">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                  <Decorations>
+                    <Decoration SurfacePath="0" SurfaceId="0">
+                      <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                  </FlowDecoration>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                  <Decorations>
+                    <Decoration SurfacePath="0" SurfaceId="0">
+                      <MaterialRef Id="87ba51bb-30a8-4548-aa72-5afa9fcf2428" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="87ba51bb-30a8-4548-aa72-5afa9fcf2428" />
+                  </FlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="17">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-68.8653007283807 7.7715611723761E-16 -18.0092713455324" Direction="-4.40163093412549E-05 0 -0.586602808921846" />
-                    <Point Location="-65.7369692920788 7.7715611723761E-16 -18.0092713455324" />
+                    <Point Location="-68.886483312957 -1.11022302462515E-16 -17.9578316225325" Direction="-4.40163093412549E-05 0 -0.586602808921846" />
+                    <Point Location="-65.7581518766551 -1.11022302462515E-16 -17.9578316225325" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P4" Type="StockpileTank" Location="-63.2227819983881 -9.99200722162642E-16 -18.0650398802841" Size="1.99999996042496 1.03323161626161 1.00951097244363" Scope="Public">
+          <Fixed Name="P4" Type="StockpileTank" Location="-63.1925245319125 0 -17.9915532435727" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P4" Type="FlowNode" Location="-63.2572647451858 -9.99200722162642E-16 -17.9512389144244" Scope="Public">
+              <Node Name="Input@P4" Type="FlowNode" Location="-63.0676749936807 1.18329135783152E-30 -17.9989669040148" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4762,7 +5178,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P4" Type="FlowNode" Location="-63.2640809986952 -9.99200722162642E-16 -18.2282419497607" Scope="Public">
+              <Node Name="Output@P4" Type="FlowNode" Location="-63.0787034538567 1.18329135783152E-30 -18.0688650218313" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4776,6 +5192,11 @@
                 <Graphics ExternallyVisible="True" />
               </Node>
             </AssociatedNodes>
+            <IndexedSizes>
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+            </IndexedSizes>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4784,30 +5205,53 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
               <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.3</Property>
-              <Property Name="RefillEntityType">Prod2</Property>
+              <Property Name="RefillEntityType">Prod1</Property>
               <Property Name="LoadToProcess">P4_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P4_LoadFromProcess</Property>
               <Property Name="Position">2</Property>
+              <Property Name="SRCapacity">2</Property>
             </Properties>
             <Graphics>
-              <SymbolInstances>
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="P4.Res.Capacity.Allocated">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                  <Decorations>
+                    <Decoration SurfacePath="0" SurfaceId="0">
+                      <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                  </FlowDecoration>
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                  <Decorations>
+                    <Decoration SurfacePath="0" SurfaceId="0">
+                      <MaterialRef Id="87ba51bb-30a8-4548-aa72-5afa9fcf2428" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="87ba51bb-30a8-4548-aa72-5afa9fcf2428" />
+                  </FlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="20">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-63.1638738930111 -9.99200722162641E-16 -18.0568502029592" Direction="3.7030018650297E-06 0 -0.524835769891965" />
-                    <Point Location="-59.9505936691828 -9.99200722162641E-16 -18.0568502029592" />
+                    <Point Location="-63.1336163997536 9.86076131526265E-31 -17.9833635395581" Direction="3.7030018650297E-06 0 -0.524835769891965" />
+                    <Point Location="-59.9203361759253 9.86076131526265E-31 -17.9833635395581" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P6" Type="StockpileTank" Location="-63.1272494240016 -7.7715611723761E-16 -22.6693457572194" Size="1.99999996042496 1.03323161626161 1.00951097244363" Scope="Public">
+          <Fixed Name="P6" Type="StockpileTank" Location="-63.096991957525 -7.7715611723761E-16 -22.6390879139945" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P6" Type="FlowNode" Location="-63.115961686468 -7.7715611723761E-16 -22.6285245686185" Scope="Public">
+              <Node Name="Input@P6" Type="FlowNode" Location="-62.9644110595653 -7.7715611723761E-16 -22.5405942794995" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4820,7 +5264,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P6" Type="FlowNode" Location="-63.134123498015 -7.7715611723761E-16 -22.8645549295974" Scope="Public">
+              <Node Name="Output@P6" Type="FlowNode" Location="-62.9583109124382 -7.7715611723761E-16 -22.5469487565648" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4834,6 +5278,10 @@
                 <Graphics ExternallyVisible="True" />
               </Node>
             </AssociatedNodes>
+            <IndexedSizes>
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+            </IndexedSizes>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4842,30 +5290,41 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
               <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.1</Property>
-              <Property Name="RefillEntityType">Prod2</Property>
+              <Property Name="RefillEntityType">Prod1</Property>
               <Property Name="LoadToProcess">P6_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P6_LoadFromProcess</Property>
               <Property Name="Position">3</Property>
             </Properties>
             <Graphics>
-              <SymbolInstances>
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="P6.Res.Capacity.Allocated">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                  <Decorations>
+                    <Decoration SurfacePath="0" SurfaceId="0">
+                      <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                  </FlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="21">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-63.0715409761645 -6.66133814775094E-16 -22.6655016885562" Direction="-0.00155381441821423 0 -0.594641512685477" />
-                    <Point Location="-59.8139396458005 -6.66133814775094E-16 -22.6655016885562" />
+                    <Point Location="-63.041283482907 -6.66133814775094E-16 -22.6352438153191" Direction="-0.00155381441821423 0 -0.594641512685477" />
+                    <Point Location="-59.783682152543 -6.66133814775094E-16 -22.6352438153191" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P5" Type="StockpileTank" Location="-68.802363727951 1.66533453693773E-15 -22.8123810997825" Size="1.99999996042496 1.03323161626161 1.00951097244363" Scope="Public">
+          <Fixed Name="P5" Type="StockpileTank" Location="-68.8023594454135 0 -22.8123803669037" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P5" Type="FlowNode" Location="-68.7325797158467 1.66533453693773E-15 -22.6211433062453" Scope="Public">
+              <Node Name="Input@P5" Type="FlowNode" Location="-68.7511726558606 4.73316543132607E-30 -22.6927059237929" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4878,7 +5337,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P5" Type="FlowNode" Location="-68.6800390416224 1.66533453693773E-15 -22.9157495778344" Scope="Public">
+              <Node Name="Output@P5" Type="FlowNode" Location="-68.7038685328514 4.73316543132607E-30 -22.6398448544025" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4892,6 +5351,10 @@
                 <Graphics ExternallyVisible="True" />
               </Node>
             </AssociatedNodes>
+            <IndexedSizes>
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+              <IndexedSize Size="2.9505430522168 2.9505430522168 0" />
+            </IndexedSizes>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4900,28 +5363,39 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="CapacityUnitType">Weight</Property>
               <Property Name="InitialWeightCapacity" Units="Metric Tons">PortStockpileSize*0.1</Property>
-              <Property Name="RefillEntityType">Prod2</Property>
+              <Property Name="RefillEntityType">Prod1</Property>
               <Property Name="LoadToProcess">P5_LoadToProcess</Property>
               <Property Name="LoadFromProcess">P5_LoadFromProcess</Property>
               <Property Name="Position">3</Property>
             </Properties>
             <Graphics>
-              <SymbolInstances>
+              <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="P5.Res.Capacity.Allocated">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
-                  <SymbolRef Id="[UseExternalSymbol]" />
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                </SymbolInstance>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af" />
+                  <Decorations>
+                    <Decoration SurfacePath="0" SurfaceId="0">
+                      <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                    </Decoration>
+                  </Decorations>
+                  <FlowDecoration>
+                    <MaterialRef Id="29edbab6-304d-4174-8a56-ad2579a0d888" />
+                  </FlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="18">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-68.7937158819206 1.77635683940025E-15 -22.682410784592" Direction="0.00206057104924917 0 -0.506737984723276" />
-                    <Point Location="-65.7946543396808 1.77635683940025E-15 -22.682410784592" />
+                    <Point Location="-68.7937115596525 1.11022302462515E-16 -22.6824099729444" Direction="0.00206057104924917 0 -0.506737984723276" />
+                    <Point Location="-65.7946500174127 1.11022302462515E-16 -22.6824099729444" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Entity Name="TestShip" Type="ContainerEntity" Location="1.05334795622308 0 -24.4306845817853" Size="0.5 0.5 0.25" Scope="Public">
+          <Entity Name="TestShip" Type="ContainerEntity" Location="2.35447959856405 0 -21.1627260382312" Size="0.5 0.5 0.25" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -4944,10 +5418,10 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="14 15 40 41">
-                <StatusLabel Center="-0.748564757953829 0 -24.7155156882957" Width="2.5001160711987" Height="0.44908251144856" Expression="FlowContainer.Contents.Weight / 1000" />
-                <StatusLabel Center="-0.748564757953829 0 -24.1960545743067" Width="2.48671062309578" Height="0.455785235500031" Expression="FlowContainer.CurrentWeightCapacity / 1000" />
-                <StackedBar Center="0.531635271551449 0 -25.7290108868612" Width="1.47176105429211" Height="1.05966795909032" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
-                <StatusLabel Center="-0.759708577579152 0 -25.5493724336493" Width="0.617469595907808" Height="0.785870394791754" Expression="Priority" />
+                <StatusLabel Center="0.552566904027515 0 -21.447557118024" Width="2.5001160711987" Height="0.44908251144856" Expression="FlowContainer.Contents.Weight / 1000" />
+                <StatusLabel Center="0.552566904027515 0 -20.928096004035" Width="2.48671062309578" Height="0.455785235500031" Expression="FlowContainer.CurrentWeightCapacity / 1000" />
+                <StackedBar Center="1.83276693353279 0 -22.4610523165895" Width="1.47176105429211" Height="1.05966795909032" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
+                <StatusLabel Center="0.541423084402192 0 -22.2814138633776" Width="0.617469595907808" Height="0.785870394791754" Expression="Priority" />
               </AttachedObjects>
             </Graphics>
           </Entity>
@@ -5278,7 +5752,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="EntityType">Prod2</Property>
+              <Property Name="EntityType">Prod1</Property>
               <Property Name="MaximumWeight" Units="Metric Tons">Math.If(Run.ModelName==Name,Infinity,0)</Property>
             </Properties>
             <Graphics>
@@ -5289,7 +5763,7 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Entity Name="Prod1" Type="ModelEntity" Location="-0.311719678235349 0 -30.505150146044" Size="4 4 2" Scope="Public" DefaultEntity="True" Density="130000000">
+          <Entity Name="Prod2" Type="ModelEntity" Location="-4.17008630905292 0 -35.3490445035246" Size="4 4 2" Scope="Public" DefaultEntity="True" Density="130000000">
             <IndexedSizes>
               <IndexedSize Size="4 4 2" />
               <IndexedSize Size="4 4 2" />
@@ -5300,7 +5774,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="InitialPriority">1</Property>
+              <Property Name="InitialPriority">2</Property>
             </Properties>
             <Graphics>
               <SymbolInstances CurrentAnimationExpression="ModelEntity.Animation">
@@ -5802,7 +6276,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Transporter Name="SR2" Type="SRVehicle" Location="-3.20466628266373 1.33226762955019E-15 -13.9681919062007" Size="1.64770652998674 0.211199332658509 0.603103855503776" Scope="Public">
+          <Transporter Name="SR2" Type="SRVehicle" Location="-3.20466628266373 1.33226762955019E-15 -13.9578131115287" Size="1.64770652998674 0.211199332658509 0.603103855503776" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="2.77511753421286 0.355708350126765 1.01576588664328" />
               <IndexedSize Size="2.77511753421286 0.355708350126765 1.01576588664328" />
@@ -5822,9 +6296,9 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="DynamicSelectionRule">
-                <Value>Largest Value First</Value>
+                <Value>Smallest Value First</Value>
                 <Properties>
-                  <Property Name="DynamicSelectionExpression">Candidate.StockpileTank.Position</Property>
+                  <Property Name="DynamicSelectionExpression">Candidate.StockpileTank.TankOperation</Property>
                 </Properties>
               </Property>
               <Property Name="TransportCostPerRider" Units="USD">0.0</Property>
@@ -5941,11 +6415,11 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="42">
-                <StatusLabel Center="-3.69742270483622 0 -14.1497547718276" Width="0.600257564452517" Height="0.124668878770906" Expression="2" />
+                <StatusLabel Center="-3.40162705668508 0.594594075830861 -14.0044516463474" Width="1.1918488607548" Height="0.394517540242134" BackColor="ff0000" Expression="SR2" />
               </AttachedObjects>
             </Graphics>
           </Transporter>
-          <Transporter Name="SR1" Type="SRVehicle" Location="-3.29352433241619 8.32667268468869E-16 -15.1297473441526" Size="1.64770652998674 0.211199332658509 0.603103855503776" Scope="Public">
+          <Transporter Name="SR1" Type="SRVehicle" Location="-3.29352433241619 8.32667268468869E-16 -15.1193685494806" Size="1.64770652998674 0.211199332658509 0.603103855503776" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="2.77511753421286 0.355708350126765 1.01576588664328" />
               <IndexedSize Size="2.77511753421286 0.355708350126765 1.01576588664328" />
@@ -5967,7 +6441,7 @@
               <Property Name="DynamicSelectionRule">
                 <Value>Smallest Value First</Value>
                 <Properties>
-                  <Property Name="DynamicSelectionExpression">Candidate.StockpileTank.Position</Property>
+                  <Property Name="DynamicSelectionExpression">Candidate.StockpileTank.TankOperation</Property>
                 </Properties>
               </Property>
               <Property Name="TransportCostPerRider" Units="USD">0.0</Property>
@@ -6084,7 +6558,7 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="43">
-                <StatusLabel Center="-3.76813927588577 -5.55111512312578E-17 -15.3054711120104" Width="0.602566247392718" Height="0.108508098189475" Expression="1" />
+                <StatusLabel Center="-3.46715423039864 0.571227764473448 -15.1809255758741" Width="1.20453633836697" Height="0.336841580972822" BackColor="ff00ff" Expression="SR1" />
               </AttachedObjects>
             </Graphics>
           </Transporter>
@@ -7355,7 +7829,7 @@
               </Decorations>
             </Graphics>
           </Link>
-          <Link Name="Path1" Type="Path" Size="83.19 0 0" Scope="Public" Start="Output@Filler1" End="Input@TrainDumper">
+          <Link Name="Path1" Type="Path" Size="83.21 0 0" Scope="Public" Start="Output@Filler1" End="Input@TrainDumper">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -7366,7 +7840,7 @@
             </Properties>
             <Graphics />
           </Link>
-          <Link Name="Path2" Type="Path" Size="84.15 0 0" Scope="Public" Start="Output@Filler1_1" End="Input@TrainDumper">
+          <Link Name="Path2" Type="Path" Size="84.17 0 0" Scope="Public" Start="Output@Filler1_1" End="Input@TrainDumper">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -7546,9 +8020,42 @@
           </Line>
           <StatusLabel Center="-70.6346214785546 0 -75.6452909975957" Width="3.77731834200453" Height="0.640795075875774" Expression="Math.Round(Product2Inspector.FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
           <StatusLabel Center="-70.6145207768318 0 -74.5799291418714" Width="3.77731834200453" Height="0.640795075875774" Expression="Math.Round(InspectorExit.FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
+          <FloorLabel Center="-71.5133098890983 0 -16.9662783602256" Width="11.8290912493233" Height="2.31590778221287" Rotation="1.56943241326371" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="LAC" />
+          <FloorLabel Center="-60.3176070235142 0 -18.9192246263722" Width="11.8290912493233" Height="2.31590778221287" Rotation="-1.56344142847229" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="UGC" />
+          <FloorLabel Center="-53.7100510333033 0 -13.3828482151792" Width="9.85574836359311" Height="5.01000541815984" Text="{Math.Round(P2.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;{Math.Round(P4.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;{Math.Round(P6.FlowContainer.Contents.Weight/1000,0)}" />
+          <FloorLabel Center="-77.6086854108354 0 -13.5684921235267" Width="9.85574836359311" Height="5.01000541815984" Text="{Math.Round(P1.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;{Math.Round(P3.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;{Math.Round(P5.FlowContainer.Contents.Weight/1000,0)}" />
+          <FloorLabel Center="37.7423649928912 0 -138.736155671975" Width="63.01307079272" Height="47.5445560383555" BackColor="dcdcdc" Text="LAC Unallocated&#xD;&#xA;{UnallocatedProductLAC/1000}&#xD;&#xA;UGC Unallocated&#xD;&#xA;{UnallocatedProductUGC/1000}" />
+          <Pie Center="28.5908435483332 0 21.1056233757646" Width="48.8672774662163" Height="37.5506447898294" Title="Values" Look="Aspect" ListState="DumperStates" TextScale="3" />
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
+      <EntityDefinition Name="TestShipEntity" Id="e8f7b5c5-5d79-48ac-bd53-67ad6c069bf5" Revision="0" BaseClass="ContainerEntity" CheckBaseForAdvancedProperties="True">
+        <PropertyDefinitions>
+          <Categories>
+            <Category Name="Flow Storage Logic" Description="Flow Storage Logic" />
+            <Category Name="Travel Logic" Description="Travel Logic" />
+            <Category Name="Routing Logic" Description="Routing Logic" />
+            <Category Name="Financials" Description="Financials" InitiallyExpanded="False" />
+            <Category Name="State Assignments" Description="Optional State Assignments" InitiallyExpanded="False" />
+            <Category Name="Add-On Process Triggers" Description="Add-On Process Triggers" InitiallyExpanded="False" />
+            <Category Name="Population" Description="Population" InitiallyExpanded="False" />
+            <Category Name="Advanced Options" Description="Advanced Options" InitiallyExpanded="False" />
+          </Categories>
+          <Overrides />
+        </PropertyDefinitions>
+        <States />
+        <Events />
+        <Elements />
+        <Processes />
+        <External>
+          <Graphics>
+            <StackedBar Center="0 0 -0.55" Width="0.6" Height="0.6" ExternallyVisible="True" Shape="1" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
+          </Graphics>
+        </External>
+        <Graphics>
+          <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
+        </Graphics>
+      </EntityDefinition>
     </Definitions>
     <DefinitionRefs>
       <DefinitionRef Name="ModelEntity">
@@ -7557,15 +8064,19 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModel">
         <Id>cd948010-3378-4f8e-931a-608d2edd7a67</Id>
-        <Revision>629</Revision>
+        <Revision>707</Revision>
       </DefinitionRef>
       <DefinitionRef Name="StockpileTank">
         <Id>90391288-72ad-45e0-99bb-82059bd606bf</Id>
-        <Revision>11</Revision>
+        <Revision>13</Revision>
       </DefinitionRef>
       <DefinitionRef Name="SRVehicle">
         <Id>cf07d675-b2de-4ddc-9ec5-943b58c36ec9</Id>
         <Revision>1</Revision>
+      </DefinitionRef>
+      <DefinitionRef Name="TestShipEntity">
+        <Id>e8f7b5c5-5d79-48ac-bd53-67ad6c069bf5</Id>
+        <Revision>0</Revision>
       </DefinitionRef>
       <DefinitionRef Name="Vehicle">
         <Id>840e1952-0a07-4fce-ae96-9d4ddaa9e1ef</Id>
@@ -7665,6 +8176,8 @@
       <ColorMaterial Id="e5e337e9-f756-489e-afbf-46304fb62312" Color="1e90ff" />
       <ColorMaterial Id="1ab2c368-374d-4363-a4e8-80729c9da7cd" Color="00bfff" />
       <ColorMaterial Id="b58761a0-d015-4315-8892-ca540263448a" Color="008000" />
+      <ColorMaterial Id="29edbab6-304d-4174-8a56-ad2579a0d888" Color="f5f5f5" />
+      <ColorMaterial Id="87ba51bb-30a8-4548-aa72-5afa9fcf2428" Color="faebd7" />
       <ColorMaterial Id="0081c97e-5480-4794-b850-ca5cb7ed18cc" Color="5f9ea0" />
       <ColorMaterial Id="8c0c50f3-89e0-4d0e-9832-25105adb3f21" Color="008000" />
       <ColorMaterial Id="9485882c-6983-4fde-a66c-16c0a638323b" Color="ffff00" />
@@ -7971,6 +8484,20 @@
               </Decoration>
             </Decorations>
           </Line>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="Symbol11" Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\Symbol11.png" />
+        </Thumbnail>
+        <Graphics>
+          <Rectangle Center="-0.00740521292387494 0 0.0444312796190366" Width="2.9505430522168" Height="2.9505430522168" ExternallyVisible="True">
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="f1ded1da-2ae6-4413-a620-3bcd497448b3" />
+              </Decoration>
+            </Decorations>
+          </Rectangle>
         </Graphics>
       </Symbol>
       <Symbol Name="Vehicle" Id="48f879b1-e7e3-497c-b456-433cc40b5fc6">
@@ -20611,6 +21138,7 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
       <ColorMaterial Id="d1ae78ec-efad-4346-bee5-7c6a0add95ca" Color="d3d3d3" />
       <ColorMaterial Id="3fbe458f-b99e-4901-a026-90690509e72a" Color="a9a9a9" />
       <ColorMaterial Id="ed2f2b21-a11e-4f3b-b6e7-3fc6cd1d99eb" Color="696969" />
+      <ColorMaterial Id="f1ded1da-2ae6-4413-a620-3bcd497448b3" Color="808080" />
       <TextureMaterial Id="b1ccf372-8ea8-45c9-b0a6-3f354dead194" Name="SketchupTexture">
         <Image>
           <FileRef Name="Data\Textures\SketchupTexture.jpg" />
@@ -20870,4 +21398,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- 3wewJYsEiOnNcMLELEOAmX0J7ZUFw0CoXwKma3iVe5KVMef4Va2LDonp2IBS5yLr+WwvEXVgU5445HnWGUiwxQ== -->
+<!-- g4WHpHU++urLrfumlGnVTcxgRz8MgDKunO5nc1zCi9DhAGSR8b14++gk9NhMk//P4D6Wl7QwCq0ZENExu6igpQ== -->
