@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-13T23:53:56" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-14T01:18:19" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,7 +9,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="10000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="1" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
         <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
@@ -297,7 +297,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="89.7031160989983 238.837613873294 -248.581161263062" Direction="0 -1 2.22044604925031E-16" Zoom="238.837613873294" />
+          <Camera Orientation="Top" Location="144.015822033063 341.196908619316 -229.010593555668" Direction="0 -1 2.22044604925031E-16" Zoom="341.196908619316" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -444,6 +444,7 @@
           <Categories>
             <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
             <Category Name="TrainLoader AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Output@TrainLoader AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -883,44 +884,49 @@
       </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-50.2701359919743 107.466555317738 -4.80774122641557" Direction="0 -1 2.22044604925031E-16" Zoom="107.466555317738" />
+          <Camera Orientation="Top" Location="-54.0778007340206 75.2265887224167 10.7230726372302" Direction="0 -1 2.22044604925031E-16" Zoom="75.2265887224167" />
           <ObjectDisplay Background="ffffff" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="TrainUnloader AddOn Processes" Expanded="True" />
-            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="ToLoad AddOn Processes" Expanded="True" />
-            <Category Name="SR2 AddOn Processes" Expanded="True" />
             <Category Name="ShipLoader AddOn Processes" Expanded="True" />
             <Category Name="TrainDumper AddOn Processes" Expanded="True" />
             <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
-            <Category Name="SR1 AddOn Processes" Expanded="True" />
             <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
             <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
             <Category Name="Loading Processes" Expanded="True" />
+            <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
+            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
+            <Category Name="Berth1 AddOn Processes" Expanded="True" />
+            <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
+            <Category Name="Monitor1 AddOn Processes" Expanded="True" />
+            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="SR2 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="SR1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Berth2 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="LoadFrom AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Berth1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
         </Process>
+        <InteractivePivotGrid>
+          <DevExpressIncantation Layout="&lt;XtraSerializer version=&quot;1.0&quot; application=&quot;PivotGrid&quot;&gt;&#xD;&#xA;  &lt;property name=&quot;#LayoutVersion&quot; /&gt;&#xD;&#xA;  &lt;property name=&quot;Prefilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Enabled&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Criteria&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;OptionsBehavior&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;ApplyBestFitOnFieldDragging&quot;&gt;true&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Fields&quot; iskey=&quot;true&quot; value=&quot;12&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ScenarioName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldScenarioName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item2&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ObjectType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;15&quot;&gt;&#xD;&#xA;          &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Vehicle&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item2&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;FlowSource&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item3&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Filler&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item4&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;ContainerEntity&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item5&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;ShipGenerator&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item6&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;ShipEntity&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item7&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;SRVehicle&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item8&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;TimePath&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item9&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Tank&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item10&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Source&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item11&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Path&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item12&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Sink&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item13&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;StockpileTank&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item14&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Emptier&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item15&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Resource&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;        &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea, FilterArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldObjectType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortOrder&quot;&gt;Descending&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;110&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item3&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ObjectName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldObjectName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortOrder&quot;&gt;Descending&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;120&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item4&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;DataSource&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldDataSource&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;120&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item5&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StatisticCategory&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;4&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea, FilterArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldStatisticCategory&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item6&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;DataItem&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldDataItem&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;4&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;115&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item7&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StatisticTypeForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;6&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;1&quot;&gt;&#xD;&#xA;          &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Minimum&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;        &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldStatisticType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;85&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item8&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;AverageForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;7&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueAverage&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item9&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;MinimumForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;8&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueMinimum&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;53&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item10&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;MaximumForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;9&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueMaximum&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;57&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item11&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;HalfWidthForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;10&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueHalfWidth&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;63&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item12&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StandardDeviationForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;11&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueStandardDeviation&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;59&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;OptionsCustomization&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;AllowExpand&quot;&gt;false&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Groups&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;&lt;/XtraSerializer&gt;" />
+        </InteractivePivotGrid>
         <OperationalPlanningOwnerGantt>
           <Gantt>
             <Columns>
@@ -1649,7 +1655,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="772" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="792" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -15014,7 +15020,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="792" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="819" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -15073,6 +15079,7 @@
               <Item Value="PostLoading" />
               <Item Value="Failed" />
               <Item Value="Offshift" />
+              <Item Value="Blocked by Train" />
             </Items>
           </StringList>
         </Lists>
@@ -15332,7 +15339,7 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">ContainerEntity.FlowContainer.Contents.Weight &lt;= 0</Property>
                 </Properties>
-                <Exit Name="False" Type="Alternate" NextID="11" />
+                <Exit Name="False" Type="Alternate" NextID="29" />
               </Step>
               <Step Type="Wait" Name="Finished" ID="5">
                 <Properties>
@@ -15372,7 +15379,7 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">UnloadingToken.NumberEligibleSPFound &gt; 0</Property>
                 </Properties>
-                <Exit Name="True" Type="Primary" NextID="5" />
+                <Exit Name="True" Type="Primary" NextID="30" />
                 <Exit Name="False" Type="Alternate" NextID="8" />
               </Step>
               <Step Type="Wait" Name="ShipFull" ID="8">
@@ -15536,6 +15543,24 @@
                 <Properties>
                   <Property Name="MessageContent">"Train Attempting to load unrecognised product"</Property>
                 </Properties>
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="29">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="11" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="30">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
             </Steps>
           </Process>
@@ -16335,7 +16360,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="13" />
+                <Exit Name="Exit" Type="Primary" NextID="12" />
               </Step>
               <Step Type="Release" Name="P1P2" ID="10">
                 <Properties>
@@ -16359,18 +16384,9 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="12" />
+                <Exit Name="Exit" Type="Primary" NextID="13" />
               </Step>
-              <Step Type="Assign" Name="BlockedByStockpile" ID="12">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">4</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
-              </Step>
-              <Step Type="Assign" Name="LoadingToStockpile" ID="13">
+              <Step Type="Assign" Name="LoadingToStockpile" ID="12">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>DumperStates</Value>
@@ -16378,6 +16394,15 @@
                   <Property Name="NewValue">2</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
             </Steps>
           </Process>
@@ -17204,8 +17229,11 @@
                   <Property Name="ObjectListName">StockpilesProd1</Property>
                   <Property Name="MatchCondition">Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0 &amp;&amp; Math.If(Candidate.StockpileTank.FlowContainer.Contents.NumberWaiting &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.Priority, 1)&amp;&amp; Math.If(Candidate.StockpileTank == P1, SR1[1].Capacity.Remaining, True)</Property>
                   <Property Name="SearchExpression">Candidate.StockpileTank.FlowContainer.Contents.Weight</Property>
+                  <Property Name="SaveNumberFound">
+                    <Value>LoadingToken.NumberFound</Value>
+                  </Property>
                 </Properties>
-                <Exit Name="Original" Type="Primary" NextID="5" />
+                <Exit Name="Original" Type="Primary" NextID="15" />
                 <Exit Name="Found" Type="Alternate" NextID="3" />
               </Step>
               <Step Type="Execute" Name="LoadFromTank" ID="3">
@@ -17288,10 +17316,14 @@
                   <Property Name="CollectionType">ObjectList</Property>
                   <Property Name="PopulationName">Prod2</Property>
                   <Property Name="ObjectListName">StockpilesProd2</Property>
+                  <Property Name="SearchType">Backward</Property>
                   <Property Name="MatchCondition">Candidate.StockpileTank.FlowContainer.Contents.Weight &gt; 0 &amp;&amp; Math.If(Candidate.StockpileTank.FlowContainer.Contents.NumberWaiting &gt; 0, Candidate.StockpileTank.FlowContainer.Contents.FirstItem.Entity.Priority == ContainerEntity.Priority, 1) &amp;&amp; Math.If(Candidate.StockpileTank == P2, SR1[1].Capacity.Remaining, True)</Property>
                   <Property Name="SearchExpression">Candidate.StockpileTank.FlowContainer.Contents.Weight</Property>
+                  <Property Name="SaveNumberFound">
+                    <Value>LoadingToken.NumberFound</Value>
+                  </Property>
                 </Properties>
-                <Exit Name="Original" Type="Primary" NextID="5" />
+                <Exit Name="Original" Type="Primary" NextID="15" />
                 <Exit Name="Found" Type="Alternate" NextID="12" />
               </Step>
               <Step Type="Execute" Name="LoadFromTank" ID="12">
@@ -17312,6 +17344,51 @@
                   <Property Name="MessageHeading">"Error"</Property>
                   <Property Name="MessageContent">"NO matching ship product found"</Property>
                 </Properties>
+              </Step>
+              <Step Type="Decide" Name="Found" ID="15">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">LoadingToken.NumberFound&gt;0</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="5" />
+                <Exit Name="False" Type="Alternate" NextID="16" />
+              </Step>
+              <Step Type="Wait" Name="RecheckEvent" ID="16">
+                <Properties>
+                  <Property Name="EventName">P1.FlowContainer.Full</Property>
+                  <Property Name="Events">
+                    <Rows>
+                      <Properties>
+                        <Property Name="EventsEventName">P2.FlowContainer.Full</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="EventsEventName">P3.FlowContainer.Full</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="EventsEventName">P4.FlowContainer.Full</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="EventsEventName">P5.FlowContainer.Full</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="EventsEventName">P6.FlowContainer.Full</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="EventsEventName">TrainDumper.Processing.Entered</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="EventsEventName">TrainDumper.Processing.Exited</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="EventsEventName">SR1[1].Released</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="EventsEventName">SR2[1].Released</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
             </Steps>
           </Process>
@@ -19007,7 +19084,7 @@
                   <Property Name="StateVariableName">
                     <Value>DumperStates</Value>
                   </Property>
-                  <Property Name="NewValue">6</Property>
+                  <Property Name="NewValue">9</Property>
                 </Properties>
               </Step>
             </Steps>
@@ -19156,6 +19233,10 @@
               </Step>
             </Steps>
           </Process>
+          <Process Name="Monitor1_TriggeredProcessName" Category="Monitor1 AddOn Processes">
+            <Properties />
+            <Steps />
+          </Process>
         </Processes>
         <Objects>
           <Fixed Name="SurgeBin" Type="Tank" Location="-70.6708292124801 0 -72.5300789573029" Size="1.5000000659115 1.02541471142509 1.00951097244363" Scope="Public">
@@ -19201,14 +19282,13 @@
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="43 44">
+              <AttachedObjects IndexList="43">
                 <Plot Center="-35.8594501206579 0 -73.8931438405368" Width="36.8747807149024" Height="21.8116364727332" ExternallyVisible="True" Title="Surge Bin Contents (t)" Look="Dark;In A Fog" TextScale="2">
                   <Range Type="Days">7</Range>
                   <PlotLines>
                     <PlotLine Expression="FlowContainer.Contents.Weight / 1000" />
                   </PlotLines>
                 </Plot>
-                <StackedBar Center="-66.6611177297565 0 -71.9350384182105" Width="5.16665844883785" Height="2.96547851797203" ExternallyVisible="True" FloorDisplayType="2" Type="Container" Container="FlowContainer" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
@@ -19395,9 +19475,9 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="TrainDumper" Type="Emptier" Location="-55.3467795925841 -3.5527136788005E-15 12.8789122551368" Size="4.00488865421988 3.9059970601138 0.859836502218153" Scope="Public">
+          <Fixed Name="TrainDumper" Type="Emptier" Location="-55.3467795925841 -3.5527136788005E-15 12.8938925072299" Size="4.00488865421988 3.9059970601138 0.859836502218153" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@TrainDumper" Type="BasicNode" Location="-56.145641276603 -3.5527136788005E-15 11.9983157558663" Scope="Public">
+              <Node Name="Input@TrainDumper" Type="BasicNode" Location="-56.145641276603 -3.5527136788005E-15 12.0132960079594" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19407,7 +19487,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="ContainerOutput@TrainDumper" Type="TransferNode" Location="-54.7920370930311 -3.5527136788005E-15 13.7699556618307" Scope="Public">
+              <Node Name="ContainerOutput@TrainDumper" Type="TransferNode" Location="-54.7920370930311 -3.5527136788005E-15 13.7849359139238" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19417,7 +19497,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="FlowOutput@TrainDumper" Type="FlowNode" Location="-54.9785582490132 -3.5527136788005E-15 11.7831325907751" Scope="Public">
+              <Node Name="FlowOutput@TrainDumper" Type="FlowNode" Location="-54.9785582490132 -3.5527136788005E-15 11.7981128428682" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19539,8 +19619,8 @@
               <AttachedObjects IndexList="4">
                 <Queue Queue="Processing.Contents" Alignment="Inline">
                   <Points>
-                    <Point Location="-56.2696896437092 -3.44169137633798E-15 14.1480027282404" />
-                    <Point Location="-57.4066700883858 -3.44169137633798E-15 12.6073485083447" />
+                    <Point Location="-56.2696896437092 -3.44169137633798E-15 14.1629829801413" />
+                    <Point Location="-57.4066700883858 -3.44169137633798E-15 12.6223287602456" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -19609,9 +19689,9 @@
               </SymbolInstances>
             </Graphics>
           </Entity>
-          <Fixed Name="Berth1" Type="Filler" Location="-44.4041812926185 1.22124532708767E-15 -148.542885565555" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
+          <Fixed Name="Berth1" Type="Filler" Location="-44.4041812926185 -5.5511151231258E-16 -148.512313622508" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
             <AssociatedNodes>
-              <Node Name="ContainerInput@Berth1" Type="BasicNode" Location="-45.2622934963371 1.22124532708767E-15 -151.559190880379" Scope="Public">
+              <Node Name="ContainerInput@Berth1" Type="BasicNode" Location="-45.2622934963371 -5.5511151231258E-16 -151.528618937332" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19621,7 +19701,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="FlowInput@Berth1" Type="FlowNode" Location="-43.4056474107256 1.22124532708767E-15 -150.385427443221" Scope="Public">
+              <Node Name="FlowInput@Berth1" Type="FlowNode" Location="-43.4056474107256 -5.5511151231258E-16 -150.354855500174" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19633,7 +19713,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@Berth1" Type="TransferNode" Location="-41.509310672159 1.22124532708767E-15 -150.395328100314" Scope="Public">
+              <Node Name="Output@Berth1" Type="TransferNode" Location="-41.509310672159 -5.5511151231258E-16 -150.364756157267" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19708,16 +19788,16 @@
               <AttachedObjects IndexList="6">
                 <Queue Queue="Processing.Contents" Alignment="Inline" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-41.5208470601567 1.22124532708768E-15 -150.40496905216" />
-                    <Point Location="-45.1903975632034 1.22124532708768E-15 -151.534619329151" />
+                    <Point Location="-41.5208470601567 -5.5511151231257E-16 -150.374397109011" />
+                    <Point Location="-45.1903975632034 -5.5511151231257E-16 -151.504047386002" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P1" Type="StockpileTank1" Location="-68.7529834961208 2.16936748935778E-30 -12.9195806663965" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
+          <Fixed Name="P1" Type="StockpileTank1" Location="-68.7315831365022 2.16936748935778E-30 -12.9195806663965" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P1" Type="FlowNode" Location="-68.7437141085833 0 -12.757544119184" Scope="Public">
+              <Node Name="Input@P1" Type="FlowNode" Location="-68.7223137489647 0 -12.757544119184" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19730,7 +19810,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P1" Type="FlowNode" Location="-68.7415784577207 0 -12.7638985962483" Scope="Public">
+              <Node Name="Output@P1" Type="FlowNode" Location="-68.7201780981021 0 -12.7638985962483" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19781,8 +19861,8 @@
               <AttachedObjects IndexList="13">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-68.7689293629539 1.11022302462512E-16 -12.7936643497287" Direction="0.0145475931781887 0 -0.904889258434423" />
-                    <Point Location="-65.5937140350447 1.11022302462512E-16 -12.7936643497287" />
+                    <Point Location="-68.7475290025634 1.11022302462512E-16 -12.7936643497287" Direction="0.0145475931781887 0 -0.904889258434423" />
+                    <Point Location="-65.5723136746542 1.11022302462512E-16 -12.7936643497287" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -22006,7 +22086,7 @@
               </Decorations>
             </Graphics>
           </Link>
-          <Link Name="TimePath5" Type="TimePath" Size="8.06 0 0" Scope="Public" Start="ChannelExit" End="ContainerInput@Berth1">
+          <Link Name="TimePath5" Type="TimePath" Size="8.08 0 0" Scope="Public" Start="ChannelExit" End="ContainerInput@Berth1">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -23199,7 +23279,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="216" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="242" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -24107,7 +24187,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1277" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1306" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -25389,69 +25469,45 @@
                   </Property>
                   <Property Name="NewValue">EmptyTrainSpeed</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
-              <Step Type="Assign" Name="Transporting" ID="5">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>TrainEntity.ResourceState</Value>
-                  </Property>
-                  <Property Name="NewValue">1</Property>
-                </Properties>
-              </Step>
-              <Step Type="Assign" Name="ToMineTrue" ID="6">
+              <Step Type="Assign" Name="ToMineTrue" ID="5">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>TrainEntity.ToMine</Value>
                   </Property>
                   <Property Name="NewValue">True</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="7" />
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
-              <Step Type="SetNode" Name="TrainWait" ID="7">
+              <Step Type="SetNode" Name="TrainWait" ID="6">
                 <Properties>
                   <Property Name="NodeName">TrainYard</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
-              </Step>
-              <Step Type="Seize" Name="Sig3Port" ID="8">
-                <Properties>
-                  <Property Name="ResourceSeizes">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">Sig3Port</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
-              </Step>
-              <Step Type="Release" Name="Sig2Port" ID="9">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">Sig2Port</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="5" />
-              </Step>
-              <Step Type="Assign" Name="Blocked" ID="10">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>TrainEntity.ResourceState</Value>
-                  </Property>
-                  <Property Name="NewValue">2</Property>
-                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
-              <Step Type="Delay" Name="PostLoadingDelay" ID="11">
+              <Step Type="Delay" Name="PostLoadingDelay" ID="7">
                 <Properties>
                   <Property Name="DelayTime">PortPostUnloadingDelay</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
+              </Step>
+              <Step Type="Assign" Name="Postloading" ID="8">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">6</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Assign" Name="DumperBlocked" ID="9">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">9</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -25813,7 +25869,7 @@
                   <Property Name="TallyStatisticName">Tally_PortInterarrivalTime</Property>
                   <Property Name="ValueType">TimeBetween</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="5" />
+                <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
               <Step Type="Delay" Name="PortPreLoadingDelay" ID="5">
                 <Properties>
@@ -25829,6 +25885,57 @@
                   <Property Name="NewValue">Math.If(TrainEntity.FlowContainer.Contents.FirstItem.Entity.Priority == 1, "LAC", "UGC")</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Seize" Name="Sig3Port" ID="7">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">Sig3Port</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="8" />
+              </Step>
+              <Step Type="Release" Name="Sig2Port" ID="8">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">Sig2Port</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="11" />
+              </Step>
+              <Step Type="Assign" Name="Port.DumperStates" ID="9">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Assign" Name="TrainBlocked" ID="10">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.ResourceState</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Assign" Name="Transporting" ID="11">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.ResourceState</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
             </Steps>
           </Process>
@@ -30887,7 +30994,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="R_Side1" Type="Resource" Location="113.201142271292 8.46544856120557E-16 -156.086330634727" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
+          <Fixed Name="R_Side1" Type="Resource" Location="113.184828851908 8.46544856120557E-16 -156.078337059229" Size="0.305452602657699 0.150056244169775 0.0912917081558708" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
               <IndexedSize Size="0.305452602657699 0.150056244169775 0.0912917081558708" />
@@ -30903,7 +31010,7 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="InitialCapacity">4</Property>
+              <Property Name="InitialCapacity">2</Property>
               <Property Name="CapitalCost" Units="USD">0.0</Property>
             </Properties>
             <Graphics ExternallyVisible="True">
@@ -30961,7 +31068,7 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="18">
-                <FloorLabel Center="113.205628226819 6.66133614618969E-16 -155.942366220492" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
+                <FloorLabel Center="113.189314808073 6.66133614618969E-16 -155.934372645306" Width="0.372265888290016" Height="0.0350013278102068" ExternallyVisible="True" Text="{ResourceOwners.FirstItem}" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
@@ -31504,7 +31611,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Sig1Port" Type="Resource" Location="113.53049499017 -4.32986982257843E-15 -213.926659208478" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="Sig1Port" Type="Resource" Location="140.5722897938 -4.32986982257843E-15 -221.876131550249" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -32194,7 +32301,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Sig2Port" Type="Resource" Location="98.3679148714559 -3.21964678468312E-15 -220.4178339689" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="Sig2Port" Type="Resource" Location="130.165804238539 -3.21964678468312E-15 -233.802842954616" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -32268,7 +32375,7 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="Sig4Port" Type="Resource" Location="138.251042874458 -4.21884754651515E-15 -219.623154199181" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="Sig4Port" Type="Resource" Location="127.176136962418 -1.49880113618352E-15 -209.295634575684" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -32582,7 +32689,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Sig3Port" Type="Resource" Location="127.960493695469 -2.99760221942748E-15 -232.70926759184" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="Sig3Port" Type="Resource" Location="97.3176558652247 -2.99760221942748E-15 -243.104731423386" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -33152,7 +33259,7 @@
           </Fixed>
           <Fixed Name="Port" Type="PortModelRev2" Location="119.143002329891 4.55191440096314E-15 -307.077621934007" Size="123.935051170716 216.658942960486 2" Scope="Public">
             <AssociatedNodes>
-              <Node Name="TrainOutput@Port" Type="TransferNode" Location="120.564244375649 4.32986979603811E-15 -239.047231969989" Scope="Public">
+              <Node Name="TrainOutput@Port" Type="TransferNode" Location="120.356131266394 4.32986979603811E-15 -241.313171308434" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -33162,7 +33269,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="TrainInput@Port" Type="BasicNode" Location="119.240015969689 4.32986979603811E-15 -240.964847385728" Scope="Public">
+              <Node Name="TrainInput@Port" Type="BasicNode" Location="122.714771096802 4.32986979603811E-15 -238.110153043951" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -33236,7 +33343,7 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="108">
-                <Pie Center="-24.1075292164251 0 -287.682429369873" Width="95.5003399721544" Height="63.1187677431862" ExternallyVisible="True" Title="Train Dumper Utilisation" Look="Aspect" ListState="DumperStates" TextScale="5" />
+                <Pie Center="-24.3056172836528 0 -287.682429369873" Width="95.5003399721544" Height="63.1187677431862" ExternallyVisible="True" Title="Train Dumper Utilisation" Look="Aspect" ListState="DumperStates" TextScale="5" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
@@ -33318,7 +33425,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="PortQueueBlock" Type="TransferNode" Location="108.514758979121 -4.21884752004537E-15 -220.046323239188" Scope="Public">
+          <Node Name="PortQueueBlock" Type="TransferNode" Location="132.098193556869 -4.21884752004537E-15 -224.138505871744" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -33329,7 +33436,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="PortSig4" Type="BasicNode" Location="128.313742976072 -4.21884752018646E-15 -228.02685684514" Scope="Public">
+          <Node Name="PortSig4" Type="BasicNode" Location="102.312377790382 -4.21884752018646E-15 -223.719601736295" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -33448,7 +33555,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="PortTrainInput" Type="BasicNode" Location="119.048866197876 -4.21884754651515E-15 -241.192427677276" Scope="Public">
+          <Node Name="PortTrainInput" Type="BasicNode" Location="122.915143029452 -4.21884754651515E-15 -237.976356533469" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -33459,7 +33566,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="PortTrainOutput" Type="TransferNode" Location="120.228726016165 -4.21884787076996E-15 -239.66926380068" Scope="Public">
+          <Node Name="PortTrainOutput" Type="TransferNode" Location="120.185468451321 -4.21884787076996E-15 -241.540046827895" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34419,10 +34526,6 @@
             <Graphics ExternallyVisible="True" />
           </Link>
           <Link Name="Track1" Type="Track" Size="5000 0 0" Scope="Public" Start="EnterT1B" End="PortQueueBlock">
-            <Points>
-              <Point Location="144.257117669365 -4.23995581285713E-15 -203.331183136676" />
-              <Point Location="139.571742938468 -4.23553933200249E-15 -205.682057274397" />
-            </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34436,16 +34539,6 @@
             <Graphics ExternallyVisible="True" />
           </Link>
           <Link Name="Track2" Type="Track" Size="5000 0 0" Scope="Public" Start="PortQueueBlock" End="PortTrainInput">
-            <Points>
-              <Point Location="100.470559095554 -4.21884749357559E-15 -224.171756144764" />
-              <Point Location="96.9169325557195 -4.21884749357559E-15 -228.658344311757" />
-              <Point Location="95.6306848629848 -4.21884752004537E-15 -232.308479439273" />
-              <Point Location="96.1238847519231 -4.21884752004537E-15 -237.240933617466" />
-              <Point Location="98.105901887669 -4.21884752004537E-15 -241.774441897844" />
-              <Point Location="101.737996085604 -4.21884752004537E-15 -245.349608865922" />
-              <Point Location="107.66865066489 -4.21884752004537E-15 -247.11171692761" />
-              <Point Location="113.881104771742 -4.21884752004537E-15 -246.187359750341" />
-            </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34458,6 +34551,17 @@
             <Graphics ExternallyVisible="True" />
           </Link>
           <Link Name="Track3" Type="Track" Size="5000 0 0" Scope="Public" Start="PortTrainOutput" End="PortSig4">
+            <Points>
+              <Point Location="116.939013622108 -4.21884769320782E-15 -244.560783991506" />
+              <Point Location="113.243569252779 -4.2188476729854E-15 -246.593020051363" />
+              <Point Location="108.483723072443 -4.21884769660513E-15 -247.136902065684" />
+              <Point Location="103.811761975786 -4.21884749357559E-15 -246.006201026404" />
+              <Point Location="100.844041791678 -4.21884749357559E-15 -244.44013637216" />
+              <Point Location="96.8131415334265 -4.21884763799237E-15 -238.303676363312" />
+              <Point Location="96.2869391482537 -4.21884749357559E-15 -234.847557595606" />
+              <Point Location="96.4265169334861 -4.21884749357559E-15 -231.485203479435" />
+              <Point Location="98.6767586710358 -4.21884749357559E-15 -227.353994784918" />
+            </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34470,6 +34574,10 @@
             <Graphics ExternallyVisible="True" />
           </Link>
           <Link Name="Track4" Type="Track" Size="5000 0 0" Scope="Public" Start="PortSig4" End="EnterT1B">
+            <Points>
+              <Point Location="137.747532657396 -4.23783180812322E-15 -207.449723509969" />
+              <Point Location="144.665831654973 -4.24091237314324E-15 -203.943820620304" />
+            </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34877,6 +34985,12 @@
           <StatusLabel Center="-8.45809629405119 0 161.454980305734" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="Mine.FlowNode5.FlowRegulator.CurrentMaximumFlowRate / 1000" />
           <StatusLabel Center="-8.516819616219 0 161.785290609134" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="Mine.FlowNode5.FlowRegulator.CurrentWeightFlowOut.Rate / 1000" />
           <FloorLabel Center="125.540271818427 0 140.783123940486" Width="74.3785881378759" Height="13.5469316147751" ExternallyVisible="True" Text="Total Loaded On Trains(t):&#xD;&#xA;{Math.Round((Mine.Output@Stockpile1.FlowRegulator.CurrentWeightFlowOut+Mine.Output@Stockpile2.FlowRegulator.CurrentWeightFlowOut)/1000,0)}" />
+          <Queue Queue="Port.TrainDumper.Processing.Contents" Alignment="Inline" ExternallyVisible="True">
+            <Points>
+              <Point Location="119.141901902425 0 -240.015257846807" />
+              <Point Location="121.239339604908 0 -237.285259567385" />
+            </Points>
+          </Queue>
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
@@ -35143,7 +35257,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1277</Revision>
+        <Revision>1306</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -35171,11 +35285,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>772</Revision>
+        <Revision>792</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>216</Revision>
+        <Revision>242</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -35191,7 +35305,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>792</Revision>
+        <Revision>819</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TransferNode">
         <Id>0d40fbf0-8206-443f-b771-65f85633a2f6</Id>
@@ -35267,7 +35381,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>291</Revision>
+        <Revision>292</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -41884,7 +41998,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="291" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="292" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -52366,4 +52480,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- NkcRF3+BksN3BbaSwzAZscPXXC4oOBaHs548IPy0c/7tXorBbY11277vp/UtbAKgMp1iagAKIvltyUl0Qt86Kg== -->
+<!-- jqnpUi5ZiX3ll0cu3f7vpZoe5zSbuTkJ9ZyrkeDPDiMEjJP9nfFKGPyGu4D+jB2vuB/wbgS5RCtZVeUTa9lehQ== -->
