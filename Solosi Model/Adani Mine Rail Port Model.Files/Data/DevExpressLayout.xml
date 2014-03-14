@@ -13,26 +13,40 @@
   <property name="DocumentSelectorProperties" isnull="true" iskey="true">
     <property name="ShowPreview">false</property>
   </property>
-  <property name="Items" iskey="true" value="2">
+  <property name="Items" iskey="true" value="3">
     <property name="Item1" isnull="true" iskey="true">
       <property name="Size">@3,Width=300@3,Height=300</property>
       <property name="Location">@1,X=0@1,Y=0</property>
       <property name="IsFloating">false</property>
       <property name="TypeName">Document</property>
       <property name="Name">TST</property>
-      <property name="IsActive">true</property>
+      <property name="IsActive">false</property>
       <property name="Index">0</property>
-      <property name="IsSelected">true</property>
+      <property name="IsSelected">false</property>
       <property name="ParentName">DocumentGroup0</property>
       <property name="Pinned">false</property>
       <property name="Properties" isnull="true" iskey="true" />
       <property name="WindowState">Normal</property>
     </property>
     <property name="Item2" isnull="true" iskey="true">
+      <property name="Size">@3,Width=300@3,Height=300</property>
+      <property name="Location">@1,X=0@1,Y=0</property>
+      <property name="IsFloating">false</property>
+      <property name="TypeName">Document</property>
+      <property name="Name">Table1</property>
+      <property name="IsActive">true</property>
+      <property name="Index">1</property>
+      <property name="IsSelected">true</property>
+      <property name="ParentName">DocumentGroup0</property>
+      <property name="Pinned">false</property>
+      <property name="Properties" isnull="true" iskey="true" />
+      <property name="WindowState">Normal</property>
+    </property>
+    <property name="Item3" isnull="true" iskey="true">
       <property name="Index">0</property>
       <property name="Name">DocumentGroup0</property>
       <property name="TypeName">DocumentGroup</property>
-      <property name="Length">1150</property>
+      <property name="Length">989</property>
       <property name="Properties" isnull="true" iskey="true" />
     </property>
   </property>
