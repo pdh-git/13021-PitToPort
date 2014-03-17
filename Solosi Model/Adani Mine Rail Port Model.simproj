@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-17T03:01:28" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-17T03:40:46" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,7 +9,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="1000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="100" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
         <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
@@ -26,7 +26,6 @@
           <Property Name="TimeToRepair">Random.Triangular(2, 8, 20)</Property>
           <Property Name="PortPreUnloadingDelay">11</Property>
           <Property Name="PortPostUnloadingDelay">0</Property>
-          <Property Name="WriteShipLogToFile">True</Property>
           <Property Name="EnableTideConstraints">False</Property>
           <Property Name="EnablePortWeatherShutdowns">True</Property>
         </Properties>
@@ -314,7 +313,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="67.1499531429733 865.770935058594 -195.241729181842" Direction="0 -1 2.22044604925031E-16" Zoom="865.770935058594" />
+          <Camera Orientation="Top" Location="37.3328295044724 1053.0830078125 -214.155185310756" Direction="0 -1 2.22044604925031E-16" Zoom="1053.0830078125" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -354,6 +353,8 @@
             <Category Name="B2Entry AddOn Processes" Expanded="True" />
             <Category Name="PortWeather AddOn Processes" Expanded="True" />
             <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
+            <Category Name="Monitor1 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -914,20 +915,16 @@
       </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="98.5833334651066 904.096642402743 -3.08795142308803" Direction="0 -1 2.22044604925031E-16" Zoom="904.096642402743" />
+          <Camera Orientation="Top" Location="4.48215507451662 25.5384917473879 -185.741562929062" Direction="0 -1 2.22044604925031E-16" Zoom="25.5384917473879" />
           <ObjectDisplay Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="TrainUnloader AddOn Processes" Expanded="True" />
-            <Category Name="ToLoad AddOn Processes" Expanded="True" />
             <Category Name="Monitor1 AddOn Processes" Expanded="True" />
             <Category Name="SR1 AddOn Processes" Expanded="True" />
-            <Category Name="LoadFrom AddOn Processes" Expanded="True" />
             <Category Name="TrainDumper AddOn Processes" />
             <Category Name="Loading Processes" Expanded="True" />
-            <Category Name="ShipLoader AddOn Processes" />
-            <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
             <Category Name="SR2 AddOn Processes" Expanded="True" />
             <Category Name="Berth1 AddOn Processes" Expanded="True" />
             <Category Name="Berth2 AddOn Processes" Expanded="True" />
@@ -935,21 +932,25 @@
             <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
             <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
+            <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
+            <Category Name="ToLoad AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
+            <Category Name="LoadFrom AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="ShipLoader AddOn Processes" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
+            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
@@ -1738,7 +1739,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="903" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="912" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -15103,7 +15104,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1003" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1015" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -15398,7 +15399,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="TrainUnloaderManager" BeginStepID="10" Category="TrainUnloader AddOn Processes">
+          <Process Name="TrainUnloaderManager" BeginStepID="9" Category="TrainUnloader AddOn Processes">
             <Properties>
               <Property Name="TokenClassName">UnloadingToken</Property>
               <Property Name="TokenActionOnAssociatedObjectDestroyed">EndProcess</Property>
@@ -15431,7 +15432,7 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">ContainerEntity.FlowContainer.Contents.Weight &lt;= 0</Property>
                 </Properties>
-                <Exit Name="False" Type="Alternate" NextID="29" />
+                <Exit Name="False" Type="Alternate" NextID="28" />
               </Step>
               <Step Type="Wait" Name="Finished" ID="5">
                 <Properties>
@@ -15459,7 +15460,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
+                <Exit Name="Exit" Type="Primary" NextID="30" />
               </Step>
               <Step Type="Execute" Name="NodesOff" ID="6">
                 <Properties>
@@ -15471,7 +15472,7 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">UnloadingToken.NumberEligibleSPFound &gt; 0</Property>
                 </Properties>
-                <Exit Name="True" Type="Primary" NextID="30" />
+                <Exit Name="True" Type="Primary" NextID="29" />
                 <Exit Name="False" Type="Alternate" NextID="8" />
               </Step>
               <Step Type="Wait" Name="ShipFull" ID="8">
@@ -15485,15 +15486,9 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
+                <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
-              <Step Type="Execute" Name="NodesOff" ID="9">
-                <Properties>
-                  <Property Name="ProcessName">UnloadingNodesOff</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
-              </Step>
-              <Step Type="Search" Name="Berths" ExclusionExpression="!EnableDirectLoading" ID="10">
+              <Step Type="Search" Name="Berths" ExclusionExpression="!EnableDirectLoading" ID="9">
                 <Properties>
                   <Property Name="CollectionType">ObjectList</Property>
                   <Property Name="PopulationName">Prod2</Property>
@@ -15506,18 +15501,18 @@
                     <Value>UnloadingToken.NumberDLShipsFound</Value>
                   </Property>
                 </Properties>
-                <Exit Name="Original" Type="Primary" NextID="21" />
-                <Exit Name="Found" Type="Alternate" NextID="23" />
+                <Exit Name="Original" Type="Primary" NextID="20" />
+                <Exit Name="Found" Type="Alternate" NextID="22" />
               </Step>
-              <Step Type="Decide" Name="isLAC" ID="11">
+              <Step Type="Decide" Name="isLAC" ID="10">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority==1</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="2" />
-                <Exit Name="False" Type="Alternate" NextID="27" />
+                <Exit Name="False" Type="Alternate" NextID="26" />
               </Step>
-              <Step Type="Search" Name="UGCTank" ID="12">
+              <Step Type="Search" Name="UGCTank" ID="11">
                 <Properties>
                   <Property Name="CollectionType">ObjectList</Property>
                   <Property Name="PopulationName">Prod2</Property>
@@ -15529,68 +15524,77 @@
                   </Property>
                 </Properties>
                 <Exit Name="Original" Type="Primary" NextID="7" />
-                <Exit Name="Found" Type="Alternate" NextID="14" />
+                <Exit Name="Found" Type="Alternate" NextID="13" />
               </Step>
-              <Step Type="Execute" Name="NodesOff" ID="13">
+              <Step Type="Execute" Name="NodesOff" ID="12">
                 <Properties>
                   <Property Name="ProcessName">UnloadingNodesOff</Property>
                 </Properties>
               </Step>
-              <Step Type="Execute" Name="LoadToTank" ID="14">
+              <Step Type="Execute" Name="LoadToTank" ID="13">
                 <Properties>
                   <Property Name="ProcessName">StockpileTank.LoadToProcess</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="13" />
+                <Exit Name="Exit" Type="Primary" NextID="12" />
               </Step>
-              <Step Type="Execute" Name="DirectLoadProcess" ID="15">
+              <Step Type="Execute" Name="DirectLoadProcess" ID="14">
                 <Properties>
                   <Property Name="ProcessName">DirectLoadProcess_Berth1</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="24" />
+                <Exit Name="Exit" Type="Primary" NextID="23" />
               </Step>
-              <Step Type="Fire" Name="DLComplete" ID="16">
+              <Step Type="Fire" Name="DLComplete" ID="15">
                 <Properties>
                   <Property Name="EventName">DLComplete</Property>
                 </Properties>
               </Step>
-              <Step Type="Delay" Name="Epsilon" ID="17">
+              <Step Type="Delay" Name="Epsilon" ID="16">
                 <Properties>
                   <Property Name="DelayTime">Math.EPSILON</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="16" />
+                <Exit Name="Exit" Type="Primary" NextID="15" />
               </Step>
-              <Step Type="Decide" Name="WhichBerth" ID="18">
+              <Step Type="Decide" Name="WhichBerth" ID="17">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">UnloadingToken.BerthFound==1</Property>
                 </Properties>
-                <Exit Name="True" Type="Primary" NextID="15" />
-                <Exit Name="False" Type="Alternate" NextID="25" />
+                <Exit Name="True" Type="Primary" NextID="14" />
+                <Exit Name="False" Type="Alternate" NextID="24" />
               </Step>
-              <Step Type="Execute" Name="DirectLoadProcess" ID="19">
+              <Step Type="Execute" Name="DirectLoadProcess" ID="18">
                 <Properties>
                   <Property Name="ProcessName">DirectLoadProcess_Berth2</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="24" />
+                <Exit Name="Exit" Type="Primary" NextID="23" />
               </Step>
-              <Step Type="Execute" Name="NodesOff" ID="20">
+              <Step Type="Execute" Name="NodesOff" ID="19">
                 <Properties>
                   <Property Name="ProcessName">UnloadingNodesOff</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="18" />
+                <Exit Name="Exit" Type="Primary" NextID="17" />
               </Step>
-              <Step Type="Decide" Name="IsDL" ExclusionExpression="!EnableDirectLoading" ID="21">
+              <Step Type="Decide" Name="IsDL" ExclusionExpression="!EnableDirectLoading" ID="20">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">UnloadingToken.NumberDLShipsFound&lt;=0</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="4" />
-                <Exit Name="False" Type="Alternate" NextID="22" />
+                <Exit Name="False" Type="Alternate" NextID="21" />
               </Step>
-              <Step Type="Wait" Name="DLComplete" ExclusionExpression="!EnableDirectLoading" ID="22">
+              <Step Type="Wait" Name="DLComplete" ExclusionExpression="!EnableDirectLoading" ID="21">
                 <Properties>
                   <Property Name="EventName">DLComplete</Property>
                 </Properties>
+              </Step>
+              <Step Type="Assign" Name="DirectLoadingTrain" ID="22">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DirectLoadingTrain</Value>
+                  </Property>
+                  <Property Name="NewValue">!DirectLoadingTrain</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="19" />
               </Step>
               <Step Type="Assign" Name="DirectLoadingTrain" ID="23">
                 <Properties>
@@ -15599,53 +15603,44 @@
                   </Property>
                   <Property Name="NewValue">!DirectLoadingTrain</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="20" />
+                <Exit Name="Exit" Type="Primary" NextID="16" />
               </Step>
-              <Step Type="Assign" Name="DirectLoadingTrain" ID="24">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DirectLoadingTrain</Value>
-                  </Property>
-                  <Property Name="NewValue">!DirectLoadingTrain</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="17" />
-              </Step>
-              <Step Type="Decide" Name="WhichBerth" ID="25">
+              <Step Type="Decide" Name="WhichBerth" ID="24">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">UnloadingToken.BerthFound==2</Property>
                 </Properties>
-                <Exit Name="True" Type="Primary" NextID="19" />
-                <Exit Name="False" Type="Alternate" NextID="26" />
+                <Exit Name="True" Type="Primary" NextID="18" />
+                <Exit Name="False" Type="Alternate" NextID="25" />
               </Step>
-              <Step Type="Notify" Name="Error" ID="26">
+              <Step Type="Notify" Name="Error" ID="25">
                 <Properties>
                   <Property Name="MessageContent">"Error No Berth Despite Found Direct load opportunity"</Property>
                 </Properties>
               </Step>
-              <Step Type="Decide" Name="IsUGC" ID="27">
+              <Step Type="Decide" Name="IsUGC" ID="26">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">ContainerEntity.FlowContainer.Contents.FirstItem.Entity.Priority==2</Property>
                 </Properties>
-                <Exit Name="True" Type="Primary" NextID="12" />
-                <Exit Name="False" Type="Alternate" NextID="28" />
+                <Exit Name="True" Type="Primary" NextID="11" />
+                <Exit Name="False" Type="Alternate" NextID="27" />
               </Step>
-              <Step Type="Notify" Name="Error" ID="28">
+              <Step Type="Notify" Name="Error" ID="27">
                 <Properties>
                   <Property Name="MessageContent">"Train Attempting to load unrecognised product"</Property>
                 </Properties>
               </Step>
-              <Step Type="Assign" Name="BlockedByStockpile" ID="29">
+              <Step Type="Assign" Name="BlockedByStockpile" ID="28">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>DumperStates</Value>
                   </Property>
                   <Property Name="NewValue">4</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
+                <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
-              <Step Type="Assign" Name="LoadingToStockpile" ID="30">
+              <Step Type="Assign" Name="LoadingToStockpile" ID="29">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>DumperStates</Value>
@@ -15653,6 +15648,12 @@
                   <Property Name="NewValue">2</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Execute" Name="NodesOff" ID="30">
+                <Properties>
+                  <Property Name="ProcessName">UnloadingNodesOff</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
             </Steps>
           </Process>
@@ -16661,7 +16662,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="P1_LoadToProcess" BeginStepID="11" Category="ToLoad AddOn Processes">
+          <Process Name="P1_LoadToProcess" BeginStepID="10" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -16689,7 +16690,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="7" />
+                <Exit Name="Exit" Type="Primary" NextID="13" />
               </Step>
               <Step Type="Assign" Name="LoadingResetter" ID="5">
                 <Properties>
@@ -16713,9 +16714,78 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
+                <Exit Name="Exit" Type="Primary" NextID="8" />
               </Step>
-              <Step Type="Wait" Name="Finished" ID="7">
+              <Step Type="Release" Name="SR" ID="7">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">SR1</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Seize" Name="P1P2" ID="8">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P1.Res</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="ObjectName">P2.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="11" />
+              </Step>
+              <Step Type="Release" Name="P1P2" ID="9">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P1.Res</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="ObjectName">P2.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="10">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="12" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="11">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Wait" Name="Finished" ID="13">
                 <Properties>
                   <Property Name="EventName">P1.TankFull</Property>
                   <Property Name="Events">
@@ -16741,80 +16811,11 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
-              </Step>
-              <Step Type="Release" Name="SR" ID="8">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList2</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-              </Step>
-              <Step Type="Seize" Name="P1P2" ID="9">
-                <Properties>
-                  <Property Name="ResourceSeizes">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P1.Res</Property>
-                      </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P2.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="12" />
-              </Step>
-              <Step Type="Release" Name="P1P2" ID="10">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P1.Res</Property>
-                      </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P2.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
-              </Step>
-              <Step Type="Assign" Name="TankOperation" ID="11">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>StockpileTank.TankOperation</Value>
-                  </Property>
-                  <Property Name="NewValue">1</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="13" />
-              </Step>
-              <Step Type="Assign" Name="LoadingToStockpile" ID="12">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">2</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
-              </Step>
-              <Step Type="Assign" Name="BlockedByStockpile" ID="13">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">4</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
             </Steps>
           </Process>
-          <Process Name="P2_LoadToProcess" BeginStepID="11" Category="ToLoad AddOn Processes">
+          <Process Name="P2_LoadToProcess" BeginStepID="10" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -16842,7 +16843,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
+                <Exit Name="Exit" Type="Primary" NextID="13" />
               </Step>
               <Step Type="Assign" Name="LoadingResetter" ID="5">
                 <Properties>
@@ -16853,7 +16854,91 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
-              <Step Type="Wait" Name="Finished" ID="6">
+              <Step Type="Seize" Name="SR" ID="6">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">SR1</Property>
+                        <Property Name="ObjectListName">SRList1</Property>
+                        <Property Name="RequestMove">ToNode</Property>
+                        <Property Name="DestinationNode">Pile1N</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="8" />
+              </Step>
+              <Step Type="Release" Name="SR" ID="7">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">SR1</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Seize" Name="P1P2" ID="8">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P1.Res</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="ObjectName">P2.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="12" />
+              </Step>
+              <Step Type="Release" Name="P1P2" ID="9">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P1.Res</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="ObjectName">P2.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="10">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="11" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="11">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Wait" Name="Finished" ID="13">
                 <Properties>
                   <Property Name="EventName">P1.TankFull</Property>
                   <Property Name="Events">
@@ -16879,95 +16964,11 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
-              </Step>
-              <Step Type="Seize" Name="SR" ID="7">
-                <Properties>
-                  <Property Name="ResourceSeizes">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList1</Property>
-                        <Property Name="RequestMove">ToNode</Property>
-                        <Property Name="DestinationNode">Pile1N</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="9" />
-              </Step>
-              <Step Type="Release" Name="SR" ID="8">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">SR1</Property>
-                        <Property Name="ObjectListName">SRList2</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-              </Step>
-              <Step Type="Seize" Name="P1P2" ID="9">
-                <Properties>
-                  <Property Name="ResourceSeizes">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P1.Res</Property>
-                      </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P2.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="13" />
-              </Step>
-              <Step Type="Release" Name="P1P2" ID="10">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P1.Res</Property>
-                      </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P2.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
-              </Step>
-              <Step Type="Assign" Name="TankOperation" ID="11">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>StockpileTank.TankOperation</Value>
-                  </Property>
-                  <Property Name="NewValue">1</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="12" />
-              </Step>
-              <Step Type="Assign" Name="BlockedByStockpile" ID="12">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">4</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="7" />
-              </Step>
-              <Step Type="Assign" Name="LoadingToStockpile" ID="13">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">2</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
             </Steps>
           </Process>
-          <Process Name="P3_LoadToProcess" BeginStepID="12" Category="ToLoad AddOn Processes">
+          <Process Name="P3_LoadToProcess" BeginStepID="11" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -17004,7 +17005,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
+                <Exit Name="Exit" Type="Primary" NextID="14" />
               </Step>
               <Step Type="Assign" Name="LoadingResetter" ID="6">
                 <Properties>
@@ -17029,7 +17030,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Release" Name="SR" ID="8">
                 <Properties>
@@ -17044,7 +17045,58 @@
                   </Property>
                 </Properties>
               </Step>
-              <Step Type="Wait" Name="Finished" ID="9">
+              <Step Type="Seize" Name="P3Res" ID="9">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P3.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Release" Name="P3" ID="10">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P3.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="8" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="11">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="12" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Wait" Name="Finished" ID="14">
                 <Properties>
                   <Property Name="EventName">P1.TankFull</Property>
                   <Property Name="Events">
@@ -17070,62 +17122,11 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
-              </Step>
-              <Step Type="Seize" Name="P3Res" ID="10">
-                <Properties>
-                  <Property Name="ResourceSeizes">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P3.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="14" />
-              </Step>
-              <Step Type="Release" Name="P3" ID="11">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P3.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
-              </Step>
-              <Step Type="Assign" Name="TankOperation" ID="12">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>StockpileTank.TankOperation</Value>
-                  </Property>
-                  <Property Name="NewValue">1</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="13" />
-              </Step>
-              <Step Type="Assign" Name="BlockedByStockpile" ID="13">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">4</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="7" />
-              </Step>
-              <Step Type="Assign" Name="LoadingToStockpile" ID="14">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">2</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
             </Steps>
           </Process>
-          <Process Name="P4_LoadToProcess" BeginStepID="12" Category="ToLoad AddOn Processes">
+          <Process Name="P4_LoadToProcess" BeginStepID="11" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -17162,7 +17163,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
+                <Exit Name="Exit" Type="Primary" NextID="14" />
               </Step>
               <Step Type="Assign" Name="LoadingResetter" ID="6">
                 <Properties>
@@ -17187,7 +17188,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Release" Name="SR" ID="8">
                 <Properties>
@@ -17202,7 +17203,58 @@
                   </Property>
                 </Properties>
               </Step>
-              <Step Type="Wait" Name="Finished" ID="9">
+              <Step Type="Seize" Name="P4Res" ID="9">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P4.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Release" Name="P4" ID="10">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P4.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="8" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="11">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="12" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Wait" Name="Finished" ID="14">
                 <Properties>
                   <Property Name="EventName">P1.TankFull</Property>
                   <Property Name="Events">
@@ -17228,62 +17280,11 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
-              </Step>
-              <Step Type="Seize" Name="P4Res" ID="10">
-                <Properties>
-                  <Property Name="ResourceSeizes">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P4.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="14" />
-              </Step>
-              <Step Type="Release" Name="P4" ID="11">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P4.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
-              </Step>
-              <Step Type="Assign" Name="TankOperation" ID="12">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>StockpileTank.TankOperation</Value>
-                  </Property>
-                  <Property Name="NewValue">1</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="13" />
-              </Step>
-              <Step Type="Assign" Name="BlockedByStockpile" ID="13">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">4</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="7" />
-              </Step>
-              <Step Type="Assign" Name="LoadingToStockpile" ID="14">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">2</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
             </Steps>
           </Process>
-          <Process Name="P5_LoadToProcess" BeginStepID="13" Category="ToLoad AddOn Processes">
+          <Process Name="P5_LoadToProcess" BeginStepID="12" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -17329,7 +17330,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
+                <Exit Name="Exit" Type="Primary" NextID="15" />
               </Step>
               <Step Type="Assign" Name="LoadingResetter" ID="7">
                 <Properties>
@@ -17353,9 +17354,78 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
+                <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
-              <Step Type="Wait" Name="Finished" ID="9">
+              <Step Type="Release" Name="SR" ID="9">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">SR2</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Seize" Name="P5P6" ID="10">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P5.Res</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="ObjectName">P6.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="14" />
+              </Step>
+              <Step Type="Release" Name="P5P6" ID="11">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P5.Res</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="ObjectName">P6.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="9" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="8" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Wait" Name="Finished" ID="15">
                 <Properties>
                   <Property Name="EventName">P1.TankFull</Property>
                   <Property Name="Events">
@@ -17381,80 +17451,11 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="12" />
-              </Step>
-              <Step Type="Release" Name="SR" ID="10">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">SR2</Property>
-                        <Property Name="ObjectListName">SRList2</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-              </Step>
-              <Step Type="Seize" Name="P5P6" ID="11">
-                <Properties>
-                  <Property Name="ResourceSeizes">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P5.Res</Property>
-                      </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P6.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="15" />
-              </Step>
-              <Step Type="Release" Name="P5P6" ID="12">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P5.Res</Property>
-                      </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P6.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
-              </Step>
-              <Step Type="Assign" Name="TankOperation" ID="13">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>StockpileTank.TankOperation</Value>
-                  </Property>
-                  <Property Name="NewValue">1</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="14" />
-              </Step>
-              <Step Type="Assign" Name="BlockedByStockpile" ID="14">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">4</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
-              </Step>
-              <Step Type="Assign" Name="LoadingToStockpile" ID="15">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">2</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
+                <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
             </Steps>
           </Process>
-          <Process Name="P6_LoadToProcess" BeginStepID="13" Category="ToLoad AddOn Processes">
+          <Process Name="P6_LoadToProcess" BeginStepID="12" Category="ToLoad AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="SJ1" ID="2">
@@ -17500,7 +17501,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="8" />
+                <Exit Name="Exit" Type="Primary" NextID="15" />
               </Step>
               <Step Type="Assign" Name="LoadingResetter" ID="7">
                 <Properties>
@@ -17511,7 +17512,91 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
-              <Step Type="Wait" Name="Finished" ID="8">
+              <Step Type="Seize" Name="SR" ID="8">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">SR2</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
+                        <Property Name="RequestMove">ToNode</Property>
+                        <Property Name="DestinationNode">Pile3N</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="10" />
+              </Step>
+              <Step Type="Release" Name="SR" ID="9">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">SR2</Property>
+                        <Property Name="ObjectListName">SRList2</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+              </Step>
+              <Step Type="Seize" Name="P5P6" ID="10">
+                <Properties>
+                  <Property Name="ResourceSeizes">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P5.Res</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="ObjectName">P6.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="14" />
+              </Step>
+              <Step Type="Release" Name="P5P6" ID="11">
+                <Properties>
+                  <Property Name="ResourceReleases">
+                    <Rows>
+                      <Properties>
+                        <Property Name="ObjectName">P5.Res</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="ObjectName">P6.Res</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="9" />
+              </Step>
+              <Step Type="Assign" Name="TankOperation" ID="12">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>StockpileTank.TankOperation</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Assign" Name="BlockedByStockpile" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">4</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="8" />
+              </Step>
+              <Step Type="Assign" Name="LoadingToStockpile" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Wait" Name="Finished" ID="15">
                 <Properties>
                   <Property Name="EventName">P1.TankFull</Property>
                   <Property Name="Events">
@@ -17537,91 +17622,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="12" />
-              </Step>
-              <Step Type="Seize" Name="SR" ID="9">
-                <Properties>
-                  <Property Name="ResourceSeizes">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">SR2</Property>
-                        <Property Name="ObjectListName">SRList2</Property>
-                        <Property Name="RequestMove">ToNode</Property>
-                        <Property Name="DestinationNode">Pile3N</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="11" />
-              </Step>
-              <Step Type="Release" Name="SR" ID="10">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">SR2</Property>
-                        <Property Name="ObjectListName">SRList2</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-              </Step>
-              <Step Type="Seize" Name="P5P6" ID="11">
-                <Properties>
-                  <Property Name="ResourceSeizes">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P5.Res</Property>
-                      </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P6.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="15" />
-              </Step>
-              <Step Type="Release" Name="P5P6" ID="12">
-                <Properties>
-                  <Property Name="ResourceReleases">
-                    <Rows>
-                      <Properties>
-                        <Property Name="ObjectName">P5.Res</Property>
-                      </Properties>
-                      <Properties>
-                        <Property Name="ObjectName">P6.Res</Property>
-                      </Properties>
-                    </Rows>
-                  </Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
-              </Step>
-              <Step Type="Assign" Name="TankOperation" ID="13">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>StockpileTank.TankOperation</Value>
-                  </Property>
-                  <Property Name="NewValue">1</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="14" />
-              </Step>
-              <Step Type="Assign" Name="BlockedByStockpile" ID="14">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">4</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
-              </Step>
-              <Step Type="Assign" Name="LoadingToStockpile" ID="15">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">2</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
             </Steps>
           </Process>
@@ -17789,12 +17790,6 @@
                       </Properties>
                       <Properties>
                         <Property Name="EventsEventName">TrainDumper.Processing.Exited</Property>
-                      </Properties>
-                      <Properties>
-                        <Property Name="EventsEventName">SR1[1].Released</Property>
-                      </Properties>
-                      <Properties>
-                        <Property Name="EventsEventName">SR2[1].Released</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -18272,7 +18267,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
               <Step Type="Release" Name="SR" ID="7">
                 <Properties>
@@ -18309,7 +18304,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
               <Step Type="Assign" Name="TankOperation" ID="10">
                 <Properties>
@@ -18318,7 +18313,7 @@
                   </Property>
                   <Property Name="NewValue">2</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Wait" Name="Empty" ID="11">
                 <Properties>
@@ -18996,19 +18991,13 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="TrainUnloader_EmptiedContainer" BeginStepID="3" Category="TrainUnloader AddOn Processes">
+          <Process Name="TrainUnloader_EmptiedContainer" BeginStepID="2" Category="TrainUnloader AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Fire" Name="TrainEmpty" ID="2">
                 <Properties>
                   <Property Name="EventName">TrainEmpty</Property>
                 </Properties>
-              </Step>
-              <Step Type="Delay" Name="Epsilon" ID="3">
-                <Properties>
-                  <Property Name="DelayTime">Math.EPSILON</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
             </Steps>
           </Process>
@@ -20310,7 +20299,7 @@
               <Property Name="AfterProcessingAddOnProcess">Berth1_AfterProcessing</Property>
               <Property Name="ExitedAddOnProcess">Berth1_Exited</Property>
             </Properties>
-            <Graphics>
+            <Graphics ExternallyVisible="True">
               <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Filler.ResourceState">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
                   <SymbolRef Id="5542557c-3680-4df3-8696-ff11067a8c4a" />
@@ -20918,7 +20907,7 @@
               <Property Name="AfterProcessingAddOnProcess">Berth2_AfterProcessing</Property>
               <Property Name="ExitedAddOnProcess">Berth2_Exited</Property>
             </Properties>
-            <Graphics>
+            <Graphics ExternallyVisible="True">
               <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Filler.ResourceState">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
                   <SymbolRef Id="5542557c-3680-4df3-8696-ff11067a8c4a" />
@@ -21803,7 +21792,7 @@
               <Property Name="OffShiftAddOnProcess">ShiploaderReliability_OffShift</Property>
               <Property Name="CapitalCost" Units="USD">0.0</Property>
             </Properties>
-            <Graphics>
+            <Graphics ExternallyVisible="True">
               <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
                   <SymbolRef Id="[UseExternalSymbol]" />
@@ -23901,7 +23890,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="384" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="393" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -25223,7 +25212,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1525" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1538" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -31525,6 +31514,10 @@
               </Step>
             </Steps>
           </Process>
+          <Process Name="Monitor1_TriggeredProcessName" Category="Monitor1 AddOn Processes">
+            <Properties />
+            <Steps />
+          </Process>
         </Processes>
         <Objects>
           <Entity Name="LACRequest" Type="RequestEntity" Location="498.450112937064 5.68295410730002E-14 197.373459966045" Size="0.5 0.5 0.25" Scope="Public">
@@ -36389,7 +36382,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1525</Revision>
+        <Revision>1538</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -36417,11 +36410,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>903</Revision>
+        <Revision>912</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>384</Revision>
+        <Revision>393</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -36437,7 +36430,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1003</Revision>
+        <Revision>1015</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -36517,7 +36510,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>299</Revision>
+        <Revision>301</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -43184,7 +43177,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="299" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="301" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -53884,4 +53877,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- jOJWigEvTec0rlRFA5GYjaF6KRO+3CTq0whsDL9dBdBHPKpFb1h2wwRu4aWitsX4Db9SJehiqN2wUtdM0pjn6w== -->
+<!-- S1L0iG7t0QQwcrw1THELemFSxbS/sE8uiwY62jdUCL/oHqPnoPDL6+yARsm4DxFCZaIwA8DUuWRePhGkVM3Imw== -->
