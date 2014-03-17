@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-14T06:56:11" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-17T01:19:11" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,7 +9,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="1000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="100" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
         <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
@@ -28,6 +28,7 @@
           <Property Name="PortPostUnloadingDelay">0</Property>
           <Property Name="WriteShipLogToFile">True</Property>
           <Property Name="EnableTideConstraints">False</Property>
+          <Property Name="EnablePortWeatherShutdowns">True</Property>
         </Properties>
       </RunnableInstance>
       <SuppressedWarnings>
@@ -92,6 +93,7 @@
             <Control Name="EnableTrainDumperShutdowns" />
             <Control Name="EnableBerth2" />
             <Control Name="EnableTideConstraints" />
+            <Control Name="EnablePortWeatherShutdowns" />
           </Controls>
           <Responses>
             <Response Name="AveTrainCycleTime" Expression="Tally_TrainCycleTime.Average" UnitType="Time" Units="Hours" />
@@ -241,6 +243,7 @@
             <Control Name="EnableTrainDumperShutdowns" />
             <Control Name="EnableBerth2" />
             <Control Name="EnableTideConstraints" />
+            <Control Name="EnablePortWeatherShutdowns" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTime" Expression="Tally_TrainCycleTime.Average" Primary="True" />
@@ -311,19 +314,23 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="7.36097417461833 1016.82305932778 -200.153665133255" Direction="0 -1 2.22044604925031E-16" Zoom="1016.82305932778" />
-          <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
+          <Camera Orientation="Top" Location="49.2283250454927 865.770961216518 -198.252763183874" Direction="0 -1 2.22044604925031E-16" Zoom="865.770961216518" />
+          <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Nodes="False" Background="ffdead" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="TrainYard AddOn Processes" Expanded="True" />
+            <Category Name="Section2Entry AddOn Processes" Expanded="True" />
             <Category Name="TrainOutput@DummyMine AddOn Processes" Expanded="True" />
             <Category Name="TrainOutput@DummyPort AddOn Processes" Expanded="True" />
+            <Category Name="To Port" Expanded="True" />
             <Category Name="To Mine" Expanded="True" />
+            <Category Name="RequestProcessing AddOn Processes" Expanded="True" />
             <Category Name="TrainInput@DummyMine AddOn Processes" Expanded="True" />
             <Category Name="TrainInput@DummyPort AddOn Processes" Expanded="True" />
             <Category Name="PortSig4 AddOn Processes" Expanded="True" />
             <Category Name="Resource1 AddOn Processes" Expanded="True" />
+            <Category Name="TrackResource AddOn Processes" Expanded="True" />
             <Category Name="T1 AddOn Processes" Expanded="True" />
             <Category Name="T2 AddOn Processes" Expanded="True" />
             <Category Name="T3 AddOn Processes" Expanded="True" />
@@ -333,29 +340,20 @@
             <Category Name="T7 AddOn Processes" Expanded="True" />
             <Category Name="T8 AddOn Processes" Expanded="True" />
             <Category Name="T9 AddOn Processes" Expanded="True" />
+            <Category Name="T10 AddOn Processes" Expanded="True" />
+            <Category Name="MS1 AddOn Processes" />
             <Category Name="Track1 AddOn Processes" Expanded="True" />
             <Category Name="ChannelExit AddOn Processes" Expanded="True" />
+            <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
             <Category Name="B1Exit AddOn Processes" Expanded="True" />
             <Category Name="B2Exit AddOn Processes" Expanded="True" />
             <Category Name="Port AddOn Processes" Expanded="True" />
+            <Category Name="Input@ShipExit AddOn Processes" Expanded="True" />
+            <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
+            <Category Name="B1Entry AddOn Processes" Expanded="True" />
+            <Category Name="B2Entry AddOn Processes" Expanded="True" />
             <Category Name="PortWeather AddOn Processes" Expanded="True" />
             <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
-            <Category Name="Section2Entry AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="To Port" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="RequestProcessing AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="TrackResource AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="MS1 AddOn Processes" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="T10 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -365,13 +363,29 @@
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="B1Entry AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="B2Entry AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Input@ShipExit AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -431,7 +445,7 @@
         </OperationalPlanningResourceGantt>
         <OperationalFacility>
           <Camera Orientation="Top" Location="5.80455236347258 83.5295230397518 -19.7217412975566" Direction="0 -1 2.22044604925031E-16" Zoom="83.5295230397518" />
-          <ObjectDisplay Axis="False" Grid="False" Labels="False" Background="ffdead" />
+          <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Nodes="False" Background="ffdead" />
         </OperationalFacility>
       </ViewInfo>
     </Model>
@@ -899,40 +913,41 @@
       </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-68.788305203439 447.590804108669 -80.9149187129515" Direction="0 -1 2.22044604925031E-16" Zoom="447.590804108669" />
-          <ObjectDisplay Labels="False" Background="ffffff" />
+          <Camera Orientation="Top" Location="-75.5065470042343 443.007343446029 -91.6167259277942" Direction="0 -1 2.22044604925031E-16" Zoom="443.007343446029" />
+          <ObjectDisplay Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="TrainUnloader AddOn Processes" Expanded="True" />
-            <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
             <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
-            <Category Name="SR2 AddOn Processes" Expanded="True" />
             <Category Name="ToLoad AddOn Processes" Expanded="True" />
             <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
-            <Category Name="Berth1 AddOn Processes" Expanded="True" />
             <Category Name="Monitor1 AddOn Processes" Expanded="True" />
-            <Category Name="Berth2 AddOn Processes" Expanded="True" />
             <Category Name="SR1 AddOn Processes" Expanded="True" />
             <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="LoadFrom AddOn Processes" Expanded="True" />
-            <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
             <Category Name="TrainDumper AddOn Processes" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Loading Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="ShipLoader AddOn Processes" />
+            <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="SR2 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Berth1 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Berth2 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -958,7 +973,7 @@
         </OperationalPlanningResourceGantt>
         <OperationalFacility>
           <Camera Orientation="Top" Location="7.52411828127773 47.5394397105276 -31.4191414888471" Direction="0 -1 2.22044604925031E-16" Zoom="47.5394397105276" />
-          <ObjectDisplay Labels="False" Background="ffffff" />
+          <ObjectDisplay Labels="False" LineArrows="False" Background="ffffff" />
         </OperationalFacility>
       </ViewInfo>
     </Model>
@@ -1024,6 +1039,8 @@
     <SymbolRef Id="6785c2c3-2f73-4dff-9f28-f24f8562885c" />
     <SymbolRef Id="547e7211-ce1e-430b-a66e-49bb54541061" />
     <SymbolRef Id="95678d5e-94de-4757-858f-cbeca75aa84f" />
+    <SymbolRef Id="01aaef6b-5d90-4081-b000-16c4264a08e4" />
+    <SymbolRef Id="0f4fb666-e3c6-4102-a7be-bfcc566784fc" />
   </Symbols>
   <CommonItems>
     <Definitions>
@@ -1720,7 +1737,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="851" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="884" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -15085,7 +15102,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="901" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="945" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -19047,12 +19064,13 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
-              <Step Type="Suspend" Name="SLManager" ExclusionExpression="!EnableShiploaderFailures" ID="3">
+              <Step Type="Suspend" Name="SLManagerOff" ExclusionExpression="!EnableShiploaderFailures" ID="3">
                 <Properties>
                   <Property Name="ProcessName">ShipLoadingManager</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
-              <Step Type="Assign" Name="BerthNodes" ExclusionExpression="!EnableShiploaderFailures" ID="4">
+              <Step Type="Assign" Name="BerthNodesOff" ExclusionExpression="!EnableShiploaderFailures" ID="4">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>BerthJunction.FlowRegulator.Enabled</Value>
@@ -19060,6 +19078,17 @@
                   <Property Name="NewValue">False</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Suspend" Name="Berth1ProcessOff" ExclusionExpression="!EnableShiploaderFailures" ID="5">
+                <Properties>
+                  <Property Name="ProcessName">Berth1_FillingContainer</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Suspend" Name="Berth2ProcessOff" ExclusionExpression="!EnableShiploaderFailures" ID="6">
+                <Properties>
+                  <Property Name="ProcessName">Berth2_FillingContainer</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -19072,12 +19101,13 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
-              <Step Type="Resume" Name="SLManager" ExclusionExpression="!EnableShiploaderFailures" ID="3">
+              <Step Type="Resume" Name="SLManagerOn" ExclusionExpression="!EnableShiploaderFailures" ID="3">
                 <Properties>
                   <Property Name="ProcessName">ShipLoadingManager</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
-              <Step Type="Assign" Name="BerthNodes" ExclusionExpression="!EnableShiploaderFailures" ID="4">
+              <Step Type="Assign" Name="BerthNodesOn" ExclusionExpression="!EnableShiploaderFailures" ID="4">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>BerthJunction.FlowRegulator.Enabled</Value>
@@ -19085,6 +19115,17 @@
                   <Property Name="NewValue">True</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Resume" Name="Berth1ProcessOn" ExclusionExpression="!EnableShiploaderFailures" ID="5">
+                <Properties>
+                  <Property Name="ProcessName">Berth1_FillingContainer</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Resume" Name="Berth2ProcessOn" ExclusionExpression="!EnableShiploaderFailures" ID="6">
+                <Properties>
+                  <Property Name="ProcessName">Berth2_FillingContainer</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -19401,12 +19442,13 @@
           <Process Name="ShiploaderReliability_OnShift" BeginStepID="4" Category="ShiploaderReliability AddOn Processes">
             <Properties />
             <Steps>
-              <Step Type="Resume" Name="SLManager" ExclusionExpression="!EnableShiploaderFailures" ID="2">
+              <Step Type="Resume" Name="SLManagerOn" ExclusionExpression="!EnableShiploaderFailures" ID="2">
                 <Properties>
                   <Property Name="ProcessName">ShipLoadingManager</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
-              <Step Type="Assign" Name="BerthNodes" ExclusionExpression="!EnableShiploaderFailures" ID="3">
+              <Step Type="Assign" Name="BerthNodesOn" ExclusionExpression="!EnableShiploaderFailures" ID="3">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>BerthJunction.FlowRegulator.Enabled</Value>
@@ -19424,12 +19466,23 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
+              <Step Type="Resume" Name="Berth1ProcessOn" ExclusionExpression="!EnableShiploaderFailures" ID="5">
+                <Properties>
+                  <Property Name="ProcessName">Berth1_FillingContainer</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Resume" Name="Berth2ProcessOn" ExclusionExpression="!EnableShiploaderFailures" ID="6">
+                <Properties>
+                  <Property Name="ProcessName">Berth2_FillingContainer</Property>
+                </Properties>
+              </Step>
             </Steps>
           </Process>
           <Process Name="ShiploaderReliability_OffShift" BeginStepID="4" Category="ShiploaderReliability AddOn Processes">
             <Properties />
             <Steps>
-              <Step Type="Assign" Name="BerthNodes" ExclusionExpression="!EnableShiploaderFailures" ID="2">
+              <Step Type="Assign" Name="BerthNodesOff" ExclusionExpression="!EnableShiploaderFailures" ID="2">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>BerthJunction.FlowRegulator.Enabled</Value>
@@ -19438,10 +19491,11 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
-              <Step Type="Suspend" Name="SLManager" ExclusionExpression="!EnableShiploaderFailures" ID="3">
+              <Step Type="Suspend" Name="SLManagerOff" ExclusionExpression="!EnableShiploaderFailures" ID="3">
                 <Properties>
                   <Property Name="ProcessName">ShipLoadingManager</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
               <Step Type="Assign" Name="Capacity0" ExclusionExpression="!EnableShiploaderFailures" ID="4">
                 <Properties>
@@ -19452,13 +19506,24 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
+              <Step Type="Suspend" Name="Berth1ProcessOff" ExclusionExpression="!EnableShiploaderFailures" ID="5">
+                <Properties>
+                  <Property Name="ProcessName">Berth1_FillingContainer</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Suspend" Name="Berth2ProcessOff" ExclusionExpression="!EnableShiploaderFailures" ID="6">
+                <Properties>
+                  <Property Name="ProcessName">Berth2_FillingContainer</Property>
+                </Properties>
+              </Step>
             </Steps>
           </Process>
         </Processes>
         <Objects>
-          <Fixed Name="SurgeBin" Type="Tank" Location="-70.6708292124801 0 -72.5300789573029" Size="1.5000000659115 1.02541471142509 1.00951097244363" Scope="Public">
+          <Fixed Name="SurgeBin" Type="Tank" Location="-71.9154129330043 0 -75.2882794871381" Size="1.5000000659115 1.02541471142509 1.00951097244363" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@SurgeBin" Type="FlowNode" Location="-70.6343549928198 0 -71.906942812908" Scope="Public">
+              <Node Name="Input@SurgeBin" Type="FlowNode" Location="-71.878938713344 0 -74.6651433427432" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19470,7 +19535,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@SurgeBin" Type="FlowNode" Location="-71.4892390124228 0 -72.8448631869443" Scope="Public">
+              <Node Name="Output@SurgeBin" Type="FlowNode" Location="-72.733822732947 0 -75.6030637167795" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19499,8 +19564,8 @@
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="43">
-                <Plot Center="-35.8594501206579 0 -73.8931438405368" Width="36.8747807149024" Height="21.8116364727332" ExternallyVisible="True" Title="Surge Bin Contents (t)" Look="Dark;In A Fog" TextScale="2">
+              <AttachedObjects IndexList="36">
+                <Plot Center="-40.2720644617891 0 -75.2488578786301" Width="36.8747807149024" Height="21.8116364727332" Title="Surge Bin Contents (t)" Look="Dark;In A Fog" TextScale="2">
                   <Range Type="Days">7</Range>
                   <PlotLines>
                     <PlotLine Expression="FlowContainer.Contents.Weight / 1000" />
@@ -19906,9 +19971,9 @@
               </SymbolInstances>
             </Graphics>
           </Entity>
-          <Fixed Name="Berth1" Type="Filler" Location="-44.4041812926185 -5.5511151231258E-16 -148.512313622508" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
+          <Fixed Name="Berth1" Type="Filler" Location="0.935185636761112 -5.55111512312594E-17 -188.535141754811" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
             <AssociatedNodes>
-              <Node Name="ContainerInput@Berth1" Type="BasicNode" Location="-45.2622934963371 -5.5511151231258E-16 -151.528618937332" Scope="Public">
+              <Node Name="ContainerInput@Berth1" Type="BasicNode" Location="0.0770734330425175 -5.55111512312594E-17 -191.551447069635" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19916,9 +19981,9 @@
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 </Properties>
-                <Graphics ExternallyVisible="True" />
+                <Graphics />
               </Node>
-              <Node Name="FlowInput@Berth1" Type="FlowNode" Location="-43.4056474107256 -5.5511151231258E-16 -150.354855500174" Scope="Public">
+              <Node Name="FlowInput@Berth1" Type="FlowNode" Location="1.93371951865402 -5.55111512312594E-17 -190.377683632477" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19928,9 +19993,9 @@
                   <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
                   <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">10000</Property>
                 </Properties>
-                <Graphics ExternallyVisible="True" />
+                <Graphics />
               </Node>
-              <Node Name="Output@Berth1" Type="TransferNode" Location="-41.509310672159 -5.5511151231258E-16 -150.364756157267" Scope="Public">
+              <Node Name="Output@Berth1" Type="TransferNode" Location="3.83005625722061 -5.55111512312594E-17 -190.38758428957" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -19939,7 +20004,7 @@
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="DestinationNodeName">Input@ShipSink</Property>
                 </Properties>
-                <Graphics ExternallyVisible="True" />
+                <Graphics />
               </Node>
             </AssociatedNodes>
             <IndexedSizes>
@@ -20003,18 +20068,18 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="6">
-                <Queue Queue="Processing.Contents" Alignment="Inline" ExternallyVisible="True">
+                <Queue Queue="Processing.Contents" Alignment="Inline">
                   <Points>
-                    <Point Location="-41.5208470601567 -5.5511151231257E-16 -150.374397109011" />
-                    <Point Location="-45.1903975632034 -5.5511151231257E-16 -151.504047386002" />
+                    <Point Location="3.81852011718075 -5.55111512312499E-17 -190.397225768054" />
+                    <Point Location="0.14896961413405 -5.55111512312499E-17 -191.526876045045" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P1" Type="StockpileTank1" Location="-68.7315831365022 2.16936748935778E-30 -12.9195806663965" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
+          <Fixed Name="P1" Type="StockpileTank1" Location="-61.3009684523777 2.16936748935778E-30 -16.2719981239871" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P1" Type="FlowNode" Location="-68.7223137489647 0 -12.757544119184" Scope="Public">
+              <Node Name="Input@P1" Type="FlowNode" Location="-61.2916990648402 0 -16.1099615767746" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20027,7 +20092,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P1" Type="FlowNode" Location="-68.7201780981021 0 -12.7638985962483" Scope="Public">
+              <Node Name="Output@P1" Type="FlowNode" Location="-61.2895634139776 0 -16.1163160538389" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20078,16 +20143,16 @@
               <AttachedObjects IndexList="13">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-68.7475290025634 1.11022302462512E-16 -12.7936643497287" Direction="0.0145475931781887 0 -0.904889258434423" />
-                    <Point Location="-65.5723136746542 1.11022302462512E-16 -12.7936643497287" />
+                    <Point Location="-61.3169137283278 1.11022302462512E-16 -16.1460817256211" Direction="0.0145475931781887 0 -0.904889258434423" />
+                    <Point Location="-58.1416984004186 1.11022302462512E-16 -16.1460817256211" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P2" Type="StockpileTank1" Location="-63.2327352252796 -3.5527136788005E-15 -12.7410975852017" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
+          <Fixed Name="P2" Type="StockpileTank1" Location="-55.6538500319802 -3.5527136788005E-15 -16.2417835376368" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P2" Type="FlowNode" Location="-63.0495171261813 -3.5527136788005E-15 -12.7767103408853" Scope="Public">
+              <Node Name="Input@P2" Type="FlowNode" Location="-55.4706319328819 -3.5527136788005E-15 -16.2773962933204" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20100,7 +20165,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P2" Type="FlowNode" Location="-63.0593448041407 -3.5527136788005E-15 -12.8607718751624" Scope="Public">
+              <Node Name="Output@P2" Type="FlowNode" Location="-55.4804596108413 -3.5527136788005E-15 -16.3614578275975" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20151,16 +20216,16 @@
               <AttachedObjects IndexList="16">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-63.0936482699246 -3.44169137633798E-15 -12.8210847509705" Direction="-0.00405906542744305 0 -0.542933555060653" />
-                    <Point Location="-59.9911708124352 -3.44169137633798E-15 -12.8210847509705" />
+                    <Point Location="-55.5147624930025 -3.44169137633798E-15 -16.32177061603" Direction="-0.00405906542744305 0 -0.542933555060653" />
+                    <Point Location="-52.4122850355131 -3.44169137633798E-15 -16.32177061603" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P3" Type="StockpileTank1" Location="-68.7851233664324 -1.18329135783152E-30 -18.0152073811574" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
+          <Fixed Name="P3" Type="StockpileTank1" Location="-61.3756916962239 -1.18329135783152E-30 -21.367624838748" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P3" Type="FlowNode" Location="-68.8451670839287 0 -17.8531701187199" Scope="Public">
+              <Node Name="Input@P3" Type="FlowNode" Location="-61.4357354137202 0 -21.2055875763105" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20173,7 +20238,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P3" Type="FlowNode" Location="-68.8106921061143 0 -17.9018870229527" Scope="Public">
+              <Node Name="Output@P3" Type="FlowNode" Location="-61.4012604359058 0 -21.2543044805433" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20237,16 +20302,16 @@
               <AttachedObjects IndexList="14">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-68.886483312957 -1.11022302462515E-16 -17.9578316225325" Direction="-4.40163093412549E-05 0 -0.586602808921846" />
-                    <Point Location="-65.7581518766551 -1.11022302462515E-16 -17.9578316225325" />
+                    <Point Location="-61.4770510526374 -1.11022302462515E-16 -21.3102489984249" Direction="-4.40163093412549E-05 0 -0.586602808921846" />
+                    <Point Location="-58.3487196163355 -1.11022302462515E-16 -21.3102489984249" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P4" Type="StockpileTank1" Location="-63.1925245319125 0 -17.9915532435727" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
+          <Fixed Name="P4" Type="StockpileTank1" Location="-55.6348205521623 0 -21.3439707011633" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P4" Type="FlowNode" Location="-63.0676749936807 1.18329135783152E-30 -17.9989669040148" Scope="Public">
+              <Node Name="Input@P4" Type="FlowNode" Location="-55.5099710139305 1.18329135783152E-30 -21.3513843616054" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20259,7 +20324,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P4" Type="FlowNode" Location="-63.0787034538567 1.18329135783152E-30 -18.0688650218313" Scope="Public">
+              <Node Name="Output@P4" Type="FlowNode" Location="-55.5209994741065 1.18329135783152E-30 -21.4212824794219" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20323,16 +20388,16 @@
               <AttachedObjects IndexList="17">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-63.1336163997536 9.86076131526265E-31 -17.9833635395581" Direction="3.7030018650297E-06 0 -0.524835769891965" />
-                    <Point Location="-59.9203361759253 9.86076131526265E-31 -17.9833635395581" />
+                    <Point Location="-55.5759118355696 9.86076131526265E-31 -21.3357809154505" Direction="3.7030018650297E-06 0 -0.524835769891965" />
+                    <Point Location="-52.3626316117414 9.86076131526265E-31 -21.3357809154505" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P6" Type="StockpileTank1" Location="-63.096991957525 -7.7715611723761E-16 -22.6390879139945" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
+          <Fixed Name="P6" Type="StockpileTank1" Location="-55.6663752590701 -7.7715611723761E-16 -25.9915053715851" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P6" Type="FlowNode" Location="-62.9644110595653 -7.7715611723761E-16 -22.5405942794995" Scope="Public">
+              <Node Name="Input@P6" Type="FlowNode" Location="-55.5337943611104 -7.7715611723761E-16 -25.8930117370901" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20345,7 +20410,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P6" Type="FlowNode" Location="-62.9583109124382 -7.7715611723761E-16 -22.5469487565648" Scope="Public">
+              <Node Name="Output@P6" Type="FlowNode" Location="-55.5276942139833 -7.7715611723761E-16 -25.8993662141554" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20396,16 +20461,16 @@
               <AttachedObjects IndexList="18">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-63.041283482907 -6.66133814775094E-16 -22.6352438153191" Direction="-0.00155381441821423 0 -0.594641512685477" />
-                    <Point Location="-59.783682152543 -6.66133814775094E-16 -22.6352438153191" />
+                    <Point Location="-55.610666195152 -6.66133814775094E-16 -25.9876611912115" Direction="-0.00155381441821423 0 -0.594641512685477" />
+                    <Point Location="-52.353064864788 -6.66133814775094E-16 -25.9876611912115" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="P5" Type="StockpileTank1" Location="-68.8023594454135 0 -22.8123803669037" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
+          <Fixed Name="P5" Type="StockpileTank1" Location="-61.3717427469586 0 -26.0316587678993" Size="2.9505430522168 2.9505430522168 0" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@P5" Type="FlowNode" Location="-68.7511726558606 4.73316543132607E-30 -22.6927059237929" Scope="Public">
+              <Node Name="Input@P5" Type="FlowNode" Location="-61.3205559574057 4.73316543132607E-30 -25.9119843247885" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20418,7 +20483,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@P5" Type="FlowNode" Location="-68.7038685328514 4.73316543132607E-30 -22.6398448544025" Scope="Public">
+              <Node Name="Output@P5" Type="FlowNode" Location="-61.2732518343965 4.73316543132607E-30 -25.8591232553981" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20469,16 +20534,16 @@
               <AttachedObjects IndexList="15">
                 <Queue Queue="FlowContainer.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-68.7937115596525 1.11022302462515E-16 -22.6824099729444" Direction="0.00206057104924917 0 -0.506737984723276" />
-                    <Point Location="-65.7946500174127 1.11022302462515E-16 -22.6824099729444" />
+                    <Point Location="-61.3630942718975 1.11022302462515E-16 -25.9016882917519" Direction="0.00206057104924917 0 -0.506737984723276" />
+                    <Point Location="-58.3640327296577 1.11022302462515E-16 -25.9016882917519" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="ShipSink" Type="Sink" Location="-36.7808218647548 -1.4432899320127E-15 -185.642972504618" Size="1.5049811730262 1.02881997857009 1.00000033977415" Scope="Public">
+          <Fixed Name="ShipSink" Type="Sink" Location="25.8105600683606 -5.82867087928207E-14 -318.989650306221" Size="1.5049811730262 1.02881997857009 1.00000033977415" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@ShipSink" Type="BasicNode" Location="-38.0308218647548 -1.4432899320127E-15 -185.642972504618" Scope="Public">
+              <Node Name="Input@ShipSink" Type="BasicNode" Location="24.5605600683606 -5.82867087928207E-14 -318.989650306221" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20508,16 +20573,16 @@
               <AttachedObjects IndexList="7">
                 <Queue Queue="InputBuffer.Contents">
                   <Points>
-                    <Point Location="-37.7808177340776 -1.4432899320127E-15 -185.142971130088" />
-                    <Point Location="-40.7808177340776 -1.4432899320127E-15 -185.142971130088" />
+                    <Point Location="24.8105635177343 -5.82867087928207E-14 -318.489647926763" />
+                    <Point Location="21.8105635177343 -5.82867087928207E-14 -318.489647926763" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Berth2" Type="Filler" Location="-39.5733370774963 1.22124532708767E-15 -146.482073860697" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
+          <Fixed Name="Berth2" Type="Filler" Location="19.8609629098506 1.27675647831893E-15 -181.799385049892" Size="1.79999992090078 1.63670219655316 1.01239019889105" Scope="Public">
             <AssociatedNodes>
-              <Node Name="ContainerInput@Berth2" Type="BasicNode" Location="-40.6924155462615 1.22124532708767E-15 -150.149473215267" Scope="Public">
+              <Node Name="ContainerInput@Berth2" Type="BasicNode" Location="18.7418844410854 1.27675647831893E-15 -185.466784404462" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20525,9 +20590,9 @@
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 </Properties>
-                <Graphics ExternallyVisible="True" />
+                <Graphics />
               </Node>
-              <Node Name="FlowInput@Berth2" Type="FlowNode" Location="-39.264109265794 1.22124532708767E-15 -149.105388591082" Scope="Public">
+              <Node Name="FlowInput@Berth2" Type="FlowNode" Location="17.069421103978 1.27675647831893E-15 -185.270130504341" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20537,9 +20602,9 @@
                   <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
                   <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">10000</Property>
                 </Properties>
-                <Graphics ExternallyVisible="True" />
+                <Graphics />
               </Node>
-              <Node Name="Output@Berth2" Type="TransferNode" Location="-36.8254317414917 1.22124532708767E-15 -148.953260465163" Scope="Public">
+              <Node Name="Output@Berth2" Type="TransferNode" Location="22.6088682458552 1.27675647831893E-15 -184.270571654358" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -20547,7 +20612,7 @@
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 </Properties>
-                <Graphics ExternallyVisible="True" />
+                <Graphics />
               </Node>
             </AssociatedNodes>
             <IndexedSizes>
@@ -20611,10 +20676,10 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="8">
-                <Queue Queue="Processing.Contents" Alignment="Inline" ExternallyVisible="True">
+                <Queue Queue="Processing.Contents" Alignment="Inline">
                   <Points>
-                    <Point Location="-36.8460624805557 1.22124532708768E-15 -148.963871258558" />
-                    <Point Location="-40.7038627347428 1.22124532708768E-15 -150.139299332042" />
+                    <Point Location="22.5882371951921 1.27675647831894E-15 -184.281183217899" />
+                    <Point Location="18.730436941005 1.27675647831894E-15 -185.456611291383" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -20761,7 +20826,7 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="Berth1Location" Type="Resource" Location="-45.7548410440961 7.7715611723761E-16 -149.86826319945" Size="1.07990885277285 0.530514603846346 0.322756208211982" Scope="Public">
+          <Fixed Name="Berth1Location" Type="Resource" Location="-1.2370423733684 -1.38777878078145E-15 -186.235448001806" Size="1.07990885277285 0.530514603846346 0.322756208211982" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.07990885277285 0.530514603846346 0.322756208211982" />
               <IndexedSize Size="1.07990885277285 0.530514603846346 0.322756208211982" />
@@ -20853,7 +20918,7 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="Berth2Location" Type="Resource" Location="-42.1319730176314 7.7715611723761E-16 -148.872490885901" Size="1.07990885277285 0.530514603846346 0.322756208211982" Scope="Public">
+          <Fixed Name="Berth2Location" Type="Resource" Location="20.6110697996068 -4.16333634234433E-16 -180.042455996703" Size="1.07990885277285 0.530514603846346 0.322756208211982" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.07990885277285 0.530514603846346 0.322756208211982" />
               <IndexedSize Size="1.07990885277285 0.530514603846346 0.322756208211982" />
@@ -20945,15 +21010,15 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="Channel" Type="Resource" Location="-43.0480295657775 -4.38538094726937E-15 -171.710746806613" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="Channel" Type="Resource" Location="4.36786900639438 2.93653990013354E-14 -262.689698673922" Size="10.8351451712495 5.32285917777563 3.2383384596945" Scope="Public">
             <IndexedSizes>
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
-              <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
+              <IndexedSize Size="10.8351451712495 5.32285917777563 3.2383384596945" />
+              <IndexedSize Size="10.8351451712495 5.32285917777563 3.2383384596945" />
+              <IndexedSize Size="10.8351451712495 5.32285917777563 3.2383384596945" />
+              <IndexedSize Size="10.8351451712495 5.32285917777563 3.2383384596945" />
+              <IndexedSize Size="10.8351451712495 5.32285917777563 3.2383384596945" />
+              <IndexedSize Size="10.8351451712495 5.32285917777563 3.2383384596945" />
+              <IndexedSize Size="10.8351451712495 5.32285917777563 3.2383384596945" />
             </IndexedSizes>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -21175,7 +21240,7 @@
                   </FlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="31">
+              <AttachedObjects IndexList="27">
                 <StatusLabel Center="-3.40162705668508 0.594594075830861 -14.0044516463474" Width="1.1918488607548" Height="0.394517540242134" BackColor="ff0000" Expression="SR2" />
               </AttachedObjects>
             </Graphics>
@@ -21318,20 +21383,20 @@
                   </FlowDecoration>
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="32">
+              <AttachedObjects IndexList="28">
                 <StatusLabel Center="-3.46715423039864 0.571227764473448 -15.1809255758741" Width="1.20453633836697" Height="0.336841580972822" BackColor="ff00ff" Expression="SR1" />
               </AttachedObjects>
             </Graphics>
           </Transporter>
-          <Transporter Name="ShipLoader" Type="Vehicle" Location="1.72610813174361 -4.4408920985006E-16 -13.3880814482895" Size="0.537915350760266 1.80125697271835 1.51723700948708" Scope="Public">
+          <Transporter Name="ShipLoader" Type="Vehicle" Location="1.60227362447145 1.06581410364015E-14 -44.6904027530749" Size="0.967961375581459 3.2413039981549 2.73021920774434" Scope="Public">
             <IndexedSizes>
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
-              <IndexedSize Size="0.537915350760266 1.80125697271835 1.51723700948708" />
+              <IndexedSize Size="0.967961375581459 3.2413039981549 2.73021920774434" />
+              <IndexedSize Size="0.967961375581459 3.2413039981549 2.73021920774434" />
+              <IndexedSize Size="0.967961375581459 3.2413039981549 2.73021920774434" />
+              <IndexedSize Size="0.967961375581459 3.2413039981549 2.73021920774434" />
+              <IndexedSize Size="0.967961375581459 3.2413039981549 2.73021920774434" />
+              <IndexedSize Size="0.967961375581459 3.2413039981549 2.73021920774434" />
+              <IndexedSize Size="0.967961375581459 3.2413039981549 2.73021920774434" />
             </IndexedSizes>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -21432,7 +21497,7 @@
               </SymbolInstances>
             </Graphics>
           </Transporter>
-          <Fixed Name="ShiploaderReliability" Type="Resource" Location="-43.0154186725537 -3.88578058618805E-16 -143.186155471385" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="ShiploaderReliability" Type="Resource" Location="8.29357828934871 -4.66293670342566E-15 -180.756738004414" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -21457,7 +21522,7 @@
               <Property Name="OffShiftAddOnProcess">ShiploaderReliability_OffShift</Property>
               <Property Name="CapitalCost" Units="USD">0.0</Property>
             </Properties>
-            <Graphics ExternallyVisible="True">
+            <Graphics>
               <SymbolInstances CurrentSymbolIndex="0" CurrentSymbolExpression="Resource.ResourceState">
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
                   <SymbolRef Id="[UseExternalSymbol]" />
@@ -21581,14 +21646,14 @@
                   <SymbolRef Id="d8429e99-3813-45d8-833f-d7d7153afe6e" />
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="39">
+              <AttachedObjects IndexList="32">
                 <FloorLabel Center="2.40972190023546 0.417307919648883 -22.2336144108159" Width="1.37307626333745" Height="0.455564275309484" BackColor="00ffffff" Text="{ShipTypeString}&#xD;&#xA;{Draft}&#xD;&#xA;{Product}&#xD;&#xA;{Math.Round(FlowContainer.Contents.Weight/1000,0)}/{Math.Round(FlowContainer.CurrentWeightCapacity/1000,0)}" />
               </AttachedObjects>
             </Graphics>
           </Entity>
-          <Fixed Name="ShipGenerator1" Type="ShipGenerator" Location="-58.3115257299803 -8.88178419700125E-16 -191.067562891931" Size="4.14132007233273 3.03372513562387 2.01252392801819" Scope="Public">
+          <Fixed Name="ShipGenerator1" Type="ShipGenerator" Location="4.27985620313505 -5.77315972805081E-14 -324.414240693534" Size="4.14132007233273 3.03372513562387 2.01252392801819" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@ShipGenerator1" Type="TransferNode" Location="-55.6945869942773 -8.88178419700125E-16 -191.032893783715" Scope="Public">
+              <Node Name="Output@ShipGenerator1" Type="TransferNode" Location="6.89679493883806 -5.77315972805081E-14 -324.379571585318" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21677,18 +21742,18 @@
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="41 42">
-                <FloorLabel Center="-60.0515257149597 0 -187.497789828589" Width="4.94318777703563" Height="3.51472710737971" Text="&lt;b&gt;Ship Generator&lt;/b&gt;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, Math.Round(ProductionTable[1].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ShipAmountGenerated/1000, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2,ProductionTable[2].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].ShipAmountGenerated/1000,0), &quot;THIS DIDNT WORK&quot;)}" />
+              <AttachedObjects IndexList="34 35">
+                <FloorLabel Center="2.53985553685224 -5.6843418860808E-14 -320.844466625264" Width="4.94318777703563" Height="3.51472710737971" Text="&lt;b&gt;Ship Generator&lt;/b&gt;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, Math.Round(ProductionTable[1].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ShipAmountGenerated/1000, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2,ProductionTable[2].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].ShipAmountGenerated/1000,0), &quot;THIS DIDNT WORK&quot;)}" />
                 <Queue Queue="OutputBuffer.Contents" Alignment="Inline">
                   <Points>
-                    <Point Location="-56.1889797834667 -8.88178419700125E-16 -193.518558687283" />
-                    <Point Location="-73.9128162802917 -8.88178419700125E-16 -197.624807736159" />
+                    <Point Location="6.40240146834525 -5.77315972805081E-14 -326.865235483958" />
+                    <Point Location="-11.3214350284797 -5.77315972805081E-14 -330.971484532834" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Node Name="SJ1" Type="FlowNode" Location="-66.4124668092124 -1.33226762955019E-15 -12.5265297807426" Scope="Public">
+          <Node Name="SJ1" Type="FlowNode" Location="-58.9818501107574 -1.33226762955019E-15 -15.8789472383332" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21704,7 +21769,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="SJ2" Type="FlowNode" Location="-66.4222577014786 4.44089209850063E-16 -17.700468601186" Scope="Public">
+          <Node Name="SJ2" Type="FlowNode" Location="-58.9916410030237 4.44089209850063E-16 -21.0528860587766" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21720,7 +21785,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="SJ3" Type="FlowNode" Location="-66.4169602560633 1.33226762955019E-15 -22.3800744812398" Scope="Public">
+          <Node Name="SJ3" Type="FlowNode" Location="-58.9863435576084 1.33226762955019E-15 -25.7324919388304" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21736,7 +21801,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="Pile2N" Type="BasicNode" Location="-65.9256354121505 -1.77635683940025E-15 -17.9944233172595" Scope="Public">
+          <Node Name="Pile2N" Type="BasicNode" Location="-58.4950187136955 -1.77635683940025E-15 -21.3468407748501" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21747,7 +21812,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="Pile1N" Type="BasicNode" Location="-65.9368731690059 -1.77635683940025E-15 -12.9021342414514" Scope="Public">
+          <Node Name="Pile1N" Type="BasicNode" Location="-58.506256470551 -1.77635683940025E-15 -16.254551699042" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21758,7 +21823,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="Pile3N" Type="BasicNode" Location="-65.9267382263377 -1.77635683940025E-15 -23.3511020717656" Scope="Public">
+          <Node Name="Pile3N" Type="BasicNode" Location="-58.4961177131855 -1.77635683940025E-15 -26.7035214367048" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21769,7 +21834,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="RJ1" Type="FlowNode" Location="-65.520198119104 -1.33226762955019E-15 -13.1732327588174" Scope="Public">
+          <Node Name="RJ1" Type="FlowNode" Location="-58.0381953444704 -1.33226762955019E-15 -16.5205129439342" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21782,7 +21847,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="RJ2" Type="FlowNode" Location="-65.506479325807 4.44089209850063E-16 -18.4213803535617" Scope="Public">
+          <Node Name="RJ2" Type="FlowNode" Location="-58.0758588126548 4.44089209850063E-16 -21.7737997185009" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21795,7 +21860,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="RJ3" Type="FlowNode" Location="-65.512420116164 1.33226762955019E-15 -23.0778300529461" Scope="Public">
+          <Node Name="RJ3" Type="FlowNode" Location="-58.081803417709 1.33226762955019E-15 -26.4302475105367" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21808,7 +21873,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="ChannelExit" Type="TransferNode" Location="-38.9407266633305 3.33066907387547E-16 -156.553844296616" Scope="Public">
+          <Node Name="ChannelExit" Type="TransferNode" Location="18.5424776576659 -1.83186799063151E-15 -211.71062944259" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21819,7 +21884,7 @@
             </Properties>
             <Graphics />
           </Node>
-          <Node Name="BerthJunction" Type="FlowNode" Location="-43.4793139450563 3.33066907387547E-16 -150.130794629165" Scope="Public">
+          <Node Name="BerthJunction" Type="FlowNode" Location="1.86005276185676 8.32667268468867E-16 -190.109978609862" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21829,9 +21894,9 @@
               <Property Name="FlowRateUnitType">Weight Flow Rate</Property>
               <Property Name="InitialMaximumFlowRate" Units="Metric Tons per Hour">10000</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics />
           </Node>
-          <Node Name="ChannelEntrance" Type="TransferNode" Location="-38.9121612637998 0 -181.962122425481" Scope="Public">
+          <Node Name="ChannelEntrance" Type="TransferNode" Location="23.4245606014725 -5.6843418860808E-14 -315.308800227084" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21843,7 +21908,7 @@
             </Properties>
             <Graphics />
           </Node>
-          <Node Name="SL1" Type="BasicNode" Location="-43.7536038590175 3.33066907387547E-16 -150.361162423339" Scope="Public">
+          <Node Name="SL1" Type="BasicNode" Location="1.82927826347194 0.0770261223215022 -190.01235927457" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21851,9 +21916,9 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics />
           </Node>
-          <Node Name="SL2" Type="BasicNode" Location="-39.0660221834938 3.33066907387547E-16 -148.858632550784" Scope="Public">
+          <Node Name="SL2" Type="BasicNode" Location="17.0364562361674 0.0770261223215022 -184.958375555208" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21861,9 +21926,9 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics />
           </Node>
-          <Node Name="SLHome" Type="BasicNode" Location="-41.4848620295256 3.33066907387547E-16 -149.637960999382" Scope="Public">
+          <Node Name="SLHome" Type="BasicNode" Location="10.2124048647669 0.0770261223215022 -187.24083779394" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21871,19 +21936,19 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
-            <Graphics ExternallyVisible="True">
+            <Graphics>
               <AutoQueues ParkingQueue="False" />
               <AttachedObjects IndexList="12">
                 <Queue Queue="ParkingStation.Contents" Alignment="Point" ExternallyVisible="True">
                   <Points>
-                    <Point Location="-41.4817391054969 3.33066907387547E-16 -149.631804388094" Direction="-0.108116076822604 0 -0.0337840267324054" />
-                    <Point Location="-41.2651626429796 3.33066907387547E-16 -149.567511046354" />
+                    <Point Location="10.2155278978605 0.0770261215511691 -187.234681813124" Direction="-0.108116076822604 0 -0.0337840267324054" />
+                    <Point Location="10.4321043603778 0.0770261215511691 -187.170388471384" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Node>
-          <Node Name="DumperSplit" Type="FlowNode" Location="-65.494738154535 0 -1.59461656601502" Scope="Public">
+          <Node Name="DumperSplit" Type="FlowNode" Location="-58.4754133391796 0 -12.2002105849021" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21898,7 +21963,7 @@
             </Properties>
             <Graphics ExternallyVisible="True">
               <AttachedObjects IndexList="20">
-                <StatusLabel Center="-68.5020610754324 0 1.36312220549839" Width="7.30205641651609" Height="1.23068366570496" Expression="Math.Round(FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
+                <StatusLabel Center="-53.4842784438397 0 -10.7795937590664" Width="7.30205641651609" Height="1.23068366570496" Expression="Math.Round(FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
               </AttachedObjects>
             </Graphics>
           </Node>
@@ -21913,7 +21978,7 @@
             </Properties>
             <Graphics />
           </Node>
-          <Node Name="IntBerth1Exit" Type="TransferNode" Location="-41.3156609881752 3.33066907387547E-16 -150.464066121678" Scope="Public">
+          <Node Name="IntBerth1Exit" Type="TransferNode" Location="4.17656094955255 8.32667268468867E-16 -190.871244706547" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21924,7 +21989,7 @@
             </Properties>
             <Graphics />
           </Node>
-          <Node Name="IntBerth2Exit" Type="TransferNode" Location="-36.6839622631679 3.33066907387547E-16 -148.896173110686" Scope="Public">
+          <Node Name="IntBerth2Exit" Type="TransferNode" Location="22.8916282557876 -1.83186799063151E-15 -184.325116303255" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21935,7 +22000,7 @@
             </Properties>
             <Graphics />
           </Node>
-          <Node Name="SR1MaintenanceNode" Type="BasicNode" Location="-65.930313040994 -1.77635683940025E-15 -10.5968958976013" Scope="Public">
+          <Node Name="SR1MaintenanceNode" Type="BasicNode" Location="-58.499696342539 -1.77635683940025E-15 -13.9493143088662" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21945,7 +22010,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="SR2MaintenanceNode" Type="BasicNode" Location="-65.9231114680976 -1.77635683940025E-15 -25.1062453871194" Scope="Public">
+          <Node Name="SR2MaintenanceNode" Type="BasicNode" Location="-58.4924947696427 -1.77635683940025E-15 -28.45866284471" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21955,7 +22020,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="IntB1Exit" Type="TransferNode" Location="-41.39044206097 0 -150.607209318281" Scope="Public">
+          <Node Name="IntB1Exit" Type="TransferNode" Location="4.10178369145501 4.9960036108132E-16 -191.01438790315" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21968,7 +22033,7 @@
             </Properties>
             <Graphics />
           </Node>
-          <Node Name="IntB2Exit" Type="TransferNode" Location="-36.7659900972088 0 -149.131414061867" Scope="Public">
+          <Node Name="IntB2Exit" Type="TransferNode" Location="22.8096042364439 -2.16493489801906E-15 -184.560341995647" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21981,7 +22046,7 @@
             </Properties>
             <Graphics />
           </Node>
-          <Node Name="InspectorEntry" Type="FlowNode" Location="-74.6099465054077 0 -75.3498683149904" Scope="Public">
+          <Node Name="InspectorEntry" Type="FlowNode" Location="-76.596677275916 0 -77.0166878433389" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21993,7 +22058,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="InspectorExit" Type="FlowNode" Location="-73.5199211817581 0 -77.9864702811672" Scope="Public">
+          <Node Name="InspectorExit" Type="FlowNode" Location="-76.0485939684325 0 -78.6633251402416" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22005,7 +22070,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="Product1Inspector" Type="FlowNode" Location="-74.1791754456112 0 -76.3654817727761" Scope="Public">
+          <Node Name="Product1Inspector" Type="FlowNode" Location="-76.2506245993976 0 -78.0534816588192" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22017,7 +22082,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="Product2Inspector" Type="FlowNode" Location="-74.331225716034 0 -76.0444914770014" Scope="Public">
+          <Node Name="Product2Inspector" Type="FlowNode" Location="-76.3391388585673 0 -77.7367381963611" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22029,7 +22094,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="DLRoute" Type="FlowNode" Location="-65.498345579466 0 -25.7646565079567" Scope="Public">
+          <Node Name="DLRoute" Type="FlowNode" Location="-58.067728881011 0 -29.1170739655473" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22305,7 +22370,7 @@
               </Decorations>
             </Graphics>
           </Link>
-          <Link Name="TimePath5" Type="TimePath" Size="8.08 0 0" Scope="Public" Start="ChannelExit" End="ContainerInput@Berth1">
+          <Link Name="TimePath5" Type="TimePath" Size="27.34 0 0" Scope="Public" Start="ChannelExit" End="ContainerInput@Berth1">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22335,7 +22400,7 @@
           </Link>
           <Link Name="FlowConnector22" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="BerthJunction" End="FlowInput@Berth2">
             <Points>
-              <Point Location="-39.3424678032412 3.33066907387547E-16 -148.803149652175" />
+              <Point Location="16.983143702939 3.88578058618805E-16 -185.082196761206" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -22353,7 +22418,7 @@
               </Decorations>
             </Graphics>
           </Link>
-          <Link Name="TimePath6" Type="TimePath" Size="25.41 0 0" Scope="Public" Start="ChannelEntrance" End="ChannelExit">
+          <Link Name="TimePath6" Type="TimePath" Size="103.71 0 0" Scope="Public" Start="ChannelEntrance" End="ChannelExit">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22385,7 +22450,7 @@
             </Properties>
             <Graphics />
           </Link>
-          <Link Name="TimePath7" Type="TimePath" Size="2.38 0 0" Scope="Public" Start="SL1" End="SLHome">
+          <Link Name="TimePath7" Type="TimePath" Size="8.83 0 0" Scope="Public" Start="SL1" End="SLHome">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22397,7 +22462,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="TimePath8" Type="TimePath" Size="2.54 0 0" Scope="Public" Start="SLHome" End="SL2">
+          <Link Name="TimePath8" Type="TimePath" Size="7.2 0 0" Scope="Public" Start="SLHome" End="SL2">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22411,7 +22476,7 @@
           </Link>
           <Link Name="FlowConnector25" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="DumperSplit" End="SJ1">
             <Points>
-              <Point Location="-66.4126606124829 -1.10432846185525E-16 -1.5793966575892" />
+              <Point Location="-59.036369804105 -1.10432846185525E-16 -12.5782836239868" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -22430,6 +22495,9 @@
             </Graphics>
           </Link>
           <Link Name="FlowConnector10" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="FlowOutput@TrainDumper" End="DumperSplit">
+            <Points>
+              <Point Location="-58.5546805825232 -6.34328415829319E-17 -4.62498662828589" />
+            </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22521,7 +22589,7 @@
             </Properties>
             <Graphics />
           </Link>
-          <Link Name="TimePath3" Type="TimePath" Size="6.64 0 0" Scope="Public" Start="ChannelExit" End="ContainerInput@Berth2">
+          <Link Name="TimePath3" Type="TimePath" Size="26.24 0 0" Scope="Public" Start="ChannelExit" End="ContainerInput@Berth2">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22576,7 +22644,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="TimePath2" Type="TimePath" Size="7.73 0 0" Scope="Public" Start="IntB2Exit" End="ChannelExit">
+          <Link Name="TimePath2" Type="TimePath" Size="27.48 0 0" Scope="Public" Start="IntB2Exit" End="ChannelExit">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22587,7 +22655,7 @@
             </Properties>
             <Graphics />
           </Link>
-          <Link Name="TimePath4" Type="TimePath" Size="6.43 0 0" Scope="Public" Start="IntB1Exit" End="ChannelExit">
+          <Link Name="TimePath4" Type="TimePath" Size="25.24 0 0" Scope="Public" Start="IntB1Exit" End="ChannelExit">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22621,9 +22689,6 @@
             <Graphics />
           </Link>
           <Link Name="FlowConnector1" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="Output@SurgeBin" End="InspectorEntry">
-            <Points>
-              <Point Location="-75.2504142059048 0 -73.9700868941814" />
-            </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -22641,8 +22706,7 @@
           </Link>
           <Link Name="FlowConnector14" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="InspectorExit" End="BerthJunction">
             <Points>
-              <Point Location="-46.5844659177687 3.16328438726555E-16 -151.115928087361" />
-              <Point Location="-46.2040018758306 3.17888133565499E-16 -150.999529280582" />
+              <Point Location="-29.9905511419609 -1.8486064592925E-15 -200.662828239791" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -22749,8 +22813,8 @@
           </Link>
           <Link Name="FlowConnector13" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="DLRoute" End="Input@SurgeBin">
             <Points>
-              <Point Location="-65.1419698708085 0 -59.4986486662759" />
-              <Point Location="-70.6179099312039 0 -59.907300909589" />
+              <Point Location="-64.2754539349929 0 -60.5687895854512" />
+              <Point Location="-71.8536110694716 0 -61.4768738114067" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -22759,7 +22823,13 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics ExternallyVisible="True">
+              <Decorations>
+                <Decoration SurfaceId="0">
+                  <MaterialRef Id="3250eaf3-0da0-47bc-b870-23a25d7677a2" />
+                </Decoration>
+              </Decorations>
+            </Graphics>
           </Link>
           <Link Name="FlowConnector30" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="RJ3" End="DLRoute">
             <Properties>
@@ -22770,12 +22840,17 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="SelectionWeight">0.9</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics ExternallyVisible="True">
+              <Decorations>
+                <Decoration SurfaceId="0">
+                  <MaterialRef Id="3250eaf3-0da0-47bc-b870-23a25d7677a2" />
+                </Decoration>
+              </Decorations>
+            </Graphics>
           </Link>
           <Link Name="FlowConnector31" Type="FlowConnector" Size="0 0.25 0.25" Scope="Public" Start="DumperSplit" End="DLRoute">
             <Points>
-              <Point Location="-64.984840112272 0 -2.48714598528858" />
-              <Point Location="-64.9983973709446 0 -25.7595569907955" />
+              <Point Location="-57.9773494796481 -0.0160507682942366 -12.6430268006885" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -22785,7 +22860,13 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="SelectionWeight">DirectLoadingTrain</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics ExternallyVisible="True">
+              <Decorations>
+                <Decoration SurfaceId="0">
+                  <MaterialRef Id="3250eaf3-0da0-47bc-b870-23a25d7677a2" />
+                </Decoration>
+              </Decorations>
+            </Graphics>
           </Link>
           <Link Name="Connector3" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@ShipGenerator1" End="ChannelEntrance">
             <Properties>
@@ -22877,20 +22958,8 @@
           </DayPattern>
         </DayPatterns>
         <Graphics>
-          <StatusLabel Center="-70.6748225406576 0 -76.7508550824557" Width="3.77731834200453" Height="0.640795075875774" Expression="Math.Round(Product1Inspector.FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
-          <SymbolInstance Center="-57.6185813836664 -0.600259163277376 -36.616910896402" Locked="True" ExternallyVisible="True">
-            <SymbolRef Id="a2ae49ca-8f0b-441d-8bcc-b2237f3b169f" />
-          </SymbolInstance>
-          <SymbolInstance Center="-58.2196155876325 -0.600259163277376 -90.1811660120219" Scale="0.864411567742741" Locked="True" ExternallyVisible="True">
-            <SymbolRef Id="173964de-b14c-4fe2-96ff-b91d967739da" />
-          </SymbolInstance>
-          <SymbolInstance Center="-66.0998495958432 -0.600259163277376 21.4830962665142" Scale="1.05759874066733" Locked="True" ExternallyVisible="True">
-            <SymbolRef Id="3354e798-c37a-498b-b785-52849bd341fb" />
-          </SymbolInstance>
-          <SymbolInstance Center="-36.4260152533057 -0.600259163277376 -138.575632298855" Scale="0.788777192069843" Locked="True" ExternallyVisible="True">
-            <SymbolRef Id="672015d6-94d3-47e3-869f-f824180d9ca1" />
-          </SymbolInstance>
-          <Rectangle Center="-42.2829955260312 -0.171853588428244 -149.741849475525" Width="9.37895045504845" Height="0.61136690733349" Rotation="-0.302782102546189" ExternallyVisible="True" YHeight="0.0900000035762787">
+          <StatusLabel Center="-68.5133863017512 0 -77.671070510901" Width="3.77731834200453" Height="0.640795075875774" Expression="Math.Round(Product1Inspector.FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
+          <Rectangle Center="-3.47479970935769 -0.171853588428249 -191.454428898582" Width="56.8365708759518" Height="1.19144492694261" Rotation="-0.321918417350389" ExternallyVisible="True" Locked="True" YHeight="0.0900000035762787">
             <Decorations>
               <Decoration SurfaceId="1">
                 <MaterialRef Id="724f37fd-909e-4f66-bca3-b0739a8fed2b" />
@@ -22900,45 +22969,46 @@
               </Decoration>
             </Decorations>
           </Rectangle>
-          <Rectangle Center="-63.1172108932146 -0.0542071099128598 -17.8646857654804" Width="4.10656180811245" Height="13.9363739677415" ExternallyVisible="True" Locked="True">
+          <Rectangle Center="-55.6865939136989 -0.0542071099128598 -21.2171036585642" Width="4.10656180811245" Height="13.9363739677415" ExternallyVisible="True" Locked="True">
             <Decorations>
               <Decoration SurfaceId="0">
-                <MaterialRef Id="c8731b6d-b9fe-4b83-bf35-40524e26054e" />
+                <MaterialRef Id="ba930cbb-fdc7-4b89-9d91-300a606ec34b" />
               </Decoration>
             </Decorations>
           </Rectangle>
-          <Rectangle Center="-68.7706131494875 -0.0542071099128574 -17.866910525463" Width="4.10656180811245" Height="13.9363739677415" ExternallyVisible="True" Locked="True">
+          <Rectangle Center="-61.3399961699718 -0.0542071099128574 -21.1887564774025" Width="4.10656180811245" Height="13.9363739677415" ExternallyVisible="True" Locked="True">
             <Decorations>
               <Decoration SurfaceId="0">
-                <MaterialRef Id="c8731b6d-b9fe-4b83-bf35-40524e26054e" />
+                <MaterialRef Id="ba930cbb-fdc7-4b89-9d91-300a606ec34b" />
               </Decoration>
             </Decorations>
           </Rectangle>
-          <Line Center="-65.9150151611115 -0.0307242253858624 -18.6536990808828" LineWidth="0.5" Locked="True" ExternallyVisible="True">
+          <Line Center="-58.4848105832412 -0.0307242253858622 -21.9493543301768" LineWidth="0.5" Locked="True" ExternallyVisible="True">
             <Points>
-              <Point Location="-65.9449756652892 -0.0307242253858624 -25.1278224443029" />
-              <Point Location="-65.9253939557508 -0.0307242253858624 -10.6158521630279" />
+              <Point Location="-58.514771087419 -0.0307242253858622 -28.4234776935969" />
+              <Point Location="-58.4951893778806 -0.0307242253858622 -13.9115074123219" />
             </Points>
             <PathDecoratorUsage>
               <PathDecoratorRef Id="dfd1de44-6ec9-4a90-931f-7ff649352ccd" />
               <RepeatUsages />
             </PathDecoratorUsage>
           </Line>
-          <StatusLabel Center="-70.6346214785546 0 -75.6452909975957" Width="3.77731834200453" Height="0.640795075875774" Expression="Math.Round(Product2Inspector.FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
-          <StatusLabel Center="-70.6145207768318 0 -74.5747848204637" Width="3.77731834200453" Height="0.640795075875774" Expression="Math.Round(InspectorExit.FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
-          <FloorLabel Center="-71.5133098890983 0 -16.9662783602256" Width="11.8290912493233" Height="2.31590778221287" Rotation="1.56943241326371" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="LAC" />
-          <FloorLabel Center="-60.3176070235142 0 -18.9192246263722" Width="11.8290912493233" Height="2.31590778221287" Rotation="-1.56344142847229" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="UGC" />
-          <FloorLabel Center="-53.7100510333033 0 -13.3828482151792" Width="9.85574836359311" Height="5.01000541815984" Text="{Math.Round(P2.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;{Math.Round(P4.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;{Math.Round(P6.FlowContainer.Contents.Weight/1000,0)}" />
-          <FloorLabel Center="-77.6086854108354 0 -13.5684921235267" Width="9.85574836359311" Height="5.01000541815984" Text="{Math.Round(P1.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;{Math.Round(P3.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;{Math.Round(P5.FlowContainer.Contents.Weight/1000,0)}" />
-          <FloorLabel Center="37.7423649928912 0 -150.059099330408" Width="63.01307079272" Height="24.2866177129266" BackColor="dcdcdc" Text="LAC Unallocated&#xD;&#xA;{UnallocatedProductLAC/1000}&#xD;&#xA;UGC Unallocated&#xD;&#xA;{UnallocatedProductUGC/1000}" />
+          <StatusLabel Center="-68.4731852396482 0 -76.565506426041" Width="3.77731834200453" Height="0.640795075875774" Expression="Math.Round(Product2Inspector.FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
+          <StatusLabel Center="-68.4744848967264 0 -75.495000248909" Width="3.77731834200453" Height="0.640795075875774" Expression="Math.Round(InspectorExit.FlowRegulator.CurrentWeightFlowOut / 1000, 0)" />
+          <FloorLabel Center="-52.8869900439985 0 -22.271642519456" Width="11.8290912493233" Height="2.31590778221287" Rotation="-1.56344142847229" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="UGC" />
+          <FloorLabel Center="18.6739993918931 0 -154.278669411613" Width="63.01307079272" Height="24.2866177129266" BackColor="dcdcdc" Text="LAC Unallocated&#xD;&#xA;{UnallocatedProductLAC/1000}&#xD;&#xA;UGC Unallocated&#xD;&#xA;{UnallocatedProductUGC/1000}" />
           <Pie Center="28.50339152736 0 21.2980421447065" Width="48.8672774662163" Height="37.5506447898294" Title="Dumper Utilisation" Look="Aspect" ListState="DumperStates" TextScale="3" />
-          <Rectangle Center="-52.5542030310552 -0.148573552807818 -189.022671301278" Width="37.3430928069631" Height="18.8691428740228" Locked="True">
+          <Rectangle Center="9.78251883421712 -0.148573552807875 -322.369349102881" Width="37.3430928069631" Height="18.8691428740228">
             <Decorations>
               <Decoration SurfaceId="0">
                 <MaterialRef Id="63ebf191-290e-4184-bb90-b95c1c60efac" />
               </Decoration>
             </Decorations>
           </Rectangle>
+          <SymbolInstance Center="-55.0003412968482 -0.218321114798515 -83.4939487009631" Rotation="-0.306826557491149" Scale="0.277198028088544" Locked="True" ExternallyVisible="True">
+            <SymbolRef Id="01aaef6b-5d90-4081-b000-16c4264a08e4" />
+          </SymbolInstance>
+          <FloorLabel Center="-64.5265121891585 0 -11.7317384939019" Width="11.8290912493233" Height="2.31590778221287" Rotation="-1.56344142847229" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="LAC" />
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
@@ -23500,7 +23570,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="317" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="350" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -24780,7 +24850,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1394" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1461" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -24839,6 +24909,7 @@
           <BooleanProperty Name="EnableTrainDumperShutdowns" DefaultValue="True" NullString="null" />
           <BooleanProperty Name="EnableBerth2" DefaultValue="False" NullString="null" />
           <BooleanProperty Name="EnableTideConstraints" DefaultValue="True" NullString="null" />
+          <BooleanProperty Name="EnablePortWeatherShutdowns" DefaultValue="False" NullString="null" />
           <Overrides>
             <Override Name="ReportStatistics" Visible="False" />
             <Override Name="ParentCostCenter" Visible="False" />
@@ -30801,144 +30872,172 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="PortWeather_OnShift" BeginStepID="4" Category="PortWeather AddOn Processes">
+          <Process Name="PortWeather_OnShift" BeginStepID="7" Category="PortWeather AddOn Processes">
             <Properties />
             <Steps>
-              <Step Type="Resume" Name="SLManager" ID="2">
+              <Step Type="Resume" Name="SLManager" ExclusionExpression="!EnablePortWeatherShutdowns" ID="2">
                 <Properties>
                   <Property Name="ProcessName">Port.ShipLoadingManager</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
-              <Step Type="Assign" Name="EnableNodes" ID="3">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>Port.FlowInput@Berth2.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">True</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
-              </Step>
-              <Step Type="Assign" Name="Channel" ID="4">
+              <Step Type="Assign" Name="Channel" ExclusionExpression="!EnablePortWeatherShutdowns" ID="3">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>ChannelResource.CurrentCapacity</Value>
                   </Property>
                   <Property Name="NewValue">1</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="5" />
-              </Step>
-              <Step Type="Assign" Name="EnableNodes" ID="5">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>Port.FlowInput@Berth1.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">True</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
-              </Step>
-            </Steps>
-          </Process>
-          <Process Name="PortWeather_OffShift" BeginStepID="4" Category="PortWeather AddOn Processes">
-            <Properties />
-            <Steps>
-              <Step Type="Suspend" Name="SLManager" ID="2">
-                <Properties>
-                  <Property Name="ProcessName">Port.ShipLoadingManager</Property>
-                </Properties>
-              </Step>
-              <Step Type="Assign" Name="DisableNodes" ID="3">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>Port.FlowInput@Berth2.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">False</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
-              </Step>
-              <Step Type="Assign" Name="Channel" ID="4">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>ChannelResource.CurrentCapacity</Value>
-                  </Property>
-                  <Property Name="NewValue">0</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="5" />
-              </Step>
-              <Step Type="Assign" Name="DisableNodes" ID="5">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>Port.FlowInput@Berth1.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">False</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
-              </Step>
-            </Steps>
-          </Process>
-          <Process Name="PortWeather_Failed" BeginStepID="4" Category="PortWeather AddOn Processes">
-            <Properties />
-            <Steps>
-              <Step Type="Suspend" Name="SLManager" ID="2">
-                <Properties>
-                  <Property Name="ProcessName">Port.ShipLoadingManager</Property>
-                </Properties>
-              </Step>
-              <Step Type="Assign" Name="DisableNodes" ID="3">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>Port.FlowInput@Berth2.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">False</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="2" />
-              </Step>
-              <Step Type="Assign" Name="Channel" ID="4">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>ChannelResource.CurrentCapacity</Value>
-                  </Property>
-                  <Property Name="NewValue">0</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="5" />
-              </Step>
-              <Step Type="Assign" Name="DisableNodes" ID="5">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>Port.FlowInput@Berth1.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">False</Property>
-                </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
-              </Step>
-            </Steps>
-          </Process>
-          <Process Name="PortWeather_Repaired" BeginStepID="5" Category="PortWeather AddOn Processes">
-            <Properties />
-            <Steps>
-              <Step Type="Assign" Name="EnableNodes" ID="2">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>Port.FlowInput@Berth1.FlowRegulator.Enabled</Value>
-                  </Property>
-                  <Property Name="NewValue">True</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
-              <Step Type="Resume" Name="SLManager" ID="3">
+              <Step Type="Assign" Name="EnableNodes" ExclusionExpression="!EnablePortWeatherShutdowns" ID="4">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.BerthJunction.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">True</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
+              </Step>
+              <Step Type="Resume" Name="Berth1loadingOn" ExclusionExpression="!EnablePortWeatherShutdowns" ID="5">
+                <Properties>
+                  <Property Name="ProcessName">Port.Berth1_FillingContainer</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Resume" Name="Berth2loadingOn" ExclusionExpression="!EnablePortWeatherShutdowns" ID="6">
+                <Properties>
+                  <Property Name="ProcessName">Port.Berth2_FillingContainer</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="Shiploader1" ExclusionExpression="!EnablePortWeatherShutdowns" ID="7">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.ShiploaderReliability.CurrentCapacity</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="PortWeather_OffShift" BeginStepID="7" Category="PortWeather AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Suspend" Name="SLManager" ExclusionExpression="!EnablePortWeatherShutdowns" ID="2">
                 <Properties>
                   <Property Name="ProcessName">Port.ShipLoadingManager</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
               </Step>
-              <Step Type="Assign" Name="EnableNodes" ID="4">
+              <Step Type="Assign" Name="Channel" ExclusionExpression="!EnablePortWeatherShutdowns" ID="3">
                 <Properties>
                   <Property Name="StateVariableName">
-                    <Value>Port.FlowInput@Berth2.FlowRegulator.Enabled</Value>
+                    <Value>ChannelResource.CurrentCapacity</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Assign" Name="DisableNodes" ExclusionExpression="!EnablePortWeatherShutdowns" ID="4">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.BerthJunction.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">False</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
+              </Step>
+              <Step Type="Suspend" Name="Berth1loadingOff" ExclusionExpression="!EnablePortWeatherShutdowns" ID="5">
+                <Properties>
+                  <Property Name="ProcessName">Port.Berth1_FillingContainer</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Suspend" Name="Berth2loadingOff" ExclusionExpression="!EnablePortWeatherShutdowns" ID="6">
+                <Properties>
+                  <Property Name="ProcessName">Port.Berth2_FillingContainer</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="Shiploader0" ExclusionExpression="!EnablePortWeatherShutdowns" ID="7">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.ShiploaderReliability.CurrentCapacity</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="PortWeather_Failed" BeginStepID="7" Category="PortWeather AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Suspend" Name="SLManager" ExclusionExpression="!EnablePortWeatherShutdowns" ID="2">
+                <Properties>
+                  <Property Name="ProcessName">Port.ShipLoadingManager</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Assign" Name="Channel" ExclusionExpression="!EnablePortWeatherShutdowns" ID="3">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ChannelResource.CurrentCapacity</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Assign" Name="DisableNodes" ExclusionExpression="!EnablePortWeatherShutdowns" ID="4">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.BerthJunction.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">False</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
+              </Step>
+              <Step Type="Suspend" Name="Berth1loadingOff" ExclusionExpression="!EnablePortWeatherShutdowns" ID="5">
+                <Properties>
+                  <Property Name="ProcessName">Port.Berth1_FillingContainer</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Suspend" Name="Berth2loadingOff" ExclusionExpression="!EnablePortWeatherShutdowns" ID="6">
+                <Properties>
+                  <Property Name="ProcessName">Port.Berth2_FillingContainer</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="Shiploader0" ExclusionExpression="!EnablePortWeatherShutdowns" ID="7">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.ShiploaderReliability.CurrentCapacity</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="PortWeather_Repaired" BeginStepID="7" Category="PortWeather AddOn Processes">
+            <Properties />
+            <Steps>
+              <Step Type="Assign" Name="EnableNodes" ExclusionExpression="!EnablePortWeatherShutdowns" ID="2">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.BerthJunction.FlowRegulator.Enabled</Value>
                   </Property>
                   <Property Name="NewValue">True</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
-              <Step Type="Assign" Name="Channel" ID="5">
+              <Step Type="Resume" Name="SLManager" ExclusionExpression="!EnablePortWeatherShutdowns" ID="3">
+                <Properties>
+                  <Property Name="ProcessName">Port.ShipLoadingManager</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="5" />
+              </Step>
+              <Step Type="Assign" Name="Channel" ExclusionExpression="!EnablePortWeatherShutdowns" ID="4">
                 <Properties>
                   <Property Name="StateVariableName">
                     <Value>ChannelResource.CurrentCapacity</Value>
@@ -30946,6 +31045,26 @@
                   <Property Name="NewValue">1</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="2" />
+              </Step>
+              <Step Type="Resume" Name="Berth1loadingOn" ExclusionExpression="!EnablePortWeatherShutdowns" ID="5">
+                <Properties>
+                  <Property Name="ProcessName">Port.Berth1_FillingContainer</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Resume" Name="Berth2loadingOn" ExclusionExpression="!EnablePortWeatherShutdowns" ID="6">
+                <Properties>
+                  <Property Name="ProcessName">Port.Berth2_FillingContainer</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="Shiploader1" ExclusionExpression="!EnablePortWeatherShutdowns" ID="7">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.ShiploaderReliability.CurrentCapacity</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
             </Steps>
           </Process>
@@ -32325,7 +32444,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Sig1Port" Type="Resource" Location="140.5722897938 -4.32986982257843E-15 -221.876131550249" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="Sig1Port" Type="Resource" Location="171.162979805274 -5.66213745212862E-15 -226.353052482293" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -33015,7 +33134,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Sig2Port" Type="Resource" Location="130.165804238539 -3.21964678468312E-15 -233.802842954616" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="Sig2Port" Type="Resource" Location="156.918980020732 -3.71924714576444E-15 -236.274446343285" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -33089,7 +33208,7 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="Sig4Port" Type="Resource" Location="127.176136962418 -1.49880113618352E-15 -209.295634575684" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="Sig4Port" Type="Resource" Location="145.244909395869 -1.49880113618352E-15 -215.279135362741" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -33317,7 +33436,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="TrackResource" Type="Resource" Location="220.49185987971 -3.5527136788005E-14 -173.19505302235" Size="11.3252708384551 5.56363766894629 3.38482406492725" Scope="Public">
+          <Fixed Name="TrackResource" Type="Resource" Location="220.550994921743 -3.64153152077051E-14 -173.19505302235" Size="11.3252708384551 5.56363766894629 3.38482406492725" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="11.3252708384551 5.56363766894629 3.38482406492725" />
               <IndexedSize Size="11.3252708384551 5.56363766894629 3.38482406492725" />
@@ -33399,11 +33518,11 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="59">
-                <Pie Center="220.34088545137 -7.99360577730113E-15 -141.736555694614" Width="81.0155178033446" Height="51.1769719503258" ExternallyVisible="True" Title="Track Resource" ListState="ResourceState" TextScale="5" />
+                <Pie Center="220.400020493501 -8.88178419700126E-15 -141.736555694614" Width="81.0155178033446" Height="51.1769719503258" ExternallyVisible="True" Title="Track Resource" ListState="ResourceState" TextScale="5" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Sig3Port" Type="Resource" Location="97.3176558652247 -2.99760221942748E-15 -243.104731423386" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="Sig3Port" Type="Resource" Location="129.029556251941 -1.79856130518671E-14 -236.603658451259" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -33477,9 +33596,9 @@
               </SymbolInstances>
             </Graphics>
           </Fixed>
-          <Fixed Name="ShipExit" Type="Sink" Location="203.949326680691 -1.47104550762833E-15 -509.944025160945" Size="1.5049811730262 1.02881997857009 1.00000033977415" Scope="Public">
+          <Fixed Name="ShipExit" Type="Sink" Location="207.429168843469 4.16333634234436E-16 -572.648423302253" Size="1.5049811730262 1.02881997857009 1.00000033977415" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@ShipExit" Type="BasicNode" Location="202.699326680691 -1.47104550762833E-15 -509.944025160945" Scope="Public">
+              <Node Name="Input@ShipExit" Type="BasicNode" Location="206.179168843469 4.16333634234436E-16 -572.648423302253" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -33488,7 +33607,7 @@
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="EnteredAddOnProcess">Input_ShipExit_Entered</Property>
                 </Properties>
-                <Graphics ExternallyVisible="True" />
+                <Graphics EditsLocked="True" ExternallyVisible="True" />
               </Node>
             </AssociatedNodes>
             <Properties>
@@ -33501,23 +33620,23 @@
               <Property Name="InputBufferCostPerUse" Units="USD">0.0</Property>
               <Property Name="InputBufferHoldingCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
-            <Graphics ExternallyVisible="True">
+            <Graphics EditsLocked="True" ExternallyVisible="True">
               <SymbolInstances>
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="60">
-                <Queue Queue="InputBuffer.Contents" ExternallyVisible="True">
+                <Queue Queue="InputBuffer.Contents" ExternallyVisible="True" Locked="True">
                   <Points>
-                    <Point Location="202.949330057948 -1.47104550762833E-15 -509.444038454443" />
-                    <Point Location="199.949330057948 -1.47104550762833E-15 -509.444038454443" />
+                    <Point Location="206.429172065108 4.16333634234436E-16 -572.148435939103" />
+                    <Point Location="203.429172065108 4.16333634234436E-16 -572.148435939103" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="ChannelResource" Type="Resource" Location="182.900670888959 -4.02455846426622E-15 -436.743166311435" Size="15.9421695251051 7.83172925043277 4.76469303254971" Scope="Public">
+          <Fixed Name="ChannelResource" Type="Resource" Location="218.713339515363 -5.33184607576232E-14 -526.939511076662" Size="15.9421695251051 7.83172925043277 4.76469303254971" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="15.9421695251051 7.83172925043277 4.76469303254971" />
               <IndexedSize Size="15.9421695251051 7.83172925043277 4.76469303254971" />
@@ -33697,9 +33816,9 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="ShipGenerator1" Type="ShipGenerator" Location="175.986659552875 -8.88178419700125E-16 -521.240231357221" Size="4.14132007233273 3.03372513562387 2.01252392801819" Scope="Public">
+          <Fixed Name="ShipGenerator1" Type="ShipGenerator" Location="179.301341607275 -4.44089209850063E-15 -577.714785332815" Size="4.14132007233273 3.03372513562387 2.01252392801819" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@ShipGenerator1" Type="TransferNode" Location="178.603598288578 -8.88178419700125E-16 -521.205562249005" Scope="Public">
+              <Node Name="Output@ShipGenerator1" Type="TransferNode" Location="181.918280342978 -4.44089209850063E-15 -577.680116224599" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -33708,7 +33827,7 @@
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="EnteredAddOnProcess">Output_ShipGenerator1_Entered_1</Property>
                 </Properties>
-                <Graphics ExternallyVisible="True" />
+                <Graphics EditsLocked="True" ExternallyVisible="True" />
               </Node>
             </AssociatedNodes>
             <Properties>
@@ -33797,18 +33916,18 @@
               <Property Name="ShipArrivalDistribution">Random.Uniform(-4 , 4 )</Property>
               <Property Name="EnabledExpression">Run.ModelName==Name</Property>
             </Properties>
-            <Graphics ExternallyVisible="True">
+            <Graphics EditsLocked="True" ExternallyVisible="True">
               <SymbolInstances>
                 <SymbolInstance Center="0 0 0" ExternallyVisible="True">
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="79 80">
-                <FloorLabel Center="174.246658647049 0 -517.670452281202" Width="4.94318777703563" Height="3.51472710737971" ExternallyVisible="True" Text="&lt;b&gt;Ship Generator&lt;/b&gt;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, Math.Round(ProductionTable[1].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ShipAmountGenerated/1000, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2,ProductionTable[2].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].ShipAmountGenerated/1000,0), &quot;THIS DIDNT WORK&quot;)}" />
-                <Queue Queue="OutputBuffer.Contents" Alignment="Inline" ExternallyVisible="True">
+                <FloorLabel Center="177.561340549577 -3.5527136788005E-15 -574.145005687441" Width="4.94318777703563" Height="3.51472710737971" ExternallyVisible="True" Locked="True" Text="&lt;b&gt;Ship Generator&lt;/b&gt;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, Math.Round(ProductionTable[1].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ShipAmountGenerated/1000, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2,ProductionTable[2].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].ShipAmountGenerated/1000,0), &quot;THIS DIDNT WORK&quot;)}" />
+                <Queue Queue="OutputBuffer.Contents" Alignment="Inline" ExternallyVisible="True" Locked="True">
                   <Points>
-                    <Point Location="178.109204578542 -8.88178419700125E-16 -523.691221139895" />
-                    <Point Location="160.385368081717 -8.88178419700125E-16 -527.797470188772" />
+                    <Point Location="181.42388648107 -4.44089209850063E-15 -580.165774546134" />
+                    <Point Location="163.700049984245 -4.44089209850063E-15 -584.272023595011" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -33900,7 +34019,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="PortWeather" Type="Resource" Location="-133.032468566282 -5.01820807130571E-14 -338.603731628153" Size="13.8416370160483 6.79982441045732 4.13689939412513" Scope="Public">
+          <Fixed Name="PortWeather" Type="Resource" Location="17.1337589770335 -0.29178768665018 -449.120064968852" Size="13.8416370160483 6.79982441045732 4.13689939412513" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="13.8416370160483 6.79982441045732 4.13689939412513" />
               <IndexedSize Size="13.8416370160483 6.79982441045732 4.13689939412513" />
@@ -33982,13 +34101,13 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="107">
-                <Pie Center="-134.997427566212 -1.33226762955019E-15 -299.865691195043" Width="91.7704439786939" Height="51.3462016473043" ExternallyVisible="True" Title="Port Weather" ListState="ResourceState" TextScale="5" />
+                <Pie Center="16.1740730451938 -0.291787693160538 -413.649185779565" Width="87.7493274720837" Height="57.8805159759497" ExternallyVisible="True" Title="Port Weather" ListState="ResourceState" TextScale="5" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="Port" Type="PortModelRev2" Location="119.143002329891 4.55191440096314E-15 -307.077621934007" Size="121.992630979396 216.658942960486 1.00951098320057" Scope="Public">
+          <Fixed Name="Port" Type="PortModelRev2" Location="117.706889313805 -4.37705427458468E-14 -332.927656387851" Size="178.260110244247 294.204242401963 1.00951098320057" Scope="Public">
             <AssociatedNodes>
-              <Node Name="TrainOutput@Port" Type="TransferNode" Location="120.356131266394 4.32986979603811E-15 -241.313171308434" Scope="Public">
+              <Node Name="TrainOutput@Port" Type="TransferNode" Location="144.525491454396 -4.39925873507718E-14 -241.794272726358" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -33998,7 +34117,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="TrainInput@Port" Type="BasicNode" Location="122.714771096802 4.32986979603811E-15 -238.110153043951" Scope="Public">
+              <Node Name="TrainInput@Port" Type="BasicNode" Location="147.771156915431 -4.39925873507718E-14 -239.360010008418" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34008,7 +34127,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Berth1ShipInput@Port" Type="BasicNode" Location="131.866333428117 -1.22124532708767E-15 -404.181947404026" Scope="Public">
+              <Node Name="Berth1ShipInput@Port" Type="BasicNode" Location="133.088602915278 -0.291787696000224 -452.927492591073" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34018,7 +34137,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Berth2ShipInput@Port" Type="BasicNode" Location="136.42935868192 -1.22124532708767E-15 -402.800690283206" Scope="Public">
+              <Node Name="Berth2ShipInput@Port" Type="BasicNode" Location="149.463651718438 -0.291787696000224 -452.771989771421" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34028,7 +34147,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Berth1ShipOutput@Port" Type="TransferNode" Location="135.618501321827 -1.22124532708767E-15 -403.013476404544" Scope="Public">
+              <Node Name="Berth1ShipOutput@Port" Type="TransferNode" Location="147.623612326932 -0.291787696000224 -452.848567901059" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34038,7 +34157,7 @@
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Berth2ShipOutput@Port" Type="TransferNode" Location="140.277350873579 -1.22124532708767E-15 -401.597616263138" Scope="Public">
+              <Node Name="Berth2ShipOutput@Port" Type="TransferNode" Location="164.375111387449 -0.291787696000225 -452.348920432115" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34067,16 +34186,28 @@
             </Properties>
             <Graphics EditsLocked="True">
               <SymbolInstances>
-                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                <SymbolInstance Center="0 0 0" Rotation="0.3066500943969" ExternallyVisible="True">
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="108">
-                <Pie Center="-24.3056172836528 0 -287.682429369873" Width="95.5003399721544" Height="63.1187677431862" ExternallyVisible="True" Title="Train Dumper Utilisation" Look="Aspect" ListState="DumperStates" TextScale="5" />
+              <AttachedObjects IndexList="108 115 116">
+                <Pie Center="16.5877015756228 0 -262.837672753908" Width="88.9660256441013" Height="63.1187677431863" ExternallyVisible="True" Title="Train Dumper Utilisation" Look="Aspect" ListState="DumperStates" TextScale="5" />
+                <Queue Queue="Berth1.Processing.Contents" Alignment="Inline" ExternallyVisible="True">
+                  <Points>
+                    <Point Location="147.48728488769 -0.29178769415485 -452.812540383644" />
+                    <Point Location="133.23970174349 -0.29178769415485 -453.015373588759" />
+                  </Points>
+                </Queue>
+                <Queue Queue="Berth2.Processing.Contents" Alignment="Inline" ExternallyVisible="True">
+                  <Points>
+                    <Point Location="164.416086128154 -0.29178769415485 -452.484970653038" />
+                    <Point Location="149.514055524982 -0.29178769415485 -452.733337829757" />
+                  </Points>
+                </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Entity Name="Ship" Type="ShipEntity" Location="499.15663475913 -3.16691117774327E-14 194.820611393768" Size="3.46039110439444 0.556134284634823 0.684737680981913" Scope="Public">
+          <Entity Name="Ship" Type="ShipEntity" Location="493.770812268765 -8.96227536628658E-14 201.981111916075" Size="12.869597618729 2.06832818872431 2.54661920076833" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34093,11 +34224,11 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="109">
-                <FloorLabel Center="498.561071204129 0.417307919648883 194.819159352344" Width="1.37307626333745" Height="0.555659090179859" ExternallyVisible="True" BackColor="00ffffff" Text="{ShipTypeString}&#xD;&#xA;{Draft}&#xD;&#xA;{Product}&#xD;&#xA;{Math.Round(FlowContainer.Contents.Weight/1000,0)}/{Math.Round(FlowContainer.CurrentWeightCapacity/1000,0)}&#xD;&#xA;{HatchChangeCount}" />
+                <FloorLabel Center="491.488440267768 2.1667598519311 201.968426748355" Width="4.36981340615166" Height="1.86927231789423" ExternallyVisible="True" BackColor="00ffffff" Text="{ShipTypeString}&#xD;&#xA;{Draft}&#xD;&#xA;{Product}&#xD;&#xA;{Math.Round(FlowContainer.Contents.Weight/1000,0)}/{Math.Round(FlowContainer.CurrentWeightCapacity/1000,0)}&#xD;&#xA;{HatchChangeCount}" />
               </AttachedObjects>
             </Graphics>
           </Entity>
-          <Fixed Name="TideTracker1" Type="TideTracker" Location="179.605172129431 0 -451.102875401367" Size="5.27458259848376 5.27458259848379 1.24853385277478" Scope="Public">
+          <Fixed Name="TideTracker1" Type="TideTracker" Location="248.39300669411 0 -570.428690802329" Size="5.27458259848376 5.27458259848379 1.24853385277478" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34144,8 +34275,8 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="111 112">
-                <LinearGauge Center="185.828700586504 0 -454.023662784076" Width="12.1532047440568" Height="12.4744250999276" ExternallyVisible="True" Look="Ice-Cold Zone0" Max="20" Ticks="5" Expression="WaterDepth" />
-                <FloorLabel Center="182.982255846756 0 -445.488406374609" Width="14.3129392457518" Height="3.87503683841805" ExternallyVisible="True" CharsPerLine="14" Text="Current Water Depth:&#xD;&#xA;{Math.Round(WaterDepth, 2)} m" />
+                <LinearGauge Center="324.785521160546 0 -539.299416057527" Width="25.2560128913226" Height="51.9552549120849" ExternallyVisible="True" Locked="True" Look="Ice-Cold Zone0" Max="20" Ticks="5" Expression="WaterDepth" />
+                <FloorLabel Center="277.027477442345 0 -558.52142427582" Width="64.827712760864" Height="16.4606288746086" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="14" Text="Current Water Depth:&#xD;&#xA;{Math.Round(WaterDepth, 2)} m" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
@@ -34196,7 +34327,7 @@
               </AttachedObjects>
             </Graphics>
           </Node>
-          <Node Name="EnterT1B" Type="BasicNode" Location="149.126840094506 -4.24660309573155E-15 -198.821944385411" Scope="Public">
+          <Node Name="EnterT1B" Type="BasicNode" Location="181.769383301565 -4.24660309573155E-15 -213.861554465504" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34206,7 +34337,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="PortQueueBlock" Type="TransferNode" Location="132.098193556869 -4.21884752004537E-15 -224.138505871744" Scope="Public">
+          <Node Name="PortQueueBlock" Type="TransferNode" Location="159.237557341265 -4.21884752004537E-15 -230.731459640605" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34217,7 +34348,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="PortSig4" Type="BasicNode" Location="102.312377790382 -4.21884752018646E-15 -223.719601736295" Scope="Public">
+          <Node Name="PortSig4" Type="BasicNode" Location="128.203871503937 -4.21884752018646E-15 -222.476559015825" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34336,7 +34467,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="PortTrainInput" Type="BasicNode" Location="122.915143029452 -4.21884754651515E-15 -237.976356533469" Scope="Public">
+          <Node Name="PortTrainInput" Type="BasicNode" Location="147.810995729038 -4.21884754651515E-15 -239.33646250043" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34347,7 +34478,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="PortTrainOutput" Type="TransferNode" Location="120.185468451321 -4.21884787076996E-15 -241.540046827895" Scope="Public">
+          <Node Name="PortTrainOutput" Type="TransferNode" Location="144.430835688448 -4.21884787076996E-15 -241.894857080146" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34512,7 +34643,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="ChannelExit" Type="TransferNode" Location="138.356698107219 0 -411.939401499806" Scope="Public">
+          <Node Name="ChannelExit" Type="TransferNode" Location="152.138790017305 -0.291787696000023 -473.439842809461" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34523,7 +34654,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="ChannelEntrance" Type="TransferNode" Location="198.57443202944 -2.77555756156289E-17 -508.988730100868" Scope="Public">
+          <Node Name="ChannelEntrance" Type="TransferNode" Location="202.135407469883 3.52495810318487E-15 -567.433631164804" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34532,9 +34663,9 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="EnteredAddOnProcess">ChannelEntrance_Entered</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics EditsLocked="True" ExternallyVisible="True" />
           </Node>
-          <Node Name="B1Entry" Type="BasicNode" Location="131.930557462452 0 -404.466725984554" Scope="Public">
+          <Node Name="B1Entry" Type="BasicNode" Location="132.956321631465 -0.291787696000021 -453.434023189341" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34545,7 +34676,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="B2Entry" Type="BasicNode" Location="136.472387129204 0 -403.005092967601" Scope="Public">
+          <Node Name="B2Entry" Type="BasicNode" Location="149.476665075399 -0.291787696000021 -453.048455549372" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34556,7 +34687,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="B2Exit" Type="TransferNode" Location="140.497199078222 0 -401.807490523376" Scope="Public">
+          <Node Name="B2Exit" Type="TransferNode" Location="164.488642332373 -0.291787696000021 -452.644277401575" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34569,7 +34700,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="BasicNode1" Type="BasicNode" Location="185.039428001956 0 -518.048729261318" Scope="Public">
+          <Node Name="BasicNode1" Type="BasicNode" Location="188.600403442399 3.5527136788005E-15 -576.493630325254" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34577,9 +34708,9 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics EditsLocked="True" ExternallyVisible="True" />
           </Node>
-          <Node Name="B1Exit" Type="TransferNode" Location="135.770034395524 0 -403.2410608538" Scope="Public">
+          <Node Name="B1Exit" Type="TransferNode" Location="147.640294596094 -0.291787696000021 -453.168747215084" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -35333,15 +35464,14 @@
           </Link>
           <Link Name="Track3" Type="Track" Size="5000 0 0" Scope="Public" Start="PortTrainOutput" End="PortSig4">
             <Points>
-              <Point Location="116.97234580694 -4.21884769320782E-15 -244.560783991506" />
-              <Point Location="113.276901437611 -4.2188476729854E-15 -246.593020051363" />
-              <Point Location="108.517055257275 -4.21884769660513E-15 -247.136902065684" />
-              <Point Location="103.845094160618 -4.21884749357559E-15 -246.006201026404" />
-              <Point Location="100.87737397651 -4.21884749357559E-15 -244.44013637216" />
-              <Point Location="96.8464737182586 -4.21884763799237E-15 -238.303676363312" />
-              <Point Location="96.3202713330857 -4.21884749357559E-15 -234.847557595606" />
-              <Point Location="96.4598491183181 -4.21884749357559E-15 -231.485203479435" />
-              <Point Location="98.7100908558678 -4.21884749357559E-15 -227.353994784918" />
+              <Point Location="140.070978289035 -4.21884770405033E-15 -244.066269765246" />
+              <Point Location="136.010521608424 -4.21884765943545E-15 -244.236552673221" />
+              <Point Location="132.379399415 -4.21884749357559E-15 -243.378523650103" />
+              <Point Location="128.804821330864 -4.21884769729581E-15 -241.406449812295" />
+              <Point Location="126.318663497407 -4.21884749357559E-15 -238.339400443566" />
+              <Point Location="124.683899665479 -4.21884749357559E-15 -234.876525574544" />
+              <Point Location="124.364995035219 -4.21884749357559E-15 -230.468128203122" />
+              <Point Location="125.598029908247 -4.21884749357559E-15 -225.600958879655" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -35356,8 +35486,7 @@
           </Link>
           <Link Name="Track4" Type="Track" Size="5000 0 0" Scope="Public" Start="PortSig4" End="EnterT1B">
             <Points>
-              <Point Location="137.747532657396 -4.23783180812322E-15 -207.449723509969" />
-              <Point Location="144.665831654973 -4.24091237314324E-15 -203.943820620304" />
+              <Point Location="134.349103192625 -4.22467724738655E-15 -218.844980706453" />
             </Points>
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
@@ -35370,11 +35499,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="TimePath5" Type="TimePath" Size="119.64 0 0" Scope="Public" Start="ChannelExit" End="ChannelEntrance">
-            <Points>
-              <Point Location="158.468769677642 -1.03174998589303E-17 -461.065227254226" />
-              <Point Location="192.62915999979 -2.00878046343487E-17 -484.671128778626" />
-            </Points>
+          <Link Name="TimePath5" Type="TimePath" Size="106.46 0 0" Scope="Public" Start="ChannelExit" End="ChannelEntrance">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -35384,7 +35509,7 @@
               <Property Name="Type">Bidirectional</Property>
               <Property Name="TravelTime" Units="Hours">0</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics EditsLocked="True" ExternallyVisible="True" />
           </Link>
           <Link Name="Connector14" Type="Connector" Size="0 0 0" Scope="Public" Start="ChannelEntrance" End="Input@ShipExit">
             <Properties>
@@ -35394,9 +35519,9 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics EditsLocked="True" ExternallyVisible="True" />
           </Link>
-          <Link Name="TimePath1" Type="TimePath" Size="9.86 0 0" Scope="Public" Start="ChannelExit" End="B1Entry">
+          <Link Name="TimePath1" Type="TimePath" Size="27.72 0 0" Scope="Public" Start="ChannelExit" End="B1Entry">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -35407,7 +35532,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="TimePath3" Type="TimePath" Size="9.13 0 0" Scope="Public" Start="ChannelExit" End="B2Entry">
+          <Link Name="TimePath3" Type="TimePath" Size="20.56 0 0" Scope="Public" Start="ChannelExit" End="B2Entry">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -35418,7 +35543,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="TimePath4" Type="TimePath" Size="10.36 0 0" Scope="Public" Start="B2Exit" End="ChannelExit">
+          <Link Name="TimePath4" Type="TimePath" Size="24.19 0 0" Scope="Public" Start="B2Exit" End="ChannelExit">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -35477,7 +35602,7 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics EditsLocked="True" ExternallyVisible="True" />
           </Link>
           <Link Name="Connector4" Type="Connector" Size="0 0 0" Scope="Public" Start="PortTrainInput" End="TrainInput@Port">
             <Properties>
@@ -35537,7 +35662,7 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
-            <Graphics ExternallyVisible="True" />
+            <Graphics EditsLocked="True" ExternallyVisible="True" />
           </Link>
           <Link Name="Connector17" Type="Connector" Size="0 0 0" Scope="Public" Start="Berth1ShipOutput@Port" End="B1Exit">
             <Properties>
@@ -35549,7 +35674,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="TimePath2" Type="TimePath" Size="9.07 0 0" Scope="Public" Start="B1Exit" End="ChannelExit">
+          <Link Name="TimePath2" Type="TimePath" Size="20.76 0 0" Scope="Public" Start="B1Exit" End="ChannelExit">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -35663,6 +35788,50 @@
             <DayPatternRefs>
               <DayPatternRef DayNumber="1" DayPattern="FullDay24_7" />
             </DayPatternRefs>
+            <DayExceptions>
+              <DayException Date="2020-01-07T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2020-01-08T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2020-01-09T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2020-02-10T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2020-02-11T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2020-12-21T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2020-12-24T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2021-01-07T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2021-01-08T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2021-01-09T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2021-02-10T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2021-02-11T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2021-12-21T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2021-12-24T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2022-01-07T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2022-01-08T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2022-01-09T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2022-02-10T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2022-02-11T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2022-12-21T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2022-12-24T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2023-01-07T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2023-01-08T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2023-01-09T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2023-02-10T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2023-02-11T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2023-12-21T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2023-12-24T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2024-01-07T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2024-01-08T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2024-01-09T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2024-02-10T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2024-02-11T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2024-12-21T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2024-12-24T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2025-01-07T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2025-01-08T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2025-01-09T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2025-02-10T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2025-02-11T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2025-12-21T00:00:00" DayPattern="ShutDay24" />
+              <DayException Date="2025-12-24T00:00:00" DayPattern="ShutDay24" />
+            </DayExceptions>
           </Schedule>
         </Schedules>
         <DayPatterns>
@@ -35696,8 +35865,8 @@
           <Pie Center="245.098144612229 0 -56.453364497003" Width="51.7688702824777" Height="32.9637404725572" ExternallyVisible="True" Title="Train 5 Utilisation" ListState="Train[5].ResourceState" TextScale="3" />
           <Pie Center="245.123620374181 0 -22.9585034445585" Width="52.0031524340306" Height="32.955696585175" ExternallyVisible="True" Title="Train 6 Utilisation" ListState="Train[6].ResourceState" TextScale="3" />
           <FloorLabel Center="177.422176860604 0 14.5399169321985" Width="58.0634358862159" Height="32.8762255575861" ExternallyVisible="True" BackColor="dcdcdc" Text="&lt;B&gt;Train Name:&lt;/b&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].Name, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].Name, 0)}&#xD;&#xA;" />
-          <FloorLabel Center="-231.227385093392 0.976488416671373 72.1133999745311" Width="284.000107218147" Height="50.1004891583327" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Mine Model" />
-          <FloorLabel Center="-231.45435328674 0.976488416671373 -157.33886746721" Width="281.07087022994" Height="52.4263325307857" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Rail Map" />
+          <FloorLabel Center="-231.227385093392 -21.4395720370339 73.5788214425632" Width="284.000107218147" Height="50.1004891583327" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Mine Model" />
+          <FloorLabel Center="-231.45435328674 -21.4395720370339 -157.33886746721" Width="281.07087022994" Height="52.4263325307857" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Rail Map" />
           <FloorLabel Center="127.5066118341 0.831652642831841 -152.409250451036" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 1/Yard&lt;/B&gt;&lt;/Blue&gt;" />
           <FloorLabel Center="118.442676438514 0.831652642831841 -133.3840643061" Width="26.8601115431232" Height="2.67218213907313" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 2&lt;/B&gt;&lt;/Blue&gt; {Math.If(Enable2==True,&quot;&lt;B&gt;&lt;GREEN&gt;ENABLED&lt;/GREEN&gt;&lt;/B&gt;&quot;, &quot;&lt;B&gt;&lt;RED&gt;DISABLED&lt;/RED&gt;&lt;/B&gt;&quot;)}" />
           <FloorLabel Center="112.026033242094 0.831652642831841 -113.252738295194" Width="26.8601115431232" Height="2.3480339286042" ExternallyVisible="True" BackColor="00ffffff" Text="&lt;Blue&gt;&lt;B&gt;Passing Loop 3&lt;/B&gt;&lt;/Blue&gt;" />
@@ -35719,28 +35888,28 @@
               </Decoration>
             </Decorations>
           </Rectangle>
-          <FloorLabel Center="224.613790653526 0 -212.890809395853" Width="79.2435283706706" Height="13.9071069898507" ExternallyVisible="True" BackColor="b0e0e6" Text="Tonnes Unloaded (t):&#xD;&#xA;{Math.Round(Port.DumperSplit.FlowRegulator.CurrentWeightFlowOut/1000,0)}" />
-          <FloorLabel Center="338.374157273855 0 -355.712206157032" Width="96.331996749847" Height="65.7095071667345" ExternallyVisible="True" BackColor="b0e0e6" Text="Current Stockpile Contents (t):&#xD;&#xA;Product LAC:&#xD;&#xA;{Math.Round(Port.TotalProductLAC/1000,0)}&#xD;&#xA;Product UGC:&#xD;&#xA;{Math.Round(Port.TotalProductUGC/1000,0)}&#xD;&#xA;&#xD;&#xA;Total:&#xD;&#xA;{Math.Round(Port.TotalStockpileContents/1000,0)}" />
-          <FloorLabel Center="224.49730805898 0 -366.616656927955" Width="78.5404458447345" Height="12.4557394860751" ExternallyVisible="True" BackColor="b0e0e6" Text="Tonnes Loaded (t):&#xD;&#xA;{Math.Round(Port.BerthJunction.FlowRegulator.CurrentWeightFlowIn/1000,0)}" />
-          <Rectangle Center="187.75288325947 -0.148573552807818 -516.557238644315" Width="37.3430928069631" Height="18.8691428740228" ExternallyVisible="True" Locked="True">
+          <FloorLabel Center="228.563101475053 0 -285.342712224557" Width="79.2435283706706" Height="13.9071069898507" ExternallyVisible="True" BackColor="b0e0e6" Text="Tonnes Unloaded (t):&#xD;&#xA;{Math.Round(Port.DumperSplit.FlowRegulator.CurrentWeightFlowOut/1000,0)}" />
+          <FloorLabel Center="332.012762637406 0 -426.113984356113" Width="96.331996749847" Height="65.7095071667345" ExternallyVisible="True" BackColor="b0e0e6" Text="Current Stockpile Contents (t):&#xD;&#xA;Product LAC:&#xD;&#xA;{Math.Round(Port.TotalProductLAC/1000,0)}&#xD;&#xA;Product UGC:&#xD;&#xA;{Math.Round(Port.TotalProductUGC/1000,0)}&#xD;&#xA;&#xD;&#xA;Total:&#xD;&#xA;{Math.Round(Port.TotalStockpileContents/1000,0)}" />
+          <FloorLabel Center="228.446618880507 0 -438.063280629954" Width="78.5404458447345" Height="12.4557394860751" ExternallyVisible="True" BackColor="b0e0e6" Text="Tonnes Loaded (t):&#xD;&#xA;{Math.Round(Port.BerthJunction.FlowRegulator.CurrentWeightFlowIn/1000,0)}" />
+          <Rectangle Center="191.313857425496 -0.148573552807814 -575.002134621111" Width="37.3430928069631" Height="18.8691428740228" ExternallyVisible="True" Locked="True">
             <Decorations>
               <Decoration SurfaceId="0">
                 <MaterialRef Id="63ebf191-290e-4184-bb90-b95c1c60efac" />
               </Decoration>
             </Decorations>
           </Rectangle>
-          <FloorLabel Center="-249.00949302448 0.976488416671373 -521.234170744799" Width="245.291527024602" Height="46.2692853210719" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Anchorage" />
+          <FloorLabel Center="-245.448518858454 -21.4395720370339 -579.679066721595" Width="245.291527024602" Height="46.2692853210719" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Anchorage" />
           <FloorLabel Center="-42.5230663548194 0 -129.996592979773" Width="62.2892195408502" Height="35.3847896531753" ExternallyVisible="True" BackColor="dcdcdc" Text="Operating Train Cycle Time(h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_RailOperatingCycleTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_RailOperatingCycleTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_RailOperatingCycleTime.Minimum,2)}" />
-          <Pie Center="-23.45916159139 0 -358.798966870111" Width="96.9232231472432" Height="63.9289309574517" ExternallyVisible="True" Title="Shiploader Utilisation" ListState="Port.ShipLoader[1].ResourceState" TextScale="5" />
-          <FloorLabel Center="224.208679523174 0 -290.281326029748" Width="78.4793331046146" Height="44.9650271524661" ExternallyVisible="True" Locked="True" BackColor="afeeee" Text="Total Time In Port (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Minimum,2)}" />
-          <FloorLabel Center="225.016497887034 0 -336.492251636535" Width="78.4793331046147" Height="44.4064553865969" ExternallyVisible="True" BackColor="afeeee" Text="Total Time In Berth (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Minimum,2)}" />
-          <FloorLabel Center="224.63387380515 0 -243.85509164477" Width="78.4793331046147" Height="44.6857412695314" ExternallyVisible="True" BackColor="afeeee" Text="Total Ship Loading Time (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Minimum,2)}" />
+          <Pie Center="16.801409444726 -0.291787694154834 -333.883101547584" Width="88.8809901281009" Height="62.4210122663624" ExternallyVisible="True" Title="Shiploader Utilisation" ListState="Port.ShipLoader[1].ResourceState" TextScale="5" />
+          <FloorLabel Center="228.157990344701 0 -362.733228858453" Width="78.4793331046146" Height="44.9650271524661" ExternallyVisible="True" BackColor="afeeee" Text="Total Time In Port (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Minimum,2)}" />
+          <FloorLabel Center="228.965808708561 0 -408.441514901887" Width="78.4793331046147" Height="44.4064553865969" ExternallyVisible="True" BackColor="afeeee" Text="Total Time In Berth (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Minimum,2)}" />
+          <FloorLabel Center="228.583184626677 0 -316.306994473475" Width="78.4793331046147" Height="44.6857412695314" ExternallyVisible="True" BackColor="afeeee" Text="Total Ship Loading Time (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Minimum,2)}" />
           <FloorLabel Center="236.923185016142 0 14.151513916295" Width="58.0634358862159" Height="32.8762255575861" ExternallyVisible="True" BackColor="dcdcdc" Text="&lt;b&gt;Contents (t):&lt;/b&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Math.Round(Train[1].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Math.Round(Train[2].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Math.Round(Train[3].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Math.Round(Train[4].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Math.Round(Train[5].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Math.Round(Train[6].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Math.Round(Train[7].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Math.Round(Train[8].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Math.Round(Train[9].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Math.Round(Train[10].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Math.Round(Train[11].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Math.Round(Train[12].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Math.Round(Train[13].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Math.Round(Train[14].FlowContainer.Contents.Weight/1000,0), 0)}" />
           <FloorLabel Center="296.131795915855 0 13.9467575136873" Width="58.0634358862159" Height="32.8762255575861" ExternallyVisible="True" BackColor="dcdcdc" Text="&lt;b&gt;Capacity (t):&lt;/b&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].FlowContainer.CurrentWeightCapacity/1000, 0)}&#xD;&#xA;" />
           <FloorLabel Center="355.563828002225 0 13.9547414449189" Width="58.0634358862159" Height="32.8762255575861" ExternallyVisible="True" BackColor="dcdcdc" Text="&lt;B&gt;Distance Travelled (km)&lt;/B&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].DistanceTravelled/1000, 0)}" />
-          <FloorLabel Center="-230.903250077074 0.976488416671373 -387.50510009963" Width="281.07087022994" Height="62.1669202030562" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Port Model" />
-          <FloorLabel Center="224.31653403533 0 -381.326027559323" Width="78.4793331046147" Height="13.4424539772442" ExternallyVisible="True" BackColor="afeeee" Text="Number Ships Loaded:&#xD;&#xA;{(Tally_ShipTotalTimeInBerth.NumberObservations)}" />
-          <Rectangle Center="54.3144464969129 -22.4907117753196 -305.252233763433" Width="856.553265148857" Height="228.826504046987" ExternallyVisible="True" Locked="True">
+          <FloorLabel Center="-228.749080519848 -21.4395720370339 -439.923225992126" Width="281.07087022994" Height="62.1669202030562" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Port Model" />
+          <FloorLabel Center="228.983901376423 0 -452.772651261322" Width="78.4793331046147" Height="13.4424539772442" ExternallyVisible="True" BackColor="afeeee" Text="Number Ships Loaded:&#xD;&#xA;{(Tally_ShipTotalTimeInBerth.NumberObservations)}" />
+          <Rectangle Center="54.3144464969129 -22.4907117753196 -333.615466266907" Width="856.553265148857" Height="285.552969053935" ExternallyVisible="True" Locked="True">
             <Decorations>
               <Decoration SurfaceId="0">
                 <MaterialRef Id="9ec42d53-b2f7-452f-9327-59ffcba7a148" />
@@ -35761,14 +35930,14 @@
               </Decoration>
             </Decorations>
           </Rectangle>
-          <Rectangle Center="54.8142329717105 -22.4907117753196 -485.781303935586" Width="856.553265148857" Height="129.010490155287" ExternallyVisible="True" Locked="True">
+          <Rectangle Center="53.34881150421 -22.4907117753196 -544.226199912382" Width="856.553265148857" Height="129.010490155287" ExternallyVisible="True" Locked="True">
             <Decorations>
               <Decoration SurfaceId="0">
                 <MaterialRef Id="6581391a-8fa4-466e-846a-b7584fdab598" />
               </Decoration>
             </Decorations>
           </Rectangle>
-          <FloorLabel Center="-244.365547422627 0 -485.851902950544" Width="256.834183186645" Height="39.0850502144528" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Channel" />
+          <FloorLabel Center="-240.804573256601 -22.4160604537053 -544.29679892734" Width="256.834183186645" Height="39.0850502144528" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Channel" />
           <FloorLabel Center="86.830774855443 0 73.4440200204821" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" Text="Stockpile 1 UGC Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.Stockpile1.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile1Contents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile1Contents.Maximum/1000,0)}&#xD;&#xA;" />
           <FloorLabel Center="164.134360044851 0 73.21341958096" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" Text="Stockpile 2 LAC Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.Stockpile2.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile2Contents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile2Contents.Maximum/1000,0)}&#xD;&#xA;" />
           <FloorLabel Center="423.595924513851 0 82.4278418291748" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" Text="HAC ROM Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.HAC_ROMPAD.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_HAC_ROMContents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_HAC_ROMContents.Maximum/1000,0)}&#xD;&#xA;" />
@@ -35783,24 +35952,30 @@
           <FloorLabel Center="164.056156574526 0 122.803898776617" Width="74.3785881378759" Height="13.5469316147751" ExternallyVisible="True" Text="Total LAC Loaded On Trains(t):&#xD;&#xA;{Math.Round(Mine.Output@Stockpile2.FlowRegulator.CurrentWeightFlowOut/1000,0)}" />
           <Pie Center="270.176857923788 0 180.87226676116" Width="67.781246094604" Height="41.7214113131057" ExternallyVisible="True" Title="Weather Shutdowns" ListState="Mine.WeatherShutdownSchedule.ResourceState" TextScale="3" />
           <FloorLabel Center="323.201685333137 0 177.057652888868" Width="35.8312580495667" Height="32.4487872896874" ExternallyVisible="True" BackColor="00ffffff" Text="Train Loader Hours:&#xD;&#xA;Operating:&#xD;&#xA;{Math.Round(Mine.WeatherShutdownSchedule.ResourceState.TotalTime(1),2)}&#xD;&#xA;Shut Down:&#xD;&#xA;{Math.Round(Mine.WeatherShutdownSchedule.ResourceState.TotalTime(6),2)}" />
-          <FloorLabel Center="338.491517521829 0 -286.995378185033" Width="95.9096159298234" Height="53.7581766594993" ExternallyVisible="True" Text="Open Cut Stockpile Contents:&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct1LAC.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct1LAC.Maximum/1000,0)}&#xD;&#xA;" />
-          <FloorLabel Center="337.683003806647 0 -231.311682994277" Width="95.9096159298234" Height="53.7581766594993" ExternallyVisible="True" Text="Underground Coal Stockpile &#xD;&#xA;Contents:&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct2UGC.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct2UGC.Maximum/1000,0)}&#xD;&#xA;" />
+          <FloorLabel Center="332.41734549327 0 -363.428831148864" Width="95.9096159298234" Height="53.7581766594993" ExternallyVisible="True" Text="Open Cut Stockpile Contents:&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct1LAC.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct1LAC.Maximum/1000,0)}&#xD;&#xA;" />
+          <FloorLabel Center="332.542305253492 0 -307.745135957732" Width="95.9096159298234" Height="53.7581766594993" ExternallyVisible="True" Text="Underground Coal Stockpile &#xD;&#xA;Contents:&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct2UGC.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Port.Hourly_StockpileProduct2UGC.Maximum/1000,0)}&#xD;&#xA;" />
           <StatusLabel Center="-7.87821104581145 0 162.460595609914" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="Mine.FlowNode6.FlowRegulator.CurrentMaximumFlowRate / 1000" />
           <StatusLabel Center="-8.45809629405119 0 161.454980305734" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="Mine.FlowNode5.FlowRegulator.CurrentMaximumFlowRate / 1000" />
           <StatusLabel Center="-8.516819616219 0 161.785290609134" Width="1.14299325104557" Height="0.314585298452926" ExternallyVisible="True" Expression="Mine.FlowNode5.FlowRegulator.CurrentWeightFlowOut.Rate / 1000" />
           <FloorLabel Center="125.540271818427 0 140.783123940486" Width="74.3785881378759" Height="13.5469316147751" ExternallyVisible="True" Text="Total Loaded On Trains(t):&#xD;&#xA;{Math.Round((Mine.Output@Stockpile1.FlowRegulator.CurrentWeightFlowOut+Mine.Output@Stockpile2.FlowRegulator.CurrentWeightFlowOut)/1000,0)}" />
           <Queue Queue="Port.TrainDumper.Processing.Contents" Alignment="Inline" ExternallyVisible="True">
             <Points>
-              <Point Location="119.141901902425 0 -240.015257846807" />
-              <Point Location="121.239339604908 0 -237.285259567385" />
+              <Point Location="144.215159728137 0 -240.547473225183" />
+              <Point Location="146.66740768287 0 -238.881905702513" />
             </Points>
           </Queue>
-          <Plot Center="220.239458368438 0 -447.102852531415" Width="47.2009281253478" Height="25.1870498820133" ExternallyVisible="True" Title="Channel Depth" XAxisLabel="Time" YAxisLabel="Value" Look="Dark;In A Fog" TextScale="1.5">
+          <Plot Center="277.053914611133 0 -530.554271902834" Width="66.2007036342709" Height="33.6313945526454" ExternallyVisible="True" Title="Channel Depth" XAxisLabel="Time" YAxisLabel="Value" Look="Dark;In A Fog" TextScale="2">
             <Range Type="Hours">24</Range>
             <PlotLines>
               <PlotLine Expression="TideTracker1.WaterDepth" />
               <PlotLine Expression="Math.If(Port.Berth1.Processing.Contents &gt; 0, Port.Berth1.Processing.Contents.FirstItem.ShipEntity.Draft, 0)" Label="B1 Ship Req. Level" />
               <PlotLine Expression="Math.If(Port.Berth2.Processing.Contents &gt; 0, Port.Berth2.Processing.Contents.FirstItem.ShipEntity.Draft, 0)" Label="B2 Ship Req. Level" />
+            </PlotLines>
+          </Plot>
+          <Plot Center="120.612498314243 0 -321.361278698889" Width="16.8194621191918" Height="10.9043579382241" Title="Surge Bin Contents (t)" Look="Dark;In A Fog" TextScale="1">
+            <Range Type="Days">7</Range>
+            <PlotLines>
+              <PlotLine Expression="Port.SurgeBin.FlowContainer.Contents.Weight / 1000" />
             </PlotLines>
           </Plot>
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
@@ -35814,7 +35989,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1394</Revision>
+        <Revision>1461</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -35842,11 +36017,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>851</Revision>
+        <Revision>884</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>317</Revision>
+        <Revision>350</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -35862,7 +36037,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>901</Revision>
+        <Revision>945</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -35942,7 +36117,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>295</Revision>
+        <Revision>297</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -36073,8 +36248,9 @@
       <ColorMaterial Id="7ec127bc-0d9a-46b0-81fe-a76635f49b38" Color="c0c0c0" />
       <ColorMaterial Id="724f37fd-909e-4f66-bca3-b0739a8fed2b" Color="808080" />
       <ColorMaterial Id="cb967173-e6e9-4e72-b822-9dda034c59ce" Color="696969" />
+      <ColorMaterial Id="3250eaf3-0da0-47bc-b870-23a25d7677a2" Color="808080" />
       <ColorMaterial Id="4cb21e6f-30d7-46b8-bdec-120b881b0a2f" Color="f5f5f5" />
-      <ColorMaterial Id="c8731b6d-b9fe-4b83-bf35-40524e26054e" Color="778899" />
+      <ColorMaterial Id="ba930cbb-fdc7-4b89-9d91-300a606ec34b" Color="708090" />
       <ColorMaterial Id="63ebf191-290e-4184-bb90-b95c1c60efac" Color="4682b4" />
       <ColorMaterial Id="9d181ced-2fd0-4d30-bfcb-ec63c87afc79" Color="008000" />
       <ColorMaterial Id="e968fc7b-87d6-4bd3-b45f-dd8bd193b3d9" Color="008000" />
@@ -36348,6 +36524,49 @@
           </Geometry>
         </Graphics>
       </Symbol>
+      <Symbol Name="E11 52587  Abbot point proof vertical aerial June 2011" Description="1343 x 3754 pixels" Id="01aaef6b-5d90-4081-b000-16c4264a08e4">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\E11 52587  Abbot point proof vertical aerial June 2011.png" />
+        </Thumbnail>
+        <Graphics>
+          <Geometry Center="0 0 0" Scale="100.000003465466">
+            <GeometryData>
+              <MeshData>
+                <FileRef Name="Data\Geometry\E11 52587  Abbot point proof vertical aerial June 2011.s3d" />
+              </MeshData>
+              <GeometryDataPieces>
+                <GeometryDataPiece Id="0">
+                  <MaterialRef Id="634d9b1e-fc96-4c0b-a486-e53bbe1845f2" />
+                </GeometryDataPiece>
+              </GeometryDataPieces>
+            </GeometryData>
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="634d9b1e-fc96-4c0b-a486-e53bbe1845f2" />
+              </Decoration>
+            </Decorations>
+          </Geometry>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="Symbol11" Id="0f4fb666-e3c6-4102-a7be-bfcc566784fc">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\Symbol11.png" />
+        </Thumbnail>
+        <Graphics>
+          <SymbolInstance Center="21.5944819540769 -0.600259163277376 -84.1200736969895" Scale="0.788777192069843" Locked="True" ExternallyVisible="True">
+            <SymbolRef Id="672015d6-94d3-47e3-869f-f824180d9ca1" />
+          </SymbolInstance>
+          <SymbolInstance Center="-0.199118380249863 -0.600259163277376 -35.7256074101564" Scale="0.864411567742741" ExternallyVisible="True">
+            <SymbolRef Id="173964de-b14c-4fe2-96ff-b91d967739da" />
+          </SymbolInstance>
+          <SymbolInstance Center="0.401915823716232 -0.600259163277376 17.8386477054635" ExternallyVisible="True">
+            <SymbolRef Id="a2ae49ca-8f0b-441d-8bcc-b2237f3b169f" />
+          </SymbolInstance>
+          <SymbolInstance Center="-8.07935238846056 -0.600259163277376 75.9386548683797" Scale="1.05759874066733" ExternallyVisible="True">
+            <SymbolRef Id="3354e798-c37a-498b-b785-52849bd341fb" />
+          </SymbolInstance>
+        </Graphics>
+      </Symbol>
       <Symbol Name="Stockpile" Id="4a569662-148a-4a8c-8fe6-68d0d7fc5b26">
         <Thumbnail>
           <FileRef Name="Data\Thumbnails\Stockpile.png" />
@@ -36489,7 +36708,7 @@
       </Symbol>
       <Symbol Name="Symbol11" Id="145c4b1f-0bbf-4af1-a90e-259d6c8a51af">
         <Thumbnail>
-          <FileRef Name="Data\Thumbnails\Symbol11.png" />
+          <FileRef Name="Data\Thumbnails\Symbol111.png" />
         </Thumbnail>
         <Graphics>
           <Rectangle Center="-0.00740521292387494 0 0.0444312796190366" Width="2.9505430522168" Height="2.9505430522168" ExternallyVisible="True">
@@ -36563,102 +36782,6 @@
               </Decoration>
             </Decorations>
           </Rectangle>
-        </Graphics>
-      </Symbol>
-      <Symbol Name="AbbotPointStockpile" Description="1680 x 1030 pixels" Id="a2ae49ca-8f0b-441d-8bcc-b2237f3b169f">
-        <Thumbnail>
-          <FileRef Name="Data\Thumbnails\AbbotPointStockpile.png" />
-        </Thumbnail>
-        <Graphics>
-          <Geometry Center="0 0 0" Scale="10">
-            <GeometryData>
-              <MeshData>
-                <FileRef Name="Data\Geometry\AbbotPointStockpile.s3d" />
-              </MeshData>
-              <GeometryDataPieces>
-                <GeometryDataPiece Id="0">
-                  <MaterialRef Id="b51f0d8b-4d83-47a7-9b1e-42d5381f859b" />
-                </GeometryDataPiece>
-              </GeometryDataPieces>
-            </GeometryData>
-            <Decorations>
-              <Decoration SurfaceId="0">
-                <MaterialRef Id="b51f0d8b-4d83-47a7-9b1e-42d5381f859b" />
-              </Decoration>
-            </Decorations>
-          </Geometry>
-        </Graphics>
-      </Symbol>
-      <Symbol Name="AbbotPointBerth1" Description="1680 x 1030 pixels" Id="173964de-b14c-4fe2-96ff-b91d967739da">
-        <Thumbnail>
-          <FileRef Name="Data\Thumbnails\AbbotPointBerth1.png" />
-        </Thumbnail>
-        <Graphics>
-          <Geometry Center="0 0 0" Scale="10">
-            <GeometryData>
-              <MeshData>
-                <FileRef Name="Data\Geometry\AbbotPointBerth1.s3d" />
-              </MeshData>
-              <GeometryDataPieces>
-                <GeometryDataPiece Id="0">
-                  <MaterialRef Id="09d938ab-b5c5-4eb8-acbe-77ca6337fc75" />
-                </GeometryDataPiece>
-              </GeometryDataPieces>
-            </GeometryData>
-            <Decorations>
-              <Decoration SurfaceId="0">
-                <MaterialRef Id="09d938ab-b5c5-4eb8-acbe-77ca6337fc75" />
-              </Decoration>
-            </Decorations>
-          </Geometry>
-        </Graphics>
-      </Symbol>
-      <Symbol Name="AbbotpointBalloon" Description="1680 x 1030 pixels" Id="3354e798-c37a-498b-b785-52849bd341fb">
-        <Thumbnail>
-          <FileRef Name="Data\Thumbnails\AbbotpointBalloon.png" />
-        </Thumbnail>
-        <Graphics>
-          <Geometry Center="0 0 0" Scale="10">
-            <GeometryData>
-              <MeshData>
-                <FileRef Name="Data\Geometry\AbbotpointBalloon.s3d" />
-              </MeshData>
-              <GeometryDataPieces>
-                <GeometryDataPiece Id="0">
-                  <MaterialRef Id="dc41b21d-5def-44c3-8cc4-ac0e61e133a2" />
-                </GeometryDataPiece>
-              </GeometryDataPieces>
-            </GeometryData>
-            <Decorations>
-              <Decoration SurfaceId="0">
-                <MaterialRef Id="dc41b21d-5def-44c3-8cc4-ac0e61e133a2" />
-              </Decoration>
-            </Decorations>
-          </Geometry>
-        </Graphics>
-      </Symbol>
-      <Symbol Name="AbbotPointBerth2" Description="1680 x 1030 pixels" Id="672015d6-94d3-47e3-869f-f824180d9ca1">
-        <Thumbnail>
-          <FileRef Name="Data\Thumbnails\AbbotPointBerth2.png" />
-        </Thumbnail>
-        <Graphics>
-          <Geometry Center="0 0 0" Scale="10">
-            <GeometryData>
-              <MeshData>
-                <FileRef Name="Data\Geometry\AbbotPointBerth2.s3d" />
-              </MeshData>
-              <GeometryDataPieces>
-                <GeometryDataPiece Id="0">
-                  <MaterialRef Id="d41e3185-9fbf-4c43-9037-e9eb5261c235" />
-                </GeometryDataPiece>
-              </GeometryDataPieces>
-            </GeometryData>
-            <Decorations>
-              <Decoration SurfaceId="0">
-                <MaterialRef Id="d41e3185-9fbf-4c43-9037-e9eb5261c235" />
-              </Decoration>
-            </Decorations>
-          </Geometry>
         </Graphics>
       </Symbol>
       <Symbol Name="Symbol1" Id="0da6f326-a7d6-49e4-88dc-976a28bc010a">
@@ -36775,6 +36898,102 @@
           <SymbolInstance Center="0 0 0" ExternallyVisible="True">
             <SymbolRef Id="ff9df4e7-c487-4531-a221-8116b525c759" />
           </SymbolInstance>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="AbbotPointBerth2" Description="1680 x 1030 pixels" Id="672015d6-94d3-47e3-869f-f824180d9ca1">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\AbbotPointBerth2.png" />
+        </Thumbnail>
+        <Graphics>
+          <Geometry Center="0 0 0" Scale="10">
+            <GeometryData>
+              <MeshData>
+                <FileRef Name="Data\Geometry\AbbotPointBerth2.s3d" />
+              </MeshData>
+              <GeometryDataPieces>
+                <GeometryDataPiece Id="0">
+                  <MaterialRef Id="d41e3185-9fbf-4c43-9037-e9eb5261c235" />
+                </GeometryDataPiece>
+              </GeometryDataPieces>
+            </GeometryData>
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="d41e3185-9fbf-4c43-9037-e9eb5261c235" />
+              </Decoration>
+            </Decorations>
+          </Geometry>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="AbbotPointBerth1" Description="1680 x 1030 pixels" Id="173964de-b14c-4fe2-96ff-b91d967739da">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\AbbotPointBerth1.png" />
+        </Thumbnail>
+        <Graphics>
+          <Geometry Center="0 0 0" Scale="10">
+            <GeometryData>
+              <MeshData>
+                <FileRef Name="Data\Geometry\AbbotPointBerth1.s3d" />
+              </MeshData>
+              <GeometryDataPieces>
+                <GeometryDataPiece Id="0">
+                  <MaterialRef Id="09d938ab-b5c5-4eb8-acbe-77ca6337fc75" />
+                </GeometryDataPiece>
+              </GeometryDataPieces>
+            </GeometryData>
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="09d938ab-b5c5-4eb8-acbe-77ca6337fc75" />
+              </Decoration>
+            </Decorations>
+          </Geometry>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="AbbotPointStockpile" Description="1680 x 1030 pixels" Id="a2ae49ca-8f0b-441d-8bcc-b2237f3b169f">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\AbbotPointStockpile.png" />
+        </Thumbnail>
+        <Graphics>
+          <Geometry Center="0 0 0" Scale="10">
+            <GeometryData>
+              <MeshData>
+                <FileRef Name="Data\Geometry\AbbotPointStockpile.s3d" />
+              </MeshData>
+              <GeometryDataPieces>
+                <GeometryDataPiece Id="0">
+                  <MaterialRef Id="b51f0d8b-4d83-47a7-9b1e-42d5381f859b" />
+                </GeometryDataPiece>
+              </GeometryDataPieces>
+            </GeometryData>
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="b51f0d8b-4d83-47a7-9b1e-42d5381f859b" />
+              </Decoration>
+            </Decorations>
+          </Geometry>
+        </Graphics>
+      </Symbol>
+      <Symbol Name="AbbotpointBalloon" Description="1680 x 1030 pixels" Id="3354e798-c37a-498b-b785-52849bd341fb">
+        <Thumbnail>
+          <FileRef Name="Data\Thumbnails\AbbotpointBalloon.png" />
+        </Thumbnail>
+        <Graphics>
+          <Geometry Center="0 0 0" Scale="10">
+            <GeometryData>
+              <MeshData>
+                <FileRef Name="Data\Geometry\AbbotpointBalloon.s3d" />
+              </MeshData>
+              <GeometryDataPieces>
+                <GeometryDataPiece Id="0">
+                  <MaterialRef Id="dc41b21d-5def-44c3-8cc4-ac0e61e133a2" />
+                </GeometryDataPiece>
+              </GeometryDataPieces>
+            </GeometryData>
+            <Decorations>
+              <Decoration SurfaceId="0">
+                <MaterialRef Id="dc41b21d-5def-44c3-8cc4-ac0e61e133a2" />
+              </Decoration>
+            </Decorations>
+          </Geometry>
         </Graphics>
       </Symbol>
       <Symbol Name="Filler" Id="41407493-27b7-44a5-8015-58b81108af6c">
@@ -42565,7 +42784,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="295" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="297" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -50560,6 +50779,11 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
           <FileRef Name="Data\Textures\CorrogateRust.jpg" />
         </Image>
       </TextureMaterial>
+      <TextureMaterial Id="634d9b1e-fc96-4c0b-a486-e53bbe1845f2" Name="E11 52587  Abbot point proof vertical aerial June 2011">
+        <Image>
+          <FileRef Name="Data\Textures\E11 52587  Abbot point proof vertical aerial June 2011.JPG" />
+        </Image>
+      </TextureMaterial>
       <ColorMaterial Id="f1632370-606a-4df8-96fa-1d4dce157844" Color="ffffff" />
       <TextureMaterial Id="e2abf469-d1de-4042-88d6-8bd18d36b13d" Name="CCEP13007-SKE-M-0002_A-page-001">
         <Image>
@@ -50572,26 +50796,6 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
       <ColorMaterial Id="39b2b05e-61a4-4335-a661-cf80e65b4a7f" Color="696969" />
       <ColorMaterial Id="d1ae78ec-efad-4346-bee5-7c6a0add95ca" Color="d3d3d3" />
       <ColorMaterial Id="43245657-e453-4d20-8aa1-7570e786d557" Color="808080" />
-      <TextureMaterial Id="b51f0d8b-4d83-47a7-9b1e-42d5381f859b" Name="AbbotPointStockpile">
-        <Image>
-          <FileRef Name="Data\Textures\AbbotPointStockpile.png" />
-        </Image>
-      </TextureMaterial>
-      <TextureMaterial Id="09d938ab-b5c5-4eb8-acbe-77ca6337fc75" Name="AbbotPointBerth1">
-        <Image>
-          <FileRef Name="Data\Textures\AbbotPointBerth1.png" />
-        </Image>
-      </TextureMaterial>
-      <TextureMaterial Id="dc41b21d-5def-44c3-8cc4-ac0e61e133a2" Name="AbbotpointBalloon">
-        <Image>
-          <FileRef Name="Data\Textures\AbbotpointBalloon.png" />
-        </Image>
-      </TextureMaterial>
-      <TextureMaterial Id="d41e3185-9fbf-4c43-9037-e9eb5261c235" Name="AbbotPointBerth2">
-        <Image>
-          <FileRef Name="Data\Textures\AbbotPointBerth2.png" />
-        </Image>
-      </TextureMaterial>
       <ColorMaterial Id="1c0c1136-486c-4f37-a8d6-c198450015db" Color="c0c0c0" />
       <ColorMaterial Id="4c137238-0a10-4aea-92cf-0d8d5815c3a1" Color="696969" />
       <TextureMaterial Id="b1ccf372-8ea8-45c9-b0a6-3f354dead194" Name="SketchupTexture">
@@ -50612,6 +50816,26 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
       <TextureMaterial Id="268e2cef-ffcb-4c04-bc2c-a672faffee2a" Name="SERVER">
         <Image>
           <FileRef Name="Data\Textures\SERVER.jpg" />
+        </Image>
+      </TextureMaterial>
+      <TextureMaterial Id="d41e3185-9fbf-4c43-9037-e9eb5261c235" Name="AbbotPointBerth2">
+        <Image>
+          <FileRef Name="Data\Textures\AbbotPointBerth2.png" />
+        </Image>
+      </TextureMaterial>
+      <TextureMaterial Id="09d938ab-b5c5-4eb8-acbe-77ca6337fc75" Name="AbbotPointBerth1">
+        <Image>
+          <FileRef Name="Data\Textures\AbbotPointBerth1.png" />
+        </Image>
+      </TextureMaterial>
+      <TextureMaterial Id="b51f0d8b-4d83-47a7-9b1e-42d5381f859b" Name="AbbotPointStockpile">
+        <Image>
+          <FileRef Name="Data\Textures\AbbotPointStockpile.png" />
+        </Image>
+      </TextureMaterial>
+      <TextureMaterial Id="dc41b21d-5def-44c3-8cc4-ac0e61e133a2" Name="AbbotpointBalloon">
+        <Image>
+          <FileRef Name="Data\Textures\AbbotpointBalloon.png" />
         </Image>
       </TextureMaterial>
       <TextureMaterial Id="6f5ef915-3da8-44b2-bc8c-3e489c722f43" Name="ARROW2">
@@ -53260,4 +53484,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- ogF8S8YMKsV7vNkWWgYenvUQ8izpAzxFe/R7tSiUc98QS0kW02D5H3gq9v1ZUYYTgHq4A+Egof3PxzP7O1Evog== -->
+<!-- I+AmAnswZI5XUNdi+5e6ViDUWG2pS4bdzpnEMMgo+XN2ymBAFMG4q9u0WXAKikz2Sq0X4axLWi3yduQP5ukDZw== -->
