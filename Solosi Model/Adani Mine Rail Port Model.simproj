@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-17T01:19:11" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-17T02:41:26" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,7 +9,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="100" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="1000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
         <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
@@ -314,8 +314,8 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="49.2283250454927 865.770961216518 -198.252763183874" Direction="0 -1 2.22044604925031E-16" Zoom="865.770961216518" />
-          <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Nodes="False" Background="ffdead" />
+          <Camera Orientation="Top" Location="47.6598491546875 865.770935058597 -197.293319075346" Direction="0 -1 2.22044604925031E-16" Zoom="865.770935058597" />
+          <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </Facility>
         <Process>
           <Categories>
@@ -445,7 +445,7 @@
         </OperationalPlanningResourceGantt>
         <OperationalFacility>
           <Camera Orientation="Top" Location="5.80455236347258 83.5295230397518 -19.7217412975566" Direction="0 -1 2.22044604925031E-16" Zoom="83.5295230397518" />
-          <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Nodes="False" Background="ffdead" />
+          <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </OperationalFacility>
       </ViewInfo>
     </Model>
@@ -643,30 +643,31 @@
             <Category Name="TrainSink AddOn Processes" Expanded="True" />
             <Category Name="UC_Stockpile AddOn Processes" Expanded="True" />
             <Category Name="WeatherShutdownSchedule AddOn Processes" Expanded="True" />
-            <Category Name="TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="LW2GenServer AddOn Processes" Expanded="True" />
             <Category Name="Output@Stockpile AddOn Processes" Expanded="True" />
-            <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
-            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="Conveyor Control Events" Expanded="True" />
             <Category Name="Raw Coal Events" Expanded="True" />
             <Category Name="LACGenServer AddOn Processes" Expanded="True" />
-            <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
             <Category Name="CPPWorkSchedule AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="TLOStockpileControl_Processes" Expanded="True" />
+            <Category Name="LW1GenServer AddOn Processes" Expanded="True" />
+            <Category Name="LAC_Feeder AddOn Processes" Expanded="True" />
+            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="TrainTransferNode1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="LW1GenServer AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="LAC_Feeder AddOn Processes" Expanded="True" />
+            <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="LWDevGenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -775,7 +776,7 @@
       </Icon>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-0.415588843827049 74.3737728327483 -6.73710162663975" Direction="0 -1 2.22044604925031E-16" Zoom="74.3737728327483" />
+          <Camera Orientation="Top" Location="-0.415588843827049 74.3737716674805 -6.73710162663975" Direction="0 -1 2.22044604925031E-16" Zoom="74.3737716674805" />
           <ObjectDisplay Background="ffffff" />
         </Facility>
         <Process>
@@ -913,36 +914,36 @@
       </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-75.5065470042343 443.007343446029 -91.6167259277942" Direction="0 -1 2.22044604925031E-16" Zoom="443.007343446029" />
+          <Camera Orientation="Top" Location="98.5833334651066 904.096642402743 -3.08795142308803" Direction="0 -1 2.22044604925031E-16" Zoom="904.096642402743" />
           <ObjectDisplay Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="TrainUnloader AddOn Processes" Expanded="True" />
-            <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
             <Category Name="ToLoad AddOn Processes" Expanded="True" />
-            <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
             <Category Name="Monitor1 AddOn Processes" Expanded="True" />
             <Category Name="SR1 AddOn Processes" Expanded="True" />
-            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="LoadFrom AddOn Processes" Expanded="True" />
             <Category Name="TrainDumper AddOn Processes" />
-            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
-            <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
             <Category Name="Loading Processes" Expanded="True" />
             <Category Name="ShipLoader AddOn Processes" />
             <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="SR2 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Berth1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Berth2 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
+            <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -1737,7 +1738,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="884" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="901" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -15102,7 +15103,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="945" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1001" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -16074,7 +16075,8 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">ShipEntity.NumberHatchChanges &gt; ShipEntity.HatchChangeCount</Property>
                 </Properties>
-                <Exit Name="True" Type="Primary" NextID="9" />
+                <Exit Name="True" Type="Primary" NextID="25" />
+                <Exit Name="False" Type="Alternate" NextID="35" />
               </Step>
               <Step Type="Delay" Name="Delay" ID="12">
                 <Properties>
@@ -16185,6 +16187,145 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="15" />
               </Step>
+              <Step Type="Decide" Name="LastHatchChange" ID="25">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">ShipEntity.NumberHatchChanges == ShipEntity.HatchChangeCount+1</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="32" />
+                <Exit Name="False" Type="Alternate" NextID="9" />
+              </Step>
+              <Step Type="Delay" Name="HatchChange" ID="26">
+                <Properties>
+                  <Property Name="DelayTime">ShipEntity.HatchChangeDelay</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="39" />
+              </Step>
+              <Step Type="Assign" Name="Rate" ID="27">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth1.FlowRegulator.CurrentMaximumFlowRate</Value>
+                  </Property>
+                  <Property Name="NewValue">ShipEntity.TrimmingRate</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="37" />
+              </Step>
+              <Step Type="Wait" Name="Trimming2Start" ID="28">
+                <Properties>
+                  <Property Name="EventName">ShipEntity.Trimming2.Event</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="40" />
+              </Step>
+              <Step Type="Assign" Name="BerthOff" ID="29">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth1.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="38" />
+              </Step>
+              <Step Type="Delay" Name="HatchChange" ID="30">
+                <Properties>
+                  <Property Name="DelayTime">ShipEntity.HatchChangeDelay</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="36" />
+              </Step>
+              <Step Type="Assign" Name="BerthOn" ID="31">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth1.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="10" />
+              </Step>
+              <Step Type="Wait" Name="Trimming1Start" ID="32">
+                <Properties>
+                  <Property Name="EventName">ShipEntity.Trimming1.Event</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="41" />
+              </Step>
+              <Step Type="Assign" Name="BerthOff" ID="33">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth1.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="27" />
+              </Step>
+              <Step Type="Assign" Name="BerthOn" ID="34">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth1.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="28" />
+              </Step>
+              <Step Type="Assign" Name="ShiploaderRate" ID="35">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth1.FlowRegulator.CurrentMaximumFlowRate</Value>
+                  </Property>
+                  <Property Name="NewValue">10000000</Property>
+                </Properties>
+              </Step>
+              <Step Type="Assign" Name="TrimmingTotal" ID="36">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.TrimmingDelayTotal</Value>
+                  </Property>
+                  <Property Name="NewValue">ShipEntity.TrimmingDelayTotal+(Run.TimeNow-ShipEntity.TrimmingStartTime)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="31" />
+              </Step>
+              <Step Type="Assign" Name="TrimmingStart" ID="37">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.TrimmingStartTime</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="26" />
+              </Step>
+              <Step Type="Assign" Name="TrimmingStart" ID="38">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.TrimmingStartTime</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="30" />
+              </Step>
+              <Step Type="Assign" Name="TrimmingTotal" ID="39">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.TrimmingDelayTotal</Value>
+                  </Property>
+                  <Property Name="NewValue">ShipEntity.TrimmingDelayTotal+(Run.TimeNow-ShipEntity.TrimmingStartTime)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="34" />
+              </Step>
+              <Step Type="Assign" Name="TrimTime" ID="40">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.T_StartTrimming2</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="29" />
+              </Step>
+              <Step Type="Assign" Name="TrimTime" ID="41">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.T_StartTrimming1</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="33" />
+              </Step>
             </Steps>
           </Process>
           <Process Name="Berth2_FillingContainer" BeginStepID="7" Category="Berth2 AddOn Processes">
@@ -16209,7 +16350,7 @@
                   <Property Name="ProcessName">ShipLoadingManager</Property>
                   <Property Name="TokenWaitAction">None (Continue)</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="14" />
+                <Exit Name="Exit" Type="Primary" NextID="13" />
               </Step>
               <Step Type="Assign" Name="Berth1Off" ID="4">
                 <Properties>
@@ -16252,7 +16393,8 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression"> ShipEntity.NumberHatchChanges&gt;ShipEntity.HatchChangeCount</Property>
                 </Properties>
-                <Exit Name="True" Type="Primary" NextID="12" />
+                <Exit Name="True" Type="Primary" NextID="25" />
+                <Exit Name="False" Type="Alternate" NextID="26" />
               </Step>
               <Step Type="Assign" Name="BerthOn" ID="10">
                 <Properties>
@@ -16291,13 +16433,13 @@
                 <Properties>
                   <Property Name="EventName">ShipEntity.NextHatchChange.Event</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="13" />
+                <Exit Name="Exit" Type="Primary" NextID="12" />
               </Step>
               <Step Type="Fire" Name="HatchChange" ID="15">
                 <Properties>
                   <Property Name="EventName">HatchChange</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
+                <Exit Name="Exit" Type="Primary" NextID="13" />
               </Step>
               <Step Type="Assign" Name="Blockedbyship" ID="16">
                 <Properties>
@@ -16377,6 +16519,145 @@
                   <Property Name="NewValue">Run.TimeNow</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="17" />
+              </Step>
+              <Step Type="Decide" Name="LastHatchChange" ID="25">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">ShipEntity.NumberHatchChanges == ShipEntity.HatchChangeCount+1</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="27" />
+                <Exit Name="False" Type="Alternate" NextID="14" />
+              </Step>
+              <Step Type="Assign" Name="ShiploaderRate" ID="26">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth2.FlowRegulator.CurrentMaximumFlowRate</Value>
+                  </Property>
+                  <Property Name="NewValue">10000000</Property>
+                </Properties>
+              </Step>
+              <Step Type="Wait" Name="Trimming1Start" ID="27">
+                <Properties>
+                  <Property Name="EventName">ShipEntity.Trimming1.Event</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="40" />
+              </Step>
+              <Step Type="Assign" Name="BerthOff" ID="28">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth2.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="29" />
+              </Step>
+              <Step Type="Assign" Name="Rate" ID="29">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth2.FlowRegulator.CurrentMaximumFlowRate</Value>
+                  </Property>
+                  <Property Name="NewValue">ShipEntity.TrimmingRate</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="36" />
+              </Step>
+              <Step Type="Delay" Name="HatchChange" ID="30">
+                <Properties>
+                  <Property Name="DelayTime">ShipEntity.HatchChangeDelay</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="37" />
+              </Step>
+              <Step Type="Assign" Name="BerthOn" ID="31">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth2.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="32" />
+              </Step>
+              <Step Type="Wait" Name="Trimming2Start" ID="32">
+                <Properties>
+                  <Property Name="EventName">ShipEntity.Trimming2.Event</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="41" />
+              </Step>
+              <Step Type="Assign" Name="BerthOff" ID="33">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth2.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="39" />
+              </Step>
+              <Step Type="Delay" Name="HatchChange" ID="34">
+                <Properties>
+                  <Property Name="DelayTime">ShipEntity.HatchChangeDelay</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="38" />
+              </Step>
+              <Step Type="Assign" Name="BerthOn" ID="35">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>FlowInput@Berth2.FlowRegulator.Enabled</Value>
+                  </Property>
+                  <Property Name="NewValue">1</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Assign" Name="TrimmingStart" ID="36">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.TrimmingStartTime</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="30" />
+              </Step>
+              <Step Type="Assign" Name="Total" ID="37">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.TrimmingDelayTotal</Value>
+                  </Property>
+                  <Property Name="NewValue">ShipEntity.TrimmingDelayTotal+(Run.TimeNow-ShipEntity.TrimmingStartTime)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="31" />
+              </Step>
+              <Step Type="Assign" Name="Total" ID="38">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.TrimmingDelayTotal</Value>
+                  </Property>
+                  <Property Name="NewValue">ShipEntity.TrimmingDelayTotal+(Run.TimeNow-ShipEntity.TrimmingStartTime)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="35" />
+              </Step>
+              <Step Type="Assign" Name="TrimmingStart" ID="39">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.TrimmingStartTime</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="34" />
+              </Step>
+              <Step Type="Assign" Name="TrimTime" ID="40">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.T_StartTrimming1</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="28" />
+              </Step>
+              <Step Type="Assign" Name="TrimTime" ID="41">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.T_StartTrimming2</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="33" />
               </Step>
             </Steps>
           </Process>
@@ -21497,7 +21778,7 @@
               </SymbolInstances>
             </Graphics>
           </Transporter>
-          <Fixed Name="ShiploaderReliability" Type="Resource" Location="8.29357828934871 -4.66293670342566E-15 -180.756738004414" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
+          <Fixed Name="ShiploaderReliability" Type="Resource" Location="8.29357828934871 -4.66293670342566E-15 -180.713511036881" Size="1.99999996042496 0.982517352249853 0.597747117262177" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
               <IndexedSize Size="1.99999996042496 0.982517352249853 0.597747117262177" />
@@ -21651,9 +21932,9 @@
               </AttachedObjects>
             </Graphics>
           </Entity>
-          <Fixed Name="ShipGenerator1" Type="ShipGenerator" Location="4.27985620313505 -5.77315972805081E-14 -324.414240693534" Size="4.14132007233273 3.03372513562387 2.01252392801819" Scope="Public">
+          <Fixed Name="ShipGenerator1" Type="ShipGenerator" Location="4.27985620313505 -5.77315972805081E-14 -324.352487882773" Size="4.14132007233273 3.03372513562387 2.01252392801819" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@ShipGenerator1" Type="TransferNode" Location="6.89679493883806 -5.77315972805081E-14 -324.379571585318" Scope="Public">
+              <Node Name="Output@ShipGenerator1" Type="TransferNode" Location="6.89679493883806 -5.77315972805081E-14 -324.317818774557" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -21694,6 +21975,8 @@
                     <Property Name="LoadingDelay">Random.Uniform(0,12)</Property>
                     <Property Name="NumberHatchChanges">10</Property>
                     <Property Name="HatchChangeDelay" Units="Minutes">15</Property>
+                    <Property Name="TrimmingAmount">1000</Property>
+                    <Property Name="TrimmingRate">3500</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
@@ -21703,6 +21986,8 @@
                     <Property Name="LoadingDelay">Random.Uniform(0,5)</Property>
                     <Property Name="NumberHatchChanges">21</Property>
                     <Property Name="HatchChangeDelay" Units="Minutes">15</Property>
+                    <Property Name="TrimmingAmount">1000</Property>
+                    <Property Name="TrimmingRate">3500</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
@@ -21712,6 +21997,8 @@
                     <Property Name="LoadingDelay">4.3</Property>
                     <Property Name="NumberHatchChanges">28</Property>
                     <Property Name="HatchChangeDelay" Units="Minutes">10</Property>
+                    <Property Name="TrimmingAmount">1000</Property>
+                    <Property Name="TrimmingRate">3500</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
@@ -21721,6 +22008,8 @@
                     <Property Name="LoadingDelay">4.3</Property>
                     <Property Name="NumberHatchChanges">28</Property>
                     <Property Name="HatchChangeDelay" Units="Minutes">10</Property>
+                    <Property Name="TrimmingAmount">1500</Property>
+                    <Property Name="TrimmingRate">3500</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
@@ -21730,6 +22019,8 @@
                     <Property Name="LoadingDelay">4.3</Property>
                     <Property Name="NumberHatchChanges">28</Property>
                     <Property Name="HatchChangeDelay" Units="Minutes">10</Property>
+                    <Property Name="TrimmingAmount">1500</Property>
+                    <Property Name="TrimmingRate">3500</Property>
                   </Properties>
                 </Rows>
               </Property>
@@ -21743,11 +22034,11 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="34 35">
-                <FloorLabel Center="2.53985553685224 -5.6843418860808E-14 -320.844466625264" Width="4.94318777703563" Height="3.51472710737971" Text="&lt;b&gt;Ship Generator&lt;/b&gt;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, Math.Round(ProductionTable[1].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ShipAmountGenerated/1000, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2,ProductionTable[2].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].ShipAmountGenerated/1000,0), &quot;THIS DIDNT WORK&quot;)}" />
+                <FloorLabel Center="2.53985553685224 -5.6843418860808E-14 -320.78271381419" Width="4.94318777703563" Height="3.51472710737971" Text="&lt;b&gt;Ship Generator&lt;/b&gt;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, Math.Round(ProductionTable[1].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ShipAmountGenerated/1000, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2,ProductionTable[2].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].ShipAmountGenerated/1000,0), &quot;THIS DIDNT WORK&quot;)}" />
                 <Queue Queue="OutputBuffer.Contents" Alignment="Inline">
                   <Points>
-                    <Point Location="6.40240146834525 -5.77315972805081E-14 -326.865235483958" />
-                    <Point Location="-11.3214350284797 -5.77315972805081E-14 -330.971484532834" />
+                    <Point Location="6.40240146834525 -5.77315972805081E-14 -326.803482672884" />
+                    <Point Location="-11.3214350284797 -5.77315972805081E-14 -330.90973172176" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -23364,7 +23655,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <EntityDefinition Name="ShipEntity" Id="a4bd7d4c-271b-46c4-a317-347c5fa5036f" Revision="34" BaseClass="ContainerEntity" Author="Sales and Support" CheckBaseForAdvancedProperties="True">
+      <EntityDefinition Name="ShipEntity" Id="a4bd7d4c-271b-46c4-a317-347c5fa5036f" Revision="38" BaseClass="ContainerEntity" Author="Sales and Support" CheckBaseForAdvancedProperties="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Flow Storage Logic" Description="Flow Storage Logic" />
@@ -23406,6 +23697,12 @@
           <DiscreteState Name="HatchChangeDelay" />
           <DiscreteState Name="TotalLoadingDelays" />
           <DiscreteState Name="StartHatchChangeTime" />
+          <DiscreteState Name="TrimmingAmount" />
+          <DiscreteState Name="TrimmingRate" />
+          <DiscreteState Name="TrimmingStartTime" />
+          <DiscreteState Name="TrimmingDelayTotal" />
+          <DateTimeState Name="T_StartTrimming1" />
+          <DateTimeState Name="T_StartTrimming2" />
         </States>
         <Events />
         <Elements>
@@ -23427,6 +23724,22 @@
               <Property Name="MonitorType">CrossingStateChange</Property>
               <Property Name="InitialThresholdValue">0</Property>
               <Property Name="TriggeredProcessName">ShipFullMonitor_TriggeredProcessName</Property>
+            </Properties>
+          </Element>
+          <Element Type="Monitor" Name="Trimming1" Scope="Public">
+            <Properties>
+              <Property Name="StateVariableName">
+                <Value>FlowContainer.Contents.Weight</Value>
+              </Property>
+              <Property Name="MonitorType">CrossingStateChange</Property>
+            </Properties>
+          </Element>
+          <Element Type="Monitor" Name="Trimming2" Scope="Public">
+            <Properties>
+              <Property Name="StateVariableName">
+                <Value>FlowContainer.Contents.Weight</Value>
+              </Property>
+              <Property Name="MonitorType">CrossingStateChange</Property>
             </Properties>
           </Element>
         </Elements>
@@ -23531,6 +23844,24 @@
                   </Property>
                   <Property Name="NewValue">FlowContainer.CurrentWeightCapacity-0.1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Assign" Name="Trimming" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Trimming1.CurrentThresholdValue</Value>
+                  </Property>
+                  <Property Name="NewValue">FlowContainer.CurrentWeightCapacity-ShipEntity.TrimmingAmount*2</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="14" />
+              </Step>
+              <Step Type="Assign" Name="Trimming" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Trimming2.CurrentThresholdValue</Value>
+                  </Property>
+                  <Property Name="NewValue">FlowContainer.CurrentWeightCapacity-ShipEntity.TrimmingAmount</Property>
+                </Properties>
               </Step>
             </Steps>
           </Process>
@@ -23570,7 +23901,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="350" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="383" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -23609,6 +23940,8 @@
               <ExpressionProperty Name="PostLoadingDelay" DefaultValue="0.5" NullString="null" UnitType="Time" />
               <IntegerProperty Name="NumberHatchChanges" DefaultValue="0" NullString="null" />
               <RealProperty Name="HatchChangeDelay" DefaultValue="0.0" NullString="null" UnitType="Time" />
+              <ExpressionProperty Name="TrimmingAmount" DefaultValue="0.0" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
+              <ExpressionProperty Name="TrimmingRate" DefaultValue="0.0" NullString="null" UnitType="WeightFlowRate" DefaultUnits="Metric Tons per Hour" />
               <Overrides />
             </PropertyDefinitions>
           </RepeatingProperty>
@@ -23888,6 +24221,25 @@
                     </Rows>
                   </Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="14" />
+              </Step>
+              <Step Type="Assign" Name="Trimming" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipToken.TrimmingRate</Value>
+                  </Property>
+                  <Property Name="NewValue">ShipTable.TrimmingRate</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>ShipToken.TrimmingAmount</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">ShipTable.TrimmingAmount</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
             </Steps>
@@ -24030,7 +24382,7 @@
                   </Property>
                   <Property Name="NewValue">ShipToken.ShipTypeString</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
+                <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
               <Step Type="Assign" Name="Hatches" ID="10">
                 <Properties>
@@ -24050,6 +24402,25 @@
                   </Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="8" />
+              </Step>
+              <Step Type="Assign" Name="Trimming" ID="11">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>ShipEntity.TrimmingRate</Value>
+                  </Property>
+                  <Property Name="NewValue">ShipToken.TrimmingRate</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>ShipEntity.TrimmingAmount</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">ShipToken.TrimmingAmount</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="10" />
               </Step>
             </Steps>
           </Process>
@@ -24099,6 +24470,8 @@
               <StringState Name="ShipTypeString" />
               <DiscreteState Name="HatchChangeDelay" />
               <IntegerState Name="NumberHatchChanges" />
+              <DiscreteState Name="TrimmingAmount" />
+              <DiscreteState Name="TrimmingRate" />
             </States>
           </Token>
         </Tokens>
@@ -24850,7 +25223,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1461" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1523" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -30017,7 +30390,7 @@
               <Step Type="0f716535-c1ef-4c87-88f6-59805466ef5b" ReadableType="Write" Name="ShipLog" ExclusionExpression="!WriteShipLogToFile" ID="5">
                 <Properties>
                   <Property Name="File">ShipLog</Property>
-                  <Property Name="Format">{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19}</Property>
+                  <Property Name="Format">{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20}</Property>
                   <Property Name="Items">
                     <Rows>
                       <Properties>
@@ -30051,6 +30424,12 @@
                         <Property Name="Expression">ShipEntity.T_BeginLoading</Property>
                       </Properties>
                       <Properties>
+                        <Property Name="Expression">ShipEntity.T_StartTrimming1</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">ShipEntity.T_StartTrimming2</Property>
+                      </Properties>
+                      <Properties>
                         <Property Name="Expression">ShipEntity.T_FinishedLoading</Property>
                       </Properties>
                       <Properties>
@@ -30079,6 +30458,9 @@
                       </Properties>
                       <Properties>
                         <Property Name="Expression">ShipEntity.HatchChangeCount</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">ShipEntity.TrimmingDelayTotal</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -30268,7 +30650,7 @@
               <Step Type="0f716535-c1ef-4c87-88f6-59805466ef5b" ReadableType="Write" Name="ShipLog" ExclusionExpression="!WriteShipLogToFile" ID="3">
                 <Properties>
                   <Property Name="File">ShipLog</Property>
-                  <Property Name="Format">{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19}</Property>
+                  <Property Name="Format">{0},{1},{2},{3},{4},{5},{6},{7},{8},{9},{10},{11},{12},{13},{14},{15},{16},{17},{18},{19},{20}</Property>
                   <Property Name="Items">
                     <Rows>
                       <Properties>
@@ -30302,6 +30684,12 @@
                         <Property Name="Expression">"BeginLoading"</Property>
                       </Properties>
                       <Properties>
+                        <Property Name="Expression">"Begin Trimming Pour 1"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Begin Trimming Pour 2"</Property>
+                      </Properties>
+                      <Properties>
                         <Property Name="Expression">"FinishedLoading"</Property>
                       </Properties>
                       <Properties>
@@ -30330,6 +30718,9 @@
                       </Properties>
                       <Properties>
                         <Property Name="Expression">"Number Hatch Changes"</Property>
+                      </Properties>
+                      <Properties>
+                        <Property Name="Expression">"Total Trimming Delays"</Property>
                       </Properties>
                     </Rows>
                   </Property>
@@ -33797,7 +34188,6 @@
               <Property Name="Stockpile1Capacity">150000000</Property>
               <Property Name="Stockpile2Capacity">150000000</Property>
               <Property Name="TLOBinSize">0</Property>
-              <Property Name="GenerateAnnualSummary">True</Property>
             </Properties>
             <Graphics EditsLocked="True" ExternallyVisible="True">
               <SymbolInstances>
@@ -33862,6 +34252,8 @@
                     <Property Name="PostLoadingDelay">Random.Triangular(0.5,1,1.5)</Property>
                     <Property Name="NumberHatchChanges">10</Property>
                     <Property Name="HatchChangeDelay" Units="Minutes">15</Property>
+                    <Property Name="TrimmingAmount">1000</Property>
+                    <Property Name="TrimmingRate">3500</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
@@ -33874,6 +34266,8 @@
                     <Property Name="PostLoadingDelay">Random.Triangular(0.5,1,1.5)</Property>
                     <Property Name="NumberHatchChanges">21</Property>
                     <Property Name="HatchChangeDelay" Units="Minutes">15</Property>
+                    <Property Name="TrimmingAmount">1000</Property>
+                    <Property Name="TrimmingRate">3500</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
@@ -33886,6 +34280,8 @@
                     <Property Name="PostLoadingDelay">Random.Triangular(0.5,1,1.5)</Property>
                     <Property Name="NumberHatchChanges">28</Property>
                     <Property Name="HatchChangeDelay" Units="Minutes">10</Property>
+                    <Property Name="TrimmingAmount">1000</Property>
+                    <Property Name="TrimmingRate">3500</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
@@ -33898,6 +34294,8 @@
                     <Property Name="PostLoadingDelay">Random.Triangular(0.5,1,1.5)</Property>
                     <Property Name="NumberHatchChanges">28</Property>
                     <Property Name="HatchChangeDelay" Units="Minutes">10</Property>
+                    <Property Name="TrimmingAmount">1500</Property>
+                    <Property Name="TrimmingRate">3500</Property>
                   </Properties>
                   <Properties>
                     <Property Name="ShipType">Ship</Property>
@@ -33910,6 +34308,8 @@
                     <Property Name="PostLoadingDelay">Random.Triangular(0.5,1,1.5)</Property>
                     <Property Name="NumberHatchChanges">28</Property>
                     <Property Name="HatchChangeDelay" Units="Minutes">10</Property>
+                    <Property Name="TrimmingAmount">1500</Property>
+                    <Property Name="TrimmingRate">3500</Property>
                   </Properties>
                 </Rows>
               </Property>
@@ -35989,7 +36389,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1461</Revision>
+        <Revision>1523</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -36005,7 +36405,7 @@
       </DefinitionRef>
       <DefinitionRef Name="ShipEntity">
         <Id>a4bd7d4c-271b-46c4-a317-347c5fa5036f</Id>
-        <Revision>34</Revision>
+        <Revision>38</Revision>
       </DefinitionRef>
       <DefinitionRef Name="Track">
         <Id>60506a88-f865-4039-8367-a618147627fe</Id>
@@ -36017,11 +36417,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>884</Revision>
+        <Revision>901</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>350</Revision>
+        <Revision>383</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -36037,7 +36437,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>945</Revision>
+        <Revision>1001</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -36117,7 +36517,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>297</Revision>
+        <Revision>298</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -42784,7 +43184,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="297" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="298" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -53484,4 +53884,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- I+AmAnswZI5XUNdi+5e6ViDUWG2pS4bdzpnEMMgo+XN2ymBAFMG4q9u0WXAKikz2Sq0X4axLWi3yduQP5ukDZw== -->
+<!-- qf9jXvV8qOBMJShuDeKC/BJSZimTU6snSS/QF3NF5HHqeHb9HoWSlttTfxQqjRJzIy/aI3Qazdm4EjkQYCLIzA== -->
