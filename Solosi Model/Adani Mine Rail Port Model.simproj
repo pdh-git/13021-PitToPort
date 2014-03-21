@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-21T06:29:38" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-21T06:49:21" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -145,7 +145,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="104.436755680821 945.541444116709 -203.753852580686" Direction="0 -1 2.22044604925031E-16" Zoom="945.541444116709" />
+          <Camera Orientation="Top" Location="35.1294479817849 945.541442871096 -208.45618378406" Direction="0 -1 2.22044604925031E-16" Zoom="945.541442871096" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -740,10 +740,6 @@
           <Property Name="LoadingDelay" Units="Hours">ShipEntity.LoadingDelay</Property>
           <Property Name="PreLoadingDelay" Units="Hours">ShipEntity.PreLoadingDelay</Property>
           <Property Name="PostLoadingDelay" Units="Hours">ShipEntity.PostLoadingDelay</Property>
-          <Property Name="ShiploaderUptimeBetweenFailures">Random.Exponential(5)</Property>
-          <Property Name="ShiploaderTimeToRepair" Units="Minutes">Random.LogNormal(2.2,0.472)</Property>
-          <Property Name="TrainDumperTimeToRepair" Units="Minutes">Math.Min(Random.Exponential(22), 360)</Property>
-          <Property Name="TrainDumperUptimeBetweenFailures">Random.LogNormal(1.3, 0.668)</Property>
         </Properties>
       </RunnableInstance>
       <InteractiveStatistics>
@@ -751,40 +747,39 @@
       </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="7.33327712960803 377.197261734073 -60.1699756350333" Direction="0 -1 2.22044604925031E-16" Zoom="377.197261734073" />
+          <Camera Orientation="Top" Location="10.2924439266825 264.0380859375 -14.8524914752471" Direction="0 -1 2.22044604925031E-16" Zoom="264.0380859375" />
           <ObjectDisplay Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="TrainUnloader AddOn Processes" Expanded="True" />
-            <Category Name="Berth1 AddOn Processes" Expanded="True" />
             <Category Name="Berth2 AddOn Processes" Expanded="True" />
             <Category Name="ToLoad AddOn Processes" Expanded="True" />
-            <Category Name="ShipLoader AddOn Processes" Expanded="True" />
             <Category Name="TrainDumper AddOn Processes" Expanded="True" />
             <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
-            <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
             <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
             <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
-            <Category Name="Loading Processes" Expanded="True" />
             <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
             <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
-            <Category Name="ChannelExit AddOn Processes" />
+            <Category Name="Group " />
+            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
+            <Category Name="SR1 AddOn Processes" />
+            <Category Name="Berth1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="ShipLoader AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Loading Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="SR2 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="SR1 AddOn Processes" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="LoadFrom AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
@@ -879,6 +874,10 @@
             <Category Name="Group " Expanded="True" />
           </Categories>
         </Process>
+        <OperationalFacility>
+          <Camera Orientation="Top" Location="1.81898940354586E-12 12.5 -1.81898940354586E-12" Direction="0 -1 2.22044604925031E-16" Zoom="12.5" />
+          <ObjectDisplay Background="ffffff" />
+        </OperationalFacility>
       </ViewInfo>
     </Model>
   </Models>
@@ -1590,7 +1589,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1087" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1089" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -15081,7 +15080,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1227" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1230" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -15176,14 +15175,14 @@
           <ElementProperty Name="ReadyToDepartProcess" Category="TimeStampProcessing" Required="False" NullString="null" Type="Process" />
           <ElementProperty Name="ReadyToLoadProcess" Category="TimeStampProcessing" Required="False" NullString="null" Type="Process" />
           <BooleanProperty Name="EnableShiploaderFailures" Category="Failure Properties" DefaultValue="True" NullString="null" />
-          <ExpressionProperty Name="ShiploaderUptimeBetweenFailures" Category="Failure Properties" DefaultValue="Random.Exponential(250)" NullString="null" UnitType="Time">
+          <ExpressionProperty Name="ShiploaderUptimeBetweenFailures" Category="Failure Properties" DefaultValue="Random.Exponential(5)" NullString="null" UnitType="Time">
             <Switch Property="EnableShiploaderFailures" Value="True" />
           </ExpressionProperty>
-          <ExpressionProperty Name="ShiploaderTimeToRepair" Category="Failure Properties" DefaultValue="Random.Triangular(1,2,8)" NullString="null" UnitType="Time">
+          <ExpressionProperty Name="ShiploaderTimeToRepair" Category="Failure Properties" DefaultValue="Random.LogNormal(2.2,0.472)" NullString="null" UnitType="Time" DefaultUnits="Minutes">
             <Switch Property="EnableShiploaderFailures" Value="True" />
           </ExpressionProperty>
-          <ExpressionProperty Name="TrainDumperTimeToRepair" Category="Failure Properties" DefaultValue="Random.Triangular(0.5,1.0,6)" NullString="null" UnitType="Time" />
-          <ExpressionProperty Name="TrainDumperUptimeBetweenFailures" Category="Failure Properties" DefaultValue="Random.Exponential(100)" NullString="null" UnitType="Time" />
+          <ExpressionProperty Name="TrainDumperUptimeBetweenFailures" Category="Failure Properties" DefaultValue="Random.LogNormal(1.3, 0.668)" NullString="null" UnitType="Time" />
+          <ExpressionProperty Name="TrainDumperTimeToRepair" Category="Failure Properties" DefaultValue="Math.Min(Random.Exponential(22), 360)" NullString="null" UnitType="Time" DefaultUnits="Minutes" />
           <RealProperty Name="RoundingThreshold" DefaultValue="1" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
           <ExpressionProperty Name="SurgeBinWeightCapacity" Category="Stockpile Properties" DefaultValue="1125" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
           <Overrides>
@@ -23654,7 +23653,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1813" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="1816" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -33048,7 +33047,6 @@
               <Property Name="FinishLoadingProcess">Port_FinishLoadingProcess</Property>
               <Property Name="ReadyToDepartProcess">Port_ReadyToDepartProcess</Property>
               <Property Name="ReadyToLoadProcess">Port_ReadyToLoadProcess</Property>
-              <Property Name="TrainDumperTimeToRepair">0</Property>
             </Properties>
             <Graphics EditsLocked="True">
               <SymbolInstances>
@@ -35443,7 +35441,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="562" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="563" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -36793,7 +36791,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>1813</Revision>
+        <Revision>1816</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -36821,11 +36819,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>1087</Revision>
+        <Revision>1089</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>562</Revision>
+        <Revision>563</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -36841,7 +36839,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1227</Revision>
+        <Revision>1230</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -36925,7 +36923,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>313</Revision>
+        <Revision>314</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -43596,7 +43594,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="313" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="314" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -54296,4 +54294,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- +YN4otcWYw+N/oXN2TFGZNiYs3DwN02e++tfU0NerHrVy6cFd7cFoGYeox6J13A19mzYFNKdizTDzEc6ggf8lA== -->
+<!-- 8aM7m4VUGaFzHerxFN8BntZ7DTPAEf+uKgtWDg67C1UJ/s9+X/8+txxHTiey+8Y81uIvxtXoQ8K1R0jokbt9qA== -->
