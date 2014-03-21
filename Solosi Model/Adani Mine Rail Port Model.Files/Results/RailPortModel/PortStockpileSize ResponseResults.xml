@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResponseResults Model="RailPortModel" Experiment="PortStockpileSize" FileVersion="94" xmlns="http://www.simio.com/projects/v1">
+  <Observations Scenario="Scenario1" Response="TonnesUnloaded">
+    <Observation Value="422560000" />
+    <Observation Value="422560000" />
+    <Observation Value="422560000" />
+    <Observation Value="422560000" />
+  </Observations>
+  <Observations Scenario="Scenario1" Response="TonnesShipped">
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+  </Observations>
+  <Observations Scenario="Scenario1" Response="MaxTrainCycleTime">
+    <Observation Value="29.6124438469794" />
+    <Observation Value="28.4314453078898" />
+    <Observation Value="28.4314453078898" />
+    <Observation Value="29.4442141993089" />
+  </Observations>
+  <Observations Scenario="Scenario1" Response="AveTrainCycleTime">
+    <Observation Value="24.9018590143241" />
+    <Observation Value="25.1302257350225" />
+    <Observation Value="25.2496759908718" />
+    <Observation Value="25.1947046075971" />
+  </Observations>
+  <Observations Scenario="Scenario2" Response="TonnesUnloaded">
+    <Observation Value="486320000" />
+    <Observation Value="486320000" />
+    <Observation Value="486320000" />
+    <Observation Value="486320000" />
+  </Observations>
+  <Observations Scenario="Scenario2" Response="TonnesShipped">
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+  </Observations>
+  <Observations Scenario="Scenario2" Response="MaxTrainCycleTime">
+    <Observation Value="29.6124438469794" />
+    <Observation Value="30.5811286463611" />
+    <Observation Value="28.4481119745565" />
+    <Observation Value="29.4442141993089" />
+  </Observations>
+  <Observations Scenario="Scenario2" Response="AveTrainCycleTime">
+    <Observation Value="24.7280705519863" />
+    <Observation Value="25.37632739191" />
+    <Observation Value="25.3078247567349" />
+    <Observation Value="25.2817545149234" />
+  </Observations>
+  <Observations Scenario="Scenario3" Response="TonnesUnloaded">
+    <Observation Value="550080000" />
+    <Observation Value="550080000" />
+    <Observation Value="550080000" />
+    <Observation Value="573840000" />
+  </Observations>
+  <Observations Scenario="Scenario3" Response="TonnesShipped">
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+  </Observations>
+  <Observations Scenario="Scenario3" Response="MaxTrainCycleTime">
+    <Observation Value="29.6124438469794" />
+    <Observation Value="30.5811286463611" />
+    <Observation Value="28.4481119745565" />
+    <Observation Value="100.307645737566" />
+  </Observations>
+  <Observations Scenario="Scenario3" Response="AveTrainCycleTime">
+    <Observation Value="24.8170537168633" />
+    <Observation Value="25.5728464230607" />
+    <Observation Value="25.140636583927" />
+    <Observation Value="34.3231305649207" />
+  </Observations>
+  <Observations Scenario="Scenario4" Response="TonnesUnloaded">
+    <Observation Value="613840000" />
+    <Observation Value="613840000" />
+    <Observation Value="613840000" />
+    <Observation Value="613840000" />
+  </Observations>
+  <Observations Scenario="Scenario4" Response="TonnesShipped">
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+  </Observations>
+  <Observations Scenario="Scenario4" Response="MaxTrainCycleTime">
+    <Observation Value="29.6457771803127" />
+    <Observation Value="30.5811286463611" />
+    <Observation Value="28.4147786412231" />
+    <Observation Value="102.848096361995" />
+  </Observations>
+  <Observations Scenario="Scenario4" Response="AveTrainCycleTime">
+    <Observation Value="24.7765386790587" />
+    <Observation Value="25.5423625326005" />
+    <Observation Value="25.1672519798739" />
+    <Observation Value="37.0850083148322" />
+  </Observations>
+  <Observations Scenario="Scenario5" Response="TonnesUnloaded">
+    <Observation Value="677600000" />
+    <Observation Value="677600000" />
+    <Observation Value="677600000" />
+    <Observation Value="677600000" />
+  </Observations>
+  <Observations Scenario="Scenario5" Response="TonnesShipped">
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+  </Observations>
+  <Observations Scenario="Scenario5" Response="MaxTrainCycleTime">
+    <Observation Value="29.6457771803127" />
+    <Observation Value="30.5811286463611" />
+    <Observation Value="28.4147786412231" />
+    <Observation Value="102.848096361995" />
+  </Observations>
+  <Observations Scenario="Scenario5" Response="AveTrainCycleTime">
+    <Observation Value="24.8030012521231" />
+    <Observation Value="25.5328549177556" />
+    <Observation Value="25.1879581151308" />
+    <Observation Value="41.3889269935813" />
+  </Observations>
+  <Observations Scenario="Scenario6" Response="TonnesUnloaded">
+    <Observation Value="741360000" />
+    <Observation Value="741360000" />
+    <Observation Value="741360000" />
+    <Observation Value="741360000" />
+  </Observations>
+  <Observations Scenario="Scenario6" Response="TonnesShipped">
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+    <Observation Value="0" />
+  </Observations>
+  <Observations Scenario="Scenario6" Response="MaxTrainCycleTime">
+    <Observation Value="29.6291105136461" />
+    <Observation Value="30.5811286463611" />
+    <Observation Value="28.4147786412231" />
+    <Observation Value="102.848096361995" />
+  </Observations>
+  <Observations Scenario="Scenario6" Response="AveTrainCycleTime">
+    <Observation Value="24.8148598084903" />
+    <Observation Value="25.3853053333246" />
+    <Observation Value="25.1948621634779" />
+    <Observation Value="39.8448447483687" />
+  </Observations>
+</ResponseResults>
