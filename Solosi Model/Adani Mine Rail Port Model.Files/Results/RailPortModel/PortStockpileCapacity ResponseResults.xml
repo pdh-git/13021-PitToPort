@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ResponseResults Model="RailPortModel" Experiment="Experiment1" FileVersion="94" xmlns="http://www.simio.com/projects/v1">
+<ResponseResults Model="RailPortModel" Experiment="PortStockpileCapacity" FileVersion="94" xmlns="http://www.simio.com/projects/v1">
   <Observations Scenario="Scenario1" Response="TonnesShipped">
     <Observation Value="32105999962.9006" />
     <Observation Value="31561999961.9007" />
