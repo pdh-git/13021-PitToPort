@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ResponseResults Model="RailPortModel" Experiment="MineStockpileCapacity" FileVersion="94" xmlns="http://www.simio.com/projects/v1">
   <Observations Scenario="150k Mine Stockpiles" Response="TonnesShipped">
-    <Observation Value="36214821419.6637" />
+    <Observation Value="35509999977.3007" />
   </Observations>
   <Observations Scenario="150k Mine Stockpiles" Response="TonnesUnloaded">
-    <Observation Value="36519120000.0004" />
+    <Observation Value="35640000000.0005" />
   </Observations>
   <Observations Scenario="150k Mine Stockpiles" Response="UGCSurgepileMax">
-    <Observation Value="367685304.234958" />
+    <Observation Value="324878940.960064" />
   </Observations>
   <Observations Scenario="150k Mine Stockpiles" Response="UGCSurgepileAve">
-    <Observation Value="45373884.4870972" />
+    <Observation Value="50843523.3006473" />
   </Observations>
   <Observations Scenario="150k Mine Stockpiles" Response="UGCProduction">
     <Observation Value="14954360903.0028" />
@@ -19,68 +19,33 @@
     <Observation Value="27968531780.2778" />
   </Observations>
   <Observations Scenario="150k Mine Stockpiles" Response="TrainCycleTime">
-    <Observation Value="30.2403792715403" />
+    <Observation Value="30.3745803847718" />
   </Observations>
-  <Observations Scenario="250k Mine Stockpiles" Response="TonnesShipped">
-    <Observation Value="35125250985.2908" />
-  </Observations>
-  <Observations Scenario="250k Mine Stockpiles" Response="TonnesUnloaded">
-    <Observation Value="35426160000.0003" />
-  </Observations>
-  <Observations Scenario="250k Mine Stockpiles" Response="UGCSurgepileMax">
-    <Observation Value="471825679.919729" />
-  </Observations>
-  <Observations Scenario="250k Mine Stockpiles" Response="UGCSurgepileAve">
-    <Observation Value="74650155.6564853" />
-  </Observations>
-  <Observations Scenario="250k Mine Stockpiles" Response="UGCProduction">
-    <Observation Value="14954360903.0028" />
-  </Observations>
-  <Observations Scenario="250k Mine Stockpiles" Response="OpenCutProduction">
-    <Observation Value="27968531780.2778" />
-  </Observations>
-  <Observations Scenario="250k Mine Stockpiles" Response="TrainCycleTime">
-    <Observation Value="30.3575194904318" />
-  </Observations>
-  <Observations Scenario="500k Mine Stockpiles" Response="TonnesShipped">
-    <Observation Value="36573928546.8298" />
-    <Observation Value="36958737874.9464" />
-  </Observations>
-  <Observations Scenario="500k Mine Stockpiles" Response="TonnesUnloaded">
-    <Observation Value="36899280000.0004" />
-    <Observation Value="37279440000.0002" />
-  </Observations>
-  <Observations Scenario="500k Mine Stockpiles" Response="UGCSurgepileMax">
-    <Observation Value="87536215.6012404" />
-    <Observation Value="121496193.448732" />
-  </Observations>
-  <Observations Scenario="500k Mine Stockpiles" Response="UGCSurgepileAve">
-    <Observation Value="5025274.32232259" />
-    <Observation Value="4632986.62039765" />
-  </Observations>
-  <Observations Scenario="500k Mine Stockpiles" Response="UGCProduction">
-    <Observation Value="14954360903.0028" />
-    <Observation Value="14954360903.0028" />
-  </Observations>
-  <Observations Scenario="500k Mine Stockpiles" Response="OpenCutProduction">
-    <Observation Value="27968531780.2778" />
-    <Observation Value="27968531780.2778" />
-  </Observations>
-  <Observations Scenario="500k Mine Stockpiles" Response="TrainCycleTime">
-    <Observation Value="30.1945394969136" />
-    <Observation Value="30.4785203889654" />
-  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="TonnesShipped" />
+  <Observations Scenario="250k Mine Stockpiles" Response="TonnesUnloaded" />
+  <Observations Scenario="250k Mine Stockpiles" Response="UGCSurgepileMax" />
+  <Observations Scenario="250k Mine Stockpiles" Response="UGCSurgepileAve" />
+  <Observations Scenario="250k Mine Stockpiles" Response="UGCProduction" />
+  <Observations Scenario="250k Mine Stockpiles" Response="OpenCutProduction" />
+  <Observations Scenario="250k Mine Stockpiles" Response="TrainCycleTime" />
+  <Observations Scenario="500k Mine Stockpiles" Response="TonnesShipped" />
+  <Observations Scenario="500k Mine Stockpiles" Response="TonnesUnloaded" />
+  <Observations Scenario="500k Mine Stockpiles" Response="UGCSurgepileMax" />
+  <Observations Scenario="500k Mine Stockpiles" Response="UGCSurgepileAve" />
+  <Observations Scenario="500k Mine Stockpiles" Response="UGCProduction" />
+  <Observations Scenario="500k Mine Stockpiles" Response="OpenCutProduction" />
+  <Observations Scenario="500k Mine Stockpiles" Response="TrainCycleTime" />
   <Observations Scenario="1mil Mine Stockpiles" Response="TonnesShipped">
-    <Observation Value="36279999975.601" />
+    <Observation Value="37809999975.1015" />
   </Observations>
   <Observations Scenario="1mil Mine Stockpiles" Response="TonnesUnloaded">
-    <Observation Value="36614160000.0003" />
+    <Observation Value="38063520000.0002" />
   </Observations>
   <Observations Scenario="1mil Mine Stockpiles" Response="UGCSurgepileMax">
-    <Observation Value="114034922.474269" />
+    <Observation Value="5220397.44722294" />
   </Observations>
   <Observations Scenario="1mil Mine Stockpiles" Response="UGCSurgepileAve">
-    <Observation Value="3749788.89678359" />
+    <Observation Value="1708348.45491519" />
   </Observations>
   <Observations Scenario="1mil Mine Stockpiles" Response="UGCProduction">
     <Observation Value="14954360903.0028" />
@@ -89,6 +54,6 @@
     <Observation Value="27968531780.2778" />
   </Observations>
   <Observations Scenario="1mil Mine Stockpiles" Response="TrainCycleTime">
-    <Observation Value="30.2723724903196" />
+    <Observation Value="30.2063922042218" />
   </Observations>
 </ResponseResults>
