@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-27T03:29:30" />
+  <DocumentInfo LicenseInfo="9:1" UserName="Sales and Support" Organization="Solosi Pty Ltd" SerialNumber="4106" SaveDate="2014-03-27T07:24:50" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -11,7 +11,7 @@
     <Model Definition="RailPortModel">
       <RunSetup AnimationInterval="1000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
-        <RunLength Units="Hours">8760</RunLength>
+        <RunLength Units="Hours">43800</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
       </RunSetup>
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -385,7 +385,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="235.026068099417 604.034631347659 -368.716137049789" Direction="0 -1 2.22044604925031E-16" Zoom="604.034631347659" />
+          <Camera Orientation="Top" Location="185.415600759767 295.976957397461 -290.350875832899" Direction="0 -1 2.22044604925031E-16" Zoom="295.976957397461" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -423,7 +423,7 @@
             <Category Name="Port AddOn Processes" Expanded="True" />
             <Category Name="Input@ShipExit AddOn Processes" Expanded="True" />
             <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
-            <Category Name="B1Entry AddOn Processes" />
+            <Category Name="B1Entry AddOn Processes" Expanded="True" />
             <Category Name="B2Entry AddOn Processes" Expanded="True" />
             <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
             <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
@@ -1016,47 +1016,44 @@
           <Property Name="PostLoadingDelay" Units="Hours">ShipEntity.PostLoadingDelay</Property>
         </Properties>
       </RunnableInstance>
-      <InteractiveStatistics>
-        <FileRef Name="Results\PortModelRev2\Interactive_Results.stats" />
-      </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-49.437420070957 110.139646820068 -6.78444808175464" Direction="0 -1 2.22044604925031E-16" Zoom="110.139646820068" />
+          <Camera Orientation="Top" Location="-6.66608635422604 26.4445295898438 -189.011973427541" Direction="0 -1 2.22044604925031E-16" Zoom="26.4445295898438" />
           <ObjectDisplay Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="TrainUnloader AddOn Processes" Expanded="True" />
-            <Category Name="SR1 AddOn Processes" />
             <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
-            <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
             <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
             <Category Name="Loading Processes" Expanded="True" />
             <Category Name="ToLoad AddOn Processes" Expanded="True" />
             <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
             <Category Name="TrainDumper AddOn Processes" Expanded="True" />
-            <Category Name="Berth2 AddOn Processes" Expanded="True" />
             <Category Name="Debalasting Processes" Expanded="True" />
             <Category Name="Ship Manager Processes" Expanded="True" />
             <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
-            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="LoadFrom AddOn Processes" Expanded="True" />
             <Category Name="ShipLoader AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="SR2 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
+            <Category Name="Berth1 AddOn Processes" Expanded="True" />
+            <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
+            <Category Name="SR1 AddOn Processes" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="Berth2 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Logging Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Berth1 AddOn Processes" Expanded="True" />
+            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -1875,7 +1872,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1260" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1262" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -15697,7 +15694,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1416" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1418" Author="Sales and Support" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -20848,7 +20845,6 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">TrainDumper.ResourceState==0</Property>
                 </Properties>
-                <Breakpoint Enabled="True" />
                 <Exit Name="True" Type="Primary" NextID="5" />
                 <Exit Name="False" Type="Alternate" NextID="3" />
               </Step>
@@ -20881,7 +20877,6 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Breakpoint Enabled="True" />
                 <Exit Name="Exit" Type="Primary" NextID="4" />
               </Step>
               <Step Type="Assign" Name="TrainDumper.Capacity==0" ID="6">
@@ -20901,7 +20896,6 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Breakpoint Enabled="True" />
               </Step>
             </Steps>
           </Process>
@@ -20977,7 +20971,7 @@
               <Step Type="Decide" Name="BerthsLocationFree" ID="2">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
-                  <Property Name="Expression">Berth1Location.Capacity.Remaining&gt;=1&amp;&amp;Berth2Location.Capacity.Remaining&gt;=1</Property>
+                  <Property Name="Expression">Berth1Location.Capacity.Remaining&gt;=1 &amp;&amp; Berth2Location.Capacity.Remaining&gt;=1</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="4" />
                 <Exit Name="False" Type="Alternate" NextID="3" />
@@ -24757,7 +24751,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2039" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2041" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -31101,7 +31095,7 @@
                   <Property Name="ProcessName">ShiploaderWeatherTTR</Property>
                   <Property Name="TokenWaitAction">None (Continue)</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="19" />
+                <Exit Name="Exit" Type="Primary" NextID="37" />
               </Step>
               <Step Type="Assign" Name="TrainDumper" ID="13">
                 <Properties>
@@ -31175,7 +31169,7 @@
                 <Properties>
                   <Property Name="DelayTime" Units="Minutes">Random.LogNormal(3.36, 1.24)</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="35" />
+                <Exit Name="Exit" Type="Primary" NextID="39" />
               </Step>
               <Step Type="Assign" Name="Berths0" ID="20">
                 <Properties>
@@ -31194,7 +31188,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="24" />
+                <Exit Name="Exit" Type="Primary" NextID="36" />
               </Step>
               <Step Type="Assign" Name="Berths0" ID="21">
                 <Properties>
@@ -31253,7 +31247,7 @@
                 <Properties>
                   <Property Name="DelayTime" Units="Minutes">Random.LogNormal(4.29,1.24)</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="25" />
+                <Exit Name="Exit" Type="Primary" NextID="38" />
               </Step>
               <Step Type="Assign" Name="ShiploaderCap1" ID="25">
                 <Properties>
@@ -31360,6 +31354,30 @@
                   <Property Name="NewValue">Port.PreviousDumperStateWeather</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="14" />
+              </Step>
+              <Step Type="Suspend" Name="PortMaintenance" ID="36">
+                <Properties>
+                  <Property Name="ProcessName">Port.Outloading_ScheduledMaintenance</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="24" />
+              </Step>
+              <Step Type="Suspend" Name="PortMaintenance" ID="37">
+                <Properties>
+                  <Property Name="ProcessName">Port.Outloading_ScheduledMaintenance</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="19" />
+              </Step>
+              <Step Type="Resume" Name="PortMaintenance" ID="38">
+                <Properties>
+                  <Property Name="ProcessName">Port.Outloading_ScheduledMaintenance</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="25" />
+              </Step>
+              <Step Type="Resume" Name="PortMaintenance" ID="39">
+                <Properties>
+                  <Property Name="ProcessName">Port.Outloading_ScheduledMaintenance</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="35" />
               </Step>
             </Steps>
           </Process>
@@ -37058,7 +37076,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="709" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="711" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -38408,7 +38426,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>2039</Revision>
+        <Revision>2041</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -38436,11 +38454,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>1260</Revision>
+        <Revision>1262</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>709</Revision>
+        <Revision>711</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -38456,7 +38474,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1416</Revision>
+        <Revision>1418</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -38540,7 +38558,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>330</Revision>
+        <Revision>331</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -45204,7 +45222,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="330" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="331" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -55911,4 +55929,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- xrgxX5CzhlJxox2+dHzweMUhY+KL+trvxGLBlCYoPid9GD1Psw6trTmQqM7hItehUrVLMeUPfhilkOAnQGrwOA== -->
+<!-- 75V6373sjD+YMCJCvYCUYbPJllZr4DCNPcklxLklurZGDBcM1/HwKGzj1LsjLuHv7Rs9KJi1PS596zQBhsDq/A== -->
