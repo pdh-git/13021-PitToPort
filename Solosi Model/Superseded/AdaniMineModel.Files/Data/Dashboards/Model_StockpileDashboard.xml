@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-AU">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <DataSource Name="Constraint Log" />
+    <DataSource Name="Interactive Results" />
+    <DataSource Name="Material Usage Log" />
+    <DataSource Name="Resource Capacity Log" />
+    <DataSource Name="Resource State Log" />
+    <DataSource Name="Resource Usage Log" />
+    <DataSource Name="State Observation Log" />
+    <DataSource Name="Table.HighAshInputSchedule" />
+    <DataSource Name="Table.LowAshInputSchedule" />
+    <DataSource Name="Table.UnderGroundCoalInputSchedule" />
+    <DataSource Name="Tally Observation Log" />
+    <DataSource Name="Transporter Usage Log" />
+  </DataSources>
+  <Items>
+    <RangeFilter UniqueName="Range Filter 1" DataSource="Tally Observation Log">
+      <DataItems>
+        <Dimension DataMember="Time" DateTimeGroupInterval="MonthYear" UniqueName="DataItem0" />
+        <Measure DataMember="Value" SummaryType="Average" UniqueName="DataItem1" />
+      </DataItems>
+      <Argument UniqueName="DataItem0" />
+      <Series>
+        <Simple SeriesType="Line">
+          <Value UniqueName="DataItem1" />
+        </Simple>
+      </Series>
+    </RangeFilter>
+    <Chart UniqueName="Chart 1" DataSource="Tally Observation Log">
+      <DataItems>
+        <Dimension DataMember="DataSource" UniqueName="DataItem0" />
+        <Measure DataMember="Value" UniqueName="DataItem1" />
+      </DataItems>
+      <Arguments>
+        <Argument UniqueName="DataItem0" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value UniqueName="DataItem1" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+      <ChartLegend />
+      <AxisX />
+    </Chart>
+    <Card UniqueName="Cards 1" DataSource="Tally Observation Log">
+      <DataItems>
+        <Dimension DataMember="DataSource" UniqueName="DataItem0" />
+        <Measure DataMember="Value" SummaryType="Max" UniqueName="DataItem2" />
+        <Measure DataMember="Value" SummaryType="Average" UniqueName="DataItem1" />
+      </DataItems>
+      <InteractivityOptions IsMasterFilter="true" />
+      <SeriesDimensions>
+        <SeriesDimension UniqueName="DataItem0" />
+      </SeriesDimensions>
+      <Card>
+        <ActualValue UniqueName="DataItem1" />
+        <DeltaOptions />
+      </Card>
+      <Card>
+        <ActualValue UniqueName="DataItem2" />
+        <DeltaOptions />
+      </Card>
+    </Card>
+  </Items>
+  <Layout>
+    <LayoutItem Name="Range Filter 1" Left="0" Top="0" Right="1" Bottom="0.23245109321058688" />
+    <LayoutItem Name="Chart 1" Left="0.21812349639133921" Top="0.23245109321058688" Right="1" Bottom="1" />
+    <LayoutItem Name="Cards 1" Left="0" Top="0.23245109321058688" Right="0.21812349639133921" Bottom="1" />
+  </Layout>
+</Dashboard>

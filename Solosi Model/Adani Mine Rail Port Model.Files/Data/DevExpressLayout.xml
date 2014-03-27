@@ -33,10 +33,10 @@
       <property name="Location">@1,X=0@1,Y=0</property>
       <property name="IsFloating">false</property>
       <property name="TypeName">Document</property>
-      <property name="Name">Ship Table Original</property>
-      <property name="IsActive">false</property>
+      <property name="Name">ShipTableOriginal</property>
+      <property name="IsActive">true</property>
       <property name="Index">1</property>
-      <property name="IsSelected">false</property>
+      <property name="IsSelected">true</property>
       <property name="ParentName">DocumentGroup0</property>
       <property name="Pinned">false</property>
       <property name="Properties" isnull="true" iskey="true" />
@@ -47,10 +47,10 @@
       <property name="Location">@1,X=0@1,Y=0</property>
       <property name="IsFloating">false</property>
       <property name="TypeName">Document</property>
-      <property name="Name">Ship Table</property>
-      <property name="IsActive">true</property>
+      <property name="Name">ShipTable</property>
+      <property name="IsActive">false</property>
       <property name="Index">2</property>
-      <property name="IsSelected">true</property>
+      <property name="IsSelected">false</property>
       <property name="ParentName">DocumentGroup0</property>
       <property name="Pinned">false</property>
       <property name="Properties" isnull="true" iskey="true" />
@@ -60,7 +60,7 @@
       <property name="Index">0</property>
       <property name="Name">DocumentGroup0</property>
       <property name="TypeName">DocumentGroup</property>
-      <property name="Length">888</property>
+      <property name="Length">1281</property>
       <property name="Properties" isnull="true" iskey="true" />
     </property>
   </property>
