@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" UserName="Sales and Support" Organization="Solosi Pty Ltd" SerialNumber="4106" SaveDate="2014-03-27T07:24:50" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-03-28T04:01:26" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,9 +9,9 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="1000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="10" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
-        <RunLength Units="Hours">43800</RunLength>
+        <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
       </RunSetup>
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -63,6 +63,7 @@
                 <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="EnableTideConstraints">False</Property>
+                <Property Name="TrainSize" Units="Kilograms">23760</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario2" ReplicationsRequired="4">
@@ -75,6 +76,7 @@
                 <Property Name="EnableTideConstraints">False</Property>
                 <Property Name="EastUGCStockpileSize">400000</Property>
                 <Property Name="WestLACStockpileSize">400000</Property>
+                <Property Name="TrainSize" Units="Kilograms">23760</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario3" ReplicationsRequired="4">
@@ -87,6 +89,7 @@
                 <Property Name="EnableTideConstraints">False</Property>
                 <Property Name="EastUGCStockpileSize">450000</Property>
                 <Property Name="WestLACStockpileSize">450000</Property>
+                <Property Name="TrainSize" Units="Kilograms">23760</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario4" ReplicationsRequired="4">
@@ -99,6 +102,7 @@
                 <Property Name="EnableTideConstraints">False</Property>
                 <Property Name="EastUGCStockpileSize">500000</Property>
                 <Property Name="WestLACStockpileSize">500000</Property>
+                <Property Name="TrainSize" Units="Kilograms">23760</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario5" ReplicationsRequired="4">
@@ -111,6 +115,7 @@
                 <Property Name="EnableTideConstraints">False</Property>
                 <Property Name="EastUGCStockpileSize">550000</Property>
                 <Property Name="WestLACStockpileSize">550000</Property>
+                <Property Name="TrainSize" Units="Kilograms">23760</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario6" ReplicationsRequired="4">
@@ -123,6 +128,7 @@
                 <Property Name="EnableTideConstraints">False</Property>
                 <Property Name="EastUGCStockpileSize">600000</Property>
                 <Property Name="WestLACStockpileSize">600000</Property>
+                <Property Name="TrainSize" Units="Kilograms">23760</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -163,6 +169,7 @@
             <Control Name="MineStockpile1UGCCapacity" />
             <Control Name="MineStockpile2LACCapacity" />
             <Control Name="WriteHourlyPortStockpile" />
+            <Control Name="TrainSize" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTimeAve" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -233,6 +240,7 @@
                 <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="EnableTideConstraints">False</Property>
+                <Property Name="TrainSize" Units="Kilograms">23760</Property>
               </Properties>
             </Scenario>
             <Scenario Name="250k Mine Stockpiles">
@@ -245,6 +253,7 @@
                 <Property Name="EnableTideConstraints">False</Property>
                 <Property Name="MineStockpile1UGCCapacity">250000</Property>
                 <Property Name="MineStockpile2LACCapacity">250000</Property>
+                <Property Name="TrainSize" Units="Kilograms">23760</Property>
               </Properties>
             </Scenario>
             <Scenario Name="500k Mine Stockpiles">
@@ -257,6 +266,7 @@
                 <Property Name="EnableTideConstraints">False</Property>
                 <Property Name="MineStockpile1UGCCapacity">500000</Property>
                 <Property Name="MineStockpile2LACCapacity">500000</Property>
+                <Property Name="TrainSize" Units="Kilograms">23760</Property>
               </Properties>
             </Scenario>
             <Scenario Name="1mil Mine Stockpiles" ReplicationsCompleted="1">
@@ -269,6 +279,7 @@
                 <Property Name="EnableTideConstraints">False</Property>
                 <Property Name="MineStockpile1UGCCapacity">1000000</Property>
                 <Property Name="MineStockpile2LACCapacity">1000000</Property>
+                <Property Name="TrainSize" Units="Kilograms">23760</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -309,6 +320,7 @@
             <Control Name="MineStockpile1UGCCapacity" />
             <Control Name="MineStockpile2LACCapacity" />
             <Control Name="WriteHourlyPortStockpile" />
+            <Control Name="TrainSize" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTime" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -385,7 +397,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="185.415600759767 295.976957397461 -290.350875832899" Direction="0 -1 2.22044604925031E-16" Zoom="295.976957397461" />
+          <Camera Orientation="Top" Location="256.821764409686 514.303495742531 -224.747580430077" Direction="0 -1 2.22044604925031E-16" Zoom="514.303495742531" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -1016,47 +1028,50 @@
           <Property Name="PostLoadingDelay" Units="Hours">ShipEntity.PostLoadingDelay</Property>
         </Properties>
       </RunnableInstance>
+      <InteractiveStatistics>
+        <FileRef Name="Results\PortModelRev2\Interactive_Results.stats" />
+      </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-6.66608635422604 26.4445295898438 -189.011973427541" Direction="0 -1 2.22044604925031E-16" Zoom="26.4445295898438" />
+          <Camera Orientation="Top" Location="-37.8645935638254 157.342360249066 -18.7648942116745" Direction="0 -1 2.22044604925031E-16" Zoom="157.342360249066" />
           <ObjectDisplay Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="TrainUnloader AddOn Processes" Expanded="True" />
-            <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
             <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
-            <Category Name="Loading Processes" Expanded="True" />
             <Category Name="ToLoad AddOn Processes" Expanded="True" />
             <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
             <Category Name="TrainDumper AddOn Processes" Expanded="True" />
-            <Category Name="Debalasting Processes" Expanded="True" />
             <Category Name="Ship Manager Processes" Expanded="True" />
             <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
             <Category Name="LoadFrom AddOn Processes" Expanded="True" />
             <Category Name="ShipLoader AddOn Processes" Expanded="True" />
             <Category Name="SR2 AddOn Processes" Expanded="True" />
-            <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
             <Category Name="Berth1 AddOn Processes" Expanded="True" />
             <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
-            <Category Name="SR1 AddOn Processes" />
             <Category Name="Group " Expanded="True" />
             <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
+            <Category Name="Logging Processes" Expanded="True" />
+            <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Loading Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Debalasting Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="SR1 AddOn Processes" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Berth2 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Logging Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="ChannelExit AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -1872,7 +1887,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1262" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1274" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -15694,7 +15709,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1418" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1430" Author="Sales and Support" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -20899,7 +20914,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="InloadingScheduledMaintenance" BeginStepID="2">
+          <Process Name="Inloading_ScheduledMaintenance" BeginStepID="2">
             <Properties>
               <Property Name="TriggeringEventName">ScheduledMaintenance_Interval.Event</Property>
             </Properties>
@@ -24751,7 +24766,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2041" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2054" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -24827,6 +24842,7 @@
           <ExpressionProperty Name="MineStockpile1UGCCapacity" DefaultValue="150000" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
           <ExpressionProperty Name="MineStockpile2LACCapacity" DefaultValue="150000" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
           <BooleanProperty Name="WriteHourlyPortStockpile" Category="Logging Properties" DefaultValue="False" NullString="null" />
+          <ExpressionProperty Name="TrainSize" DefaultValue="23760" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
           <Overrides>
             <Override Name="ReportStatistics" Visible="False" />
             <Override Name="ParentCostCenter" Visible="False" />
@@ -25118,6 +25134,12 @@
           <Element Type="517f0463-a69a-49c0-aa8f-830a8c3a9ff9" ReadableType="File" Name="PortStockpileHourly" Scope="Public">
             <Properties>
               <Property Name="FilePath">PortStockpileHourly.csv</Property>
+            </Properties>
+          </Element>
+          <Element Type="Timer" Name="Debugger" Scope="Public">
+            <Properties>
+              <Property Name="TimeOffset">43413.74825</Property>
+              <Property Name="TimeInterval">100000</Property>
             </Properties>
           </Element>
         </Elements>
@@ -26155,7 +26177,6 @@
                 <Properties>
                   <Property Name="DelayTime">PortPostUnloadingDelay</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
               <Step Type="Assign" Name="Postloading" ID="8">
                 <Properties>
@@ -26164,17 +26185,9 @@
                   </Property>
                   <Property Name="NewValue">6</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="10" />
+                <Exit Name="Exit" Type="Primary" NextID="9" />
               </Step>
-              <Step Type="Assign" Name="DumperBlocked" ID="9">
-                <Properties>
-                  <Property Name="StateVariableName">
-                    <Value>Port.DumperStates</Value>
-                  </Property>
-                  <Property Name="NewValue">9</Property>
-                </Properties>
-              </Step>
-              <Step Type="Fire" Name="Re_SearchProductAllocations" ID="10">
+              <Step Type="Fire" Name="Re_SearchProductAllocations" ID="9">
                 <Properties>
                   <Property Name="EventName">Re_SearchProductAllocations</Property>
                 </Properties>
@@ -28564,7 +28577,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="PortSig4_Entered" BeginStepID="2" Category="PortSig4 AddOn Processes">
+          <Process Name="PortSig4_Entered" BeginStepID="6" Category="PortSig4 AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Seize" Name="PortSig4" ID="2">
@@ -28589,6 +28602,39 @@
                     </Rows>
                   </Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Assign" Name="DumperBlocked" ID="4">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">9</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
+              </Step>
+              <Step Type="Assign" Name="DumperIdle" ID="5">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>Port.DumperStates</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="IsMaintenance" ID="6">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Port.DumperStates != 7&amp;&amp; Port.DumperStates!= 8 &amp;&amp;Port.DumperStates!= 10&amp;&amp; Port.DumperStates != 11</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="4" />
+                <Exit Name="False" Type="Alternate" NextID="2" />
+              </Step>
+              <Step Type="Decide" Name="IsMaintenance" ID="7">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Port.DumperStates != 7&amp;&amp; Port.DumperStates!= 8 &amp;&amp;Port.DumperStates!= 10&amp;&amp; Port.DumperStates != 11</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="5" />
               </Step>
             </Steps>
           </Process>
@@ -28693,7 +28739,7 @@
                   <Property Name="StateVariableName">
                     <Value>T1.CurrentTravelerCapacity</Value>
                   </Property>
-                  <Property Name="NewValue">0</Property>
+                  <Property Name="NewValue">1</Property>
                   <Property Name="Assignments">
                     <Rows>
                       <Properties>
@@ -28770,7 +28816,7 @@
                   <Property Name="StateVariableName">
                     <Value>T1.CurrentTravelerCapacity</Value>
                   </Property>
-                  <Property Name="NewValue">0</Property>
+                  <Property Name="NewValue">1</Property>
                   <Property Name="Assignments">
                     <Rows>
                       <Properties>
@@ -31084,18 +31130,18 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="21" />
               </Step>
-              <Step Type="Delay" Name="TimeToRepair" ID="11">
+              <Step Type="Delay" Name="TrainTTR" ID="11">
                 <Properties>
-                  <Property Name="DelayTime" Units="Minutes">Random.LogNormal(4.36, 1.24)</Property>
+                  <Property Name="DelayTime" Units="Minutes">Random.LogNormal(3.36, 1.24)</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="13" />
+                <Exit Name="Exit" Type="Primary" NextID="41" />
               </Step>
               <Step Type="Execute" Name="ShiploaderWeatherTTR" ID="12">
                 <Properties>
                   <Property Name="ProcessName">ShiploaderWeatherTTR</Property>
                   <Property Name="TokenWaitAction">None (Continue)</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="37" />
+                <Exit Name="Exit" Type="Primary" NextID="19" />
               </Step>
               <Step Type="Assign" Name="TrainDumper" ID="13">
                 <Properties>
@@ -31169,7 +31215,7 @@
                 <Properties>
                   <Property Name="DelayTime" Units="Minutes">Random.LogNormal(3.36, 1.24)</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="39" />
+                <Exit Name="Exit" Type="Primary" NextID="40" />
               </Step>
               <Step Type="Assign" Name="Berths0" ID="20">
                 <Properties>
@@ -31207,7 +31253,7 @@
                     </Rows>
                   </Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="12" />
+                <Exit Name="Exit" Type="Primary" NextID="37" />
               </Step>
               <Step Type="Assign" Name="BerthStates" ID="22">
                 <Properties>
@@ -31335,7 +31381,7 @@
                 <Properties>
                   <Property Name="MessageContent">"FailedDumper"</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="11" />
+                <Exit Name="Exit" Type="Primary" NextID="42" />
               </Step>
               <Step Type="Assign" Name="DumperStates" ID="34">
                 <Properties>
@@ -31365,7 +31411,7 @@
                 <Properties>
                   <Property Name="ProcessName">Port.Outloading_ScheduledMaintenance</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="19" />
+                <Exit Name="Exit" Type="Primary" NextID="39" />
               </Step>
               <Step Type="Resume" Name="PortMaintenance" ID="38">
                 <Properties>
@@ -31373,11 +31419,29 @@
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="25" />
               </Step>
-              <Step Type="Resume" Name="PortMaintenance" ID="39">
+              <Step Type="Suspend" Name="PortMaintenance" ID="39">
                 <Properties>
-                  <Property Name="ProcessName">Port.Outloading_ScheduledMaintenance</Property>
+                  <Property Name="ProcessName">Port.Inloading_ScheduledMaintenance</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="12" />
+              </Step>
+              <Step Type="Resume" Name="PortMaintenance" ID="40">
+                <Properties>
+                  <Property Name="ProcessName">Port.Inloading_ScheduledMaintenance</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="35" />
+              </Step>
+              <Step Type="Resume" Name="PortMaintenance" ID="41">
+                <Properties>
+                  <Property Name="ProcessName">Port.Inloading_ScheduledMaintenance</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Suspend" Name="PortMaintenance" ID="42">
+                <Properties>
+                  <Property Name="ProcessName">Port.Inloading_ScheduledMaintenance</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="11" />
               </Step>
             </Steps>
           </Process>
@@ -31388,7 +31452,7 @@
                 <Properties>
                   <Property Name="DelayTime" Units="Minutes">Random.LogNormal(4.29,1.24)</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="3" />
+                <Exit Name="Exit" Type="Primary" NextID="7" />
               </Step>
               <Step Type="Assign" Name="Shiploader" ID="3">
                 <Properties>
@@ -31434,6 +31498,12 @@
                   </Property>
                   <Property Name="NewValue">Port.ShiploaderPreviousStateWeather</Property>
                 </Properties>
+              </Step>
+              <Step Type="Resume" Name="PortMaintenance" ID="7">
+                <Properties>
+                  <Property Name="ProcessName">Port.Outloading_ScheduledMaintenance</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
             </Steps>
           </Process>
@@ -31558,6 +31628,18 @@
               </Step>
             </Steps>
           </Process>
+          <Process Name="Process1" BeginStepID="2">
+            <Properties>
+              <Property Name="TriggeringEventName">Debugger.Event</Property>
+            </Properties>
+            <Steps>
+              <Step Type="Notify" Name="Me" ID="2">
+                <Properties>
+                  <Property Name="MessageContent">"Disbroke"</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
         </Processes>
         <Objects>
           <Entity Name="LACRequest" Type="RequestEntity" Location="498.450112937064 5.68295410730002E-14 197.373459966045" Size="0.5 0.5 0.25" Scope="Public">
@@ -31647,7 +31729,7 @@
               <Property Name="DisplayName">"Train "+String.FromReal(TrainEntity.Population.Index)</Property>
               <Property Name="Destroyable">False</Property>
               <Property Name="CapacityUnitType">Weight</Property>
-              <Property Name="InitialWeightCapacity" Units="Metric Tons">23760</Property>
+              <Property Name="InitialWeightCapacity" Units="Metric Tons">TrainSize</Property>
               <Property Name="EnableFailures">EnableTrainFailures</Property>
               <Property Name="DistanceToNextFailure">DistanceToNextFailure</Property>
               <Property Name="TimeToRepair">TimeToRepair</Property>
@@ -33860,7 +33942,7 @@
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="TrackResource" Type="Resource" Location="221.30861416494 -2.39808173319033E-14 -147.436614364244" Size="11.3252708384551 5.56363766894629 3.38482406492725" Scope="Public">
+          <Fixed Name="TrackResource" Type="Resource" Location="221.30861416494 -3.06421554796542E-14 -147.334198501667" Size="11.3252708384551 5.56363766894629 3.38482406492725" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="11.3252708384551 5.56363766894629 3.38482406492725" />
               <IndexedSize Size="11.3252708384551 5.56363766894629 3.38482406492725" />
@@ -33942,7 +34024,7 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="59">
-                <Pie Center="221.157647325033 3.5527136788005E-15 -115.978118239914" Width="81.0155178033446" Height="51.1769719503258" ExternallyVisible="True" Title="Track Resource" ListState="ResourceState" TextScale="5" />
+                <Pie Center="221.157647325033 -3.10862446895044E-15 -115.875702380215" Width="81.0155178033446" Height="51.1769719503258" ExternallyVisible="True" Title="Track Resource" ListState="ResourceState" TextScale="5" />
               </AttachedObjects>
             </Graphics>
           </Fixed>
@@ -34399,7 +34481,7 @@
           </Fixed>
           <Fixed Name="Port" Type="PortModelRev2" Location="117.706889313805 -4.37705427458468E-14 -332.927656387851" Size="178.260110244247 294.204242401963 1.00951098320057" Scope="Public">
             <AssociatedNodes>
-              <Node Name="TrainOutput@Port" Type="TransferNode" Location="144.525491454396 -4.39925873507718E-14 -241.794272726358" Scope="Public">
+              <Node Name="TrainOutput@Port" Type="TransferNode" Location="144.475307681733 -4.39925873507718E-14 -241.794272726358" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34644,7 +34726,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="PortSig4" Type="BasicNode" Location="128.203871503937 -4.21884752018646E-15 -222.476559015825" Scope="Public">
+          <Node Name="PortSig4" Type="BasicNode" Location="128.132180400133 -4.21884752018646E-15 -222.374143153248" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34774,7 +34856,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="PortTrainOutput" Type="TransferNode" Location="144.430835688448 -4.21884787076996E-15 -241.894857080146" Scope="Public">
+          <Node Name="PortTrainOutput" Type="TransferNode" Location="144.418786564632 -4.21884787076996E-15 -241.894857080146" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34785,7 +34867,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="MineTrainOutput" Type="TransferNode" Location="1.4345061396319 4.52693432286226E-14 150.393645721783" Scope="Public">
+          <Node Name="MineTrainOutput" Type="TransferNode" Location="1.4345061396319 4.52693432286226E-14 150.407797069998" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -34796,7 +34878,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="MineTrainInput" Type="BasicNode" Location="3.27028777321577 4.52693432286226E-14 152.811436486238" Scope="Public">
+          <Node Name="MineTrainInput" Type="BasicNode" Location="3.27028777321577 4.52693432286226E-14 152.825587834453" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -36385,7 +36467,7 @@
           <FloorLabel Center="-257.410166802191 0 -45.1355125463386" Width="62.2892195408502" Height="35.3847896531753" ExternallyVisible="True" BackColor="00ffffff" Text="Operating Train Cycle Time(h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_RailOperatingCycleTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_RailOperatingCycleTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_RailOperatingCycleTime.Minimum,2)}" />
           <FloorLabel Center="-103.531957896254 0 -319.834815761707" Width="78.4793331046146" Height="44.9650271524661" ExternallyVisible="True" BackColor="00ffffff" Text="Total Time In Port (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Minimum,2)}" />
           <FloorLabel Center="-102.172605823308 0 -368.454563403584" Width="78.4793331046147" Height="44.4064553865969" ExternallyVisible="True" BackColor="00ffffff" Text="Total Time In Berth (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Minimum,2)}" />
-          <FloorLabel Center="-104.167405362353 0 -271.817618754618" Width="78.4793331046147" Height="44.6857412695314" ExternallyVisible="True" BackColor="00ffffff" Text="Total Ship Loading Time (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Minimum,2)}" />
+          <FloorLabel Center="-104.167405362353 0 -270.947098286299" Width="78.4793331046147" Height="44.6857412695314" ExternallyVisible="True" BackColor="00ffffff" Text="Total Ship Loading Time (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalLoadingTime.Minimum,2)}" />
           <FloorLabel Center="77.8594966591903 0 16.6783382299295" Width="34.053667422221" Height="19.3711855467383" ExternallyVisible="True" BackColor="dcdcdc" Text="&lt;b&gt;Contents (t):&lt;/b&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Math.Round(Train[1].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Math.Round(Train[2].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Math.Round(Train[3].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Math.Round(Train[4].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Math.Round(Train[5].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Math.Round(Train[6].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Math.Round(Train[7].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Math.Round(Train[8].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Math.Round(Train[9].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Math.Round(Train[10].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Math.Round(Train[11].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Math.Round(Train[12].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Math.Round(Train[13].FlowContainer.Contents.Weight/1000,0), 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Math.Round(Train[14].FlowContainer.Contents.Weight/1000,0), 0)}" />
           <FloorLabel Center="114.410981374952 0 16.9159171156205" Width="34.4164281128971" Height="19.8833641436747" ExternallyVisible="True" BackColor="dcdcdc" Text="&lt;B&gt;Distance Travelled (km)&lt;/B&gt;&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;0, Train[1].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;1, Train[2].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;2, Train[3].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;3, Train[4].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;4, Train[5].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;5, Train[6].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;6, Train[7].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;7, Train[8].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;8, Train[9].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;9, Train[10].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;10, Train[11].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;11, Train[12].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;12, Train[13].DistanceTravelled/1000, 0)}&#xD;&#xA;{Math.If(Train.Population.NumberInSystem &gt;13, Train[14].DistanceTravelled/1000, 0)}" />
           <FloorLabel Center="-228.749080519848 -21.4395720370339 -439.923225992126" Width="281.07087022994" Height="62.1669202030562" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Port Model" />
@@ -36521,7 +36603,7 @@
           <FloorLabel Center="193.718394322455 0 175.442062934694" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" BackColor="00ffffff" Text="Optional ROM Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.Optional_ROMPAD.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_OP_ROMContents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_OP_ROMContents.Maximum/1000,0)}&#xD;&#xA;" />
           <FloorLabel Center="352.665980734406 0 106.481647813653" Width="75.1919253003478" Height="14.621703731461" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="11" Text="Stockpiles" />
           <FloorLabel Center="-232.975793923802 0 -208.324428821385" Width="95.9096159298234" Height="65.3763107093709" ExternallyVisible="True" BackColor="00ffffff" Text="Total Stockpile Contents:&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Port.Hourly_TotalPortStockpile.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Port.Hourly_TotalPortStockpile.Maximum/1000,0)}&#xD;&#xA;" />
-          <Pie Center="426.567131595858 0 -425.776006515273" Width="89.0635054761923" Height="58.8162623114767" ExternallyVisible="True" Title="ShiploaderStates" Look="Chameleon" ListState="Port.ShiploaderStates" TextScale="5" />
+          <Pie Center="426.567131595858 0 -425.56699455083" Width="89.0635054761923" Height="58.8162623114767" ExternallyVisible="True" Title="ShiploaderStates" Look="Chameleon" ListState="Port.ShiploaderStates" TextScale="5" />
           <Pie Center="426.241833795938 0 -363.826542072451" Width="89.0635054761923" Height="58.8162623114767" ExternallyVisible="True" Title="Berth States" Look="Nature Colors" ListState="Port.BerthStates" TextScale="5" />
           <FloorLabel Center="497.41165287935 0.582259175116974 -290.329088876289" Width="54.9871900387527" Height="56.4600612005065" ExternallyVisible="True" Locked="True" BackColor="00ffffff" Text="{Math.Round(Port.DumperStates.TotalTime(0),1)}&#xD;&#xA;{Math.Round(Port.DumperStates.TotalTime(1),1)}&#xD;&#xA;{Math.Round(Port.DumperStates.TotalTime(2),1)}&#xD;&#xA;{Math.Round(Port.DumperStates.TotalTime(3),1)}&#xD;&#xA;{Math.Round(Port.DumperStates.TotalTime(4),1)}&#xD;&#xA;{Math.Round(Port.DumperStates.TotalTime(5),1)}&#xD;&#xA;{Math.Round(Port.DumperStates.TotalTime(6),1)}&#xD;&#xA;{Math.Round(Port.DumperStates.TotalTime(7),1)}&#xD;&#xA;{Math.Round(Port.DumperStates.TotalTime(8),1)}&#xD;&#xA;{Math.Round(Port.DumperStates.TotalTime(9),1)}&#xD;&#xA;{Math.Round(Port.DumperStates.TotalTime(10),1)}&#xD;&#xA;{Math.Round(Port.DumperStates.TotalTime(11),1)}" />
           <FloorLabel Center="498.866409210714 0 -359.639737768714" Width="55.9691041465881" Height="42.4677851638585" ExternallyVisible="True" Locked="True" BackColor="00ffffff" Text="{Math.Round(Port.BerthStates.TotalTime(0),1)}&#xD;&#xA;{Math.Round(Port.BerthStates.TotalTime(1),1)}&#xD;&#xA;{Math.Round(Port.BerthStates.TotalTime(2),1)}&#xD;&#xA;{Math.Round(Port.BerthStates.TotalTime(3),1)}&#xD;&#xA;{Math.Round(Port.BerthStates.TotalTime(4),1)}&#xD;&#xA;{Math.Round(Port.BerthStates.TotalTime(5),1)}&#xD;&#xA;{Math.Round(Port.BerthStates.TotalTime(6),1)}&#xD;&#xA;{Math.Round(Port.BerthStates.TotalTime(7),1)}" />
@@ -37076,7 +37158,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="711" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="723" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -38426,7 +38508,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>2041</Revision>
+        <Revision>2054</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -38454,11 +38536,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>1262</Revision>
+        <Revision>1274</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>711</Revision>
+        <Revision>723</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -38474,7 +38556,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1418</Revision>
+        <Revision>1430</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -38558,7 +38640,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>331</Revision>
+        <Revision>332</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -45222,7 +45304,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="331" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="332" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -55929,4 +56011,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- 75V6373sjD+YMCJCvYCUYbPJllZr4DCNPcklxLklurZGDBcM1/HwKGzj1LsjLuHv7Rs9KJi1PS596zQBhsDq/A== -->
+<!-- sJTYZ1P4Mtmgn0LRjgbF5xnDdwEJwI5gWRou/qDSSXt6218tmTxTOb24h4Hr1+pBiPf2SrwNfleSJxAHhrFJaw== -->
