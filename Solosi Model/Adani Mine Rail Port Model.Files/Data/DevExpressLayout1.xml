@@ -20,9 +20,9 @@
       <property name="IsFloating">false</property>
       <property name="TypeName">Document</property>
       <property name="Name">BypassInputSchedule</property>
-      <property name="IsActive">false</property>
+      <property name="IsActive">true</property>
       <property name="Index">0</property>
-      <property name="IsSelected">false</property>
+      <property name="IsSelected">true</property>
       <property name="ParentName">DocumentGroup0</property>
       <property name="Pinned">false</property>
       <property name="Properties" isnull="true" iskey="true" />
@@ -117,10 +117,10 @@
       <property name="Location">@1,X=0@1,Y=0</property>
       <property name="IsFloating">false</property>
       <property name="TypeName">Document</property>
-      <property name="Name">Output Log</property>
-      <property name="IsActive">true</property>
+      <property name="Name">OutputLog</property>
+      <property name="IsActive">false</property>
       <property name="Index">7</property>
-      <property name="IsSelected">true</property>
+      <property name="IsSelected">false</property>
       <property name="ParentName">DocumentGroup0</property>
       <property name="Pinned">false</property>
       <property name="Properties" isnull="true" iskey="true" />
@@ -130,7 +130,7 @@
       <property name="Index">0</property>
       <property name="Name">DocumentGroup0</property>
       <property name="TypeName">DocumentGroup</property>
-      <property name="Length">1064</property>
+      <property name="Length">903</property>
       <property name="Properties" isnull="true" iskey="true" />
     </property>
   </property>
