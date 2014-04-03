@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-03T02:49:49" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-03T05:22:20" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,7 +9,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="10000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
+      <RunSetup AnimationInterval="100000" StatusMassUnits="Metric Tons" ReplicationNumber="1">
         <StartDate>2019-12-31T23:59:59</StartDate>
         <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
@@ -107,6 +107,7 @@
             <Control Name="LogTitle" />
             <Control Name="LogDescription" />
             <Control Name="InitialRequestTrainThreshold" />
+            <Control Name="Include0ValuesInBlockageTallies" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTime" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -316,6 +317,7 @@
             <Control Name="LogTitle" />
             <Control Name="LogDescription" />
             <Control Name="InitialRequestTrainThreshold" />
+            <Control Name="Include0ValuesInBlockageTallies" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTimeAve" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -483,6 +485,7 @@
             <Control Name="LogTitle" />
             <Control Name="LogDescription" />
             <Control Name="InitialRequestTrainThreshold" />
+            <Control Name="Include0ValuesInBlockageTallies" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTime" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -558,7 +561,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="39.1806853598311 962.892944335938 -203.31818538128" Direction="0 -1 2.22044604925031E-16" Zoom="962.892944335938" />
+          <Camera Orientation="Top" Location="52.5280124505663 962.892944335942 -209.103110627036" Direction="0 -1 2.22044604925031E-16" Zoom="962.892944335942" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -592,7 +595,7 @@
             <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
             <Category Name="Ship Queue Processes" Expanded="True" />
-            <Category Name="B1Exit AddOn Processes" />
+            <Category Name="B1Exit AddOn Processes" Expanded="True" />
             <Category Name="B2Exit AddOn Processes" Expanded="True" />
             <Category Name="Port AddOn Processes" Expanded="True" />
             <Category Name="Input@ShipExit AddOn Processes" Expanded="True" />
@@ -697,7 +700,7 @@
             </Table>
             <Table Name="PTPSummaryLogValues" FilterEnabled="True">
               <Columns>
-                <Column Name="Label" Width="197" />
+                <Column Name="Label" Width="202" />
                 <Column Name="Value" Width="295" />
               </Columns>
             </Table>
@@ -758,7 +761,6 @@
           <Categories>
             <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
             <Category Name="TrainLoader AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Output@TrainLoader AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -919,7 +921,7 @@
       </DashboardReports>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="89.6700624277872 107.740037389465 113.715831088651" Direction="0 -1 2.22044604925031E-16" Zoom="107.740037389465" />
+          <Camera Orientation="Top" Location="105.003175394069 36.9548323516846 102.988322539496" Direction="0 -1 2.22044604925031E-16" Zoom="36.9548323516846" />
           <ObjectDisplay Axis="False" Grid="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
@@ -928,39 +930,38 @@
             <Category Name="TrainSink AddOn Processes" Expanded="True" />
             <Category Name="UC_Stockpile AddOn Processes" Expanded="True" />
             <Category Name="WeatherShutdownSchedule AddOn Processes" Expanded="True" />
-            <Category Name="TLOStockpileControl_Processes" Expanded="True" />
             <Category Name="TrainLoadStation AddOn Processes" Expanded="True" />
-            <Category Name="LACGenServer AddOn Processes" Expanded="True" />
             <Category Name="LW1GenServer AddOn Processes" Expanded="True" />
             <Category Name="Raw Coal Events" Expanded="True" />
-            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
             <Category Name="Conveyor Control Events" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Output@Stockpile AddOn Processes" Expanded="True" />
             <Category Name="LAC_Feeder AddOn Processes" Expanded="True" />
             <Category Name="Stockpile2 AddOn Processes" />
-            <Category Name="HAC_Feeder AddOn Processes" Expanded="True" />
             <Category Name="CPPWorkSchedule AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Stockpile1 AddOn Processes" Expanded="True" />
+            <Category Name="LWDevGenServer AddOn Processes" Expanded="True" />
+            <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
+            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="TLOStockpileControl_Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="TrainTransferNode1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="LWDevGenServer AddOn Processes" Expanded="True" />
+            <Category Name="LACGenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
+            <Category Name="Output@Stockpile AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="HAC_Feeder AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="LW2GenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
@@ -1208,40 +1209,40 @@
       </InteractiveStatistics>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-37.8645935638254 157.342361450195 -18.7648942116745" Direction="0 -1 2.22044604925031E-16" Zoom="157.342361450195" />
+          <Camera Orientation="Top" Location="5.70543926760793 12.9578200375778 -189.137320348651" Direction="0 -1 2.22044604925031E-16" Zoom="12.9578200375778" />
           <ObjectDisplay Labels="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="TrainUnloader AddOn Processes" Expanded="True" />
-            <Category Name="ToLoad AddOn Processes" Expanded="True" />
             <Category Name="TrainDumper AddOn Processes" Expanded="True" />
-            <Category Name="Ship Manager Processes" Expanded="True" />
             <Category Name="LoadFrom AddOn Processes" Expanded="True" />
             <Category Name="ShipLoader AddOn Processes" Expanded="True" />
             <Category Name="SR2 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
+            <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
+            <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
+            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
+            <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
+            <Category Name="Berth1 AddOn Processes" Expanded="True" />
+            <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
+            <Category Name="Berth2 AddOn Processes" Expanded="True" />
+            <Category Name="Debalasting Processes" Expanded="True" />
+            <Category Name="ToLoad AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Ship Manager Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Logging Processes" Expanded="True" />
-            <Category Name="StackerReclaimerNodes AddOn Processes" Expanded="True" />
-            <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="SR1 AddOn Processes" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="ChannelExit AddOn Processes" Expanded="True" />
-            <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Berth1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="ShiploaderReliability AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Berth2 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Debalasting Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Loading Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -2062,7 +2063,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1310" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1342" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -15884,7 +15885,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1467" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1501" Author="Sales and Support" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -23929,7 +23930,7 @@
             </Properties>
             <Graphics />
           </Node>
-          <Node Name="InspectorEntry" Type="FlowNode" Location="-76.596677275916 0 -77.0166878433389" Scope="Public">
+          <Node Name="InspectorEntry" Type="FlowNode" Location="-76.596677275916 0 -77.0166830236987" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -24941,7 +24942,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2119" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2174" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -25025,6 +25026,7 @@
             <Switch Property="WritePTPSummary" Value="True" />
           </StringProperty>
           <RealProperty Name="InitialRequestTrainThreshold" Category="Rail Properties" DefaultValue="23760000" NullString="null" />
+          <BooleanProperty Name="Include0ValuesInBlockageTallies" Category="Rail Properties" DefaultValue="False" NullString="null" />
           <Overrides>
             <Override Name="ReportStatistics" Visible="False" />
             <Override Name="ParentCostCenter" Visible="False" />
@@ -25338,6 +25340,45 @@
             <Properties />
           </Element>
           <Element Type="TallyStatistic" Name="Tally_IdleTimeAtDumper" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_BlockedS1ToMine" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_BlockedS3ToMine" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_BlockedS5ToMine" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_BlockedS7ToMine" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_BlockedS9ToMine" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_BlockedS9ToPort" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_BlockedS7ToPort" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_BlockedS5ToPort" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_BlockedS3ToPort" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_BlockedS1ToPort" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_TrainMaintenance" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_LoadedTrainTotalSidingBlockedTime" Scope="Public">
+            <Properties />
+          </Element>
+          <Element Type="TallyStatistic" Name="Tally_EmptyTrainTotalSidingBlockedTime" Scope="Public">
             <Properties />
           </Element>
         </Elements>
@@ -25977,7 +26018,7 @@
                   <Property Name="TallyStatisticName">Tally_RailOperatingCycleTime</Property>
                   <Property Name="Value">(Run.TimeNow - TrainEntity.Time_TrainAllocated)-TrainEntity.TrackBlockedTotal</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="24" />
+                <Exit Name="Exit" Type="Primary" NextID="31" />
               </Step>
               <Step Type="Assign" Name="Time_TrainAllocated" ID="10">
                 <Properties>
@@ -26230,6 +26271,13 @@
                   <Property Name="NewValue">"No Product"</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="29" />
+              </Step>
+              <Step Type="Tally" Name="MaintenanceDelays" ID="31">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_TrainMaintenance</Property>
+                  <Property Name="Value">Run.TimeNow-TrainEntity.Time_ArriveTrainYard</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="24" />
               </Step>
             </Steps>
           </Process>
@@ -26751,7 +26799,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="TrainInput_Mine_Entered" BeginStepID="6" Category="TrainInput@DummyMine AddOn Processes">
+          <Process Name="TrainInput_Mine_Entered" BeginStepID="7" Category="TrainInput@DummyMine AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Assign" Name="Stamp_StartLoading" ID="2">
@@ -26790,6 +26838,22 @@
                   <Property Name="Value">Run.TimeNow-StartIdleAtTLO</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Tally" Name="TallySidingBlocked" ID="7">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_EmptyTrainTotalSidingBlockedTime</Property>
+                  <Property Name="Value">TrainEntity.TotalSidingBlockedTime</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="8" />
+              </Step>
+              <Step Type="Assign" Name="SidingBlocked0" ID="8">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
             </Steps>
           </Process>
@@ -26904,7 +26968,7 @@
                 <Properties>
                   <Property Name="ProcessName">RollingStockpileAllocationsNeg</Property>
                 </Properties>
-                <Exit Name="Exit" Type="Primary" NextID="6" />
+                <Exit Name="Exit" Type="Primary" NextID="16" />
               </Step>
               <Step Type="Tally" Name="IdleTime" ID="15">
                 <Properties>
@@ -26912,6 +26976,22 @@
                   <Property Name="Value">Run.TimeNOw - StartIdleAtDumper</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="8" />
+              </Step>
+              <Step Type="Tally" Name="TallySidingBlocked" ID="16">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_LoadedTrainTotalSidingBlockedTime</Property>
+                  <Property Name="Value">TrainEntity.TotalSidingBlockedTime</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="17" />
+              </Step>
+              <Step Type="Assign" Name="SidingBlocked0" ID="17">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">0</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
               </Step>
             </Steps>
           </Process>
@@ -26924,6 +27004,7 @@
                   <Property Name="Expression">TrainEntity.ToMine</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="13" />
+                <Exit Name="False" Type="Alternate" NextID="16" />
               </Step>
               <Step Type="Assign" Name="Blocked" ID="3">
                 <Properties>
@@ -26941,6 +27022,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="15" />
               </Step>
               <Step Type="Seize" Name="Next R_Side2" ID="5">
                 <Properties>
@@ -27026,7 +27108,65 @@
                 <Properties>
                   <Property Name="ProcessName">RailOutageCheck</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="14" />
+              </Step>
+              <Step Type="Assign" Name="QueueT1" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MQueueS1</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>TrainEntity.SidingBlockedStart</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Run.TimeNow</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="12" />
+              </Step>
+              <Step Type="Assign" Name="Exit1" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MExitS1</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="19" />
+              </Step>
+              <Step Type="Assign" Name="EnterP1" ID="16">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PEnter1</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+              </Step>
+              <Step Type="Tally" Name="Tally_BlockedS1ToMine" ID="17">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_BlockedS1ToMine</Property>
+                  <Property Name="Value">Run.TimeNow-TrainEntity.MQueueS1</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="TallyStop" ExclusionExpression="!Include0ValuesInBlockageTallies" ID="18">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Run.TimeNow-TrainEntity.MQueueS1&gt;(0.1/60)</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="17" />
+              </Step>
+              <Step Type="Assign" Name="AccumulateSidingBlocked" ID="19">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity.TotalSidingBlockedTime+(Run.TimeNow-TrainEntity.SidingBlockedStart)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="18" />
               </Step>
             </Steps>
           </Process>
@@ -27121,6 +27261,7 @@
                   <Property Name="Expression">TrainEntity.ToMine</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="14" />
+                <Exit Name="False" Type="Alternate" NextID="17" />
               </Step>
               <Step Type="Assign" Name="Blocked" ID="3">
                 <Properties>
@@ -27138,6 +27279,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="16" />
               </Step>
               <Step Type="Seize" Name="Next R_Side4" ID="5">
                 <Properties>
@@ -27238,7 +27380,65 @@
                 <Properties>
                   <Property Name="ProcessName">RailOutageCheck</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="15" />
+              </Step>
+              <Step Type="Assign" Name="QueueT3" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MQueueS3</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>TrainEntity.SidingBlockedStart</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Run.TimeNow</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="Exit3" ID="16">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MExitS3</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="20" />
+              </Step>
+              <Step Type="Assign" Name="EnterP3" ID="17">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PEnter3</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+              </Step>
+              <Step Type="Tally" Name="Tally_BlockedS1ToMine" ID="18">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_BlockedS3ToMine</Property>
+                  <Property Name="Value">Run.TimeNow-TrainEntity.MQueueS3</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="TallyStop" ExclusionExpression="!Include0ValuesInBlockageTallies" ID="19">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Run.TimeNow-TrainEntity.MQueueS3&gt;(0.1/60)</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="18" />
+              </Step>
+              <Step Type="Assign" Name="AccumulateSidingBlocked" ID="20">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity.TotalSidingBlockedTime+(Run.TimeNow-TrainEntity.SidingBlockedStart)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="19" />
               </Step>
             </Steps>
           </Process>
@@ -27333,6 +27533,7 @@
                   <Property Name="Expression">TrainEntity.ToMine</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="14" />
+                <Exit Name="False" Type="Alternate" NextID="17" />
               </Step>
               <Step Type="Assign" Name="Blocked" ID="3">
                 <Properties>
@@ -27350,6 +27551,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="16" />
               </Step>
               <Step Type="Release" Name="R_Side5" ID="5">
                 <Properties>
@@ -27450,7 +27652,65 @@
                 <Properties>
                   <Property Name="ProcessName">RailOutageCheck</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="15" />
+              </Step>
+              <Step Type="Assign" Name="QueueT5" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MQueueS5</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>TrainEntity.SidingBlockedStart</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Run.TimeNow</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="Exit5" ID="16">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MExitS5</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="20" />
+              </Step>
+              <Step Type="Assign" Name="EnterP5" ID="17">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PEnter5</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+              </Step>
+              <Step Type="Tally" Name="Tally_BlockedS1ToMine" ID="18">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_BlockedS5ToMine</Property>
+                  <Property Name="Value">Run.TimeNow-TrainEntity.MQueueS5</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="TallyStop" ExclusionExpression="!Include0ValuesInBlockageTallies" ID="19">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Run.TimeNow-TrainEntity.MQueueS5&gt;(0.1/60)</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="18" />
+              </Step>
+              <Step Type="Assign" Name="AccumulateSidingBlocked" ID="20">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity.TotalSidingBlockedTime+(Run.TimeNow-TrainEntity.SidingBlockedStart)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="19" />
               </Step>
             </Steps>
           </Process>
@@ -27462,6 +27722,7 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">TrainEntity.ToMine</Property>
                 </Properties>
+                <Exit Name="True" Type="Primary" NextID="17" />
                 <Exit Name="False" Type="Alternate" NextID="14" />
               </Step>
               <Step Type="Assign" Name="Blocked" ID="3">
@@ -27480,6 +27741,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="16" />
               </Step>
               <Step Type="Seize" Name="Next Main R_Main4" ID="5">
                 <Properties>
@@ -27580,7 +27842,65 @@
                 <Properties>
                   <Property Name="ProcessName">RailOutageCheck</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="15" />
+              </Step>
+              <Step Type="Assign" Name="QueueT5" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PQueue5</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>TrainEntity.SidingBlockedStart</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Run.TimeNow</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="ExitT5" ID="16">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PExit5</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="20" />
+              </Step>
+              <Step Type="Assign" Name="EnterT5" ID="17">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MEnterS5</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+              </Step>
+              <Step Type="Tally" Name="Tally_BlockedS5Port" ID="18">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_BlockedS5ToPort</Property>
+                  <Property Name="Value">Run.TimeNow-TrainEntity.PQueue5</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="TallyStop" ExclusionExpression="!Include0ValuesInBlockageTallies" ID="19">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Run.TimeNow-TrainEntity.PQueue5&gt;(0.1/60)</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="18" />
+              </Step>
+              <Step Type="Assign" Name="AccumulateSidingBlocked" ID="20">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity.TotalSidingBlockedTime+(Run.TimeNow-TrainEntity.SidingBlockedStart)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="19" />
               </Step>
             </Steps>
           </Process>
@@ -27674,6 +27994,7 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">TrainEntity.ToMine</Property>
                 </Properties>
+                <Exit Name="True" Type="Primary" NextID="17" />
                 <Exit Name="False" Type="Alternate" NextID="14" />
               </Step>
               <Step Type="Assign" Name="Blocked" ID="3">
@@ -27692,6 +28013,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="16" />
               </Step>
               <Step Type="Seize" Name="Next Main R_Main2" ID="5">
                 <Properties>
@@ -27792,7 +28114,65 @@
                 <Properties>
                   <Property Name="ProcessName">RailOutageCheck</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="15" />
+              </Step>
+              <Step Type="Assign" Name="QueueT3" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PQueue3</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>TrainEntity.SidingBlockedStart</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Run.TimeNow</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="ExitT3" ID="16">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PExit3</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="20" />
+              </Step>
+              <Step Type="Assign" Name="EnterT3" ID="17">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MEnterS3</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+              </Step>
+              <Step Type="Tally" Name="Tally_BlockedS3Port" ID="18">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_BlockedS3ToPort</Property>
+                  <Property Name="Value">Run.TimeNow-TrainEntity.PQueue3</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="TallyStop" ExclusionExpression="!Include0ValuesInBlockageTallies" ID="19">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Run.TimeNow-TrainEntity.PQueue3&gt;(0.1/60)</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="18" />
+              </Step>
+              <Step Type="Assign" Name="AccumulateSidingBlocked" ID="20">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity.TotalSidingBlockedTime+(Run.TimeNow-TrainEntity.SidingBlockedStart)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="19" />
               </Step>
             </Steps>
           </Process>
@@ -27886,6 +28266,7 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">TrainEntity.ToMine</Property>
                 </Properties>
+                <Exit Name="True" Type="Primary" NextID="15" />
                 <Exit Name="False" Type="Alternate" NextID="12" />
               </Step>
               <Step Type="Assign" Name="Blocked" ID="3">
@@ -27904,6 +28285,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="14" />
               </Step>
               <Step Type="Release" Name="Current R_Main1" ID="5">
                 <Properties>
@@ -27980,7 +28362,65 @@
                 <Properties>
                   <Property Name="ProcessName">RailOutageCheck</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Assign" Name="QueueT1" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PQueue1</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>TrainEntity.SidingBlockedStart</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Run.TimeNow</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="ExitT1" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PExit1</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="18" />
+              </Step>
+              <Step Type="Assign" Name="EnterT1" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MEnterS1</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+              </Step>
+              <Step Type="Tally" Name="Tally_BlockedS1Port" ID="16">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_BlockedS1ToPort</Property>
+                  <Property Name="Value">Run.TimeNow-TrainEntity.PQueue1</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="TallyStop" ExclusionExpression="!Include0ValuesInBlockageTallies" ID="17">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Run.TimeNow-TrainEntity.PQueue1&gt;(0.1/60)</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="16" />
+              </Step>
+              <Step Type="Assign" Name="AccumulateSidingBlocked" ID="18">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity.TotalSidingBlockedTime+(Run.TimeNow-TrainEntity.SidingBlockedStart)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="17" />
               </Step>
             </Steps>
           </Process>
@@ -28130,6 +28570,7 @@
                   <Property Name="Expression">TrainEntity.ToMine</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="14" />
+                <Exit Name="False" Type="Alternate" NextID="17" />
               </Step>
               <Step Type="Assign" Name="Blocked" ID="3">
                 <Properties>
@@ -28147,6 +28588,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="16" />
               </Step>
               <Step Type="Seize" Name="Next R_Side8" ID="5">
                 <Properties>
@@ -28247,7 +28689,65 @@
                 <Properties>
                   <Property Name="ProcessName">RailOutageCheck</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="15" />
+              </Step>
+              <Step Type="Assign" Name="QueueT7" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MQueueS7</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>TrainEntity.SidingBlockedStart</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Run.TimeNow</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="Exit7" ID="16">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MExitS7</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="20" />
+              </Step>
+              <Step Type="Assign" Name="EnterP7" ID="17">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PEnter7</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+              </Step>
+              <Step Type="Tally" Name="Tally_BlockedS7ToMine" ID="18">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_BlockedS7ToMine</Property>
+                  <Property Name="Value">Run.TimeNow-TrainEntity.MQueueS7</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="TallyStop" ExclusionExpression="!Include0ValuesInBlockageTallies" ID="19">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Run.TimeNow-TrainEntity.MQueueS7&gt;(0.1/60)</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="18" />
+              </Step>
+              <Step Type="Assign" Name="AccumulateSidingBlocked" ID="20">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity.TotalSidingBlockedTime+(Run.TimeNow-TrainEntity.SidingBlockedStart)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="19" />
               </Step>
             </Steps>
           </Process>
@@ -28423,6 +28923,7 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">TrainEntity.ToMine</Property>
                 </Properties>
+                <Exit Name="True" Type="Primary" NextID="17" />
                 <Exit Name="False" Type="Alternate" NextID="14" />
               </Step>
               <Step Type="Assign" Name="Blocked" ID="3">
@@ -28441,6 +28942,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="16" />
               </Step>
               <Step Type="Release" Name="Current R_Main7" ID="5">
                 <Properties>
@@ -28541,7 +29043,65 @@
                 <Properties>
                   <Property Name="ProcessName">RailOutageCheck</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="15" />
+              </Step>
+              <Step Type="Assign" Name="QueueT7" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PQueue7</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>TrainEntity.SidingBlockedStart</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Run.TimeNow</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="ExitT7" ID="16">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PExit7</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="20" />
+              </Step>
+              <Step Type="Assign" Name="EnterT7" ID="17">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MEnterS7</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+              </Step>
+              <Step Type="Tally" Name="Tally_BlockedS7Port" ID="18">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_BlockedS7ToPort</Property>
+                  <Property Name="Value">Run.TimeNow-TrainEntity.PQueue7</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="TallyStop" ExclusionExpression="!Include0ValuesInBlockageTallies" ID="19">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Run.TimeNow-TrainEntity.PQueue7&gt;(0.1/60)</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="18" />
+              </Step>
+              <Step Type="Assign" Name="AccumulateSidingBlocked" ID="20">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity.TotalSidingBlockedTime+(Run.TimeNow-TrainEntity.SidingBlockedStart)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="19" />
               </Step>
             </Steps>
           </Process>
@@ -28652,6 +29212,7 @@
                   <Property Name="Expression">TrainEntity.ToMine</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="12" />
+                <Exit Name="False" Type="Alternate" NextID="15" />
               </Step>
               <Step Type="Assign" Name="Blocked" ID="3">
                 <Properties>
@@ -28669,6 +29230,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="14" />
               </Step>
               <Step Type="Seize" Name="Next MineSig1" ID="5">
                 <Properties>
@@ -28745,7 +29307,65 @@
                 <Properties>
                   <Property Name="ProcessName">RailOutageCheck</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Assign" Name="QueueT9" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MQueueS9</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>TrainEntity.SidingBlockedStart</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Run.TimeNow</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="Exit9" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MExitS9</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="18" />
+              </Step>
+              <Step Type="Assign" Name="EnterP9" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PEnter9</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+              </Step>
+              <Step Type="Tally" Name="Tally_BlockedS9ToMine" ID="16">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_BlockedS9ToMine</Property>
+                  <Property Name="Value">Run.TimeNow-TrainEntity.MQueueS9</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="TallyStop" ExclusionExpression="!Include0ValuesInBlockageTallies" ID="17">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Run.TimeNow-TrainEntity.MQueueS9&gt;(0.1/60)</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="16" />
+              </Step>
+              <Step Type="Assign" Name="AccumulateSidingBlocked" ID="18">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity.TotalSidingBlockedTime+(Run.TimeNow-TrainEntity.SidingBlockedStart)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="17" />
               </Step>
             </Steps>
           </Process>
@@ -28757,6 +29377,7 @@
                   <Property Name="DecideType">ConditionBased</Property>
                   <Property Name="Expression">TrainEntity.ToMine</Property>
                 </Properties>
+                <Exit Name="True" Type="Primary" NextID="15" />
                 <Exit Name="False" Type="Alternate" NextID="12" />
               </Step>
               <Step Type="Assign" Name="Blocked" ID="3">
@@ -28775,6 +29396,7 @@
                   </Property>
                   <Property Name="NewValue">1</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="14" />
               </Step>
               <Step Type="Release" Name="Current R_Main9" ID="5">
                 <Properties>
@@ -28851,7 +29473,65 @@
                 <Properties>
                   <Property Name="ProcessName">RailOutageCheck</Property>
                 </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="13" />
+              </Step>
+              <Step Type="Assign" Name="QueueT9" ID="13">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PQueue9</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                  <Property Name="Assignments">
+                    <Rows>
+                      <Properties>
+                        <Property Name="AssignmentsStateVariableName">
+                          <Value>TrainEntity.SidingBlockedStart</Value>
+                        </Property>
+                        <Property Name="AssignmentsNewValue">Run.TimeNow</Property>
+                      </Properties>
+                    </Rows>
+                  </Property>
+                </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
+              </Step>
+              <Step Type="Assign" Name="ExitT9" ID="14">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.PExit9</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="18" />
+              </Step>
+              <Step Type="Assign" Name="EnterT9" ID="15">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.MEnterS9</Value>
+                  </Property>
+                  <Property Name="NewValue">Run.TimeNow</Property>
+                </Properties>
+              </Step>
+              <Step Type="Tally" Name="Tally_BlockedS9Port" ID="16">
+                <Properties>
+                  <Property Name="TallyStatisticName">Tally_BlockedS9ToPort</Property>
+                  <Property Name="Value">Run.TimeNow-TrainEntity.PQueue9</Property>
+                </Properties>
+              </Step>
+              <Step Type="Decide" Name="TallyStop" ExclusionExpression="!Include0ValuesInBlockageTallies" ID="17">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Run.TimeNow-TrainEntity.PQueue9&gt;(0.1/60)</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="16" />
+              </Step>
+              <Step Type="Assign" Name="AccumulateSidingBlocked" ID="18">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>TrainEntity.TotalSidingBlockedTime</Value>
+                  </Property>
+                  <Property Name="NewValue">TrainEntity.TotalSidingBlockedTime+(Run.TimeNow-TrainEntity.SidingBlockedStart)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="17" />
               </Step>
             </Steps>
           </Process>
@@ -35214,7 +35894,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="EnterT2" Type="BasicNode" Location="110.644878259343 -2.00156125003466E-22 -155.206528215656" Scope="Public">
+          <Node Name="EnterT2" Type="BasicNode" Location="110.644872389204 -2.00156125003466E-22 -155.206528215656" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -35445,7 +36125,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="EnterT10" Type="BasicNode" Location="23.3429977539343 5.251354906477E-14 -8.19251663171103" Scope="Public">
+          <Node Name="EnterT10" Type="BasicNode" Location="23.3429977539343 5.251354906477E-14 -8.14647847595415" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -35456,7 +36136,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Node>
-          <Node Name="ExitT9" Type="BasicNode" Location="26.2326268853361 5.251354906477E-14 -9.18565443403548" Scope="Public">
+          <Node Name="ExitT9" Type="BasicNode" Location="26.1865887295792 5.251354906477E-14 -9.18565443403548" Scope="Public">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -36831,6 +37511,12 @@
               </Row>
               <Row>
                 <Properties>
+                  <Property Name="Label">Include 0 Values in Siding blockage tallies</Property>
+                  <Property Name="Value">Math.If(Include0ValuesInBlockageTallies,"True","False")</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
                   <Property Name="Label">Enable Scheduled Track Shutdowns</Property>
                   <Property Name="Value">Math.If(EnableTrackShutdowns,"True","False")</Property>
                 </Properties>
@@ -36880,6 +37566,7 @@
               <Row>
                 <Properties>
                   <Property Name="Label">Port Train Dumping Rate (t/h)</Property>
+                  <Property Name="Value">Port.FlowOutput@TrainDumper.FlowRegulator.CurrentMaximumFlowRate/1000</Property>
                 </Properties>
               </Row>
               <Row>
@@ -36903,11 +37590,13 @@
               <Row>
                 <Properties>
                   <Property Name="Label">Port Surge Bin Output Rate (t/h)</Property>
+                  <Property Name="Value">Port.Output@SurgeBin.FlowRegulator.CurrentMaximumFlowRate/1000</Property>
                 </Properties>
               </Row>
               <Row>
                 <Properties>
                   <Property Name="Label">Port Shiploading Rate (t/h)</Property>
+                  <Property Name="Value">Port.BerthJunction.FlowRegulator.CurrentMaximumFlowRate/1000</Property>
                 </Properties>
               </Row>
               <Row>
@@ -36924,22 +37613,26 @@
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">CPP Feed Rate</Property>
+                  <Property Name="Label">CPP Feed Rate (t/h)</Property>
+                  <Property Name="Value">Mine.CV_2301T_FlowRate/1000</Property>
                 </Properties>
               </Row>
               <Row>
                 <Properties>
                   <Property Name="Label">Bypass Rate (t/h)</Property>
+                  <Property Name="Value">Mine.CV_1401T_FlowRate/1000</Property>
                 </Properties>
               </Row>
               <Row>
                 <Properties>
                   <Property Name="Label">Underground Rate (t/h)</Property>
+                  <Property Name="Value">Mine.CV_1705T_FlowRate/1000</Property>
                 </Properties>
               </Row>
               <Row>
                 <Properties>
                   <Property Name="Label">TLO Rate (t/h)</Property>
+                  <Property Name="Value">Mine.TrainLoadOutRate/1000</Property>
                 </Properties>
               </Row>
               <Row>
@@ -37046,32 +37739,109 @@
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">      Blocked on siding</Property>
+                  <Property Name="Label">    Empty Trains Ave. Blocked Duration (h)</Property>
+                  <Property Name="Value">""</Property>
                 </Properties>
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">      Can we get this properly?</Property>
+                  <Property Name="Label">       Siding 1 To Mine</Property>
+                  <Property Name="Value">Tally_BlockedS1ToMine.Average</Property>
                 </Properties>
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">      By loaded / empty?</Property>
+                  <Property Name="Label">       Siding 3 To Mine</Property>
+                  <Property Name="Value">Tally_BlockedS3ToMine.Average</Property>
                 </Properties>
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">      Provisioning and shunting</Property>
+                  <Property Name="Label">       Siding 5 To Mine</Property>
+                  <Property Name="Value">Tally_BlockedS5ToMine.Average</Property>
                 </Properties>
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">        Arrive back at yard to End allocation</Property>
+                  <Property Name="Label">       Siding 7 To Mine</Property>
+                  <Property Name="Value">Tally_BlockedS7ToMine.Average</Property>
                 </Properties>
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">      Loading time</Property>
+                  <Property Name="Label">       Siding 9 To Mine</Property>
+                  <Property Name="Value">Tally_BlockedS9ToMine.Average</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">    Loaded Trains Ave. Blocked Duration (h)</Property>
+                  <Property Name="Value">""</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">       Siding 9 To Port</Property>
+                  <Property Name="Value">Tally_BlockedS9ToPort.Average</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">       Siding 7 To Port</Property>
+                  <Property Name="Value">Tally_BlockedS7ToPort.Average</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">       Siding 5 To Port</Property>
+                  <Property Name="Value">Tally_BlockedS5ToPort.Average</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">       Siding 3 To Port</Property>
+                  <Property Name="Value">Tally_BlockedS3ToPort.Average</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">       Siding 1 To Port</Property>
+                  <Property Name="Value">Tally_BlockedS1ToPort.Average</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">   Trains Siding Blocked</Property>
+                  <Property Name="Value">""</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">       Loaded Trains</Property>
+                  <Property Name="Value">Tally_LoadedTrainTotalSidingBlockedTime.Average</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">       Empty Trains</Property>
+                  <Property Name="Value">Tally_EmptyTrainTotalSidingBlockedTime.Average</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">     Provisioning and shunting  (h)</Property>
+                  <Property Name="Value">""</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">       Arrive back at yard to End allocation</Property>
+                  <Property Name="Value">Tally_TrainMaintenance.Average</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">     Loading time (h)</Property>
                   <Property Name="Value">""</Property>
                 </Properties>
               </Row>
@@ -37083,7 +37853,7 @@
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">      Unloading time</Property>
+                  <Property Name="Label">     Unloading time (h)</Property>
                   <Property Name="Value">""</Property>
                 </Properties>
               </Row>
@@ -37372,7 +38142,7 @@
               <Row>
                 <Properties>
                   <Property Name="Label">        Percent direct loaded</Property>
-                  <Property Name="Value">(Port.DumperStates.TotalTime(3)/(Port.DumperStates.TotalTime(2)+Port.DumperStates.TotalTime(3)))*100</Property>
+                  <Property Name="Value">(Port.DumperStates.TotalTime(3) / Math.If((Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3)) &gt; 0, Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3), 1)) * 100</Property>
                 </Properties>
               </Row>
             </Rows>
@@ -37614,7 +38384,7 @@
           <FloorLabel Center="450.42972524049 0 -462.147567785406" Width="120.648000217822" Height="20.6825137204576" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="11" Text="Utilisation" />
           <FloorLabel Center="116.613644807453 2.1316282072803E-14 182.079398271046" Width="36.5845656736746" Height="7.46237193255882" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="10" Text="Million Tonnes" />
           <FloorLabel Center="-257.125409899107 0 -4.65636896119842" Width="61.9652884125017" Height="34.2176015378787" ExternallyVisible="True" BackColor="00ffffff" Text="Loaded Transit Time (h):&#xD;&#xA;{Math.Round(Tally_LoadedTransitTime.Average,2)}&#xD;&#xA;Empty Transit Time (h):&#xD;&#xA;{Math.Round(Tally_EmptyTransitTime.Average,2)}&#xD;&#xA;Return To Yard Time (h):&#xD;&#xA;{Math.Round(Tally_ReturnToYardTime.Average,2)}" />
-          <FloorLabel Center="445.626957512928 0 -68.9345368398916" Width="186.80282216086" Height="198.935265013834" ExternallyVisible="True" BackColor="00ffffff" Text="{Math.Round(Tally_EmptyTransitTime.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_TimeInMineLoop.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_TrainLoadingTime.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_LoadedTransitTime.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_TimeInPortLoop.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_TrainUnloadingTime.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_ReturnToYardTime.Average,2)}" />
+          <FloorLabel Center="446.018275380117 0 -68.9345368398916" Width="186.80282216086" Height="198.935265013834" ExternallyVisible="True" BackColor="00ffffff" Text="{Math.Round(Tally_EmptyTransitTime.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_TimeInMineLoop.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_TrainLoadingTime.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_LoadedTransitTime.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_TimeInPortLoop.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_TrainUnloadingTime.Average,2)}&#xD;&#xA;&#xD;&#xA;{Math.Round(Tally_ReturnToYardTime.Average,2)}" />
           <FloorLabel Center="375.91947460934 0 -171.374916679053" Width="66.4199837544143" Height="4.89085720362118" ExternallyVisible="True" BackColor="00ffffff" Text="Empty Transit Time Ave (h):" />
           <FloorLabel Center="376.002717012708 0 -140.42676173141" Width="66.4199837544143" Height="4.89085720362118" ExternallyVisible="True" BackColor="00ffffff" Text="Time In Mine Loop Ave (h):&#xD;&#xA;" />
           <FloorLabel Center="376.002721898233 0 -110.728791750178" Width="66.4199837544143" Height="4.89085720362118" ExternallyVisible="True" BackColor="00ffffff" Text="Train Loading Time Ave (h):" />
@@ -38203,7 +38973,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="749" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="763" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -39245,7 +40015,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </LinkDefinition>
-      <EntityDefinition Name="TrainEntity" Id="eda2504a-4cf7-47eb-a302-9c24622fa118" Revision="77" BaseClass="ContainerEntity" Author="Sales and Support" CheckBaseForAdvancedProperties="True">
+      <EntityDefinition Name="TrainEntity" Id="eda2504a-4cf7-47eb-a302-9c24622fa118" Revision="83" BaseClass="ContainerEntity" Author="Sales and Support" CheckBaseForAdvancedProperties="True">
         <Lists>
           <StringList Name="ResourceStatesList">
             <Items>
@@ -39310,6 +40080,38 @@
           <DiscreteState Name="TotalTimeOutageBlockedAtCycleStart" />
           <DiscreteState Name="TotalTimeFailedAtCycleStart" />
           <StringState Name="RequiredProduct" />
+          <DateTimeState Name="MEnterS1" />
+          <DateTimeState Name="MQueueS1" />
+          <DateTimeState Name="MExitS1" />
+          <DateTimeState Name="MEnterS3" />
+          <DateTimeState Name="MQueueS3" />
+          <DateTimeState Name="MExitS3" />
+          <DateTimeState Name="MEnterS5" />
+          <DateTimeState Name="MQueueS5" />
+          <DateTimeState Name="MExitS5" />
+          <DateTimeState Name="MEnterS7" />
+          <DateTimeState Name="MQueueS7" />
+          <DateTimeState Name="MExitS7" />
+          <DateTimeState Name="MEnterS9" />
+          <DateTimeState Name="MQueueS9" />
+          <DateTimeState Name="MExitS9" />
+          <DateTimeState Name="PEnter9" />
+          <DateTimeState Name="PQueue9" />
+          <DateTimeState Name="PExit9" />
+          <DateTimeState Name="PEnter7" />
+          <DateTimeState Name="PQueue7" />
+          <DateTimeState Name="PExit7" />
+          <DateTimeState Name="PEnter5" />
+          <DateTimeState Name="PQueue5" />
+          <DateTimeState Name="PExit5" />
+          <DateTimeState Name="PEnter3" />
+          <DateTimeState Name="PQueue3" />
+          <DateTimeState Name="PExit3" />
+          <DateTimeState Name="PEnter1" />
+          <DateTimeState Name="PQueue1" />
+          <DateTimeState Name="PExit1" />
+          <DiscreteState Name="TotalSidingBlockedTime" />
+          <DiscreteState Name="SidingBlockedStart" />
         </States>
         <Events>
           <Event Name="IsLoaded" />
@@ -39553,7 +40355,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>2119</Revision>
+        <Revision>2174</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -39561,7 +40363,7 @@
       </DefinitionRef>
       <DefinitionRef Name="TrainEntity">
         <Id>eda2504a-4cf7-47eb-a302-9c24622fa118</Id>
-        <Revision>77</Revision>
+        <Revision>83</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyPortModel">
         <Id>6f605774-81cb-44d1-b3c1-a310b58758b8</Id>
@@ -39581,11 +40383,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>1310</Revision>
+        <Revision>1342</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>749</Revision>
+        <Revision>763</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -39601,7 +40403,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1467</Revision>
+        <Revision>1501</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -39685,7 +40487,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>337</Revision>
+        <Revision>338</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -46349,7 +47151,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="337" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="338" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -57056,4 +57858,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- PpzpX54vNM9nN3NK82hT5yHS8bvgO0XZTNRvRW5jIabev6YE+mhD6Vf1wAywBxSktcEj+MI3Uh1dNUnkH6Ixag== -->
+<!-- K9Y/bHfoHoly0d9mbeesRmpLFE6KTaojWeU0NqJmw1pJTQvhEV/acVflQIqaRSL/V8FV5liNX3mdLGi5sK5+6A== -->
