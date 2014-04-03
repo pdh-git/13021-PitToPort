@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-03T02:27:49" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-03T02:49:49" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -558,7 +558,7 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="73.1485593607493 962.892960075001 -192.721685433073" Direction="0 -1 2.22044604925031E-16" Zoom="962.892960075001" />
+          <Camera Orientation="Top" Location="39.1806853598311 962.892944335938 -203.31818538128" Direction="0 -1 2.22044604925031E-16" Zoom="962.892944335938" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -2062,7 +2062,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1308" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1310" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -15884,7 +15884,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1465" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1467" Author="Sales and Support" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -24941,7 +24941,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2117" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2119" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -36819,13 +36819,13 @@
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">Train Standard Maintenance (h)</Property>
+                  <Property Name="Label">Train Provisioning Maintenance (h)</Property>
                   <Property Name="Value">StandardMaintenance</Property>
                 </Properties>
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">Train Additional Maintenance (h)</Property>
+                  <Property Name="Label">Train Shunting Maintenance (h)</Property>
                   <Property Name="Value">AdditionalMaintenance</Property>
                 </Properties>
               </Row>
@@ -36843,7 +36843,7 @@
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">Enable ShiploaderScheduled hutdowns</Property>
+                  <Property Name="Label">Enable ShiploaderScheduled Shutdowns</Property>
                   <Property Name="Value">Math.If(EnableShiploaderPlannedShutdowns,"True","False")</Property>
                 </Properties>
               </Row>
@@ -36867,14 +36867,19 @@
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">Port Stockpile Reclaim Rate (t)</Property>
+                  <Property Name="Label">Port Stockpile Reclaim Rate (t/h)</Property>
                   <Property Name="Value">PortStockpileReclaimRate/1000</Property>
                 </Properties>
               </Row>
               <Row>
                 <Properties>
-                  <Property Name="Label">Port Stockpile Stacking Rate (t)</Property>
+                  <Property Name="Label">Port Stockpile Stacking Rate (t/h)</Property>
                   <Property Name="Value">PortStockpileStackingRate/1000</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">Port Train Dumping Rate (t/h)</Property>
                 </Properties>
               </Row>
               <Row>
@@ -36897,6 +36902,16 @@
               </Row>
               <Row>
                 <Properties>
+                  <Property Name="Label">Port Surge Bin Output Rate (t/h)</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">Port Shiploading Rate (t/h)</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
                   <Property Name="Label">Mine UGC Stockpile Capacity</Property>
                   <Property Name="Value">MineStockpile1UGCCapacity/1000</Property>
                 </Properties>
@@ -36905,6 +36920,62 @@
                 <Properties>
                   <Property Name="Label">Mine LAC Stockpile Capacity</Property>
                   <Property Name="Value">MineStockpile2LACCapacity/1000</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">CPP Feed Rate</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">Bypass Rate (t/h)</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">Underground Rate (t/h)</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">TLO Rate (t/h)</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">                       SHIP MIX</Property>
+                  <Property Name="Value">""</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">% Handymax</Property>
+                  <Property Name="Value">ShipTable[1].PercentOfShips</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">% Panamax</Property>
+                  <Property Name="Value">ShipTable[2].PercentOfShips</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">% Small Cape</Property>
+                  <Property Name="Value">ShipTable[3].PercentOfShips</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">% Capesize</Property>
+                  <Property Name="Value">ShipTable[4].PercentOfShips</Property>
+                </Properties>
+              </Row>
+              <Row>
+                <Properties>
+                  <Property Name="Label">% Very Large Cape</Property>
+                  <Property Name="Value">ShipTable[5].PercentOfShips</Property>
                 </Properties>
               </Row>
               <Row>
@@ -38132,7 +38203,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="748" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="749" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -39482,7 +39553,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>2117</Revision>
+        <Revision>2119</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -39510,11 +39581,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>1308</Revision>
+        <Revision>1310</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>748</Revision>
+        <Revision>749</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -39530,7 +39601,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1465</Revision>
+        <Revision>1467</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -39614,7 +39685,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>336</Revision>
+        <Revision>337</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -46278,7 +46349,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="336" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="337" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -56985,4 +57056,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- ouIsA6P5EDsk5/ER7KbB8Nnqwz5SpuWJFLZMzaJ1o33vdGMRx6/h3rIijA4Fem4vmt4Z6IoJTzKtKsG9u1ie1g== -->
+<!-- PpzpX54vNM9nN3NK82hT5yHS8bvgO0XZTNRvRW5jIabev6YE+mhD6Vf1wAywBxSktcEj+MI3Uh1dNUnkH6Ixag== -->
