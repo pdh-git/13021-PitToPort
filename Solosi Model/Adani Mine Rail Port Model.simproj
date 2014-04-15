@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="5:0" UserName="Simio" Organization="Simio LLC" SerialNumber="0000" SaveDate="2014-04-11T07:16:39" />
+  <DocumentInfo LicenseInfo="5:0" UserName="Simio" Organization="Simio LLC" SerialNumber="0000" SaveDate="2014-04-14T09:15:39" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -597,7 +597,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case1D" Active="False">
+            <Scenario Name="Blank1" Active="False">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -639,6 +639,85 @@
                 <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="MaximumCyclingTrains">7</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Blank2" ReplicationsCompleted="2" Active="False">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case7A" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="WestLACStockpileSize">300000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case7B" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case7C" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="WestLACStockpileSize">400000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case7D" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="WestLACStockpileSize">500000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case7E" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="WestLACStockpileSize">600000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Blank3" ReplicationsCompleted="1" Active="False">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
               </Properties>
@@ -740,7 +819,7 @@
           <ResponseResults>
             <FileRef Name="Results\RailPortModel\PtPSensitivityExperiment ResponseResults.xml" />
           </ResponseResults>
-          <ViewInfo>
+          <ViewInfo ActiveExperiment="True" ActiveView="Design">
             <ExperimentDesign>
               <ScenarioTable FilterEnabled="True">
                 <Columns>
@@ -752,7 +831,7 @@
                   <Column Name="Enable2_ExperimentControl" Width="57" VisibleIndex="5" />
                   <Column Name="Enable4_ExperimentControl" Width="57" VisibleIndex="6" />
                   <Column Name="Enable6_ExperimentControl" Width="57" VisibleIndex="7" />
-                  <Column Name="Enable8_ExperimentControl" Width="57" VisibleIndex="8" />
+                  <Column Name="Enable8_ExperimentControl" Width="67" VisibleIndex="8" />
                   <Column Name="StoppingThreshold_ExperimentControl" Width="147" VisibleIndex="9" />
                   <Column Name="AccellerationDelay_ExperimentControl" Width="155" VisibleIndex="10" />
                   <Column Name="MaximumCyclingTrains_ExperimentControl" Width="136" VisibleIndex="13" />
@@ -779,7 +858,7 @@
                   <Column Name="PortStockpileReclaimRate_ExperimentControl" Width="251" VisibleIndex="36" />
                   <Column Name="PortStockpileStackingRate_ExperimentControl" Width="210" VisibleIndex="37" />
                   <Column Name="EastUGCStockpileSize_ExperimentControl" Width="188" VisibleIndex="38" />
-                  <Column Name="WestLACStockpileSize_ExperimentControl" Width="190" VisibleIndex="39" />
+                  <Column Name="WestLACStockpileSize_ExperimentControl" Width="200" VisibleIndex="39" />
                   <Column Name="MineStockpile1UGCCapacity_ExperimentControl" Width="218" VisibleIndex="41" />
                   <Column Name="MineStockpile2LACCapacity_ExperimentControl" Width="216" VisibleIndex="42" />
                   <Column Name="WriteHourlyPortStockpile_ExperimentControl" Width="138" VisibleIndex="30" />
@@ -844,17 +923,26 @@
           </ViewInfo>
         </Experiment>
       </Experiments>
-      <ViewInfo ActiveModel="True" ActiveView="Facility">
+      <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="61.3654348889205 674.025056800064 -156.269807479411" Direction="0 -1 2.22044604925031E-16" Zoom="674.025056800064" />
+          <Camera Orientation="Top" Location="141.720738670233 674.025085449219 -49.5291800684138" Direction="0 -1 2.22044604925031E-16" Zoom="674.025085449219" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="Logging Processes" Expanded="True" />
             <Category Name="TrainYard AddOn Processes" Expanded="True" />
+            <Category Name="Section2Entry AddOn Processes" Expanded="True" />
+            <Category Name="TrainOutput@DummyMine AddOn Processes" Expanded="True" />
+            <Category Name="TrainOutput@DummyPort AddOn Processes" Expanded="True" />
+            <Category Name="To Port" Expanded="True" />
+            <Category Name="To Mine" Expanded="True" />
+            <Category Name="RequestProcessing AddOn Processes" Expanded="True" />
             <Category Name="TrainInput@DummyMine AddOn Processes" Expanded="True" />
             <Category Name="TrainInput@DummyPort AddOn Processes" Expanded="True" />
+            <Category Name="PortSig4 AddOn Processes" Expanded="True" />
+            <Category Name="Resource1 AddOn Processes" Expanded="True" />
+            <Category Name="TrackResource AddOn Processes" Expanded="True" />
             <Category Name="Weather ShutDown Processes" Expanded="True" />
             <Category Name="T1 AddOn Processes" Expanded="True" />
             <Category Name="T2 AddOn Processes" Expanded="True" />
@@ -865,58 +953,61 @@
             <Category Name="T7 AddOn Processes" Expanded="True" />
             <Category Name="T8 AddOn Processes" Expanded="True" />
             <Category Name="T9 AddOn Processes" Expanded="True" />
-            <Category Name="Track1 AddOn Processes" Expanded="True" />
-            <Category Name="Input@ShipExit AddOn Processes" Expanded="True" />
-            <Category Name="Section2Entry AddOn Processes" Expanded="True" />
-            <Category Name="TrackResource AddOn Processes" Expanded="True" />
+            <Category Name="T10 AddOn Processes" Expanded="True" />
             <Category Name="MS1 AddOn Processes" Expanded="True" />
+            <Category Name="Track1 AddOn Processes" Expanded="True" />
+            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
+            <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
             <Category Name="Ship Queue Processes" Expanded="True" />
             <Category Name="B1Exit AddOn Processes" Expanded="True" />
-            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
-            <Category Name="ChannelResource AddOn Processes" Expanded="True" />
-            <Category Name="TrainOutput@DummyMine AddOn Processes" Expanded="True" />
-            <Category Name="PortSig4 AddOn Processes" Expanded="True" />
-            <Category Name="Rolling Stockpile Processes" Expanded="True" />
-            <Category Name="To Port" Expanded="True" />
-            <Category Name="B2Entry AddOn Processes" Expanded="True" />
-            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
-            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="B2Exit AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="TrainOutput@DummyPort AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Resource1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
+            <Category Name="Port AddOn Processes" Expanded="True" />
+            <Category Name="Input@ShipExit AddOn Processes" Expanded="True" />
+            <Category Name="Rail Outage Train Check Process" Expanded="True" />
             <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="T10 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="To Mine" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="RequestProcessing AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
+            <Category Name="B1Entry AddOn Processes" Expanded="True" />
+            <Category Name="B2Entry AddOn Processes" Expanded="True" />
+            <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
+            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
+            <Category Name="ChannelResource AddOn Processes" Expanded="True" />
+            <Category Name="Rolling Stockpile Processes" Expanded="True" />
             <Category Name="Monitor1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="B1Entry AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Port AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Rail Outage Train Check Process" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -2334,7 +2425,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1353" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1354" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -16156,7 +16247,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1516" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1517" Author="Sales and Support" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -25213,7 +25304,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2192" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2193" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -39311,7 +39402,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="774" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="775" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -40694,7 +40785,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>2192</Revision>
+        <Revision>2193</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -40722,11 +40813,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>1353</Revision>
+        <Revision>1354</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>774</Revision>
+        <Revision>775</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -40742,7 +40833,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1516</Revision>
+        <Revision>1517</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -40826,7 +40917,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>343</Revision>
+        <Revision>344</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -47490,7 +47581,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="343" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="344" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -58197,4 +58288,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- ntDLynEtQZMmieCzhZN0z1iavf6LaI6vOw4UfPBeGc/5Q3KsvyBAfWbFGoPJb9rOg4rxUOg2Xorfr3XvWYhGWw== -->
+<!-- Np/JigxaHIsoLHthu83NyDVKy922lSGkkTF/xOmAhf1lwlOR8j65X0P3aclQXxDleF2Yp4SpXAIk8WZKNBdoJQ== -->

@@ -2038,51 +2038,51 @@
     <Observation Value="72532.2487661794" />
     <Observation Value="66804.9815211478" />
   </Observations>
-  <Observations Scenario="Case1D" Response="ShiploadingIdleTime" />
-  <Observations Scenario="Case1D" Response="ShiploadingWeatherDownTime" />
-  <Observations Scenario="Case1D" Response="ShiploadingMaintenanceDownTime" />
-  <Observations Scenario="Case1D" Response="ShiploadingPositioningTime" />
-  <Observations Scenario="Case1D" Response="ShiploadingOccupiedTime" />
-  <Observations Scenario="Case1D" Response="DumperIdleTime" />
-  <Observations Scenario="Case1D" Response="DumperWeatherDownTime" />
-  <Observations Scenario="Case1D" Response="DumperMaintenanceShutdownTime" />
-  <Observations Scenario="Case1D" Response="DumperPositioningTime" />
-  <Observations Scenario="Case1D" Response="DumperUnloadingTime" />
-  <Observations Scenario="Case1D" Response="PortShiploaderThroughput" />
-  <Observations Scenario="Case1D" Response="PortDumperThroughput" />
-  <Observations Scenario="Case1D" Response="TrainUnloadingTime" />
-  <Observations Scenario="Case1D" Response="TrainLoadingTime" />
-  <Observations Scenario="Case1D" Response="TrainProvisioningTime" />
-  <Observations Scenario="Case1D" Response="EmptyTrainBlockedTimeAvg" />
-  <Observations Scenario="Case1D" Response="LoadedTrainBlockedTimeAvg" />
-  <Observations Scenario="Case1D" Response="LoadedTrainBlockedSiding1ToPort" />
-  <Observations Scenario="Case1D" Response="LoadedTrainBlockedSiding3ToPort" />
-  <Observations Scenario="Case1D" Response="LoadedTrainBlockedSiding5ToPort" />
-  <Observations Scenario="Case1D" Response="LoadedTrainBlockedSiding7ToPort" />
-  <Observations Scenario="Case1D" Response="LoadedTrainBlockedSiding9ToPort" />
-  <Observations Scenario="Case1D" Response="EmptyTrainBlockedSiding9ToMine" />
-  <Observations Scenario="Case1D" Response="EmptyTrainBlockedSiding7ToMine" />
-  <Observations Scenario="Case1D" Response="EmptyTrainBlockedSiding5ToMine" />
-  <Observations Scenario="Case1D" Response="EmptyTrainBlockedSiding3ToMine" />
-  <Observations Scenario="Case1D" Response="EmptyTrainBlockedSiding1ToMine" />
-  <Observations Scenario="Case1D" Response="LoadedTravelTime" />
-  <Observations Scenario="Case1D" Response="EmptyTravelTime" />
-  <Observations Scenario="Case1D" Response="RailOperatingCycleTime" />
-  <Observations Scenario="Case1D" Response="RailCycleTime" />
-  <Observations Scenario="Case1D" Response="AvgTimeBetweenTrainsAtTLO" />
-  <Observations Scenario="Case1D" Response="PortStockpileAvgTotalContents" />
-  <Observations Scenario="Case1D" Response="PortOpenCutStockpileAvgContents" />
-  <Observations Scenario="Case1D" Response="EndTime" />
-  <Observations Scenario="Case1D" Response="PercentDirectLoading" />
-  <Observations Scenario="Case1D" Response="AvgIdleTimeAtBerth" />
-  <Observations Scenario="Case1D" Response="AvgIdleTimeAtDumper" />
-  <Observations Scenario="Case1D" Response="AvgShipTTIP" />
-  <Observations Scenario="Case1D" Response="AvgShipTimeInBerth" />
-  <Observations Scenario="Case1D" Response="AvgShipLoadingTime" />
-  <Observations Scenario="Case1D" Response="PortUndergroundStockpileAvgContents" />
-  <Observations Scenario="Case1D" Response="MineTLOProductLoaded" />
-  <Observations Scenario="Case1D" Response="MineUGCProductStockpileAvgContents" />
-  <Observations Scenario="Case1D" Response="MineLACProductStockpileAvgContents" />
+  <Observations Scenario="Blank1" Response="ShiploadingIdleTime" />
+  <Observations Scenario="Blank1" Response="ShiploadingWeatherDownTime" />
+  <Observations Scenario="Blank1" Response="ShiploadingMaintenanceDownTime" />
+  <Observations Scenario="Blank1" Response="ShiploadingPositioningTime" />
+  <Observations Scenario="Blank1" Response="ShiploadingOccupiedTime" />
+  <Observations Scenario="Blank1" Response="DumperIdleTime" />
+  <Observations Scenario="Blank1" Response="DumperWeatherDownTime" />
+  <Observations Scenario="Blank1" Response="DumperMaintenanceShutdownTime" />
+  <Observations Scenario="Blank1" Response="DumperPositioningTime" />
+  <Observations Scenario="Blank1" Response="DumperUnloadingTime" />
+  <Observations Scenario="Blank1" Response="PortShiploaderThroughput" />
+  <Observations Scenario="Blank1" Response="PortDumperThroughput" />
+  <Observations Scenario="Blank1" Response="TrainUnloadingTime" />
+  <Observations Scenario="Blank1" Response="TrainLoadingTime" />
+  <Observations Scenario="Blank1" Response="TrainProvisioningTime" />
+  <Observations Scenario="Blank1" Response="EmptyTrainBlockedTimeAvg" />
+  <Observations Scenario="Blank1" Response="LoadedTrainBlockedTimeAvg" />
+  <Observations Scenario="Blank1" Response="LoadedTrainBlockedSiding1ToPort" />
+  <Observations Scenario="Blank1" Response="LoadedTrainBlockedSiding3ToPort" />
+  <Observations Scenario="Blank1" Response="LoadedTrainBlockedSiding5ToPort" />
+  <Observations Scenario="Blank1" Response="LoadedTrainBlockedSiding7ToPort" />
+  <Observations Scenario="Blank1" Response="LoadedTrainBlockedSiding9ToPort" />
+  <Observations Scenario="Blank1" Response="EmptyTrainBlockedSiding9ToMine" />
+  <Observations Scenario="Blank1" Response="EmptyTrainBlockedSiding7ToMine" />
+  <Observations Scenario="Blank1" Response="EmptyTrainBlockedSiding5ToMine" />
+  <Observations Scenario="Blank1" Response="EmptyTrainBlockedSiding3ToMine" />
+  <Observations Scenario="Blank1" Response="EmptyTrainBlockedSiding1ToMine" />
+  <Observations Scenario="Blank1" Response="LoadedTravelTime" />
+  <Observations Scenario="Blank1" Response="EmptyTravelTime" />
+  <Observations Scenario="Blank1" Response="RailOperatingCycleTime" />
+  <Observations Scenario="Blank1" Response="RailCycleTime" />
+  <Observations Scenario="Blank1" Response="AvgTimeBetweenTrainsAtTLO" />
+  <Observations Scenario="Blank1" Response="PortStockpileAvgTotalContents" />
+  <Observations Scenario="Blank1" Response="PortOpenCutStockpileAvgContents" />
+  <Observations Scenario="Blank1" Response="EndTime" />
+  <Observations Scenario="Blank1" Response="PercentDirectLoading" />
+  <Observations Scenario="Blank1" Response="AvgIdleTimeAtBerth" />
+  <Observations Scenario="Blank1" Response="AvgIdleTimeAtDumper" />
+  <Observations Scenario="Blank1" Response="AvgShipTTIP" />
+  <Observations Scenario="Blank1" Response="AvgShipTimeInBerth" />
+  <Observations Scenario="Blank1" Response="AvgShipLoadingTime" />
+  <Observations Scenario="Blank1" Response="PortUndergroundStockpileAvgContents" />
+  <Observations Scenario="Blank1" Response="MineTLOProductLoaded" />
+  <Observations Scenario="Blank1" Response="MineUGCProductStockpileAvgContents" />
+  <Observations Scenario="Blank1" Response="MineLACProductStockpileAvgContents" />
   <Observations Scenario="Case3A" Response="ShiploadingIdleTime">
     <Observation Value="6181.68341714128" />
     <Observation Value="5689.72648231793" />
@@ -3702,5 +3702,3020 @@
     <Observation Value="65062.6681492183" />
     <Observation Value="63146.8221111126" />
     <Observation Value="64627.6943481391" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="PortStockpileAvgTotalContents">
+    <Observation Value="312270.177011555" />
+    <Observation Value="314822.465026388" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="ShiploadingIdleTime">
+    <Observation Value="3351.70293209288" />
+    <Observation Value="3156.65214379077" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="ShiploadingWeatherDownTime">
+    <Observation Value="307.927246963862" />
+    <Observation Value="338.489613920666" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="ShiploadingPositioningTime">
+    <Observation Value="1627.49848252842" />
+    <Observation Value="1720.77625847083" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="ShiploadingOccupiedTime">
+    <Observation Value="37012.8713384148" />
+    <Observation Value="37084.0819838177" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="DumperIdleTime">
+    <Observation Value="11425.2250498378" />
+    <Observation Value="11256.2325213753" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="DumperWeatherDownTime">
+    <Observation Value="42.9698840123069" />
+    <Observation Value="47.8586428229049" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1740" />
+    <Observation Value="1728.65926234173" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="DumperPositioningTime">
+    <Observation Value="2228.23344618433" />
+    <Observation Value="2215.73554004378" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="DumperUnloadingTime">
+    <Observation Value="28363.5716199656" />
+    <Observation Value="28551.5140334163" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="PortShiploaderThroughput">
+    <Observation Value="35.2926149582441" />
+    <Observation Value="35.0966134682521" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="PortDumperThroughput">
+    <Observation Value="35.3406240000064" />
+    <Observation Value="35.1368572675544" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="TrainUnloadingTime">
+    <Observation Value="3.83899140610135" />
+    <Observation Value="3.89987548552071" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="TrainLoadingTime">
+    <Observation Value="2.9992147063335" />
+    <Observation Value="2.99871603928096" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="TrainProvisioningTime">
+    <Observation Value="2.69275050225805" />
+    <Observation Value="2.69202055667422" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.963004492154451" />
+    <Observation Value="0.920733687732915" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.74537092445283" />
+    <Observation Value="1.85300488217695" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="13.6349169217439" />
+    <Observation Value="12.7328124126852" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="1.86008998392251" />
+    <Observation Value="1.96903548820694" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="1.78860995417801" />
+    <Observation Value="1.78088245077354" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.787676190616818" />
+    <Observation Value="0.832678085286804" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.887943935778885" />
+    <Observation Value="0.894745183835364" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.0203239640102404" />
+    <Observation Value="0.0301916202729771" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.166570087220178" />
+    <Observation Value="0.178465452309626" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.208106233176552" />
+    <Observation Value="0.190702401395652" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.236232342533552" />
+    <Observation Value="0.227632472704781" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="0.331721766922206" />
+    <Observation Value="0.293638942237752" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="LoadedTravelTime">
+    <Observation Value="10.4967741883921" />
+    <Observation Value="10.8929948023791" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="EmptyTravelTime">
+    <Observation Value="8.16861995813132" />
+    <Observation Value="8.31368596075909" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="RailOperatingCycleTime">
+    <Observation Value="30.2700016613242" />
+    <Observation Value="30.5933047178039" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="RailCycleTime">
+    <Observation Value="33.4704872547799" />
+    <Observation Value="34.1242392596015" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.22124121899282" />
+    <Observation Value="2.25624824537578" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="MineTLOProductLoaded">
+    <Observation Value="176.774400000042" />
+    <Observation Value="175.737183171451" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="PercentDirectLoading">
+    <Observation Value="29.6251680874086" />
+    <Observation Value="29.2271652589715" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.18893367627333" />
+    <Observation Value="3.98955910428541" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="AvgIdleTimeAtDumper">
+    <Observation Value="0.97355415769995" />
+    <Observation Value="1.01480715757079" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="AvgShipTTIP">
+    <Observation Value="2232.82006442497" />
+    <Observation Value="2396.10615187049" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="AvgShipTimeInBerth">
+    <Observation Value="31.8002796214926" />
+    <Observation Value="31.8358709265556" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="AvgShipLoadingTime">
+    <Observation Value="28.3811181816458" />
+    <Observation Value="28.1999777817899" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="143159.472757771" />
+    <Observation Value="145426.185227993" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="169110.704253801" />
+    <Observation Value="169396.279798393" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="94102.8169925822" />
+    <Observation Value="98717.1909661738" />
+  </Observations>
+  <Observations Scenario="Blank2" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="75850.2991567897" />
+    <Observation Value="80894.9943934575" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="PortStockpileAvgTotalContents">
+    <Observation Value="262628.146462301" />
+    <Observation Value="265384.445542134" />
+    <Observation Value="267423.624362243" />
+    <Observation Value="271539.709752007" />
+    <Observation Value="264307.706374473" />
+    <Observation Value="254953.213814993" />
+    <Observation Value="275706.95551692" />
+    <Observation Value="270245.263185893" />
+    <Observation Value="266237.608500239" />
+    <Observation Value="271800.520087329" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="ShiploadingIdleTime">
+    <Observation Value="5092.85911544744" />
+    <Observation Value="5183.84502118125" />
+    <Observation Value="4619.82613313374" />
+    <Observation Value="3578.39114872656" />
+    <Observation Value="4836.01748684175" />
+    <Observation Value="158.450528476202" />
+    <Observation Value="4889.41667090747" />
+    <Observation Value="5203.42011460643" />
+    <Observation Value="4541.8528933007" />
+    <Observation Value="4801.7092916318" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="ShiploadingWeatherDownTime">
+    <Observation Value="301.0567561367" />
+    <Observation Value="246.073755079269" />
+    <Observation Value="206.214566238031" />
+    <Observation Value="321.147297272637" />
+    <Observation Value="204.205526927577" />
+    <Observation Value="35722.1995805518" />
+    <Observation Value="283.733503701656" />
+    <Observation Value="275.420489129932" />
+    <Observation Value="407.058501471067" />
+    <Observation Value="283.380235388806" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1495.4919720412" />
+    <Observation Value="1490.37555421045" />
+    <Observation Value="1500" />
+    <Observation Value="1176" />
+    <Observation Value="1491.31451134907" />
+    <Observation Value="12" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="ShiploadingPositioningTime">
+    <Observation Value="1614.248542482" />
+    <Observation Value="1592.51868241667" />
+    <Observation Value="1679.68236624547" />
+    <Observation Value="1328.07214740279" />
+    <Observation Value="1614.40322417082" />
+    <Observation Value="35.0922526791757" />
+    <Observation Value="1715.83055650278" />
+    <Observation Value="1680.94514309804" />
+    <Observation Value="1682.05091668646" />
+    <Observation Value="1804.81923018585" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="ShiploadingOccupiedTime">
+    <Observation Value="35296.3436138927" />
+    <Observation Value="35287.1869871124" />
+    <Observation Value="35794.2769343828" />
+    <Observation Value="37396.389406598" />
+    <Observation Value="35654.0592507108" />
+    <Observation Value="7872.25763829278" />
+    <Observation Value="35411.0192688881" />
+    <Observation Value="35140.2142531656" />
+    <Observation Value="35669.0376885418" />
+    <Observation Value="35410.0912427935" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="DumperIdleTime">
+    <Observation Value="11485.6444337611" />
+    <Observation Value="11674.5117397574" />
+    <Observation Value="11102.1841864699" />
+    <Observation Value="8567.22024907762" />
+    <Observation Value="11286.9329200824" />
+    <Observation Value="229.516976921626" />
+    <Observation Value="11068.4773049736" />
+    <Observation Value="11849.6731123134" />
+    <Observation Value="11776.8418982358" />
+    <Observation Value="11327.2611896163" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="DumperWeatherDownTime">
+    <Observation Value="30.7057745422879" />
+    <Observation Value="22.3615088450009" />
+    <Observation Value="62.7134350298875" />
+    <Observation Value="48.010466694916" />
+    <Observation Value="32.4981275507277" />
+    <Observation Value="57.7114337004301" />
+    <Observation Value="44.2089492957556" />
+    <Observation Value="72.9222763705068" />
+    <Observation Value="46.8227747615646" />
+    <Observation Value="53.7802217091251" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1727.66303875585" />
+    <Observation Value="1740" />
+    <Observation Value="1732.34064058336" />
+    <Observation Value="1287.60199619468" />
+    <Observation Value="1740" />
+    <Observation Value="12" />
+    <Observation Value="1726.31652144116" />
+    <Observation Value="1698.57279392955" />
+    <Observation Value="1740" />
+    <Observation Value="1738.61612305108" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="DumperPositioningTime">
+    <Observation Value="2228.76388394705" />
+    <Observation Value="2218.19915951185" />
+    <Observation Value="2242.12318501096" />
+    <Observation Value="1732.91146459385" />
+    <Observation Value="2201.43168207201" />
+    <Observation Value="49.7999999999977" />
+    <Observation Value="2252.7164727275" />
+    <Observation Value="2191.23154693684" />
+    <Observation Value="2216.76261557669" />
+    <Observation Value="2207.44441717986" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="DumperUnloadingTime">
+    <Observation Value="28327.2228689937" />
+    <Observation Value="28144.9275918857" />
+    <Observation Value="28660.6385529059" />
+    <Observation Value="32164.2558234389" />
+    <Observation Value="28539.1372702949" />
+    <Observation Value="43450.971589378" />
+    <Observation Value="28708.280751562" />
+    <Observation Value="27987.6002704497" />
+    <Observation Value="28019.572711426" />
+    <Observation Value="28472.8980484436" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="PortShiploaderThroughput">
+    <Observation Value="35.3199999768361" />
+    <Observation Value="35.1038571195538" />
+    <Observation Value="35.5057856908806" />
+    <Observation Value="27.4103679818214" />
+    <Observation Value="34.8519999769157" />
+    <Observation Value="0.737615999499996" />
+    <Observation Value="35.6707856908811" />
+    <Observation Value="34.7022681314363" />
+    <Observation Value="35.0920714057284" />
+    <Observation Value="34.965999976935" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="PortDumperThroughput">
+    <Observation Value="35.3548800000068" />
+    <Observation Value="35.1718000000031" />
+    <Observation Value="35.54552926755" />
+    <Observation Value="27.4665440000053" />
+    <Observation Value="34.9012803469994" />
+    <Observation Value="0.788616" />
+    <Observation Value="35.7201883570737" />
+    <Observation Value="34.7561280000066" />
+    <Observation Value="35.1533619311739" />
+    <Observation Value="35.001746551271" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="TrainUnloadingTime">
+    <Observation Value="3.83492727760257" />
+    <Observation Value="3.81675765754605" />
+    <Observation Value="3.8505887037211" />
+    <Observation Value="3.86988154703889" />
+    <Observation Value="3.92018661465211" />
+    <Observation Value="3.52063902546592" />
+    <Observation Value="3.83580433135166" />
+    <Observation Value="3.86987379775614" />
+    <Observation Value="3.80821023282316" />
+    <Observation Value="3.88688604013269" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="TrainLoadingTime">
+    <Observation Value="2.99775389847224" />
+    <Observation Value="3.00088961241822" />
+    <Observation Value="3.00100101746254" />
+    <Observation Value="3.00004472905074" />
+    <Observation Value="2.99907660722685" />
+    <Observation Value="2.98765355973766" />
+    <Observation Value="3.00111079106788" />
+    <Observation Value="2.99988703091366" />
+    <Observation Value="2.99998336854415" />
+    <Observation Value="3.00056385744324" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="TrainProvisioningTime">
+    <Observation Value="2.69202849769998" />
+    <Observation Value="2.69813513342958" />
+    <Observation Value="2.6928466378251" />
+    <Observation Value="2.69307838576523" />
+    <Observation Value="2.69550531159202" />
+    <Observation Value="2.6618181717986" />
+    <Observation Value="2.69047365601883" />
+    <Observation Value="2.69586980311361" />
+    <Observation Value="2.69578207293299" />
+    <Observation Value="2.69642857099879" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.964729133612958" />
+    <Observation Value="0.99477411481672" />
+    <Observation Value="0.982378950865387" />
+    <Observation Value="0.984611649965863" />
+    <Observation Value="1.04863230833141" />
+    <Observation Value="1.14667772772797" />
+    <Observation Value="0.96548711535399" />
+    <Observation Value="1.00152225090628" />
+    <Observation Value="0.934321280884161" />
+    <Observation Value="1.0037489618715" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.89646137767696" />
+    <Observation Value="1.86115965764845" />
+    <Observation Value="2.01769280853301" />
+    <Observation Value="2.0465483289311" />
+    <Observation Value="2.07537400767122" />
+    <Observation Value="0.864990918858167" />
+    <Observation Value="1.89162731623202" />
+    <Observation Value="1.95888539240272" />
+    <Observation Value="1.77364021465112" />
+    <Observation Value="2.07634512446059" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.424160299508753" />
+    <Observation Value="0.429613133042117" />
+    <Observation Value="0.470057737709698" />
+    <Observation Value="0.487394329589003" />
+    <Observation Value="0.496630892007076" />
+    <Observation Value="0.0770206227509101" />
+    <Observation Value="0.431156059131002" />
+    <Observation Value="0.45815758650027" />
+    <Observation Value="0.407225284673368" />
+    <Observation Value="0.500969840163792" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.526344206290453" />
+    <Observation Value="0.528800823191071" />
+    <Observation Value="0.563703359899165" />
+    <Observation Value="0.571109170353481" />
+    <Observation Value="0.596203926704732" />
+    <Observation Value="0.189702986534913" />
+    <Observation Value="0.507279885301183" />
+    <Observation Value="0.553652568680837" />
+    <Observation Value="0.496272917975192" />
+    <Observation Value="0.576004592265435" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.473071541238436" />
+    <Observation Value="0.444344778330028" />
+    <Observation Value="0.515788048230324" />
+    <Observation Value="0.489981608311183" />
+    <Observation Value="0.526547775300287" />
+    <Observation Value="0.140414311052136" />
+    <Observation Value="0.479014643358778" />
+    <Observation Value="0.473370509011249" />
+    <Observation Value="0.435988735585212" />
+    <Observation Value="0.524815464411066" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.271435738756657" />
+    <Observation Value="0.245319516412244" />
+    <Observation Value="0.266324340792813" />
+    <Observation Value="0.267125611352981" />
+    <Observation Value="0.253325018336906" />
+    <Observation Value="0.228280517971838" />
+    <Observation Value="0.248954598370887" />
+    <Observation Value="0.228313611863026" />
+    <Observation Value="0.233611035941567" />
+    <Observation Value="0.245302262528697" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.201275213921025" />
+    <Observation Value="0.21301949378678" />
+    <Observation Value="0.201792345055267" />
+    <Observation Value="0.230169589674053" />
+    <Observation Value="0.202666398977126" />
+    <Observation Value="0.218899421896064" />
+    <Observation Value="0.225027870165292" />
+    <Observation Value="0.245342177220855" />
+    <Observation Value="0.200563928587934" />
+    <Observation Value="0.229257200759399" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.833163695116443" />
+    <Observation Value="0.9660975920238" />
+    <Observation Value="0.947782028599098" />
+    <Observation Value="0.765028073308505" />
+    <Observation Value="1.08889072456111" />
+    <Observation Value="NaN" />
+    <Observation Value="1.01371243435077" />
+    <Observation Value="1.19875539546702" />
+    <Observation Value="0.902679096223652" />
+    <Observation Value="0.940736945504713" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.592368755350326" />
+    <Observation Value="0.627953065354413" />
+    <Observation Value="0.586495897750504" />
+    <Observation Value="0.767665505683542" />
+    <Observation Value="0.699836789960714" />
+    <Observation Value="0.528199347028206" />
+    <Observation Value="0.570339328740351" />
+    <Observation Value="0.66654736438881" />
+    <Observation Value="0.591177589051458" />
+    <Observation Value="0.599468934397236" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.708727770235023" />
+    <Observation Value="0.70792657279071" />
+    <Observation Value="0.637372233397307" />
+    <Observation Value="0.621985176914097" />
+    <Observation Value="0.708125096413456" />
+    <Observation Value="0.677124315456529" />
+    <Observation Value="0.716736312192646" />
+    <Observation Value="0.810800378607352" />
+    <Observation Value="0.667774312003338" />
+    <Observation Value="0.72604779582669" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.735963528268695" />
+    <Observation Value="0.794257927632119" />
+    <Observation Value="0.830682604893157" />
+    <Observation Value="0.684372387931447" />
+    <Observation Value="0.841067998147903" />
+    <Observation Value="1.46441950951898" />
+    <Observation Value="0.795584914408516" />
+    <Observation Value="0.758342882095876" />
+    <Observation Value="0.785070102070912" />
+    <Observation Value="0.879678444465927" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.01995078928583" />
+    <Observation Value="1.03179507806996" />
+    <Observation Value="0.99991178009034" />
+    <Observation Value="1.0332747596877" />
+    <Observation Value="1.02491477867346" />
+    <Observation Value="0.967896377187183" />
+    <Observation Value="0.968014245427377" />
+    <Observation Value="0.920104266538252" />
+    <Observation Value="0.92055539534117" />
+    <Observation Value="0.951766722417545" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="LoadedTravelTime">
+    <Observation Value="10.6556111381887" />
+    <Observation Value="10.8203642124128" />
+    <Observation Value="10.8119917741927" />
+    <Observation Value="11.0606098324772" />
+    <Observation Value="11.0281171375882" />
+    <Observation Value="8.43707607130881" />
+    <Observation Value="10.6892645038093" />
+    <Observation Value="11.257538719293" />
+    <Observation Value="10.6782311362889" />
+    <Observation Value="11.052458706336" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="EmptyTravelTime">
+    <Observation Value="8.05002260011909" />
+    <Observation Value="8.24173478219688" />
+    <Observation Value="7.87982604076987" />
+    <Observation Value="8.19988374867981" />
+    <Observation Value="8.19519587877291" />
+    <Observation Value="7.38441732411157" />
+    <Observation Value="8.07929573388214" />
+    <Observation Value="8.47719818941753" />
+    <Observation Value="8.16541682402691" />
+    <Observation Value="8.09236369334729" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="RailOperatingCycleTime">
+    <Observation Value="30.5723625849853" />
+    <Observation Value="30.6781012245249" />
+    <Observation Value="30.7398890845887" />
+    <Observation Value="30.5370790468879" />
+    <Observation Value="31.0366457775084" />
+    <Observation Value="27.3849449755959" />
+    <Observation Value="30.3451719071473" />
+    <Observation Value="30.7909551934562" />
+    <Observation Value="30.3936893313799" />
+    <Observation Value="31.0937905108525" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="RailCycleTime">
+    <Observation Value="33.4467894040719" />
+    <Observation Value="33.9486616427014" />
+    <Observation Value="33.4228933250306" />
+    <Observation Value="33.9248872510531" />
+    <Observation Value="34.1250762110971" />
+    <Observation Value="28.5164692643912" />
+    <Observation Value="33.3574370457133" />
+    <Observation Value="34.6621376991141" />
+    <Observation Value="33.6577214893255" />
+    <Observation Value="34.1087253102785" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.21998898002275" />
+    <Observation Value="2.2473138380944" />
+    <Observation Value="2.18599866057614" />
+    <Observation Value="2.19991510726987" />
+    <Observation Value="2.29714767002366" />
+    <Observation Value="1.5236690916861" />
+    <Observation Value="2.15703145259716" />
+    <Observation Value="2.31985786037417" />
+    <Observation Value="2.25193439796503" />
+    <Observation Value="2.27782425221937" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="MineTLOProductLoaded">
+    <Observation Value="176.845680000043" />
+    <Observation Value="175.942800000043" />
+    <Observation Value="177.775112734669" />
+    <Observation Value="137.451600000021" />
+    <Observation Value="174.517200000041" />
+    <Observation Value="4.06296000000002" />
+    <Observation Value="178.657611430099" />
+    <Observation Value="173.834238853486" />
+    <Observation Value="175.824000000042" />
+    <Observation Value="175.041282456992" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="PercentDirectLoading">
+    <Observation Value="27.6053971761864" />
+    <Observation Value="27.2697350388893" />
+    <Observation Value="27.4684598484558" />
+    <Observation Value="27.2164617514274" />
+    <Observation Value="27.0101829112892" />
+    <Observation Value="28.7757564474744" />
+    <Observation Value="28.1733709648049" />
+    <Observation Value="27.6973026353577" />
+    <Observation Value="27.9453824102856" />
+    <Observation Value="27.5111471070557" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="AvgIdleTimeAtBerth">
+    <Observation Value="5.73992659360348" />
+    <Observation Value="5.73727922564731" />
+    <Observation Value="5.27690121483302" />
+    <Observation Value="5.2360261388766" />
+    <Observation Value="5.52259675533759" />
+    <Observation Value="6.55578955677699" />
+    <Observation Value="5.50480937150566" />
+    <Observation Value="5.90122645386908" />
+    <Observation Value="5.37141037468733" />
+    <Observation Value="5.54501570785103" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.01161498273959" />
+    <Observation Value="0.975041490535883" />
+    <Observation Value="0.920372362745099" />
+    <Observation Value="1.00985941950477" />
+    <Observation Value="1.02748904579871" />
+    <Observation Value="1.12074132508784" />
+    <Observation Value="1.01541486896093" />
+    <Observation Value="1.03548420249318" />
+    <Observation Value="1.02901244213685" />
+    <Observation Value="0.992417011755583" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="AvgShipTTIP">
+    <Observation Value="2177.40216243444" />
+    <Observation Value="2482.6071892614" />
+    <Observation Value="2205.19286826887" />
+    <Observation Value="1775.36516512787" />
+    <Observation Value="2546.25560106517" />
+    <Observation Value="62.2382405946407" />
+    <Observation Value="1994.03270845964" />
+    <Observation Value="2454.15762253938" />
+    <Observation Value="2287.0821256795" />
+    <Observation Value="2243.84993503244" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="AvgShipTimeInBerth">
+    <Observation Value="30.7110109151318" />
+    <Observation Value="30.4625915956131" />
+    <Observation Value="30.7776107628208" />
+    <Observation Value="30.6700186294264" />
+    <Observation Value="31.0529027033991" />
+    <Observation Value="26.6745603444445" />
+    <Observation Value="30.5427116787753" />
+    <Observation Value="31.0509397487354" />
+    <Observation Value="31.6064131910394" />
+    <Observation Value="31.0877685361861" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="AvgShipLoadingTime">
+    <Observation Value="27.5948985547399" />
+    <Observation Value="27.3049024155937" />
+    <Observation Value="27.5490647597341" />
+    <Observation Value="27.4455954215506" />
+    <Observation Value="27.7332491750915" />
+    <Observation Value="23.8581475888889" />
+    <Observation Value="27.3621511980058" />
+    <Observation Value="27.8102274593792" />
+    <Observation Value="28.3075613947266" />
+    <Observation Value="27.776312009733" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="121893.720358497" />
+    <Observation Value="123870.750471714" />
+    <Observation Value="125008.602313092" />
+    <Observation Value="95572.6685762599" />
+    <Observation Value="122259.560060308" />
+    <Observation Value="1957.52137790616" />
+    <Observation Value="127650.870071078" />
+    <Observation Value="127648.732265647" />
+    <Observation Value="125451.585824291" />
+    <Observation Value="127584.858978246" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="140734.426103809" />
+    <Observation Value="141513.695070429" />
+    <Observation Value="142415.022049156" />
+    <Observation Value="175964.032956355" />
+    <Observation Value="142048.14631415" />
+    <Observation Value="252995.692437087" />
+    <Observation Value="148056.085445846" />
+    <Observation Value="142596.530920237" />
+    <Observation Value="140786.022675952" />
+    <Observation Value="144215.661109093" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="92724.0291180213" />
+    <Observation Value="100347.532792631" />
+    <Observation Value="96679.3108427842" />
+    <Observation Value="113564.429487874" />
+    <Observation Value="101754.765816369" />
+    <Observation Value="148257.658829262" />
+    <Observation Value="97545.8027169468" />
+    <Observation Value="107300.523003904" />
+    <Observation Value="96090.0658647189" />
+    <Observation Value="102377.195172356" />
+  </Observations>
+  <Observations Scenario="Case7A" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="74761.4479482225" />
+    <Observation Value="81429.018804917" />
+    <Observation Value="78101.9060680016" />
+    <Observation Value="98824.2640507333" />
+    <Observation Value="84434.9090265198" />
+    <Observation Value="147770.625459854" />
+    <Observation Value="78126.8464196149" />
+    <Observation Value="89015.7127723779" />
+    <Observation Value="78478.4320487225" />
+    <Observation Value="83761.9215875053" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="PortStockpileAvgTotalContents">
+    <Observation Value="292240.017486745" />
+    <Observation Value="285500.097241621" />
+    <Observation Value="290932.872997973" />
+    <Observation Value="289388.646065592" />
+    <Observation Value="292832.10180587" />
+    <Observation Value="294677.939960777" />
+    <Observation Value="284845.184711678" />
+    <Observation Value="376873.754731558" />
+    <Observation Value="325479.546287655" />
+    <Observation Value="291615.797098719" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="ShiploadingIdleTime">
+    <Observation Value="4109.29065521996" />
+    <Observation Value="4153.561312561" />
+    <Observation Value="4253.73871435154" />
+    <Observation Value="4397.22145141812" />
+    <Observation Value="3655.95733093191" />
+    <Observation Value="4118.77848101895" />
+    <Observation Value="4793.18043206309" />
+    <Observation Value="896.249885004961" />
+    <Observation Value="3387.92054844893" />
+    <Observation Value="3894.48771820974" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="ShiploadingWeatherDownTime">
+    <Observation Value="370.776950776598" />
+    <Observation Value="239.971206319248" />
+    <Observation Value="275.163585972816" />
+    <Observation Value="309.567845259137" />
+    <Observation Value="470.416252068205" />
+    <Observation Value="251.149869978741" />
+    <Observation Value="315.456880365195" />
+    <Observation Value="270.321161847294" />
+    <Observation Value="248.694219328476" />
+    <Observation Value="384.171137737737" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1480.25131132719" />
+    <Observation Value="1488" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1499.05871498084" />
+    <Observation Value="1489.97933556739" />
+    <Observation Value="324" />
+    <Observation Value="1224" />
+    <Observation Value="1500" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="ShiploadingPositioningTime">
+    <Observation Value="1749.31373043489" />
+    <Observation Value="1755.44030675821" />
+    <Observation Value="1712.77975066633" />
+    <Observation Value="1684.55879031225" />
+    <Observation Value="1729.22231694378" />
+    <Observation Value="1783.32065382628" />
+    <Observation Value="1676.07143393694" />
+    <Observation Value="432.285561017603" />
+    <Observation Value="1357.23504412738" />
+    <Observation Value="1726.20137681171" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="ShiploadingOccupiedTime">
+    <Observation Value="36090.3673522414" />
+    <Observation Value="36163.0271743615" />
+    <Observation Value="36058.3179490093" />
+    <Observation Value="35908.6519130105" />
+    <Observation Value="36444.4041000561" />
+    <Observation Value="36147.6922801952" />
+    <Observation Value="35525.3119180674" />
+    <Observation Value="41877.1433921301" />
+    <Observation Value="37582.1501880952" />
+    <Observation Value="36295.1397672408" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="DumperIdleTime">
+    <Observation Value="12173.2227976495" />
+    <Observation Value="11724.5098759171" />
+    <Observation Value="12422.3817585686" />
+    <Observation Value="12018.3333698898" />
+    <Observation Value="11687.4435753749" />
+    <Observation Value="12367.4249129553" />
+    <Observation Value="12716.3055258414" />
+    <Observation Value="2729.54201410753" />
+    <Observation Value="9995.81896830062" />
+    <Observation Value="12030.0439127964" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="DumperWeatherDownTime">
+    <Observation Value="58.9376093106997" />
+    <Observation Value="56.2333811961226" />
+    <Observation Value="59.5086699297064" />
+    <Observation Value="44.4100153628931" />
+    <Observation Value="52.4240185787209" />
+    <Observation Value="37.03195087563" />
+    <Observation Value="53.8383229299543" />
+    <Observation Value="47.7570713751854" />
+    <Observation Value="47.2190797100237" />
+    <Observation Value="50.2801704812788" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1728.10906732485" />
+    <Observation Value="1728.78638893725" />
+    <Observation Value="1725.27108219583" />
+    <Observation Value="1703.20596691256" />
+    <Observation Value="1734.19971357282" />
+    <Observation Value="1733.94585352037" />
+    <Observation Value="1740" />
+    <Observation Value="372" />
+    <Observation Value="1390.84140537495" />
+    <Observation Value="1706.83690052981" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="DumperPositioningTime">
+    <Observation Value="2259.57001313513" />
+    <Observation Value="2279.68120920635" />
+    <Observation Value="2268.59712095192" />
+    <Observation Value="2254.70551112975" />
+    <Observation Value="2283.81954894096" />
+    <Observation Value="2265.81651228029" />
+    <Observation Value="2246.05917096429" />
+    <Observation Value="571.085766894217" />
+    <Observation Value="1902.95476084232" />
+    <Observation Value="2277.31191402148" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="DumperUnloadingTime">
+    <Observation Value="27580.1605125798" />
+    <Observation Value="28010.7891447432" />
+    <Observation Value="27324.2413683539" />
+    <Observation Value="27779.345136705" />
+    <Observation Value="28042.1131435326" />
+    <Observation Value="27395.7807703684" />
+    <Observation Value="27043.7969802643" />
+    <Observation Value="40079.6151476231" />
+    <Observation Value="30463.1657857721" />
+    <Observation Value="27735.5271021711" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="PortShiploaderThroughput">
+    <Observation Value="35.7772343588976" />
+    <Observation Value="36.0967189597723" />
+    <Observation Value="35.9349285475437" />
+    <Observation Value="35.685999976615" />
+    <Observation Value="36.1548571186524" />
+    <Observation Value="35.8799999763961" />
+    <Observation Value="35.5953250608713" />
+    <Observation Value="8.96199999398042" />
+    <Observation Value="30.0719999801188" />
+    <Observation Value="36.0485693867289" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="PortDumperThroughput">
+    <Observation Value="35.8293403167296" />
+    <Observation Value="36.1460855827217" />
+    <Observation Value="35.9814963595575" />
+    <Observation Value="35.7536457166289" />
+    <Observation Value="36.2048440000066" />
+    <Observation Value="35.9251200000069" />
+    <Observation Value="35.6257440000065" />
+    <Observation Value="9.04305799995992" />
+    <Observation Value="30.1708019999834" />
+    <Observation Value="36.1030756984479" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="TrainUnloadingTime">
+    <Observation Value="3.67599378377657" />
+    <Observation Value="3.69587802653266" />
+    <Observation Value="3.63414319899541" />
+    <Observation Value="3.7088614069714" />
+    <Observation Value="3.71270980563332" />
+    <Observation Value="3.69809278765128" />
+    <Observation Value="3.65400851020758" />
+    <Observation Value="3.70354805142652" />
+    <Observation Value="3.67188834845235" />
+    <Observation Value="3.66515007132075" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="TrainLoadingTime">
+    <Observation Value="3.00092513867089" />
+    <Observation Value="3.00144828492075" />
+    <Observation Value="3.0023768610126" />
+    <Observation Value="2.99839469696698" />
+    <Observation Value="2.99750280229212" />
+    <Observation Value="2.99944840302914" />
+    <Observation Value="3.00333711579401" />
+    <Observation Value="2.99648047811948" />
+    <Observation Value="3.00203616060267" />
+    <Observation Value="3.00061154509109" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="TrainProvisioningTime">
+    <Observation Value="2.68560817118807" />
+    <Observation Value="2.68803418696014" />
+    <Observation Value="2.69173051479648" />
+    <Observation Value="2.68931277248637" />
+    <Observation Value="2.68515358066316" />
+    <Observation Value="2.68706177784255" />
+    <Observation Value="2.69075507076534" />
+    <Observation Value="2.68859695280344" />
+    <Observation Value="2.69084895088536" />
+    <Observation Value="2.68782253756993" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.02115579300993" />
+    <Observation Value="0.980918291926798" />
+    <Observation Value="1.06684046139252" />
+    <Observation Value="1.03627228092545" />
+    <Observation Value="0.993257604706146" />
+    <Observation Value="0.985533983614314" />
+    <Observation Value="0.956810556382991" />
+    <Observation Value="1.06065466264362" />
+    <Observation Value="1.04653112891338" />
+    <Observation Value="0.972347659264007" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.54417323447146" />
+    <Observation Value="1.593759359546" />
+    <Observation Value="1.47341799591161" />
+    <Observation Value="1.66166992025331" />
+    <Observation Value="1.62475943942567" />
+    <Observation Value="1.51495527087832" />
+    <Observation Value="1.47337124871574" />
+    <Observation Value="1.66502178651966" />
+    <Observation Value="1.52856556089944" />
+    <Observation Value="1.42457109814253" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.285992184181313" />
+    <Observation Value="0.31073518734374" />
+    <Observation Value="0.259715986733961" />
+    <Observation Value="0.336011570667425" />
+    <Observation Value="0.312604768985663" />
+    <Observation Value="0.278719792186913" />
+    <Observation Value="0.255937169858026" />
+    <Observation Value="0.342534389267431" />
+    <Observation Value="0.287138787569815" />
+    <Observation Value="0.264943923649853" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.409709160910276" />
+    <Observation Value="0.443063503171062" />
+    <Observation Value="0.393711912226019" />
+    <Observation Value="0.441959323148332" />
+    <Observation Value="0.412523202742456" />
+    <Observation Value="0.401715489014756" />
+    <Observation Value="0.368726246859134" />
+    <Observation Value="0.44739621169493" />
+    <Observation Value="0.400146417200712" />
+    <Observation Value="0.364452228007952" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.361990615685064" />
+    <Observation Value="0.370851013742977" />
+    <Observation Value="0.358501255883884" />
+    <Observation Value="0.423846422530127" />
+    <Observation Value="0.40174990966259" />
+    <Observation Value="0.374854122316363" />
+    <Observation Value="0.37276285651456" />
+    <Observation Value="0.425320334400978" />
+    <Observation Value="0.372169514433565" />
+    <Observation Value="0.353788467290484" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.26418908146828" />
+    <Observation Value="0.261496725527985" />
+    <Observation Value="0.237274207880111" />
+    <Observation Value="0.253082109226364" />
+    <Observation Value="0.29121637772027" />
+    <Observation Value="0.249313169210137" />
+    <Observation Value="0.253690494934595" />
+    <Observation Value="0.231060097186551" />
+    <Observation Value="0.258685198522568" />
+    <Observation Value="0.246967695780253" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.222168453134902" />
+    <Observation Value="0.207732311316355" />
+    <Observation Value="0.224281926415167" />
+    <Observation Value="0.206600017371343" />
+    <Observation Value="0.206451983351291" />
+    <Observation Value="0.210227862479104" />
+    <Observation Value="0.222180381067647" />
+    <Observation Value="0.216866333858644" />
+    <Observation Value="0.209994309430674" />
+    <Observation Value="0.194309881691783" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.874601632081863" />
+    <Observation Value="0.930184905333781" />
+    <Observation Value="1.01399832773554" />
+    <Observation Value="0.885709273463733" />
+    <Observation Value="0.949048755128531" />
+    <Observation Value="0.850184049069179" />
+    <Observation Value="0.976327053731843" />
+    <Observation Value="1.21866679523582" />
+    <Observation Value="1.75705086061801" />
+    <Observation Value="0.992303155697774" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.590741091915221" />
+    <Observation Value="0.62293462009634" />
+    <Observation Value="0.600793964037877" />
+    <Observation Value="0.59911442364276" />
+    <Observation Value="0.583675129928052" />
+    <Observation Value="0.563204800552555" />
+    <Observation Value="0.601692849219383" />
+    <Observation Value="0.584163095018059" />
+    <Observation Value="0.619838458442234" />
+    <Observation Value="0.625212083291005" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.672984166382949" />
+    <Observation Value="0.670063351993055" />
+    <Observation Value="0.703272192936138" />
+    <Observation Value="0.707513483155903" />
+    <Observation Value="0.601487848280313" />
+    <Observation Value="0.688841390222003" />
+    <Observation Value="0.64136342074188" />
+    <Observation Value="0.598594511864732" />
+    <Observation Value="0.724109541354631" />
+    <Observation Value="0.651089152743386" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.864161809544825" />
+    <Observation Value="0.739670646390187" />
+    <Observation Value="0.910656235710706" />
+    <Observation Value="0.844138213053775" />
+    <Observation Value="0.821836532866654" />
+    <Observation Value="0.808710294937009" />
+    <Observation Value="0.717367246302538" />
+    <Observation Value="1.02073374118884" />
+    <Observation Value="0.756251286542602" />
+    <Observation Value="0.779962356682083" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.09021730948653" />
+    <Observation Value="1.05148004362935" />
+    <Observation Value="1.09283423633663" />
+    <Observation Value="1.09684372750524" />
+    <Observation Value="1.1199801391936" />
+    <Observation Value="1.0316243517321" />
+    <Observation Value="0.984598655302264" />
+    <Observation Value="1.0774407071677" />
+    <Observation Value="1.1063888392595" />
+    <Observation Value="1.0094251646923" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="LoadedTravelTime">
+    <Observation Value="10.3479778950569" />
+    <Observation Value="10.2121542721946" />
+    <Observation Value="10.1043206461305" />
+    <Observation Value="10.5665578299258" />
+    <Observation Value="10.1456871255506" />
+    <Observation Value="10.3099282868492" />
+    <Observation Value="10.2252776366494" />
+    <Observation Value="10.3199961380063" />
+    <Observation Value="10.3393184111874" />
+    <Observation Value="10.0558577578163" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="EmptyTravelTime">
+    <Observation Value="8.17108034474648" />
+    <Observation Value="8.04536218686707" />
+    <Observation Value="8.21341542661132" />
+    <Observation Value="8.26436828079657" />
+    <Observation Value="7.97791716121652" />
+    <Observation Value="8.33496031071034" />
+    <Observation Value="8.34712503039716" />
+    <Observation Value="7.96399166996861" />
+    <Observation Value="8.29911719013835" />
+    <Observation Value="8.10630208090181" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="RailOperatingCycleTime">
+    <Observation Value="29.7476673565009" />
+    <Observation Value="29.6379804392994" />
+    <Observation Value="29.6298879115652" />
+    <Observation Value="29.9783975982074" />
+    <Observation Value="29.7288180757676" />
+    <Observation Value="29.4153969772402" />
+    <Observation Value="29.6592860646832" />
+    <Observation Value="29.807809913275" />
+    <Observation Value="29.6534124204113" />
+    <Observation Value="29.5112067366612" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="RailCycleTime">
+    <Observation Value="32.92503240764" />
+    <Observation Value="32.5207846133975" />
+    <Observation Value="32.7610711067531" />
+    <Observation Value="33.3165587140803" />
+    <Observation Value="32.4620512795342" />
+    <Observation Value="32.8794443418208" />
+    <Observation Value="33.1358026954614" />
+    <Observation Value="32.3880942372082" />
+    <Observation Value="32.9014869171443" />
+    <Observation Value="32.5624631086672" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.13938623692437" />
+    <Observation Value="2.0882497301878" />
+    <Observation Value="2.11315502403832" />
+    <Observation Value="2.15430157328618" />
+    <Observation Value="2.08280610380334" />
+    <Observation Value="2.12534567148173" />
+    <Observation Value="2.16671915965751" />
+    <Observation Value="1.96246343295507" />
+    <Observation Value="2.08010357380093" />
+    <Observation Value="2.09559264604444" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="MineTLOProductLoaded">
+    <Observation Value="179.208311050783" />
+    <Observation Value="180.789840000045" />
+    <Observation Value="179.982000000044" />
+    <Observation Value="178.825655233634" />
+    <Observation Value="181.074960000044" />
+    <Observation Value="179.684672521004" />
+    <Observation Value="178.200000000043" />
+    <Observation Value="45.3578399999992" />
+    <Observation Value="150.994800000027" />
+    <Observation Value="180.576000000044" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="90469.3336706857" />
+    <Observation Value="87167.9938010265" />
+    <Observation Value="88538.8781184915" />
+    <Observation Value="97290.9031972193" />
+    <Observation Value="86845.9102104812" />
+    <Observation Value="90282.6235531293" />
+    <Observation Value="92092.3523817632" />
+    <Observation Value="136830.457186815" />
+    <Observation Value="102791.872775917" />
+    <Observation Value="88656.8152409871" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="72599.6917278908" />
+    <Observation Value="69658.4047277205" />
+    <Observation Value="70132.1821191275" />
+    <Observation Value="78201.0414719187" />
+    <Observation Value="68483.0735679974" />
+    <Observation Value="72026.2157168934" />
+    <Observation Value="73568.8359892498" />
+    <Observation Value="130568.618309146" />
+    <Observation Value="87320.1416929423" />
+    <Observation Value="70081.6987526794" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="PercentDirectLoading">
+    <Observation Value="28.7381651027354" />
+    <Observation Value="28.4449656284562" />
+    <Observation Value="28.0551462687905" />
+    <Observation Value="28.3126186767439" />
+    <Observation Value="28.9927947683778" />
+    <Observation Value="28.3126921780434" />
+    <Observation Value="27.386318600052" />
+    <Observation Value="28.2653724471161" />
+    <Observation Value="28.4614327047915" />
+    <Observation Value="28.4569928217418" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.71492367654415" />
+    <Observation Value="4.77937171407696" />
+    <Observation Value="4.82986596988976" />
+    <Observation Value="5.10742630977111" />
+    <Observation Value="4.27899148453952" />
+    <Observation Value="4.78249557676303" />
+    <Observation Value="5.36924360645815" />
+    <Observation Value="4.09481997488533" />
+    <Observation Value="4.66042471393989" />
+    <Observation Value="4.51623051293231" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.09274919453929" />
+    <Observation Value="1.08068342988052" />
+    <Observation Value="1.04622144290598" />
+    <Observation Value="1.0432547946242" />
+    <Observation Value="1.03390149797805" />
+    <Observation Value="1.15328705054213" />
+    <Observation Value="1.07191905652033" />
+    <Observation Value="0.958176657630144" />
+    <Observation Value="1.04476633480141" />
+    <Observation Value="1.02493344774085" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="AvgShipTTIP">
+    <Observation Value="1925.43297578787" />
+    <Observation Value="1950.51457381486" />
+    <Observation Value="2005.30609837139" />
+    <Observation Value="2023.10296140157" />
+    <Observation Value="1768.47182449446" />
+    <Observation Value="2018.87714487186" />
+    <Observation Value="2075.52229394916" />
+    <Observation Value="450.55215722985" />
+    <Observation Value="1496.83887913579" />
+    <Observation Value="1972.16413491815" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="AvgShipTimeInBerth">
+    <Observation Value="31.1547127279388" />
+    <Observation Value="30.5786146658281" />
+    <Observation Value="30.4727971312585" />
+    <Observation Value="30.9882100156832" />
+    <Observation Value="30.5417732148764" />
+    <Observation Value="30.9513347554146" />
+    <Observation Value="30.5602819112913" />
+    <Observation Value="29.9437241981482" />
+    <Observation Value="30.708992220544" />
+    <Observation Value="30.4700313681424" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="AvgShipLoadingTime">
+    <Observation Value="27.9231919588529" />
+    <Observation Value="27.3331533016405" />
+    <Observation Value="27.3548865668621" />
+    <Observation Value="27.7980380971391" />
+    <Observation Value="27.2689638530762" />
+    <Observation Value="27.6663492843691" />
+    <Observation Value="27.3610566804016" />
+    <Observation Value="26.6832215092592" />
+    <Observation Value="27.4605657603223" />
+    <Observation Value="27.2203300735362" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="131461.368131723" />
+    <Observation Value="127952.406104868" />
+    <Observation Value="130903.838675196" />
+    <Observation Value="131945.272665895" />
+    <Observation Value="132104.455438687" />
+    <Observation Value="133631.602610521" />
+    <Observation Value="129820.052143591" />
+    <Observation Value="103957.723266857" />
+    <Observation Value="141739.147775435" />
+    <Observation Value="132793.093887722" />
+  </Observations>
+  <Observations Scenario="Case7B" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="160778.649355027" />
+    <Observation Value="157547.69113675" />
+    <Observation Value="160029.034322783" />
+    <Observation Value="157451.768599916" />
+    <Observation Value="160724.780613747" />
+    <Observation Value="161046.337350266" />
+    <Observation Value="155025.132568104" />
+    <Observation Value="272901.864797657" />
+    <Observation Value="183740.398512067" />
+    <Observation Value="158822.703211007" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="PortStockpileAvgTotalContents">
+    <Observation Value="304354.299535064" />
+    <Observation Value="301289.52925734" />
+    <Observation Value="298607.735010605" />
+    <Observation Value="299321.990096942" />
+    <Observation Value="303302.077250513" />
+    <Observation Value="302268.727084524" />
+    <Observation Value="284725.917156635" />
+    <Observation Value="298980.390421511" />
+    <Observation Value="295810.954867754" />
+    <Observation Value="306800.662264056" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="ShiploadingIdleTime">
+    <Observation Value="4051.01510591638" />
+    <Observation Value="4116.50706220713" />
+    <Observation Value="4246.95059125779" />
+    <Observation Value="4295.39353316495" />
+    <Observation Value="3604.92910228284" />
+    <Observation Value="4121.5791972202" />
+    <Observation Value="4646.3885928792" />
+    <Observation Value="3399.45817508299" />
+    <Observation Value="4198.72640511101" />
+    <Observation Value="4154.70161681807" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="ShiploadingWeatherDownTime">
+    <Observation Value="200.678441169763" />
+    <Observation Value="304.079744275687" />
+    <Observation Value="246.229080410736" />
+    <Observation Value="268.644568561793" />
+    <Observation Value="287.679766224847" />
+    <Observation Value="399.861455955508" />
+    <Observation Value="253.77180805264" />
+    <Observation Value="266.780775904803" />
+    <Observation Value="265.373498421186" />
+    <Observation Value="268.326834403109" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1500" />
+    <Observation Value="1482.16550954419" />
+    <Observation Value="1489.97524195649" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1499.55899325165" />
+    <Observation Value="1500" />
+    <Observation Value="1491.85702248305" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="ShiploadingPositioningTime">
+    <Observation Value="1722.48182633194" />
+    <Observation Value="1715.77211511584" />
+    <Observation Value="1766.47801190717" />
+    <Observation Value="1714.37368270448" />
+    <Observation Value="1734.98100750101" />
+    <Observation Value="1635.36863329394" />
+    <Observation Value="1615.97874206718" />
+    <Observation Value="1737.20218137419" />
+    <Observation Value="1735.22968964892" />
+    <Observation Value="1736.74396820212" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="ShiploadingOccupiedTime">
+    <Observation Value="36325.8246265819" />
+    <Observation Value="36181.4755688572" />
+    <Observation Value="36050.3670744678" />
+    <Observation Value="36021.5882155688" />
+    <Observation Value="36672.4101239913" />
+    <Observation Value="36143.1907135303" />
+    <Observation Value="35783.860857001" />
+    <Observation Value="36896.9998743864" />
+    <Observation Value="36100.6704068189" />
+    <Observation Value="36148.3705580936" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="DumperIdleTime">
+    <Observation Value="12524.5695962652" />
+    <Observation Value="12441.778444123" />
+    <Observation Value="12789.3145181237" />
+    <Observation Value="12417.4690498307" />
+    <Observation Value="12150.4404749731" />
+    <Observation Value="12444.8989745853" />
+    <Observation Value="12610.7514436445" />
+    <Observation Value="12242.5311386022" />
+    <Observation Value="12361.6207749751" />
+    <Observation Value="12341.8122117882" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="DumperWeatherDownTime">
+    <Observation Value="34.9141951495436" />
+    <Observation Value="41.1274434811974" />
+    <Observation Value="73.9016583775412" />
+    <Observation Value="43.687729824042" />
+    <Observation Value="41.6655664377847" />
+    <Observation Value="44.9101849851666" />
+    <Observation Value="51.7276234252633" />
+    <Observation Value="46.8023216487254" />
+    <Observation Value="48.0675469660259" />
+    <Observation Value="49.4396162657285" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1725.99726912527" />
+    <Observation Value="1740.2104442519" />
+    <Observation Value="1672.9099951081" />
+    <Observation Value="1740" />
+    <Observation Value="1731.83364720024" />
+    <Observation Value="1740" />
+    <Observation Value="1731.82611365403" />
+    <Observation Value="1740" />
+    <Observation Value="1718.54437233123" />
+    <Observation Value="1740" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="DumperPositioningTime">
+    <Observation Value="2288.26432562336" />
+    <Observation Value="2287.96553129554" />
+    <Observation Value="2278.98970525243" />
+    <Observation Value="2285.98070950437" />
+    <Observation Value="2286.09130211843" />
+    <Observation Value="2267.46682193658" />
+    <Observation Value="2271.72950347871" />
+    <Observation Value="2305.68945410158" />
+    <Observation Value="2283.16774911294" />
+    <Observation Value="2289.668955327" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="DumperUnloadingTime">
+    <Observation Value="27226.2546138366" />
+    <Observation Value="27288.9181368484" />
+    <Observation Value="26984.8841231382" />
+    <Observation Value="27312.8625108409" />
+    <Observation Value="27589.9690092705" />
+    <Observation Value="27302.724018493" />
+    <Observation Value="27133.9653157975" />
+    <Observation Value="27464.9770856475" />
+    <Observation Value="27388.5995566147" />
+    <Observation Value="27379.079216619" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="PortShiploaderThroughput">
+    <Observation Value="36.2179999759349" />
+    <Observation Value="36.2319999765167" />
+    <Observation Value="36.0709999760355" />
+    <Observation Value="36.2149999755963" />
+    <Observation Value="36.1921428331183" />
+    <Observation Value="35.9299999763351" />
+    <Observation Value="35.9607535284793" />
+    <Observation Value="36.5019999758143" />
+    <Observation Value="36.1490329377621" />
+    <Observation Value="36.2639999760357" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="PortDumperThroughput">
+    <Observation Value="36.2848176884381" />
+    <Observation Value="36.2862720000068" />
+    <Observation Value="36.1207213567016" />
+    <Observation Value="36.2625120000071" />
+    <Observation Value="36.2422826603363" />
+    <Observation Value="35.9631360000071" />
+    <Observation Value="36.0127132468835" />
+    <Observation Value="36.5571360000067" />
+    <Observation Value="36.188920552271" />
+    <Observation Value="36.3100320000069" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="TrainUnloadingTime">
+    <Observation Value="3.58263367754499" />
+    <Observation Value="3.59796067950043" />
+    <Observation Value="3.61021026005958" />
+    <Observation Value="3.59694155740022" />
+    <Observation Value="3.65227772086157" />
+    <Observation Value="3.64640674702965" />
+    <Observation Value="3.61440403560995" />
+    <Observation Value="3.58462405172999" />
+    <Observation Value="3.63099052398755" />
+    <Observation Value="3.62446005997885" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="TrainLoadingTime">
+    <Observation Value="3.00059994263997" />
+    <Observation Value="3.00055763023889" />
+    <Observation Value="3.00347956310337" />
+    <Observation Value="3.0032485039762" />
+    <Observation Value="3.00022204716797" />
+    <Observation Value="3.00087974679908" />
+    <Observation Value="3.00189852050876" />
+    <Observation Value="3.00033617117985" />
+    <Observation Value="3.00034584733786" />
+    <Observation Value="3.00005233701089" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="TrainProvisioningTime">
+    <Observation Value="2.68593136015029" />
+    <Observation Value="2.68610164994222" />
+    <Observation Value="2.69122368388265" />
+    <Observation Value="2.68901703753779" />
+    <Observation Value="2.69049180132362" />
+    <Observation Value="2.68934708134685" />
+    <Observation Value="2.68663059209164" />
+    <Observation Value="2.6834633382723" />
+    <Observation Value="2.6897819790548" />
+    <Observation Value="2.68666405073377" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.03315212122454" />
+    <Observation Value="0.982425780779853" />
+    <Observation Value="0.962756242909024" />
+    <Observation Value="1.05159320572471" />
+    <Observation Value="0.997034163981365" />
+    <Observation Value="1.05688616237713" />
+    <Observation Value="1.08688865875514" />
+    <Observation Value="1.01569702610762" />
+    <Observation Value="0.995841333412907" />
+    <Observation Value="1.01810324842806" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.2508799640058" />
+    <Observation Value="1.40130407861368" />
+    <Observation Value="1.3709945283694" />
+    <Observation Value="1.39257489486368" />
+    <Observation Value="1.55274377633916" />
+    <Observation Value="1.41353231978432" />
+    <Observation Value="1.4156999266135" />
+    <Observation Value="1.35418903993634" />
+    <Observation Value="1.36649552693353" />
+    <Observation Value="1.38637361489734" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.195305853558459" />
+    <Observation Value="0.218982558517146" />
+    <Observation Value="0.211450757239418" />
+    <Observation Value="0.232268619550649" />
+    <Observation Value="0.270383577469389" />
+    <Observation Value="0.246787690338156" />
+    <Observation Value="0.233328454219097" />
+    <Observation Value="0.211241965782043" />
+    <Observation Value="0.232704769741535" />
+    <Observation Value="0.226373452160578" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.313745864400756" />
+    <Observation Value="0.381120347558279" />
+    <Observation Value="0.351584590593141" />
+    <Observation Value="0.350573790335654" />
+    <Observation Value="0.419051576571985" />
+    <Observation Value="0.369414964000998" />
+    <Observation Value="0.365669733611361" />
+    <Observation Value="0.329666498667339" />
+    <Observation Value="0.35913681882077" />
+    <Observation Value="0.358575367667991" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.289980336299178" />
+    <Observation Value="0.333091020183626" />
+    <Observation Value="0.324342600897587" />
+    <Observation Value="0.332417716663877" />
+    <Observation Value="0.380225413816123" />
+    <Observation Value="0.353728704257383" />
+    <Observation Value="0.325254990330039" />
+    <Observation Value="0.323652531563655" />
+    <Observation Value="0.321578818229223" />
+    <Observation Value="0.327124300999542" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.245456861233716" />
+    <Observation Value="0.249712124055331" />
+    <Observation Value="0.275651672518814" />
+    <Observation Value="0.247662085783781" />
+    <Observation Value="0.260452903884282" />
+    <Observation Value="0.240001177368423" />
+    <Observation Value="0.253653605545679" />
+    <Observation Value="0.238456310237893" />
+    <Observation Value="0.25484306750561" />
+    <Observation Value="0.247405759151279" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.206200258783231" />
+    <Observation Value="0.218398026452968" />
+    <Observation Value="0.20793221760532" />
+    <Observation Value="0.229542724555042" />
+    <Observation Value="0.222665062059107" />
+    <Observation Value="0.203710492140654" />
+    <Observation Value="0.237614932708156" />
+    <Observation Value="0.251238795498454" />
+    <Observation Value="0.198026657225134" />
+    <Observation Value="0.226789860784552" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.924241487483991" />
+    <Observation Value="0.85379059156489" />
+    <Observation Value="1.05743491347674" />
+    <Observation Value="1.04264143915124" />
+    <Observation Value="1.32892399237902" />
+    <Observation Value="1.00110762145532" />
+    <Observation Value="1.25744812343803" />
+    <Observation Value="0.994669043688976" />
+    <Observation Value="0.962674408193761" />
+    <Observation Value="0.997733539511076" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.59199147272743" />
+    <Observation Value="0.552332968321977" />
+    <Observation Value="0.58612429526499" />
+    <Observation Value="0.604017482682414" />
+    <Observation Value="0.597155674520915" />
+    <Observation Value="0.622033123383476" />
+    <Observation Value="0.65349623567884" />
+    <Observation Value="0.584594296751584" />
+    <Observation Value="0.593318417076556" />
+    <Observation Value="0.57033919409826" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.65735299026412" />
+    <Observation Value="0.75691577225015" />
+    <Observation Value="0.654815309135569" />
+    <Observation Value="0.691078977406336" />
+    <Observation Value="0.70022646664131" />
+    <Observation Value="0.69415117723449" />
+    <Observation Value="0.765377470662801" />
+    <Observation Value="0.697369902311426" />
+    <Observation Value="0.64073610711528" />
+    <Observation Value="0.637525170447495" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.878050879770246" />
+    <Observation Value="0.754066840263083" />
+    <Observation Value="0.7516236078996" />
+    <Observation Value="0.901910751490293" />
+    <Observation Value="0.7937719846411" />
+    <Observation Value="0.903372314338312" />
+    <Observation Value="0.818815058730899" />
+    <Observation Value="0.747257362639491" />
+    <Observation Value="0.818572002192633" />
+    <Observation Value="0.839584344876744" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.07733210695614" />
+    <Observation Value="1.05980772058304" />
+    <Observation Value="1.02953033280359" />
+    <Observation Value="1.05187036870845" />
+    <Observation Value="1.00879439533112" />
+    <Observation Value="1.08149576988089" />
+    <Observation Value="1.13411513476792" />
+    <Observation Value="1.17449594911692" />
+    <Observation Value="1.03233269160123" />
+    <Observation Value="1.1575269084566" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="LoadedTravelTime">
+    <Observation Value="9.82584630780131" />
+    <Observation Value="9.93977603085762" />
+    <Observation Value="9.89687493231813" />
+    <Observation Value="9.97936511308918" />
+    <Observation Value="10.0680749717499" />
+    <Observation Value="10.099077853024" />
+    <Observation Value="10.0364638154968" />
+    <Observation Value="9.85975105813661" />
+    <Observation Value="10.0866214391088" />
+    <Observation Value="9.94398764945065" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="EmptyTravelTime">
+    <Observation Value="8.23294812952512" />
+    <Observation Value="8.2544260173841" />
+    <Observation Value="8.25440180277572" />
+    <Observation Value="8.14024028629765" />
+    <Observation Value="8.17602527649879" />
+    <Observation Value="8.24490246703305" />
+    <Observation Value="8.2854302577612" />
+    <Observation Value="8.1834925842855" />
+    <Observation Value="8.18405865274116" />
+    <Observation Value="8.10966378948055" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="RailOperatingCycleTime">
+    <Observation Value="29.0934739798813" />
+    <Observation Value="29.2021900770477" />
+    <Observation Value="29.2204729338354" />
+    <Observation Value="29.3241772645631" />
+    <Observation Value="29.4512977848477" />
+    <Observation Value="29.5416101708158" />
+    <Observation Value="29.4163077227724" />
+    <Observation Value="29.0203597040515" />
+    <Observation Value="29.1931770833553" />
+    <Observation Value="29.2822187532031" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="RailCycleTime">
+    <Observation Value="32.205913716058" />
+    <Observation Value="32.40400655268" />
+    <Observation Value="32.4440793481738" />
+    <Observation Value="32.3084291024498" />
+    <Observation Value="32.4551518511962" />
+    <Observation Value="32.7060072710479" />
+    <Observation Value="32.5912272095964" />
+    <Observation Value="32.0944365874994" />
+    <Observation Value="32.5066192142649" />
+    <Observation Value="32.2401817641294" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.06704055842982" />
+    <Observation Value="2.06717734381156" />
+    <Observation Value="2.08963579980898" />
+    <Observation Value="2.06772011833317" />
+    <Observation Value="2.07399522406518" />
+    <Observation Value="2.11801047978001" />
+    <Observation Value="2.10847988878336" />
+    <Observation Value="2.02422798565489" />
+    <Observation Value="2.08204393241197" />
+    <Observation Value="2.0574423155418" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="MineTLOProductLoaded">
+    <Observation Value="181.478880000044" />
+    <Observation Value="181.478880000045" />
+    <Observation Value="180.672595805123" />
+    <Observation Value="181.377910312842" />
+    <Observation Value="181.268153049776" />
+    <Observation Value="179.8702638284" />
+    <Observation Value="180.13879570261" />
+    <Observation Value="182.856960000045" />
+    <Observation Value="181.013860759232" />
+    <Observation Value="181.621440000045" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="84079.5916713976" />
+    <Observation Value="88480.7222843567" />
+    <Observation Value="85470.0289423961" />
+    <Observation Value="85515.567196788" />
+    <Observation Value="86810.7224441055" />
+    <Observation Value="88687.619754206" />
+    <Observation Value="88837.0968869015" />
+    <Observation Value="85764.6482313307" />
+    <Observation Value="89217.6607704868" />
+    <Observation Value="84300.6838196958" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="65689.2152396666" />
+    <Observation Value="69591.0071526201" />
+    <Observation Value="68130.455854834" />
+    <Observation Value="67998.4587775018" />
+    <Observation Value="68490.30221671" />
+    <Observation Value="70446.8823805904" />
+    <Observation Value="71082.13871755" />
+    <Observation Value="66721.0960825495" />
+    <Observation Value="70086.8029141427" />
+    <Observation Value="66461.6066849286" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="PercentDirectLoading">
+    <Observation Value="28.3899968734742" />
+    <Observation Value="28.3957632621877" />
+    <Observation Value="28.1600367548383" />
+    <Observation Value="27.9501513348597" />
+    <Observation Value="28.6661892500481" />
+    <Observation Value="27.8953305930795" />
+    <Observation Value="28.2996065696321" />
+    <Observation Value="28.4299635253625" />
+    <Observation Value="28.8027949674139" />
+    <Observation Value="28.7813525703366" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.6326664518537" />
+    <Observation Value="4.79117929058903" />
+    <Observation Value="4.81865047551919" />
+    <Observation Value="4.79501902557474" />
+    <Observation Value="4.27632804160889" />
+    <Observation Value="4.77343687071445" />
+    <Observation Value="5.21264082194941" />
+    <Observation Value="4.06907648043688" />
+    <Observation Value="4.83564563030784" />
+    <Observation Value="4.69336640456463" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.11346336370211" />
+    <Observation Value="1.08714686995622" />
+    <Observation Value="1.10028563298898" />
+    <Observation Value="1.07072744755499" />
+    <Observation Value="1.0924592588708" />
+    <Observation Value="1.09922718625922" />
+    <Observation Value="1.09506845572826" />
+    <Observation Value="1.10795739768626" />
+    <Observation Value="1.12654798399428" />
+    <Observation Value="1.08193686152595" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="AvgShipTTIP">
+    <Observation Value="1797.17693598876" />
+    <Observation Value="1900.63878757117" />
+    <Observation Value="1914.64924462967" />
+    <Observation Value="1655.04141537031" />
+    <Observation Value="1909.3491672675" />
+    <Observation Value="2045.73103800258" />
+    <Observation Value="1887.73868066363" />
+    <Observation Value="1705.94623964583" />
+    <Observation Value="1838.17661442001" />
+    <Observation Value="1917.56568237185" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="AvgShipTimeInBerth">
+    <Observation Value="30.4136729747395" />
+    <Observation Value="31.1457191924574" />
+    <Observation Value="30.3547088826288" />
+    <Observation Value="29.713552027095" />
+    <Observation Value="30.8095904695165" />
+    <Observation Value="30.8953440087426" />
+    <Observation Value="30.3225639607323" />
+    <Observation Value="30.7981702745589" />
+    <Observation Value="30.7807896297864" />
+    <Observation Value="30.456674946207" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="AvgShipLoadingTime">
+    <Observation Value="27.2208979031587" />
+    <Observation Value="27.8775247241151" />
+    <Observation Value="27.1920441977369" />
+    <Observation Value="26.628949753643" />
+    <Observation Value="27.5436068355074" />
+    <Observation Value="27.6213728656703" />
+    <Observation Value="27.2350411398951" />
+    <Observation Value="27.5475652561627" />
+    <Observation Value="27.574772312547" />
+    <Observation Value="27.1766327086811" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="137672.01715291" />
+    <Observation Value="134944.150360841" />
+    <Observation Value="132769.647948615" />
+    <Observation Value="134260.949182263" />
+    <Observation Value="136756.628345019" />
+    <Observation Value="136500.373892887" />
+    <Observation Value="129275.21104486" />
+    <Observation Value="135368.682475978" />
+    <Observation Value="132951.90269201" />
+    <Observation Value="139234.998397359" />
+  </Observations>
+  <Observations Scenario="Case7C" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="166685.281859872" />
+    <Observation Value="166345.378896501" />
+    <Observation Value="165838.087061986" />
+    <Observation Value="165061.04091468" />
+    <Observation Value="166549.389029264" />
+    <Observation Value="165768.353191638" />
+    <Observation Value="155450.706111778" />
+    <Observation Value="163618.10777782" />
+    <Observation Value="162857.609496689" />
+    <Observation Value="167566.971629261" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="PortStockpileAvgTotalContents">
+    <Observation Value="318593.560319802" />
+    <Observation Value="308976.895084629" />
+    <Observation Value="299540.755082846" />
+    <Observation Value="319791.772515862" />
+    <Observation Value="312335.97702141" />
+    <Observation Value="313898.191387268" />
+    <Observation Value="302119.444615381" />
+    <Observation Value="312737.36284247" />
+    <Observation Value="312378.296608424" />
+    <Observation Value="313485.580995655" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="ShiploadingIdleTime">
+    <Observation Value="3571.67708184725" />
+    <Observation Value="3830.17403842124" />
+    <Observation Value="4200.74343628454" />
+    <Observation Value="3849.73806167486" />
+    <Observation Value="3689.1225188969" />
+    <Observation Value="4030.75222971085" />
+    <Observation Value="4249.27070834457" />
+    <Observation Value="3564.23412837998" />
+    <Observation Value="3910.49834493194" />
+    <Observation Value="3558.81449036274" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="ShiploadingWeatherDownTime">
+    <Observation Value="341.147107576936" />
+    <Observation Value="262.66320584415" />
+    <Observation Value="260.954471488507" />
+    <Observation Value="231.778208277802" />
+    <Observation Value="343.918496086025" />
+    <Observation Value="336.311224905446" />
+    <Observation Value="257.144820516279" />
+    <Observation Value="280.943019840717" />
+    <Observation Value="254.852504016809" />
+    <Observation Value="282.349353690218" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1494.88433998813" />
+    <Observation Value="1496.87565119849" />
+    <Observation Value="1500" />
+    <Observation Value="1498.9629830097" />
+    <Observation Value="1496.3424036841" />
+    <Observation Value="1500" />
+    <Observation Value="1488" />
+    <Observation Value="1492.91860460671" />
+    <Observation Value="1491.65768252625" />
+    <Observation Value="1494.77821711133" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="ShiploadingPositioningTime">
+    <Observation Value="1730.96892004916" />
+    <Observation Value="1692.62024996224" />
+    <Observation Value="1669.32324271254" />
+    <Observation Value="1838.76686874475" />
+    <Observation Value="1758.99166642183" />
+    <Observation Value="1707.89694064259" />
+    <Observation Value="1696.59337963833" />
+    <Observation Value="1703.655038566" />
+    <Observation Value="1792.93315760731" />
+    <Observation Value="1667.94641376312" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="ShiploadingOccupiedTime">
+    <Observation Value="36661.3225505385" />
+    <Observation Value="36517.6668545739" />
+    <Observation Value="36168.9788495144" />
+    <Observation Value="36380.7538782929" />
+    <Observation Value="36511.6249149112" />
+    <Observation Value="36225.0396047411" />
+    <Observation Value="36108.9910915008" />
+    <Observation Value="36758.2492086066" />
+    <Observation Value="36350.0583109177" />
+    <Observation Value="36796.1115250726" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="DumperIdleTime">
+    <Observation Value="12563.3886793417" />
+    <Observation Value="12641.0719492576" />
+    <Observation Value="12966.1107463526" />
+    <Observation Value="12563.7474208646" />
+    <Observation Value="12542.1062253974" />
+    <Observation Value="12532.3676002465" />
+    <Observation Value="12914.4098302592" />
+    <Observation Value="12294.2518018268" />
+    <Observation Value="12497.6483159157" />
+    <Observation Value="12459.519507099" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="DumperWeatherDownTime">
+    <Observation Value="43.0637176161815" />
+    <Observation Value="42.9065019414111" />
+    <Observation Value="88.9442837138211" />
+    <Observation Value="63.7124346460328" />
+    <Observation Value="31.3656101070384" />
+    <Observation Value="29.9859032123595" />
+    <Observation Value="79.5222241844826" />
+    <Observation Value="52.2996919309114" />
+    <Observation Value="45.0953729729705" />
+    <Observation Value="38.111824564655" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1740" />
+    <Observation Value="1739.39233311533" />
+    <Observation Value="1740" />
+    <Observation Value="1701.5527294405" />
+    <Observation Value="1693.67561138801" />
+    <Observation Value="1740" />
+    <Observation Value="1700.87122333512" />
+    <Observation Value="1720.77107692633" />
+    <Observation Value="1740" />
+    <Observation Value="1740" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="DumperPositioningTime">
+    <Observation Value="2297.09680474216" />
+    <Observation Value="2277.64884222097" />
+    <Observation Value="2264.65003471005" />
+    <Observation Value="2303.45857432982" />
+    <Observation Value="2304.63135684614" />
+    <Observation Value="2302.74239068214" />
+    <Observation Value="2280.30438098954" />
+    <Observation Value="2328.6380027992" />
+    <Observation Value="2313.64157466549" />
+    <Observation Value="2315.66902328918" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="DumperUnloadingTime">
+    <Observation Value="27156.4507983" />
+    <Observation Value="27098.9803734647" />
+    <Observation Value="26740.2949352235" />
+    <Observation Value="27167.5288407191" />
+    <Observation Value="27228.2211962614" />
+    <Observation Value="27194.904105859" />
+    <Observation Value="26824.8923412317" />
+    <Observation Value="27404.0394265167" />
+    <Observation Value="27203.6147364459" />
+    <Observation Value="27246.6996450472" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="PortShiploaderThroughput">
+    <Observation Value="36.3533999761151" />
+    <Observation Value="36.055121694604" />
+    <Observation Value="35.847999976035" />
+    <Observation Value="36.4726428329779" />
+    <Observation Value="36.4728576232124" />
+    <Observation Value="36.4407142612898" />
+    <Observation Value="36.0893764034576" />
+    <Observation Value="36.8719999756353" />
+    <Observation Value="36.6292142615296" />
+    <Observation Value="36.6723514462725" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="PortDumperThroughput">
+    <Observation Value="36.414646348701" />
+    <Observation Value="36.1104480000069" />
+    <Observation Value="35.90829527019" />
+    <Observation Value="36.5174091987446" />
+    <Observation Value="36.5271385513145" />
+    <Observation Value="36.5134292685782" />
+    <Observation Value="36.142325302581" />
+    <Observation Value="36.9325440000068" />
+    <Observation Value="36.6773347132028" />
+    <Observation Value="36.7051338429962" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="TrainUnloadingTime">
+    <Observation Value="3.57826122530799" />
+    <Observation Value="3.58381724534353" />
+    <Observation Value="3.55769558893567" />
+    <Observation Value="3.55755573454467" />
+    <Observation Value="3.58812468658069" />
+    <Observation Value="3.55682774345164" />
+    <Observation Value="3.57973108825293" />
+    <Observation Value="3.54747489729526" />
+    <Observation Value="3.54610054335388" />
+    <Observation Value="3.53951708374286" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="TrainLoadingTime">
+    <Observation Value="2.99894679396683" />
+    <Observation Value="3.00162827400125" />
+    <Observation Value="2.99834195805428" />
+    <Observation Value="2.99556526285183" />
+    <Observation Value="2.99929350070933" />
+    <Observation Value="2.99860605526476" />
+    <Observation Value="2.99671066119774" />
+    <Observation Value="3.00005087231554" />
+    <Observation Value="2.9985427159919" />
+    <Observation Value="3.00005825455014" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="TrainProvisioningTime">
+    <Observation Value="2.68495171140465" />
+    <Observation Value="2.68448071628368" />
+    <Observation Value="2.69086697733869" />
+    <Observation Value="2.68409475465637" />
+    <Observation Value="2.68628496977113" />
+    <Observation Value="2.68790679665525" />
+    <Observation Value="2.68795370924847" />
+    <Observation Value="2.68178893091715" />
+    <Observation Value="2.6861345079946" />
+    <Observation Value="2.68273986671313" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.00483372007828" />
+    <Observation Value="1.02166353096565" />
+    <Observation Value="1.05630030826968" />
+    <Observation Value="1.0334242013403" />
+    <Observation Value="1.01441690915775" />
+    <Observation Value="1.02241328448788" />
+    <Observation Value="1.00655459426672" />
+    <Observation Value="1.0317669038146" />
+    <Observation Value="1.01304245755644" />
+    <Observation Value="1.00420946906891" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.34177759977195" />
+    <Observation Value="1.35342562304547" />
+    <Observation Value="1.38647065509586" />
+    <Observation Value="1.26827426433393" />
+    <Observation Value="1.26275748380186" />
+    <Observation Value="1.25505805495894" />
+    <Observation Value="1.24649938359702" />
+    <Observation Value="1.28111160412914" />
+    <Observation Value="1.26566950398631" />
+    <Observation Value="1.29413924481987" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.193728721109396" />
+    <Observation Value="0.218017823416512" />
+    <Observation Value="0.200204911842969" />
+    <Observation Value="0.195532097248725" />
+    <Observation Value="0.181192399438587" />
+    <Observation Value="0.193080172561782" />
+    <Observation Value="0.184089605856666" />
+    <Observation Value="0.181909837149698" />
+    <Observation Value="0.185698058550316" />
+    <Observation Value="0.18718819136677" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.332398266037916" />
+    <Observation Value="0.340218699802087" />
+    <Observation Value="0.35717860298379" />
+    <Observation Value="0.331104371416892" />
+    <Observation Value="0.310749815056611" />
+    <Observation Value="0.321893103856575" />
+    <Observation Value="0.325771464679051" />
+    <Observation Value="0.324011685332182" />
+    <Observation Value="0.321091644721581" />
+    <Observation Value="0.306888404923931" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.324488922129905" />
+    <Observation Value="0.335368961893383" />
+    <Observation Value="0.331391787484097" />
+    <Observation Value="0.305953032895011" />
+    <Observation Value="0.288670679754726" />
+    <Observation Value="0.28858699310333" />
+    <Observation Value="0.290539352825156" />
+    <Observation Value="0.298155760098863" />
+    <Observation Value="0.310749259016368" />
+    <Observation Value="0.318007285445199" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.26438921909065" />
+    <Observation Value="0.246283653048377" />
+    <Observation Value="0.280014027989711" />
+    <Observation Value="0.236698309394726" />
+    <Observation Value="0.266309583819237" />
+    <Observation Value="0.238674191471898" />
+    <Observation Value="0.240630527110652" />
+    <Observation Value="0.257896256974936" />
+    <Observation Value="0.227774415647615" />
+    <Observation Value="0.259772840493891" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.226937435557373" />
+    <Observation Value="0.213654549316739" />
+    <Observation Value="0.2176957368012" />
+    <Observation Value="0.198846880072337" />
+    <Observation Value="0.215806931838451" />
+    <Observation Value="0.213111006774332" />
+    <Observation Value="0.20547964449636" />
+    <Observation Value="0.218998669683805" />
+    <Observation Value="0.22027076887232" />
+    <Observation Value="0.222334540661647" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="1.38935676785009" />
+    <Observation Value="0.972486605628039" />
+    <Observation Value="0.961884537344722" />
+    <Observation Value="1.02026732077594" />
+    <Observation Value="1.12288721513561" />
+    <Observation Value="1.05938105486688" />
+    <Observation Value="1.08727960191024" />
+    <Observation Value="0.962200112021672" />
+    <Observation Value="1.45587765980057" />
+    <Observation Value="0.941075567173257" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.619396942185412" />
+    <Observation Value="0.579836782212708" />
+    <Observation Value="0.648324278987591" />
+    <Observation Value="0.684277119392002" />
+    <Observation Value="0.537794372634183" />
+    <Observation Value="0.615587271868932" />
+    <Observation Value="0.6611568416443" />
+    <Observation Value="0.564353163999993" />
+    <Observation Value="0.611239885767866" />
+    <Observation Value="0.633986909009408" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.636816879119062" />
+    <Observation Value="0.648998332294003" />
+    <Observation Value="0.749741005549981" />
+    <Observation Value="0.711647207971497" />
+    <Observation Value="0.672456815932795" />
+    <Observation Value="0.650199508817602" />
+    <Observation Value="0.625891195701215" />
+    <Observation Value="0.728729045176997" />
+    <Observation Value="0.75359957949001" />
+    <Observation Value="0.63676623317501" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.842691151084354" />
+    <Observation Value="0.789846917853102" />
+    <Observation Value="0.869247154263819" />
+    <Observation Value="0.730986999979566" />
+    <Observation Value="0.800218109210347" />
+    <Observation Value="0.778840589561328" />
+    <Observation Value="0.804114013475698" />
+    <Observation Value="0.818036553913229" />
+    <Observation Value="0.766019816094756" />
+    <Observation Value="0.798881665263172" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.0184746708422" />
+    <Observation Value="1.12489078823576" />
+    <Observation Value="1.04275075084082" />
+    <Observation Value="1.1279330684815" />
+    <Observation Value="1.16274444969027" />
+    <Observation Value="1.17515945454987" />
+    <Observation Value="1.04038776870207" />
+    <Observation Value="1.14320363312681" />
+    <Observation Value="0.997784947204115" />
+    <Observation Value="1.06847461020257" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="LoadedTravelTime">
+    <Observation Value="10.017829439304" />
+    <Observation Value="10.0261159683798" />
+    <Observation Value="10.0767865697427" />
+    <Observation Value="9.69264459903306" />
+    <Observation Value="9.64981345722213" />
+    <Observation Value="9.82751024789957" />
+    <Observation Value="9.86594818242194" />
+    <Observation Value="9.57805623885941" />
+    <Observation Value="9.6599646137121" />
+    <Observation Value="9.69035229809446" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="EmptyTravelTime">
+    <Observation Value="8.25734712264098" />
+    <Observation Value="8.29781249628429" />
+    <Observation Value="8.46511234553881" />
+    <Observation Value="7.95591328285197" />
+    <Observation Value="8.12509711520523" />
+    <Observation Value="8.08100452733972" />
+    <Observation Value="8.32306783544641" />
+    <Observation Value="7.93085341392603" />
+    <Observation Value="8.04924312157069" />
+    <Observation Value="8.11195319708478" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="RailOperatingCycleTime">
+    <Observation Value="29.0602840892129" />
+    <Observation Value="29.139569315777" />
+    <Observation Value="29.3294621182032" />
+    <Observation Value="29.1218695779286" />
+    <Observation Value="28.9560664955424" />
+    <Observation Value="29.0267877943997" />
+    <Observation Value="29.0274089564577" />
+    <Observation Value="28.9135252744851" />
+    <Observation Value="28.8720959677594" />
+    <Observation Value="28.9147488022621" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="RailCycleTime">
+    <Observation Value="32.3883350191064" />
+    <Observation Value="32.4329642046856" />
+    <Observation Value="32.8228114777798" />
+    <Observation Value="31.8010330924367" />
+    <Observation Value="31.8770179469634" />
+    <Observation Value="32.0136519651225" />
+    <Observation Value="32.405125921096" />
+    <Observation Value="31.5001550482488" />
+    <Observation Value="31.6991383433942" />
+    <Observation Value="31.7885661938097" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.04811847994279" />
+    <Observation Value="2.09364060126155" />
+    <Observation Value="2.1295601044901" />
+    <Observation Value="2.03573117744948" />
+    <Observation Value="2.03095339699886" />
+    <Observation Value="2.03308080092717" />
+    <Observation Value="2.09381156448752" />
+    <Observation Value="1.96684247641343" />
+    <Observation Value="2.00782400135549" />
+    <Observation Value="2.00164869108438" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="MineTLOProductLoaded">
+    <Observation Value="182.135305775267" />
+    <Observation Value="180.60856782479" />
+    <Observation Value="179.595573201014" />
+    <Observation Value="182.643120000045" />
+    <Observation Value="182.666880000045" />
+    <Observation Value="182.620067291313" />
+    <Observation Value="180.763415653368" />
+    <Observation Value="184.729474148205" />
+    <Observation Value="183.441928896172" />
+    <Observation Value="183.593520000045" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="87911.8659227987" />
+    <Observation Value="85759.6212680677" />
+    <Observation Value="88599.0724672452" />
+    <Observation Value="81770.8505024805" />
+    <Observation Value="81658.4914843587" />
+    <Observation Value="82578.4768543444" />
+    <Observation Value="85210.9259945314" />
+    <Observation Value="78911.2564219163" />
+    <Observation Value="78032.6774188378" />
+    <Observation Value="79772.9225829643" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="69060.2684840554" />
+    <Observation Value="68129.3471866123" />
+    <Observation Value="71052.7173787215" />
+    <Observation Value="63511.3437283423" />
+    <Observation Value="64153.6268552432" />
+    <Observation Value="64764.9043719089" />
+    <Observation Value="67063.4115139179" />
+    <Observation Value="60335.9818664291" />
+    <Observation Value="60486.0031290735" />
+    <Observation Value="61660.9035156864" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="PercentDirectLoading">
+    <Observation Value="28.6228352350056" />
+    <Observation Value="29.2220850723274" />
+    <Observation Value="28.4622189880909" />
+    <Observation Value="28.0847740664798" />
+    <Observation Value="28.6998003116217" />
+    <Observation Value="28.7171210906072" />
+    <Observation Value="28.6211451813689" />
+    <Observation Value="28.7647194893921" />
+    <Observation Value="28.9924585207874" />
+    <Observation Value="28.6001597668976" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.261457469848" />
+    <Observation Value="4.45144211841046" />
+    <Observation Value="4.77320707756905" />
+    <Observation Value="4.42082770936709" />
+    <Observation Value="4.30759017329807" />
+    <Observation Value="4.56320359710862" />
+    <Observation Value="4.79493508718965" />
+    <Observation Value="4.10004023823638" />
+    <Observation Value="4.44635713855794" />
+    <Observation Value="4.15722247797828" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.09557135400357" />
+    <Observation Value="1.16597471095034" />
+    <Observation Value="1.12852672274908" />
+    <Observation Value="1.06921445853756" />
+    <Observation Value="1.08617526116279" />
+    <Observation Value="1.11140756170525" />
+    <Observation Value="1.12971821160451" />
+    <Observation Value="1.0554157311087" />
+    <Observation Value="1.11720091568862" />
+    <Observation Value="1.11889380441055" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="AvgShipTTIP">
+    <Observation Value="1856.18888404661" />
+    <Observation Value="1928.37091577891" />
+    <Observation Value="1987.08573985553" />
+    <Observation Value="1761.65633221116" />
+    <Observation Value="1637.24146173034" />
+    <Observation Value="1613.13701974337" />
+    <Observation Value="1796.56319129929" />
+    <Observation Value="1499.63873433809" />
+    <Observation Value="1500.03626315896" />
+    <Observation Value="1487.59382759625" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="AvgShipTimeInBerth">
+    <Observation Value="31.0399562681466" />
+    <Observation Value="30.7930685960148" />
+    <Observation Value="30.4013539324804" />
+    <Observation Value="30.4674152623715" />
+    <Observation Value="30.6482376708165" />
+    <Observation Value="29.9340699458553" />
+    <Observation Value="30.2140375583705" />
+    <Observation Value="30.4869317665575" />
+    <Observation Value="30.40411690148" />
+    <Observation Value="30.7012161274243" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="AvgShipLoadingTime">
+    <Observation Value="27.8072101091104" />
+    <Observation Value="27.5786787883222" />
+    <Observation Value="27.207090063068" />
+    <Observation Value="27.23181392867" />
+    <Observation Value="27.3468859029507" />
+    <Observation Value="26.8170884188735" />
+    <Observation Value="27.0354045713363" />
+    <Observation Value="27.2039813268564" />
+    <Observation Value="27.2703494474313" />
+    <Observation Value="27.4648734245474" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="140971.111117451" />
+    <Observation Value="140336.970346898" />
+    <Observation Value="134964.430774098" />
+    <Observation Value="144289.232548099" />
+    <Observation Value="137428.846728583" />
+    <Observation Value="136741.082261508" />
+    <Observation Value="136592.058406043" />
+    <Observation Value="141409.208537018" />
+    <Observation Value="139469.149958348" />
+    <Observation Value="139017.097781796" />
+  </Observations>
+  <Observations Scenario="Case7D" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="177622.449202344" />
+    <Observation Value="168639.924737733" />
+    <Observation Value="164576.324308751" />
+    <Observation Value="175502.539967774" />
+    <Observation Value="174907.130292821" />
+    <Observation Value="177157.109125762" />
+    <Observation Value="165527.386209332" />
+    <Observation Value="171334.841063439" />
+    <Observation Value="172909.146650076" />
+    <Observation Value="174468.48321385" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="PortStockpileAvgTotalContents">
+    <Observation Value="309276.045720695" />
+    <Observation Value="304658.211296012" />
+    <Observation Value="318596.242908782" />
+    <Observation Value="312517.76729878" />
+    <Observation Value="315930.757022367" />
+    <Observation Value="324312.099598261" />
+    <Observation Value="304412.289886745" />
+    <Observation Value="317677.460758511" />
+    <Observation Value="323179.961703472" />
+    <Observation Value="317269.409661573" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="ShiploadingIdleTime">
+    <Observation Value="3941.09391634939" />
+    <Observation Value="4379.19018442696" />
+    <Observation Value="4312.51520537766" />
+    <Observation Value="3979.79963221634" />
+    <Observation Value="3484.70607382002" />
+    <Observation Value="3711.89480633325" />
+    <Observation Value="4030.56624867549" />
+    <Observation Value="3941.07901468766" />
+    <Observation Value="4012.95322819376" />
+    <Observation Value="3662.53443735833" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="ShiploadingWeatherDownTime">
+    <Observation Value="248.607479712185" />
+    <Observation Value="287.365114697562" />
+    <Observation Value="294.165275333335" />
+    <Observation Value="345.7941645623" />
+    <Observation Value="261.036288244395" />
+    <Observation Value="338.600797556794" />
+    <Observation Value="244.634902838399" />
+    <Observation Value="238.44255369705" />
+    <Observation Value="260.344656147928" />
+    <Observation Value="343.991848499844" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1500" />
+    <Observation Value="1492.34900879269" />
+    <Observation Value="1488" />
+    <Observation Value="1500" />
+    <Observation Value="1495.4064937455" />
+    <Observation Value="1476.72346647807" />
+    <Observation Value="1499.69599321721" />
+    <Observation Value="1500" />
+    <Observation Value="1498.69476909382" />
+    <Observation Value="1500" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="ShiploadingPositioningTime">
+    <Observation Value="1661.25982821341" />
+    <Observation Value="1740.14259787098" />
+    <Observation Value="1678.32550657482" />
+    <Observation Value="1722.94066882029" />
+    <Observation Value="1684.42858307665" />
+    <Observation Value="1735.27733804808" />
+    <Observation Value="1725.52873399811" />
+    <Observation Value="1820.05114837372" />
+    <Observation Value="1735.93461197714" />
+    <Observation Value="1708.67142433221" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="ShiploadingOccupiedTime">
+    <Observation Value="36449.038775725" />
+    <Observation Value="35900.9530942118" />
+    <Observation Value="36026.9940127142" />
+    <Observation Value="36251.4655344011" />
+    <Observation Value="36874.4225611134" />
+    <Observation Value="36537.5035915838" />
+    <Observation Value="36299.5741212708" />
+    <Observation Value="36300.4272832416" />
+    <Observation Value="36292.0727345874" />
+    <Observation Value="36584.8022898096" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="DumperIdleTime">
+    <Observation Value="12922.6960069083" />
+    <Observation Value="12894.8239602587" />
+    <Observation Value="12763.0437005826" />
+    <Observation Value="12617.0613977907" />
+    <Observation Value="12513.6374235528" />
+    <Observation Value="12533.9144790108" />
+    <Observation Value="12933.6191979526" />
+    <Observation Value="12279.9942692993" />
+    <Observation Value="12817.8051626674" />
+    <Observation Value="12775.8298374386" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="DumperWeatherDownTime">
+    <Observation Value="39.2046525027722" />
+    <Observation Value="47.6911215885518" />
+    <Observation Value="52.5602188722886" />
+    <Observation Value="43.9431073233202" />
+    <Observation Value="57.8137393798909" />
+    <Observation Value="45.4285777354432" />
+    <Observation Value="23.0855441519097" />
+    <Observation Value="38.70655072366" />
+    <Observation Value="38.6387313867561" />
+    <Observation Value="75.8656867071297" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1736.36224987516" />
+    <Observation Value="1740" />
+    <Observation Value="1704.67381931801" />
+    <Observation Value="1740" />
+    <Observation Value="1727.66683506125" />
+    <Observation Value="1731.31588614622" />
+    <Observation Value="1740" />
+    <Observation Value="1712.94349012388" />
+    <Observation Value="1694.28758363496" />
+    <Observation Value="1740" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="DumperPositioningTime">
+    <Observation Value="2279.53140245125" />
+    <Observation Value="2274.8782952733" />
+    <Observation Value="2287.76490172535" />
+    <Observation Value="2290.04564048959" />
+    <Observation Value="2313.99252822399" />
+    <Observation Value="2307.11512312976" />
+    <Observation Value="2284.85362135475" />
+    <Observation Value="2323.06487557175" />
+    <Observation Value="2295.89574457266" />
+    <Observation Value="2300.46724725286" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="DumperUnloadingTime">
+    <Observation Value="26822.2056882626" />
+    <Observation Value="26842.6066228795" />
+    <Observation Value="26991.9573595018" />
+    <Observation Value="27108.9498543964" />
+    <Observation Value="27186.8894737821" />
+    <Observation Value="27182.2259339777" />
+    <Observation Value="26818.4416365407" />
+    <Observation Value="27445.2908142814" />
+    <Observation Value="26953.3727777383" />
+    <Observation Value="26907.8372286014" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="PortShiploaderThroughput">
+    <Observation Value="36.0812142618103" />
+    <Observation Value="36.0391388843509" />
+    <Observation Value="36.2299999762159" />
+    <Observation Value="36.2533721015274" />
+    <Observation Value="36.6419999756965" />
+    <Observation Value="36.5281428329382" />
+    <Observation Value="36.1690562634243" />
+    <Observation Value="36.7635545689817" />
+    <Observation Value="36.3363993729972" />
+    <Observation Value="36.4159999761543" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="PortDumperThroughput">
+    <Observation Value="36.1406851912068" />
+    <Observation Value="36.072432000007" />
+    <Observation Value="36.2720160000068" />
+    <Observation Value="36.3076604116145" />
+    <Observation Value="36.6845922237873" />
+    <Observation Value="36.5744572954467" />
+    <Observation Value="36.2233654731396" />
+    <Observation Value="36.8289605359905" />
+    <Observation Value="36.3866870142891" />
+    <Observation Value="36.4763520000067" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="TrainUnloadingTime">
+    <Observation Value="3.54212862332795" />
+    <Observation Value="3.57263482816495" />
+    <Observation Value="3.55350859560745" />
+    <Observation Value="3.58195085013072" />
+    <Observation Value="3.55712501444626" />
+    <Observation Value="3.56475419109367" />
+    <Observation Value="3.52869534139001" />
+    <Observation Value="3.58249067350768" />
+    <Observation Value="3.56795730496207" />
+    <Observation Value="3.5321946524895" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="TrainLoadingTime">
+    <Observation Value="3.00101140983024" />
+    <Observation Value="2.99912820106098" />
+    <Observation Value="3.0000414193733" />
+    <Observation Value="2.99810205762903" />
+    <Observation Value="2.99692272787493" />
+    <Observation Value="2.99896520109849" />
+    <Observation Value="3.00057683266585" />
+    <Observation Value="3.001458565422" />
+    <Observation Value="2.99919428259388" />
+    <Observation Value="2.99645944932774" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="TrainProvisioningTime">
+    <Observation Value="2.68282482953887" />
+    <Observation Value="2.69110672039998" />
+    <Observation Value="2.68347529881826" />
+    <Observation Value="2.68684382843443" />
+    <Observation Value="2.68528306598295" />
+    <Observation Value="2.68783783628904" />
+    <Observation Value="2.68769351748123" />
+    <Observation Value="2.68313330755952" />
+    <Observation Value="2.68735632149144" />
+    <Observation Value="2.68819543975023" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.987220018877881" />
+    <Observation Value="1.07582838531042" />
+    <Observation Value="0.994896264359404" />
+    <Observation Value="0.987960326504956" />
+    <Observation Value="1.03640761780859" />
+    <Observation Value="0.987289882162235" />
+    <Observation Value="1.07045268956597" />
+    <Observation Value="1.01132086802053" />
+    <Observation Value="1.03572108544615" />
+    <Observation Value="1.04121382616532" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.28496792698709" />
+    <Observation Value="1.34719133267541" />
+    <Observation Value="1.31830295414373" />
+    <Observation Value="1.29854263940354" />
+    <Observation Value="1.21497559728042" />
+    <Observation Value="1.27890863457055" />
+    <Observation Value="1.25829200065768" />
+    <Observation Value="1.30767756980796" />
+    <Observation Value="1.32281674233641" />
+    <Observation Value="1.21850866109553" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.175756652174927" />
+    <Observation Value="0.199538062922383" />
+    <Observation Value="0.190234303146935" />
+    <Observation Value="0.191995851740777" />
+    <Observation Value="0.178467783955956" />
+    <Observation Value="0.188046362713214" />
+    <Observation Value="0.174354148889891" />
+    <Observation Value="0.183373484220381" />
+    <Observation Value="0.178490087358239" />
+    <Observation Value="0.164068237979225" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.332844168830826" />
+    <Observation Value="0.331422215142078" />
+    <Observation Value="0.334280518479737" />
+    <Observation Value="0.317245242274817" />
+    <Observation Value="0.300133806161713" />
+    <Observation Value="0.318896769530492" />
+    <Observation Value="0.305651992162525" />
+    <Observation Value="0.302902154200854" />
+    <Observation Value="0.340048649115618" />
+    <Observation Value="0.300664589455796" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.29557063149086" />
+    <Observation Value="0.325218793454696" />
+    <Observation Value="0.302708815243318" />
+    <Observation Value="0.342639314885256" />
+    <Observation Value="0.30385165461992" />
+    <Observation Value="0.301748140237827" />
+    <Observation Value="0.303754588527385" />
+    <Observation Value="0.317147039433402" />
+    <Observation Value="0.295536780188201" />
+    <Observation Value="0.279713088502419" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.253763368989207" />
+    <Observation Value="0.268686840960195" />
+    <Observation Value="0.275484944491275" />
+    <Observation Value="0.233574588740165" />
+    <Observation Value="0.224821607730719" />
+    <Observation Value="0.257453312980194" />
+    <Observation Value="0.263188194990966" />
+    <Observation Value="0.272518738497973" />
+    <Observation Value="0.257169597010256" />
+    <Observation Value="0.255414176628899" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.227098435749779" />
+    <Observation Value="0.222384276234824" />
+    <Observation Value="0.21544660239043" />
+    <Observation Value="0.213107095803008" />
+    <Observation Value="0.207625990123553" />
+    <Observation Value="0.212826400564834" />
+    <Observation Value="0.211200898880955" />
+    <Observation Value="0.231630190753249" />
+    <Observation Value="0.251639762724687" />
+    <Observation Value="0.21856060673813" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.98124449630549" />
+    <Observation Value="1.51178184284663" />
+    <Observation Value="1.44531752566924" />
+    <Observation Value="1.30606682267067" />
+    <Observation Value="1.20138811317966" />
+    <Observation Value="0.912546168264539" />
+    <Observation Value="1.26754539372876" />
+    <Observation Value="0.893785463535459" />
+    <Observation Value="1.4306093309744" />
+    <Observation Value="0.976960118557436" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.573658102166284" />
+    <Observation Value="0.627395249274734" />
+    <Observation Value="0.579196973777544" />
+    <Observation Value="0.553784363983756" />
+    <Observation Value="0.613512116573839" />
+    <Observation Value="0.577699151287829" />
+    <Observation Value="0.593646075921043" />
+    <Observation Value="0.595873483157194" />
+    <Observation Value="0.65080586332348" />
+    <Observation Value="0.63437532261488" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.709345975759152" />
+    <Observation Value="0.741262179538043" />
+    <Observation Value="0.663691918089118" />
+    <Observation Value="0.664962882043758" />
+    <Observation Value="0.723773280504622" />
+    <Observation Value="0.622121025642712" />
+    <Observation Value="0.702122784913862" />
+    <Observation Value="0.658659409884269" />
+    <Observation Value="0.666405259068832" />
+    <Observation Value="0.653182478746388" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.745590361366689" />
+    <Observation Value="0.80093146634137" />
+    <Observation Value="0.789590331938551" />
+    <Observation Value="0.77486562480086" />
+    <Observation Value="0.770404981481878" />
+    <Observation Value="0.782735550309777" />
+    <Observation Value="0.832521218857917" />
+    <Observation Value="0.800817034598674" />
+    <Observation Value="0.835602453841365" />
+    <Observation Value="0.753350059062759" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.10398553705538" />
+    <Observation Value="1.17465942335249" />
+    <Observation Value="1.05605514266071" />
+    <Observation Value="1.07840862029942" />
+    <Observation Value="1.09106503515546" />
+    <Observation Value="1.0741651099383" />
+    <Observation Value="1.18826931956291" />
+    <Observation Value="1.14088771558959" />
+    <Observation Value="1.07318942365372" />
+    <Observation Value="1.18251369785378" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="LoadedTravelTime">
+    <Observation Value="9.91335147471952" />
+    <Observation Value="9.98023227230955" />
+    <Observation Value="9.77024149942413" />
+    <Observation Value="9.8769708674648" />
+    <Observation Value="9.6739391245478" />
+    <Observation Value="9.632262486915" />
+    <Observation Value="9.80498056999402" />
+    <Observation Value="9.65818524083524" />
+    <Observation Value="9.70828369396236" />
+    <Observation Value="9.70515654636071" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="EmptyTravelTime">
+    <Observation Value="8.24477385313879" />
+    <Observation Value="8.25744793957419" />
+    <Observation Value="8.15319443253756" />
+    <Observation Value="8.21845332793673" />
+    <Observation Value="8.16922628661527" />
+    <Observation Value="8.10420485184419" />
+    <Observation Value="8.19504221178411" />
+    <Observation Value="8.12212736513492" />
+    <Observation Value="8.15535190602727" />
+    <Observation Value="8.1498150895313" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="RailOperatingCycleTime">
+    <Observation Value="29.0191249735904" />
+    <Observation Value="29.220903865281" />
+    <Observation Value="29.0320458045725" />
+    <Observation Value="28.942553527599" />
+    <Observation Value="28.8664943406262" />
+    <Observation Value="29.014951723823" />
+    <Observation Value="28.9888484375333" />
+    <Observation Value="28.9439349763755" />
+    <Observation Value="28.8687352375356" />
+    <Observation Value="28.9855949160606" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="RailCycleTime">
+    <Observation Value="32.375421337298" />
+    <Observation Value="32.4546546680284" />
+    <Observation Value="32.0839010154493" />
+    <Observation Value="32.213808979814" />
+    <Observation Value="31.842684912221" />
+    <Observation Value="31.8397731425809" />
+    <Observation Value="32.1328751446787" />
+    <Observation Value="31.7324006553177" />
+    <Observation Value="31.8741294142728" />
+    <Observation Value="32.0152959722511" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.0895945161999" />
+    <Observation Value="2.10202544943696" />
+    <Observation Value="2.05506898718446" />
+    <Observation Value="2.06614074845764" />
+    <Observation Value="2.00802573257945" />
+    <Observation Value="2.0231282281525" />
+    <Observation Value="2.0766363534018" />
+    <Observation Value="1.98132777374766" />
+    <Observation Value="2.05213335752762" />
+    <Observation Value="2.04034300822334" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="MineTLOProductLoaded">
+    <Observation Value="180.742320000044" />
+    <Observation Value="180.429719936766" />
+    <Observation Value="181.383840000044" />
+    <Observation Value="181.589842702217" />
+    <Observation Value="183.486293109793" />
+    <Observation Value="182.928240000045" />
+    <Observation Value="181.174049186735" />
+    <Observation Value="184.211280000046" />
+    <Observation Value="182.001600000044" />
+    <Observation Value="182.458535422958" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="85083.4122762413" />
+    <Observation Value="83170.9196304431" />
+    <Observation Value="83410.0181678056" />
+    <Observation Value="85581.3983682718" />
+    <Observation Value="81908.6771093875" />
+    <Observation Value="81297.8851010819" />
+    <Observation Value="82112.4956322225" />
+    <Observation Value="81199.1406740922" />
+    <Observation Value="81167.1532493795" />
+    <Observation Value="83600.7346235845" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="68283.5814184177" />
+    <Observation Value="66669.0610636323" />
+    <Observation Value="66345.6282457617" />
+    <Observation Value="66740.2943687434" />
+    <Observation Value="63343.1272195853" />
+    <Observation Value="63808.2936282531" />
+    <Observation Value="64697.6562824295" />
+    <Observation Value="63158.2167305795" />
+    <Observation Value="64280.4153660083" />
+    <Observation Value="65403.6937566652" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="PercentDirectLoading">
+    <Observation Value="28.675625766643" />
+    <Observation Value="28.0579914346228" />
+    <Observation Value="28.7507963588734" />
+    <Observation Value="28.7447513908952" />
+    <Observation Value="28.8341922679971" />
+    <Observation Value="28.6467254951066" />
+    <Observation Value="28.5434333051869" />
+    <Observation Value="28.9494654569899" />
+    <Observation Value="28.9173808315994" />
+    <Observation Value="28.7649997335486" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.59127082700765" />
+    <Observation Value="4.88944361776879" />
+    <Observation Value="4.81353803308764" />
+    <Observation Value="4.61486134827384" />
+    <Observation Value="4.05560055549295" />
+    <Observation Value="4.32648956129964" />
+    <Observation Value="4.64128895785495" />
+    <Observation Value="4.5479583767695" />
+    <Observation Value="4.58682266195042" />
+    <Observation Value="4.37090186317444" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.06207744014479" />
+    <Observation Value="1.10277648334345" />
+    <Observation Value="1.06850644362069" />
+    <Observation Value="1.15717341067841" />
+    <Observation Value="1.10593972577822" />
+    <Observation Value="1.07201055479542" />
+    <Observation Value="1.14160612339693" />
+    <Observation Value="1.09476561482811" />
+    <Observation Value="1.15171536998442" />
+    <Observation Value="1.0743889018967" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="AvgShipTTIP">
+    <Observation Value="1738.85205433372" />
+    <Observation Value="2088.36803824057" />
+    <Observation Value="1684.57600459051" />
+    <Observation Value="1882.16361688206" />
+    <Observation Value="1427.4010273259" />
+    <Observation Value="1605.2876911722" />
+    <Observation Value="1680.38109781916" />
+    <Observation Value="1555.77592778199" />
+    <Observation Value="1664.55190759659" />
+    <Observation Value="1609.98490540958" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="AvgShipTimeInBerth">
+    <Observation Value="30.6774911657372" />
+    <Observation Value="30.2508112920494" />
+    <Observation Value="30.5676349275772" />
+    <Observation Value="30.5021788541671" />
+    <Observation Value="30.5627208461365" />
+    <Observation Value="30.5058155886138" />
+    <Observation Value="30.3004838227846" />
+    <Observation Value="30.350551746065" />
+    <Observation Value="30.4947485812752" />
+    <Observation Value="31.0001371236488" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="AvgShipLoadingTime">
+    <Observation Value="27.5082067770804" />
+    <Observation Value="27.1005355676027" />
+    <Observation Value="27.3136030849921" />
+    <Observation Value="27.3471108930555" />
+    <Observation Value="27.3642639995428" />
+    <Observation Value="27.2823584352617" />
+    <Observation Value="27.105259700341" />
+    <Observation Value="27.1704482633711" />
+    <Observation Value="27.2274359388011" />
+    <Observation Value="27.7284478814784" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="138424.633890972" />
+    <Observation Value="139084.847048369" />
+    <Observation Value="141088.620831932" />
+    <Observation Value="140890.580584737" />
+    <Observation Value="138615.965662147" />
+    <Observation Value="141606.187649585" />
+    <Observation Value="137922.059266384" />
+    <Observation Value="139215.747527533" />
+    <Observation Value="142130.458286473" />
+    <Observation Value="142349.707023194" />
+  </Observations>
+  <Observations Scenario="Case7E" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="170851.411829727" />
+    <Observation Value="165573.364247638" />
+    <Observation Value="177507.622076861" />
+    <Observation Value="171627.186714048" />
+    <Observation Value="177315.536055145" />
+    <Observation Value="182705.911948656" />
+    <Observation Value="166490.230620355" />
+    <Observation Value="178461.713230981" />
+    <Observation Value="181054.551528148" />
+    <Observation Value="174919.702638375" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="PortStockpileAvgTotalContents">
+    <Observation Value="292154.159538601" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="ShiploadingIdleTime">
+    <Observation Value="4109.29065521996" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="ShiploadingWeatherDownTime">
+    <Observation Value="370.776950776598" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1480.25131132719" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="ShiploadingPositioningTime">
+    <Observation Value="1749.31373043489" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="ShiploadingOccupiedTime">
+    <Observation Value="36090.3673522414" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="DumperIdleTime">
+    <Observation Value="12173.2227976495" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="DumperWeatherDownTime">
+    <Observation Value="58.9376093106997" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1728.10906732485" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="DumperPositioningTime">
+    <Observation Value="2259.57001313513" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="DumperUnloadingTime">
+    <Observation Value="27580.1605125798" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="PortShiploaderThroughput">
+    <Observation Value="35.7772343588976" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="PortDumperThroughput">
+    <Observation Value="35.8293403167296" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="TrainUnloadingTime">
+    <Observation Value="3.67599378377657" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="TrainLoadingTime">
+    <Observation Value="3.00092513867089" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="TrainProvisioningTime">
+    <Observation Value="2.68560817118807" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.02115579300993" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.54417323447146" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.285992184181313" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.409709160910276" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.361990615685064" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.26418908146828" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.222168453134902" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.874601632081863" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.590741091915221" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.672984166382949" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.864161809544825" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.09021730948653" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="LoadedTravelTime">
+    <Observation Value="10.3479778950569" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="EmptyTravelTime">
+    <Observation Value="8.17108034474648" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="RailOperatingCycleTime">
+    <Observation Value="29.7476673565009" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="RailCycleTime">
+    <Observation Value="32.92503240764" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.13938623692437" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="MineTLOProductLoaded">
+    <Observation Value="179.208311050783" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="90469.3336706857" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="72599.6917278908" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="EndTime">
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="PercentDirectLoading">
+    <Observation Value="28.7381651027354" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.71492367654415" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.09274919453929" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="AvgShipTTIP">
+    <Observation Value="1925.43297578787" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="AvgShipTimeInBerth">
+    <Observation Value="31.1547127279388" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="AvgShipLoadingTime">
+    <Observation Value="27.9231919588529" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="131416.695861378" />
+  </Observations>
+  <Observations Scenario="Blank3" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="160733.550577659" />
   </Observations>
 </ResponseResults>
