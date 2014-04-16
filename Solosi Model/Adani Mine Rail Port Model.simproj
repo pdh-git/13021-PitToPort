@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-16T03:54:32" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-16T06:02:06" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -9,7 +9,7 @@
       </ViewInfo>
     </Model>
     <Model Definition="RailPortModel">
-      <RunSetup AnimationInterval="50000" StatusMassUnits="Metric Tons" ReplicationNumber="9">
+      <RunSetup AnimationInterval="5000" StatusMassUnits="Metric Tons" ReplicationNumber="9">
         <StartDate>2019-12-31T23:59:59</StartDate>
         <RunLength Units="Hours">8760</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
@@ -30,7 +30,6 @@
           <Property Name="LogTitle">PTP Summary- Test</Property>
           <Property Name="LogDescription">This is a test of the PTP summary Write file</Property>
           <Property Name="Include0ValuesInBlockageTallies">True</Property>
-          <Property Name="T1DivertAmount">1000000</Property>
         </Properties>
       </RunnableInstance>
       <SuppressedWarnings>
@@ -67,6 +66,7 @@
                 <Property Name="LogTitle"></Property>
                 <Property Name="LogDescription"></Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -114,6 +114,8 @@
             <Control Name="Include0ValuesInBlockageTallies" />
             <Control Name="T1DivertRate" />
             <Control Name="T1DivertAmount" />
+            <Control Name="IsCampaignRailing" />
+            <Control Name="CampaignRailingTrainInterval" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTime" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -205,6 +207,7 @@
                 <Property Name="LogTitle"></Property>
                 <Property Name="LogDescription"></Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario2" ReplicationsRequired="4">
@@ -221,6 +224,7 @@
                 <Property Name="LogTitle"></Property>
                 <Property Name="LogDescription"></Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario3" ReplicationsRequired="4">
@@ -237,6 +241,7 @@
                 <Property Name="LogTitle"></Property>
                 <Property Name="LogDescription"></Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario4" ReplicationsRequired="4">
@@ -253,6 +258,7 @@
                 <Property Name="LogTitle"></Property>
                 <Property Name="LogDescription"></Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario5" ReplicationsRequired="4">
@@ -269,6 +275,7 @@
                 <Property Name="LogTitle"></Property>
                 <Property Name="LogDescription"></Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario6" ReplicationsRequired="4">
@@ -285,6 +292,7 @@
                 <Property Name="LogTitle"></Property>
                 <Property Name="LogDescription"></Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -332,6 +340,8 @@
             <Control Name="Include0ValuesInBlockageTallies" />
             <Control Name="T1DivertRate" />
             <Control Name="T1DivertAmount" />
+            <Control Name="IsCampaignRailing" />
+            <Control Name="CampaignRailingTrainInterval" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTimeAve" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -411,6 +421,7 @@
                 <Property Name="LogTitle"></Property>
                 <Property Name="LogDescription"></Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="250k Mine Stockpiles" ReplicationsRequired="1">
@@ -427,6 +438,7 @@
                 <Property Name="LogTitle"></Property>
                 <Property Name="LogDescription"></Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="500k Mine Stockpiles" ReplicationsRequired="1">
@@ -443,6 +455,7 @@
                 <Property Name="LogTitle"></Property>
                 <Property Name="LogDescription"></Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="1mil Mine Stockpiles" ReplicationsRequired="1">
@@ -459,6 +472,7 @@
                 <Property Name="LogTitle"></Property>
                 <Property Name="LogDescription"></Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -506,6 +520,8 @@
             <Control Name="Include0ValuesInBlockageTallies" />
             <Control Name="T1DivertRate" />
             <Control Name="T1DivertAmount" />
+            <Control Name="IsCampaignRailing" />
+            <Control Name="CampaignRailingTrainInterval" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTime" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -593,6 +609,7 @@
                 <Property Name="EnableRollingStockpile">False</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case1B" ReplicationsCompleted="10">
@@ -604,6 +621,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case1C" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -616,6 +634,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Blank1" Active="False">
@@ -628,6 +647,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case3A" ReplicationsCompleted="10">
@@ -641,6 +661,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case3B" ReplicationsCompleted="10">
@@ -653,6 +674,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case3C" ReplicationsCompleted="10">
@@ -666,6 +688,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Blank2" ReplicationsCompleted="2" Active="False">
@@ -676,6 +699,7 @@
                 <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case7A" ReplicationsCompleted="10">
@@ -689,6 +713,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case7B" ReplicationsCompleted="10">
@@ -701,6 +726,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case7C" ReplicationsCompleted="10">
@@ -714,6 +740,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case7D" ReplicationsCompleted="10">
@@ -727,6 +754,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case7E" ReplicationsCompleted="10">
@@ -740,6 +768,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Blank3" ReplicationsCompleted="1" Active="False">
@@ -752,6 +781,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -799,6 +829,8 @@
             <Control Name="Include0ValuesInBlockageTallies" />
             <Control Name="T1DivertRate" />
             <Control Name="T1DivertAmount" />
+            <Control Name="IsCampaignRailing" />
+            <Control Name="CampaignRailingTrainInterval" />
           </Controls>
           <Responses>
             <Response Name="MineLACProductStockpileAvgContents" Expression="Mine.Tally_Stockpile1Contents.Average / 1000" />
@@ -958,20 +990,24 @@
       </Experiments>
       <ViewInfo ActiveModel="True" ActiveView="Facility">
         <Facility>
-          <Camera Orientation="Top" Location="61.8403694037213 962.892979213191 -205.98805263554" Direction="0 -1 2.22044604925031E-16" Zoom="962.892979213191" />
+          <Camera Orientation="Top" Location="61.4058386439187 883.349670144788 -232.095264959723" Direction="0 -1 2.22044604925031E-16" Zoom="883.349670144788" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="Logging Processes" Expanded="True" />
             <Category Name="TrainYard AddOn Processes" Expanded="True" />
+            <Category Name="Section2Entry AddOn Processes" Expanded="True" />
             <Category Name="TrainOutput@DummyMine AddOn Processes" Expanded="True" />
             <Category Name="TrainOutput@DummyPort AddOn Processes" Expanded="True" />
+            <Category Name="To Port" Expanded="True" />
             <Category Name="To Mine" Expanded="True" />
+            <Category Name="RequestProcessing AddOn Processes" Expanded="True" />
             <Category Name="TrainInput@DummyMine AddOn Processes" Expanded="True" />
             <Category Name="TrainInput@DummyPort AddOn Processes" Expanded="True" />
             <Category Name="PortSig4 AddOn Processes" Expanded="True" />
             <Category Name="Resource1 AddOn Processes" Expanded="True" />
+            <Category Name="TrackResource AddOn Processes" Expanded="True" />
             <Category Name="Weather ShutDown Processes" Expanded="True" />
             <Category Name="T1 AddOn Processes" Expanded="True" />
             <Category Name="T2 AddOn Processes" Expanded="True" />
@@ -982,60 +1018,75 @@
             <Category Name="T7 AddOn Processes" Expanded="True" />
             <Category Name="T8 AddOn Processes" Expanded="True" />
             <Category Name="T9 AddOn Processes" Expanded="True" />
+            <Category Name="T10 AddOn Processes" Expanded="True" />
+            <Category Name="MS1 AddOn Processes" Expanded="True" />
             <Category Name="Track1 AddOn Processes" Expanded="True" />
+            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
+            <Category Name="Ship Queue Processes" Expanded="True" />
+            <Category Name="B1Exit AddOn Processes" Expanded="True" />
             <Category Name="B2Exit AddOn Processes" Expanded="True" />
             <Category Name="Port AddOn Processes" Expanded="True" />
             <Category Name="Input@ShipExit AddOn Processes" Expanded="True" />
-            <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
-            <Category Name="B2Entry AddOn Processes" Expanded="True" />
-            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
-            <Category Name="Rolling Stockpile Processes" Expanded="True" />
-            <Category Name="Monitor1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Output@RequestSourceLAC AddOn Processes" Expanded="True" />
-            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Section2Entry AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="To Port" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="RequestProcessing AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="TrackResource AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="MS1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Rail Outage Train Check Process" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Ship Queue Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="T10 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="B1Exit AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
+            <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
             <Category Name="B1Entry AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
+            <Category Name="B2Entry AddOn Processes" Expanded="True" />
             <Category Name="Output@ShipGenerator1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
+            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
             <Category Name="ChannelResource AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
+            <Category Name="Rolling Stockpile Processes" Expanded="True" />
             <Category Name="DivertTrainRequest AddOn Processes" Expanded="True" />
+            <Category Name="Output@RequestSourceLAC AddOn Processes" Expanded="True" />
+            <Category Name="Monitor1 AddOn Processes" Expanded="True" />
+            <Category Name="Output@PullRequestSourceLAC AddOn Processes" Expanded="True" />
+            <Category Name="Output@PullRequestSourceUGC AddOn Processes" Expanded="True" />
+            <Category Name="Input@RequestProcessing AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
@@ -1462,7 +1513,7 @@
       </Icon>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="2.53235823963917 52.0616401672363 -22.1783364594533" Direction="0 -1 2.22044604925031E-16" Zoom="52.0616401672363" />
+          <Camera Orientation="Top" Location="2.53235823963917 52.0616416931152 -22.1783364594533" Direction="0 -1 2.22044604925031E-16" Zoom="52.0616416931152" />
           <ObjectDisplay Background="ffffff" />
         </Facility>
         <Process>
@@ -2452,7 +2503,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1374" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1390" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -16274,7 +16325,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1539" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1555" Author="Sales and Support" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -25456,7 +25507,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2215" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2233" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -25543,6 +25594,8 @@
           <BooleanProperty Name="Include0ValuesInBlockageTallies" Category="Rail Properties" DefaultValue="False" NullString="null" />
           <ExpressionProperty Name="T1DivertRate" DefaultValue="5000" NullString="null" UnitType="WeightFlowRate" DefaultUnits="Metric Tons per Hour" />
           <ExpressionProperty Name="T1DivertAmount" DefaultValue="0" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
+          <BooleanProperty Name="IsCampaignRailing" DefaultValue="False" NullString="null" />
+          <ExpressionProperty Name="CampaignRailingTrainInterval" DefaultValue="3.5" NullString="null" UnitType="Time" />
           <Overrides>
             <Override Name="ReportStatistics" Visible="False" />
             <Override Name="ParentCostCenter" Visible="False" />
@@ -25607,15 +25660,19 @@
           <DiscreteState Name="StartIdleAtBerth" />
           <DiscreteState Name="T1DivertCount" />
           <BooleanState Name="DivertNextLAC" />
+          <DiscreteState Name="NumberLACTrainsRequired" />
+          <DiscreteState Name="NumberUGCTrainsRequired" />
         </States>
         <Events>
-          <Event Name="Event_CreateRequestLAC" />
+          <Event Name="Event_PushRequestLAC" />
           <Event Name="Event_TrainLoaded" />
           <Event Name="Event_TrainUnloaded" />
           <Event Name="TrackFailed" />
           <Event Name="TrackResumed" />
-          <Event Name="Event_CreateRequestUGC" />
+          <Event Name="Event_PushRequestUGC" />
           <Event Name="Re_SearchProductAllocations" />
+          <Event Name="Event_PullRequestUGC" />
+          <Event Name="Event_PullRequestLAC" />
         </Events>
         <ExpressionFunctions>
           <ExpressionFunction Name="TonnesShipped" ReturnType="Any" UnitType="Unspecified" Public="True">
@@ -31625,7 +31682,7 @@
             <Steps>
               <Step Type="Fire" Name="CreateRequest" ID="2">
                 <Properties>
-                  <Property Name="EventName">Event_CreateRequestUGC</Property>
+                  <Property Name="EventName">Event_PushRequestUGC</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="3" />
               </Step>
@@ -31658,7 +31715,7 @@
               </Step>
               <Step Type="Fire" Name="CreateRequest" ID="3">
                 <Properties>
-                  <Property Name="EventName">Event_CreateRequestLAC</Property>
+                  <Property Name="EventName">Event_PushRequestLAC</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
@@ -33445,7 +33502,7 @@
               </Step>
             </Steps>
           </Process>
-          <Process Name="Output_RequestSourceLAC_Entered" BeginStepID="2" Category="Output@RequestSourceLAC AddOn Processes">
+          <Process Name="Output_PushRequestSourceLAC_Entered" BeginStepID="2" Category="Output@RequestSourceLAC AddOn Processes">
             <Properties />
             <Steps>
               <Step Type="Decide" Name="DivertNextLAC" ID="2">
@@ -33474,9 +33531,71 @@
               </Step>
             </Steps>
           </Process>
+          <Process Name="OnEnteredLookaheadWindow" BeginStepID="2">
+            <Properties>
+              <Property Name="TriggeringEventName">ShipGenerator1.ScheduledArrivals.Entered</Property>
+            </Properties>
+            <Steps>
+              <Step Type="Decide" Name="IsShipEntity" ID="2">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">Is.ShipEntity</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Assign" Name="NumberTrainsRequired" ID="3">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>NumberLACTrainsRequired</Value>
+                  </Property>
+                  <Property Name="NewValue">Math.Ceiling((ShipEntity.FlowContainer.CurrentWeightCapacity-Port.TotalProductLAC)/TrainSize)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="6" />
+              </Step>
+              <Step Type="Decide" Name="IsLAC" ID="4">
+                <Properties>
+                  <Property Name="DecideType">ConditionBased</Property>
+                  <Property Name="Expression">ShipEntity.Product=="LAC"</Property>
+                </Properties>
+                <Exit Name="True" Type="Primary" NextID="3" />
+                <Exit Name="False" Type="Alternate" NextID="5" />
+              </Step>
+              <Step Type="Assign" Name="NumberTrainsRequired" ID="5">
+                <Properties>
+                  <Property Name="StateVariableName">
+                    <Value>NumberUGCTrainsRequired</Value>
+                  </Property>
+                  <Property Name="NewValue">Math.Ceiling((ShipEntity.FlowContainer.CurrentWeightCapacity-Port.TotalProductUGC)/TrainSize)</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="7" />
+              </Step>
+              <Step Type="Fire" Name="Event" ID="6">
+                <Properties>
+                  <Property Name="EventName">Event_PullRequestLAC</Property>
+                </Properties>
+              </Step>
+              <Step Type="Fire" Name="Event" ID="7">
+                <Properties>
+                  <Property Name="EventName">Event_PullRequestUGC</Property>
+                </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="Output_PullRequestSourceLAC_Entered" Category="Output@PullRequestSourceLAC AddOn Processes">
+            <Properties />
+            <Steps />
+          </Process>
+          <Process Name="Output_PullRequestSourceUGC_Entered" Category="Output@PullRequestSourceUGC AddOn Processes">
+            <Properties />
+            <Steps />
+          </Process>
+          <Process Name="Input_RequestProcessing_Entered" Category="Input@RequestProcessing AddOn Processes">
+            <Properties />
+            <Steps />
+          </Process>
         </Processes>
         <Objects>
-          <Entity Name="LACRequest" Type="RequestEntity" Location="498.450112937064 5.68295410730002E-14 197.389251054042" Size="0.5 0.5 0.25" Scope="Public">
+          <Entity Name="LACRequest" Type="RequestEntity" Location="500.933531315544 5.68295410730002E-14 198.941387540592" Size="0.5 0.5 0.25" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.5 0.5 0.25" />
               <IndexedSize Size="0.5 0.5 0.25" />
@@ -33506,7 +33625,7 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="9">
-                <FloorLabel Center="498.887490224779 5.68295410730002E-14 195.801591818212" Width="2.26640633586857" Height="0.925664685312551" Rotation="1.33649648225401" ExternallyVisible="True" BackColor="00ffffff" Text="Allocated Train:&#xD;&#xA;{AllocatedTrain.Name}&#xD;&#xA;{RequestingProduct}" />
+                <FloorLabel Center="501.370908652187 5.68295410730002E-14 197.353728339998" Width="2.26640633586857" Height="0.925664685312551" Rotation="1.33649648225401" ExternallyVisible="True" BackColor="00ffffff" Text="Allocated Train:&#xD;&#xA;{AllocatedTrain.Name}&#xD;&#xA;{RequestingProduct}" />
               </AttachedObjects>
             </Graphics>
           </Entity>
@@ -33534,7 +33653,7 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="EntityType">Train</Property>
               <Property Name="InterarrivalTime">0</Property>
-              <Property Name="TriggeringEventName">Event_CreateRequestLAC</Property>
+              <Property Name="TriggeringEventName">Event_PushRequestLAC</Property>
               <Property Name="EntitiesPerArrival">MaximumCyclingTrains</Property>
               <Property Name="MaximumArrivals">1</Property>
               <Property Name="CapitalCost" Units="USD">0.0</Property>
@@ -33585,16 +33704,16 @@
               </AttachedObjects>
             </Graphics>
           </Entity>
-          <Fixed Name="RequestSourceLAC" Type="Source" Location="497.913620706084 5.36098943015872E-14 191.406552585817" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+          <Fixed Name="PushRequestSourceLAC" Type="Source" Location="497.547443200278 5.39429612089747E-14 195.956529829246" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@RequestSourceLAC" Type="TransferNode" Location="499.413620706084 5.36098943015872E-14 191.406552585817" Scope="Public">
+              <Node Name="Output@PushRequestSourceLAC" Type="TransferNode" Location="499.047443200278 5.39429612089747E-14 195.956529829246" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-                  <Property Name="EnteredAddOnProcess">Output_RequestSourceLAC_Entered</Property>
+                  <Property Name="EnteredAddOnProcess">Output_PushRequestSourceLAC_Entered</Property>
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
@@ -33607,7 +33726,8 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="EntityType">LACRequest</Property>
               <Property Name="ArrivalMode">On Event</Property>
-              <Property Name="TriggeringEventName">Event_CreateRequestLAC</Property>
+              <Property Name="TriggeringEventName">Event_PushRequestLAC</Property>
+              <Property Name="EntitiesPerArrival">1*!IsCampaignRailing</Property>
               <Property Name="AssignmentsBeforeExiting">
                 <Rows>
                   <Properties>
@@ -33631,26 +33751,27 @@
               <AttachedObjects IndexList="1">
                 <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="498.913618158549 5.36098943015872E-14 191.90655114688" />
-                    <Point Location="501.913618158549 5.36098943015872E-14 191.90655114688" />
+                    <Point Location="498.547440666705 5.39429612089747E-14 196.456528397277" />
+                    <Point Location="501.547440666705 5.39429612089747E-14 196.456528397277" />
                   </Points>
                 </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Fixed Name="RequestProcessing" Type="Server" Location="505.997489092917 5.59413626533E-14 193.770570939805" Size="2.08920814597344 0.999103702764571 1.000000367302" Scope="Public">
+          <Fixed Name="RequestProcessing" Type="Server" Location="505.931542147152 4.99461583203242E-14 193.912842575773" Size="2.08920814597344 0.999103702764571 1.000000367302" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Input@RequestProcessing" Type="BasicNode" Location="504.531037835216 5.59413626533E-14 193.669924712907" Scope="Public">
+              <Node Name="Input@RequestProcessing" Type="BasicNode" Location="504.507325895888 4.99461583203242E-14 193.812196348875" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                   <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                   <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                  <Property Name="EnteredAddOnProcess">Input_RequestProcessing_Entered</Property>
                 </Properties>
                 <Graphics ExternallyVisible="True" />
               </Node>
-              <Node Name="Output@RequestProcessing" Type="TransferNode" Location="507.497489092917 5.59413626533E-14 193.770570939805" Scope="Public">
+              <Node Name="Output@RequestProcessing" Type="TransferNode" Location="507.431542147152 4.99461583203242E-14 193.912842575773" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -33674,7 +33795,8 @@
               <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-              <Property Name="InitialCapacity">6</Property>
+              <Property Name="InitialCapacity">Math.If(IsCampaignRailing,1,6)</Property>
+              <Property Name="TransferInTime" Units="Hours">CampaignRailingTrainInterval*IsCampaignRailing</Property>
               <Property Name="ProcessingTime">0</Property>
               <Property Name="BeforeProcessingAddOnProcess">RequestProcessing_BeforeProcessing</Property>
               <Property Name="ProcessingAddOnProcess">RequestProcessing_Processing</Property>
@@ -33725,20 +33847,20 @@
               <AttachedObjects IndexList="2 3 4">
                 <Queue Queue="InputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="509.457878602114 5.41650058138999E-14 200.301826519854" />
-                    <Point Location="441.831665531284 5.41650058138997E-14 233.833387883176" />
+                    <Point Location="509.391931658056 4.81698014809241E-14 200.414533653265" />
+                    <Point Location="441.765718587226 4.81698014809239E-14 233.946095016587" />
                   </Points>
                 </Queue>
                 <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="506.997489277274 5.59413626533E-14 194.270575804635" />
-                    <Point Location="509.997489277274 5.59413626533E-14 194.270575804635" />
+                    <Point Location="506.931542333216 4.99461583203242E-14 194.412847442552" />
+                    <Point Location="509.931542333216 4.99461583203242E-14 194.412847442552" />
                   </Points>
                 </Queue>
                 <Queue Queue="Processing.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="503.29575944803 5.59413626533E-14 192.870288060918" />
-                    <Point Location="506.994191473201 5.59413626533E-14 192.870288060918" />
+                    <Point Location="503.229812503972 4.99461583203242E-14 193.012559698835" />
+                    <Point Location="506.928244529143 4.99461583203242E-14 193.012559698835" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -36213,6 +36335,7 @@
               </Property>
               <Property Name="ShipArrivalDistribution">Random.Uniform(-4 , 4 )</Property>
               <Property Name="EnabledExpression">1</Property>
+              <Property Name="ArrivalLookahead">0</Property>
             </Properties>
             <Graphics EditsLocked="True" ExternallyVisible="True">
               <SymbolInstances>
@@ -36220,12 +36343,18 @@
                   <SymbolRef Id="[UseExternalSymbol]" />
                 </SymbolInstance>
               </SymbolInstances>
-              <AttachedObjects IndexList="77">
+              <AttachedObjects IndexList="77 168">
                 <FloorLabel Center="177.561340549577 -3.5527136788005E-15 -574.145005687441" Width="4.94318777703563" Height="3.51472710737971" ExternallyVisible="True" Locked="True" Text="&lt;b&gt;Ship Generator&lt;/b&gt;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, Math.Round(ProductionTable[1].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 1, ProductionTable[1].ShipAmountGenerated/1000, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2,ProductionTable[2].ProductName, &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].UnallocatedAmount,0), &quot;THIS DIDNT WORK&quot;)}&#xD;&#xA;{Math.If(ProductionTable.AvailableRowCount &gt;= 2, Math.Round(ProductionTable[2].ShipAmountGenerated/1000,0), &quot;THIS DIDNT WORK&quot;)}" />
+                <Queue Queue="ScheduledArrivals.Contents" Alignment="Inline" ExternallyVisible="True">
+                  <Points>
+                    <Point Location="312.87259545779 0 -626.118809246052" />
+                    <Point Location="-191.55287856471 0 -625.846687309751" />
+                  </Points>
+                </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
-          <Entity Name="UGCRequest" Type="RequestEntity" Location="500.583191044239 5.68295410730002E-14 197.554954619849" Size="0.5 0.5 0.25" Scope="Public">
+          <Entity Name="UGCRequest" Type="RequestEntity" Location="503.066609422719 5.68295410730002E-14 199.107091106399" Size="0.5 0.5 0.25" Scope="Public">
             <IndexedSizes>
               <IndexedSize Size="0.5 0.5 0.25" />
               <IndexedSize Size="0.5 0.5 0.25" />
@@ -36255,13 +36384,13 @@
                 </SymbolInstance>
               </SymbolInstances>
               <AttachedObjects IndexList="101">
-                <FloorLabel Center="501.020568335241 5.68295410730002E-14 195.967295380763" Width="2.26640633586857" Height="0.925664685312551" Rotation="1.33649648225401" ExternallyVisible="True" BackColor="00ffffff" Text="Allocated Train:&#xD;&#xA;{AllocatedTrain.Name}&#xD;&#xA;{RequestingProduct}" />
+                <FloorLabel Center="503.503986762649 5.68295410730002E-14 197.519431902549" Width="2.26640633586857" Height="0.925664685312551" Rotation="1.33649648225401" ExternallyVisible="True" BackColor="00ffffff" Text="Allocated Train:&#xD;&#xA;{AllocatedTrain.Name}&#xD;&#xA;{RequestingProduct}" />
               </AttachedObjects>
             </Graphics>
           </Entity>
-          <Fixed Name="RequestSourceUGC" Type="Source" Location="499.646367318322 5.50531842335999E-14 189.363774430904" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+          <Fixed Name="PushRequestSourceUGC" Type="Source" Location="497.563313311982 5.549727344345E-14 194.782948106801" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
             <AssociatedNodes>
-              <Node Name="Output@RequestSourceUGC" Type="TransferNode" Location="501.146367318322 5.50531842335999E-14 189.363774430904" Scope="Public">
+              <Node Name="Output@PushRequestSourceUGC" Type="TransferNode" Location="499.063313311982 5.549727344345E-14 194.782948106801" Scope="Public">
                 <Properties>
                   <Property Name="InitialCost" Units="USD">0.0</Property>
                   <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -36280,7 +36409,8 @@
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="EntityType">UGCRequest</Property>
               <Property Name="ArrivalMode">On Event</Property>
-              <Property Name="TriggeringEventName">Event_CreateRequestUGC</Property>
+              <Property Name="TriggeringEventName">Event_PushRequestUGC</Property>
+              <Property Name="EntitiesPerArrival">1*!IsCampaignRailing</Property>
               <Property Name="AssignmentsBeforeExiting">
                 <Rows>
                   <Properties>
@@ -36304,8 +36434,8 @@
               <AttachedObjects IndexList="102">
                 <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
                   <Points>
-                    <Point Location="500.646364855212 5.50531842335999E-14 189.863772942569" />
-                    <Point Location="503.646364855212 5.50531842335999E-14 189.863772942569" />
+                    <Point Location="498.563310849112 5.549727344345E-14 195.282946645167" />
+                    <Point Location="501.563310849112 5.549727344345E-14 195.282946645167" />
                   </Points>
                 </Queue>
               </AttachedObjects>
@@ -36489,6 +36619,114 @@
               <AttachedObjects IndexList="106 107">
                 <LinearGauge Center="324.785521160546 0 -539.299416057527" Width="25.2560128913226" Height="51.9552549120849" ExternallyVisible="True" Locked="True" Look="Ice-Cold Zone0" Max="20" Ticks="5" Expression="WaterDepth" />
                 <FloorLabel Center="277.027477442345 0 -558.52142427582" Width="64.827712760864" Height="16.4606288746086" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="14" Text="Current Water Depth:&#xD;&#xA;{Math.Round(WaterDepth, 2)} m" />
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="PullRequestSourceUGC" Type="Source" Location="497.55058076446 5.15004705547994E-14 190.006376144258" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+            <AssociatedNodes>
+              <Node Name="Output@PullRequestSourceUGC" Type="TransferNode" Location="499.021016259955 5.15004705547994E-14 190.006376144258" Scope="Public">
+                <Properties>
+                  <Property Name="InitialCost" Units="USD">0.0</Property>
+                  <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                  <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                  <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                  <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                  <Property Name="EnteredAddOnProcess">Output_PullRequestSourceUGC_Entered</Property>
+                </Properties>
+                <Graphics ExternallyVisible="True" />
+              </Node>
+            </AssociatedNodes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EntityType">UGCRequest</Property>
+              <Property Name="ArrivalMode">On Event</Property>
+              <Property Name="TriggeringEventName">Event_PullRequestUGC</Property>
+              <Property Name="EntitiesPerArrival">NumberUGCTrainsRequired*IsCampaignRailing</Property>
+              <Property Name="AssignmentsBeforeExiting">
+                <Rows>
+                  <Properties>
+                    <Property Name="AssignmentsBeforeExitingStateVariableName">
+                      <Value>RequestEntity.RequestingProduct</Value>
+                    </Property>
+                    <Property Name="AssignmentsBeforeExitingNewValue">"UGC"</Property>
+                  </Properties>
+                </Rows>
+              </Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+              <Property Name="OutputBufferCostPerUse" Units="USD">0.0</Property>
+              <Property Name="OutputBufferHoldingCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="170">
+                <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
+                  <Points>
+                    <Point Location="498.550578219621 5.15004705547994E-14 190.506374599466" />
+                    <Point Location="501.550578219621 5.15004705547994E-14 190.506374599466" />
+                  </Points>
+                </Queue>
+              </AttachedObjects>
+            </Graphics>
+          </Fixed>
+          <Fixed Name="PullRequestSourceLAC" Type="Source" Location="497.56509636851 5.29437604868121E-14 191.464621810086" Size="1.49711911473274 1.02344522701085 0.999999706897704" Scope="Public">
+            <AssociatedNodes>
+              <Node Name="Output@PullRequestSourceLAC" Type="TransferNode" Location="499.023706062202 5.29437604868121E-14 191.464621810086" Scope="Public">
+                <Properties>
+                  <Property Name="InitialCost" Units="USD">0.0</Property>
+                  <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                  <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                  <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                  <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                  <Property Name="EnteredAddOnProcess">Output_PullRequestSourceLAC_Entered</Property>
+                </Properties>
+                <Graphics ExternallyVisible="True" />
+              </Node>
+            </AssociatedNodes>
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="EntityType">LACRequest</Property>
+              <Property Name="ArrivalMode">On Event</Property>
+              <Property Name="TriggeringEventName">Event_PullRequestLAC</Property>
+              <Property Name="EntitiesPerArrival">NumberLACTrainsRequired*IsCampaignRailing</Property>
+              <Property Name="AssignmentsBeforeExiting">
+                <Rows>
+                  <Properties>
+                    <Property Name="AssignmentsBeforeExitingStateVariableName">
+                      <Value>RequestEntity.RequestingProduct</Value>
+                    </Property>
+                    <Property Name="AssignmentsBeforeExitingNewValue">"LAC"</Property>
+                  </Properties>
+                </Rows>
+              </Property>
+              <Property Name="CapitalCost" Units="USD">0.0</Property>
+              <Property Name="OutputBufferCostPerUse" Units="USD">0.0</Property>
+              <Property Name="OutputBufferHoldingCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True">
+              <SymbolInstances>
+                <SymbolInstance Center="0 0 0" ExternallyVisible="True">
+                  <SymbolRef Id="[UseExternalSymbol]" />
+                </SymbolInstance>
+              </SymbolInstances>
+              <AttachedObjects IndexList="171">
+                <Queue Queue="OutputBuffer.Contents" ExternallyVisible="True">
+                  <Points>
+                    <Point Location="498.565093661831 5.29437604868121E-14 191.964620285837" />
+                    <Point Location="501.565093661831 5.29437604868121E-14 191.964620285837" />
+                  </Points>
+                </Queue>
               </AttachedObjects>
             </Graphics>
           </Fixed>
@@ -36946,7 +37184,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Connector2" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@RequestSourceLAC" End="Input@RequestProcessing">
+          <Link Name="Connector2" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@PushRequestSourceLAC" End="Input@RequestProcessing">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -37797,7 +38035,7 @@
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
-          <Link Name="Connector13" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@RequestSourceUGC" End="Input@RequestProcessing">
+          <Link Name="Connector13" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@PushRequestSourceUGC" End="Input@RequestProcessing">
             <Properties>
               <Property Name="InitialCost" Units="USD">0.0</Property>
               <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -37885,6 +38123,26 @@
               <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
               <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
               <Property Name="TravelTime">random.Triangular(20,30,40)</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="Connector19" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@PullRequestSourceLAC" End="Input@RequestProcessing">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+            <Graphics ExternallyVisible="True" />
+          </Link>
+          <Link Name="Connector20" Type="Connector" Size="0 0 0" Scope="Public" Start="Output@PullRequestSourceUGC" End="Input@RequestProcessing">
+            <Properties>
+              <Property Name="InitialCost" Units="USD">0.0</Property>
+              <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+              <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+              <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
             </Properties>
             <Graphics ExternallyVisible="True" />
           </Link>
@@ -38987,7 +39245,7 @@
               </Decoration>
             </Decorations>
           </Rectangle>
-          <FloorLabel Center="-245.448518858454 -21.4395720370339 -579.679066721595" Width="245.291527024602" Height="46.2692853210719" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Anchorage" />
+          <FloorLabel Center="-248.379062787844 -21.4395720370339 -630.963585485925" Width="245.291527024602" Height="46.2692853210719" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Anchorage" />
           <FloorLabel Center="-257.410166802191 0 -45.1355125463386" Width="62.2892195408502" Height="35.3847896531753" ExternallyVisible="True" BackColor="00ffffff" Text="Operating Train Cycle Time(h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_RailOperatingCycleTime.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_RailOperatingCycleTime.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_RailOperatingCycleTime.Minimum,2)}" />
           <FloorLabel Center="-103.740969860012 0 -319.834815761707" Width="78.4793331046146" Height="44.9650271524661" ExternallyVisible="True" BackColor="00ffffff" Text="Total Time In Port (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInPort.Minimum,2)}" />
           <FloorLabel Center="-102.381617787066 0 -368.454563403584" Width="78.4793331046147" Height="44.4064553865969" ExternallyVisible="True" BackColor="00ffffff" Text="Total Time In Berth (h):&#xD;&#xA;Ave:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Average,2)}&#xD;&#xA;Max:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Maximum,2)}&#xD;&#xA;Min:&#xD;&#xA;{Math.Round(Tally_ShipTotalTimeInBerth.Minimum,2)}" />
@@ -39017,14 +39275,14 @@
               </Decoration>
             </Decorations>
           </Rectangle>
-          <Rectangle Center="53.34881150421 -22.4907117753196 -544.226199912382" Width="856.553265148857" Height="129.010490155287" ExternallyVisible="True" Locked="True">
+          <Rectangle Center="53.34881150421 -22.4907117753196 -568.036869338678" Width="856.553265148857" Height="176.631829007879" ExternallyVisible="True" Locked="True">
             <Decorations>
               <Decoration SurfaceId="0">
                 <MaterialRef Id="6581391a-8fa4-466e-846a-b7584fdab598" />
               </Decoration>
             </Decorations>
           </Rectangle>
-          <FloorLabel Center="-240.804573256601 -22.4160604537053 -544.29679892734" Width="256.834183186645" Height="39.0850502144528" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Channel" />
+          <FloorLabel Center="-243.735117185991 -22.4160604537053 -595.58131769167" Width="256.834183186645" Height="39.0850502144528" ExternallyVisible="True" Locked="True" BackColor="00ffffff" CharsPerLine="10" Text="Channel" />
           <FloorLabel Center="353.779920034124 0 134.545197858031" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" BackColor="00ffffff" Text="Stockpile 1 UGC Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.Stockpile1.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile1Contents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile1Contents.Maximum/1000,0)}&#xD;&#xA;" />
           <FloorLabel Center="353.35806909018 0 180.081659349317" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" BackColor="00ffffff" Text="Stockpile 2 LAC Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.Stockpile2.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile2Contents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_Stockpile2Contents.Maximum/1000,0)}&#xD;&#xA;" />
           <FloorLabel Center="193.676045093284 0 86.6934696377941" Width="74.3785881378759" Height="42.6214381464232" ExternallyVisible="True" BackColor="00ffffff" Text="HAC ROM Contents:&#xD;&#xA;Current (t):&#xD;&#xA;{Math.Round(Mine.HAC_ROMPAD.FlowContainer.Contents.Weight/1000,0)}&#xD;&#xA;Average (t):&#xD;&#xA;{Math.Round(Mine.Tally_HAC_ROMContents.Average/1000,0)}&#xD;&#xA;Maximum (t):&#xD;&#xA;{Math.Round(Mine.Tally_HAC_ROMContents.Maximum/1000,0)}&#xD;&#xA;" />
@@ -39108,7 +39366,7 @@
               <Point Location="-190.03422154734 0 -524.082482496932" />
             </Points>
           </Queue>
-          <FloorLabel Center="-153.686900906423 0 -537.595612734509" Width="76.8965233207012" Height="12.1761667271952" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="10" Text="Berth Queue" />
+          <FloorLabel Center="-153.686900906423 0 -536.862976752161" Width="76.8965233207012" Height="12.1761667271952" ExternallyVisible="True" BackColor="00ffffff" CharsPerLine="10" Text="Berth Queue" />
           <Queue Queue="LACQueue.Contents" Alignment="Inline" ExternallyVisible="True">
             <Points>
               <Point Location="104.500875903327 0 -550.941695115918" />
@@ -39135,6 +39393,7 @@
           <FloorLabel Center="121.569670649614 0 -255.737117143739" Width="14.2083609543983" Height="2.5174301075607" ExternallyVisible="True" Text="Amount LAC Diverted T1:&#xD;&#xA;{Math.Round(Port.T1DivertPile.FlowContainer.Contents.Weight/1000,0)}" />
           <FloorLabel Center="284.144495756366 0 -208.045603569595" Width="178.727582270371" Height="30.6424685390978" ExternallyVisible="True" BackColor="00ffffff" Text="Amount LAC Diverted T1:&#xD;&#xA;{Math.Round(Port.T1DivertPile.FlowContainer.Contents.Weight/1000,0)}" />
           <StatusLabel Center="506.954375489708 0 179.664873995442" Width="19.9990829628032" Height="3.15558739530888" ExternallyVisible="True" Expression="Math.Round(T1DivertCount / 1000, 0)" />
+          <FloorLabel Center="-111.236282554913 0 -643.011272762304" Width="161.149661290672" Height="12.850777939741" ExternallyVisible="True" Locked="True" BackColor="00ffffff" Text="Ships Within Lookahead Window" />
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
@@ -39686,7 +39945,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="795" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="810" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -39734,6 +39993,7 @@
           <ExpressionProperty Name="ShipArrivalDistribution" Category="Generation Parameters" DefaultValue="0.0" NullString="null" UnitType="Time" />
           <ExpressionProperty Name="InitialScheduleBufferAllowance" Category="Generation Parameters" DefaultValue="24" NullString="null" UnitType="Time" />
           <ExpressionProperty Name="EnabledExpression" Required="False" NullString="null" />
+          <ExpressionProperty Name="ArrivalLookahead" NullString="null" UnitType="Time" />
           <Overrides>
             <Override Name="ReportStatistics" Visible="False" />
             <Override Name="ParentCostCenter" Visible="False" />
@@ -39773,6 +40033,12 @@
         </UsedObjects>
         <Elements>
           <Element Type="Station" Name="OutputBuffer" Scope="Public">
+            <Properties>
+              <Property Name="CostPerUse" Units="USD">0.0</Property>
+              <Property Name="HoldingCostRate" Units="USD per Hour">0.0</Property>
+            </Properties>
+          </Element>
+          <Element Type="Station" Name="ScheduledArrivals" Scope="Public">
             <Properties>
               <Property Name="CostPerUse" Units="USD">0.0</Property>
               <Property Name="HoldingCostRate" Units="USD per Hour">0.0</Property>
@@ -40047,14 +40313,14 @@
               <Step Type="Decide" Name="IfArrivalTime" ID="2">
                 <Properties>
                   <Property Name="DecideType">ConditionBased</Property>
-                  <Property Name="Expression">TimeNow &gt;= ShipToken.ArrivalTime</Property>
+                  <Property Name="Expression">TimeNow &gt;= ShipToken.ArrivalTime-ArrivalLookahead</Property>
                 </Properties>
                 <Exit Name="True" Type="Primary" NextID="4" />
                 <Exit Name="False" Type="Alternate" NextID="3" />
               </Step>
               <Step Type="Delay" Name="ArrivalTime" ID="3">
                 <Properties>
-                  <Property Name="DelayTime">ShipToken.ArrivalTime - TimeNow</Property>
+                  <Property Name="DelayTime">(ShipToken.ArrivalTime-ArrivalLookahead) - TimeNow</Property>
                 </Properties>
                 <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
@@ -40158,7 +40424,7 @@
               <Step Type="Transfer" Name="ToOutputBuffer" ID="7">
                 <Properties>
                   <Property Name="ToType">Station</Property>
-                  <Property Name="StationName">OutputBuffer</Property>
+                  <Property Name="StationName">ScheduledArrivals</Property>
                 </Properties>
               </Step>
               <Step Type="Assign" Name="Contents" ID="8">
@@ -40243,6 +40509,30 @@
                   <Property Name="ToType">ParentExternalNode</Property>
                   <Property Name="ExternalNodeName">Output</Property>
                 </Properties>
+              </Step>
+            </Steps>
+          </Process>
+          <Process Name="EnteredScheduledArrivals" BeginStepID="3">
+            <Properties>
+              <Property Name="TriggeringEventName">ScheduledArrivals.Entered</Property>
+            </Properties>
+            <Steps>
+              <Step Type="Transfer" Name="ToOutputBuffer" ID="2">
+                <Properties>
+                  <Property Name="FromType">CurrentStation</Property>
+                  <Property Name="ToType">Station</Property>
+                  <Property Name="StationName">OutputBuffer</Property>
+                </Properties>
+              </Step>
+              <Step Type="EndTransfer" Name="IntoScheduledArrivals" ID="3">
+                <Properties />
+                <Exit Name="Exit" Type="Primary" NextID="4" />
+              </Step>
+              <Step Type="Delay" Name="ArrivalLookahead" ID="4">
+                <Properties>
+                  <Property Name="DelayTime">ArrivalLookahead</Property>
+                </Properties>
+                <Exit Name="Exit" Type="Primary" NextID="2" />
               </Step>
             </Steps>
           </Process>
@@ -41070,7 +41360,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>2215</Revision>
+        <Revision>2233</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -41098,11 +41388,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>1374</Revision>
+        <Revision>1390</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>795</Revision>
+        <Revision>810</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -41118,7 +41408,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1539</Revision>
+        <Revision>1555</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -41202,7 +41492,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>345</Revision>
+        <Revision>346</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -47867,7 +48157,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="345" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="346" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -58574,4 +58864,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- RsDvzaxkr4MaEeTy4QLoKn+tbx0T0tQzOXUg/9+m0MgvGXrE+tkiy7k+u9JH03zG/uVpHe5bFPkzSq1HcKryGw== -->
+<!-- 0Qm3jkwnQQLuX8G9KmepMWgiXCILtaX3s3gWroQffLq8iCkIesTcsQipBIuAik9IC/8Jw1QrsNjkZtGv0VfkvQ== -->
