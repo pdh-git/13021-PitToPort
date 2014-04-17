@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-AU">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <DataSource ComponentName="dataSource1" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource2" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource3" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource4" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource5" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource6" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource7" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource8" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource9" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource10" Name="Table.TST" />
+    <DataSource ComponentName="dataSource11" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource12" Name="Transporter Usage Log" />
+  </DataSources>
+</Dashboard>

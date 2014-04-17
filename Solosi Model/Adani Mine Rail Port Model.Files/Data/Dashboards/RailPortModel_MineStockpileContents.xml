@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-AU">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <DataSource ComponentName="dataSource1" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource2" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource3" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource4" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource5" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource6" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource7" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource8" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource9" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource10" Name="Table.TST" />
+    <DataSource ComponentName="dataSource11" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource12" Name="Transporter Usage Log" />
+  </DataSources>
+  <Items>
+    <RangeFilter ComponentName="rangeFilterDashboardItem1" Name="Range Filter 1" DataSource="dataSource11" FilterString="StartsWith([DataItem2], 'Tally_Stockpile1Contents') Or StartsWith([DataItem2], 'Tally_Stockpile2Contents')">
+      <DataItems>
+        <Measure DataMember="Value" Name="DataItem0" />
+        <Dimension DataMember="Time" DateTimeGroupInterval="DayMonthYear" Name="DataItem1" />
+        <Dimension DataMember="DataSource" Name="DataItem2" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension Name="DataItem2" />
+      </SeriesDimensions>
+      <Argument UniqueName="DataItem1" />
+      <Series>
+        <Simple SeriesType="Line">
+          <Value Name="DataItem0" />
+        </Simple>
+      </Series>
+    </RangeFilter>
+    <Chart ComponentName="chartDashboardItem1" Name="Chart 1" DataSource="dataSource11" FilterString="StartsWith([DataItem3], 'Tally_Stockpile1Contents') Or StartsWith([DataItem3], 'Tally_Stockpile2Contents')">
+      <DataItems>
+        <Measure DataMember="Value" Name="DataItem0" />
+        <Dimension DataMember="Time" DateTimeGroupInterval="DayMonthYear" Name="DataItem2" />
+        <Dimension DataMember="DataSource" SortOrder="Descending" Name="DataItem3" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension Name="DataItem3" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument Name="DataItem2" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple SeriesType="Line">
+              <Value Name="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutItem Weight="74.8798076923077" DashboardItem="chartDashboardItem1" />
+      <LayoutItem Weight="25.120192307692307" DashboardItem="rangeFilterDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
