@@ -1,0 +1,363 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Dashboard CurrencyCulture="en-AU">
+  <Title Text="Dashboard" />
+  <DataSources>
+    <DataSource ComponentName="dataSource1" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource2" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource3" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource4" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource5" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource6" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource7" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource8" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource9" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource10" Name="Table.TST" />
+    <DataSource ComponentName="dataSource11" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource12" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource13" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource14" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource15" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource16" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource17" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource18" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource19" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource20" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource21" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource22" Name="Table.TST" />
+    <DataSource ComponentName="dataSource23" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource24" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource25" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource26" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource27" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource28" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource29" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource30" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource31" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource32" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource33" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource34" Name="Table.TST" />
+    <DataSource ComponentName="dataSource35" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource36" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource37" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource38" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource39" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource40" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource41" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource42" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource43" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource44" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource45" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource46" Name="Table.TST" />
+    <DataSource ComponentName="dataSource47" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource48" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource49" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource50" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource51" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource52" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource53" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource54" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource55" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource56" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource57" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource58" Name="Table.TST" />
+    <DataSource ComponentName="dataSource59" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource60" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource61" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource62" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource63" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource64" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource65" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource66" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource67" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource68" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource69" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource70" Name="Table.TST" />
+    <DataSource ComponentName="dataSource71" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource72" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource73" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource74" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource75" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource76" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource77" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource78" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource79" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource80" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource81" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource82" Name="Table.TST" />
+    <DataSource ComponentName="dataSource83" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource84" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource85" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource86" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource87" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource88" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource89" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource90" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource91" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource92" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource93" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource94" Name="Table.TST" />
+    <DataSource ComponentName="dataSource95" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource96" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource97" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource98" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource99" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource100" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource101" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource102" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource103" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource104" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource105" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource106" Name="Table.TST" />
+    <DataSource ComponentName="dataSource107" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource108" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource109" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource110" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource111" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource112" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource113" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource114" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource115" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource116" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource117" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource118" Name="Table.TST" />
+    <DataSource ComponentName="dataSource119" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource120" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource121" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource122" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource123" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource124" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource125" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource126" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource127" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource128" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource129" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource130" Name="Table.TST" />
+    <DataSource ComponentName="dataSource131" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource132" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource133" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource134" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource135" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource136" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource137" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource138" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource139" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource140" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource141" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource142" Name="Table.TST" />
+    <DataSource ComponentName="dataSource143" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource144" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource145" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource146" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource147" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource148" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource149" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource150" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource151" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource152" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource153" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource154" Name="Table.TST" />
+    <DataSource ComponentName="dataSource155" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource156" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource157" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource158" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource159" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource160" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource161" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource162" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource163" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource164" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource165" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource166" Name="Table.TST" />
+    <DataSource ComponentName="dataSource167" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource168" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource169" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource170" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource171" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource172" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource173" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource174" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource175" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource176" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource177" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource178" Name="Table.TST" />
+    <DataSource ComponentName="dataSource179" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource180" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource181" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource182" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource183" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource184" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource185" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource186" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource187" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource188" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource189" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource190" Name="Table.TST" />
+    <DataSource ComponentName="dataSource191" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource192" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource193" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource194" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource195" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource196" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource197" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource198" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource199" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource200" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource201" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource202" Name="Table.TST" />
+    <DataSource ComponentName="dataSource203" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource204" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource205" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource206" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource207" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource208" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource209" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource210" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource211" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource212" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource213" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource214" Name="Table.TST" />
+    <DataSource ComponentName="dataSource215" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource216" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource217" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource218" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource219" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource220" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource221" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource222" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource223" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource224" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource225" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource226" Name="Table.TST" />
+    <DataSource ComponentName="dataSource227" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource228" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource229" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource230" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource231" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource232" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource233" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource234" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource235" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource236" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource237" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource238" Name="Table.TST" />
+    <DataSource ComponentName="dataSource239" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource240" Name="Transporter Usage Log" />
+  </DataSources>
+  <Items>
+    <RangeFilter ComponentName="rangeFilterDashboardItem1" Name="Mine Stockpile Contents vs Train/Dumper Idle Time" DataSource="dataSource11" FilterString="StartsWith([DataItem2], 'Tally_StockpileLACContents') Or StartsWith([DataItem2], 'Tally_StockpileUGCContents')">
+      <DataItems>
+        <Measure DataMember="Value" Name="DataItem0" />
+        <Dimension DataMember="TimeOffset" Name="DataItem1" />
+        <Dimension DataMember="DataSource" Name="DataItem2" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension Name="DataItem2" />
+      </SeriesDimensions>
+      <Argument UniqueName="DataItem1" />
+      <Series>
+        <Simple SeriesType="Line">
+          <Value Name="DataItem0" />
+        </Simple>
+      </Series>
+    </RangeFilter>
+    <Chart ComponentName="chartDashboardItem2" Name="Train Idle Time" DataSource="dataSource11" FilterString="StartsWith([DataItem3], 'Tally_TrainIdleTime')">
+      <DataItems>
+        <Measure DataMember="Value" Name="DataItem0" />
+        <Dimension DataMember="TimeOffset" Name="DataItem2" />
+        <Dimension DataMember="DataSource" Name="DataItem3" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension Name="DataItem3" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument Name="DataItem2" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple SeriesType="Point">
+              <Value Name="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem3" Name="Train Dumper at Port Idle Time" DataSource="dataSource11" FilterString="StartsWith([DataItem0], 'Tally_IdleTimeAtDumper')">
+      <DataItems>
+        <Dimension DataMember="DataSource" Name="DataItem0" />
+        <Measure DataMember="Value" Name="DataItem2" />
+        <Dimension DataMember="TimeOffset" Name="DataItem3" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension Name="DataItem0" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument Name="DataItem3" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple SeriesType="Point">
+              <Value Name="DataItem2" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem1" Name="Mine Stockpile Contents" DataSource="dataSource11" FilterString="StartsWith([DataItem3], 'Tally_StockpileLACContents') Or StartsWith([DataItem3], 'Tally_StockpileUGCContents')">
+      <DataItems>
+        <Measure DataMember="Value" Name="DataItem0">
+          <NumericFormat FormatType="General" Unit="Thousands" />
+        </Measure>
+        <Dimension DataMember="TimeOffset" Name="DataItem2" />
+        <Dimension DataMember="DataSource" Name="DataItem3" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension Name="DataItem3" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument Name="DataItem2" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple SeriesType="Line">
+              <Value Name="DataItem0" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+    <Chart ComponentName="chartDashboardItem4" Name="Track Outages" DataSource="dataSource11" FilterString="StartsWith([DataItem3], 'Tally_TrackOutages')">
+      <DataItems>
+        <Measure DataMember="Value" Name="DataItem1" />
+        <Dimension DataMember="DataSource" Name="DataItem3" />
+        <Dimension DataMember="TimeOffset" Name="DataItem2" />
+      </DataItems>
+      <SeriesDimensions>
+        <SeriesDimension Name="DataItem3" />
+      </SeriesDimensions>
+      <Arguments>
+        <Argument Name="DataItem2" />
+      </Arguments>
+      <Panes>
+        <Pane Name="Pane 1">
+          <Series>
+            <Simple>
+              <Value Name="DataItem1" />
+            </Simple>
+          </Series>
+        </Pane>
+      </Panes>
+    </Chart>
+  </Items>
+  <LayoutTree>
+    <LayoutGroup Orientation="Vertical">
+      <LayoutItem Weight="20.91346153846154" DashboardItem="chartDashboardItem1" />
+      <LayoutItem Weight="21.514423076923077" DashboardItem="chartDashboardItem2" />
+      <LayoutItem Weight="21.634615384615383" DashboardItem="chartDashboardItem4" />
+      <LayoutItem Weight="21.27403846153846" DashboardItem="chartDashboardItem3" />
+      <LayoutItem Weight="14.663461538461538" DashboardItem="rangeFilterDashboardItem1" />
+    </LayoutGroup>
+  </LayoutTree>
+</Dashboard>
