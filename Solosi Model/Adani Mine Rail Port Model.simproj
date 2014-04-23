@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-23T07:13:29" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-23T07:35:27" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -24,8 +24,6 @@
           <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
           <Property Name="DistanceToNextFailure">Random.Exponential(1000)</Property>
           <Property Name="TimeToRepair">Random.Triangular(2, 8, 20)</Property>
-          <Property Name="MineStockpile1UGCCapacity">200000</Property>
-          <Property Name="MineStockpile2LACCapacity">200000</Property>
         </Properties>
       </RunnableInstance>
       <SuppressedWarnings>
@@ -67,6 +65,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -116,6 +115,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassRate" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTime" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -213,6 +213,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario2" ReplicationsRequired="4">
@@ -231,6 +232,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario3" ReplicationsRequired="4">
@@ -249,6 +251,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario4" ReplicationsRequired="4">
@@ -267,6 +270,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario5" ReplicationsRequired="4">
@@ -285,6 +289,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Scenario6" ReplicationsRequired="4">
@@ -303,6 +308,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -352,6 +358,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassRate" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTimeAve" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -433,6 +440,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="250k Mine Stockpiles" ReplicationsRequired="1">
@@ -451,6 +459,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="500k Mine Stockpiles" ReplicationsRequired="1">
@@ -469,6 +478,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="1mil Mine Stockpiles" ReplicationsRequired="1">
@@ -487,6 +497,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -536,6 +547,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassRate" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTime" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -546,7 +558,7 @@
             <Response Name="TonnesUnloaded" Expression="Port.DumperSplit.FlowRegulator.CurrentWeightFlowOut" UnitType="Weight" Units="Metric Tons" />
             <Response Name="TonnesShipped" Expression="Port.BerthJunction.FlowRegulator.CurrentWeightFlowOut" UnitType="Weight" Units="Metric Tons" />
           </Responses>
-          <ViewInfo ActiveExperiment="True" ActiveView="Design">
+          <ViewInfo>
             <ExperimentDesign>
               <ScenarioTable FilterEnabled="True">
                 <Columns>
@@ -591,22 +603,23 @@
                   <Column Name="WriteHourlyPortStockpile_ExperimentControl" Width="138" VisibleIndex="30" />
                   <Column Name="TrainSize_ExperimentControl" Width="128" VisibleIndex="14" />
                   <Column Name="PortShiploadingSurgeBinWeightCapacity_ExperimentControl" Width="277" VisibleIndex="40" />
-                  <Column Name="WritePTPSummary_ExperimentControl" Width="107" VisibleIndex="43" />
-                  <Column Name="LogTitle_ExperimentControl" Width="56" VisibleIndex="44" />
-                  <Column Name="LogDescription_ExperimentControl" Width="89" VisibleIndex="45" />
+                  <Column Name="WritePTPSummary_ExperimentControl" Width="107" VisibleIndex="44" />
+                  <Column Name="LogTitle_ExperimentControl" Width="56" VisibleIndex="45" />
+                  <Column Name="LogDescription_ExperimentControl" Width="89" VisibleIndex="46" />
                   <Column Name="InitialRequestTrainThreshold_ExperimentControl" Width="156" VisibleIndex="11" />
                   <Column Name="Include0ValuesInBlockageTallies_ExperimentControl" Width="172" VisibleIndex="12" />
-                  <Column Name="T1DivertRate_ExperimentControl" Width="194" VisibleIndex="46" />
-                  <Column Name="T1DivertAmount_ExperimentControl" Width="163" VisibleIndex="47" />
-                  <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="48" />
-                  <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="198" VisibleIndex="49" />
-                  <Column Name="TrainCycleTime_ExperimentResponse" Width="91" VisibleIndex="50" />
-                  <Column Name="OpenCutProduction_ExperimentResponse" Width="169" VisibleIndex="54" />
-                  <Column Name="UGCProduction_ExperimentResponse" Width="148" VisibleIndex="53" />
-                  <Column Name="UGCSurgepileAve_ExperimentResponse" Width="103" VisibleIndex="55" />
+                  <Column Name="T1DivertRate_ExperimentControl" Width="194" VisibleIndex="47" />
+                  <Column Name="T1DivertAmount_ExperimentControl" Width="163" VisibleIndex="48" />
+                  <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="49" />
+                  <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="198" VisibleIndex="50" />
+                  <Column Name="TrainCycleTime_ExperimentResponse" Width="91" VisibleIndex="51" />
+                  <Column Name="OpenCutProduction_ExperimentResponse" Width="169" VisibleIndex="55" />
+                  <Column Name="UGCProduction_ExperimentResponse" Width="148" VisibleIndex="54" />
+                  <Column Name="UGCSurgepileAve_ExperimentResponse" Width="103" VisibleIndex="56" />
                   <Column Name="UGCSurgepileMax_ExperimentResponse" Width="104" VisibleIndex="-1" />
-                  <Column Name="TonnesUnloaded_ExperimentResponse" Width="153" VisibleIndex="51" />
-                  <Column Name="TonnesShipped_ExperimentResponse" Width="149" VisibleIndex="52" />
+                  <Column Name="TonnesUnloaded_ExperimentResponse" Width="153" VisibleIndex="52" />
+                  <Column Name="TonnesShipped_ExperimentResponse" Width="149" VisibleIndex="53" />
+                  <Column Name="MineBypassRate_ExperimentControl" Width="98" VisibleIndex="43" />
                 </Columns>
               </ScenarioTable>
             </ExperimentDesign>
@@ -629,6 +642,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case1B" ReplicationsCompleted="10">
@@ -642,6 +656,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case1C" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -654,6 +669,7 @@
                 <Property Name="EnableTideConstraints">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Blank1" Active="False">
@@ -666,6 +682,7 @@
                 <Property Name="EnableTideConstraints">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case3A" ReplicationsCompleted="10">
@@ -679,6 +696,7 @@
                 <Property Name="EnableTideConstraints">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case3B" ReplicationsCompleted="10">
@@ -691,6 +709,7 @@
                 <Property Name="EnableTideConstraints">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case3C" ReplicationsCompleted="10">
@@ -704,6 +723,7 @@
                 <Property Name="EnableTideConstraints">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Blank2" ReplicationsCompleted="2" Active="False">
@@ -718,6 +738,7 @@
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case7A" ReplicationsCompleted="10">
@@ -731,6 +752,7 @@
                 <Property Name="WestLACStockpileSize">300000</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case7B" ReplicationsCompleted="10">
@@ -743,6 +765,7 @@
                 <Property Name="EnableTideConstraints">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case7C" ReplicationsCompleted="10">
@@ -756,6 +779,7 @@
                 <Property Name="WestLACStockpileSize">400000</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case7D" ReplicationsCompleted="10">
@@ -769,6 +793,7 @@
                 <Property Name="WestLACStockpileSize">500000</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Case7E" ReplicationsCompleted="10">
@@ -782,6 +807,7 @@
                 <Property Name="WestLACStockpileSize">600000</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Blank3" ReplicationsCompleted="1" Active="False">
@@ -794,6 +820,7 @@
                 <Property Name="EnableTideConstraints">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -843,6 +870,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassRate" />
           </Controls>
           <Responses>
             <Response Name="MineLACProductStockpileAvgContents" Expression="Mine.Tally_StockpileUGCContents.Average / 1000" />
@@ -1012,6 +1040,7 @@
                 <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="divert0.5mil" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -1023,6 +1052,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount">500000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="divert1mil" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -1034,6 +1064,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount">1000000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="divert1.5mil" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -1045,6 +1076,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount">1500000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="divert2mil" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -1056,6 +1088,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount">2000000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="divert2.5mil" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -1067,6 +1100,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount">2500000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="divert3mil" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -1078,6 +1112,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount">3000000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="divert3.5mil" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -1089,6 +1124,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount">3500000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="divert4mil" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -1100,6 +1136,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount">4000000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="divert4.5mil" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -1111,6 +1148,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount">4500000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="divert5mil" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -1122,6 +1160,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount">5000000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="divert5.5mil" ReplicationsRequired="20" ReplicationsCompleted="20">
@@ -1133,6 +1172,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="T1DivertAmount">5500000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -1182,6 +1222,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassRate" />
           </Controls>
           <Responses>
             <Response Name="MineLACProductStockpileAvgContents" Expression="Mine.Tally_StockpileUGCContents.Average / 1000" />
@@ -1356,6 +1397,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="250kt Stockpile" ReplicationsCompleted="10">
@@ -1371,6 +1413,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="500kt Stockpile" ReplicationsCompleted="10">
@@ -1386,6 +1429,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="1Mt Stockpile" ReplicationsCompleted="10">
@@ -1401,6 +1445,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="Blank" ReplicationsRequired="1" Active="False">
@@ -1416,6 +1461,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="150kt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
@@ -1430,6 +1476,7 @@
                 <Property Name="EnableTideConstraints">True</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="250kt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
@@ -1444,6 +1491,7 @@
                 <Property Name="EnableTideConstraints">True</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="500kt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
@@ -1458,6 +1506,7 @@
                 <Property Name="EnableTideConstraints">True</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="1Mt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
@@ -1472,6 +1521,7 @@
                 <Property Name="EnableTideConstraints">True</Property>
                 <Property Name="Include0ValuesInBlockageTallies">False</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -1521,6 +1571,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassRate" />
           </Controls>
           <Responses>
             <Response Name="MineLACProductStockpileAvgContents" Expression="Mine.Tally_StockpileUGCContents.Average / 1000" />
@@ -1689,6 +1740,7 @@
                 <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="250k Mine Stockpiles" ReplicationsCompleted="10">
@@ -1700,6 +1752,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="MineStockpile1UGCCapacity">250000</Property>
                 <Property Name="MineStockpile2LACCapacity">250000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
             <Scenario Name="500k Mine Stockpiles" ReplicationsCompleted="10">
@@ -1711,6 +1764,7 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="MineStockpile1UGCCapacity">500000</Property>
                 <Property Name="MineStockpile2LACCapacity">500000</Property>
+                <Property Name="MineBypassRate" Units="Kilograms per Hour">0.0</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -1760,6 +1814,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassRate" />
           </Controls>
           <Responses>
             <Response Name="MineLACProductStockpileAvgContents" Expression="Mine.Tally_StockpileUGCContents.Average / 1000" />
@@ -1859,60 +1914,61 @@
                   <Column Name="WriteHourlyPortStockpile_ExperimentControl" Width="138" VisibleIndex="30" />
                   <Column Name="TrainSize_ExperimentControl" Width="128" VisibleIndex="14" />
                   <Column Name="PortShiploadingSurgeBinWeightCapacity_ExperimentControl" Width="287" VisibleIndex="40" />
-                  <Column Name="WritePTPSummary_ExperimentControl" Width="107" VisibleIndex="43" />
-                  <Column Name="LogTitle_ExperimentControl" Width="72" VisibleIndex="44" />
-                  <Column Name="LogDescription_ExperimentControl" Width="296" VisibleIndex="45" />
+                  <Column Name="WritePTPSummary_ExperimentControl" Width="107" VisibleIndex="44" />
+                  <Column Name="LogTitle_ExperimentControl" Width="72" VisibleIndex="45" />
+                  <Column Name="LogDescription_ExperimentControl" Width="296" VisibleIndex="46" />
                   <Column Name="InitialRequestTrainThreshold_ExperimentControl" Width="156" VisibleIndex="11" />
                   <Column Name="Include0ValuesInBlockageTallies_ExperimentControl" Width="172" VisibleIndex="12" />
-                  <Column Name="T1DivertRate_ExperimentControl" Width="194" VisibleIndex="46" />
-                  <Column Name="T1DivertAmount_ExperimentControl" Width="173" VisibleIndex="47" />
-                  <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="48" />
-                  <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="198" VisibleIndex="49" />
-                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="50" />
-                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="51" />
-                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="52" />
-                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="53" />
-                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="54" />
-                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="55" />
-                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="56" />
-                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="57" />
-                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="58" />
-                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
-                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
-                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
-                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
-                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="63" />
-                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
-                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
-                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
-                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
-                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="68" />
-                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="69" />
-                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="70" />
-                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="71" />
-                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="72" />
-                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="73" />
-                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="74" />
-                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="75" />
-                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="76" />
-                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="77" />
-                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="78" />
-                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="79" />
-                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="80" />
-                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="81" />
-                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="82" />
-                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="83" />
-                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="84" />
-                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="85" />
-                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="86" />
-                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="87" />
-                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="88" />
-                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="89" />
-                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="90" />
-                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="91" />
-                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="92" />
-                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="93" />
-                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="94" />
+                  <Column Name="T1DivertRate_ExperimentControl" Width="194" VisibleIndex="47" />
+                  <Column Name="T1DivertAmount_ExperimentControl" Width="173" VisibleIndex="48" />
+                  <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="49" />
+                  <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="198" VisibleIndex="50" />
+                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="51" />
+                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="52" />
+                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="53" />
+                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="54" />
+                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="55" />
+                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="56" />
+                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="57" />
+                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="58" />
+                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
+                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
+                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
+                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
+                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="63" />
+                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
+                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
+                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
+                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
+                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="68" />
+                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="69" />
+                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="70" />
+                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="71" />
+                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="72" />
+                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="73" />
+                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="74" />
+                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="75" />
+                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="76" />
+                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="77" />
+                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="78" />
+                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="79" />
+                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="80" />
+                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="81" />
+                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="82" />
+                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="83" />
+                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="84" />
+                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="85" />
+                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="86" />
+                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="87" />
+                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="88" />
+                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="89" />
+                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="90" />
+                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="91" />
+                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="92" />
+                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="93" />
+                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="94" />
+                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="95" />
+                  <Column Name="MineBypassRate_ExperimentControl" Width="98" VisibleIndex="43" />
                 </Columns>
               </ScenarioTable>
             </ExperimentDesign>
@@ -1921,104 +1977,224 @@
             </ExperimentPivotGrid>
           </ViewInfo>
         </Experiment>
-        <Experiment Name="PtPSensitivityExperiment_MineStockpiles_Copy" ConfidenceLevel="Point95" LowerPercentile="25" UpperPercentile="75" DefaultReplications="10" ConcurrentReplicationLimit="3">
+        <Experiment Name="CaseRuns23_04_14" ConfidenceLevel="Point95" LowerPercentile="25" UpperPercentile="75" DefaultReplications="10" ConcurrentReplicationLimit="3">
           <Warmup Units="Hours">0</Warmup>
           <Scenarios>
-            <Scenario Name="Test1" ReplicationsRequired="3" ReplicationsCompleted="1">
+            <Scenario Name="Case 1 Base- 150kt Stockpile">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Test2" ReplicationsRequired="3" ReplicationsCompleted="1">
+            <Scenario Name="Case 1 A- 250kt Stockpile">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="MineStockpile1UGCCapacity">200000</Property>
-                <Property Name="MineStockpile2LACCapacity">200000</Property>
-              </Properties>
-            </Scenario>
-            <Scenario Name="Test3" ReplicationsRequired="3" ReplicationsCompleted="1">
-              <Properties>
-                <Property Name="InitialCost" Units="USD">0.0</Property>
-                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
                 <Property Name="MineStockpile1UGCCapacity">250000</Property>
                 <Property Name="MineStockpile2LACCapacity">250000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Test4" ReplicationsRequired="3" ReplicationsCompleted="1">
+            <Scenario Name="Case 1 B- 500kt Stockpile">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="MineStockpile1UGCCapacity">300000</Property>
-                <Property Name="MineStockpile2LACCapacity">300000</Property>
-              </Properties>
-            </Scenario>
-            <Scenario Name="Test5" ReplicationsRequired="3">
-              <Properties>
-                <Property Name="InitialCost" Units="USD">0.0</Property>
-                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="MineStockpile1UGCCapacity">350000</Property>
-                <Property Name="MineStockpile2LACCapacity">350000</Property>
-              </Properties>
-            </Scenario>
-            <Scenario Name="Test6" ReplicationsRequired="3">
-              <Properties>
-                <Property Name="InitialCost" Units="USD">0.0</Property>
-                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="MineStockpile1UGCCapacity">400000</Property>
-                <Property Name="MineStockpile2LACCapacity">400000</Property>
-              </Properties>
-            </Scenario>
-            <Scenario Name="Test7" ReplicationsRequired="3">
-              <Properties>
-                <Property Name="InitialCost" Units="USD">0.0</Property>
-                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="MineStockpile1UGCCapacity">450000</Property>
-                <Property Name="MineStockpile2LACCapacity">450000</Property>
-              </Properties>
-            </Scenario>
-            <Scenario Name="Test8" ReplicationsRequired="3">
-              <Properties>
-                <Property Name="InitialCost" Units="USD">0.0</Property>
-                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
                 <Property Name="MineStockpile1UGCCapacity">500000</Property>
                 <Property Name="MineStockpile2LACCapacity">500000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Test9" ReplicationsRequired="3">
+            <Scenario Name="Case 2 Base- 2300 Bypass Rate">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="MineStockpile1UGCCapacity">550000</Property>
-                <Property Name="MineStockpile2LACCapacity">550000</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 2 A- 2500 Bypass Rate">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+                <Property Name="MineBypassRate">2500</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 2 B- 2700 Bypass Rate">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+                <Property Name="MineBypassRate">2700</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 2 C- 3000 Bypass Rate">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+                <Property Name="MineBypassRate">3000</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 3 - Ship Mix" Active="False">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 4 Base- Port Surge Bin 1125t">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 4 A- Port Surge Bin 1500t">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1500</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 4 B- Port Surge Bin 2000t">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 4 C- Port Surge Bin 2500t">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2500</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 5 Base- Rolling Stockpile Disabled">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 5 A- Rolling Stockpile Enabled">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 6- Campaign Railing" Active="False">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 7 Base- Port LAC Stockpile 365000t">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 7 A- Port LAC Stockpile 465000t">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="WestLACStockpileSize">465000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 7 B- Port LAC Stockpile 565000t">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="WestLACStockpileSize">565000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 7 C- Port LAC Stockpile 665000t">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="WestLACStockpileSize">665000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
           </Scenarios>
@@ -2068,6 +2244,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassRate" />
           </Controls>
           <Responses>
             <Response Name="MineLACProductStockpileAvgContents" Expression="Mine.Tally_StockpileUGCContents.Average / 1000" />
@@ -2116,18 +2293,12 @@
             <Response Name="PercentDirectLoading" Expression="(Port.DumperStates.TotalTime(3) / Math.If((Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3)) &gt; 0, Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3), 1)) * 100" />
             <Response Name="EndTime" Expression="Run.EndingTime" />
           </Responses>
-          <BinaryResults>
-            <FileRef Name="Results\RailPortModel\PtPSensitivityExperiment_MineStockpiles_Copy Results.stats" />
-          </BinaryResults>
-          <ResponseResults>
-            <FileRef Name="Results\RailPortModel\PtPSensitivityExperiment_MineStockpiles_Copy ResponseResults.xml" />
-          </ResponseResults>
-          <ViewInfo>
+          <ViewInfo ActiveExperiment="True" ActiveView="Design">
             <ExperimentDesign>
               <ScenarioTable FilterEnabled="True">
                 <Columns>
                   <Column Name="Active" Width="22" VisibleIndex="0" />
-                  <Column Name="InstanceName" Width="198" VisibleIndex="1" />
+                  <Column Name="InstanceName" Width="208" VisibleIndex="1" />
                   <Column Name="StatusWrapper" Width="50" VisibleIndex="2" />
                   <Column Name="ReplicationsRequired" Width="72" VisibleIndex="3" />
                   <Column Name="ReplicationsCompleted" Width="70" VisibleIndex="4" />
@@ -2153,7 +2324,7 @@
                   <Column Name="WriteShipLogToFile_ExperimentControl" Width="110" VisibleIndex="27" />
                   <Column Name="WriteShipSummariesToFile_ExperimentControl" Width="144" VisibleIndex="28" />
                   <Column Name="WriteAnnualPortSummary_ExperimentControl" Width="142" VisibleIndex="29" />
-                  <Column Name="EnableRollingStockpile_ExperimentControl" Width="124" VisibleIndex="31" />
+                  <Column Name="EnableRollingStockpile_ExperimentControl" Width="134" VisibleIndex="31" />
                   <Column Name="EnableShiploaderPlannedShutdowns_ExperimentControl" Width="192" VisibleIndex="32" />
                   <Column Name="EnableBerth2_ExperimentControl" Width="83" VisibleIndex="33" />
                   <Column Name="EnableTideConstraints_ExperimentControl" Width="136" VisibleIndex="34" />
@@ -2161,66 +2332,67 @@
                   <Column Name="PortStockpileReclaimRate_ExperimentControl" Width="251" VisibleIndex="36" />
                   <Column Name="PortStockpileStackingRate_ExperimentControl" Width="210" VisibleIndex="37" />
                   <Column Name="EastUGCStockpileSize_ExperimentControl" Width="188" VisibleIndex="38" />
-                  <Column Name="WestLACStockpileSize_ExperimentControl" Width="190" VisibleIndex="39" />
+                  <Column Name="WestLACStockpileSize_ExperimentControl" Width="200" VisibleIndex="39" />
                   <Column Name="MineStockpile1UGCCapacity_ExperimentControl" Width="228" VisibleIndex="41" />
                   <Column Name="MineStockpile2LACCapacity_ExperimentControl" Width="226" VisibleIndex="42" />
                   <Column Name="WriteHourlyPortStockpile_ExperimentControl" Width="138" VisibleIndex="30" />
                   <Column Name="TrainSize_ExperimentControl" Width="128" VisibleIndex="14" />
                   <Column Name="PortShiploadingSurgeBinWeightCapacity_ExperimentControl" Width="287" VisibleIndex="40" />
-                  <Column Name="WritePTPSummary_ExperimentControl" Width="107" VisibleIndex="43" />
-                  <Column Name="LogTitle_ExperimentControl" Width="72" VisibleIndex="44" />
-                  <Column Name="LogDescription_ExperimentControl" Width="296" VisibleIndex="45" />
+                  <Column Name="WritePTPSummary_ExperimentControl" Width="107" VisibleIndex="44" />
+                  <Column Name="LogTitle_ExperimentControl" Width="72" VisibleIndex="45" />
+                  <Column Name="LogDescription_ExperimentControl" Width="296" VisibleIndex="46" />
                   <Column Name="InitialRequestTrainThreshold_ExperimentControl" Width="156" VisibleIndex="11" />
                   <Column Name="Include0ValuesInBlockageTallies_ExperimentControl" Width="172" VisibleIndex="12" />
-                  <Column Name="T1DivertRate_ExperimentControl" Width="194" VisibleIndex="46" />
-                  <Column Name="T1DivertAmount_ExperimentControl" Width="173" VisibleIndex="47" />
-                  <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="48" />
-                  <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="198" VisibleIndex="49" />
-                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="50" />
-                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="51" />
-                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="52" />
-                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="53" />
-                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="54" />
-                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="55" />
-                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="56" />
-                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="57" />
-                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="58" />
-                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
-                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
-                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
-                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
-                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="63" />
-                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
-                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
-                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
-                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
-                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="68" />
-                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="69" />
-                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="70" />
-                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="71" />
-                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="72" />
-                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="73" />
-                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="74" />
-                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="75" />
-                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="76" />
-                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="77" />
-                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="78" />
-                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="79" />
-                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="80" />
-                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="81" />
-                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="82" />
-                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="83" />
-                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="84" />
-                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="85" />
-                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="86" />
-                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="87" />
-                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="88" />
-                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="89" />
-                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="90" />
-                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="91" />
-                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="92" />
-                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="93" />
-                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="94" />
+                  <Column Name="T1DivertRate_ExperimentControl" Width="194" VisibleIndex="47" />
+                  <Column Name="T1DivertAmount_ExperimentControl" Width="173" VisibleIndex="48" />
+                  <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="49" />
+                  <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="198" VisibleIndex="50" />
+                  <Column Name="MineBypassRate_ExperimentControl" Width="219" VisibleIndex="43" />
+                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="51" />
+                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="52" />
+                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="53" />
+                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="54" />
+                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="55" />
+                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="56" />
+                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="57" />
+                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="58" />
+                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
+                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
+                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
+                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
+                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="63" />
+                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
+                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
+                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
+                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
+                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="68" />
+                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="69" />
+                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="70" />
+                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="71" />
+                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="72" />
+                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="73" />
+                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="74" />
+                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="75" />
+                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="76" />
+                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="77" />
+                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="78" />
+                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="79" />
+                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="80" />
+                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="81" />
+                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="82" />
+                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="83" />
+                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="84" />
+                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="85" />
+                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="86" />
+                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="87" />
+                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="88" />
+                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="89" />
+                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="90" />
+                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="91" />
+                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="92" />
+                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="93" />
+                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="94" />
+                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="95" />
                 </Columns>
               </ScenarioTable>
             </ExperimentDesign>
@@ -2237,27 +2409,23 @@
       </DashboardReports>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="66.7764732179205 904.096618652356 -224.240024470071" Direction="0 -1 2.22044604925031E-16" Zoom="904.096618652356" />
+          <Camera Orientation="Top" Location="53.0474086716682 904.096618652344 -217.272497079477" Direction="0 -1 2.22044604925031E-16" Zoom="904.096618652344" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </Facility>
         <Process>
           <Categories>
             <Category Name="Logging Processes" />
             <Category Name="TrainYard AddOn Processes" Expanded="True" />
-            <Category Name="Section2Entry AddOn Processes" Expanded="True" />
             <Category Name="TrainOutput@DummyMine AddOn Processes" />
             <Category Name="TrainOutput@DummyPort AddOn Processes" />
             <Category Name="To Port" Expanded="True" />
-            <Category Name="To Mine" Expanded="True" />
             <Category Name="RequestProcessing AddOn Processes" />
             <Category Name="TrainInput@DummyMine AddOn Processes" Expanded="True" />
             <Category Name="TrainInput@DummyPort AddOn Processes" Expanded="True" />
             <Category Name="PortSig4 AddOn Processes" Expanded="True" />
             <Category Name="Resource1 AddOn Processes" />
-            <Category Name="TrackResource AddOn Processes" Expanded="True" />
             <Category Name="Weather ShutDown Processes" />
             <Category Name="TrackSpeed AddOn Processes" />
-            <Category Name="MS1 AddOn Processes" Expanded="True" />
             <Category Name="Track1 AddOn Processes" Expanded="True" />
             <Category Name="ChannelExit AddOn Processes" />
             <Category Name="ChannelEntrance AddOn Processes" />
@@ -2267,8 +2435,6 @@
             <Category Name="Port AddOn Processes" />
             <Category Name="Input@ShipExit AddOn Processes" />
             <Category Name="Rail Outage Train Check Process" Expanded="True" />
-            <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
-            <Category Name="B1Entry AddOn Processes" Expanded="True" />
             <Category Name="B2Entry AddOn Processes" />
             <Category Name="Output@ShipGenerator1 AddOn Processes" />
             <Category Name="BasicNode1 AddOn Processes" />
@@ -2280,34 +2446,34 @@
             <Category Name="Output@PullRequestSourceUGC AddOn Processes" />
             <Category Name="Input@RequestProcessing AddOn Processes" />
             <Category Name="Monitor1 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Section2Entry AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="To Mine" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="TrackResource AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="MS1 AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="TonnesLoaded AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="B1Entry AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
+            <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -2592,7 +2758,7 @@
       </DashboardReports>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-327.936492258017 1868.92907714844 111.769122755381" Direction="0 -1 2.22044604925031E-16" Zoom="1868.92907714844" />
+          <Camera Orientation="Top" Location="-59.7918719191769 219.877636997437 199.510786975018" Direction="0 -1 2.22044604925031E-16" Zoom="219.877636997437" />
           <ObjectDisplay Axis="False" Grid="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
@@ -2601,38 +2767,40 @@
             <Category Name="TrainSink AddOn Processes" Expanded="True" />
             <Category Name="UC_Stockpile AddOn Processes" Expanded="True" />
             <Category Name="WeatherShutdownSchedule AddOn Processes" Expanded="True" />
-            <Category Name="LWDevGenServer AddOn Processes" Expanded="True" />
             <Category Name="Raw Coal Events" Expanded="True" />
             <Category Name="Stockpile2 AddOn Processes" />
-            <Category Name="CPPWorkSchedule AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Stockpile1 AddOn Processes" Expanded="True" />
             <Category Name="LAC_Feeder AddOn Processes" Expanded="True" />
             <Category Name="TLOStockpileControl_Processes" Expanded="True" />
             <Category Name="LW2GenServer AddOn Processes" Expanded="True" />
-            <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
             <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="Conveyor Control Events" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="TrainLoadStation AddOn Processes" Expanded="True" />
+            <Category Name="Output@Stockpile AddOn Processes" Expanded="True" />
+            <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
+            <Category Name="LACGenServer AddOn Processes" Expanded="True" />
+            <Category Name="CPPWorkSchedule AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="LWDevGenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="TrainTransferNode1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="LW1GenServer AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Output@Stockpile AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="LACGenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="HAC_Feeder AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
@@ -2889,40 +3057,40 @@
         <Process>
           <Categories>
             <Category Name="TrainUnloader AddOn Processes" Expanded="True" />
-            <Category Name="Debalasting Processes" Expanded="True" />
             <Category Name="ToLoad AddOn Processes" Expanded="True" />
             <Category Name="TrainDumper AddOn Processes" Expanded="True" />
-            <Category Name="ShiploaderReliability AddOn Processes" />
             <Category Name="SR1 AddOn Processes" />
             <Category Name="LoadFrom AddOn Processes" Expanded="True" />
             <Category Name="SR2 AddOn Processes" Expanded="True" />
-            <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
             <Category Name="Output@ShipGenerator1 AddOn Processes" />
             <Category Name="StackerReclaimerNodes AddOn Processes" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="Logging Processes" Expanded="True" />
             <Category Name="ShipLoader AddOn Processes" Expanded="True" />
             <Category Name="IntB2Exit AddOn Processes" Expanded="True" />
             <Category Name="SurgeBinMonitor AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Berth2 AddOn Processes" Expanded="True" />
+            <Category Name="Debalasting Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Ship Manager Processes" Expanded="True" />
+            <Category Name="ShiploaderReliability AddOn Processes" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="ChannelEntrance AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="ChannelExit AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Loading Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="Ship Manager Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="IntB1Exit AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Berth1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
           </Categories>
@@ -3737,7 +3905,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1499" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1501" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -17559,7 +17727,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1666" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1668" Author="Sales and Support" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -26839,7 +27007,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2360" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2362" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -26928,6 +27096,7 @@
           <ExpressionProperty Name="T1DivertAmount" DefaultValue="0" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
           <BooleanProperty Name="IsCampaignRailing" DefaultValue="False" NullString="null" />
           <ExpressionProperty Name="CampaignRailingTrainInterval" DefaultValue="3.5" NullString="null" UnitType="Time" />
+          <ExpressionProperty Name="MineBypassRate" Category="Mine Properties" DefaultValue="2300" NullString="null" UnitType="WeightFlowRate" DefaultUnits="Metric Tons per Hour" />
           <Overrides>
             <Override Name="ReportStatistics" Visible="False" />
             <Override Name="ParentCostCenter" Visible="False" />
@@ -38260,6 +38429,9 @@
               <Property Name="Stockpile1Capacity">MineStockpile1UGCCapacity</Property>
               <Property Name="Stockpile2Capacity">MineStockpile2LACCapacity</Property>
               <Property Name="TLOBinSize">0</Property>
+              <Property Name="CV_1401T_FlowRate">MineBypassRate</Property>
+              <Property Name="CV_2401T_FlowRate">MineBypassRate</Property>
+              <Property Name="CV_3303T_FlowRate">8000</Property>
             </Properties>
             <Graphics EditsLocked="True" ExternallyVisible="True">
               <SymbolInstances>
@@ -43350,7 +43522,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>2360</Revision>
+        <Revision>2362</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -43378,7 +43550,7 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>1499</Revision>
+        <Revision>1501</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
@@ -43398,7 +43570,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1666</Revision>
+        <Revision>1668</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -43482,7 +43654,7 @@
       </DefinitionRef>
       <DefinitionRef Name="NodeReader">
         <Id>bebaa5d5-a6dd-481e-a04b-eb4bca320738</Id>
-        <Revision>357</Revision>
+        <Revision>358</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TimePath">
         <Id>ff39356c-a4f9-412c-bb3d-14baf4dc5d11</Id>
@@ -50147,7 +50319,7 @@ The entity will be processed though the filler without a filling attempt. Howeve
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="357" Author="Sales and Support">
+      <FixedDefinition Name="NodeReader" Id="bebaa5d5-a6dd-481e-a04b-eb4bca320738" Revision="358" Author="Sales and Support">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -60854,4 +61026,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- p/A2UBHZRiQtTMm5pS8v6IUbeB47p1T4ZQurx557yJXTotZkNEAZ+WQlcLSiG8BUoI04rU3b72Ad+LcB3l63lQ== -->
+<!-- BZ7HxzBbpD22sQACIWARZqFYDSjJRSUuWw7artb901hXxvURPG4cQU27O6g4pfVA7tPesai5d9AwNzhnpHGnwA== -->
