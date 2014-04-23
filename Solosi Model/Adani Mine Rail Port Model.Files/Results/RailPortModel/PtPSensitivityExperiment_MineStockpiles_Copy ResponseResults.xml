@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResponseResults Model="RailPortModel" Experiment="PtPSensitivityExperiment_MineStockpiles_Copy" FileVersion="94" xmlns="http://www.simio.com/projects/v1">
+  <Observations Scenario="Test1" Response="EndTime">
+    <Observation Value="8760" />
+  </Observations>
+  <Observations Scenario="Test1" Response="PercentDirectLoading">
+    <Observation Value="29.9877882238963" />
+  </Observations>
+  <Observations Scenario="Test1" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.15863964425357" />
+  </Observations>
+  <Observations Scenario="Test1" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.02091975963906" />
+  </Observations>
+  <Observations Scenario="Test1" Response="AvgShipTTIP">
+    <Observation Value="345.580181555403" />
+  </Observations>
+  <Observations Scenario="Test1" Response="AvgShipTimeInBerth">
+    <Observation Value="29.4707677666666" />
+  </Observations>
+  <Observations Scenario="Test1" Response="AvgShipLoadingTime">
+    <Observation Value="27.2623343377778" />
+  </Observations>
+  <Observations Scenario="Test1" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="121501.036508899" />
+  </Observations>
+  <Observations Scenario="Test1" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="171571.020836819" />
+  </Observations>
+  <Observations Scenario="Test1" Response="PortStockpileAvgTotalContents">
+    <Observation Value="293072.057345719" />
+  </Observations>
+  <Observations Scenario="Test1" Response="ShiploadingIdleTime">
+    <Observation Value="749.699489844912" />
+  </Observations>
+  <Observations Scenario="Test1" Response="ShiploadingWeatherDownTime">
+    <Observation Value="52.3736652118179" />
+  </Observations>
+  <Observations Scenario="Test1" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="299.124263955981" />
+  </Observations>
+  <Observations Scenario="Test1" Response="ShiploadingPositioningTime">
+    <Observation Value="341.523878670094" />
+  </Observations>
+  <Observations Scenario="Test1" Response="ShiploadingOccupiedTime">
+    <Observation Value="7317.2787023172" />
+  </Observations>
+  <Observations Scenario="Test1" Response="DumperIdleTime">
+    <Observation Value="2335.05739066804" />
+  </Observations>
+  <Observations Scenario="Test1" Response="DumperWeatherDownTime">
+    <Observation Value="4.54188934568396" />
+  </Observations>
+  <Observations Scenario="Test1" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="348" />
+  </Observations>
+  <Observations Scenario="Test1" Response="DumperPositioningTime">
+    <Observation Value="473.537738139519" />
+  </Observations>
+  <Observations Scenario="Test1" Response="DumperUnloadingTime">
+    <Observation Value="5598.86298184676" />
+  </Observations>
+  <Observations Scenario="Test1" Response="PortShiploaderThroughput">
+    <Observation Value="37.3599975000011" />
+  </Observations>
+  <Observations Scenario="Test1" Response="PortDumperThroughput">
+    <Observation Value="37.5170400000007" />
+  </Observations>
+  <Observations Scenario="Test1" Response="TrainUnloadingTime">
+    <Observation Value="3.55573847322616" />
+  </Observations>
+  <Observations Scenario="Test1" Response="TrainLoadingTime">
+    <Observation Value="3.003496132158" />
+  </Observations>
+  <Observations Scenario="Test1" Response="TrainProvisioningTime">
+    <Observation Value="2.68377693439196" />
+  </Observations>
+  <Observations Scenario="Test1" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.967299967413204" />
+  </Observations>
+  <Observations Scenario="Test1" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.25376843734456" />
+  </Observations>
+  <Observations Scenario="Test1" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.138106432486357" />
+  </Observations>
+  <Observations Scenario="Test1" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.305312980810479" />
+  </Observations>
+  <Observations Scenario="Test1" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.261031254994946" />
+  </Observations>
+  <Observations Scenario="Test1" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.337917815251325" />
+  </Observations>
+  <Observations Scenario="Test1" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.210950734499757" />
+  </Observations>
+  <Observations Scenario="Test1" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.866191457474726" />
+  </Observations>
+  <Observations Scenario="Test1" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.526865981764249" />
+  </Observations>
+  <Observations Scenario="Test1" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.714308210089992" />
+  </Observations>
+  <Observations Scenario="Test1" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.885336371703414" />
+  </Observations>
+  <Observations Scenario="Test1" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.0033449517072" />
+  </Observations>
+  <Observations Scenario="Test1" Response="LoadedTravelTime">
+    <Observation Value="9.48603615845397" />
+  </Observations>
+  <Observations Scenario="Test1" Response="EmptyTravelTime">
+    <Observation Value="8.26700860054431" />
+  </Observations>
+  <Observations Scenario="Test1" Response="RailOperatingCycleTime">
+    <Observation Value="27.2382360839796" />
+  </Observations>
+  <Observations Scenario="Test1" Response="RailCycleTime">
+    <Observation Value="31.0534667668099" />
+  </Observations>
+  <Observations Scenario="Test1" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="1.85356583225156" />
+  </Observations>
+  <Observations Scenario="Test1" Response="MineTLOProductLoaded">
+    <Observation Value="37.5883200000007" />
+  </Observations>
+  <Observations Scenario="Test1" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="82611.6338015891" />
+  </Observations>
+  <Observations Scenario="Test1" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="61964.6171260014" />
+  </Observations>
+  <Observations Scenario="Test2" Response="EndTime">
+    <Observation Value="8760" />
+  </Observations>
+  <Observations Scenario="Test2" Response="PercentDirectLoading">
+    <Observation Value="31.8194119115772" />
+  </Observations>
+  <Observations Scenario="Test2" Response="AvgIdleTimeAtBerth">
+    <Observation Value="5.5811085309525" />
+  </Observations>
+  <Observations Scenario="Test2" Response="AvgIdleTimeAtDumper">
+    <Observation Value="0.864354249155618" />
+  </Observations>
+  <Observations Scenario="Test2" Response="AvgShipTTIP">
+    <Observation Value="69.1094936468432" />
+  </Observations>
+  <Observations Scenario="Test2" Response="AvgShipTimeInBerth">
+    <Observation Value="28.6596788055556" />
+  </Observations>
+  <Observations Scenario="Test2" Response="AvgShipLoadingTime">
+    <Observation Value="26.4398673240741" />
+  </Observations>
+  <Observations Scenario="Test2" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="13137.0580953986" />
+  </Observations>
+  <Observations Scenario="Test2" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="343766.834644892" />
+  </Observations>
+  <Observations Scenario="Test2" Response="PortStockpileAvgTotalContents">
+    <Observation Value="356903.89274029" />
+  </Observations>
+  <Observations Scenario="Test2" Response="ShiploadingIdleTime">
+    <Observation Value="160.49041478471" />
+  </Observations>
+  <Observations Scenario="Test2" Response="ShiploadingWeatherDownTime">
+    <Observation Value="62.5225332736734" />
+  </Observations>
+  <Observations Scenario="Test2" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="12" />
+  </Observations>
+  <Observations Scenario="Test2" Response="ShiploadingPositioningTime">
+    <Observation Value="42.1055757733322" />
+  </Observations>
+  <Observations Scenario="Test2" Response="ShiploadingOccupiedTime">
+    <Observation Value="8482.88147616829" />
+  </Observations>
+  <Observations Scenario="Test2" Response="DumperIdleTime">
+    <Observation Value="255.283821772289" />
+  </Observations>
+  <Observations Scenario="Test2" Response="DumperWeatherDownTime">
+    <Observation Value="2.73174022702125" />
+  </Observations>
+  <Observations Scenario="Test2" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="12" />
+  </Observations>
+  <Observations Scenario="Test2" Response="DumperPositioningTime">
+    <Observation Value="63.2999999999957" />
+  </Observations>
+  <Observations Scenario="Test2" Response="DumperUnloadingTime">
+    <Observation Value="8426.68443800069" />
+  </Observations>
+  <Observations Scenario="Test2" Response="PortShiploaderThroughput">
+    <Observation Value="4.62823969999997" />
+  </Observations>
+  <Observations Scenario="Test2" Response="PortDumperThroughput">
+    <Observation Value="4.99324" />
+  </Observations>
+  <Observations Scenario="Test2" Response="TrainUnloadingTime">
+    <Observation Value="3.54323614818194" />
+  </Observations>
+  <Observations Scenario="Test2" Response="TrainLoadingTime">
+    <Observation Value="3.01284411130434" />
+  </Observations>
+  <Observations Scenario="Test2" Response="TrainProvisioningTime">
+    <Observation Value="2.66857142741953" />
+  </Observations>
+  <Observations Scenario="Test2" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.09391196473808" />
+  </Observations>
+  <Observations Scenario="Test2" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="0.754477880285887" />
+  </Observations>
+  <Observations Scenario="Test2" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.00131767699138611" />
+  </Observations>
+  <Observations Scenario="Test2" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.151773352719888" />
+  </Observations>
+  <Observations Scenario="Test2" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.158784809109387" />
+  </Observations>
+  <Observations Scenario="Test2" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.216375214212203" />
+  </Observations>
+  <Observations Scenario="Test2" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.218216061776842" />
+  </Observations>
+  <Observations Scenario="Test2" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.389678616917005" />
+  </Observations>
+  <Observations Scenario="Test2" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.599141126319157" />
+  </Observations>
+  <Observations Scenario="Test2" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="1.35495003479431" />
+  </Observations>
+  <Observations Scenario="Test2" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.666713639252949" />
+  </Observations>
+  <Observations Scenario="Test2" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="0.986483871128075" />
+  </Observations>
+  <Observations Scenario="Test2" Response="LoadedTravelTime">
+    <Observation Value="8.12726598532329" />
+  </Observations>
+  <Observations Scenario="Test2" Response="EmptyTravelTime">
+    <Observation Value="7.13818041242406" />
+  </Observations>
+  <Observations Scenario="Test2" Response="RailOperatingCycleTime">
+    <Observation Value="26.5437519356427" />
+  </Observations>
+  <Observations Scenario="Test2" Response="RailCycleTime">
+    <Observation Value="27.8150349723931" />
+  </Observations>
+  <Observations Scenario="Test2" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="1.36133792655683" />
+  </Observations>
+  <Observations Scenario="Test2" Response="MineTLOProductLoaded">
+    <Observation Value="5.13216000000003" />
+  </Observations>
+  <Observations Scenario="Test2" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="185044.582605539" />
+  </Observations>
+  <Observations Scenario="Test2" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="181187.986146341" />
+  </Observations>
+  <Observations Scenario="Test3" Response="EndTime">
+    <Observation Value="8760" />
+  </Observations>
+  <Observations Scenario="Test3" Response="PercentDirectLoading">
+    <Observation Value="29.1402424240012" />
+  </Observations>
+  <Observations Scenario="Test3" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.03420662494117" />
+  </Observations>
+  <Observations Scenario="Test3" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.1268024082102" />
+  </Observations>
+  <Observations Scenario="Test3" Response="AvgShipTTIP">
+    <Observation Value="290.91804442916" />
+  </Observations>
+  <Observations Scenario="Test3" Response="AvgShipTimeInBerth">
+    <Observation Value="29.3608409512787" />
+  </Observations>
+  <Observations Scenario="Test3" Response="AvgShipLoadingTime">
+    <Observation Value="27.2207336662258" />
+  </Observations>
+  <Observations Scenario="Test3" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="127402.46315331" />
+  </Observations>
+  <Observations Scenario="Test3" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="172862.560368379" />
+  </Observations>
+  <Observations Scenario="Test3" Response="PortStockpileAvgTotalContents">
+    <Observation Value="300265.02352169" />
+  </Observations>
+  <Observations Scenario="Test3" Response="ShiploadingIdleTime">
+    <Observation Value="719.37106426778" />
+  </Observations>
+  <Observations Scenario="Test3" Response="ShiploadingWeatherDownTime">
+    <Observation Value="37.3555504786409" />
+  </Observations>
+  <Observations Scenario="Test3" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="289.156453608547" />
+  </Observations>
+  <Observations Scenario="Test3" Response="ShiploadingPositioningTime">
+    <Observation Value="342.146549110675" />
+  </Observations>
+  <Observations Scenario="Test3" Response="ShiploadingOccupiedTime">
+    <Observation Value="7371.97038253436" />
+  </Observations>
+  <Observations Scenario="Test3" Response="DumperIdleTime">
+    <Observation Value="2323.23707029308" />
+  </Observations>
+  <Observations Scenario="Test3" Response="DumperWeatherDownTime">
+    <Observation Value="2.93737720703626" />
+  </Observations>
+  <Observations Scenario="Test3" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="348" />
+  </Observations>
+  <Observations Scenario="Test3" Response="DumperPositioningTime">
+    <Observation Value="478.200000000138" />
+  </Observations>
+  <Observations Scenario="Test3" Response="DumperUnloadingTime">
+    <Observation Value="5607.62555249975" />
+  </Observations>
+  <Observations Scenario="Test3" Response="PortShiploaderThroughput">
+    <Observation Value="37.7399974800015" />
+  </Observations>
+  <Observations Scenario="Test3" Response="PortDumperThroughput">
+    <Observation Value="37.8734400000009" />
+  </Observations>
+  <Observations Scenario="Test3" Response="TrainUnloadingTime">
+    <Observation Value="3.5190986973316" />
+  </Observations>
+  <Observations Scenario="Test3" Response="TrainLoadingTime">
+    <Observation Value="2.99635503090563" />
+  </Observations>
+  <Observations Scenario="Test3" Response="TrainProvisioningTime">
+    <Observation Value="2.67652228201984" />
+  </Observations>
+  <Observations Scenario="Test3" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.01508356710854" />
+  </Observations>
+  <Observations Scenario="Test3" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.30859303286197" />
+  </Observations>
+  <Observations Scenario="Test3" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.166050947919724" />
+  </Observations>
+  <Observations Scenario="Test3" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.296947653036582" />
+  </Observations>
+  <Observations Scenario="Test3" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.37504177815015" />
+  </Observations>
+  <Observations Scenario="Test3" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.247901765934477" />
+  </Observations>
+  <Observations Scenario="Test3" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.222642756994272" />
+  </Observations>
+  <Observations Scenario="Test3" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.969867265893794" />
+  </Observations>
+  <Observations Scenario="Test3" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.646656781221958" />
+  </Observations>
+  <Observations Scenario="Test3" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.851796902917795" />
+  </Observations>
+  <Observations Scenario="Test3" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.771268708929812" />
+  </Observations>
+  <Observations Scenario="Test3" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.08515986754003" />
+  </Observations>
+  <Observations Scenario="Test3" Response="LoadedTravelTime">
+    <Observation Value="9.70989436777301" />
+  </Observations>
+  <Observations Scenario="Test3" Response="EmptyTravelTime">
+    <Observation Value="7.69835095766619" />
+  </Observations>
+  <Observations Scenario="Test3" Response="RailOperatingCycleTime">
+    <Observation Value="26.7113270763571" />
+  </Observations>
+  <Observations Scenario="Test3" Response="RailCycleTime">
+    <Observation Value="30.5693574794112" />
+  </Observations>
+  <Observations Scenario="Test3" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="1.80821133959345" />
+  </Observations>
+  <Observations Scenario="Test3" Response="MineTLOProductLoaded">
+    <Observation Value="37.9447200000009" />
+  </Observations>
+  <Observations Scenario="Test3" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="121121.167835503" />
+  </Observations>
+  <Observations Scenario="Test3" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="87312.9314479529" />
+  </Observations>
+  <Observations Scenario="Test4" Response="EndTime">
+    <Observation Value="8760" />
+  </Observations>
+  <Observations Scenario="Test4" Response="PercentDirectLoading">
+    <Observation Value="28.6715580513842" />
+  </Observations>
+  <Observations Scenario="Test4" Response="AvgIdleTimeAtBerth">
+    <Observation Value="3.36896605659854" />
+  </Observations>
+  <Observations Scenario="Test4" Response="AvgIdleTimeAtDumper">
+    <Observation Value="0.886896306012349" />
+  </Observations>
+  <Observations Scenario="Test4" Response="AvgShipTTIP">
+    <Observation Value="267.792450042955" />
+  </Observations>
+  <Observations Scenario="Test4" Response="AvgShipTimeInBerth">
+    <Observation Value="29.5427431955556" />
+  </Observations>
+  <Observations Scenario="Test4" Response="AvgShipLoadingTime">
+    <Observation Value="27.3487827322222" />
+  </Observations>
+  <Observations Scenario="Test4" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="129304.386890701" />
+  </Observations>
+  <Observations Scenario="Test4" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="198980.571281269" />
+  </Observations>
+  <Observations Scenario="Test4" Response="PortStockpileAvgTotalContents">
+    <Observation Value="328284.958171976" />
+  </Observations>
+  <Observations Scenario="Test4" Response="ShiploadingIdleTime">
+    <Observation Value="555.589412645659" />
+  </Observations>
+  <Observations Scenario="Test4" Response="ShiploadingWeatherDownTime">
+    <Observation Value="40.4286800692635" />
+  </Observations>
+  <Observations Scenario="Test4" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="288" />
+  </Observations>
+  <Observations Scenario="Test4" Response="ShiploadingPositioningTime">
+    <Observation Value="343.998563366176" />
+  </Observations>
+  <Observations Scenario="Test4" Response="ShiploadingOccupiedTime">
+    <Observation Value="7531.9833439189" />
+  </Observations>
+  <Observations Scenario="Test4" Response="DumperIdleTime">
+    <Observation Value="2021.16313138306" />
+  </Observations>
+  <Observations Scenario="Test4" Response="DumperWeatherDownTime">
+    <Observation Value="7.26800792715068" />
+  </Observations>
+  <Observations Scenario="Test4" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="288" />
+  </Observations>
+  <Observations Scenario="Test4" Response="DumperPositioningTime">
+    <Observation Value="479.446643667667" />
+  </Observations>
+  <Observations Scenario="Test4" Response="DumperUnloadingTime">
+    <Observation Value="5964.12221702212" />
+  </Observations>
+  <Observations Scenario="Test4" Response="PortShiploaderThroughput">
+    <Observation Value="37.800247500001" />
+  </Observations>
+  <Observations Scenario="Test4" Response="PortDumperThroughput">
+    <Observation Value="37.9710800000005" />
+  </Observations>
+  <Observations Scenario="Test4" Response="TrainUnloadingTime">
+    <Observation Value="3.58607458571827" />
+  </Observations>
+  <Observations Scenario="Test4" Response="TrainLoadingTime">
+    <Observation Value="2.998611702886" />
+  </Observations>
+  <Observations Scenario="Test4" Response="TrainProvisioningTime">
+    <Observation Value="2.67277846841207" />
+  </Observations>
+  <Observations Scenario="Test4" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.978846758015561" />
+  </Observations>
+  <Observations Scenario="Test4" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.19233218571192" />
+  </Observations>
+  <Observations Scenario="Test4" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.161817612193689" />
+  </Observations>
+  <Observations Scenario="Test4" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.28342825685615" />
+  </Observations>
+  <Observations Scenario="Test4" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.280058698936891" />
+  </Observations>
+  <Observations Scenario="Test4" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.268138860540091" />
+  </Observations>
+  <Observations Scenario="Test4" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.197486159977432" />
+  </Observations>
+  <Observations Scenario="Test4" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.983699897162283" />
+  </Observations>
+  <Observations Scenario="Test4" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.732384998021434" />
+  </Observations>
+  <Observations Scenario="Test4" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.698199878652453" />
+  </Observations>
+  <Observations Scenario="Test4" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.674850044554602" />
+  </Observations>
+  <Observations Scenario="Test4" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="0.888381773236285" />
+  </Observations>
+  <Observations Scenario="Test4" Response="LoadedTravelTime">
+    <Observation Value="9.52431297351191" />
+  </Observations>
+  <Observations Scenario="Test4" Response="EmptyTravelTime">
+    <Observation Value="7.71938714402479" />
+  </Observations>
+  <Observations Scenario="Test4" Response="RailOperatingCycleTime">
+    <Observation Value="27.4652703274548" />
+  </Observations>
+  <Observations Scenario="Test4" Response="RailCycleTime">
+    <Observation Value="30.5782234965723" />
+  </Observations>
+  <Observations Scenario="Test4" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="1.65317532309132" />
+  </Observations>
+  <Observations Scenario="Test4" Response="MineTLOProductLoaded">
+    <Observation Value="38.1110400000009" />
+  </Observations>
+  <Observations Scenario="Test4" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="152750.318399995" />
+  </Observations>
+  <Observations Scenario="Test4" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="104718.358723353" />
+  </Observations>
+  <Observations Scenario="Test5" Response="EndTime" />
+  <Observations Scenario="Test5" Response="PercentDirectLoading" />
+  <Observations Scenario="Test5" Response="AvgIdleTimeAtBerth" />
+  <Observations Scenario="Test5" Response="AvgIdleTimeAtDumper" />
+  <Observations Scenario="Test5" Response="AvgShipTTIP" />
+  <Observations Scenario="Test5" Response="AvgShipTimeInBerth" />
+  <Observations Scenario="Test5" Response="AvgShipLoadingTime" />
+  <Observations Scenario="Test5" Response="PortUndergroundStockpileAvgContents" />
+  <Observations Scenario="Test5" Response="PortOpenCutStockpileAvgContents" />
+  <Observations Scenario="Test5" Response="PortStockpileAvgTotalContents" />
+  <Observations Scenario="Test5" Response="ShiploadingIdleTime" />
+  <Observations Scenario="Test5" Response="ShiploadingWeatherDownTime" />
+  <Observations Scenario="Test5" Response="ShiploadingMaintenanceDownTime" />
+  <Observations Scenario="Test5" Response="ShiploadingPositioningTime" />
+  <Observations Scenario="Test5" Response="ShiploadingOccupiedTime" />
+  <Observations Scenario="Test5" Response="DumperIdleTime" />
+  <Observations Scenario="Test5" Response="DumperWeatherDownTime" />
+  <Observations Scenario="Test5" Response="DumperMaintenanceShutdownTime" />
+  <Observations Scenario="Test5" Response="DumperPositioningTime" />
+  <Observations Scenario="Test5" Response="DumperUnloadingTime" />
+  <Observations Scenario="Test5" Response="PortShiploaderThroughput" />
+  <Observations Scenario="Test5" Response="PortDumperThroughput" />
+  <Observations Scenario="Test5" Response="TrainUnloadingTime" />
+  <Observations Scenario="Test5" Response="TrainLoadingTime" />
+  <Observations Scenario="Test5" Response="TrainProvisioningTime" />
+  <Observations Scenario="Test5" Response="EmptyTrainBlockedTimeAvg" />
+  <Observations Scenario="Test5" Response="LoadedTrainBlockedTimeAvg" />
+  <Observations Scenario="Test5" Response="LoadedTrainBlockedSiding1ToPort" />
+  <Observations Scenario="Test5" Response="LoadedTrainBlockedSiding3ToPort" />
+  <Observations Scenario="Test5" Response="LoadedTrainBlockedSiding5ToPort" />
+  <Observations Scenario="Test5" Response="LoadedTrainBlockedSiding7ToPort" />
+  <Observations Scenario="Test5" Response="LoadedTrainBlockedSiding9ToPort" />
+  <Observations Scenario="Test5" Response="EmptyTrainBlockedSiding9ToMine" />
+  <Observations Scenario="Test5" Response="EmptyTrainBlockedSiding7ToMine" />
+  <Observations Scenario="Test5" Response="EmptyTrainBlockedSiding5ToMine" />
+  <Observations Scenario="Test5" Response="EmptyTrainBlockedSiding3ToMine" />
+  <Observations Scenario="Test5" Response="EmptyTrainBlockedSiding1ToMine" />
+  <Observations Scenario="Test5" Response="LoadedTravelTime" />
+  <Observations Scenario="Test5" Response="EmptyTravelTime" />
+  <Observations Scenario="Test5" Response="RailOperatingCycleTime" />
+  <Observations Scenario="Test5" Response="RailCycleTime" />
+  <Observations Scenario="Test5" Response="AvgTimeBetweenTrainsAtTLO" />
+  <Observations Scenario="Test5" Response="MineTLOProductLoaded" />
+  <Observations Scenario="Test5" Response="MineUGCProductStockpileAvgContents" />
+  <Observations Scenario="Test5" Response="MineLACProductStockpileAvgContents" />
+  <Observations Scenario="Test6" Response="EndTime" />
+  <Observations Scenario="Test6" Response="PercentDirectLoading" />
+  <Observations Scenario="Test6" Response="AvgIdleTimeAtBerth" />
+  <Observations Scenario="Test6" Response="AvgIdleTimeAtDumper" />
+  <Observations Scenario="Test6" Response="AvgShipTTIP" />
+  <Observations Scenario="Test6" Response="AvgShipTimeInBerth" />
+  <Observations Scenario="Test6" Response="AvgShipLoadingTime" />
+  <Observations Scenario="Test6" Response="PortUndergroundStockpileAvgContents" />
+  <Observations Scenario="Test6" Response="PortOpenCutStockpileAvgContents" />
+  <Observations Scenario="Test6" Response="PortStockpileAvgTotalContents" />
+  <Observations Scenario="Test6" Response="ShiploadingIdleTime" />
+  <Observations Scenario="Test6" Response="ShiploadingWeatherDownTime" />
+  <Observations Scenario="Test6" Response="ShiploadingMaintenanceDownTime" />
+  <Observations Scenario="Test6" Response="ShiploadingPositioningTime" />
+  <Observations Scenario="Test6" Response="ShiploadingOccupiedTime" />
+  <Observations Scenario="Test6" Response="DumperIdleTime" />
+  <Observations Scenario="Test6" Response="DumperWeatherDownTime" />
+  <Observations Scenario="Test6" Response="DumperMaintenanceShutdownTime" />
+  <Observations Scenario="Test6" Response="DumperPositioningTime" />
+  <Observations Scenario="Test6" Response="DumperUnloadingTime" />
+  <Observations Scenario="Test6" Response="PortShiploaderThroughput" />
+  <Observations Scenario="Test6" Response="PortDumperThroughput" />
+  <Observations Scenario="Test6" Response="TrainUnloadingTime" />
+  <Observations Scenario="Test6" Response="TrainLoadingTime" />
+  <Observations Scenario="Test6" Response="TrainProvisioningTime" />
+  <Observations Scenario="Test6" Response="EmptyTrainBlockedTimeAvg" />
+  <Observations Scenario="Test6" Response="LoadedTrainBlockedTimeAvg" />
+  <Observations Scenario="Test6" Response="LoadedTrainBlockedSiding1ToPort" />
+  <Observations Scenario="Test6" Response="LoadedTrainBlockedSiding3ToPort" />
+  <Observations Scenario="Test6" Response="LoadedTrainBlockedSiding5ToPort" />
+  <Observations Scenario="Test6" Response="LoadedTrainBlockedSiding7ToPort" />
+  <Observations Scenario="Test6" Response="LoadedTrainBlockedSiding9ToPort" />
+  <Observations Scenario="Test6" Response="EmptyTrainBlockedSiding9ToMine" />
+  <Observations Scenario="Test6" Response="EmptyTrainBlockedSiding7ToMine" />
+  <Observations Scenario="Test6" Response="EmptyTrainBlockedSiding5ToMine" />
+  <Observations Scenario="Test6" Response="EmptyTrainBlockedSiding3ToMine" />
+  <Observations Scenario="Test6" Response="EmptyTrainBlockedSiding1ToMine" />
+  <Observations Scenario="Test6" Response="LoadedTravelTime" />
+  <Observations Scenario="Test6" Response="EmptyTravelTime" />
+  <Observations Scenario="Test6" Response="RailOperatingCycleTime" />
+  <Observations Scenario="Test6" Response="RailCycleTime" />
+  <Observations Scenario="Test6" Response="AvgTimeBetweenTrainsAtTLO" />
+  <Observations Scenario="Test6" Response="MineTLOProductLoaded" />
+  <Observations Scenario="Test6" Response="MineUGCProductStockpileAvgContents" />
+  <Observations Scenario="Test6" Response="MineLACProductStockpileAvgContents" />
+  <Observations Scenario="Test7" Response="EndTime" />
+  <Observations Scenario="Test7" Response="PercentDirectLoading" />
+  <Observations Scenario="Test7" Response="AvgIdleTimeAtBerth" />
+  <Observations Scenario="Test7" Response="AvgIdleTimeAtDumper" />
+  <Observations Scenario="Test7" Response="AvgShipTTIP" />
+  <Observations Scenario="Test7" Response="AvgShipTimeInBerth" />
+  <Observations Scenario="Test7" Response="AvgShipLoadingTime" />
+  <Observations Scenario="Test7" Response="PortUndergroundStockpileAvgContents" />
+  <Observations Scenario="Test7" Response="PortOpenCutStockpileAvgContents" />
+  <Observations Scenario="Test7" Response="PortStockpileAvgTotalContents" />
+  <Observations Scenario="Test7" Response="ShiploadingIdleTime" />
+  <Observations Scenario="Test7" Response="ShiploadingWeatherDownTime" />
+  <Observations Scenario="Test7" Response="ShiploadingMaintenanceDownTime" />
+  <Observations Scenario="Test7" Response="ShiploadingPositioningTime" />
+  <Observations Scenario="Test7" Response="ShiploadingOccupiedTime" />
+  <Observations Scenario="Test7" Response="DumperIdleTime" />
+  <Observations Scenario="Test7" Response="DumperWeatherDownTime" />
+  <Observations Scenario="Test7" Response="DumperMaintenanceShutdownTime" />
+  <Observations Scenario="Test7" Response="DumperPositioningTime" />
+  <Observations Scenario="Test7" Response="DumperUnloadingTime" />
+  <Observations Scenario="Test7" Response="PortShiploaderThroughput" />
+  <Observations Scenario="Test7" Response="PortDumperThroughput" />
+  <Observations Scenario="Test7" Response="TrainUnloadingTime" />
+  <Observations Scenario="Test7" Response="TrainLoadingTime" />
+  <Observations Scenario="Test7" Response="TrainProvisioningTime" />
+  <Observations Scenario="Test7" Response="EmptyTrainBlockedTimeAvg" />
+  <Observations Scenario="Test7" Response="LoadedTrainBlockedTimeAvg" />
+  <Observations Scenario="Test7" Response="LoadedTrainBlockedSiding1ToPort" />
+  <Observations Scenario="Test7" Response="LoadedTrainBlockedSiding3ToPort" />
+  <Observations Scenario="Test7" Response="LoadedTrainBlockedSiding5ToPort" />
+  <Observations Scenario="Test7" Response="LoadedTrainBlockedSiding7ToPort" />
+  <Observations Scenario="Test7" Response="LoadedTrainBlockedSiding9ToPort" />
+  <Observations Scenario="Test7" Response="EmptyTrainBlockedSiding9ToMine" />
+  <Observations Scenario="Test7" Response="EmptyTrainBlockedSiding7ToMine" />
+  <Observations Scenario="Test7" Response="EmptyTrainBlockedSiding5ToMine" />
+  <Observations Scenario="Test7" Response="EmptyTrainBlockedSiding3ToMine" />
+  <Observations Scenario="Test7" Response="EmptyTrainBlockedSiding1ToMine" />
+  <Observations Scenario="Test7" Response="LoadedTravelTime" />
+  <Observations Scenario="Test7" Response="EmptyTravelTime" />
+  <Observations Scenario="Test7" Response="RailOperatingCycleTime" />
+  <Observations Scenario="Test7" Response="RailCycleTime" />
+  <Observations Scenario="Test7" Response="AvgTimeBetweenTrainsAtTLO" />
+  <Observations Scenario="Test7" Response="MineTLOProductLoaded" />
+  <Observations Scenario="Test7" Response="MineUGCProductStockpileAvgContents" />
+  <Observations Scenario="Test7" Response="MineLACProductStockpileAvgContents" />
+  <Observations Scenario="Test8" Response="EndTime" />
+  <Observations Scenario="Test8" Response="PercentDirectLoading" />
+  <Observations Scenario="Test8" Response="AvgIdleTimeAtBerth" />
+  <Observations Scenario="Test8" Response="AvgIdleTimeAtDumper" />
+  <Observations Scenario="Test8" Response="AvgShipTTIP" />
+  <Observations Scenario="Test8" Response="AvgShipTimeInBerth" />
+  <Observations Scenario="Test8" Response="AvgShipLoadingTime" />
+  <Observations Scenario="Test8" Response="PortUndergroundStockpileAvgContents" />
+  <Observations Scenario="Test8" Response="PortOpenCutStockpileAvgContents" />
+  <Observations Scenario="Test8" Response="PortStockpileAvgTotalContents" />
+  <Observations Scenario="Test8" Response="ShiploadingIdleTime" />
+  <Observations Scenario="Test8" Response="ShiploadingWeatherDownTime" />
+  <Observations Scenario="Test8" Response="ShiploadingMaintenanceDownTime" />
+  <Observations Scenario="Test8" Response="ShiploadingPositioningTime" />
+  <Observations Scenario="Test8" Response="ShiploadingOccupiedTime" />
+  <Observations Scenario="Test8" Response="DumperIdleTime" />
+  <Observations Scenario="Test8" Response="DumperWeatherDownTime" />
+  <Observations Scenario="Test8" Response="DumperMaintenanceShutdownTime" />
+  <Observations Scenario="Test8" Response="DumperPositioningTime" />
+  <Observations Scenario="Test8" Response="DumperUnloadingTime" />
+  <Observations Scenario="Test8" Response="PortShiploaderThroughput" />
+  <Observations Scenario="Test8" Response="PortDumperThroughput" />
+  <Observations Scenario="Test8" Response="TrainUnloadingTime" />
+  <Observations Scenario="Test8" Response="TrainLoadingTime" />
+  <Observations Scenario="Test8" Response="TrainProvisioningTime" />
+  <Observations Scenario="Test8" Response="EmptyTrainBlockedTimeAvg" />
+  <Observations Scenario="Test8" Response="LoadedTrainBlockedTimeAvg" />
+  <Observations Scenario="Test8" Response="LoadedTrainBlockedSiding1ToPort" />
+  <Observations Scenario="Test8" Response="LoadedTrainBlockedSiding3ToPort" />
+  <Observations Scenario="Test8" Response="LoadedTrainBlockedSiding5ToPort" />
+  <Observations Scenario="Test8" Response="LoadedTrainBlockedSiding7ToPort" />
+  <Observations Scenario="Test8" Response="LoadedTrainBlockedSiding9ToPort" />
+  <Observations Scenario="Test8" Response="EmptyTrainBlockedSiding9ToMine" />
+  <Observations Scenario="Test8" Response="EmptyTrainBlockedSiding7ToMine" />
+  <Observations Scenario="Test8" Response="EmptyTrainBlockedSiding5ToMine" />
+  <Observations Scenario="Test8" Response="EmptyTrainBlockedSiding3ToMine" />
+  <Observations Scenario="Test8" Response="EmptyTrainBlockedSiding1ToMine" />
+  <Observations Scenario="Test8" Response="LoadedTravelTime" />
+  <Observations Scenario="Test8" Response="EmptyTravelTime" />
+  <Observations Scenario="Test8" Response="RailOperatingCycleTime" />
+  <Observations Scenario="Test8" Response="RailCycleTime" />
+  <Observations Scenario="Test8" Response="AvgTimeBetweenTrainsAtTLO" />
+  <Observations Scenario="Test8" Response="MineTLOProductLoaded" />
+  <Observations Scenario="Test8" Response="MineUGCProductStockpileAvgContents" />
+  <Observations Scenario="Test8" Response="MineLACProductStockpileAvgContents" />
+  <Observations Scenario="Test9" Response="EndTime" />
+  <Observations Scenario="Test9" Response="PercentDirectLoading" />
+  <Observations Scenario="Test9" Response="AvgIdleTimeAtBerth" />
+  <Observations Scenario="Test9" Response="AvgIdleTimeAtDumper" />
+  <Observations Scenario="Test9" Response="AvgShipTTIP" />
+  <Observations Scenario="Test9" Response="AvgShipTimeInBerth" />
+  <Observations Scenario="Test9" Response="AvgShipLoadingTime" />
+  <Observations Scenario="Test9" Response="PortUndergroundStockpileAvgContents" />
+  <Observations Scenario="Test9" Response="PortOpenCutStockpileAvgContents" />
+  <Observations Scenario="Test9" Response="PortStockpileAvgTotalContents" />
+  <Observations Scenario="Test9" Response="ShiploadingIdleTime" />
+  <Observations Scenario="Test9" Response="ShiploadingWeatherDownTime" />
+  <Observations Scenario="Test9" Response="ShiploadingMaintenanceDownTime" />
+  <Observations Scenario="Test9" Response="ShiploadingPositioningTime" />
+  <Observations Scenario="Test9" Response="ShiploadingOccupiedTime" />
+  <Observations Scenario="Test9" Response="DumperIdleTime" />
+  <Observations Scenario="Test9" Response="DumperWeatherDownTime" />
+  <Observations Scenario="Test9" Response="DumperMaintenanceShutdownTime" />
+  <Observations Scenario="Test9" Response="DumperPositioningTime" />
+  <Observations Scenario="Test9" Response="DumperUnloadingTime" />
+  <Observations Scenario="Test9" Response="PortShiploaderThroughput" />
+  <Observations Scenario="Test9" Response="PortDumperThroughput" />
+  <Observations Scenario="Test9" Response="TrainUnloadingTime" />
+  <Observations Scenario="Test9" Response="TrainLoadingTime" />
+  <Observations Scenario="Test9" Response="TrainProvisioningTime" />
+  <Observations Scenario="Test9" Response="EmptyTrainBlockedTimeAvg" />
+  <Observations Scenario="Test9" Response="LoadedTrainBlockedTimeAvg" />
+  <Observations Scenario="Test9" Response="LoadedTrainBlockedSiding1ToPort" />
+  <Observations Scenario="Test9" Response="LoadedTrainBlockedSiding3ToPort" />
+  <Observations Scenario="Test9" Response="LoadedTrainBlockedSiding5ToPort" />
+  <Observations Scenario="Test9" Response="LoadedTrainBlockedSiding7ToPort" />
+  <Observations Scenario="Test9" Response="LoadedTrainBlockedSiding9ToPort" />
+  <Observations Scenario="Test9" Response="EmptyTrainBlockedSiding9ToMine" />
+  <Observations Scenario="Test9" Response="EmptyTrainBlockedSiding7ToMine" />
+  <Observations Scenario="Test9" Response="EmptyTrainBlockedSiding5ToMine" />
+  <Observations Scenario="Test9" Response="EmptyTrainBlockedSiding3ToMine" />
+  <Observations Scenario="Test9" Response="EmptyTrainBlockedSiding1ToMine" />
+  <Observations Scenario="Test9" Response="LoadedTravelTime" />
+  <Observations Scenario="Test9" Response="EmptyTravelTime" />
+  <Observations Scenario="Test9" Response="RailOperatingCycleTime" />
+  <Observations Scenario="Test9" Response="RailCycleTime" />
+  <Observations Scenario="Test9" Response="AvgTimeBetweenTrainsAtTLO" />
+  <Observations Scenario="Test9" Response="MineTLOProductLoaded" />
+  <Observations Scenario="Test9" Response="MineUGCProductStockpileAvgContents" />
+  <Observations Scenario="Test9" Response="MineLACProductStockpileAvgContents" />
+</ResponseResults>
