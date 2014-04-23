@@ -1,0 +1,2298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResponseResults Model="RailPortModel" Experiment="PtPSensitivityExperiment_MineStockpiles" FileVersion="94" xmlns="http://www.simio.com/projects/v1">
+  <Observations Scenario="150k Mine Stockpiles" Response="EndTime">
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="PercentDirectLoading">
+    <Observation Value="29.9877865651853" />
+    <Observation Value="28.4526644941226" />
+    <Observation Value="29.0090836878987" />
+    <Observation Value="31.0877252748923" />
+    <Observation Value="30.3612338984694" />
+    <Observation Value="28.7812415783328" />
+    <Observation Value="29.1108819686183" />
+    <Observation Value="30.3956038755621" />
+    <Observation Value="29.7674649547625" />
+    <Observation Value="9.34034266079679" />
+    <Observation Value="30.8127125300847" />
+    <Observation Value="28.9446401169593" />
+    <Observation Value="30.1920618148249" />
+    <Observation Value="29.5860661804535" />
+    <Observation Value="29.5834632637218" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.15863953025822" />
+    <Observation Value="5.26554662299799" />
+    <Observation Value="5.06140075201559" />
+    <Observation Value="4.55658406848309" />
+    <Observation Value="4.29667568624078" />
+    <Observation Value="4.61770372595043" />
+    <Observation Value="6.0852307213915" />
+    <Observation Value="4.61436828196649" />
+    <Observation Value="5.47676965151108" />
+    <Observation Value="6.40305753062485" />
+    <Observation Value="4.98994366173727" />
+    <Observation Value="5.5608896062212" />
+    <Observation Value="4.57793048545981" />
+    <Observation Value="3.87409073075217" />
+    <Observation Value="5.54550472170769" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.02091979798664" />
+    <Observation Value="1.19815619861283" />
+    <Observation Value="1.25922472630481" />
+    <Observation Value="1.03575591006668" />
+    <Observation Value="1.1093032232213" />
+    <Observation Value="1.05909790471829" />
+    <Observation Value="1.37518780607115" />
+    <Observation Value="1.07050962744561" />
+    <Observation Value="1.26615752447062" />
+    <Observation Value="1.20628433067675" />
+    <Observation Value="1.15963908716858" />
+    <Observation Value="1.33930243230474" />
+    <Observation Value="1.1634896941306" />
+    <Observation Value="1.22032776348315" />
+    <Observation Value="1.2759297190153" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="AvgShipTTIP">
+    <Observation Value="345.580182400971" />
+    <Observation Value="594.621420864878" />
+    <Observation Value="419.447789524477" />
+    <Observation Value="353.414367445641" />
+    <Observation Value="332.595177296079" />
+    <Observation Value="341.072574892905" />
+    <Observation Value="491.672131031071" />
+    <Observation Value="71.3626614139974" />
+    <Observation Value="477.633557561282" />
+    <Observation Value="1966.27431113033" />
+    <Observation Value="371.742883572342" />
+    <Observation Value="426.635117143938" />
+    <Observation Value="400.389801688713" />
+    <Observation Value="295.276782024338" />
+    <Observation Value="353.404113276862" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="AvgShipTimeInBerth">
+    <Observation Value="29.4707679133333" />
+    <Observation Value="29.7089045914352" />
+    <Observation Value="30.9423178264483" />
+    <Observation Value="29.8252485102041" />
+    <Observation Value="29.4821370950469" />
+    <Observation Value="28.7429113084215" />
+    <Observation Value="29.1793436355184" />
+    <Observation Value="27.5691735243055" />
+    <Observation Value="29.621791650463" />
+    <Observation Value="68.9930183723197" />
+    <Observation Value="30.2312120339377" />
+    <Observation Value="28.5900504795918" />
+    <Observation Value="29.5831654206349" />
+    <Observation Value="28.520716040326" />
+    <Observation Value="30.0316166643126" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="AvgShipLoadingTime">
+    <Observation Value="27.2623344444444" />
+    <Observation Value="27.5315326909722" />
+    <Observation Value="28.7628539138177" />
+    <Observation Value="27.6438497324263" />
+    <Observation Value="27.3121453335564" />
+    <Observation Value="26.5985162863757" />
+    <Observation Value="26.9800183763366" />
+    <Observation Value="25.2926787934028" />
+    <Observation Value="27.4112273564815" />
+    <Observation Value="66.8214718177388" />
+    <Observation Value="28.0286723407718" />
+    <Observation Value="26.3833924263038" />
+    <Observation Value="27.4393799399093" />
+    <Observation Value="26.3554615422566" />
+    <Observation Value="27.8734040760358" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="121641.998512849" />
+    <Observation Value="130471.468213314" />
+    <Observation Value="135275.98799197" />
+    <Observation Value="143567.003695803" />
+    <Observation Value="140869.113419432" />
+    <Observation Value="124417.900563065" />
+    <Observation Value="139604.265708191" />
+    <Observation Value="15180.9873396033" />
+    <Observation Value="128064.063256317" />
+    <Observation Value="223525.376091721" />
+    <Observation Value="131453.617112115" />
+    <Observation Value="132584.483341491" />
+    <Observation Value="125569.97771645" />
+    <Observation Value="122221.114465312" />
+    <Observation Value="126083.688112955" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="171862.280562875" />
+    <Observation Value="149024.797197937" />
+    <Observation Value="163646.783995129" />
+    <Observation Value="172227.33219789" />
+    <Observation Value="170132.416288553" />
+    <Observation Value="180029.04795203" />
+    <Observation Value="152753.936037421" />
+    <Observation Value="342411.670846131" />
+    <Observation Value="162414.298051447" />
+    <Observation Value="188937.792466561" />
+    <Observation Value="153811.865914594" />
+    <Observation Value="170456.61779646" />
+    <Observation Value="157677.58498825" />
+    <Observation Value="170319.923022546" />
+    <Observation Value="161727.900057923" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="PortStockpileAvgTotalContents">
+    <Observation Value="293504.279075724" />
+    <Observation Value="279480.280546472" />
+    <Observation Value="298901.57564006" />
+    <Observation Value="315794.33589369" />
+    <Observation Value="311001.529707981" />
+    <Observation Value="304446.948515092" />
+    <Observation Value="292352.777088075" />
+    <Observation Value="357642.669522064" />
+    <Observation Value="290478.361307765" />
+    <Observation Value="412437.278147355" />
+    <Observation Value="285265.483026706" />
+    <Observation Value="303041.101137951" />
+    <Observation Value="283258.758745232" />
+    <Observation Value="292541.037487859" />
+    <Observation Value="287811.588170881" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="ShiploadingIdleTime">
+    <Observation Value="749.699461346075" />
+    <Observation Value="1030.66568429291" />
+    <Observation Value="895.164942509623" />
+    <Observation Value="826.708640214602" />
+    <Observation Value="774.577596466285" />
+    <Observation Value="874.870629197118" />
+    <Observation Value="1149.62837787894" />
+    <Observation Value="140.274153304894" />
+    <Observation Value="1029.1968903342" />
+    <Observation Value="533.361758311856" />
+    <Observation Value="908.500072511797" />
+    <Observation Value="1017.11520070251" />
+    <Observation Value="859.514830846779" />
+    <Observation Value="716.261538258342" />
+    <Observation Value="1013.58354739665" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="ShiploadingWeatherDownTime">
+    <Observation Value="52.3736652118179" />
+    <Observation Value="82.2041665935187" />
+    <Observation Value="54.6232033908234" />
+    <Observation Value="47.832290181223" />
+    <Observation Value="32.1662192556725" />
+    <Observation Value="29.2794086639406" />
+    <Observation Value="43.0585733857141" />
+    <Observation Value="67.3620793233617" />
+    <Observation Value="78.4044230690765" />
+    <Observation Value="133.410452684537" />
+    <Observation Value="63.2528070072543" />
+    <Observation Value="46.6577515083883" />
+    <Observation Value="50.0072108929312" />
+    <Observation Value="46.1659291197668" />
+    <Observation Value="46.2526224696503" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="299.124261941435" />
+    <Observation Value="294.758399111061" />
+    <Observation Value="300" />
+    <Observation Value="290.204635924116" />
+    <Observation Value="288" />
+    <Observation Value="288" />
+    <Observation Value="293.069229811153" />
+    <Observation Value="12" />
+    <Observation Value="288" />
+    <Observation Value="247.805160658686" />
+    <Observation Value="288" />
+    <Observation Value="299.385400803807" />
+    <Observation Value="300" />
+    <Observation Value="300" />
+    <Observation Value="288" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="ShiploadingPositioningTime">
+    <Observation Value="341.523878670094" />
+    <Observation Value="367.808358432631" />
+    <Observation Value="317.268600063137" />
+    <Observation Value="334.246383566632" />
+    <Observation Value="337.437256478543" />
+    <Observation Value="344.79730051669" />
+    <Observation Value="363.292484576688" />
+    <Observation Value="45.6712464260114" />
+    <Observation Value="322.738699559793" />
+    <Observation Value="157.546137078872" />
+    <Observation Value="331.015692807927" />
+    <Observation Value="420.471169108859" />
+    <Observation Value="333.384284183951" />
+    <Observation Value="427.789748303928" />
+    <Observation Value="331.301685407862" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="ShiploadingOccupiedTime">
+    <Observation Value="7317.27873283058" />
+    <Observation Value="6984.56339156988" />
+    <Observation Value="7192.94325403642" />
+    <Observation Value="7261.00805011343" />
+    <Observation Value="7327.8189277995" />
+    <Observation Value="7223.05266162225" />
+    <Observation Value="6910.9513343475" />
+    <Observation Value="8494.69252094573" />
+    <Observation Value="7041.65998703693" />
+    <Observation Value="7687.87649126605" />
+    <Observation Value="7169.23142767302" />
+    <Observation Value="6976.37047787644" />
+    <Observation Value="7217.09367407634" />
+    <Observation Value="7269.78278431796" />
+    <Observation Value="7080.86214472584" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="DumperIdleTime">
+    <Observation Value="2335.0574949114" />
+    <Observation Value="2546.84655850529" />
+    <Observation Value="2450.74401594361" />
+    <Observation Value="2328.75676442527" />
+    <Observation Value="2243.08253778691" />
+    <Observation Value="2388.92414434639" />
+    <Observation Value="2577.87223411676" />
+    <Observation Value="259.689060273366" />
+    <Observation Value="2540.92437657872" />
+    <Observation Value="1226.49175634013" />
+    <Observation Value="2432.7401682977" />
+    <Observation Value="2527.78603400777" />
+    <Observation Value="2484.7958598686" />
+    <Observation Value="2305.82678674008" />
+    <Observation Value="2456.49610003395" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="DumperWeatherDownTime">
+    <Observation Value="4.54189323778968" />
+    <Observation Value="8.17720138347738" />
+    <Observation Value="20.1040598613569" />
+    <Observation Value="22.6204662154165" />
+    <Observation Value="1.08131734780991" />
+    <Observation Value="5.46079459506146" />
+    <Observation Value="5.25769944264778" />
+    <Observation Value="5.85824273710219" />
+    <Observation Value="4.19613414353233" />
+    <Observation Value="11.1292614637847" />
+    <Observation Value="42.3307375336416" />
+    <Observation Value="14.8287714076741" />
+    <Observation Value="12.7972697231466" />
+    <Observation Value="10.3250797296922" />
+    <Observation Value="24.4560077729613" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="336.317543658855" />
+    <Observation Value="348" />
+    <Observation Value="12" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="326.957368051078" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="DumperPositioningTime">
+    <Observation Value="473.537739838183" />
+    <Observation Value="459.185281702641" />
+    <Observation Value="461.905521442161" />
+    <Observation Value="473.30894284586" />
+    <Observation Value="482.633468233756" />
+    <Observation Value="477.600000000109" />
+    <Observation Value="458.400000000114" />
+    <Observation Value="64.1999999999955" />
+    <Observation Value="464.100000000114" />
+    <Observation Value="218.966671419013" />
+    <Observation Value="466.206729099939" />
+    <Observation Value="468.386388444547" />
+    <Observation Value="470.100000000123" />
+    <Observation Value="481.500000000125" />
+    <Observation Value="466.343710573777" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="DumperUnloadingTime">
+    <Observation Value="5598.86287201262" />
+    <Observation Value="5397.79095840859" />
+    <Observation Value="5479.24640275287" />
+    <Observation Value="5587.31382651346" />
+    <Observation Value="5685.20267663153" />
+    <Observation Value="5551.69751739958" />
+    <Observation Value="5370.47006644048" />
+    <Observation Value="8418.25269698954" />
+    <Observation Value="5402.77948927763" />
+    <Observation Value="6955.41231077707" />
+    <Observation Value="5470.72236506872" />
+    <Observation Value="5400.99880614001" />
+    <Observation Value="5465.34950235705" />
+    <Observation Value="5614.34813353011" />
+    <Observation Value="5464.70418161931" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="PortShiploaderThroughput">
+    <Observation Value="37.3599999750006" />
+    <Observation Value="36.1799999760008" />
+    <Observation Value="36.3399999766007" />
+    <Observation Value="37.3499999755006" />
+    <Observation Value="38.0885714036719" />
+    <Observation Value="37.6761862051314" />
+    <Observation Value="36.1699999761005" />
+    <Observation Value="4.71575999679995" />
+    <Observation Value="36.5217856902863" />
+    <Observation Value="17.1599999886002" />
+    <Observation Value="36.6752869259049" />
+    <Observation Value="36.869999975501" />
+    <Observation Value="36.9699999755007" />
+    <Observation Value="37.9099999741006" />
+    <Observation Value="36.8824999764009" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="PortDumperThroughput">
+    <Observation Value="37.5170400000008" />
+    <Observation Value="36.4003200000008" />
+    <Observation Value="36.5904000000008" />
+    <Observation Value="37.5170400000005" />
+    <Observation Value="38.2298400000009" />
+    <Observation Value="37.8259200000008" />
+    <Observation Value="36.3052800000008" />
+    <Observation Value="5.08075999999999" />
+    <Observation Value="36.7567200000009" />
+    <Observation Value="17.3685599999995" />
+    <Observation Value="36.946800000001" />
+    <Observation Value="37.1131200000009" />
+    <Observation Value="37.2319200000007" />
+    <Observation Value="38.1348000000009" />
+    <Observation Value="36.9943200000006" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="TrainUnloadingTime">
+    <Observation Value="3.55573840477407" />
+    <Observation Value="3.53566817540077" />
+    <Observation Value="3.57086968040871" />
+    <Observation Value="3.57439737703968" />
+    <Observation Value="3.53385266061452" />
+    <Observation Value="3.48920734042124" />
+    <Observation Value="3.51583678995306" />
+    <Observation Value="3.52053358804369" />
+    <Observation Value="3.49468093962727" />
+    <Observation Value="9.56080960654177" />
+    <Observation Value="3.54519946609832" />
+    <Observation Value="3.46819577063567" />
+    <Observation Value="3.49113991472225" />
+    <Observation Value="3.50418268619107" />
+    <Observation Value="3.57050848972903" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="TrainLoadingTime">
+    <Observation Value="3.00349613171385" />
+    <Observation Value="3.00536470890483" />
+    <Observation Value="3.00313153261429" />
+    <Observation Value="3.00514236618057" />
+    <Observation Value="3.00206227405432" />
+    <Observation Value="3.00461660414744" />
+    <Observation Value="3.00441336799431" />
+    <Observation Value="2.98669174524588" />
+    <Observation Value="2.99346089329015" />
+    <Observation Value="2.99244029951517" />
+    <Observation Value="2.99763377304397" />
+    <Observation Value="2.99574672902096" />
+    <Observation Value="2.99410003587562" />
+    <Observation Value="2.99865059600766" />
+    <Observation Value="3.00066557813701" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="TrainProvisioningTime">
+    <Observation Value="2.68377693055296" />
+    <Observation Value="2.68908496512686" />
+    <Observation Value="2.68252111773972" />
+    <Observation Value="2.68460076195627" />
+    <Observation Value="2.67344527270306" />
+    <Observation Value="2.6749214320954" />
+    <Observation Value="2.69724951352881" />
+    <Observation Value="2.65915492203793" />
+    <Observation Value="2.69333332925748" />
+    <Observation Value="2.69095890207952" />
+    <Observation Value="2.68513513385577" />
+    <Observation Value="2.68705957550025" />
+    <Observation Value="2.67450479069688" />
+    <Observation Value="2.67512468324204" />
+    <Observation Value="2.67757069231538" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.967300165281957" />
+    <Observation Value="1.04154213988057" />
+    <Observation Value="1.00839632907856" />
+    <Observation Value="1.0409862625252" />
+    <Observation Value="0.978015458708287" />
+    <Observation Value="1.02691038645359" />
+    <Observation Value="1.09433250687847" />
+    <Observation Value="0.977733799637586" />
+    <Observation Value="0.995592481809306" />
+    <Observation Value="1.02918508166759" />
+    <Observation Value="1.04792821430531" />
+    <Observation Value="0.988175033082546" />
+    <Observation Value="1.0949207572907" />
+    <Observation Value="1.01992942590827" />
+    <Observation Value="1.06638240428018" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.25376834617871" />
+    <Observation Value="1.18180933724782" />
+    <Observation Value="1.25729546176809" />
+    <Observation Value="1.14102822847192" />
+    <Observation Value="1.32897038897892" />
+    <Observation Value="1.07759379295592" />
+    <Observation Value="1.31535472755968" />
+    <Observation Value="0.815879288844484" />
+    <Observation Value="1.21421865033951" />
+    <Observation Value="20.2637131921845" />
+    <Observation Value="1.17741416966742" />
+    <Observation Value="1.05173143482045" />
+    <Observation Value="1.1675520543288" />
+    <Observation Value="1.10121875985209" />
+    <Observation Value="1.18802023296016" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.138106435537868" />
+    <Observation Value="0.160351347573702" />
+    <Observation Value="0.183877678182326" />
+    <Observation Value="0.137383201275943" />
+    <Observation Value="0.180127308288677" />
+    <Observation Value="0.130175640136036" />
+    <Observation Value="0.184432550920685" />
+    <Observation Value="0.00494305945615445" />
+    <Observation Value="0.143980494390042" />
+    <Observation Value="6.43295805503942" />
+    <Observation Value="0.167255583617734" />
+    <Observation Value="0.124825088295695" />
+    <Observation Value="0.131403724405391" />
+    <Observation Value="0.117576595068538" />
+    <Observation Value="0.134406050972678" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.305312929926155" />
+    <Observation Value="0.265675415258598" />
+    <Observation Value="0.333464405183067" />
+    <Observation Value="0.313832068166944" />
+    <Observation Value="0.334120022865736" />
+    <Observation Value="0.276043709136964" />
+    <Observation Value="0.349410886180098" />
+    <Observation Value="0.200531103760842" />
+    <Observation Value="0.296308482780576" />
+    <Observation Value="6.71329121630573" />
+    <Observation Value="0.285340865124891" />
+    <Observation Value="0.238168610733108" />
+    <Observation Value="0.300548730504645" />
+    <Observation Value="0.27612768836088" />
+    <Observation Value="0.306146650477993" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.261031233718889" />
+    <Observation Value="0.297098714996673" />
+    <Observation Value="0.277549897925248" />
+    <Observation Value="0.268156489081549" />
+    <Observation Value="0.282502313718387" />
+    <Observation Value="0.237540658094122" />
+    <Observation Value="0.293900473488113" />
+    <Observation Value="0.191819777646712" />
+    <Observation Value="0.256013111445159" />
+    <Observation Value="6.50351966260434" />
+    <Observation Value="0.27686033026674" />
+    <Observation Value="0.231778784259949" />
+    <Observation Value="0.258117998878295" />
+    <Observation Value="0.204322086812435" />
+    <Observation Value="0.291471970515267" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.337917789925445" />
+    <Observation Value="0.225265288521573" />
+    <Observation Value="0.224023112305453" />
+    <Observation Value="0.222588668100384" />
+    <Observation Value="0.290563576191777" />
+    <Observation Value="0.227516207288668" />
+    <Observation Value="0.259740079233273" />
+    <Observation Value="0.17160452817415" />
+    <Observation Value="0.241801716182304" />
+    <Observation Value="0.315760391721772" />
+    <Observation Value="0.247347047100967" />
+    <Observation Value="0.273682386181722" />
+    <Observation Value="0.232630223721937" />
+    <Observation Value="0.277081950865865" />
+    <Observation Value="0.246174528557946" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.210950729124981" />
+    <Observation Value="0.233119353332934" />
+    <Observation Value="0.238473831145866" />
+    <Observation Value="0.198631219789799" />
+    <Observation Value="0.24079404189232" />
+    <Observation Value="0.206445305947091" />
+    <Observation Value="0.227594541888963" />
+    <Observation Value="0.240288704967144" />
+    <Observation Value="0.276447688108783" />
+    <Observation Value="0.298847359249854" />
+    <Observation Value="0.201552540929151" />
+    <Observation Value="0.182984186598407" />
+    <Observation Value="0.244752875458181" />
+    <Observation Value="0.22589129557368" />
+    <Observation Value="0.209341278258264" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.866191462595122" />
+    <Observation Value="4.03564346983867" />
+    <Observation Value="0.763066975490277" />
+    <Observation Value="1.00067283016464" />
+    <Observation Value="1.20457966260394" />
+    <Observation Value="0.962068155355765" />
+    <Observation Value="3.86775845998722" />
+    <Observation Value="1.60781599153212" />
+    <Observation Value="1.27763790327405" />
+    <Observation Value="0.93950818520847" />
+    <Observation Value="0.822993918692928" />
+    <Observation Value="0.736924731112683" />
+    <Observation Value="0.750686379167797" />
+    <Observation Value="0.800361003206851" />
+    <Observation Value="1.01975519319252" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.526866094548476" />
+    <Observation Value="0.558675097129932" />
+    <Observation Value="0.620160528766918" />
+    <Observation Value="0.659804806464123" />
+    <Observation Value="0.537908116672187" />
+    <Observation Value="0.649828937580305" />
+    <Observation Value="0.549915602995881" />
+    <Observation Value="0.621405830574057" />
+    <Observation Value="0.649075638012155" />
+    <Observation Value="0.602802899430357" />
+    <Observation Value="0.715557532772487" />
+    <Observation Value="0.63190681607072" />
+    <Observation Value="0.530038617617092" />
+    <Observation Value="0.535324314683037" />
+    <Observation Value="0.653084829270368" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.714308344607156" />
+    <Observation Value="0.730405843919963" />
+    <Observation Value="0.722522771199627" />
+    <Observation Value="0.89257416148276" />
+    <Observation Value="0.596865192756618" />
+    <Observation Value="0.729809277510164" />
+    <Observation Value="0.864841031608955" />
+    <Observation Value="0.698702905926519" />
+    <Observation Value="0.610778854559146" />
+    <Observation Value="0.628166016692279" />
+    <Observation Value="0.616860775559342" />
+    <Observation Value="0.658594997988048" />
+    <Observation Value="0.886155582324923" />
+    <Observation Value="0.746128764470794" />
+    <Observation Value="0.720277535051257" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.885336523630871" />
+    <Observation Value="0.685157286909889" />
+    <Observation Value="0.805465504006138" />
+    <Observation Value="0.727194382512729" />
+    <Observation Value="0.729474907490176" />
+    <Observation Value="0.710935025840432" />
+    <Observation Value="0.716985501775827" />
+    <Observation Value="0.702883695812388" />
+    <Observation Value="0.688239219606486" />
+    <Observation Value="0.740410705518557" />
+    <Observation Value="0.709740568504217" />
+    <Observation Value="0.700415176826156" />
+    <Observation Value="0.913044037039474" />
+    <Observation Value="0.740869647877493" />
+    <Observation Value="0.781620767446468" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.00334517068273" />
+    <Observation Value="0.951608173629651" />
+    <Observation Value="0.97137124785415" />
+    <Observation Value="1.06337659296574" />
+    <Observation Value="1.0182224643075" />
+    <Observation Value="1.07709542380837" />
+    <Observation Value="1.11828175261267" />
+    <Observation Value="0.873033673914737" />
+    <Observation Value="0.958814908198774" />
+    <Observation Value="1.14349726901878" />
+    <Observation Value="1.21549464869788" />
+    <Observation Value="1.0543609716299" />
+    <Observation Value="1.17181664827005" />
+    <Observation Value="1.16124627441291" />
+    <Observation Value="1.30862353674174" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="LoadedTravelTime">
+    <Observation Value="9.48603602226002" />
+    <Observation Value="10.2663264714598" />
+    <Observation Value="10.1151619567849" />
+    <Observation Value="9.51679004744026" />
+    <Observation Value="9.25517494856934" />
+    <Observation Value="9.39641731039799" />
+    <Observation Value="10.1002631514014" />
+    <Observation Value="8.40933472846556" />
+    <Observation Value="9.48661877194978" />
+    <Observation Value="35.0483760400027" />
+    <Observation Value="9.68435869123759" />
+    <Observation Value="9.54013575391051" />
+    <Observation Value="10.0623888221422" />
+    <Observation Value="9.16601200873148" />
+    <Observation Value="9.67892007868299" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="EmptyTravelTime">
+    <Observation Value="8.26700882660668" />
+    <Observation Value="8.86398587210363" />
+    <Observation Value="8.32224218404126" />
+    <Observation Value="8.12307851747729" />
+    <Observation Value="7.99940999392348" />
+    <Observation Value="7.91574823308599" />
+    <Observation Value="8.48510707968871" />
+    <Observation Value="7.38121360938743" />
+    <Observation Value="8.57672799419022" />
+    <Observation Value="8.56589294942313" />
+    <Observation Value="8.09702923029364" />
+    <Observation Value="8.38226610260509" />
+    <Observation Value="8.11094677680633" />
+    <Observation Value="7.97617877562926" />
+    <Observation Value="8.28906425301808" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="RailOperatingCycleTime">
+    <Observation Value="27.4587332199511" />
+    <Observation Value="27.1353133704103" />
+    <Observation Value="27.5891636720363" />
+    <Observation Value="27.3519826524323" />
+    <Observation Value="27.2876127275296" />
+    <Observation Value="27.1901739534592" />
+    <Observation Value="27.4085642901455" />
+    <Observation Value="26.5633328458141" />
+    <Observation Value="27.3224470529452" />
+    <Observation Value="33.9782015464322" />
+    <Observation Value="27.5600273126184" />
+    <Observation Value="27.0410203009887" />
+    <Observation Value="27.0506990161397" />
+    <Observation Value="26.9172454450986" />
+    <Observation Value="27.1271170727086" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="RailCycleTime">
+    <Observation Value="31.0534666825246" />
+    <Observation Value="32.7085823458459" />
+    <Observation Value="31.86807468824" />
+    <Observation Value="30.8774531061683" />
+    <Observation Value="30.0676021096986" />
+    <Observation Value="30.4253537735648" />
+    <Observation Value="31.6688301582207" />
+    <Observation Value="28.1361245607964" />
+    <Observation Value="31.2134165989447" />
+    <Observation Value="69.6042977122011" />
+    <Observation Value="31.0794778639072" />
+    <Observation Value="30.8642136896722" />
+    <Observation Value="31.279471430562" />
+    <Observation Value="29.8968643734263" />
+    <Observation Value="30.9537035309686" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="1.85356583227373" />
+    <Observation Value="2.0185272529356" />
+    <Observation Value="1.99432912758711" />
+    <Observation Value="1.85396661542328" />
+    <Observation Value="1.75244769524592" />
+    <Observation Value="1.80655006746115" />
+    <Observation Value="2.03680668655047" />
+    <Observation Value="1.35059785341237" />
+    <Observation Value="1.9815283061291" />
+    <Observation Value="8.24838880713506" />
+    <Observation Value="1.94409109079804" />
+    <Observation Value="1.90453110009349" />
+    <Observation Value="1.90853277368315" />
+    <Observation Value="1.7695492345125" />
+    <Observation Value="1.9355986441951" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="MineTLOProductLoaded">
+    <Observation Value="37.5883200000007" />
+    <Observation Value="36.4478400000007" />
+    <Observation Value="36.6616800000007" />
+    <Observation Value="37.5645600000007" />
+    <Observation Value="38.3011200000009" />
+    <Observation Value="37.8972000000007" />
+    <Observation Value="36.3765600000007" />
+    <Observation Value="5.20344000000003" />
+    <Observation Value="36.8042400000007" />
+    <Observation Value="17.4398399999994" />
+    <Observation Value="37.0180800000008" />
+    <Observation Value="37.1606400000008" />
+    <Observation Value="37.2794400000008" />
+    <Observation Value="38.2060800000008" />
+    <Observation Value="37.0656000000006" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="82611.6330005886" />
+    <Observation Value="102580.7803645" />
+    <Observation Value="93114.2066064027" />
+    <Observation Value="87128.0175629476" />
+    <Observation Value="80569.5715179889" />
+    <Observation Value="85317.1707843717" />
+    <Observation Value="90303.6227753982" />
+    <Observation Value="140397.220149165" />
+    <Observation Value="89303.8479407495" />
+    <Observation Value="130867.643122763" />
+    <Observation Value="86281.0072372356" />
+    <Observation Value="84062.0660369059" />
+    <Observation Value="90287.974163811" />
+    <Observation Value="74562.4853736608" />
+    <Observation Value="88680.3690972244" />
+  </Observations>
+  <Observations Scenario="150k Mine Stockpiles" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="61964.6167158637" />
+    <Observation Value="80026.6346191707" />
+    <Observation Value="72453.6678617377" />
+    <Observation Value="65400.8772298272" />
+    <Observation Value="59750.9055295885" />
+    <Observation Value="65105.176843257" />
+    <Observation Value="72340.9419872934" />
+    <Observation Value="136856.563506475" />
+    <Observation Value="68046.0214823848" />
+    <Observation Value="120168.518764228" />
+    <Observation Value="65885.2920544234" />
+    <Observation Value="64427.63273322" />
+    <Observation Value="69024.3144308088" />
+    <Observation Value="55040.6167490883" />
+    <Observation Value="69092.8682227605" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="EndTime">
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="PercentDirectLoading">
+    <Observation Value="29.1402445022578" />
+    <Observation Value="31.1050879631304" />
+    <Observation Value="30.0641668889078" />
+    <Observation Value="28.466675028575" />
+    <Observation Value="29.2537620607901" />
+    <Observation Value="30.0243080891393" />
+    <Observation Value="27.5269940848628" />
+    <Observation Value="30.4512281409903" />
+    <Observation Value="30.7965519726718" />
+    <Observation Value="30.1641712949648" />
+    <Observation Value="30.3505213687853" />
+    <Observation Value="10.0938263220143" />
+    <Observation Value="31.3865987254065" />
+    <Observation Value="31.0308961648574" />
+    <Observation Value="28.7853610346599" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.03420644996955" />
+    <Observation Value="4.78094989341844" />
+    <Observation Value="3.23453156798593" />
+    <Observation Value="4.81757246775776" />
+    <Observation Value="4.78100800799664" />
+    <Observation Value="3.64407708212277" />
+    <Observation Value="6.49412847852104" />
+    <Observation Value="3.71918858629338" />
+    <Observation Value="4.51150837852282" />
+    <Observation Value="3.42771925139045" />
+    <Observation Value="4.13448793594798" />
+    <Observation Value="6.04810915019796" />
+    <Observation Value="3.64904529771417" />
+    <Observation Value="3.80198563640189" />
+    <Observation Value="4.96797558282706" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.12680245186595" />
+    <Observation Value="1.12893257472408" />
+    <Observation Value="0.974039299788053" />
+    <Observation Value="0.979602854302891" />
+    <Observation Value="1.00851358985109" />
+    <Observation Value="1.11714896578806" />
+    <Observation Value="1.61665251271938" />
+    <Observation Value="1.11397527461755" />
+    <Observation Value="0.98765715833632" />
+    <Observation Value="1.05371587161099" />
+    <Observation Value="0.972865598514909" />
+    <Observation Value="1.07735484552138" />
+    <Observation Value="0.902601703957723" />
+    <Observation Value="0.895804550031507" />
+    <Observation Value="1.24413148386407" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="AvgShipTTIP">
+    <Observation Value="290.918045779498" />
+    <Observation Value="313.113751527803" />
+    <Observation Value="278.256268514608" />
+    <Observation Value="409.236737818665" />
+    <Observation Value="342.71081065135" />
+    <Observation Value="278.617292129714" />
+    <Observation Value="161.043901257356" />
+    <Observation Value="287.412308577253" />
+    <Observation Value="370.568279563561" />
+    <Observation Value="309.817015197097" />
+    <Observation Value="399.03855332607" />
+    <Observation Value="1482.96179178635" />
+    <Observation Value="244.294151261638" />
+    <Observation Value="296.991636657005" />
+    <Observation Value="549.178067426548" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="AvgShipTimeInBerth">
+    <Observation Value="29.3608411452822" />
+    <Observation Value="29.8006041975309" />
+    <Observation Value="30.9357295562331" />
+    <Observation Value="29.6616619034608" />
+    <Observation Value="27.8394029896239" />
+    <Observation Value="28.7374650386101" />
+    <Observation Value="29.5787747741148" />
+    <Observation Value="29.0880393977865" />
+    <Observation Value="30.1459807529844" />
+    <Observation Value="29.5181193416448" />
+    <Observation Value="29.1963929607584" />
+    <Observation Value="60.73970953125" />
+    <Observation Value="29.0835505902778" />
+    <Observation Value="29.8095372666667" />
+    <Observation Value="29.1045079903284" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="AvgShipLoadingTime">
+    <Observation Value="27.2207338436949" />
+    <Observation Value="27.6107620781893" />
+    <Observation Value="28.6908518123306" />
+    <Observation Value="27.46297918602" />
+    <Observation Value="25.6148342315175" />
+    <Observation Value="26.5951412494637" />
+    <Observation Value="27.3650196794872" />
+    <Observation Value="26.8897047949219" />
+    <Observation Value="27.95778065427" />
+    <Observation Value="27.3088678182414" />
+    <Observation Value="26.964996811067" />
+    <Observation Value="58.5500139626736" />
+    <Observation Value="26.9123512912326" />
+    <Observation Value="27.6571595622222" />
+    <Observation Value="26.8854894242015" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="127747.503278541" />
+    <Observation Value="129772.139431194" />
+    <Observation Value="134102.235616805" />
+    <Observation Value="136384.560597333" />
+    <Observation Value="129634.011263032" />
+    <Observation Value="123689.104185122" />
+    <Observation Value="221062.415049372" />
+    <Observation Value="128945.755286409" />
+    <Observation Value="131376.038852554" />
+    <Observation Value="132395.972688457" />
+    <Observation Value="126789.962793766" />
+    <Observation Value="225378.395982034" />
+    <Observation Value="134715.503568727" />
+    <Observation Value="136795.068911972" />
+    <Observation Value="120736.965609518" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="172935.873514134" />
+    <Observation Value="161119.162961105" />
+    <Observation Value="192040.200919507" />
+    <Observation Value="175490.972609052" />
+    <Observation Value="183471.166974237" />
+    <Observation Value="168609.662497791" />
+    <Observation Value="218048.614930373" />
+    <Observation Value="183341.208990012" />
+    <Observation Value="168961.541465599" />
+    <Observation Value="171374.703260443" />
+    <Observation Value="176163.609727029" />
+    <Observation Value="179973.276956396" />
+    <Observation Value="196598.863026059" />
+    <Observation Value="184291.779301004" />
+    <Observation Value="152854.335468329" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="PortStockpileAvgTotalContents">
+    <Observation Value="300701.866501193" />
+    <Observation Value="290881.302392292" />
+    <Observation Value="326142.43653631" />
+    <Observation Value="311847.813244076" />
+    <Observation Value="313081.492838054" />
+    <Observation Value="292298.766682914" />
+    <Observation Value="439111.029979829" />
+    <Observation Value="312286.964276423" />
+    <Observation Value="300337.580318156" />
+    <Observation Value="303770.675948898" />
+    <Observation Value="302953.572520792" />
+    <Observation Value="405351.672938483" />
+    <Observation Value="331314.366594788" />
+    <Observation Value="321086.848212975" />
+    <Observation Value="273591.30107785" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="ShiploadingIdleTime">
+    <Observation Value="719.371020174934" />
+    <Observation Value="874.690243363891" />
+    <Observation Value="489.324142888189" />
+    <Observation Value="883.634912467777" />
+    <Observation Value="937.795834184503" />
+    <Observation Value="664.925709360034" />
+    <Observation Value="392.012215301129" />
+    <Observation Value="658.435062092031" />
+    <Observation Value="808.296535981045" />
+    <Observation Value="601.866301872599" />
+    <Observation Value="783.66162597145" />
+    <Observation Value="485.12716379897" />
+    <Observation Value="649.572704315351" />
+    <Observation Value="664.970056456041" />
+    <Observation Value="925.28573648036" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="ShiploadingWeatherDownTime">
+    <Observation Value="37.3555504786409" />
+    <Observation Value="33.4013950583985" />
+    <Observation Value="112.216706013297" />
+    <Observation Value="84.6192918590117" />
+    <Observation Value="70.4099952789539" />
+    <Observation Value="66.2598322398557" />
+    <Observation Value="39.6997618037734" />
+    <Observation Value="50.4354615094468" />
+    <Observation Value="83.7661846112508" />
+    <Observation Value="62.1482395426201" />
+    <Observation Value="88.3848797922178" />
+    <Observation Value="63.2177001710234" />
+    <Observation Value="21.8189383516098" />
+    <Observation Value="76.0724652439022" />
+    <Observation Value="44.6468150029797" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="289.156450928148" />
+    <Observation Value="288" />
+    <Observation Value="300" />
+    <Observation Value="297.873163380754" />
+    <Observation Value="288" />
+    <Observation Value="300" />
+    <Observation Value="192" />
+    <Observation Value="298.905856175061" />
+    <Observation Value="288" />
+    <Observation Value="300" />
+    <Observation Value="278.862432641482" />
+    <Observation Value="288" />
+    <Observation Value="288" />
+    <Observation Value="288" />
+    <Observation Value="288" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="ShiploadingPositioningTime">
+    <Observation Value="342.146550801072" />
+    <Observation Value="336.521520144587" />
+    <Observation Value="336.118243404887" />
+    <Observation Value="337.193651239274" />
+    <Observation Value="401.265861262266" />
+    <Observation Value="351.794237163059" />
+    <Observation Value="164.058330821057" />
+    <Observation Value="368.052829758088" />
+    <Observation Value="336.501675507217" />
+    <Observation Value="353.597809066758" />
+    <Observation Value="436.096242322714" />
+    <Observation Value="175.099226224908" />
+    <Observation Value="354.452834603464" />
+    <Observation Value="369.517450304485" />
+    <Observation Value="338.328845964466" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="ShiploadingOccupiedTime">
+    <Observation Value="7371.97042761721" />
+    <Observation Value="7227.38684143312" />
+    <Observation Value="7522.34090769363" />
+    <Observation Value="7156.67898105318" />
+    <Observation Value="7062.52830927428" />
+    <Observation Value="7377.02022123705" />
+    <Observation Value="7972.22969207404" />
+    <Observation Value="7384.17079046537" />
+    <Observation Value="7243.43560390049" />
+    <Observation Value="7442.38764951802" />
+    <Observation Value="7172.99481927214" />
+    <Observation Value="7748.5559098051" />
+    <Observation Value="7446.15552272958" />
+    <Observation Value="7361.44002799557" />
+    <Observation Value="7163.73860255219" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="DumperIdleTime">
+    <Observation Value="2323.23713139085" />
+    <Observation Value="2342.71927216863" />
+    <Observation Value="2123.53882399169" />
+    <Observation Value="2426.71404270083" />
+    <Observation Value="2239.99631751093" />
+    <Observation Value="2307.91264066412" />
+    <Observation Value="1126.22037693974" />
+    <Observation Value="2335.42480741477" />
+    <Observation Value="2275.40529318657" />
+    <Observation Value="2277.57069901348" />
+    <Observation Value="2345.87588126151" />
+    <Observation Value="1212.87752042942" />
+    <Observation Value="2086.24859729151" />
+    <Observation Value="2144.46697814671" />
+    <Observation Value="2544.49937599485" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="DumperWeatherDownTime">
+    <Observation Value="2.93737720703626" />
+    <Observation Value="3.0601594121166" />
+    <Observation Value="22.3077104114191" />
+    <Observation Value="1.88852834640556" />
+    <Observation Value="11.6028216790116" />
+    <Observation Value="6.56854385971749" />
+    <Observation Value="20.7321279540693" />
+    <Observation Value="26.5835036438508" />
+    <Observation Value="5.67576828418197" />
+    <Observation Value="3.16898777278743" />
+    <Observation Value="13.2850977656922" />
+    <Observation Value="9.6851290195649" />
+    <Observation Value="14.0950353899583" />
+    <Observation Value="12.3473693706345" />
+    <Observation Value="13.1566616730572" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="60" />
+    <Observation Value="329.383304813822" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="312.556708979844" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="DumperPositioningTime">
+    <Observation Value="478.200000000138" />
+    <Observation Value="478.500000000122" />
+    <Observation Value="489.235426505966" />
+    <Observation Value="470.100000000105" />
+    <Observation Value="475.317552530004" />
+    <Observation Value="482.383169981955" />
+    <Observation Value="183.000000000032" />
+    <Observation Value="478.500000000117" />
+    <Observation Value="475.500000000126" />
+    <Observation Value="486.300000000118" />
+    <Observation Value="476.723792227128" />
+    <Observation Value="242.650945642345" />
+    <Observation Value="492.293667065355" />
+    <Observation Value="484.152072588906" />
+    <Observation Value="462.856131686981" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="DumperUnloadingTime">
+    <Observation Value="5607.62549140197" />
+    <Observation Value="5587.72056841913" />
+    <Observation Value="5776.91803909093" />
+    <Observation Value="5513.29742895266" />
+    <Observation Value="5685.08330828006" />
+    <Observation Value="5615.13564549421" />
+    <Observation Value="7370.04749510616" />
+    <Observation Value="5590.10838412744" />
+    <Observation Value="5655.41893852912" />
+    <Observation Value="5644.96031321362" />
+    <Observation Value="5611.55851976583" />
+    <Observation Value="6946.78640490867" />
+    <Observation Value="5819.36270025318" />
+    <Observation Value="5771.03357989375" />
+    <Observation Value="5391.48783064511" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="PortShiploaderThroughput">
+    <Observation Value="37.7399999748008" />
+    <Observation Value="37.7407175361023" />
+    <Observation Value="38.6399999754012" />
+    <Observation Value="37.079999975601" />
+    <Observation Value="37.4911137731168" />
+    <Observation Value="37.9899999741008" />
+    <Observation Value="13.9399999907999" />
+    <Observation Value="37.7199999744004" />
+    <Observation Value="37.4553016215552" />
+    <Observation Value="38.239999974601" />
+    <Observation Value="37.553840268996" />
+    <Observation Value="19.0983541057459" />
+    <Observation Value="38.8420751424624" />
+    <Observation Value="38.1072446699497" />
+    <Observation Value="36.5299999753005" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="PortDumperThroughput">
+    <Observation Value="37.8734400000009" />
+    <Observation Value="37.8972000000006" />
+    <Observation Value="38.7525600000009" />
+    <Observation Value="37.2319200000007" />
+    <Observation Value="37.6596000000006" />
+    <Observation Value="38.2298400000007" />
+    <Observation Value="14.4861099999998" />
+    <Observation Value="37.8972000000007" />
+    <Observation Value="37.6596000000008" />
+    <Observation Value="38.5149600000009" />
+    <Observation Value="37.7784000000006" />
+    <Observation Value="19.2455999999994" />
+    <Observation Value="38.9901600000008" />
+    <Observation Value="38.3486400000007" />
+    <Observation Value="36.6616800000006" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="TrainUnloadingTime">
+    <Observation Value="3.51909866133468" />
+    <Observation Value="3.50467972297268" />
+    <Observation Value="3.55370417545479" />
+    <Observation Value="3.51958261566206" />
+    <Observation Value="3.59987824554458" />
+    <Observation Value="3.52241809328495" />
+    <Observation Value="3.53333691646431" />
+    <Observation Value="3.50806045668821" />
+    <Observation Value="3.57003921672434" />
+    <Observation Value="3.48432663668247" />
+    <Observation Value="3.53912347071722" />
+    <Observation Value="8.59805404081196" />
+    <Observation Value="3.56176119104311" />
+    <Observation Value="3.58257208373078" />
+    <Observation Value="3.50935757033975" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="TrainLoadingTime">
+    <Observation Value="2.99635503084276" />
+    <Observation Value="2.99754696904039" />
+    <Observation Value="2.99911263127152" />
+    <Observation Value="3.00192359483997" />
+    <Observation Value="3.0031295032975" />
+    <Observation Value="2.99980733176893" />
+    <Observation Value="3.00992857170817" />
+    <Observation Value="3.00389500457557" />
+    <Observation Value="3.00174110486498" />
+    <Observation Value="2.99142951533344" />
+    <Observation Value="2.99905822787678" />
+    <Observation Value="3.00029102297177" />
+    <Observation Value="3.00145644721503" />
+    <Observation Value="2.99552018555022" />
+    <Observation Value="2.99690865058204" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="TrainProvisioningTime">
+    <Observation Value="2.67652228272765" />
+    <Observation Value="2.68468298724836" />
+    <Observation Value="2.67233128342051" />
+    <Observation Value="2.68403575483151" />
+    <Observation Value="2.67340492895411" />
+    <Observation Value="2.68233830768311" />
+    <Observation Value="2.69802955967796" />
+    <Observation Value="2.68386691527588" />
+    <Observation Value="2.68243841019131" />
+    <Observation Value="2.66964836083769" />
+    <Observation Value="2.68558842374175" />
+    <Observation Value="2.68936959489317" />
+    <Observation Value="2.67181208132843" />
+    <Observation Value="2.68387096363353" />
+    <Observation Value="2.68372244085458" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.01509420234972" />
+    <Observation Value="1.03239417937661" />
+    <Observation Value="1.01854184995961" />
+    <Observation Value="1.06459785100904" />
+    <Observation Value="0.956728680691145" />
+    <Observation Value="1.07836484277868" />
+    <Observation Value="1.18414295720604" />
+    <Observation Value="0.941818896013353" />
+    <Observation Value="1.10102976480183" />
+    <Observation Value="1.00154165402302" />
+    <Observation Value="1.01125000566408" />
+    <Observation Value="1.00209972859572" />
+    <Observation Value="0.965614425442502" />
+    <Observation Value="0.974158151892829" />
+    <Observation Value="1.02932277780367" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.30859291451854" />
+    <Observation Value="1.13985248168524" />
+    <Observation Value="1.11773277980733" />
+    <Observation Value="1.11580972214603" />
+    <Observation Value="1.39985789182677" />
+    <Observation Value="1.16859606414898" />
+    <Observation Value="0.939737464967376" />
+    <Observation Value="1.0911242066113" />
+    <Observation Value="1.4808158807524" />
+    <Observation Value="1.13223759304418" />
+    <Observation Value="1.24575240428661" />
+    <Observation Value="16.9051561652937" />
+    <Observation Value="1.07436824097505" />
+    <Observation Value="1.27880660167614" />
+    <Observation Value="1.31866870122026" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.166050964779227" />
+    <Observation Value="0.15191203138831" />
+    <Observation Value="0.134044583593361" />
+    <Observation Value="0.122365947024941" />
+    <Observation Value="0.205840401621094" />
+    <Observation Value="0.125334498636053" />
+    <Observation Value="0.0571023794664593" />
+    <Observation Value="0.107838983461134" />
+    <Observation Value="0.210712320758258" />
+    <Observation Value="0.106758841762428" />
+    <Observation Value="0.156547986400388" />
+    <Observation Value="5.41253302103664" />
+    <Observation Value="0.136692213104318" />
+    <Observation Value="0.191318259399123" />
+    <Observation Value="0.166612213195508" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.296947630577208" />
+    <Observation Value="0.27332422740531" />
+    <Observation Value="0.27081602143519" />
+    <Observation Value="0.26609555224775" />
+    <Observation Value="0.324397098800085" />
+    <Observation Value="0.306261744033873" />
+    <Observation Value="0.177050808137405" />
+    <Observation Value="0.234146716044817" />
+    <Observation Value="0.369307115454731" />
+    <Observation Value="0.265952244597413" />
+    <Observation Value="0.270200549133809" />
+    <Observation Value="5.54013205380777" />
+    <Observation Value="0.243314409024728" />
+    <Observation Value="0.312754019250172" />
+    <Observation Value="0.342207873354557" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.375041745227499" />
+    <Observation Value="0.275133061625568" />
+    <Observation Value="0.233724583129633" />
+    <Observation Value="0.232396881194623" />
+    <Observation Value="0.270340965875239" />
+    <Observation Value="0.294518260770664" />
+    <Observation Value="0.156648111211076" />
+    <Observation Value="0.242162087104957" />
+    <Observation Value="0.340373718265851" />
+    <Observation Value="0.231525696431307" />
+    <Observation Value="0.251979488481013" />
+    <Observation Value="5.49058111342439" />
+    <Observation Value="0.233179483356649" />
+    <Observation Value="0.295771525697864" />
+    <Observation Value="0.302970238720502" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.247901726613534" />
+    <Observation Value="0.251305757410536" />
+    <Observation Value="0.237858809521558" />
+    <Observation Value="0.240008880567884" />
+    <Observation Value="0.366304813022928" />
+    <Observation Value="0.228417176143657" />
+    <Observation Value="0.288084041615449" />
+    <Observation Value="0.298129367400285" />
+    <Observation Value="0.303568930092728" />
+    <Observation Value="0.293782550855458" />
+    <Observation Value="0.311245826629254" />
+    <Observation Value="0.251794819349626" />
+    <Observation Value="0.25757104898579" />
+    <Observation Value="0.240233465039337" />
+    <Observation Value="0.245276974464606" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.222642715634429" />
+    <Observation Value="0.188059494739515" />
+    <Observation Value="0.240538630604284" />
+    <Observation Value="0.255286652365128" />
+    <Observation Value="0.23335436309927" />
+    <Observation Value="0.214278531703713" />
+    <Observation Value="0.257286440604649" />
+    <Observation Value="0.208529389133974" />
+    <Observation Value="0.256500431745171" />
+    <Observation Value="0.233586031418837" />
+    <Observation Value="0.254933703546309" />
+    <Observation Value="0.196972150568706" />
+    <Observation Value="0.20395788489393" />
+    <Observation Value="0.238432758763533" />
+    <Observation Value="0.26107690538876" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.969866873995879" />
+    <Observation Value="0.949709809583767" />
+    <Observation Value="0.873027187550774" />
+    <Observation Value="0.798338916948397" />
+    <Observation Value="0.703542566147878" />
+    <Observation Value="0.899478300434994" />
+    <Observation Value="0.555635551559223" />
+    <Observation Value="1.18093747021408" />
+    <Observation Value="2.37738545119302" />
+    <Observation Value="0.751447968724703" />
+    <Observation Value="0.825162786672673" />
+    <Observation Value="0.866189881200471" />
+    <Observation Value="2.66041687874594" />
+    <Observation Value="0.663484457228247" />
+    <Observation Value="0.949408859259375" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.646656929012709" />
+    <Observation Value="0.626582638660334" />
+    <Observation Value="0.565174379681689" />
+    <Observation Value="0.54030859259081" />
+    <Observation Value="0.560412688080507" />
+    <Observation Value="0.846649660251173" />
+    <Observation Value="0.550584225626168" />
+    <Observation Value="0.563859128954186" />
+    <Observation Value="0.648715133834764" />
+    <Observation Value="0.563681466480745" />
+    <Observation Value="0.655038987880803" />
+    <Observation Value="0.828075145395402" />
+    <Observation Value="0.608672107254809" />
+    <Observation Value="0.558937647431393" />
+    <Observation Value="0.572036733591626" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.85179699025424" />
+    <Observation Value="0.824189812135003" />
+    <Observation Value="0.611326710670139" />
+    <Observation Value="1.11615372502431" />
+    <Observation Value="0.737039258446561" />
+    <Observation Value="0.612556649158691" />
+    <Observation Value="1.09247321447151" />
+    <Observation Value="0.637328581355117" />
+    <Observation Value="0.602993099538913" />
+    <Observation Value="0.609942967715621" />
+    <Observation Value="0.75272212013804" />
+    <Observation Value="0.619495133692392" />
+    <Observation Value="0.613937054271246" />
+    <Observation Value="0.626665722483469" />
+    <Observation Value="0.784833661678292" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.771302938445963" />
+    <Observation Value="0.685101857735101" />
+    <Observation Value="0.732857941719175" />
+    <Observation Value="0.686457694252528" />
+    <Observation Value="0.71757069220515" />
+    <Observation Value="0.959653299559092" />
+    <Observation Value="0.727826492637154" />
+    <Observation Value="0.663438780952258" />
+    <Observation Value="0.690809878959629" />
+    <Observation Value="0.778198342584871" />
+    <Observation Value="0.71201153356234" />
+    <Observation Value="0.794209760497911" />
+    <Observation Value="0.686813979966007" />
+    <Observation Value="0.803568707628149" />
+    <Observation Value="0.872441700296544" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.08516009023752" />
+    <Observation Value="1.03156776221268" />
+    <Observation Value="1.15565402868881" />
+    <Observation Value="0.991898266391063" />
+    <Observation Value="0.959282636655394" />
+    <Observation Value="1.00038296612159" />
+    <Observation Value="1.39126695391853" />
+    <Observation Value="1.01950157032793" />
+    <Observation Value="1.42932533655429" />
+    <Observation Value="1.17090319427414" />
+    <Observation Value="0.899784034511354" />
+    <Observation Value="0.998791888969457" />
+    <Observation Value="0.918242995566574" />
+    <Observation Value="1.0112424840168" />
+    <Observation Value="0.883293884649048" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="LoadedTravelTime">
+    <Observation Value="9.70989422164154" />
+    <Observation Value="9.53783360394321" />
+    <Observation Value="9.24431885469699" />
+    <Observation Value="9.78449179307927" />
+    <Observation Value="9.65121166554404" />
+    <Observation Value="9.60825835980323" />
+    <Observation Value="9.6483918720704" />
+    <Observation Value="9.46025194667589" />
+    <Observation Value="9.89405943744251" />
+    <Observation Value="9.35316185067616" />
+    <Observation Value="9.68675719595693" />
+    <Observation Value="30.3066419055613" />
+    <Observation Value="8.87418131282379" />
+    <Observation Value="9.96041657008821" />
+    <Observation Value="10.1589000064636" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="EmptyTravelTime">
+    <Observation Value="7.69836167474657" />
+    <Observation Value="8.11514620237696" />
+    <Observation Value="7.62969605637887" />
+    <Observation Value="8.20480162325908" />
+    <Observation Value="8.10878683415124" />
+    <Observation Value="8.0664110932581" />
+    <Observation Value="8.55861463951242" />
+    <Observation Value="8.24247637326764" />
+    <Observation Value="7.98588678126211" />
+    <Observation Value="8.19539033355977" />
+    <Observation Value="8.67677258383324" />
+    <Observation Value="7.82319807467332" />
+    <Observation Value="7.77583508902658" />
+    <Observation Value="8.11041855289551" />
+    <Observation Value="8.65058904459724" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="RailOperatingCycleTime">
+    <Observation Value="26.7713496305913" />
+    <Observation Value="27.5163170652044" />
+    <Observation Value="27.3423714743718" />
+    <Observation Value="27.3452076836971" />
+    <Observation Value="27.8423177638741" />
+    <Observation Value="27.229702450458" />
+    <Observation Value="26.7502891909854" />
+    <Observation Value="27.2648713360089" />
+    <Observation Value="27.6533848301396" />
+    <Observation Value="27.0532031441831" />
+    <Observation Value="27.680805725238" />
+    <Observation Value="32.1807366666189" />
+    <Observation Value="27.2819771251162" />
+    <Observation Value="27.8206181439747" />
+    <Observation Value="27.2394555694442" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="RailCycleTime">
+    <Observation Value="30.5693574438493" />
+    <Observation Value="30.8426962834401" />
+    <Observation Value="29.9202982905779" />
+    <Observation Value="31.5828905361214" />
+    <Observation Value="31.2109178834358" />
+    <Observation Value="30.7671806212887" />
+    <Observation Value="31.0305880722669" />
+    <Observation Value="30.8676211982501" />
+    <Observation Value="31.3328334837156" />
+    <Observation Value="30.5906183634081" />
+    <Observation Value="31.8398370939396" />
+    <Observation Value="61.9064977695945" />
+    <Observation Value="29.7337611344434" />
+    <Observation Value="31.5828992201127" />
+    <Observation Value="32.2293575354287" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="1.80821133959345" />
+    <Observation Value="1.80677309487694" />
+    <Observation Value="1.68199867038253" />
+    <Observation Value="1.89776248551931" />
+    <Observation Value="1.83673180874611" />
+    <Observation Value="1.75677371987458" />
+    <Observation Value="2.06821314056112" />
+    <Observation Value="1.80052428599395" />
+    <Observation Value="1.83711966635651" />
+    <Observation Value="1.72481382743689" />
+    <Observation Value="1.82063323566421" />
+    <Observation Value="7.08148012892286" />
+    <Observation Value="1.64957043897765" />
+    <Observation Value="1.74449553621515" />
+    <Observation Value="1.98953927686007" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="MineTLOProductLoaded">
+    <Observation Value="37.9447200000009" />
+    <Observation Value="37.9447200000007" />
+    <Observation Value="38.8238400000009" />
+    <Observation Value="37.3032000000006" />
+    <Observation Value="37.7071200000006" />
+    <Observation Value="38.2536000000008" />
+    <Observation Value="14.6123999999996" />
+    <Observation Value="37.9447200000007" />
+    <Observation Value="37.7071200000008" />
+    <Observation Value="38.5387200000008" />
+    <Observation Value="37.8259200000007" />
+    <Observation Value="19.3168799999993" />
+    <Observation Value="39.0376800000009" />
+    <Observation Value="38.3961600000007" />
+    <Observation Value="36.7329600000006" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="121121.167541627" />
+    <Observation Value="121995.082531322" />
+    <Observation Value="123031.328772626" />
+    <Observation Value="149658.294092749" />
+    <Observation Value="140848.825815971" />
+    <Observation Value="136266.686214708" />
+    <Observation Value="196686.152335841" />
+    <Observation Value="135489.808456115" />
+    <Observation Value="146058.180746655" />
+    <Observation Value="141876.262656728" />
+    <Observation Value="159953.881816723" />
+    <Observation Value="190369.729318223" />
+    <Observation Value="121526.647220837" />
+    <Observation Value="157704.837099888" />
+    <Observation Value="165267.528907577" />
+  </Observations>
+  <Observations Scenario="250k Mine Stockpiles" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="87312.931242012" />
+    <Observation Value="88275.7123052689" />
+    <Observation Value="84728.5843817766" />
+    <Observation Value="112473.91557873" />
+    <Observation Value="104731.684695842" />
+    <Observation Value="100131.914684958" />
+    <Observation Value="178693.299929003" />
+    <Observation Value="96711.6103168943" />
+    <Observation Value="104505.302531473" />
+    <Observation Value="98766.3898473434" />
+    <Observation Value="116399.200549494" />
+    <Observation Value="173990.620287333" />
+    <Observation Value="83580.7199590865" />
+    <Observation Value="110252.065030102" />
+    <Observation Value="123769.995741427" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="EndTime">
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+    <Observation Value="8760" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="PercentDirectLoading">
+    <Observation Value="30.1090802810663" />
+    <Observation Value="29.6609247138442" />
+    <Observation Value="30.3478753906837" />
+    <Observation Value="29.8998502236643" />
+    <Observation Value="29.8833937736705" />
+    <Observation Value="28.9774996944883" />
+    <Observation Value="29.8252140270385" />
+    <Observation Value="30.3085153858506" />
+    <Observation Value="30.6537924446467" />
+    <Observation Value="30.167095633766" />
+    <Observation Value="31.5965071893691" />
+    <Observation Value="30.0485816355528" />
+    <Observation Value="30.8761699793275" />
+    <Observation Value="30.6714147332345" />
+    <Observation Value="30.292380011419" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="AvgIdleTimeAtBerth">
+    <Observation Value="3.68971739652155" />
+    <Observation Value="3.54968706311062" />
+    <Observation Value="4.00554171444605" />
+    <Observation Value="3.65216095628587" />
+    <Observation Value="4.15898022922705" />
+    <Observation Value="3.40125278617679" />
+    <Observation Value="3.89915132201377" />
+    <Observation Value="3.72118772653781" />
+    <Observation Value="3.69974782606947" />
+    <Observation Value="3.17475880384242" />
+    <Observation Value="4.42011600296474" />
+    <Observation Value="3.8149497757415" />
+    <Observation Value="6.33971012998106" />
+    <Observation Value="4.75978888461812" />
+    <Observation Value="3.41524402427759" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.02105496625228" />
+    <Observation Value="1.03646233029497" />
+    <Observation Value="0.898552360240719" />
+    <Observation Value="0.882034723138898" />
+    <Observation Value="0.922585496961594" />
+    <Observation Value="0.953076188477744" />
+    <Observation Value="0.984812093200611" />
+    <Observation Value="1.00018585706385" />
+    <Observation Value="0.977002356791562" />
+    <Observation Value="1.06995427485687" />
+    <Observation Value="1.25465925544195" />
+    <Observation Value="0.987097164935303" />
+    <Observation Value="0.846106786812181" />
+    <Observation Value="0.839896115020482" />
+    <Observation Value="0.939373344828542" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="AvgShipTTIP">
+    <Observation Value="258.027769046894" />
+    <Observation Value="268.5724889518" />
+    <Observation Value="240.553151834735" />
+    <Observation Value="281.730588265925" />
+    <Observation Value="87.4653984185373" />
+    <Observation Value="225.301731905998" />
+    <Observation Value="276.899515033891" />
+    <Observation Value="267.308369825997" />
+    <Observation Value="260.797065635776" />
+    <Observation Value="228.998862200438" />
+    <Observation Value="344.212377479043" />
+    <Observation Value="260.994299540218" />
+    <Observation Value="72.5329706053659" />
+    <Observation Value="76.9189084072869" />
+    <Observation Value="461.183585603636" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="AvgShipTimeInBerth">
+    <Observation Value="29.1064169835069" />
+    <Observation Value="29.1062644314743" />
+    <Observation Value="29.9848796671165" />
+    <Observation Value="29.0045626210549" />
+    <Observation Value="26.8280751" />
+    <Observation Value="28.4058720975919" />
+    <Observation Value="28.9179408810764" />
+    <Observation Value="29.6361598379629" />
+    <Observation Value="29.5711181911375" />
+    <Observation Value="29.5007205188068" />
+    <Observation Value="30.3064296108815" />
+    <Observation Value="28.7750836694769" />
+    <Observation Value="29.1583776415094" />
+    <Observation Value="28.3268779545455" />
+    <Observation Value="29.3326071538629" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="AvgShipLoadingTime">
+    <Observation Value="26.8838167697483" />
+    <Observation Value="26.9631838305231" />
+    <Observation Value="27.7917714664867" />
+    <Observation Value="26.7959304355815" />
+    <Observation Value="24.4359063833333" />
+    <Observation Value="26.2231633449514" />
+    <Observation Value="26.7390567133247" />
+    <Observation Value="27.4397913955026" />
+    <Observation Value="27.3978481084656" />
+    <Observation Value="27.2665956625595" />
+    <Observation Value="28.147746068641" />
+    <Observation Value="26.6315929290964" />
+    <Observation Value="27.0504674213836" />
+    <Observation Value="26.2702907575758" />
+    <Observation Value="27.1138700434028" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="137051.975033158" />
+    <Observation Value="133115.635590535" />
+    <Observation Value="132402.623451001" />
+    <Observation Value="134433.663377263" />
+    <Observation Value="20194.9561072782" />
+    <Observation Value="136005.857830211" />
+    <Observation Value="136711.647125474" />
+    <Observation Value="134563.469909162" />
+    <Observation Value="141661.302066141" />
+    <Observation Value="133727.604509731" />
+    <Observation Value="125364.703847793" />
+    <Observation Value="133034.653688031" />
+    <Observation Value="23932.9273876954" />
+    <Observation Value="18206.3935064747" />
+    <Observation Value="141598.597757032" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="203501.924156165" />
+    <Observation Value="169764.601459573" />
+    <Observation Value="200250.353328557" />
+    <Observation Value="192903.374727334" />
+    <Observation Value="339808.360351617" />
+    <Observation Value="205045.648920072" />
+    <Observation Value="180581.388916572" />
+    <Observation Value="207476.679543742" />
+    <Observation Value="197881.889919748" />
+    <Observation Value="179590.160463841" />
+    <Observation Value="156329.618191646" />
+    <Observation Value="188001.203158422" />
+    <Observation Value="336903.249913838" />
+    <Observation Value="335868.43163416" />
+    <Observation Value="190087.6573443" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="PortStockpileAvgTotalContents">
+    <Observation Value="340553.899189314" />
+    <Observation Value="302900.154144624" />
+    <Observation Value="332652.976779554" />
+    <Observation Value="327337.038104599" />
+    <Observation Value="360003.316458895" />
+    <Observation Value="341051.506750279" />
+    <Observation Value="317338.917320592" />
+    <Observation Value="342040.1494529" />
+    <Observation Value="339520.753629725" />
+    <Observation Value="313317.764973573" />
+    <Observation Value="281694.322039436" />
+    <Observation Value="321005.337531382" />
+    <Observation Value="360836.177301532" />
+    <Observation Value="354074.825140634" />
+    <Observation Value="331686.255101333" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="ShiploadingIdleTime">
+    <Observation Value="618.382888678141" />
+    <Observation Value="620.121563761469" />
+    <Observation Value="705.871258705735" />
+    <Observation Value="665.782703827752" />
+    <Observation Value="187.632531654053" />
+    <Observation Value="609.42797826201" />
+    <Observation Value="698.260030753277" />
+    <Observation Value="649.229520843804" />
+    <Observation Value="655.100608509862" />
+    <Observation Value="513.793089188733" />
+    <Observation Value="780.375076412951" />
+    <Observation Value="686.679420621341" />
+    <Observation Value="340.160241990173" />
+    <Observation Value="190.190499807815" />
+    <Observation Value="583.617772647065" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="ShiploadingWeatherDownTime">
+    <Observation Value="36.3580368930482" />
+    <Observation Value="48.9789787198277" />
+    <Observation Value="81.4971803694725" />
+    <Observation Value="30.4909460722633" />
+    <Observation Value="76.4581416733222" />
+    <Observation Value="26.2075557673508" />
+    <Observation Value="46.3233894285692" />
+    <Observation Value="58.4677406337702" />
+    <Observation Value="80.1577870380711" />
+    <Observation Value="93.0538412602389" />
+    <Observation Value="43.0913743533885" />
+    <Observation Value="56.6071874212442" />
+    <Observation Value="74.9526638372555" />
+    <Observation Value="51.7280702314166" />
+    <Observation Value="61.3967500746842" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="288" />
+    <Observation Value="288" />
+    <Observation Value="284.960505922387" />
+    <Observation Value="276" />
+    <Observation Value="24" />
+    <Observation Value="288" />
+    <Observation Value="300" />
+    <Observation Value="293.412969090434" />
+    <Observation Value="276" />
+    <Observation Value="288" />
+    <Observation Value="288" />
+    <Observation Value="288" />
+    <Observation Value="15.9430221110601" />
+    <Observation Value="24" />
+    <Observation Value="288" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="ShiploadingPositioningTime">
+    <Observation Value="389.403753250069" />
+    <Observation Value="403.688741345265" />
+    <Observation Value="423.09227192443" />
+    <Observation Value="395.522173280548" />
+    <Observation Value="68.7332763444149" />
+    <Observation Value="364.055044626607" />
+    <Observation Value="382.762663461286" />
+    <Observation Value="348.535445788192" />
+    <Observation Value="345.91221483891" />
+    <Observation Value="349.625530604503" />
+    <Observation Value="333.032345411442" />
+    <Observation Value="354.799397315371" />
+    <Observation Value="73.103035831638" />
+    <Observation Value="60.9992902563186" />
+    <Observation Value="368.65960039641" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="ShiploadingOccupiedTime">
+    <Observation Value="7427.85532117874" />
+    <Observation Value="7399.21071617344" />
+    <Observation Value="7264.57878307798" />
+    <Observation Value="7392.20417681944" />
+    <Observation Value="8403.17605032821" />
+    <Observation Value="7472.30942134403" />
+    <Observation Value="7332.65391635687" />
+    <Observation Value="7410.3543236438" />
+    <Observation Value="7402.82938961316" />
+    <Observation Value="7515.52753894653" />
+    <Observation Value="7315.50120382222" />
+    <Observation Value="7373.91399464204" />
+    <Observation Value="8255.84103622987" />
+    <Observation Value="8433.08213970445" />
+    <Observation Value="7458.32587688184" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="DumperIdleTime">
+    <Observation Value="2019.52394440044" />
+    <Observation Value="2202.18988082167" />
+    <Observation Value="2010.84108847576" />
+    <Observation Value="2052.50826439842" />
+    <Observation Value="360.939452888908" />
+    <Observation Value="2102.19369814789" />
+    <Observation Value="2172.20514903262" />
+    <Observation Value="2037.94160312582" />
+    <Observation Value="2079.9958340141" />
+    <Observation Value="2224.61507387011" />
+    <Observation Value="2398.02796501351" />
+    <Observation Value="2110.13317489802" />
+    <Observation Value="382.978031510165" />
+    <Observation Value="364.627961820721" />
+    <Observation Value="2172.73902779389" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="DumperWeatherDownTime">
+    <Observation Value="4.55746455586001" />
+    <Observation Value="13.7695344132777" />
+    <Observation Value="11.6665246971773" />
+    <Observation Value="9.976350571323" />
+    <Observation Value="8.90870159971942" />
+    <Observation Value="5.95888526250931" />
+    <Observation Value="3.63434498210381" />
+    <Observation Value="8.09431929829148" />
+    <Observation Value="4.10009963726981" />
+    <Observation Value="4.21946056107151" />
+    <Observation Value="11.096654926377" />
+    <Observation Value="12.8743012217891" />
+    <Observation Value="10.3800301782188" />
+    <Observation Value="8.81399040111464" />
+    <Observation Value="7.00871707922803" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="24" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="306.912328233067" />
+    <Observation Value="348" />
+    <Observation Value="348" />
+    <Observation Value="24" />
+    <Observation Value="24" />
+    <Observation Value="344.539990071943" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="DumperPositioningTime">
+    <Observation Value="488.100000000128" />
+    <Observation Value="486.300000000122" />
+    <Observation Value="490.500000000134" />
+    <Observation Value="492.318507647931" />
+    <Observation Value="91.7999999999913" />
+    <Observation Value="496.13024323184" />
+    <Observation Value="486.000000000116" />
+    <Observation Value="489.600000000113" />
+    <Observation Value="487.137293144051" />
+    <Observation Value="492.600000000119" />
+    <Observation Value="470.517090565521" />
+    <Observation Value="485.895037321686" />
+    <Observation Value="108.599999999989" />
+    <Observation Value="87.8999999999914" />
+    <Observation Value="484.250111692301" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="DumperUnloadingTime">
+    <Observation Value="5899.81859104357" />
+    <Observation Value="5709.74058476493" />
+    <Observation Value="5898.99238682692" />
+    <Observation Value="5857.19687738233" />
+    <Observation Value="8274.35184551138" />
+    <Observation Value="5807.71717335776" />
+    <Observation Value="5750.16050598516" />
+    <Observation Value="5876.36407757578" />
+    <Observation Value="5840.76677320458" />
+    <Observation Value="5731.65313733563" />
+    <Observation Value="5532.35828949459" />
+    <Observation Value="5803.09748655851" />
+    <Observation Value="8234.04193831163" />
+    <Observation Value="8274.65804777817" />
+    <Observation Value="5751.46215336264" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="PortShiploaderThroughput">
+    <Observation Value="38.4244601829177" />
+    <Observation Value="38.4043634037847" />
+    <Observation Value="38.702499975301" />
+    <Observation Value="38.8042856885864" />
+    <Observation Value="6.8972799949999" />
+    <Observation Value="39.1330017572762" />
+    <Observation Value="38.2199999744005" />
+    <Observation Value="38.5399999748008" />
+    <Observation Value="38.3699999747008" />
+    <Observation Value="38.8054968844815" />
+    <Observation Value="37.0549999758009" />
+    <Observation Value="38.3536799743006" />
+    <Observation Value="8.2336799946999" />
+    <Observation Value="6.58599999559994" />
+    <Observation Value="38.2482601206018" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="PortDumperThroughput">
+    <Observation Value="38.6575200000007" />
+    <Observation Value="38.5149600000008" />
+    <Observation Value="38.8476000000008" />
+    <Observation Value="39.0139200000009" />
+    <Observation Value="7.26227999999999" />
+    <Observation Value="39.2990400000008" />
+    <Observation Value="38.4912000000007" />
+    <Observation Value="38.7763200000008" />
+    <Observation Value="38.5862400000008" />
+    <Observation Value="39.0139200000007" />
+    <Observation Value="37.2794400000008" />
+    <Observation Value="38.4912000000007" />
+    <Observation Value="8.59868000000003" />
+    <Observation Value="6.95100000000001" />
+    <Observation Value="38.3724000000009" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="TrainUnloadingTime">
+    <Observation Value="3.62809234922155" />
+    <Observation Value="3.53076619450558" />
+    <Observation Value="3.61061263745788" />
+    <Observation Value="3.57257185999157" />
+    <Observation Value="3.75152675290745" />
+    <Observation Value="3.51435183154942" />
+    <Observation Value="3.55162162460271" />
+    <Observation Value="3.60223072025956" />
+    <Observation Value="3.5981173126974" />
+    <Observation Value="3.49276635322349" />
+    <Observation Value="3.53461797195699" />
+    <Observation Value="3.60024681607892" />
+    <Observation Value="4.00203519888286" />
+    <Observation Value="3.57409721264117" />
+    <Observation Value="3.57171947359899" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="TrainLoadingTime">
+    <Observation Value="2.99934220466471" />
+    <Observation Value="3.00116004737284" />
+    <Observation Value="3.00153440890285" />
+    <Observation Value="2.99863649542928" />
+    <Observation Value="3.00507861607886" />
+    <Observation Value="2.99871473181264" />
+    <Observation Value="2.99900364035744" />
+    <Observation Value="2.99640284641404" />
+    <Observation Value="2.99791775886946" />
+    <Observation Value="3.00044079591141" />
+    <Observation Value="2.99960560533295" />
+    <Observation Value="2.99690432604002" />
+    <Observation Value="2.99064810605469" />
+    <Observation Value="3.00277555183653" />
+    <Observation Value="3.00294527775892" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="TrainProvisioningTime">
+    <Observation Value="2.68277982847776" />
+    <Observation Value="2.67407407376881" />
+    <Observation Value="2.6770501842345" />
+    <Observation Value="2.67140243853076" />
+    <Observation Value="2.6819672121797" />
+    <Observation Value="2.67282082599783" />
+    <Observation Value="2.68133498183377" />
+    <Observation Value="2.67312883381093" />
+    <Observation Value="2.67923598244982" />
+    <Observation Value="2.67695122163617" />
+    <Observation Value="2.69106572988223" />
+    <Observation Value="2.67930821502213" />
+    <Observation Value="2.6698061041197" />
+    <Observation Value="2.69006848830302" />
+    <Observation Value="2.67861128492036" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.09413369504957" />
+    <Observation Value="1.02021126737092" />
+    <Observation Value="0.905977988832014" />
+    <Observation Value="0.93997681654557" />
+    <Observation Value="0.949823775684438" />
+    <Observation Value="1.09911789020378" />
+    <Observation Value="1.0592972794951" />
+    <Observation Value="1.05026509244645" />
+    <Observation Value="0.938115619283371" />
+    <Observation Value="0.908295561425886" />
+    <Observation Value="1.07839140196971" />
+    <Observation Value="1.02578752314421" />
+    <Observation Value="1.05852832075654" />
+    <Observation Value="0.875875874857088" />
+    <Observation Value="1.07423522277006" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.37974347986833" />
+    <Observation Value="1.50095717213957" />
+    <Observation Value="1.38907283982111" />
+    <Observation Value="1.34290147292748" />
+    <Observation Value="1.32032906608735" />
+    <Observation Value="1.2638181036303" />
+    <Observation Value="1.44434050973661" />
+    <Observation Value="1.37182100213464" />
+    <Observation Value="1.42056984481111" />
+    <Observation Value="1.18251132648478" />
+    <Observation Value="1.27280410378744" />
+    <Observation Value="1.31840540303097" />
+    <Observation Value="1.53545478051879" />
+    <Observation Value="0.746674757118602" />
+    <Observation Value="1.33144236358518" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.23486454154574" />
+    <Observation Value="0.198332154164421" />
+    <Observation Value="0.216047223637888" />
+    <Observation Value="0.212735873736306" />
+    <Observation Value="0.254680352937552" />
+    <Observation Value="0.161852281802491" />
+    <Observation Value="0.186628762467811" />
+    <Observation Value="0.194805780846368" />
+    <Observation Value="0.231926475706155" />
+    <Observation Value="0.124092915242085" />
+    <Observation Value="0.166356206473361" />
+    <Observation Value="0.206265597584494" />
+    <Observation Value="0.38100744577637" />
+    <Observation Value="0.0285455969818811" />
+    <Observation Value="0.183735068854626" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.338196246767683" />
+    <Observation Value="0.366536266688345" />
+    <Observation Value="0.336971777314657" />
+    <Observation Value="0.330343969560131" />
+    <Observation Value="0.324318448357449" />
+    <Observation Value="0.315514699443905" />
+    <Observation Value="0.343268667843375" />
+    <Observation Value="0.369352956829843" />
+    <Observation Value="0.344731232500867" />
+    <Observation Value="0.318857290463963" />
+    <Observation Value="0.296249625877997" />
+    <Observation Value="0.314488367510817" />
+    <Observation Value="0.40936207733748" />
+    <Observation Value="0.143495701205376" />
+    <Observation Value="0.33519552688774" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.345962660810612" />
+    <Observation Value="0.36296093372123" />
+    <Observation Value="0.355246246706289" />
+    <Observation Value="0.308753149498584" />
+    <Observation Value="0.301783329122229" />
+    <Observation Value="0.271356326646833" />
+    <Observation Value="0.317133739917332" />
+    <Observation Value="0.303472429558987" />
+    <Observation Value="0.319032087337451" />
+    <Observation Value="0.291205278322729" />
+    <Observation Value="0.279837482865657" />
+    <Observation Value="0.332263534339016" />
+    <Observation Value="0.31176389052205" />
+    <Observation Value="0.152203419026301" />
+    <Observation Value="0.310005920823286" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.260239422557273" />
+    <Observation Value="0.298302286144906" />
+    <Observation Value="0.275806204803082" />
+    <Observation Value="0.289784297473184" />
+    <Observation Value="0.205613982329477" />
+    <Observation Value="0.316252472364241" />
+    <Observation Value="0.312116664749662" />
+    <Observation Value="0.251937512398322" />
+    <Observation Value="0.257939982132756" />
+    <Observation Value="0.237828113661258" />
+    <Observation Value="0.274728744696597" />
+    <Observation Value="0.254082973114742" />
+    <Observation Value="0.237468480042756" />
+    <Observation Value="0.240530198186091" />
+    <Observation Value="0.267001417669482" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.200197617096143" />
+    <Observation Value="0.274624093390641" />
+    <Observation Value="0.205006116499781" />
+    <Observation Value="0.201161678569274" />
+    <Observation Value="0.225306383010301" />
+    <Observation Value="0.199288920445979" />
+    <Observation Value="0.285369532108529" />
+    <Observation Value="0.252582452247998" />
+    <Observation Value="0.266985934501044" />
+    <Observation Value="0.210882110843357" />
+    <Observation Value="0.255973042995052" />
+    <Observation Value="0.210488994314988" />
+    <Observation Value="0.186755523948683" />
+    <Observation Value="0.177096925931227" />
+    <Observation Value="0.235682310350754" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.63222262862941" />
+    <Observation Value="0.685916297456692" />
+    <Observation Value="0.611318194110768" />
+    <Observation Value="0.71068709406949" />
+    <Observation Value="1.07432393733084" />
+    <Observation Value="0.828059204839747" />
+    <Observation Value="0.612048926272121" />
+    <Observation Value="0.876078008779364" />
+    <Observation Value="0.645829635605217" />
+    <Observation Value="0.590297510778503" />
+    <Observation Value="0.590417415925356" />
+    <Observation Value="2.276397210151" />
+    <Observation Value="0.577171287021912" />
+    <Observation Value="0.23821713445299" />
+    <Observation Value="0.523865167470102" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.85408584914868" />
+    <Observation Value="0.723689228386661" />
+    <Observation Value="0.532928167141299" />
+    <Observation Value="0.582060083593996" />
+    <Observation Value="0.613333353473705" />
+    <Observation Value="0.918277073463214" />
+    <Observation Value="0.554929496661133" />
+    <Observation Value="0.852983958118721" />
+    <Observation Value="0.636923757361814" />
+    <Observation Value="0.633806700117644" />
+    <Observation Value="0.849815829108289" />
+    <Observation Value="0.539453496622644" />
+    <Observation Value="0.545817889359569" />
+    <Observation Value="0.567705883386553" />
+    <Observation Value="0.752060226086788" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.71496220128626" />
+    <Observation Value="0.694677980852061" />
+    <Observation Value="0.706168462643349" />
+    <Observation Value="0.665511344586916" />
+    <Observation Value="0.621367330491738" />
+    <Observation Value="0.698479752159652" />
+    <Observation Value="0.735892957428804" />
+    <Observation Value="0.61733373348269" />
+    <Observation Value="0.631781081270678" />
+    <Observation Value="0.577771068618098" />
+    <Observation Value="0.572896234869237" />
+    <Observation Value="0.761448902137307" />
+    <Observation Value="0.633625528308096" />
+    <Observation Value="0.600634468716259" />
+    <Observation Value="0.715388557533486" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.779543756515871" />
+    <Observation Value="0.694996060200809" />
+    <Observation Value="0.665484892926431" />
+    <Observation Value="0.717749803360105" />
+    <Observation Value="0.691405635035098" />
+    <Observation Value="0.696780275523301" />
+    <Observation Value="0.699561883080753" />
+    <Observation Value="0.798838643484701" />
+    <Observation Value="0.695673660283232" />
+    <Observation Value="0.696555575204834" />
+    <Observation Value="0.696791048681557" />
+    <Observation Value="0.777186575694413" />
+    <Observation Value="1.09729244799608" />
+    <Observation Value="0.697392625367284" />
+    <Observation Value="0.958546456307962" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="0.99311092430125" />
+    <Observation Value="0.975467224266935" />
+    <Observation Value="0.889488310432641" />
+    <Observation Value="0.838245480231252" />
+    <Observation Value="1.00548817495512" />
+    <Observation Value="1.05438512890243" />
+    <Observation Value="1.31352804446386" />
+    <Observation Value="0.927710258956753" />
+    <Observation Value="0.96928533996764" />
+    <Observation Value="0.949558416257035" />
+    <Observation Value="1.16822566611743" />
+    <Observation Value="0.926861175479597" />
+    <Observation Value="0.852546351690158" />
+    <Observation Value="0.856828604118608" />
+    <Observation Value="0.98311269283662" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="LoadedTravelTime">
+    <Observation Value="9.75574317735898" />
+    <Observation Value="10.175549150764" />
+    <Observation Value="10.0073410066816" />
+    <Observation Value="9.76928339158916" />
+    <Observation Value="9.32439489578147" />
+    <Observation Value="9.44975449634009" />
+    <Observation Value="9.96512921608521" />
+    <Observation Value="9.79894673883654" />
+    <Observation Value="9.5630320722891" />
+    <Observation Value="9.45620635105646" />
+    <Observation Value="10.19600696799" />
+    <Observation Value="9.67747770011207" />
+    <Observation Value="9.62681398386482" />
+    <Observation Value="8.80089159801373" />
+    <Observation Value="10.2718603874088" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="EmptyTravelTime">
+    <Observation Value="7.96672191037308" />
+    <Observation Value="8.2092978846334" />
+    <Observation Value="7.76665378695419" />
+    <Observation Value="8.04141323434152" />
+    <Observation Value="8.1995037690583" />
+    <Observation Value="7.82412987502572" />
+    <Observation Value="8.15478028351106" />
+    <Observation Value="8.04277663451298" />
+    <Observation Value="7.82040773136931" />
+    <Observation Value="7.96112290839588" />
+    <Observation Value="8.34853517498523" />
+    <Observation Value="8.17899762792524" />
+    <Observation Value="7.47650039094651" />
+    <Observation Value="7.47032389259562" />
+    <Observation Value="8.19509893098212" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="RailOperatingCycleTime">
+    <Observation Value="27.9196437740647" />
+    <Observation Value="27.643190570977" />
+    <Observation Value="27.8323152088942" />
+    <Observation Value="27.7741372527638" />
+    <Observation Value="28.1105869566683" />
+    <Observation Value="27.4738270100465" />
+    <Observation Value="27.7871067244997" />
+    <Observation Value="27.7783890460305" />
+    <Observation Value="27.7736305523941" />
+    <Observation Value="27.0988072375647" />
+    <Observation Value="26.8723889528876" />
+    <Observation Value="27.9379469595907" />
+    <Observation Value="28.6613302670956" />
+    <Observation Value="26.8208165834806" />
+    <Observation Value="27.9594107120688" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="RailCycleTime">
+    <Observation Value="31.0496174972628" />
+    <Observation Value="31.5928438446879" />
+    <Observation Value="31.2187749464064" />
+    <Observation Value="31.063418381959" />
+    <Observation Value="30.7143370045294" />
+    <Observation Value="30.3659935457651" />
+    <Observation Value="31.4201444911732" />
+    <Observation Value="31.071464151466" />
+    <Observation Value="30.5701496995033" />
+    <Observation Value="30.3525481327134" />
+    <Observation Value="31.7446109043132" />
+    <Observation Value="31.1919701515741" />
+    <Observation Value="30.5516757701708" />
+    <Observation Value="29.3330871384172" />
+    <Observation Value="32.0433028062401" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="1.69742258490618" />
+    <Observation Value="1.71320359158084" />
+    <Observation Value="1.66666373966146" />
+    <Observation Value="1.64994703589227" />
+    <Observation Value="1.58486066269342" />
+    <Observation Value="1.61153226471338" />
+    <Observation Value="1.72047659882307" />
+    <Observation Value="1.68539745357477" />
+    <Observation Value="1.70641233868024" />
+    <Observation Value="1.63017791834601" />
+    <Observation Value="1.89316754159481" />
+    <Observation Value="1.72040601575984" />
+    <Observation Value="1.72213946096939" />
+    <Observation Value="1.48160288997865" />
+    <Observation Value="1.73309480324755" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="MineTLOProductLoaded">
+    <Observation Value="38.7050400000009" />
+    <Observation Value="38.5862400000008" />
+    <Observation Value="38.918880000001" />
+    <Observation Value="39.0614400000009" />
+    <Observation Value="7.38936000000004" />
+    <Observation Value="39.3465600000009" />
+    <Observation Value="38.5387200000008" />
+    <Observation Value="38.8238400000008" />
+    <Observation Value="38.6575200000008" />
+    <Observation Value="39.0614400000009" />
+    <Observation Value="37.3507200000006" />
+    <Observation Value="38.5624800000008" />
+    <Observation Value="8.71992000000003" />
+    <Observation Value="7.08048000000003" />
+    <Observation Value="38.4199200000009" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="241564.265238028" />
+    <Observation Value="304540.809364276" />
+    <Observation Value="238339.862387736" />
+    <Observation Value="234932.714232694" />
+    <Observation Value="444738.44001828" />
+    <Observation Value="205871.455170569" />
+    <Observation Value="273131.214552891" />
+    <Observation Value="260557.577640875" />
+    <Observation Value="218942.850549358" />
+    <Observation Value="232378.19270942" />
+    <Observation Value="267373.122068316" />
+    <Observation Value="244632.998108151" />
+    <Observation Value="430718.632889" />
+    <Observation Value="444889.722647887" />
+    <Observation Value="294394.177561254" />
+  </Observations>
+  <Observations Scenario="500k Mine Stockpiles" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="155878.890677372" />
+    <Observation Value="200790.974260463" />
+    <Observation Value="151416.070854667" />
+    <Observation Value="151090.687385128" />
+    <Observation Value="418057.554950019" />
+    <Observation Value="130955.39435135" />
+    <Observation Value="184137.822162415" />
+    <Observation Value="168863.77060687" />
+    <Observation Value="144967.351017128" />
+    <Observation Value="148773.87871009" />
+    <Observation Value="193909.764766435" />
+    <Observation Value="162777.547379937" />
+    <Observation Value="399273.94688628" />
+    <Observation Value="420920.105622374" />
+    <Observation Value="193729.324049697" />
+  </Observations>
+</ResponseResults>
