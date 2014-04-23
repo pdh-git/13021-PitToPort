@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="5:0" UserName="Simio" Organization="Simio LLC" SerialNumber="0000" SaveDate="2014-04-21T23:04:10" />
+  <DocumentInfo LicenseInfo="5:0" UserName="Simio" Organization="Simio LLC" SerialNumber="0000" SaveDate="2014-04-22T14:14:54" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -11,7 +11,7 @@
     <Model Definition="RailPortModel">
       <RunSetup AnimationInterval="100000" StatusMassUnits="Metric Tons" ReplicationNumber="9" LogInteractiveRuntimeData="True">
         <StartDate>2019-12-31T23:59:59</StartDate>
-        <RunLength Units="Hours">8760</RunLength>
+        <RunLength Units="Hours">43800</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
       </RunSetup>
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -116,6 +116,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassFlowRate" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTime" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -346,6 +347,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassFlowRate" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTimeAve" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -526,6 +528,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassFlowRate" />
           </Controls>
           <Responses>
             <Response Name="TrainCycleTime" Expression="Tally_RailOperatingCycleTime.Average" Primary="True" />
@@ -839,6 +842,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassFlowRate" />
           </Controls>
           <Responses>
             <Response Name="MineLACProductStockpileAvgContents" Expression="Mine.Tally_Stockpile1Contents.Average / 1000" />
@@ -944,51 +948,52 @@
                   <Column Name="T1DivertAmount_ExperimentControl" Width="97" VisibleIndex="47" />
                   <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="48" />
                   <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="198" VisibleIndex="49" />
-                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="50" />
-                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="51" />
-                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="52" />
-                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="53" />
-                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="54" />
-                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="55" />
-                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="56" />
-                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="57" />
-                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="58" />
-                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
-                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
-                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
-                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
-                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="63" />
-                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
-                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
-                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
-                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
-                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="68" />
-                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="69" />
-                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="70" />
-                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="71" />
-                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="72" />
-                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="73" />
-                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="74" />
-                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="75" />
-                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="76" />
-                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="77" />
-                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="78" />
-                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="79" />
-                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="80" />
-                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="81" />
-                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="82" />
-                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="83" />
-                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="84" />
-                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="85" />
-                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="86" />
-                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="87" />
-                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="88" />
-                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="89" />
-                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="90" />
-                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="91" />
-                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="92" />
-                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="93" />
-                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="94" />
+                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="51" />
+                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="52" />
+                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="53" />
+                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="54" />
+                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="55" />
+                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="56" />
+                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="57" />
+                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="58" />
+                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
+                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
+                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
+                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
+                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="63" />
+                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
+                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
+                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
+                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
+                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="68" />
+                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="69" />
+                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="70" />
+                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="71" />
+                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="72" />
+                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="73" />
+                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="74" />
+                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="75" />
+                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="76" />
+                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="77" />
+                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="78" />
+                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="79" />
+                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="80" />
+                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="81" />
+                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="82" />
+                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="83" />
+                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="84" />
+                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="85" />
+                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="86" />
+                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="87" />
+                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="88" />
+                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="89" />
+                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="90" />
+                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="91" />
+                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="92" />
+                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="93" />
+                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="94" />
+                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="95" />
+                  <Column Name="MineBypassFlowRate_ExperimentControl" Width="231" VisibleIndex="50" />
                 </Columns>
               </ScenarioTable>
             </ExperimentDesign>
@@ -1190,6 +1195,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassFlowRate" />
           </Controls>
           <Responses>
             <Response Name="MineLACProductStockpileAvgContents" Expression="Mine.Tally_Stockpile1Contents.Average / 1000" />
@@ -1295,51 +1301,52 @@
                   <Column Name="T1DivertAmount_ExperimentControl" Width="173" VisibleIndex="47" />
                   <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="48" />
                   <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="198" VisibleIndex="49" />
-                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="50" />
-                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="51" />
-                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="52" />
-                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="53" />
-                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="54" />
-                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="55" />
-                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="56" />
-                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="57" />
-                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="58" />
-                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
-                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
-                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
-                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
-                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="63" />
-                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
-                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
-                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
-                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
-                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="68" />
-                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="69" />
-                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="70" />
-                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="71" />
-                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="72" />
-                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="73" />
-                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="74" />
-                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="75" />
-                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="76" />
-                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="77" />
-                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="78" />
-                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="79" />
-                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="80" />
-                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="81" />
-                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="82" />
-                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="83" />
-                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="84" />
-                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="85" />
-                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="86" />
-                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="87" />
-                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="88" />
-                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="89" />
-                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="90" />
-                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="91" />
-                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="92" />
-                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="93" />
-                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="94" />
+                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="51" />
+                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="52" />
+                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="53" />
+                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="54" />
+                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="55" />
+                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="56" />
+                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="57" />
+                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="58" />
+                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
+                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
+                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
+                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
+                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="63" />
+                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
+                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
+                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
+                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
+                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="68" />
+                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="69" />
+                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="70" />
+                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="71" />
+                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="72" />
+                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="73" />
+                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="74" />
+                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="75" />
+                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="76" />
+                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="77" />
+                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="78" />
+                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="79" />
+                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="80" />
+                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="81" />
+                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="82" />
+                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="83" />
+                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="84" />
+                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="85" />
+                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="86" />
+                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="87" />
+                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="88" />
+                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="89" />
+                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="90" />
+                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="91" />
+                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="92" />
+                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="93" />
+                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="94" />
+                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="95" />
+                  <Column Name="MineBypassFlowRate_ExperimentControl" Width="231" VisibleIndex="50" />
                 </Columns>
               </ScenarioTable>
             </ExperimentDesign>
@@ -1351,7 +1358,7 @@
         <Experiment Name="Case1MineProductStockpile" ConfidenceLevel="Point95" LowerPercentile="25" UpperPercentile="75" DefaultReplications="10" ConcurrentReplicationLimit="3" ReplicationRunner="External32Bit">
           <Warmup Units="Hours">0</Warmup>
           <Scenarios>
-            <Scenario Name="150kt Stockpile" ReplicationsCompleted="10">
+            <Scenario Name="150kt Stockpile">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1365,7 +1372,7 @@
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="250kt Stockpile" ReplicationsCompleted="10">
+            <Scenario Name="250kt Stockpile">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1374,12 +1381,14 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="DistanceToNextFailure">500</Property>
                 <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">250000</Property>
+                <Property Name="MineStockpile2LACCapacity">250000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="500kt Stockpile" ReplicationsCompleted="10">
+            <Scenario Name="500kt Stockpile">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1388,12 +1397,14 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="DistanceToNextFailure">500</Property>
                 <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">500000</Property>
+                <Property Name="MineStockpile2LACCapacity">500000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="1Mt Stockpile" ReplicationsCompleted="10">
+            <Scenario Name="1Mt Stockpile">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1402,6 +1413,8 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="DistanceToNextFailure">500</Property>
                 <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">1000000</Property>
+                <Property Name="MineStockpile2LACCapacity">1000000</Property>
                 <Property Name="Include0ValuesInBlockageTallies">True</Property>
                 <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
@@ -1419,7 +1432,7 @@
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="150kt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
+            <Scenario Name="150kt Stockpile-2000t Surge Bin">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1432,7 +1445,7 @@
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="250kt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
+            <Scenario Name="250kt Stockpile-2000t Surge Bin">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1441,11 +1454,13 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="DistanceToNextFailure">500</Property>
                 <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">250000</Property>
+                <Property Name="MineStockpile2LACCapacity">250000</Property>
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="500kt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
+            <Scenario Name="500kt Stockpile-2000t Surge Bin">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1454,11 +1469,13 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="DistanceToNextFailure">500</Property>
                 <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">500000</Property>
+                <Property Name="MineStockpile2LACCapacity">500000</Property>
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="1Mt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
+            <Scenario Name="1Mt Stockpile-2000t Surge Bin">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1467,6 +1484,8 @@
                 <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
                 <Property Name="DistanceToNextFailure">500</Property>
                 <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">1000000</Property>
+                <Property Name="MineStockpile2LACCapacity">1000000</Property>
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
                 <Property Name="CampaignRailingTrainInterval">0.0</Property>
               </Properties>
@@ -1518,6 +1537,7 @@
             <Control Name="T1DivertAmount" />
             <Control Name="IsCampaignRailing" />
             <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassFlowRate" />
           </Controls>
           <Responses>
             <Response Name="MineLACProductStockpileAvgContents" Expression="Mine.Tally_Stockpile1Contents.Average / 1000" />
@@ -1566,13 +1586,7 @@
             <Response Name="PercentDirectLoading" Expression="(Port.DumperStates.TotalTime(3) / Math.If((Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3)) &gt; 0, Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3), 1)) * 100" />
             <Response Name="EndTime" Expression="Run.EndingTime" />
           </Responses>
-          <BinaryResults>
-            <FileRef Name="Results\RailPortModel\Case1MineProductStockpile Results.stats" />
-          </BinaryResults>
-          <ResponseResults>
-            <FileRef Name="Results\RailPortModel\Case1MineProductStockpile ResponseResults.xml" />
-          </ResponseResults>
-          <ViewInfo ActiveExperiment="True" ActiveView="Design">
+          <ViewInfo>
             <ExperimentDesign>
               <ScenarioTable FilterEnabled="True">
                 <Columns>
@@ -1626,51 +1640,52 @@
                   <Column Name="T1DivertAmount_ExperimentControl" Width="97" VisibleIndex="47" />
                   <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="48" />
                   <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="208" VisibleIndex="49" />
-                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="50" />
-                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="51" />
-                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="52" />
-                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="53" />
-                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="54" />
-                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="55" />
-                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="56" />
-                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="57" />
-                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="58" />
-                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
-                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
-                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
-                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
-                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="63" />
-                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
-                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
-                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
-                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
-                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="68" />
-                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="69" />
-                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="70" />
-                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="71" />
-                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="72" />
-                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="73" />
-                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="74" />
-                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="75" />
-                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="76" />
-                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="77" />
-                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="78" />
-                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="79" />
-                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="80" />
-                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="81" />
-                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="82" />
-                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="83" />
-                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="84" />
-                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="85" />
-                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="86" />
-                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="87" />
-                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="88" />
-                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="89" />
-                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="90" />
-                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="91" />
-                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="92" />
-                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="93" />
-                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="94" />
+                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="51" />
+                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="52" />
+                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="53" />
+                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="54" />
+                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="55" />
+                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="56" />
+                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="57" />
+                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="58" />
+                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
+                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
+                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
+                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
+                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="63" />
+                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
+                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
+                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
+                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
+                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="68" />
+                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="69" />
+                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="70" />
+                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="71" />
+                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="72" />
+                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="73" />
+                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="74" />
+                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="75" />
+                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="76" />
+                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="77" />
+                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="78" />
+                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="79" />
+                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="80" />
+                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="81" />
+                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="82" />
+                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="83" />
+                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="84" />
+                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="85" />
+                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="86" />
+                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="87" />
+                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="88" />
+                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="89" />
+                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="90" />
+                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="91" />
+                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="92" />
+                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="93" />
+                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="94" />
+                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="95" />
+                  <Column Name="MineBypassFlowRate_ExperimentControl" Width="231" VisibleIndex="50" />
                 </Columns>
               </ScenarioTable>
             </ExperimentDesign>
@@ -1679,14 +1694,703 @@
             </ExperimentPivotGrid>
           </ViewInfo>
         </Experiment>
+        <Experiment Name="Case1MineProductStockpile_5Years" ConfidenceLevel="Point95" LowerPercentile="25" UpperPercentile="75" DefaultReplications="10" ConcurrentReplicationLimit="3" ReplicationRunner="External32Bit">
+          <Warmup Units="Hours">0</Warmup>
+          <Scenarios>
+            <Scenario Name="150kt Stockpile" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="250kt Stockpile" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">250000</Property>
+                <Property Name="MineStockpile2LACCapacity">250000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="500kt Stockpile" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">500000</Property>
+                <Property Name="MineStockpile2LACCapacity">500000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="1Mt Stockpile" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">1000000</Property>
+                <Property Name="MineStockpile2LACCapacity">1000000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Blank" ReplicationsRequired="0">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="150kt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="250kt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">250000</Property>
+                <Property Name="MineStockpile2LACCapacity">250000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="500kt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">500000</Property>
+                <Property Name="MineStockpile2LACCapacity">500000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="1Mt Stockpile-2000t Surge Bin" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="MineStockpile1UGCCapacity">1000000</Property>
+                <Property Name="MineStockpile2LACCapacity">1000000</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+          </Scenarios>
+          <Controls>
+            <Control Name="Enable2" />
+            <Control Name="Enable4" />
+            <Control Name="Enable6" />
+            <Control Name="Enable8" />
+            <Control Name="StoppingThreshold" />
+            <Control Name="AccellerationDelay" />
+            <Control Name="MaximumCyclingTrains" />
+            <Control Name="EnableTrainFailures" />
+            <Control Name="DistanceToNextFailure" />
+            <Control Name="TimeToRepair" />
+            <Control Name="StandardMaintenance" />
+            <Control Name="AdditionalMaintenance" />
+            <Control Name="EnableTrackShutdowns" />
+            <Control Name="PortPreUnloadingDelay" />
+            <Control Name="PortPostUnloadingDelay" />
+            <Control Name="MinePreLoadingDelay" />
+            <Control Name="MinePostLoadingDelay" />
+            <Control Name="WriteTrainLogToFile" />
+            <Control Name="WriteTrainSummariesToFile" />
+            <Control Name="WriteShipLogToFile" />
+            <Control Name="WriteShipSummariesToFile" />
+            <Control Name="WriteAnnualPortSummary" />
+            <Control Name="EnableRollingStockpile" />
+            <Control Name="EnableShiploaderPlannedShutdowns" />
+            <Control Name="EnableBerth2" />
+            <Control Name="EnableTideConstraints" />
+            <Control Name="EnablePortWeatherShutdowns" />
+            <Control Name="PortStockpileReclaimRate" />
+            <Control Name="PortStockpileStackingRate" />
+            <Control Name="EastUGCStockpileSize" />
+            <Control Name="WestLACStockpileSize" />
+            <Control Name="MineStockpile1UGCCapacity" />
+            <Control Name="MineStockpile2LACCapacity" />
+            <Control Name="WriteHourlyPortStockpile" />
+            <Control Name="TrainSize" />
+            <Control Name="PortShiploadingSurgeBinWeightCapacity" />
+            <Control Name="WritePTPSummary" />
+            <Control Name="LogTitle" />
+            <Control Name="LogDescription" />
+            <Control Name="InitialRequestTrainThreshold" />
+            <Control Name="Include0ValuesInBlockageTallies" />
+            <Control Name="T1DivertRate" />
+            <Control Name="T1DivertAmount" />
+            <Control Name="IsCampaignRailing" />
+            <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassFlowRate" />
+          </Controls>
+          <Responses>
+            <Response Name="MineLACProductStockpileAvgContents" Expression="Mine.Tally_Stockpile1Contents.Average / 1000" />
+            <Response Name="MineUGCProductStockpileAvgContents" Expression="Mine.Tally_Stockpile2Contents.Average / 1000" />
+            <Response Name="MineTLOProductLoaded" Expression="(Mine.Output@Stockpile1.FlowRegulator.CurrentWeightFlowOut + Mine.Output@Stockpile2.FlowRegulator.CurrentWeightFlowOut) / 1000000000" />
+            <Response Name="AvgTimeBetweenTrainsAtTLO" Expression="Tally_IdleTimeAtTLO.Average" />
+            <Response Name="RailCycleTime" Expression="Tally_TrainCycleTime.Average" />
+            <Response Name="RailOperatingCycleTime" Expression="Tally_RailOperatingCycleTime.Average" />
+            <Response Name="EmptyTravelTime" Expression="Tally_EmptyTrainTrainYardExited_DumperArrival.Average" />
+            <Response Name="LoadedTravelTime" Expression="Tally_LoadedTrainLoaderExit_DumperArrival.Average" />
+            <Response Name="EmptyTrainBlockedSiding1ToMine" Expression="Tally_BlockedS1ToMine.Average" />
+            <Response Name="EmptyTrainBlockedSiding3ToMine" Expression="Tally_BlockedS3ToMine.Average" />
+            <Response Name="EmptyTrainBlockedSiding5ToMine" Expression="Tally_BlockedS5ToMine.Average" />
+            <Response Name="EmptyTrainBlockedSiding7ToMine" Expression="Tally_BlockedS7ToMine.Average" />
+            <Response Name="EmptyTrainBlockedSiding9ToMine" Expression="Tally_BlockedS9ToMine.Average" />
+            <Response Name="LoadedTrainBlockedSiding9ToPort" Expression="Tally_BlockedS9ToPort.Average" />
+            <Response Name="LoadedTrainBlockedSiding7ToPort" Expression="Tally_BlockedS7ToPort.Average" />
+            <Response Name="LoadedTrainBlockedSiding5ToPort" Expression="Tally_BlockedS5ToPort.Average" />
+            <Response Name="LoadedTrainBlockedSiding3ToPort" Expression="Tally_BlockedS3ToPort.Average" />
+            <Response Name="LoadedTrainBlockedSiding1ToPort" Expression="Tally_BlockedS1ToPort.Average" />
+            <Response Name="LoadedTrainBlockedTimeAvg" Expression="Tally_LoadedTrainTotalSidingBlockedTime.Average" />
+            <Response Name="EmptyTrainBlockedTimeAvg" Expression="Tally_EmptyTrainTotalSidingBlockedTime.Average" />
+            <Response Name="TrainProvisioningTime" Expression="Tally_TrainMaintenance.Average" />
+            <Response Name="TrainLoadingTime" Expression="Tally_TrainLoadingTime.Average" />
+            <Response Name="TrainUnloadingTime" Expression="Tally_TrainUnloadingTime.Average" />
+            <Response Name="PortDumperThroughput" Expression="Port.DumperSplit.FlowRegulator.CurrentWeightFlowOut / 1000000000 / (Run.EndingTime / 8760)" />
+            <Response Name="PortShiploaderThroughput" Expression="Port.BerthJunction.FlowRegulator.CurrentWeightFlowOut / 1000000000 / (Run.EndingTime / 8760)" Primary="True" />
+            <Response Name="DumperUnloadingTime" Expression="Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3) + Port.DumperStates.TotalTime(4) + Port.DumperStates.TotalTime(5) + Port.DumperStates.TotalTime(7)" />
+            <Response Name="DumperPositioningTime" Expression="Port.DumperStates.TotalTime(1) + Port.DumperStates.TotalTime(6)" />
+            <Response Name="DumperMaintenanceShutdownTime" Expression="Port.DumperStates.TotalTime(8) + Port.DumperStates.TotalTime(10)" />
+            <Response Name="DumperWeatherDownTime" Expression="Port.DumperStates.TotalTime(11)" />
+            <Response Name="DumperIdleTime" Expression="Port.DumperStates.TotalTime(0) + Port.DumperStates.TotalTime(9)" />
+            <Response Name="ShiploadingOccupiedTime" Expression="Port.BerthStates.TotalTime(1) - Port.ShiploaderStates.TotalTime(2) + Port.BerthStates.TotalTime(6) + Port.ShiploaderStates.TotalTime(2)" />
+            <Response Name="ShiploadingPositioningTime" Expression="Port.BerthStates.TotalTime(2) + Port.BerthStates.TotalTime(3)" />
+            <Response Name="ShiploadingMaintenanceDownTime" Expression="Port.BerthStates.TotalTime(5) + Port.BerthStates.TotalTime(7)" />
+            <Response Name="ShiploadingWeatherDownTime" Expression="Port.BerthStates.TotalTime(4)" />
+            <Response Name="ShiploadingIdleTime" Expression="Port.BerthStates.TotalTime(0)" />
+            <Response Name="PortStockpileAvgTotalContents" Expression="Port.Hourly_TotalPortStockpile.Average / 1000" />
+            <Response Name="PortOpenCutStockpileAvgContents" Expression="Port.Hourly_StockpileProduct1LAC.Average / 1000" />
+            <Response Name="PortUndergroundStockpileAvgContents" Expression="Port.Hourly_StockpileProduct2UGC.Average / 1000" />
+            <Response Name="AvgShipLoadingTime" Expression="Tally_ShipTotalLoadingTime.Average" />
+            <Response Name="AvgShipTimeInBerth" Expression="Tally_ShipTotalTimeInBerth.Average" />
+            <Response Name="AvgShipTTIP" Expression="Tally_ShipTotalTimeInPort.Average" />
+            <Response Name="AvgIdleTimeAtDumper" Expression="Tally_IdleTimeAtDumper.Average" />
+            <Response Name="AvgIdleTimeAtBerth" Expression="Tally_IdleTimeAtBerth.Average" />
+            <Response Name="PercentDirectLoading" Expression="(Port.DumperStates.TotalTime(3) / Math.If((Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3)) &gt; 0, Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3), 1)) * 100" />
+            <Response Name="EndTime" Expression="Run.EndingTime" />
+          </Responses>
+          <BinaryResults>
+            <FileRef Name="Results\RailPortModel\Case1MineProductStockpile_5Years Results.stats" />
+          </BinaryResults>
+          <ResponseResults>
+            <FileRef Name="Results\RailPortModel\Case1MineProductStockpile_5Years ResponseResults.xml" />
+          </ResponseResults>
+          <ViewInfo>
+            <ExperimentDesign>
+              <ScenarioTable FilterEnabled="True">
+                <Columns>
+                  <Column Name="Active" Width="32" VisibleIndex="0" />
+                  <Column Name="InstanceName" Width="169" VisibleIndex="1" />
+                  <Column Name="StatusWrapper" Width="50" VisibleIndex="2" />
+                  <Column Name="ReplicationsRequired" Width="72" VisibleIndex="3" />
+                  <Column Name="ReplicationsCompleted" Width="70" VisibleIndex="4" />
+                  <Column Name="Enable2_ExperimentControl" Width="57" VisibleIndex="5" />
+                  <Column Name="Enable4_ExperimentControl" Width="57" VisibleIndex="6" />
+                  <Column Name="Enable6_ExperimentControl" Width="57" VisibleIndex="7" />
+                  <Column Name="Enable8_ExperimentControl" Width="67" VisibleIndex="8" />
+                  <Column Name="StoppingThreshold_ExperimentControl" Width="147" VisibleIndex="9" />
+                  <Column Name="AccellerationDelay_ExperimentControl" Width="155" VisibleIndex="10" />
+                  <Column Name="MaximumCyclingTrains_ExperimentControl" Width="136" VisibleIndex="13" />
+                  <Column Name="EnableTrainFailures_ExperimentControl" Width="112" VisibleIndex="15" />
+                  <Column Name="DistanceToNextFailure_ExperimentControl" Width="197" VisibleIndex="16" />
+                  <Column Name="TimeToRepair_ExperimentControl" Width="133" VisibleIndex="17" />
+                  <Column Name="StandardMaintenance_ExperimentControl" Width="163" VisibleIndex="18" />
+                  <Column Name="AdditionalMaintenance_ExperimentControl" Width="166" VisibleIndex="19" />
+                  <Column Name="EnableTrackShutdowns_ExperimentControl" Width="130" VisibleIndex="20" />
+                  <Column Name="PortPreUnloadingDelay_ExperimentControl" Width="177" VisibleIndex="21" />
+                  <Column Name="PortPostUnloadingDelay_ExperimentControl" Width="182" VisibleIndex="22" />
+                  <Column Name="MinePreLoadingDelay_ExperimentControl" Width="169" VisibleIndex="23" />
+                  <Column Name="MinePostLoadingDelay_ExperimentControl" Width="174" VisibleIndex="24" />
+                  <Column Name="WriteTrainLogToFile_ExperimentControl" Width="114" VisibleIndex="25" />
+                  <Column Name="WriteTrainSummariesToFile_ExperimentControl" Width="148" VisibleIndex="26" />
+                  <Column Name="WriteShipLogToFile_ExperimentControl" Width="110" VisibleIndex="27" />
+                  <Column Name="WriteShipSummariesToFile_ExperimentControl" Width="144" VisibleIndex="28" />
+                  <Column Name="WriteAnnualPortSummary_ExperimentControl" Width="142" VisibleIndex="29" />
+                  <Column Name="EnableRollingStockpile_ExperimentControl" Width="134" VisibleIndex="31" />
+                  <Column Name="EnableShiploaderPlannedShutdowns_ExperimentControl" Width="192" VisibleIndex="32" />
+                  <Column Name="EnableBerth2_ExperimentControl" Width="83" VisibleIndex="33" />
+                  <Column Name="EnableTideConstraints_ExperimentControl" Width="126" VisibleIndex="34" />
+                  <Column Name="EnablePortWeatherShutdowns_ExperimentControl" Width="166" VisibleIndex="35" />
+                  <Column Name="PortStockpileReclaimRate_ExperimentControl" Width="251" VisibleIndex="36" />
+                  <Column Name="PortStockpileStackingRate_ExperimentControl" Width="210" VisibleIndex="37" />
+                  <Column Name="EastUGCStockpileSize_ExperimentControl" Width="188" VisibleIndex="38" />
+                  <Column Name="WestLACStockpileSize_ExperimentControl" Width="200" VisibleIndex="39" />
+                  <Column Name="MineStockpile1UGCCapacity_ExperimentControl" Width="228" VisibleIndex="41" />
+                  <Column Name="MineStockpile2LACCapacity_ExperimentControl" Width="216" VisibleIndex="42" />
+                  <Column Name="WriteHourlyPortStockpile_ExperimentControl" Width="138" VisibleIndex="30" />
+                  <Column Name="TrainSize_ExperimentControl" Width="128" VisibleIndex="14" />
+                  <Column Name="PortShiploadingSurgeBinWeightCapacity_ExperimentControl" Width="287" VisibleIndex="40" />
+                  <Column Name="WritePTPSummary_ExperimentControl" Width="117" VisibleIndex="43" />
+                  <Column Name="LogTitle_ExperimentControl" Width="72" VisibleIndex="44" />
+                  <Column Name="LogDescription_ExperimentControl" Width="296" VisibleIndex="45" />
+                  <Column Name="InitialRequestTrainThreshold_ExperimentControl" Width="156" VisibleIndex="11" />
+                  <Column Name="Include0ValuesInBlockageTallies_ExperimentControl" Width="182" VisibleIndex="12" />
+                  <Column Name="T1DivertRate_ExperimentControl" Width="194" VisibleIndex="46" />
+                  <Column Name="T1DivertAmount_ExperimentControl" Width="97" VisibleIndex="47" />
+                  <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="48" />
+                  <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="208" VisibleIndex="49" />
+                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="51" />
+                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="52" />
+                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="53" />
+                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="54" />
+                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="55" />
+                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="56" />
+                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="57" />
+                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="58" />
+                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
+                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
+                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
+                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
+                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="63" />
+                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
+                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
+                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
+                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
+                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="68" />
+                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="69" />
+                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="70" />
+                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="71" />
+                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="72" />
+                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="73" />
+                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="74" />
+                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="75" />
+                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="76" />
+                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="77" />
+                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="78" />
+                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="79" />
+                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="80" />
+                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="81" />
+                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="82" />
+                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="83" />
+                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="84" />
+                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="85" />
+                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="86" />
+                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="87" />
+                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="88" />
+                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="89" />
+                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="90" />
+                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="91" />
+                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="92" />
+                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="93" />
+                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="94" />
+                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="95" />
+                  <Column Name="MineBypassFlowRate_ExperimentControl" Width="231" VisibleIndex="50" />
+                </Columns>
+              </ScenarioTable>
+            </ExperimentDesign>
+            <ExperimentPivotGrid>
+              <DevExpressIncantation Layout="&lt;XtraSerializer version=&quot;1.0&quot; application=&quot;PivotGrid&quot;&gt;&#xD;&#xA;  &lt;property name=&quot;#LayoutVersion&quot; /&gt;&#xD;&#xA;  &lt;property name=&quot;Prefilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Enabled&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Criteria&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;OptionsBehavior&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;ApplyBestFitOnFieldDragging&quot;&gt;true&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Fields&quot; iskey=&quot;true&quot; value=&quot;12&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ScenarioName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldScenarioName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item2&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ObjectType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;12&quot;&gt;&#xD;&#xA;          &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Resource&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item2&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;RequestEntity&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item3&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Track&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item4&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;ShipGenerator&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item5&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;TrainEntity&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item6&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;TimePath&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item7&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Source&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item8&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;MineModelRev18&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item9&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;ShipEntity&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item10&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Server&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item11&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;PortModelRev2&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item12&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Sink&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;        &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea, FilterArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldObjectType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;110&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item3&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ObjectName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldObjectName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;120&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item4&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;DataSource&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldDataSource&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;120&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item5&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StatisticCategory&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;4&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea, FilterArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldStatisticCategory&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item6&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;DataItem&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldDataItem&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;4&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;115&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item7&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StatisticTypeForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;6&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;1&quot;&gt;&#xD;&#xA;          &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Minimum&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;        &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldStatisticType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;85&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item8&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;AverageForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;7&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueAverage&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item9&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;MinimumForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;8&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueMinimum&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;53&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item10&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;MaximumForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;9&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueMaximum&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;57&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item11&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;HalfWidthForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;10&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueHalfWidth&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;63&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item12&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StandardDeviationForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;11&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueStandardDeviation&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;59&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;OptionsCustomization&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;AllowExpand&quot;&gt;false&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Groups&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;&lt;/XtraSerializer&gt;" />
+            </ExperimentPivotGrid>
+          </ViewInfo>
+        </Experiment>
+        <Experiment Name="Case2BypassRate_5Years" ConfidenceLevel="Point95" LowerPercentile="25" UpperPercentile="75" DefaultReplications="10" ConcurrentReplicationLimit="3" ReplicationRunner="External32Bit">
+          <Warmup Units="Hours">0</Warmup>
+          <Scenarios>
+            <Scenario Name="2300tph Bypass" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="2500tph Bypass" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassFlowRate">2500</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="2700tph Bypass" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassFlowRate">2700</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="3000tph Bypass" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="T1DivertAmount" Units="Kilograms">0.0</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassFlowRate">3000</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Blank" ReplicationsRequired="0">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="2300tph Bypass-2000t Surge Bin" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="2500tph Bypass-2000t Surge Bin" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassFlowRate">2500</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="2700tph Bypass-2000t Surge Bin" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassFlowRate">2700</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="3000tph Bypass-2000t Surge Bin" ReplicationsCompleted="10">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="DistanceToNextFailure">500</Property>
+                <Property Name="TimeToRepair">0</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">2000</Property>
+                <Property Name="Include0ValuesInBlockageTallies">True</Property>
+                <Property Name="CampaignRailingTrainInterval">0.0</Property>
+                <Property Name="MineBypassFlowRate">3000</Property>
+              </Properties>
+            </Scenario>
+          </Scenarios>
+          <Controls>
+            <Control Name="Enable2" />
+            <Control Name="Enable4" />
+            <Control Name="Enable6" />
+            <Control Name="Enable8" />
+            <Control Name="StoppingThreshold" />
+            <Control Name="AccellerationDelay" />
+            <Control Name="MaximumCyclingTrains" />
+            <Control Name="EnableTrainFailures" />
+            <Control Name="DistanceToNextFailure" />
+            <Control Name="TimeToRepair" />
+            <Control Name="StandardMaintenance" />
+            <Control Name="AdditionalMaintenance" />
+            <Control Name="EnableTrackShutdowns" />
+            <Control Name="PortPreUnloadingDelay" />
+            <Control Name="PortPostUnloadingDelay" />
+            <Control Name="MinePreLoadingDelay" />
+            <Control Name="MinePostLoadingDelay" />
+            <Control Name="WriteTrainLogToFile" />
+            <Control Name="WriteTrainSummariesToFile" />
+            <Control Name="WriteShipLogToFile" />
+            <Control Name="WriteShipSummariesToFile" />
+            <Control Name="WriteAnnualPortSummary" />
+            <Control Name="EnableRollingStockpile" />
+            <Control Name="EnableShiploaderPlannedShutdowns" />
+            <Control Name="EnableBerth2" />
+            <Control Name="EnableTideConstraints" />
+            <Control Name="EnablePortWeatherShutdowns" />
+            <Control Name="PortStockpileReclaimRate" />
+            <Control Name="PortStockpileStackingRate" />
+            <Control Name="EastUGCStockpileSize" />
+            <Control Name="WestLACStockpileSize" />
+            <Control Name="MineStockpile1UGCCapacity" />
+            <Control Name="MineStockpile2LACCapacity" />
+            <Control Name="WriteHourlyPortStockpile" />
+            <Control Name="TrainSize" />
+            <Control Name="PortShiploadingSurgeBinWeightCapacity" />
+            <Control Name="WritePTPSummary" />
+            <Control Name="LogTitle" />
+            <Control Name="LogDescription" />
+            <Control Name="InitialRequestTrainThreshold" />
+            <Control Name="Include0ValuesInBlockageTallies" />
+            <Control Name="T1DivertRate" />
+            <Control Name="T1DivertAmount" />
+            <Control Name="IsCampaignRailing" />
+            <Control Name="CampaignRailingTrainInterval" />
+            <Control Name="MineBypassFlowRate" />
+          </Controls>
+          <Responses>
+            <Response Name="MineLACProductStockpileAvgContents" Expression="Mine.Tally_Stockpile1Contents.Average / 1000" />
+            <Response Name="MineUGCProductStockpileAvgContents" Expression="Mine.Tally_Stockpile2Contents.Average / 1000" />
+            <Response Name="MineTLOProductLoaded" Expression="(Mine.Output@Stockpile1.FlowRegulator.CurrentWeightFlowOut + Mine.Output@Stockpile2.FlowRegulator.CurrentWeightFlowOut) / 1000000000" />
+            <Response Name="AvgTimeBetweenTrainsAtTLO" Expression="Tally_IdleTimeAtTLO.Average" />
+            <Response Name="RailCycleTime" Expression="Tally_TrainCycleTime.Average" />
+            <Response Name="RailOperatingCycleTime" Expression="Tally_RailOperatingCycleTime.Average" />
+            <Response Name="EmptyTravelTime" Expression="Tally_EmptyTrainTrainYardExited_DumperArrival.Average" />
+            <Response Name="LoadedTravelTime" Expression="Tally_LoadedTrainLoaderExit_DumperArrival.Average" />
+            <Response Name="EmptyTrainBlockedSiding1ToMine" Expression="Tally_BlockedS1ToMine.Average" />
+            <Response Name="EmptyTrainBlockedSiding3ToMine" Expression="Tally_BlockedS3ToMine.Average" />
+            <Response Name="EmptyTrainBlockedSiding5ToMine" Expression="Tally_BlockedS5ToMine.Average" />
+            <Response Name="EmptyTrainBlockedSiding7ToMine" Expression="Tally_BlockedS7ToMine.Average" />
+            <Response Name="EmptyTrainBlockedSiding9ToMine" Expression="Tally_BlockedS9ToMine.Average" />
+            <Response Name="LoadedTrainBlockedSiding9ToPort" Expression="Tally_BlockedS9ToPort.Average" />
+            <Response Name="LoadedTrainBlockedSiding7ToPort" Expression="Tally_BlockedS7ToPort.Average" />
+            <Response Name="LoadedTrainBlockedSiding5ToPort" Expression="Tally_BlockedS5ToPort.Average" />
+            <Response Name="LoadedTrainBlockedSiding3ToPort" Expression="Tally_BlockedS3ToPort.Average" />
+            <Response Name="LoadedTrainBlockedSiding1ToPort" Expression="Tally_BlockedS1ToPort.Average" />
+            <Response Name="LoadedTrainBlockedTimeAvg" Expression="Tally_LoadedTrainTotalSidingBlockedTime.Average" />
+            <Response Name="EmptyTrainBlockedTimeAvg" Expression="Tally_EmptyTrainTotalSidingBlockedTime.Average" />
+            <Response Name="TrainProvisioningTime" Expression="Tally_TrainMaintenance.Average" />
+            <Response Name="TrainLoadingTime" Expression="Tally_TrainLoadingTime.Average" />
+            <Response Name="TrainUnloadingTime" Expression="Tally_TrainUnloadingTime.Average" />
+            <Response Name="PortDumperThroughput" Expression="Port.DumperSplit.FlowRegulator.CurrentWeightFlowOut / 1000000000 / (Run.EndingTime / 8760)" />
+            <Response Name="PortShiploaderThroughput" Expression="Port.BerthJunction.FlowRegulator.CurrentWeightFlowOut / 1000000000 / (Run.EndingTime / 8760)" Primary="True" />
+            <Response Name="DumperUnloadingTime" Expression="Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3) + Port.DumperStates.TotalTime(4) + Port.DumperStates.TotalTime(5) + Port.DumperStates.TotalTime(7)" />
+            <Response Name="DumperPositioningTime" Expression="Port.DumperStates.TotalTime(1) + Port.DumperStates.TotalTime(6)" />
+            <Response Name="DumperMaintenanceShutdownTime" Expression="Port.DumperStates.TotalTime(8) + Port.DumperStates.TotalTime(10)" />
+            <Response Name="DumperWeatherDownTime" Expression="Port.DumperStates.TotalTime(11)" />
+            <Response Name="DumperIdleTime" Expression="Port.DumperStates.TotalTime(0) + Port.DumperStates.TotalTime(9)" />
+            <Response Name="ShiploadingOccupiedTime" Expression="Port.BerthStates.TotalTime(1) - Port.ShiploaderStates.TotalTime(2) + Port.BerthStates.TotalTime(6) + Port.ShiploaderStates.TotalTime(2)" />
+            <Response Name="ShiploadingPositioningTime" Expression="Port.BerthStates.TotalTime(2) + Port.BerthStates.TotalTime(3)" />
+            <Response Name="ShiploadingMaintenanceDownTime" Expression="Port.BerthStates.TotalTime(5) + Port.BerthStates.TotalTime(7)" />
+            <Response Name="ShiploadingWeatherDownTime" Expression="Port.BerthStates.TotalTime(4)" />
+            <Response Name="ShiploadingIdleTime" Expression="Port.BerthStates.TotalTime(0)" />
+            <Response Name="PortStockpileAvgTotalContents" Expression="Port.Hourly_TotalPortStockpile.Average / 1000" />
+            <Response Name="PortOpenCutStockpileAvgContents" Expression="Port.Hourly_StockpileProduct1LAC.Average / 1000" />
+            <Response Name="PortUndergroundStockpileAvgContents" Expression="Port.Hourly_StockpileProduct2UGC.Average / 1000" />
+            <Response Name="AvgShipLoadingTime" Expression="Tally_ShipTotalLoadingTime.Average" />
+            <Response Name="AvgShipTimeInBerth" Expression="Tally_ShipTotalTimeInBerth.Average" />
+            <Response Name="AvgShipTTIP" Expression="Tally_ShipTotalTimeInPort.Average" />
+            <Response Name="AvgIdleTimeAtDumper" Expression="Tally_IdleTimeAtDumper.Average" />
+            <Response Name="AvgIdleTimeAtBerth" Expression="Tally_IdleTimeAtBerth.Average" />
+            <Response Name="PercentDirectLoading" Expression="(Port.DumperStates.TotalTime(3) / Math.If((Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3)) &gt; 0, Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3), 1)) * 100" />
+            <Response Name="EndTime" Expression="Run.EndingTime" />
+          </Responses>
+          <BinaryResults>
+            <FileRef Name="Results\RailPortModel\Case2BypassRate_5Years Results.stats" />
+          </BinaryResults>
+          <ResponseResults>
+            <FileRef Name="Results\RailPortModel\Case2BypassRate_5Years ResponseResults.xml" />
+          </ResponseResults>
+          <ViewInfo ActiveExperiment="True" ActiveView="Responses">
+            <ExperimentDesign>
+              <ScenarioTable FilterEnabled="True">
+                <Columns>
+                  <Column Name="Active" Width="32" VisibleIndex="0" />
+                  <Column Name="InstanceName" Width="174" VisibleIndex="1" />
+                  <Column Name="StatusWrapper" Width="50" VisibleIndex="2" />
+                  <Column Name="ReplicationsRequired" Width="72" VisibleIndex="3" />
+                  <Column Name="ReplicationsCompleted" Width="70" VisibleIndex="4" />
+                  <Column Name="Enable2_ExperimentControl" Width="57" VisibleIndex="5" />
+                  <Column Name="Enable4_ExperimentControl" Width="57" VisibleIndex="6" />
+                  <Column Name="Enable6_ExperimentControl" Width="57" VisibleIndex="7" />
+                  <Column Name="Enable8_ExperimentControl" Width="67" VisibleIndex="8" />
+                  <Column Name="StoppingThreshold_ExperimentControl" Width="147" VisibleIndex="9" />
+                  <Column Name="AccellerationDelay_ExperimentControl" Width="155" VisibleIndex="10" />
+                  <Column Name="MaximumCyclingTrains_ExperimentControl" Width="136" VisibleIndex="13" />
+                  <Column Name="EnableTrainFailures_ExperimentControl" Width="112" VisibleIndex="15" />
+                  <Column Name="DistanceToNextFailure_ExperimentControl" Width="197" VisibleIndex="16" />
+                  <Column Name="TimeToRepair_ExperimentControl" Width="133" VisibleIndex="17" />
+                  <Column Name="StandardMaintenance_ExperimentControl" Width="163" VisibleIndex="18" />
+                  <Column Name="AdditionalMaintenance_ExperimentControl" Width="166" VisibleIndex="19" />
+                  <Column Name="EnableTrackShutdowns_ExperimentControl" Width="130" VisibleIndex="20" />
+                  <Column Name="PortPreUnloadingDelay_ExperimentControl" Width="177" VisibleIndex="21" />
+                  <Column Name="PortPostUnloadingDelay_ExperimentControl" Width="182" VisibleIndex="22" />
+                  <Column Name="MinePreLoadingDelay_ExperimentControl" Width="169" VisibleIndex="23" />
+                  <Column Name="MinePostLoadingDelay_ExperimentControl" Width="174" VisibleIndex="24" />
+                  <Column Name="WriteTrainLogToFile_ExperimentControl" Width="114" VisibleIndex="25" />
+                  <Column Name="WriteTrainSummariesToFile_ExperimentControl" Width="148" VisibleIndex="26" />
+                  <Column Name="WriteShipLogToFile_ExperimentControl" Width="110" VisibleIndex="27" />
+                  <Column Name="WriteShipSummariesToFile_ExperimentControl" Width="144" VisibleIndex="28" />
+                  <Column Name="WriteAnnualPortSummary_ExperimentControl" Width="142" VisibleIndex="29" />
+                  <Column Name="EnableRollingStockpile_ExperimentControl" Width="134" VisibleIndex="31" />
+                  <Column Name="EnableShiploaderPlannedShutdowns_ExperimentControl" Width="192" VisibleIndex="32" />
+                  <Column Name="EnableBerth2_ExperimentControl" Width="83" VisibleIndex="33" />
+                  <Column Name="EnableTideConstraints_ExperimentControl" Width="126" VisibleIndex="34" />
+                  <Column Name="EnablePortWeatherShutdowns_ExperimentControl" Width="166" VisibleIndex="35" />
+                  <Column Name="PortStockpileReclaimRate_ExperimentControl" Width="251" VisibleIndex="36" />
+                  <Column Name="PortStockpileStackingRate_ExperimentControl" Width="210" VisibleIndex="37" />
+                  <Column Name="EastUGCStockpileSize_ExperimentControl" Width="188" VisibleIndex="38" />
+                  <Column Name="WestLACStockpileSize_ExperimentControl" Width="200" VisibleIndex="39" />
+                  <Column Name="MineStockpile1UGCCapacity_ExperimentControl" Width="228" VisibleIndex="41" />
+                  <Column Name="MineStockpile2LACCapacity_ExperimentControl" Width="216" VisibleIndex="42" />
+                  <Column Name="WriteHourlyPortStockpile_ExperimentControl" Width="138" VisibleIndex="30" />
+                  <Column Name="TrainSize_ExperimentControl" Width="128" VisibleIndex="14" />
+                  <Column Name="PortShiploadingSurgeBinWeightCapacity_ExperimentControl" Width="287" VisibleIndex="40" />
+                  <Column Name="WritePTPSummary_ExperimentControl" Width="117" VisibleIndex="43" />
+                  <Column Name="LogTitle_ExperimentControl" Width="72" VisibleIndex="44" />
+                  <Column Name="LogDescription_ExperimentControl" Width="296" VisibleIndex="45" />
+                  <Column Name="InitialRequestTrainThreshold_ExperimentControl" Width="156" VisibleIndex="11" />
+                  <Column Name="Include0ValuesInBlockageTallies_ExperimentControl" Width="182" VisibleIndex="12" />
+                  <Column Name="T1DivertRate_ExperimentControl" Width="194" VisibleIndex="46" />
+                  <Column Name="T1DivertAmount_ExperimentControl" Width="97" VisibleIndex="47" />
+                  <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="48" />
+                  <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="208" VisibleIndex="49" />
+                  <Column Name="MineBypassFlowRate_ExperimentControl" Width="241" VisibleIndex="50" />
+                  <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="51" />
+                  <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="52" />
+                  <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="53" />
+                  <Column Name="AvgTimeBetweenTrainsAtTLO_ExperimentResponse" Width="161" VisibleIndex="54" />
+                  <Column Name="RailCycleTime_ExperimentResponse" Width="84" VisibleIndex="55" />
+                  <Column Name="RailOperatingCycleTime_ExperimentResponse" Width="132" VisibleIndex="56" />
+                  <Column Name="EmptyTravelTime_ExperimentResponse" Width="101" VisibleIndex="57" />
+                  <Column Name="LoadedTravelTime_ExperimentResponse" Width="106" VisibleIndex="58" />
+                  <Column Name="EmptyTrainBlockedSiding1ToMine_ExperimentResponse" Width="177" VisibleIndex="59" />
+                  <Column Name="EmptyTrainBlockedSiding3ToMine_ExperimentResponse" Width="177" VisibleIndex="60" />
+                  <Column Name="EmptyTrainBlockedSiding5ToMine_ExperimentResponse" Width="177" VisibleIndex="61" />
+                  <Column Name="EmptyTrainBlockedSiding7ToMine_ExperimentResponse" Width="177" VisibleIndex="62" />
+                  <Column Name="EmptyTrainBlockedSiding9ToMine_ExperimentResponse" Width="177" VisibleIndex="63" />
+                  <Column Name="LoadedTrainBlockedSiding9ToPort_ExperimentResponse" Width="180" VisibleIndex="64" />
+                  <Column Name="LoadedTrainBlockedSiding7ToPort_ExperimentResponse" Width="180" VisibleIndex="65" />
+                  <Column Name="LoadedTrainBlockedSiding5ToPort_ExperimentResponse" Width="180" VisibleIndex="66" />
+                  <Column Name="LoadedTrainBlockedSiding3ToPort_ExperimentResponse" Width="180" VisibleIndex="67" />
+                  <Column Name="LoadedTrainBlockedSiding1ToPort_ExperimentResponse" Width="180" VisibleIndex="68" />
+                  <Column Name="LoadedTrainBlockedTimeAvg_ExperimentResponse" Width="155" VisibleIndex="69" />
+                  <Column Name="EmptyTrainBlockedTimeAvg_ExperimentResponse" Width="150" VisibleIndex="70" />
+                  <Column Name="TrainProvisioningTime_ExperimentResponse" Width="122" VisibleIndex="71" />
+                  <Column Name="TrainLoadingTime_ExperimentResponse" Width="102" VisibleIndex="72" />
+                  <Column Name="TrainUnloadingTime_ExperimentResponse" Width="112" VisibleIndex="73" />
+                  <Column Name="PortDumperThroughput_ExperimentResponse" Width="132" VisibleIndex="74" />
+                  <Column Name="PortShiploaderThroughput_ExperimentResponse" Width="145" VisibleIndex="75" />
+                  <Column Name="DumperUnloadingTime_ExperimentResponse" Width="125" VisibleIndex="76" />
+                  <Column Name="DumperPositioningTime_ExperimentResponse" Width="129" VisibleIndex="77" />
+                  <Column Name="DumperMaintenanceShutdownTime_ExperimentResponse" Width="187" VisibleIndex="78" />
+                  <Column Name="DumperWeatherDownTime_ExperimentResponse" Width="147" VisibleIndex="79" />
+                  <Column Name="DumperIdleTime_ExperimentResponse" Width="96" VisibleIndex="80" />
+                  <Column Name="ShiploadingOccupiedTime_ExperimentResponse" Width="139" VisibleIndex="81" />
+                  <Column Name="ShiploadingPositioningTime_ExperimentResponse" Width="146" VisibleIndex="82" />
+                  <Column Name="ShiploadingMaintenanceDownTime_ExperimentResponse" Width="183" VisibleIndex="83" />
+                  <Column Name="ShiploadingWeatherDownTime_ExperimentResponse" Width="164" VisibleIndex="84" />
+                  <Column Name="ShiploadingIdleTime_ExperimentResponse" Width="113" VisibleIndex="85" />
+                  <Column Name="PortStockpileAvgTotalContents_ExperimentResponse" Width="168" VisibleIndex="86" />
+                  <Column Name="PortOpenCutStockpileAvgContents_ExperimentResponse" Width="187" VisibleIndex="87" />
+                  <Column Name="PortUndergroundStockpileAvgContents_ExperimentResponse" Width="207" VisibleIndex="88" />
+                  <Column Name="AvgShipLoadingTime_ExperimentResponse" Width="117" VisibleIndex="89" />
+                  <Column Name="AvgShipTimeInBerth_ExperimentResponse" Width="116" VisibleIndex="90" />
+                  <Column Name="AvgShipTTIP_ExperimentResponse" Width="80" VisibleIndex="91" />
+                  <Column Name="AvgIdleTimeAtDumper_ExperimentResponse" Width="126" VisibleIndex="92" />
+                  <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="93" />
+                  <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="94" />
+                  <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="95" />
+                </Columns>
+              </ScenarioTable>
+            </ExperimentDesign>
+            <ExperimentPivotGrid>
+              <DevExpressIncantation Layout="&lt;XtraSerializer version=&quot;1.0&quot; application=&quot;PivotGrid&quot;&gt;&#xD;&#xA;  &lt;property name=&quot;#LayoutVersion&quot; /&gt;&#xD;&#xA;  &lt;property name=&quot;Prefilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Enabled&quot;&gt;true&lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Criteria&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;OptionsBehavior&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;ApplyBestFitOnFieldDragging&quot;&gt;true&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Fields&quot; iskey=&quot;true&quot; value=&quot;12&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ScenarioName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldScenarioName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item2&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ObjectType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;12&quot;&gt;&#xD;&#xA;          &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Resource&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item2&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;RequestEntity&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item3&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Track&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item4&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;ShipGenerator&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item5&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;TrainEntity&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item6&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;TimePath&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item7&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Source&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item8&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;MineModelRev18&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item9&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;ShipEntity&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item10&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Server&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item11&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;PortModelRev2&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;          &lt;property name=&quot;Item12&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Sink&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;        &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea, FilterArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldObjectType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;110&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item3&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;ObjectName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldObjectName&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;120&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item4&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;DataSource&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldDataSource&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;120&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item5&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StatisticCategory&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;4&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea, FilterArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldStatisticCategory&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item6&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;DataItem&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldDataItem&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;4&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;115&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item7&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StatisticTypeForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;TotalsVisibility&quot;&gt;None&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;6&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;1&quot;&gt;&#xD;&#xA;          &lt;property name=&quot;Item1&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;            &lt;property name=&quot;Value&quot; type=&quot;System.String&quot;&gt;Minimum&lt;/property&gt;&#xD;&#xA;          &lt;/property&gt;&#xD;&#xA;        &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;RowArea, ColumnArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldStatisticType&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;RowArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;5&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;85&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item8&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;AverageForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;7&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueAverage&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item9&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;MinimumForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;8&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueMinimum&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;1&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;53&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item10&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;MaximumForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;9&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueMaximum&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;2&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;57&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item11&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;HalfWidthForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;10&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueHalfWidth&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;3&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;63&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;    &lt;property name=&quot;Item12&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;      &lt;property name=&quot;SummaryFilter&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ColumnFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;RowFieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Mode&quot;&gt;LastLevel&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;StartValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;EndValue&quot; isnull=&quot;true&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldName&quot;&gt;StandardDeviationForDisplay&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;SortBySummaryInfo&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FieldComponentName&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;Conditions&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Index&quot;&gt;11&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FilterValues&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;Values&quot;&gt;~Xtra#Array0, &lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;DeferFilterString&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ValuesCore&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;ShowBlanks&quot;&gt;true&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FilterType&quot;&gt;Excluded&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;FieldEditName&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;Options&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ShowGrandTotal&quot;&gt;false&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CustomTotals&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;      &lt;property name=&quot;ToolTips&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;ValueText&quot; /&gt;&#xD;&#xA;        &lt;property name=&quot;HeaderText&quot; /&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AllowedAreas&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;CellFormat&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;        &lt;property name=&quot;FormatString&quot;&gt;N4&lt;/property&gt;&#xD;&#xA;        &lt;property name=&quot;FormatType&quot;&gt;Numeric&lt;/property&gt;&#xD;&#xA;      &lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Name&quot;&gt;fieldValueStandardDeviation&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Area&quot;&gt;DataArea&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;AreaIndex&quot;&gt;0&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;ActualSortMode&quot;&gt;Default&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Width&quot;&gt;59&lt;/property&gt;&#xD;&#xA;      &lt;property name=&quot;Visible&quot;&gt;false&lt;/property&gt;&#xD;&#xA;    &lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;OptionsCustomization&quot; isnull=&quot;true&quot; iskey=&quot;true&quot;&gt;&#xD;&#xA;    &lt;property name=&quot;AllowExpand&quot;&gt;false&lt;/property&gt;&#xD;&#xA;  &lt;/property&gt;&#xD;&#xA;  &lt;property name=&quot;Groups&quot; iskey=&quot;true&quot; value=&quot;0&quot; /&gt;&#xD;&#xA;&lt;/XtraSerializer&gt;" />
+            </ExperimentPivotGrid>
+          </ViewInfo>
+        </Experiment>
       </Experiments>
-      <DashboardReports SelectedDashboard="Mine Stockpile Contents">
+      <DashboardReports SelectedDashboard="Port Stockpile Contents">
         <DashboardReport Name="Mine Stockpile Contents" Data="Data\Dashboards\RailPortModel_MineStockpileContents.xml" />
         <DashboardReport Name="Port Stockpile Contents" Data="Data\Dashboards\RailPortModel_PortStockpileContents.xml" />
       </DashboardReports>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="137.540153930457 618.344799194336 -49.5235006822915" Direction="0 -1 2.22044604925031E-16" Zoom="618.344799194336" />
+          <Camera Orientation="Top" Location="137.540153930457 618.344799194336 22.1882593993275" Direction="0 -1 2.22044604925031E-16" Zoom="761.768319357574" />
           <ObjectDisplay Axis="False" Grid="False" Labels="False" LineArrows="False" Background="ffdead" />
         </Facility>
         <Process>
@@ -2057,7 +2761,7 @@
       </DashboardReports>
       <ViewInfo>
         <Facility>
-          <Camera Orientation="Top" Location="-1409.72960660901 448.72987708267 482.095902615228" Direction="0 -1 2.22044604925031E-16" Zoom="448.72987708267" />
+          <Camera Orientation="Top" Location="29.3625915077505 448.729888916016 162.993179888951" Direction="0 -1 2.22044604925031E-16" Zoom="448.729888916016" />
           <ObjectDisplay Axis="False" Grid="False" LineArrows="False" Background="ffffff" />
         </Facility>
         <Process>
@@ -2066,35 +2770,35 @@
             <Category Name="TrainSink AddOn Processes" Expanded="True" />
             <Category Name="UC_Stockpile AddOn Processes" Expanded="True" />
             <Category Name="WeatherShutdownSchedule AddOn Processes" Expanded="True" />
-            <Category Name="Stockpile2 AddOn Processes" />
             <Category Name="Stockpile1 AddOn Processes" Expanded="True" />
             <Category Name="TLOStockpileControl_Processes" Expanded="True" />
-            <Category Name="Output@Stockpile AddOn Processes" Expanded="True" />
-            <Category Name="Conveyor Control Events" Expanded="True" />
             <Category Name="TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="LAC_Feeder AddOn Processes" Expanded="True" />
             <Category Name="LW2GenServer AddOn Processes" Expanded="True" />
             <Category Name="CPPWorkSchedule AddOn Processes" Expanded="True" />
-            <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
             <Category Name="LWDevGenServer AddOn Processes" Expanded="True" />
-            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Raw Coal Events" Expanded="True" />
+            <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
+            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
+            <Category Name="LW1GenServer AddOn Processes" Expanded="True" />
+            <Category Name="Conveyor Control Events" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Stockpile2 AddOn Processes" />
             <Category Name="Group " Expanded="True" />
             <Category Name="TrainTransferNode1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="Output@Stockpile AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="HAC2GenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="LACGenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="ContainerInput@TrainLoadStation AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="HAC1GenServer AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="BasicNode1 AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="LW1GenServer AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="HAC_Feeder AddOn Processes" Expanded="True" />
@@ -3196,7 +3900,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </FixedDefinition>
-      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1405" Author="Sales and Support">
+      <FixedDefinition Name="MineModelRev18" Id="c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4" Revision="1406" Author="Sales and Support">
         <Lists>
           <NodeList Name="TrainLoadList">
             <Items>
@@ -17018,7 +17722,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1569" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1570" Author="Sales and Support" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -26210,7 +26914,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2249" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2250" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -26299,6 +27003,7 @@
           <ExpressionProperty Name="T1DivertAmount" DefaultValue="0" NullString="null" UnitType="Weight" DefaultUnits="Metric Tons" />
           <BooleanProperty Name="IsCampaignRailing" DefaultValue="False" NullString="null" />
           <ExpressionProperty Name="CampaignRailingTrainInterval" DefaultValue="3.5" NullString="null" UnitType="Time" />
+          <RealProperty Name="MineBypassFlowRate" DefaultValue="2300" NullString="null" UnitType="WeightFlowRate" DefaultUnits="Metric Tons per Hour" />
           <Overrides>
             <Override Name="ReportStatistics" Visible="False" />
             <Override Name="ParentCostCenter" Visible="False" />
@@ -36967,6 +37672,9 @@
               <Property Name="Stockpile1Capacity">MineStockpile1UGCCapacity</Property>
               <Property Name="Stockpile2Capacity">MineStockpile2LACCapacity</Property>
               <Property Name="TLOBinSize">0</Property>
+              <Property Name="CV_1401T_FlowRate">MineBypassFlowRate</Property>
+              <Property Name="CV_2401T_FlowRate">MineBypassFlowRate</Property>
+              <Property Name="CV_3303T_FlowRate">4000</Property>
             </Properties>
             <Graphics EditsLocked="True" ExternallyVisible="True">
               <SymbolInstances>
@@ -40650,7 +41358,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="824" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="825" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -42065,7 +42773,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>2249</Revision>
+        <Revision>2250</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -42093,11 +42801,11 @@
       </DefinitionRef>
       <DefinitionRef Name="MineModelRev18">
         <Id>c3b6c5e9-dfe3-44b3-9bd6-ec934009fbf4</Id>
-        <Revision>1405</Revision>
+        <Revision>1406</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>824</Revision>
+        <Revision>825</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -42113,7 +42821,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1569</Revision>
+        <Revision>1570</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -59569,4 +60277,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- D5hBTDbxSRBdnA9MpYtIHTr741+pvtyL5o+8kKACsq6A5bF7uinHw10pIGq8I0zwGFHgxJ9F5ZjIoK1tD5JRbA== -->
+<!-- kZzL1nS8qyeQCSDfdiFnbt6OFYk+PmifZxqO0N9y/wIcDiiLP5hJGj6IQUGo12zf2zbK5WrI5XdaIJvxEMAMYA== -->

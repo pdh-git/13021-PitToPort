@@ -1,0 +1,4098 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResponseResults Model="RailPortModel" Experiment="Case2BypassRate_5Years" FileVersion="94" xmlns="http://www.simio.com/projects/v1">
+  <Observations Scenario="2300tph Bypass" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="PercentDirectLoading">
+    <Observation Value="30.0562460240251" />
+    <Observation Value="29.4654520602613" />
+    <Observation Value="29.9478042633244" />
+    <Observation Value="29.4113638742053" />
+    <Observation Value="29.6301756486529" />
+    <Observation Value="29.4548494212636" />
+    <Observation Value="30.4302645798747" />
+    <Observation Value="30.0230194791655" />
+    <Observation Value="29.9349888466396" />
+    <Observation Value="29.5904434423952" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="AvgIdleTimeAtBerth">
+    <Observation Value="3.9912513817035" />
+    <Observation Value="3.86671545395513" />
+    <Observation Value="3.47878068996768" />
+    <Observation Value="3.84100608701252" />
+    <Observation Value="3.63512493628796" />
+    <Observation Value="4.33981962533679" />
+    <Observation Value="4.33135406520073" />
+    <Observation Value="3.59641531936119" />
+    <Observation Value="3.63506867276724" />
+    <Observation Value="4.14966050840684" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.06507866090651" />
+    <Observation Value="1.07457271568503" />
+    <Observation Value="1.03655648561712" />
+    <Observation Value="1.09328177756056" />
+    <Observation Value="1.05621003718312" />
+    <Observation Value="1.12192456957001" />
+    <Observation Value="1.14414643094739" />
+    <Observation Value="1.08633626906272" />
+    <Observation Value="1.0542354146165" />
+    <Observation Value="1.16500883882472" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="AvgShipTTIP">
+    <Observation Value="2059.6444547599" />
+    <Observation Value="2516.32336890558" />
+    <Observation Value="1998.2990376406" />
+    <Observation Value="2227.31880219387" />
+    <Observation Value="2391.1450632369" />
+    <Observation Value="2639.33263208207" />
+    <Observation Value="2216.70230226393" />
+    <Observation Value="1971.75567085518" />
+    <Observation Value="2333.88779797402" />
+    <Observation Value="2390.94317821165" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="AvgShipTimeInBerth">
+    <Observation Value="31.9481048464418" />
+    <Observation Value="32.8956434860146" />
+    <Observation Value="32.4678518104106" />
+    <Observation Value="32.1363389801388" />
+    <Observation Value="32.314633637871" />
+    <Observation Value="31.8101734856711" />
+    <Observation Value="32.3025246660401" />
+    <Observation Value="32.072636630476" />
+    <Observation Value="32.2030466062498" />
+    <Observation Value="32.4660515588836" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="AvgShipLoadingTime">
+    <Observation Value="28.4666304812607" />
+    <Observation Value="29.1663484770616" />
+    <Observation Value="28.8414238322914" />
+    <Observation Value="28.5410393941979" />
+    <Observation Value="28.6846930645543" />
+    <Observation Value="28.3891647634009" />
+    <Observation Value="28.7894207482156" />
+    <Observation Value="28.493008248731" />
+    <Observation Value="28.608552784622" />
+    <Observation Value="28.9028885973668" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="149237.049316825" />
+    <Observation Value="150829.919991398" />
+    <Observation Value="145388.071904691" />
+    <Observation Value="146089.27469201" />
+    <Observation Value="144298.098788949" />
+    <Observation Value="140491.720368512" />
+    <Observation Value="145357.109746913" />
+    <Observation Value="144252.560455086" />
+    <Observation Value="150809.596337167" />
+    <Observation Value="143060.648251539" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="175309.646484355" />
+    <Observation Value="175917.549260454" />
+    <Observation Value="179894.643372074" />
+    <Observation Value="172512.525490662" />
+    <Observation Value="175035.478917022" />
+    <Observation Value="167221.10225977" />
+    <Observation Value="173869.486724544" />
+    <Observation Value="174005.146575143" />
+    <Observation Value="178900.543558394" />
+    <Observation Value="170016.472954076" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="PortStockpileAvgTotalContents">
+    <Observation Value="324546.695801179" />
+    <Observation Value="326747.46925186" />
+    <Observation Value="325282.715276743" />
+    <Observation Value="318601.800182676" />
+    <Observation Value="319330.499538402" />
+    <Observation Value="307719.123101335" />
+    <Observation Value="319226.59647145" />
+    <Observation Value="318257.707030214" />
+    <Observation Value="329710.139895568" />
+    <Observation Value="313077.121205622" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="ShiploadingIdleTime">
+    <Observation Value="3256.86069836395" />
+    <Observation Value="2919.86971240782" />
+    <Observation Value="2631.90895010492" />
+    <Observation Value="3013.87403907725" />
+    <Observation Value="2746.68176734426" />
+    <Observation Value="3609.74789933959" />
+    <Observation Value="3490.76439357657" />
+    <Observation Value="2740.63009174469" />
+    <Observation Value="2760.13222418724" />
+    <Observation Value="3313.72658025929" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="ShiploadingWeatherDownTime">
+    <Observation Value="213.401246900435" />
+    <Observation Value="282.916799282328" />
+    <Observation Value="300.421201721795" />
+    <Observation Value="305.385471144898" />
+    <Observation Value="414.962695629733" />
+    <Observation Value="240.95152597219" />
+    <Observation Value="278.386966774315" />
+    <Observation Value="271.673766618735" />
+    <Observation Value="298.222510745705" />
+    <Observation Value="222.515810391536" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1491.9099032783" />
+    <Observation Value="1500" />
+    <Observation Value="1490.25009254503" />
+    <Observation Value="1486.07405876585" />
+    <Observation Value="1500" />
+    <Observation Value="1484.46984184981" />
+    <Observation Value="1467.76518088056" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1497.59711275611" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="ShiploadingPositioningTime">
+    <Observation Value="1603.23503994649" />
+    <Observation Value="1577.96591450639" />
+    <Observation Value="1618.15996962475" />
+    <Observation Value="1659.02264673307" />
+    <Observation Value="1726.06026897405" />
+    <Observation Value="1656.17806844044" />
+    <Observation Value="1602.04824300345" />
+    <Observation Value="1708.65277807647" />
+    <Observation Value="1677.8295163571" />
+    <Observation Value="1653.56212307451" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="ShiploadingOccupiedTime">
+    <Observation Value="37234.5931115108" />
+    <Observation Value="37519.2475738035" />
+    <Observation Value="37759.2597860035" />
+    <Observation Value="37335.6437842789" />
+    <Observation Value="37412.295268052" />
+    <Observation Value="36808.652664398" />
+    <Observation Value="36961.0352157651" />
+    <Observation Value="37579.0433635601" />
+    <Observation Value="37563.81574871" />
+    <Observation Value="37112.5983735186" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="DumperIdleTime">
+    <Observation Value="10901.5700978121" />
+    <Observation Value="11119.7377571115" />
+    <Observation Value="10620.7156567984" />
+    <Observation Value="10909.9317782861" />
+    <Observation Value="10673.6200246373" />
+    <Observation Value="11464.2891336455" />
+    <Observation Value="11354.823439487" />
+    <Observation Value="10898.988994594" />
+    <Observation Value="10677.4956628929" />
+    <Observation Value="11191.7910599978" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="DumperWeatherDownTime">
+    <Observation Value="46.4032211679821" />
+    <Observation Value="36.8894992642852" />
+    <Observation Value="26.2991876163438" />
+    <Observation Value="50.2605839475664" />
+    <Observation Value="48.4269172103742" />
+    <Observation Value="28.0047221430902" />
+    <Observation Value="61.0636658098957" />
+    <Observation Value="41.1392059014926" />
+    <Observation Value="55.5482061730008" />
+    <Observation Value="46.9343679229946" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1740" />
+    <Observation Value="1740" />
+    <Observation Value="1738.34560771639" />
+    <Observation Value="1740" />
+    <Observation Value="1710.05269835904" />
+    <Observation Value="1740" />
+    <Observation Value="1679.00965519852" />
+    <Observation Value="1712.34048100706" />
+    <Observation Value="1709.28098960526" />
+    <Observation Value="1736.73281418114" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="DumperPositioningTime">
+    <Observation Value="2242.91718623659" />
+    <Observation Value="2215.24079890062" />
+    <Observation Value="2261.09647998863" />
+    <Observation Value="2235.61346925751" />
+    <Observation Value="2237.61830209543" />
+    <Observation Value="2210.77566194815" />
+    <Observation Value="2223.45373404577" />
+    <Observation Value="2247.96349650678" />
+    <Observation Value="2236.37628207718" />
+    <Observation Value="2217.80322194474" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="DumperUnloadingTime">
+    <Observation Value="28869.1094947833" />
+    <Observation Value="28688.1319447236" />
+    <Observation Value="29153.5430678802" />
+    <Observation Value="28864.1941685088" />
+    <Observation Value="29130.2820576979" />
+    <Observation Value="28356.9304822632" />
+    <Observation Value="28481.6495054589" />
+    <Observation Value="28899.5678219907" />
+    <Observation Value="29121.2988592517" />
+    <Observation Value="28606.7385359533" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="PortShiploaderThroughput">
+    <Observation Value="35.5399999765248" />
+    <Observation Value="35.0899999770236" />
+    <Observation Value="35.8007403518156" />
+    <Observation Value="35.3895037336407" />
+    <Observation Value="35.4558940195039" />
+    <Observation Value="35.0097264125309" />
+    <Observation Value="35.1935999769641" />
+    <Observation Value="35.5904271992323" />
+    <Observation Value="35.4127529627527" />
+    <Observation Value="35.1276070965066" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="PortDumperThroughput">
+    <Observation Value="35.575890608086" />
+    <Observation Value="35.1226370646927" />
+    <Observation Value="35.8494251298968" />
+    <Observation Value="35.4316589976799" />
+    <Observation Value="35.4922524601553" />
+    <Observation Value="35.0696507373368" />
+    <Observation Value="35.2539402196228" />
+    <Observation Value="35.6380318572251" />
+    <Observation Value="35.472723061353" />
+    <Observation Value="35.1589293314316" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="TrainUnloadingTime">
+    <Observation Value="3.88970582814529" />
+    <Observation Value="3.92030729771566" />
+    <Observation Value="3.8809996044626" />
+    <Observation Value="3.90631564353282" />
+    <Observation Value="3.95175285244942" />
+    <Observation Value="3.86074569036471" />
+    <Observation Value="3.85682177693428" />
+    <Observation Value="3.87339820341645" />
+    <Observation Value="3.92490772970738" />
+    <Observation Value="3.90386686562358" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="TrainLoadingTime">
+    <Observation Value="3.00270628682365" />
+    <Observation Value="3.0012837410649" />
+    <Observation Value="2.99880541408602" />
+    <Observation Value="2.99985160973116" />
+    <Observation Value="2.99866138037676" />
+    <Observation Value="2.99747624177693" />
+    <Observation Value="3.00215865359398" />
+    <Observation Value="3.00504100859552" />
+    <Observation Value="2.99838822151711" />
+    <Observation Value="3.00107939823886" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="TrainProvisioningTime">
+    <Observation Value="2.69150414155352" />
+    <Observation Value="2.6909878226884" />
+    <Observation Value="2.68602493103114" />
+    <Observation Value="2.69472836859247" />
+    <Observation Value="2.69117449851489" />
+    <Observation Value="2.69554140072904" />
+    <Observation Value="2.69609058899236" />
+    <Observation Value="2.69290572063822" />
+    <Observation Value="2.69102237426174" />
+    <Observation Value="2.6910369078972" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.00521324290958" />
+    <Observation Value="1.01230978543528" />
+    <Observation Value="0.957785169255325" />
+    <Observation Value="0.986775049730849" />
+    <Observation Value="0.957883918472058" />
+    <Observation Value="1.00350054067107" />
+    <Observation Value="1.0224266765255" />
+    <Observation Value="0.99583718638074" />
+    <Observation Value="1.01759851655194" />
+    <Observation Value="0.994843928401622" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.88264614232854" />
+    <Observation Value="1.89627622617463" />
+    <Observation Value="1.82444970559507" />
+    <Observation Value="1.91112842012837" />
+    <Observation Value="1.94221065598266" />
+    <Observation Value="1.8743278157326" />
+    <Observation Value="1.78419370698431" />
+    <Observation Value="1.90740790054262" />
+    <Observation Value="1.84911880659358" />
+    <Observation Value="1.90072455263607" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.419120196746251" />
+    <Observation Value="0.440065637599427" />
+    <Observation Value="0.415602399591859" />
+    <Observation Value="0.438979100509314" />
+    <Observation Value="0.450786649698256" />
+    <Observation Value="0.411981407657782" />
+    <Observation Value="0.38172015451979" />
+    <Observation Value="0.427409726430622" />
+    <Observation Value="0.419753567230134" />
+    <Observation Value="0.427521711585091" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.522185005427736" />
+    <Observation Value="0.537161381737569" />
+    <Observation Value="0.504313454815045" />
+    <Observation Value="0.525372345849803" />
+    <Observation Value="0.556662125723105" />
+    <Observation Value="0.517505601543468" />
+    <Observation Value="0.512232832065421" />
+    <Observation Value="0.54239851607977" />
+    <Observation Value="0.541387511593847" />
+    <Observation Value="0.520525230042759" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.484502705093012" />
+    <Observation Value="0.467051669775542" />
+    <Observation Value="0.461178388429827" />
+    <Observation Value="0.484229372612647" />
+    <Observation Value="0.49053518013575" />
+    <Observation Value="0.468826680131112" />
+    <Observation Value="0.447317077677241" />
+    <Observation Value="0.462213909866752" />
+    <Observation Value="0.434447511231213" />
+    <Observation Value="0.469239341372391" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.246052113383985" />
+    <Observation Value="0.247443598496063" />
+    <Observation Value="0.239847956028954" />
+    <Observation Value="0.23392847006654" />
+    <Observation Value="0.23384657466762" />
+    <Observation Value="0.235989061767684" />
+    <Observation Value="0.237523848179671" />
+    <Observation Value="0.250097982090928" />
+    <Observation Value="0.237536875177885" />
+    <Observation Value="0.259764481963781" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.210790983185128" />
+    <Observation Value="0.204632206290281" />
+    <Observation Value="0.203511940081688" />
+    <Observation Value="0.22860030101507" />
+    <Observation Value="0.210328480438277" />
+    <Observation Value="0.240024130990142" />
+    <Observation Value="0.205478986742726" />
+    <Observation Value="0.225257731997026" />
+    <Observation Value="0.21603200432213" />
+    <Observation Value="0.225202170459171" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="1.08427477158423" />
+    <Observation Value="0.94790544130914" />
+    <Observation Value="1.3029648915482" />
+    <Observation Value="0.975391116975765" />
+    <Observation Value="0.959561252276495" />
+    <Observation Value="1.42127951529537" />
+    <Observation Value="0.96928685372813" />
+    <Observation Value="1.06136078627875" />
+    <Observation Value="1.77047572544541" />
+    <Observation Value="1.29126575758883" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.644183570193194" />
+    <Observation Value="0.697644981863413" />
+    <Observation Value="0.606782680020935" />
+    <Observation Value="0.598250198298251" />
+    <Observation Value="0.590099560898637" />
+    <Observation Value="0.589313632130177" />
+    <Observation Value="0.692248067963621" />
+    <Observation Value="0.646710793883167" />
+    <Observation Value="0.686870715966613" />
+    <Observation Value="0.658772486065024" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.677128847377627" />
+    <Observation Value="0.671301358933303" />
+    <Observation Value="0.648518971096331" />
+    <Observation Value="0.679811852724854" />
+    <Observation Value="0.681439030682794" />
+    <Observation Value="0.691795713009882" />
+    <Observation Value="0.705422716924784" />
+    <Observation Value="0.633283643012173" />
+    <Observation Value="0.73481020763339" />
+    <Observation Value="0.636211123097251" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.813148766599954" />
+    <Observation Value="0.726049877204388" />
+    <Observation Value="0.697489527908978" />
+    <Observation Value="0.830334821174716" />
+    <Observation Value="0.78154188923889" />
+    <Observation Value="0.773244693965593" />
+    <Observation Value="0.781691289291936" />
+    <Observation Value="0.817949820435846" />
+    <Observation Value="0.778516720985953" />
+    <Observation Value="0.743112898376395" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.05611320195098" />
+    <Observation Value="1.14080999176228" />
+    <Observation Value="1.0753313110463" />
+    <Observation Value="1.02167879173971" />
+    <Observation Value="0.984877003750552" />
+    <Observation Value="1.10098118537334" />
+    <Observation Value="1.1132534117117" />
+    <Observation Value="1.02327552688367" />
+    <Observation Value="1.02298276756751" />
+    <Observation Value="1.1277110966636" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="LoadedTravelTime">
+    <Observation Value="10.645634232016" />
+    <Observation Value="10.8664728094641" />
+    <Observation Value="10.4119474608861" />
+    <Observation Value="10.6480046488227" />
+    <Observation Value="10.7064845383916" />
+    <Observation Value="10.6718832306434" />
+    <Observation Value="10.6772583121818" />
+    <Observation Value="10.5729161266782" />
+    <Observation Value="10.6593610488839" />
+    <Observation Value="10.8139329653968" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="EmptyTravelTime">
+    <Observation Value="8.09386095183548" />
+    <Observation Value="8.1886651670011" />
+    <Observation Value="7.87544262151937" />
+    <Observation Value="8.08822667680351" />
+    <Observation Value="8.10047379407172" />
+    <Observation Value="8.25319438704323" />
+    <Observation Value="8.08499144403456" />
+    <Observation Value="8.04593549354438" />
+    <Observation Value="8.18298817472528" />
+    <Observation Value="8.21305383774696" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="RailOperatingCycleTime">
+    <Observation Value="29.7586876622482" />
+    <Observation Value="30.0674338127584" />
+    <Observation Value="29.6990188395304" />
+    <Observation Value="29.9652118551818" />
+    <Observation Value="30.0647325218766" />
+    <Observation Value="29.7570107821465" />
+    <Observation Value="29.6905361785554" />
+    <Observation Value="29.8145661552083" />
+    <Observation Value="29.8707746759316" />
+    <Observation Value="29.759812547707" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="RailCycleTime">
+    <Observation Value="32.841592759084" />
+    <Observation Value="33.4369785317547" />
+    <Observation Value="32.2823632110703" />
+    <Observation Value="32.853828434432" />
+    <Observation Value="32.9728430062079" />
+    <Observation Value="33.0441663755826" />
+    <Observation Value="32.912012744148" />
+    <Observation Value="32.7020428284748" />
+    <Observation Value="33.0056177826841" />
+    <Observation Value="33.1347211789229" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.17963673021212" />
+    <Observation Value="2.25582757936621" />
+    <Observation Value="2.13832470340249" />
+    <Observation Value="2.20565898094186" />
+    <Observation Value="2.1969160432067" />
+    <Observation Value="2.26850881435079" />
+    <Observation Value="2.23267085213953" />
+    <Observation Value="2.16720492774285" />
+    <Observation Value="2.20028321551958" />
+    <Observation Value="2.24782132044722" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="MineTLOProductLoaded">
+    <Observation Value="177.915700249142" />
+    <Observation Value="175.681041391783" />
+    <Observation Value="179.309582434938" />
+    <Observation Value="177.224184097539" />
+    <Observation Value="177.516113249857" />
+    <Observation Value="175.416825035342" />
+    <Observation Value="176.342407262201" />
+    <Observation Value="178.223760000043" />
+    <Observation Value="177.42381410279" />
+    <Observation Value="175.871520000042" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="97061.9798578918" />
+    <Observation Value="100331.130447343" />
+    <Observation Value="92696.7773280555" />
+    <Observation Value="97535.6980676926" />
+    <Observation Value="97065.3854580684" />
+    <Observation Value="95898.7006674057" />
+    <Observation Value="97013.0930089873" />
+    <Observation Value="96382.0603936699" />
+    <Observation Value="97387.4819917265" />
+    <Observation Value="97963.7747318657" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="77730.8177845119" />
+    <Observation Value="82474.1343536191" />
+    <Observation Value="73192.6204774063" />
+    <Observation Value="78816.8870460812" />
+    <Observation Value="78506.7524395584" />
+    <Observation Value="79385.3393610153" />
+    <Observation Value="79140.9286035323" />
+    <Observation Value="78051.5838076233" />
+    <Observation Value="78914.6648975692" />
+    <Observation Value="80472.0174019846" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="PercentDirectLoading">
+    <Observation Value="29.9938654259761" />
+    <Observation Value="30.3832703002637" />
+    <Observation Value="29.7938478351929" />
+    <Observation Value="29.8444564836743" />
+    <Observation Value="30.1638914476701" />
+    <Observation Value="29.5679414948446" />
+    <Observation Value="29.6137452871575" />
+    <Observation Value="29.1437181598876" />
+    <Observation Value="29.4639964156075" />
+    <Observation Value="29.8060350498915" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="AvgIdleTimeAtBerth">
+    <Observation Value="3.33784750567825" />
+    <Observation Value="3.25689200902757" />
+    <Observation Value="3.71311958873086" />
+    <Observation Value="3.59458339354109" />
+    <Observation Value="3.731118332774" />
+    <Observation Value="3.65445841665681" />
+    <Observation Value="3.67034195383417" />
+    <Observation Value="4.23904633112389" />
+    <Observation Value="3.53996544687025" />
+    <Observation Value="3.83972377562714" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.02130890273118" />
+    <Observation Value="1.02702633284338" />
+    <Observation Value="0.986547409914774" />
+    <Observation Value="0.944259350983606" />
+    <Observation Value="1.05029587549291" />
+    <Observation Value="0.953920670506726" />
+    <Observation Value="1.06942335932292" />
+    <Observation Value="1.02923032487789" />
+    <Observation Value="0.865497598426553" />
+    <Observation Value="1.05042352934009" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="AvgShipTTIP">
+    <Observation Value="2026.51430256754" />
+    <Observation Value="1812.31192718508" />
+    <Observation Value="2005.9692628725" />
+    <Observation Value="2206.23654699942" />
+    <Observation Value="2210.32459238718" />
+    <Observation Value="2038.58205311442" />
+    <Observation Value="2071.60725040932" />
+    <Observation Value="2449.07665195974" />
+    <Observation Value="960.739058842124" />
+    <Observation Value="2354.67136304638" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="AvgShipTimeInBerth">
+    <Observation Value="31.7882960147349" />
+    <Observation Value="31.5753612040107" />
+    <Observation Value="31.4407504542297" />
+    <Observation Value="32.1771617564324" />
+    <Observation Value="32.3939995583622" />
+    <Observation Value="32.4128795164437" />
+    <Observation Value="32.2310705345157" />
+    <Observation Value="32.6189839721013" />
+    <Observation Value="31.6719103483895" />
+    <Observation Value="32.814204461821" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="AvgShipLoadingTime">
+    <Observation Value="28.3258463207765" />
+    <Observation Value="28.0980034975166" />
+    <Observation Value="27.9797338332407" />
+    <Observation Value="28.6508439958534" />
+    <Observation Value="28.7558761118245" />
+    <Observation Value="28.8196716260336" />
+    <Observation Value="28.5571092588653" />
+    <Observation Value="28.9422947161572" />
+    <Observation Value="28.0370074935808" />
+    <Observation Value="29.1509614904913" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="144793.290074634" />
+    <Observation Value="145306.986172079" />
+    <Observation Value="146633.081527446" />
+    <Observation Value="144955.628580456" />
+    <Observation Value="145771.137986017" />
+    <Observation Value="148508.872690389" />
+    <Observation Value="145374.336337813" />
+    <Observation Value="147481.654694264" />
+    <Observation Value="100781.04549403" />
+    <Observation Value="147415.852273321" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="177169.289584436" />
+    <Observation Value="180545.302127434" />
+    <Observation Value="177934.565334563" />
+    <Observation Value="173604.6511475" />
+    <Observation Value="177920.581269196" />
+    <Observation Value="178225.325391048" />
+    <Observation Value="174518.88320996" />
+    <Observation Value="172699.95626823" />
+    <Observation Value="257545.505140988" />
+    <Observation Value="176830.456310769" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="PortStockpileAvgTotalContents">
+    <Observation Value="321965.991973869" />
+    <Observation Value="325852.288299504" />
+    <Observation Value="324567.646862006" />
+    <Observation Value="318554.91169143" />
+    <Observation Value="323691.719255207" />
+    <Observation Value="326730.249222972" />
+    <Observation Value="319893.219547759" />
+    <Observation Value="320183.9810648" />
+    <Observation Value="358326.55063513" />
+    <Observation Value="324246.308584099" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="ShiploadingIdleTime">
+    <Observation Value="2479.63981962151" />
+    <Observation Value="2560.36368392406" />
+    <Observation Value="3028.32470816203" />
+    <Observation Value="2707.76103533244" />
+    <Observation Value="2860.22774926911" />
+    <Observation Value="2818.55573208458" />
+    <Observation Value="2763.38332968085" />
+    <Observation Value="3404.34909598261" />
+    <Observation Value="1125.16241720493" />
+    <Observation Value="2884.51015477368" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="ShiploadingWeatherDownTime">
+    <Observation Value="261.703296160365" />
+    <Observation Value="280.904680297277" />
+    <Observation Value="251.434346082284" />
+    <Observation Value="310.41357048828" />
+    <Observation Value="256.392315189586" />
+    <Observation Value="256.290243643461" />
+    <Observation Value="278.280112958063" />
+    <Observation Value="272.733571960289" />
+    <Observation Value="366.672413867819" />
+    <Observation Value="237.117906235836" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1500" />
+    <Observation Value="1480.80682724995" />
+    <Observation Value="1479.49385934448" />
+    <Observation Value="1500" />
+    <Observation Value="1488" />
+    <Observation Value="1491.79388746939" />
+    <Observation Value="1496.33422704421" />
+    <Observation Value="1479.92033375406" />
+    <Observation Value="572.245637600212" />
+    <Observation Value="1500" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="ShiploadingPositioningTime">
+    <Observation Value="1719.0823034885" />
+    <Observation Value="1656.89721377228" />
+    <Observation Value="1645.88108701681" />
+    <Observation Value="1669.15024623725" />
+    <Observation Value="1869.70701395791" />
+    <Observation Value="1648.63884035089" />
+    <Observation Value="1660.86381560398" />
+    <Observation Value="1696.29904310958" />
+    <Observation Value="691.670710809964" />
+    <Observation Value="1583.11086842209" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="ShiploadingOccupiedTime">
+    <Observation Value="37839.5745807296" />
+    <Observation Value="37821.0275947564" />
+    <Observation Value="37394.8659993944" />
+    <Observation Value="37612.675147942" />
+    <Observation Value="37325.6729215834" />
+    <Observation Value="37584.7212964517" />
+    <Observation Value="37601.1385147129" />
+    <Observation Value="36946.6979551935" />
+    <Observation Value="41044.2488205171" />
+    <Observation Value="37595.2610705684" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="DumperIdleTime">
+    <Observation Value="10460.5268135748" />
+    <Observation Value="10354.4923927859" />
+    <Observation Value="10731.5890231589" />
+    <Observation Value="10233.9970359094" />
+    <Observation Value="10752.6461218619" />
+    <Observation Value="10387.6556378371" />
+    <Observation Value="10797.2837245864" />
+    <Observation Value="11308.7115597571" />
+    <Observation Value="3997.28414993614" />
+    <Observation Value="10959.2944074784" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="DumperWeatherDownTime">
+    <Observation Value="57.268762093477" />
+    <Observation Value="54.130049549809" />
+    <Observation Value="41.5730271442128" />
+    <Observation Value="37.3426128541485" />
+    <Observation Value="55.467276702597" />
+    <Observation Value="46.8486820427497" />
+    <Observation Value="53.8898467393802" />
+    <Observation Value="40.9926571100071" />
+    <Observation Value="54.406732652184" />
+    <Observation Value="56.8849519111388" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1731.89697611693" />
+    <Observation Value="1675.06500090139" />
+    <Observation Value="1735.19932385666" />
+    <Observation Value="1733.92983197474" />
+    <Observation Value="1740" />
+    <Observation Value="1729.15597461318" />
+    <Observation Value="1738.56081447083" />
+    <Observation Value="1740" />
+    <Observation Value="696" />
+    <Observation Value="1710.18939010596" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="DumperPositioningTime">
+    <Observation Value="2270.88247240695" />
+    <Observation Value="2284.66579296772" />
+    <Observation Value="2265.76910537279" />
+    <Observation Value="2246.03136645853" />
+    <Observation Value="2255.21491254306" />
+    <Observation Value="2243.05527684973" />
+    <Observation Value="2248.59676224578" />
+    <Observation Value="2204.96411276409" />
+    <Observation Value="909.990580095059" />
+    <Observation Value="2230.7219442521" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="DumperUnloadingTime">
+    <Observation Value="29279.4249758078" />
+    <Observation Value="29431.6467637951" />
+    <Observation Value="29025.8695204675" />
+    <Observation Value="29548.6991528032" />
+    <Observation Value="28996.6716888925" />
+    <Observation Value="29393.2844286573" />
+    <Observation Value="28961.6688519576" />
+    <Observation Value="28505.3316703688" />
+    <Observation Value="38142.3185373166" />
+    <Observation Value="28842.9093062524" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="PortShiploaderThroughput">
+    <Observation Value="35.9531908755472" />
+    <Observation Value="36.167999975845" />
+    <Observation Value="35.8861604482274" />
+    <Observation Value="35.5744999764249" />
+    <Observation Value="35.6902786690033" />
+    <Observation Value="35.5398571194818" />
+    <Observation Value="35.5710714050768" />
+    <Observation Value="34.9221806297976" />
+    <Observation Value="14.3499999904615" />
+    <Observation Value="35.3359999769631" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="PortDumperThroughput">
+    <Observation Value="36.001721267542" />
+    <Observation Value="36.2201498940507" />
+    <Observation Value="35.93297880227" />
+    <Observation Value="35.6097058277179" />
+    <Observation Value="35.7529311027185" />
+    <Observation Value="35.5787932675225" />
+    <Observation Value="35.651946394776" />
+    <Observation Value="34.9586986016231" />
+    <Observation Value="14.4263059999998" />
+    <Observation Value="35.3697052675112" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="TrainUnloadingTime">
+    <Observation Value="3.90014803109073" />
+    <Observation Value="3.88349850030503" />
+    <Observation Value="3.87429656807826" />
+    <Observation Value="3.95697697743366" />
+    <Observation Value="3.87073559395111" />
+    <Observation Value="3.94408885304431" />
+    <Observation Value="3.87898722916162" />
+    <Observation Value="3.89115129820665" />
+    <Observation Value="3.91683406190489" />
+    <Observation Value="3.89359536359092" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="TrainLoadingTime">
+    <Observation Value="3.00278592767523" />
+    <Observation Value="3.00192279904422" />
+    <Observation Value="3.00324347014738" />
+    <Observation Value="3.0005903762684" />
+    <Observation Value="2.99921853916041" />
+    <Observation Value="3.00273821811581" />
+    <Observation Value="3.00097174871889" />
+    <Observation Value="2.99907839652373" />
+    <Observation Value="2.99600856495039" />
+    <Observation Value="3.00091984298585" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="TrainProvisioningTime">
+    <Observation Value="2.68757919508678" />
+    <Observation Value="2.69161637260439" />
+    <Observation Value="2.69375744152309" />
+    <Observation Value="2.69207260064933" />
+    <Observation Value="2.69147832915216" />
+    <Observation Value="2.69453719757142" />
+    <Observation Value="2.69436150304655" />
+    <Observation Value="2.69700924513982" />
+    <Observation Value="2.69347611186246" />
+    <Observation Value="2.69340319642321" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.943287001433213" />
+    <Observation Value="0.962353539178153" />
+    <Observation Value="0.944230872155146" />
+    <Observation Value="1.01345890813969" />
+    <Observation Value="1.00948650994315" />
+    <Observation Value="0.93339901644341" />
+    <Observation Value="0.962810853089966" />
+    <Observation Value="1.06536129838236" />
+    <Observation Value="1.01364004674871" />
+    <Observation Value="0.972947442240995" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.87622965548354" />
+    <Observation Value="1.79731189844708" />
+    <Observation Value="1.8672314254711" />
+    <Observation Value="2.03958608057713" />
+    <Observation Value="1.81853365548241" />
+    <Observation Value="1.94716922241304" />
+    <Observation Value="1.90528276901644" />
+    <Observation Value="1.89809410108927" />
+    <Observation Value="2.103359105668" />
+    <Observation Value="1.82340910667955" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.44086531467867" />
+    <Observation Value="0.406924149620847" />
+    <Observation Value="0.396526780350416" />
+    <Observation Value="0.49655407982027" />
+    <Observation Value="0.409950677383046" />
+    <Observation Value="0.462822132563495" />
+    <Observation Value="0.431488802255422" />
+    <Observation Value="0.43973358767321" />
+    <Observation Value="0.47688604171495" />
+    <Observation Value="0.413034442452854" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.539467488937715" />
+    <Observation Value="0.493752283390311" />
+    <Observation Value="0.505410286734999" />
+    <Observation Value="0.589882269546972" />
+    <Observation Value="0.503739323509392" />
+    <Observation Value="0.550572600796035" />
+    <Observation Value="0.533141055760081" />
+    <Observation Value="0.523130967635878" />
+    <Observation Value="0.596732232150408" />
+    <Observation Value="0.517449952435939" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.455970867366064" />
+    <Observation Value="0.444310268871384" />
+    <Observation Value="0.468269219311761" />
+    <Observation Value="0.524771553393881" />
+    <Observation Value="0.437143365816516" />
+    <Observation Value="0.499090121371827" />
+    <Observation Value="0.483507702514552" />
+    <Observation Value="0.48869621693497" />
+    <Observation Value="0.556227733386499" />
+    <Observation Value="0.464995716509024" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.239715601274137" />
+    <Observation Value="0.231290237249218" />
+    <Observation Value="0.28592904577106" />
+    <Observation Value="0.228136799496191" />
+    <Observation Value="0.259947677921859" />
+    <Observation Value="0.2233799086347" />
+    <Observation Value="0.229210080081903" />
+    <Observation Value="0.223869249590478" />
+    <Observation Value="0.25011599369728" />
+    <Observation Value="0.229942656245355" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.200210381559732" />
+    <Observation Value="0.220975632744654" />
+    <Observation Value="0.211104730967694" />
+    <Observation Value="0.200251710611458" />
+    <Observation Value="0.20789958016192" />
+    <Observation Value="0.211304454295381" />
+    <Observation Value="0.227813829654564" />
+    <Observation Value="0.222669863784284" />
+    <Observation Value="0.222227526036213" />
+    <Observation Value="0.197968800041928" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.921789173881999" />
+    <Observation Value="0.93730636999133" />
+    <Observation Value="0.838357218059987" />
+    <Observation Value="1.35386317618951" />
+    <Observation Value="1.25511191772221" />
+    <Observation Value="0.969942572447101" />
+    <Observation Value="1.02447616979938" />
+    <Observation Value="1.07460643321065" />
+    <Observation Value="1.03377555061255" />
+    <Observation Value="1.03480577611797" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.618667921500074" />
+    <Observation Value="0.651129662499819" />
+    <Observation Value="0.573752498175132" />
+    <Observation Value="0.660408428431777" />
+    <Observation Value="0.618177844517897" />
+    <Observation Value="0.585201058079175" />
+    <Observation Value="0.633306210423393" />
+    <Observation Value="0.650831455646842" />
+    <Observation Value="0.658972946436734" />
+    <Observation Value="0.667536548494714" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.663645265773274" />
+    <Observation Value="0.663111517687584" />
+    <Observation Value="0.69527695029955" />
+    <Observation Value="0.722930342144598" />
+    <Observation Value="0.68411582290219" />
+    <Observation Value="0.685633574880159" />
+    <Observation Value="0.61664316765544" />
+    <Observation Value="0.782967180418963" />
+    <Observation Value="0.769490860329373" />
+    <Observation Value="0.615527199123762" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.755941979762297" />
+    <Observation Value="0.756089018285495" />
+    <Observation Value="0.765882943776202" />
+    <Observation Value="0.800081872425951" />
+    <Observation Value="0.825963189233012" />
+    <Observation Value="0.725314841302546" />
+    <Observation Value="0.762273619313093" />
+    <Observation Value="0.85026782312441" />
+    <Observation Value="0.83271328029734" />
+    <Observation Value="0.766038411238257" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="0.985067684420534" />
+    <Observation Value="0.998282195025617" />
+    <Observation Value="0.978550146294639" />
+    <Observation Value="1.01055429594667" />
+    <Observation Value="1.06259174674029" />
+    <Observation Value="1.00612447313652" />
+    <Observation Value="1.03464944917174" />
+    <Observation Value="1.0557603545435" />
+    <Observation Value="0.919971909940201" />
+    <Observation Value="1.0641519510225" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="LoadedTravelTime">
+    <Observation Value="10.6240241601127" />
+    <Observation Value="10.5682079463277" />
+    <Observation Value="10.6406172671247" />
+    <Observation Value="10.7681274483752" />
+    <Observation Value="10.6410473136559" />
+    <Observation Value="10.7259240533919" />
+    <Observation Value="10.7331908676671" />
+    <Observation Value="10.9853481007717" />
+    <Observation Value="10.9032641179479" />
+    <Observation Value="10.6267507396419" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="EmptyTravelTime">
+    <Observation Value="7.79683506814925" />
+    <Observation Value="7.92375985603728" />
+    <Observation Value="8.2244018159541" />
+    <Observation Value="7.90732351753483" />
+    <Observation Value="8.05072336164228" />
+    <Observation Value="7.94019678524422" />
+    <Observation Value="8.12961779040137" />
+    <Observation Value="8.4221979785328" />
+    <Observation Value="8.20306676999532" />
+    <Observation Value="8.02779542477265" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="RailOperatingCycleTime">
+    <Observation Value="29.7630034966399" />
+    <Observation Value="29.6391382038637" />
+    <Observation Value="29.8287736963938" />
+    <Observation Value="30.2745861349944" />
+    <Observation Value="29.8185805137291" />
+    <Observation Value="30.2240597483665" />
+    <Observation Value="29.8583945349895" />
+    <Observation Value="30.2562362328514" />
+    <Observation Value="30.4755362754564" />
+    <Observation Value="29.959147362374" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="RailCycleTime">
+    <Observation Value="32.4706956546667" />
+    <Observation Value="32.4720284538604" />
+    <Observation Value="33.0507100494969" />
+    <Observation Value="32.9876040535611" />
+    <Observation Value="32.8196204019609" />
+    <Observation Value="33.0547336309448" />
+    <Observation Value="33.0445651385955" />
+    <Observation Value="33.855888396475" />
+    <Observation Value="33.4329166746485" />
+    <Observation Value="32.9540068440713" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.11041401598226" />
+    <Observation Value="2.07605423247829" />
+    <Observation Value="2.12110865243042" />
+    <Observation Value="2.17628132657073" />
+    <Observation Value="2.15401721255685" />
+    <Observation Value="2.17948123977342" />
+    <Observation Value="2.16825518102982" />
+    <Observation Value="2.28658818908965" />
+    <Observation Value="2.10314821299603" />
+    <Observation Value="2.2150761762308" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="MineTLOProductLoaded">
+    <Observation Value="180.053280000044" />
+    <Observation Value="181.149656531432" />
+    <Observation Value="179.697443711992" />
+    <Observation Value="178.082562457029" />
+    <Observation Value="178.815975670936" />
+    <Observation Value="177.923103171295" />
+    <Observation Value="178.318800000043" />
+    <Observation Value="174.826976042089" />
+    <Observation Value="72.2541599999961" />
+    <Observation Value="176.901423171237" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="101722.472786046" />
+    <Observation Value="101606.189546202" />
+    <Observation Value="108160.493785902" />
+    <Observation Value="106149.804441765" />
+    <Observation Value="104688.054336907" />
+    <Observation Value="107599.983121374" />
+    <Observation Value="106766.106221516" />
+    <Observation Value="110540.384075279" />
+    <Observation Value="134519.835220947" />
+    <Observation Value="103380.079930831" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="80541.6808221767" />
+    <Observation Value="80003.4908714332" />
+    <Observation Value="87065.2941666432" />
+    <Observation Value="84483.0344590956" />
+    <Observation Value="85040.3897046933" />
+    <Observation Value="86474.7202421358" />
+    <Observation Value="86075.3442749101" />
+    <Observation Value="90841.1954284161" />
+    <Observation Value="125008.715714995" />
+    <Observation Value="83707.5962878626" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="PercentDirectLoading">
+    <Observation Value="29.3929161521546" />
+    <Observation Value="29.4281017270434" />
+    <Observation Value="29.5077510964185" />
+    <Observation Value="29.7987748140462" />
+    <Observation Value="30.138003948514" />
+    <Observation Value="30.1146166577144" />
+    <Observation Value="30.014493152354" />
+    <Observation Value="29.6878728409176" />
+    <Observation Value="29.8060364474706" />
+    <Observation Value="29.8626185132241" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="AvgIdleTimeAtBerth">
+    <Observation Value="3.77503521687974" />
+    <Observation Value="3.79971453869251" />
+    <Observation Value="4.22101191970823" />
+    <Observation Value="3.21881331316868" />
+    <Observation Value="3.54846179591005" />
+    <Observation Value="4.00477288320801" />
+    <Observation Value="3.37570085972514" />
+    <Observation Value="3.75313370635835" />
+    <Observation Value="3.90556527341822" />
+    <Observation Value="3.39682610873182" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.03805966634653" />
+    <Observation Value="0.949149945793347" />
+    <Observation Value="1.04060610320349" />
+    <Observation Value="0.879754164753202" />
+    <Observation Value="0.954323311854873" />
+    <Observation Value="1.04206038147702" />
+    <Observation Value="0.980973094944638" />
+    <Observation Value="0.97496876117205" />
+    <Observation Value="0.973814345772061" />
+    <Observation Value="1.00466321240152" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="AvgShipTTIP">
+    <Observation Value="2296.86002019214" />
+    <Observation Value="2100.55216110511" />
+    <Observation Value="2183.90642376963" />
+    <Observation Value="1049.10744345418" />
+    <Observation Value="2096.91832434869" />
+    <Observation Value="2194.61667354416" />
+    <Observation Value="2098.85131641256" />
+    <Observation Value="2337.9542786474" />
+    <Observation Value="2146.87109580168" />
+    <Observation Value="2023.48041392246" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="AvgShipTimeInBerth">
+    <Observation Value="32.7988197744563" />
+    <Observation Value="32.187245788263" />
+    <Observation Value="32.1873009975078" />
+    <Observation Value="32.1877248022807" />
+    <Observation Value="32.6221907596571" />
+    <Observation Value="32.2517433861186" />
+    <Observation Value="32.1481099370499" />
+    <Observation Value="32.3706984706754" />
+    <Observation Value="32.4412019927748" />
+    <Observation Value="31.6701237777319" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="AvgShipLoadingTime">
+    <Observation Value="29.0978737345947" />
+    <Observation Value="28.5387756955119" />
+    <Observation Value="28.6778670081967" />
+    <Observation Value="28.6861790384927" />
+    <Observation Value="28.9493243235575" />
+    <Observation Value="28.6971110002866" />
+    <Observation Value="28.5615092071516" />
+    <Observation Value="28.8995191564315" />
+    <Observation Value="28.8815498964016" />
+    <Observation Value="28.1381557702441" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="143633.041297217" />
+    <Observation Value="149723.550432757" />
+    <Observation Value="145225.896069407" />
+    <Observation Value="100280.788113342" />
+    <Observation Value="152232.96746245" />
+    <Observation Value="149892.319475357" />
+    <Observation Value="148560.406976238" />
+    <Observation Value="146022.47329947" />
+    <Observation Value="144404.865841964" />
+    <Observation Value="142633.2441552" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="176945.216367587" />
+    <Observation Value="179229.236221379" />
+    <Observation Value="174799.696245272" />
+    <Observation Value="236361.664301497" />
+    <Observation Value="183721.137078191" />
+    <Observation Value="175148.308601822" />
+    <Observation Value="180527.61150824" />
+    <Observation Value="169998.883345226" />
+    <Observation Value="174630.352056601" />
+    <Observation Value="177548.946075235" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="PortStockpileAvgTotalContents">
+    <Observation Value="320575.389622787" />
+    <Observation Value="328952.786654133" />
+    <Observation Value="320025.59231468" />
+    <Observation Value="336649.535748373" />
+    <Observation Value="335954.104540638" />
+    <Observation Value="325040.628077185" />
+    <Observation Value="329088.018484475" />
+    <Observation Value="316021.356644711" />
+    <Observation Value="319035.217898562" />
+    <Observation Value="320182.190230442" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="ShiploadingIdleTime">
+    <Observation Value="2827.2829944839" />
+    <Observation Value="2934.1027285585" />
+    <Observation Value="3343.61412727538" />
+    <Observation Value="1334.05815736412" />
+    <Observation Value="2717.78381249624" />
+    <Observation Value="3123.87361257157" />
+    <Observation Value="2501.42452921394" />
+    <Observation Value="2768.47697909932" />
+    <Observation Value="3017.44454325045" />
+    <Observation Value="2610.8638741656" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="ShiploadingWeatherDownTime">
+    <Observation Value="228.803033085851" />
+    <Observation Value="276.424142239138" />
+    <Observation Value="401.97031474665" />
+    <Observation Value="344.879941283125" />
+    <Observation Value="400.427005279447" />
+    <Observation Value="348.370678949859" />
+    <Observation Value="343.44119234125" />
+    <Observation Value="407.76335691447" />
+    <Observation Value="260.302555803971" />
+    <Observation Value="351.098132203365" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1499.76254603581" />
+    <Observation Value="1488" />
+    <Observation Value="1488" />
+    <Observation Value="876" />
+    <Observation Value="1464" />
+    <Observation Value="1500" />
+    <Observation Value="1498.28902989441" />
+    <Observation Value="1500" />
+    <Observation Value="1497.15916304183" />
+    <Observation Value="1494.53957469333" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="ShiploadingPositioningTime">
+    <Observation Value="1600.23322827681" />
+    <Observation Value="1730.31783315289" />
+    <Observation Value="1614.35245825956" />
+    <Observation Value="940.518598871934" />
+    <Observation Value="1688.94891042593" />
+    <Observation Value="1644.9173211845" />
+    <Observation Value="1620.58396031422" />
+    <Observation Value="1690.32918381234" />
+    <Observation Value="1591.20197847568" />
+    <Observation Value="1732.7428047768" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="ShiploadingOccupiedTime">
+    <Observation Value="37643.9181981176" />
+    <Observation Value="37371.1552960495" />
+    <Observation Value="36952.0630997184" />
+    <Observation Value="40304.5433024808" />
+    <Observation Value="37528.8402717984" />
+    <Observation Value="37182.8383872941" />
+    <Observation Value="37836.2612882362" />
+    <Observation Value="37433.4304801739" />
+    <Observation Value="37433.8917594281" />
+    <Observation Value="37610.7556141609" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="DumperIdleTime">
+    <Observation Value="10587.2602765905" />
+    <Observation Value="10479.8944956239" />
+    <Observation Value="10955.3153782839" />
+    <Observation Value="5622.7355163964" />
+    <Observation Value="9794.86391975664" />
+    <Observation Value="10523.9650755271" />
+    <Observation Value="10320.8629156597" />
+    <Observation Value="10688.4393988069" />
+    <Observation Value="10465.5621704422" />
+    <Observation Value="10230.8250077779" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="DumperWeatherDownTime">
+    <Observation Value="31.1851047214682" />
+    <Observation Value="41.3766394084651" />
+    <Observation Value="36.9593545913716" />
+    <Observation Value="39.6234659825079" />
+    <Observation Value="54.0523719997957" />
+    <Observation Value="57.6410228362356" />
+    <Observation Value="35.8018274070404" />
+    <Observation Value="44.9040244153041" />
+    <Observation Value="28.705638469398" />
+    <Observation Value="25.6868068274678" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1740" />
+    <Observation Value="1740" />
+    <Observation Value="1677.44474962259" />
+    <Observation Value="972" />
+    <Observation Value="1710.73793749115" />
+    <Observation Value="1715.36808494799" />
+    <Observation Value="1740" />
+    <Observation Value="1740" />
+    <Observation Value="1740" />
+    <Observation Value="1697.0613499898" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="DumperPositioningTime">
+    <Observation Value="2225.47930105216" />
+    <Observation Value="2224.79550418248" />
+    <Observation Value="2214.71198192896" />
+    <Observation Value="1326.0132409954" />
+    <Observation Value="2244.893972448" />
+    <Observation Value="2229.15864231087" />
+    <Observation Value="2254.8136097065" />
+    <Observation Value="2225.49657991259" />
+    <Observation Value="2240.70486113021" />
+    <Observation Value="2268.72917078675" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="DumperUnloadingTime">
+    <Observation Value="29216.0753176358" />
+    <Observation Value="29313.9333607851" />
+    <Observation Value="28915.5685355732" />
+    <Observation Value="35839.6277766257" />
+    <Observation Value="29995.4517983044" />
+    <Observation Value="29273.8671743778" />
+    <Observation Value="29448.5216472267" />
+    <Observation Value="29101.1599968652" />
+    <Observation Value="29325.0273299582" />
+    <Observation Value="29577.6976646181" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="PortShiploaderThroughput">
+    <Observation Value="35.2415999769235" />
+    <Observation Value="35.2199285480136" />
+    <Observation Value="35.057014764844" />
+    <Observation Value="20.951999986243" />
+    <Observation Value="35.5539999767038" />
+    <Observation Value="35.3033118992073" />
+    <Observation Value="35.7139999762651" />
+    <Observation Value="35.2439999766443" />
+    <Observation Value="35.5098571196406" />
+    <Observation Value="35.9221485999434" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="PortDumperThroughput">
+    <Observation Value="35.2929930173905" />
+    <Observation Value="35.2754531428633" />
+    <Observation Value="35.1197502469717" />
+    <Observation Value="21.0219219999818" />
+    <Observation Value="35.6052505512624" />
+    <Observation Value="35.3558817148024" />
+    <Observation Value="35.7495479935082" />
+    <Observation Value="35.2854502223052" />
+    <Observation Value="35.5455292675081" />
+    <Observation Value="35.9648355906127" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="TrainUnloadingTime">
+    <Observation Value="3.95010495971081" />
+    <Observation Value="3.98794653625943" />
+    <Observation Value="3.93595281688983" />
+    <Observation Value="3.93654197016912" />
+    <Observation Value="4.02320104044441" />
+    <Observation Value="3.98499708080924" />
+    <Observation Value="3.93106011766048" />
+    <Observation Value="3.94278298295979" />
+    <Observation Value="3.95920770261545" />
+    <Observation Value="3.9207175833304" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="TrainLoadingTime">
+    <Observation Value="3.00130761170738" />
+    <Observation Value="2.99957139458243" />
+    <Observation Value="3.00282858344536" />
+    <Observation Value="2.99975892645595" />
+    <Observation Value="2.99837344218188" />
+    <Observation Value="3.0007827011185" />
+    <Observation Value="3.00043219507258" />
+    <Observation Value="3.00235930974824" />
+    <Observation Value="3.00100591848823" />
+    <Observation Value="2.99788837575018" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="TrainProvisioningTime">
+    <Observation Value="2.69438383861778" />
+    <Observation Value="2.69851792159969" />
+    <Observation Value="2.69864663455127" />
+    <Observation Value="2.69129550275415" />
+    <Observation Value="2.69546182606054" />
+    <Observation Value="2.69762064897311" />
+    <Observation Value="2.68931277266833" />
+    <Observation Value="2.69525926111326" />
+    <Observation Value="2.69153743243652" />
+    <Observation Value="2.69397463078976" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.00066640375749" />
+    <Observation Value="0.979563752256009" />
+    <Observation Value="0.984391197616408" />
+    <Observation Value="0.97162127560815" />
+    <Observation Value="0.952045049792462" />
+    <Observation Value="1.00047706164003" />
+    <Observation Value="0.979338517668378" />
+    <Observation Value="1.0232495357545" />
+    <Observation Value="0.973095546620821" />
+    <Observation Value="0.945350010505452" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="2.01336621454026" />
+    <Observation Value="2.14720487516485" />
+    <Observation Value="2.02858133586939" />
+    <Observation Value="2.04341594064317" />
+    <Observation Value="2.15415704433689" />
+    <Observation Value="2.15469565299032" />
+    <Observation Value="1.97002570896573" />
+    <Observation Value="2.05335348161497" />
+    <Observation Value="2.04484540860545" />
+    <Observation Value="1.9915563823267" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.489111500076011" />
+    <Observation Value="0.50402708080171" />
+    <Observation Value="0.468933622917083" />
+    <Observation Value="0.473869976349532" />
+    <Observation Value="0.547722006281073" />
+    <Observation Value="0.507131978923659" />
+    <Observation Value="0.459207881534886" />
+    <Observation Value="0.485423958556171" />
+    <Observation Value="0.480095473724797" />
+    <Observation Value="0.464664394070489" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.569200609963946" />
+    <Observation Value="0.640859728759508" />
+    <Observation Value="0.552855415774554" />
+    <Observation Value="0.581158585421555" />
+    <Observation Value="0.619705712326007" />
+    <Observation Value="0.588549902626976" />
+    <Observation Value="0.536510035175577" />
+    <Observation Value="0.564645622322336" />
+    <Observation Value="0.57880477529266" />
+    <Observation Value="0.566454984304594" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.518092590161238" />
+    <Observation Value="0.521632959275371" />
+    <Observation Value="0.507707191870008" />
+    <Observation Value="0.490748530168061" />
+    <Observation Value="0.556203927631879" />
+    <Observation Value="0.563695025439892" />
+    <Observation Value="0.470634885384444" />
+    <Observation Value="0.550192170073574" />
+    <Observation Value="0.530002086411974" />
+    <Observation Value="0.526720199770775" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.23776024627427" />
+    <Observation Value="0.271153962907833" />
+    <Observation Value="0.293457483855279" />
+    <Observation Value="0.238834493579437" />
+    <Observation Value="0.242876508950285" />
+    <Observation Value="0.248844174894296" />
+    <Observation Value="0.227739167839607" />
+    <Observation Value="0.254844284573704" />
+    <Observation Value="0.252921262050033" />
+    <Observation Value="0.237847146133426" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.199072708766858" />
+    <Observation Value="0.20940894785785" />
+    <Observation Value="0.205819362313861" />
+    <Observation Value="0.258240157667107" />
+    <Observation Value="0.187648890113349" />
+    <Observation Value="0.246315117104659" />
+    <Observation Value="0.275933737335393" />
+    <Observation Value="0.198247445683225" />
+    <Observation Value="0.203021173300473" />
+    <Observation Value="0.195843779745596" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.857864822432746" />
+    <Observation Value="0.887496649794261" />
+    <Observation Value="0.933379019446253" />
+    <Observation Value="0.763176134485183" />
+    <Observation Value="0.905637781724589" />
+    <Observation Value="0.901930110596782" />
+    <Observation Value="0.966129251558229" />
+    <Observation Value="1.35277891676503" />
+    <Observation Value="1.18488342513049" />
+    <Observation Value="0.810086943629003" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.661526614903121" />
+    <Observation Value="0.584992955982473" />
+    <Observation Value="0.615801212460662" />
+    <Observation Value="0.739552723621664" />
+    <Observation Value="0.62999981653421" />
+    <Observation Value="0.653202838155956" />
+    <Observation Value="0.631997956413981" />
+    <Observation Value="0.674748277779829" />
+    <Observation Value="0.583493639029626" />
+    <Observation Value="0.647472524357168" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.695801764402553" />
+    <Observation Value="0.69292907303489" />
+    <Observation Value="0.764789375150973" />
+    <Observation Value="0.689995919264628" />
+    <Observation Value="0.661391916946827" />
+    <Observation Value="0.659397304349388" />
+    <Observation Value="0.670903908207072" />
+    <Observation Value="0.690709006019825" />
+    <Observation Value="0.636524635994702" />
+    <Observation Value="0.688013695242349" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.767692879757758" />
+    <Observation Value="0.848455728407276" />
+    <Observation Value="0.753018001732205" />
+    <Observation Value="0.69460682681494" />
+    <Observation Value="0.73173254697263" />
+    <Observation Value="0.821531422062822" />
+    <Observation Value="0.821927931372495" />
+    <Observation Value="0.729558026567364" />
+    <Observation Value="0.705073157671904" />
+    <Observation Value="0.735342528104997" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.07536301841155" />
+    <Observation Value="0.953512608096616" />
+    <Observation Value="0.992281588984225" />
+    <Observation Value="0.969273003389514" />
+    <Observation Value="1.01436090185025" />
+    <Observation Value="1.04855793364431" />
+    <Observation Value="1.0422268524528" />
+    <Observation Value="1.03761941681477" />
+    <Observation Value="1.13249545342898" />
+    <Observation Value="0.950391088088038" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="LoadedTravelTime">
+    <Observation Value="11.0726245556811" />
+    <Observation Value="11.1263054322266" />
+    <Observation Value="11.1301890475758" />
+    <Observation Value="10.9665562941436" />
+    <Observation Value="10.9461109746711" />
+    <Observation Value="11.077501786571" />
+    <Observation Value="10.8982412309712" />
+    <Observation Value="11.1002111661998" />
+    <Observation Value="10.8656420719533" />
+    <Observation Value="10.7518853582713" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="EmptyTravelTime">
+    <Observation Value="8.17045336547825" />
+    <Observation Value="8.12052664395292" />
+    <Observation Value="8.39134543711691" />
+    <Observation Value="7.90402490649933" />
+    <Observation Value="7.8178575250914" />
+    <Observation Value="8.17518109858445" />
+    <Observation Value="7.99522459739351" />
+    <Observation Value="8.23723406995795" />
+    <Observation Value="7.93507126495231" />
+    <Observation Value="7.88719305522875" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="RailOperatingCycleTime">
+    <Observation Value="30.2125726752976" />
+    <Observation Value="30.6130090182139" />
+    <Observation Value="30.292997796412" />
+    <Observation Value="30.3063847042923" />
+    <Observation Value="30.6396250446286" />
+    <Observation Value="30.3869526548014" />
+    <Observation Value="30.2078572599931" />
+    <Observation Value="30.4689790763743" />
+    <Observation Value="30.4306044641581" />
+    <Observation Value="30.069574263737" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="RailCycleTime">
+    <Observation Value="33.6129241389172" />
+    <Observation Value="33.8067345689919" />
+    <Observation Value="33.9829347514218" />
+    <Observation Value="33.2299934352158" />
+    <Observation Value="33.1851760299149" />
+    <Observation Value="33.5951817563501" />
+    <Observation Value="33.2834732228803" />
+    <Observation Value="33.8429719968408" />
+    <Observation Value="33.182911130149" />
+    <Observation Value="32.7827480640687" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.22707773303993" />
+    <Observation Value="2.23150916563751" />
+    <Observation Value="2.25501268497267" />
+    <Observation Value="2.04478032971893" />
+    <Observation Value="2.18005749153959" />
+    <Observation Value="2.21715752686998" />
+    <Observation Value="2.15350665616034" />
+    <Observation Value="2.22860974934506" />
+    <Observation Value="2.18590304462809" />
+    <Observation Value="2.1211492235776" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="MineTLOProductLoaded">
+    <Observation Value="176.536800000042" />
+    <Observation Value="176.447874062096" />
+    <Observation Value="175.657680000041" />
+    <Observation Value="105.233040000006" />
+    <Observation Value="178.035042456951" />
+    <Observation Value="176.845680000042" />
+    <Observation Value="178.794000000044" />
+    <Observation Value="176.454521278539" />
+    <Observation Value="177.780543171222" />
+    <Observation Value="179.863200000044" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="112424.356403231" />
+    <Observation Value="113944.369813545" />
+    <Observation Value="112139.207733179" />
+    <Observation Value="129672.459611315" />
+    <Observation Value="109984.387887486" />
+    <Observation Value="109957.952396996" />
+    <Observation Value="111313.612186063" />
+    <Observation Value="112685.560936356" />
+    <Observation Value="109506.919474031" />
+    <Observation Value="108160.025012685" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="90008.9906206851" />
+    <Observation Value="93416.5329494147" />
+    <Observation Value="91935.2314403229" />
+    <Observation Value="114860.631568494" />
+    <Observation Value="88450.5616546598" />
+    <Observation Value="89477.0318560982" />
+    <Observation Value="89635.6403074179" />
+    <Observation Value="91792.887630843" />
+    <Observation Value="89025.143900317" />
+    <Observation Value="85589.1997357334" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="PercentDirectLoading">
+    <Observation Value="29.3008516196116" />
+    <Observation Value="30.097667934714" />
+    <Observation Value="29.3075293332562" />
+    <Observation Value="29.6430229185514" />
+    <Observation Value="29.6385387911091" />
+    <Observation Value="30.0121353598666" />
+    <Observation Value="29.6109336568708" />
+    <Observation Value="29.5324186366966" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="AvgIdleTimeAtBerth">
+    <Observation Value="3.52492408115254" />
+    <Observation Value="3.96821781629959" />
+    <Observation Value="3.66482184699737" />
+    <Observation Value="3.41526608478817" />
+    <Observation Value="3.62128223517814" />
+    <Observation Value="3.40676813283556" />
+    <Observation Value="3.76522673243039" />
+    <Observation Value="3.39306028172884" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="AvgIdleTimeAtDumper">
+    <Observation Value="0.95570517408633" />
+    <Observation Value="0.959812227712523" />
+    <Observation Value="0.974537906365048" />
+    <Observation Value="0.963076427547477" />
+    <Observation Value="0.948501590247608" />
+    <Observation Value="0.926369563214019" />
+    <Observation Value="1.05392574177124" />
+    <Observation Value="0.990789548729633" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="AvgShipTTIP">
+    <Observation Value="2043.78078677588" />
+    <Observation Value="2177.0024971358" />
+    <Observation Value="2090.81971110321" />
+    <Observation Value="1896.59793879356" />
+    <Observation Value="2027.69846931667" />
+    <Observation Value="2252.49661011144" />
+    <Observation Value="2257.21699251682" />
+    <Observation Value="2145.13852442474" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="AvgShipTimeInBerth">
+    <Observation Value="31.9559965383001" />
+    <Observation Value="31.6546963902981" />
+    <Observation Value="31.8394670302566" />
+    <Observation Value="32.1520561947965" />
+    <Observation Value="31.9178949981266" />
+    <Observation Value="32.8571826848671" />
+    <Observation Value="32.1905720233025" />
+    <Observation Value="32.2898682508721" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="AvgShipLoadingTime">
+    <Observation Value="28.4027176561915" />
+    <Observation Value="28.1449078355405" />
+    <Observation Value="28.2484156228955" />
+    <Observation Value="28.571442355368" />
+    <Observation Value="28.3186702677065" />
+    <Observation Value="29.1786379065156" />
+    <Observation Value="28.6989682980486" />
+    <Observation Value="28.8198011931015" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="143144.365869562" />
+    <Observation Value="145955.933729912" />
+    <Observation Value="144965.633728052" />
+    <Observation Value="145321.302196012" />
+    <Observation Value="146127.917837656" />
+    <Observation Value="150283.760476673" />
+    <Observation Value="143053.539283678" />
+    <Observation Value="145981.491515873" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="179021.845773883" />
+    <Observation Value="178239.76706265" />
+    <Observation Value="172565.616426702" />
+    <Observation Value="175906.062186139" />
+    <Observation Value="177509.789219963" />
+    <Observation Value="178931.877930052" />
+    <Observation Value="172407.202229418" />
+    <Observation Value="178227.618397637" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="PortStockpileAvgTotalContents">
+    <Observation Value="322166.211643439" />
+    <Observation Value="324195.70079256" />
+    <Observation Value="317525.088473642" />
+    <Observation Value="321221.307226034" />
+    <Observation Value="323631.160938902" />
+    <Observation Value="329215.63840673" />
+    <Observation Value="315464.803891565" />
+    <Observation Value="324206.280689764" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="ShiploadingIdleTime">
+    <Observation Value="2663.73533901516" />
+    <Observation Value="3179.06241670329" />
+    <Observation Value="2819.87604849159" />
+    <Observation Value="2572.3480904272" />
+    <Observation Value="2842.77547318975" />
+    <Observation Value="2490.47058910382" />
+    <Observation Value="2918.36537195853" />
+    <Observation Value="2624.2778324902" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="ShiploadingWeatherDownTime">
+    <Observation Value="161.640843119626" />
+    <Observation Value="253.389668225939" />
+    <Observation Value="279.861223431184" />
+    <Observation Value="223.601081434669" />
+    <Observation Value="242.90709304017" />
+    <Observation Value="420.676003011612" />
+    <Observation Value="317.360880769756" />
+    <Observation Value="287.828368668951" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1492.62717194368" />
+    <Observation Value="1493.24793995041" />
+    <Observation Value="1498.67718279982" />
+    <Observation Value="1497.50815803351" />
+    <Observation Value="1489.39719701096" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="ShiploadingPositioningTime">
+    <Observation Value="1627.61989479266" />
+    <Observation Value="1660.60372666347" />
+    <Observation Value="1727.75047203515" />
+    <Observation Value="1692.22582655362" />
+    <Observation Value="1653.97798206788" />
+    <Observation Value="1631.78518561342" />
+    <Observation Value="1702.70228356343" />
+    <Observation Value="1688.9031683168" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="ShiploadingOccupiedTime">
+    <Observation Value="37847.0039230726" />
+    <Observation Value="37206.9441884073" />
+    <Observation Value="37472.5122560421" />
+    <Observation Value="37819.1978296408" />
+    <Observation Value="37567.0915117518" />
+    <Observation Value="37758.3910394713" />
+    <Observation Value="37364.0633056748" />
+    <Observation Value="37709.5934335131" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="DumperIdleTime">
+    <Observation Value="10461.5358795493" />
+    <Observation Value="10452.5738660174" />
+    <Observation Value="10413.2696677608" />
+    <Observation Value="10343.4291788864" />
+    <Observation Value="10218.4685309906" />
+    <Observation Value="10137.6743609009" />
+    <Observation Value="11076.1965318252" />
+    <Observation Value="10417.6219360037" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="DumperWeatherDownTime">
+    <Observation Value="35.9102434899183" />
+    <Observation Value="52.6411267300937" />
+    <Observation Value="41.3110839008328" />
+    <Observation Value="32.9893887984284" />
+    <Observation Value="36.3437638222623" />
+    <Observation Value="38.853132593616" />
+    <Observation Value="35.9977946105643" />
+    <Observation Value="37.1427469728546" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1717.15012930318" />
+    <Observation Value="1700.72255411643" />
+    <Observation Value="1735.34810680303" />
+    <Observation Value="1738.16600286906" />
+    <Observation Value="1740" />
+    <Observation Value="1740" />
+    <Observation Value="1740" />
+    <Observation Value="1740" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="DumperPositioningTime">
+    <Observation Value="2268.77986175141" />
+    <Observation Value="2252.28348492986" />
+    <Observation Value="2260.54093391265" />
+    <Observation Value="2258.9549160737" />
+    <Observation Value="2255.4182516405" />
+    <Observation Value="2237.1376701252" />
+    <Observation Value="2226.39235161161" />
+    <Observation Value="2246.11397532665" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="DumperUnloadingTime">
+    <Observation Value="29316.6238859062" />
+    <Observation Value="29341.7789682062" />
+    <Observation Value="29349.5302076227" />
+    <Observation Value="29426.4605133725" />
+    <Observation Value="29549.7694535466" />
+    <Observation Value="29646.3348363803" />
+    <Observation Value="28721.4133219526" />
+    <Observation Value="29359.1213416968" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="PortShiploaderThroughput">
+    <Observation Value="35.9281515607632" />
+    <Observation Value="35.6745714049164" />
+    <Observation Value="35.7693571191024" />
+    <Observation Value="35.7811239307341" />
+    <Observation Value="35.7201376795365" />
+    <Observation Value="35.4179999767439" />
+    <Observation Value="35.2747142622591" />
+    <Observation Value="35.5459999764244" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="PortDumperThroughput">
+    <Observation Value="35.9868960000061" />
+    <Observation Value="35.7112800000062" />
+    <Observation Value="35.8395840000064" />
+    <Observation Value="35.8211452675081" />
+    <Observation Value="35.7683040000062" />
+    <Observation Value="35.47383255138" />
+    <Observation Value="35.3079292675078" />
+    <Observation Value="35.6100025512572" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="TrainUnloadingTime">
+    <Observation Value="3.89181079540024" />
+    <Observation Value="3.94380319708988" />
+    <Observation Value="3.93228345752892" />
+    <Observation Value="3.91888556659808" />
+    <Observation Value="3.94658139429635" />
+    <Observation Value="3.99789483507959" />
+    <Observation Value="3.88311645647378" />
+    <Observation Value="3.9549765764349" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="TrainLoadingTime">
+    <Observation Value="2.99930711918138" />
+    <Observation Value="2.99846945307061" />
+    <Observation Value="3.00076638630689" />
+    <Observation Value="2.9981793166774" />
+    <Observation Value="3.00345145290225" />
+    <Observation Value="2.99989175099768" />
+    <Observation Value="3.00314807453964" />
+    <Observation Value="2.99616333646372" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="TrainProvisioningTime">
+    <Observation Value="2.69566825276961" />
+    <Observation Value="2.69221453141855" />
+    <Observation Value="2.69154070586922" />
+    <Observation Value="2.69345980370637" />
+    <Observation Value="2.69180175518011" />
+    <Observation Value="2.69389067487693" />
+    <Observation Value="2.69811574766928" />
+    <Observation Value="2.69380755475826" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.970403035791271" />
+    <Observation Value="0.952484308017698" />
+    <Observation Value="1.01049263993643" />
+    <Observation Value="0.986072715686781" />
+    <Observation Value="0.967027858196343" />
+    <Observation Value="0.981226980777224" />
+    <Observation Value="1.01927912674208" />
+    <Observation Value="1.00017145673929" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.90737290363132" />
+    <Observation Value="2.0231039095375" />
+    <Observation Value="1.9859644051721" />
+    <Observation Value="1.97876588827545" />
+    <Observation Value="2.05753659613011" />
+    <Observation Value="2.0288019478787" />
+    <Observation Value="1.94664293043142" />
+    <Observation Value="1.99851053087611" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.438759737716916" />
+    <Observation Value="0.456772912588868" />
+    <Observation Value="0.465194007132755" />
+    <Observation Value="0.452817311968572" />
+    <Observation Value="0.488843017412185" />
+    <Observation Value="0.495909506153775" />
+    <Observation Value="0.429299344777364" />
+    <Observation Value="0.485459376916658" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.528979184274727" />
+    <Observation Value="0.555627218675171" />
+    <Observation Value="0.556360052056287" />
+    <Observation Value="0.54856139485287" />
+    <Observation Value="0.589369293737758" />
+    <Observation Value="0.58317266951901" />
+    <Observation Value="0.541674251186351" />
+    <Observation Value="0.589353373666355" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.483359013185803" />
+    <Observation Value="0.501972719996003" />
+    <Observation Value="0.508760650589981" />
+    <Observation Value="0.491712393525627" />
+    <Observation Value="0.522445205231622" />
+    <Observation Value="0.518119187754115" />
+    <Observation Value="0.482691967761072" />
+    <Observation Value="0.506157190654257" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.235375413413772" />
+    <Observation Value="0.263216347201574" />
+    <Observation Value="0.245524754595252" />
+    <Observation Value="0.236339411981604" />
+    <Observation Value="0.249669035169937" />
+    <Observation Value="0.23315547863335" />
+    <Observation Value="0.245002862630859" />
+    <Observation Value="0.223553441362691" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.220943787409316" />
+    <Observation Value="0.245462787767561" />
+    <Observation Value="0.210188872445679" />
+    <Observation Value="0.249335378666558" />
+    <Observation Value="0.207210045095989" />
+    <Observation Value="0.198445106180075" />
+    <Observation Value="0.247974504580162" />
+    <Observation Value="0.193987149139245" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.877778857508915" />
+    <Observation Value="1.02130214093882" />
+    <Observation Value="0.889269343427812" />
+    <Observation Value="0.842777066998698" />
+    <Observation Value="0.8350077953877" />
+    <Observation Value="0.873358824931866" />
+    <Observation Value="1.0484931525873" />
+    <Observation Value="1.41299990653489" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.646866438248128" />
+    <Observation Value="0.626618904291403" />
+    <Observation Value="0.6487467411887" />
+    <Observation Value="0.680830781364958" />
+    <Observation Value="0.644045052938042" />
+    <Observation Value="0.700610063210237" />
+    <Observation Value="0.70374556790246" />
+    <Observation Value="0.623122439709079" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.668834568764478" />
+    <Observation Value="0.661738512468202" />
+    <Observation Value="0.753367464687759" />
+    <Observation Value="0.641500754575011" />
+    <Observation Value="0.699839690762318" />
+    <Observation Value="0.713349624573278" />
+    <Observation Value="0.665367643797563" />
+    <Observation Value="0.667030937878442" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.757482839516264" />
+    <Observation Value="0.799851412247534" />
+    <Observation Value="0.762411438616401" />
+    <Observation Value="0.738032579288417" />
+    <Observation Value="0.739517918031113" />
+    <Observation Value="0.668979130640625" />
+    <Observation Value="0.803253410914537" />
+    <Observation Value="0.821363373385317" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.04643412969265" />
+    <Observation Value="0.921694793013374" />
+    <Observation Value="0.994993212513006" />
+    <Observation Value="1.04220778045008" />
+    <Observation Value="0.997250432485869" />
+    <Observation Value="1.00712584982462" />
+    <Observation Value="1.00149812011108" />
+    <Observation Value="0.99247438087851" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="LoadedTravelTime">
+    <Observation Value="10.6890444083096" />
+    <Observation Value="10.8353577411757" />
+    <Observation Value="10.9158565298175" />
+    <Observation Value="10.8724831460633" />
+    <Observation Value="10.9964725412797" />
+    <Observation Value="11.1443629213367" />
+    <Observation Value="10.9957815299169" />
+    <Observation Value="10.9516829568059" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="EmptyTravelTime">
+    <Observation Value="7.96469549500939" />
+    <Observation Value="7.87275521089699" />
+    <Observation Value="7.97951600778068" />
+    <Observation Value="7.98876274885072" />
+    <Observation Value="7.89688551083678" />
+    <Observation Value="8.1623092381712" />
+    <Observation Value="8.2804559242645" />
+    <Observation Value="7.99003832284953" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="RailOperatingCycleTime">
+    <Observation Value="29.9860557083353" />
+    <Observation Value="30.2656373917546" />
+    <Observation Value="30.0630220313106" />
+    <Observation Value="30.2210574050727" />
+    <Observation Value="30.4015156785171" />
+    <Observation Value="30.5452766800561" />
+    <Observation Value="30.0704625417908" />
+    <Observation Value="30.3845609087928" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="RailCycleTime">
+    <Observation Value="32.8831249622475" />
+    <Observation Value="33.1064589181189" />
+    <Observation Value="33.15727277889" />
+    <Observation Value="33.1974326186293" />
+    <Observation Value="33.2810210943597" />
+    <Observation Value="33.8263043543904" />
+    <Observation Value="33.6522719376647" />
+    <Observation Value="33.2944028545935" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.11583474321711" />
+    <Observation Value="2.15710963484961" />
+    <Observation Value="2.13782898481167" />
+    <Observation Value="2.14387503156087" />
+    <Observation Value="2.14544584523745" />
+    <Observation Value="2.19956295453721" />
+    <Observation Value="2.22359700804488" />
+    <Observation Value="2.18148743394364" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="MineTLOProductLoaded">
+    <Observation Value="179.984809825903" />
+    <Observation Value="178.627680000044" />
+    <Observation Value="179.266496136198" />
+    <Observation Value="179.150400000043" />
+    <Observation Value="178.865280000043" />
+    <Observation Value="177.400199524973" />
+    <Observation Value="176.584320000043" />
+    <Observation Value="178.05880245693" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="111113.310820904" />
+    <Observation Value="110232.05951344" />
+    <Observation Value="106780.611914221" />
+    <Observation Value="110621.032168165" />
+    <Observation Value="112239.09318928" />
+    <Observation Value="114519.589400545" />
+    <Observation Value="114123.152715697" />
+    <Observation Value="110058.514860627" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="87744.8790406749" />
+    <Observation Value="88412.1867379997" />
+    <Observation Value="85918.130211368" />
+    <Observation Value="89127.8436646925" />
+    <Observation Value="88511.2358541918" />
+    <Observation Value="93424.3010937163" />
+    <Observation Value="91211.4417561225" />
+    <Observation Value="88327.0704857929" />
+  </Observations>
+  <Observations Scenario="Blank" Response="EndTime" />
+  <Observations Scenario="Blank" Response="PercentDirectLoading" />
+  <Observations Scenario="Blank" Response="AvgIdleTimeAtBerth" />
+  <Observations Scenario="Blank" Response="AvgIdleTimeAtDumper" />
+  <Observations Scenario="Blank" Response="AvgShipTTIP" />
+  <Observations Scenario="Blank" Response="AvgShipTimeInBerth" />
+  <Observations Scenario="Blank" Response="AvgShipLoadingTime" />
+  <Observations Scenario="Blank" Response="PortUndergroundStockpileAvgContents" />
+  <Observations Scenario="Blank" Response="PortOpenCutStockpileAvgContents" />
+  <Observations Scenario="Blank" Response="PortStockpileAvgTotalContents" />
+  <Observations Scenario="Blank" Response="ShiploadingIdleTime" />
+  <Observations Scenario="Blank" Response="ShiploadingWeatherDownTime" />
+  <Observations Scenario="Blank" Response="ShiploadingMaintenanceDownTime" />
+  <Observations Scenario="Blank" Response="ShiploadingPositioningTime" />
+  <Observations Scenario="Blank" Response="ShiploadingOccupiedTime" />
+  <Observations Scenario="Blank" Response="DumperIdleTime" />
+  <Observations Scenario="Blank" Response="DumperWeatherDownTime" />
+  <Observations Scenario="Blank" Response="DumperMaintenanceShutdownTime" />
+  <Observations Scenario="Blank" Response="DumperPositioningTime" />
+  <Observations Scenario="Blank" Response="DumperUnloadingTime" />
+  <Observations Scenario="Blank" Response="PortShiploaderThroughput" />
+  <Observations Scenario="Blank" Response="PortDumperThroughput" />
+  <Observations Scenario="Blank" Response="TrainUnloadingTime" />
+  <Observations Scenario="Blank" Response="TrainLoadingTime" />
+  <Observations Scenario="Blank" Response="TrainProvisioningTime" />
+  <Observations Scenario="Blank" Response="EmptyTrainBlockedTimeAvg" />
+  <Observations Scenario="Blank" Response="LoadedTrainBlockedTimeAvg" />
+  <Observations Scenario="Blank" Response="LoadedTrainBlockedSiding1ToPort" />
+  <Observations Scenario="Blank" Response="LoadedTrainBlockedSiding3ToPort" />
+  <Observations Scenario="Blank" Response="LoadedTrainBlockedSiding5ToPort" />
+  <Observations Scenario="Blank" Response="LoadedTrainBlockedSiding7ToPort" />
+  <Observations Scenario="Blank" Response="LoadedTrainBlockedSiding9ToPort" />
+  <Observations Scenario="Blank" Response="EmptyTrainBlockedSiding9ToMine" />
+  <Observations Scenario="Blank" Response="EmptyTrainBlockedSiding7ToMine" />
+  <Observations Scenario="Blank" Response="EmptyTrainBlockedSiding5ToMine" />
+  <Observations Scenario="Blank" Response="EmptyTrainBlockedSiding3ToMine" />
+  <Observations Scenario="Blank" Response="EmptyTrainBlockedSiding1ToMine" />
+  <Observations Scenario="Blank" Response="LoadedTravelTime" />
+  <Observations Scenario="Blank" Response="EmptyTravelTime" />
+  <Observations Scenario="Blank" Response="RailOperatingCycleTime" />
+  <Observations Scenario="Blank" Response="RailCycleTime" />
+  <Observations Scenario="Blank" Response="AvgTimeBetweenTrainsAtTLO" />
+  <Observations Scenario="Blank" Response="MineTLOProductLoaded" />
+  <Observations Scenario="Blank" Response="MineUGCProductStockpileAvgContents" />
+  <Observations Scenario="Blank" Response="MineLACProductStockpileAvgContents" />
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="PercentDirectLoading">
+    <Observation Value="28.0337203857246" />
+    <Observation Value="29.0302497564854" />
+    <Observation Value="28.2253658296869" />
+    <Observation Value="28.1150968207562" />
+    <Observation Value="28.4468110850674" />
+    <Observation Value="27.7606685569496" />
+    <Observation Value="28.3514293754928" />
+    <Observation Value="28.2699198608184" />
+    <Observation Value="28.4007453281781" />
+    <Observation Value="28.481571519691" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="AvgIdleTimeAtBerth">
+    <Observation Value="5.00257284527395" />
+    <Observation Value="4.50316761553487" />
+    <Observation Value="4.65247503171921" />
+    <Observation Value="4.67855694393155" />
+    <Observation Value="4.97365396720949" />
+    <Observation Value="5.06239038764197" />
+    <Observation Value="4.85557345693666" />
+    <Observation Value="4.5193427789267" />
+    <Observation Value="4.46709400842209" />
+    <Observation Value="4.78623506612996" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.2688814736412" />
+    <Observation Value="1.15045679988598" />
+    <Observation Value="1.2336738335559" />
+    <Observation Value="1.26140250673449" />
+    <Observation Value="1.28649895710388" />
+    <Observation Value="1.25389113842076" />
+    <Observation Value="1.2387334978557" />
+    <Observation Value="1.27844445902769" />
+    <Observation Value="1.1894511672019" />
+    <Observation Value="1.25748328151339" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="AvgShipTTIP">
+    <Observation Value="1961.12962517744" />
+    <Observation Value="645.155927828204" />
+    <Observation Value="1873.75023724308" />
+    <Observation Value="1750.76054153866" />
+    <Observation Value="2054.17966097435" />
+    <Observation Value="2070.32111480974" />
+    <Observation Value="2138.29437174067" />
+    <Observation Value="1868.59547629019" />
+    <Observation Value="1862.30198153127" />
+    <Observation Value="2017.28022587176" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="AvgShipTimeInBerth">
+    <Observation Value="31.0353550018997" />
+    <Observation Value="30.1934791286486" />
+    <Observation Value="30.8322661690988" />
+    <Observation Value="30.3877392281898" />
+    <Observation Value="30.7049779072668" />
+    <Observation Value="30.1970823700608" />
+    <Observation Value="30.6910567259232" />
+    <Observation Value="30.9336686410152" />
+    <Observation Value="30.7008910788818" />
+    <Observation Value="30.8499757311922" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="AvgShipLoadingTime">
+    <Observation Value="27.7316532210352" />
+    <Observation Value="27.1729734001717" />
+    <Observation Value="27.5602048035914" />
+    <Observation Value="27.1878750474142" />
+    <Observation Value="27.4823144559597" />
+    <Observation Value="26.9592201443515" />
+    <Observation Value="27.4687401705078" />
+    <Observation Value="27.7100798612278" />
+    <Observation Value="27.4445724684659" />
+    <Observation Value="27.6032806079177" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="138631.380804611" />
+    <Observation Value="197067.232408266" />
+    <Observation Value="131853.386444871" />
+    <Observation Value="131767.550876316" />
+    <Observation Value="131184.830950227" />
+    <Observation Value="132507.469808425" />
+    <Observation Value="133794.695433056" />
+    <Observation Value="132044.4744416" />
+    <Observation Value="132784.224400031" />
+    <Observation Value="130530.078798138" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="159410.044532611" />
+    <Observation Value="271753.820336535" />
+    <Observation Value="162496.701219563" />
+    <Observation Value="154559.556429033" />
+    <Observation Value="161224.961875654" />
+    <Observation Value="160441.586897417" />
+    <Observation Value="161784.428624922" />
+    <Observation Value="160746.719741014" />
+    <Observation Value="160552.853407056" />
+    <Observation Value="155570.146753161" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="PortStockpileAvgTotalContents">
+    <Observation Value="298041.425337222" />
+    <Observation Value="468821.052744343" />
+    <Observation Value="294350.087664429" />
+    <Observation Value="286327.107305345" />
+    <Observation Value="292409.792825885" />
+    <Observation Value="292949.056705845" />
+    <Observation Value="295575.750470015" />
+    <Observation Value="292788.262675747" />
+    <Observation Value="293337.077807076" />
+    <Observation Value="286100.225551296" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="ShiploadingIdleTime">
+    <Observation Value="4322.66487929581" />
+    <Observation Value="1457.67652394092" />
+    <Observation Value="4021.06356233456" />
+    <Observation Value="4079.74800059762" />
+    <Observation Value="4359.08186664944" />
+    <Observation Value="4614.790684704" />
+    <Observation Value="4223.39587354028" />
+    <Observation Value="3900.90790826538" />
+    <Observation Value="3831.56056616203" />
+    <Observation Value="4158.00157201543" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="ShiploadingWeatherDownTime">
+    <Observation Value="320.185221518027" />
+    <Observation Value="337.155302725187" />
+    <Observation Value="273.231691517231" />
+    <Observation Value="263.406268293853" />
+    <Observation Value="300.17282738823" />
+    <Observation Value="215.013941271748" />
+    <Observation Value="349.264508794748" />
+    <Observation Value="311.848239150728" />
+    <Observation Value="262.012896707934" />
+    <Observation Value="358.343820336297" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1493.3962778023" />
+    <Observation Value="576" />
+    <Observation Value="1495.75970303097" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1476.86462782555" />
+    <Observation Value="1500" />
+    <Observation Value="1499.08713295628" />
+    <Observation Value="1500" />
+    <Observation Value="1488" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="ShiploadingPositioningTime">
+    <Observation Value="1734.390298737" />
+    <Observation Value="621.296797629164" />
+    <Observation Value="1873.21836685478" />
+    <Observation Value="1757.26268105678" />
+    <Observation Value="1644.21939328304" />
+    <Observation Value="1863.0471132604" />
+    <Observation Value="1673.35840113576" />
+    <Observation Value="1688.44267421732" />
+    <Observation Value="1699.36320178699" />
+    <Observation Value="1704.43605070697" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="ShiploadingOccupiedTime">
+    <Observation Value="35929.3633226469" />
+    <Observation Value="40807.8713757047" />
+    <Observation Value="36136.7266762625" />
+    <Observation Value="36199.5830500517" />
+    <Observation Value="35996.5259126793" />
+    <Observation Value="35630.2836329383" />
+    <Observation Value="36053.9812165292" />
+    <Observation Value="36399.7140454103" />
+    <Observation Value="36507.063335343" />
+    <Observation Value="36091.2185569413" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="DumperIdleTime">
+    <Observation Value="12300.7909970511" />
+    <Observation Value="4249.06840580751" />
+    <Observation Value="11830.4892834412" />
+    <Observation Value="12234.0070310932" />
+    <Observation Value="12157.2201836338" />
+    <Observation Value="12082.1596243825" />
+    <Observation Value="12257.7313343088" />
+    <Observation Value="12241.173220865" />
+    <Observation Value="11563.1298610962" />
+    <Observation Value="12055.6339518912" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="DumperWeatherDownTime">
+    <Observation Value="26.7965228379152" />
+    <Observation Value="38.7966064855677" />
+    <Observation Value="67.6694919838937" />
+    <Observation Value="61.1433056725714" />
+    <Observation Value="48.6192688067029" />
+    <Observation Value="32.2577167289111" />
+    <Observation Value="24.1474310535996" />
+    <Observation Value="61.7578161973047" />
+    <Observation Value="87.5144009896487" />
+    <Observation Value="44.6427246675431" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1740" />
+    <Observation Value="620.63449282217" />
+    <Observation Value="1727.36871559964" />
+    <Observation Value="1735.68263481053" />
+    <Observation Value="1740" />
+    <Observation Value="1740" />
+    <Observation Value="1714.4920622334" />
+    <Observation Value="1712.99038346851" />
+    <Observation Value="1740" />
+    <Observation Value="1713.34082890466" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="DumperPositioningTime">
+    <Observation Value="2249.83546224068" />
+    <Observation Value="874.441146916451" />
+    <Observation Value="2284.26098192731" />
+    <Observation Value="2288.89208349747" />
+    <Observation Value="2255.846382484" />
+    <Observation Value="2263.11955806248" />
+    <Observation Value="2260.24830501799" />
+    <Observation Value="2273.85190489862" />
+    <Observation Value="2295.1840508592" />
+    <Observation Value="2266.78462504815" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="DumperUnloadingTime">
+    <Observation Value="27482.5770178703" />
+    <Observation Value="38017.0593479683" />
+    <Observation Value="27890.2115270479" />
+    <Observation Value="27480.2749449262" />
+    <Observation Value="27598.3141650755" />
+    <Observation Value="27682.4631008261" />
+    <Observation Value="27543.3808673862" />
+    <Observation Value="27510.2266745706" />
+    <Observation Value="28114.171687055" />
+    <Observation Value="27719.5978694884" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="PortShiploaderThroughput">
+    <Observation Value="35.6269901641625" />
+    <Observation Value="13.7439999909213" />
+    <Observation Value="36.1638708631364" />
+    <Observation Value="36.228794488456" />
+    <Observation Value="35.7053571192129" />
+    <Observation Value="35.8427468413625" />
+    <Observation Value="35.794951555533" />
+    <Observation Value="35.9662856905007" />
+    <Observation Value="36.3419999760146" />
+    <Observation Value="35.8938538863855" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="PortDumperThroughput">
+    <Observation Value="35.6595772675484" />
+    <Observation Value="13.8568159999988" />
+    <Observation Value="36.2181058996395" />
+    <Observation Value="36.2940992795898" />
+    <Observation Value="35.7664996642176" />
+    <Observation Value="35.8837428519526" />
+    <Observation Value="35.8364636867964" />
+    <Observation Value="36.0480556633208" />
+    <Observation Value="36.3860640000069" />
+    <Observation Value="35.9533519101595" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="TrainUnloadingTime">
+    <Observation Value="3.69312380398113" />
+    <Observation Value="3.67853835230506" />
+    <Observation Value="3.71666851131446" />
+    <Observation Value="3.63587350907321" />
+    <Observation Value="3.70863338347517" />
+    <Observation Value="3.70379659135829" />
+    <Observation Value="3.66210942691649" />
+    <Observation Value="3.64201905355451" />
+    <Observation Value="3.68687956651218" />
+    <Observation Value="3.685297608047" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="TrainLoadingTime">
+    <Observation Value="2.99975070171229" />
+    <Observation Value="3.00351886170518" />
+    <Observation Value="3.00194715228501" />
+    <Observation Value="3.00002633270689" />
+    <Observation Value="2.99824959283983" />
+    <Observation Value="2.99822679874045" />
+    <Observation Value="3.00187767800189" />
+    <Observation Value="3.00080342985819" />
+    <Observation Value="3.00192231935768" />
+    <Observation Value="2.99870085821339" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="TrainProvisioningTime">
+    <Observation Value="2.68620735324771" />
+    <Observation Value="2.68545454453076" />
+    <Observation Value="2.68940944785283" />
+    <Observation Value="2.68592194826196" />
+    <Observation Value="2.69172092987724" />
+    <Observation Value="2.69304635766182" />
+    <Observation Value="2.6849999993754" />
+    <Observation Value="2.69062499878455" />
+    <Observation Value="2.68642716967326" />
+    <Observation Value="2.68746694840264" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.99946621616412" />
+    <Observation Value="1.01743673428278" />
+    <Observation Value="1.03457957915183" />
+    <Observation Value="1.0444708628071" />
+    <Observation Value="0.998056693322751" />
+    <Observation Value="1.0293321379749" />
+    <Observation Value="1.03022526664136" />
+    <Observation Value="1.0517107195075" />
+    <Observation Value="0.984984324115761" />
+    <Observation Value="1.05150978220821" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.59105843879535" />
+    <Observation Value="1.56610031630683" />
+    <Observation Value="1.54579673858362" />
+    <Observation Value="1.40408561634123" />
+    <Observation Value="1.55818383120046" />
+    <Observation Value="1.57294178177952" />
+    <Observation Value="1.54669468661108" />
+    <Observation Value="1.49446576165125" />
+    <Observation Value="1.55795687369635" />
+    <Observation Value="1.5483153745929" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.295502523311294" />
+    <Observation Value="0.301290180888358" />
+    <Observation Value="0.296278423480038" />
+    <Observation Value="0.242241349241666" />
+    <Observation Value="0.290769155335839" />
+    <Observation Value="0.308932635835475" />
+    <Observation Value="0.284494449098104" />
+    <Observation Value="0.273361730824933" />
+    <Observation Value="0.305749834849643" />
+    <Observation Value="0.301236443525125" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.431006736421463" />
+    <Observation Value="0.432601576228618" />
+    <Observation Value="0.41711776822885" />
+    <Observation Value="0.369037480177977" />
+    <Observation Value="0.418102518065655" />
+    <Observation Value="0.406191819505958" />
+    <Observation Value="0.384376690262018" />
+    <Observation Value="0.387189378916359" />
+    <Observation Value="0.412016938379461" />
+    <Observation Value="0.407450745759032" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.387925018995843" />
+    <Observation Value="0.396023417432207" />
+    <Observation Value="0.363578022309064" />
+    <Observation Value="0.327661718352351" />
+    <Observation Value="0.384844962665564" />
+    <Observation Value="0.384444756474389" />
+    <Observation Value="0.372742809023639" />
+    <Observation Value="0.394442482901733" />
+    <Observation Value="0.374945649871975" />
+    <Observation Value="0.376222993595318" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.253062825687515" />
+    <Observation Value="0.24351716379751" />
+    <Observation Value="0.251909865605368" />
+    <Observation Value="0.24862871791727" />
+    <Observation Value="0.246511543368607" />
+    <Observation Value="0.273358211244673" />
+    <Observation Value="0.269087432389619" />
+    <Observation Value="0.22603515616842" />
+    <Observation Value="0.250707501990953" />
+    <Observation Value="0.256231203184687" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.223497832597879" />
+    <Observation Value="0.191621168740306" />
+    <Observation Value="0.216783594154126" />
+    <Observation Value="0.216495979489423" />
+    <Observation Value="0.217787001507672" />
+    <Observation Value="0.200092653965265" />
+    <Observation Value="0.236062977542392" />
+    <Observation Value="0.213495593276389" />
+    <Observation Value="0.214434888664521" />
+    <Observation Value="0.207236693418963" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="1.61177449831296" />
+    <Observation Value="2.01900808169563" />
+    <Observation Value="1.10521455296555" />
+    <Observation Value="0.962977536426313" />
+    <Observation Value="1.02359287590396" />
+    <Observation Value="0.960791671133395" />
+    <Observation Value="1.37177525772196" />
+    <Observation Value="1.19796385177115" />
+    <Observation Value="1.03111534345286" />
+    <Observation Value="1.17338632647855" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.634509178551884" />
+    <Observation Value="0.674171770004101" />
+    <Observation Value="0.652500242255902" />
+    <Observation Value="0.637441824748445" />
+    <Observation Value="0.62337223557675" />
+    <Observation Value="0.587340590428811" />
+    <Observation Value="0.624686219966299" />
+    <Observation Value="0.624335578105059" />
+    <Observation Value="0.625318270617613" />
+    <Observation Value="0.636113866566545" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.661612169247261" />
+    <Observation Value="0.684707806404368" />
+    <Observation Value="0.6766654893808" />
+    <Observation Value="0.625844509932527" />
+    <Observation Value="0.66832949015193" />
+    <Observation Value="0.687579661058149" />
+    <Observation Value="0.684232249366636" />
+    <Observation Value="0.73883322673429" />
+    <Observation Value="0.653304169492942" />
+    <Observation Value="0.726668517180865" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.737135838371364" />
+    <Observation Value="0.754236255857429" />
+    <Observation Value="0.775081200996667" />
+    <Observation Value="0.755102070209615" />
+    <Observation Value="0.771164240904008" />
+    <Observation Value="0.743004262290483" />
+    <Observation Value="0.750971534195877" />
+    <Observation Value="0.822070710273138" />
+    <Observation Value="0.793059947604173" />
+    <Observation Value="0.784816086200585" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.04243629634641" />
+    <Observation Value="0.980333190582887" />
+    <Observation Value="1.15032641460808" />
+    <Observation Value="1.25027372339155" />
+    <Observation Value="1.06528747102994" />
+    <Observation Value="1.1399618543366" />
+    <Observation Value="1.12565271334293" />
+    <Observation Value="1.10715001759674" />
+    <Observation Value="1.04255014557529" />
+    <Observation Value="1.11363406890374" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="LoadedTravelTime">
+    <Observation Value="10.268821232941" />
+    <Observation Value="9.89863785759288" />
+    <Observation Value="10.0449317401625" />
+    <Observation Value="9.93309916095088" />
+    <Observation Value="10.301463008105" />
+    <Observation Value="10.240512316896" />
+    <Observation Value="10.123909653758" />
+    <Observation Value="10.0430518074961" />
+    <Observation Value="9.91573609747254" />
+    <Observation Value="10.2540905443085" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="EmptyTravelTime">
+    <Observation Value="8.21457696556141" />
+    <Observation Value="7.94931265977704" />
+    <Observation Value="8.06585485682981" />
+    <Observation Value="8.14949121144997" />
+    <Observation Value="8.36863642892504" />
+    <Observation Value="8.2095799012658" />
+    <Observation Value="8.29060701356798" />
+    <Observation Value="8.29962345204425" />
+    <Observation Value="8.13782330435703" />
+    <Observation Value="8.25918608551235" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="RailOperatingCycleTime">
+    <Observation Value="28.8876470221933" />
+    <Observation Value="28.6842264854667" />
+    <Observation Value="28.5709189503931" />
+    <Observation Value="28.3496339253306" />
+    <Observation Value="28.7317168215999" />
+    <Observation Value="28.8237141252566" />
+    <Observation Value="28.8207001113141" />
+    <Observation Value="28.6051613289433" />
+    <Observation Value="28.6880750651104" />
+    <Observation Value="28.7524123143745" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="RailCycleTime">
+    <Observation Value="32.1161861544055" />
+    <Observation Value="31.2183625564423" />
+    <Observation Value="31.5328622021907" />
+    <Observation Value="31.4601149966147" />
+    <Observation Value="32.2804413998293" />
+    <Observation Value="32.0108884858443" />
+    <Observation Value="32.0273646819571" />
+    <Observation Value="31.7835859624728" />
+    <Observation Value="31.4757420714805" />
+    <Observation Value="32.0245321708013" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.16847906610478" />
+    <Observation Value="1.96718758368035" />
+    <Observation Value="2.07577861167564" />
+    <Observation Value="2.06597684204748" />
+    <Observation Value="2.15189420219586" />
+    <Observation Value="2.13342031086484" />
+    <Observation Value="2.13735867088876" />
+    <Observation Value="2.10414252713989" />
+    <Observation Value="2.04954985892385" />
+    <Observation Value="2.12177114012624" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="MineTLOProductLoaded">
+    <Observation Value="178.34868445835" />
+    <Observation Value="69.4029599999943" />
+    <Observation Value="181.16498391866" />
+    <Observation Value="181.526424884885" />
+    <Observation Value="178.91103052879" />
+    <Observation Value="179.482234319938" />
+    <Observation Value="179.245440000044" />
+    <Observation Value="180.311407571056" />
+    <Observation Value="181.996973610983" />
+    <Observation Value="179.819515933099" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="91893.3068799272" />
+    <Observation Value="126358.93564206" />
+    <Observation Value="87381.2953248495" />
+    <Observation Value="85512.6866839644" />
+    <Observation Value="92091.7666351106" />
+    <Observation Value="89457.5932408563" />
+    <Observation Value="87120.5089067059" />
+    <Observation Value="87166.846983551" />
+    <Observation Value="86812.3369737902" />
+    <Observation Value="90330.500040304" />
+  </Observations>
+  <Observations Scenario="2300tph Bypass-2000t Surge Bin" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="74221.1679341719" />
+    <Observation Value="118693.662723997" />
+    <Observation Value="68932.4090562443" />
+    <Observation Value="67369.7026728872" />
+    <Observation Value="74051.0224582909" />
+    <Observation Value="71539.9201014909" />
+    <Observation Value="69814.2268636657" />
+    <Observation Value="69025.0368421217" />
+    <Observation Value="68369.7245129014" />
+    <Observation Value="72543.6469701785" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="PercentDirectLoading">
+    <Observation Value="28.1437708032732" />
+    <Observation Value="28.4671579681096" />
+    <Observation Value="28.241043202201" />
+    <Observation Value="28.6888042332617" />
+    <Observation Value="28.5482799271573" />
+    <Observation Value="28.4555479486013" />
+    <Observation Value="28.5174910983567" />
+    <Observation Value="28.7667212169233" />
+    <Observation Value="29.045623033011" />
+    <Observation Value="28.2047703665144" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.33701929100368" />
+    <Observation Value="3.56116264739736" />
+    <Observation Value="4.83520969480152" />
+    <Observation Value="4.39648571738255" />
+    <Observation Value="4.16476468029486" />
+    <Observation Value="4.81909982361343" />
+    <Observation Value="4.49444331665124" />
+    <Observation Value="4.48300616216753" />
+    <Observation Value="4.27722325359317" />
+    <Observation Value="4.61649531089003" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.12994641503992" />
+    <Observation Value="1.07935589774649" />
+    <Observation Value="1.12959619528753" />
+    <Observation Value="1.10592760111663" />
+    <Observation Value="1.14963589604016" />
+    <Observation Value="1.17200453215146" />
+    <Observation Value="1.16123543482743" />
+    <Observation Value="1.23055341388874" />
+    <Observation Value="1.11042963314639" />
+    <Observation Value="1.17690700691952" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="AvgShipTTIP">
+    <Observation Value="1842.41739880657" />
+    <Observation Value="600.976877739585" />
+    <Observation Value="1843.71222244219" />
+    <Observation Value="1558.86305804276" />
+    <Observation Value="1387.66600766294" />
+    <Observation Value="1782.91866348912" />
+    <Observation Value="1823.95820026924" />
+    <Observation Value="2045.67759117124" />
+    <Observation Value="1855.72722141425" />
+    <Observation Value="1729.09586746967" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="AvgShipTimeInBerth">
+    <Observation Value="30.6679219488283" />
+    <Observation Value="30.4033794382467" />
+    <Observation Value="30.1006609915702" />
+    <Observation Value="30.0301764131919" />
+    <Observation Value="29.6278122369481" />
+    <Observation Value="30.40511543757" />
+    <Observation Value="30.5299400928238" />
+    <Observation Value="30.4468594654049" />
+    <Observation Value="30.4823403293457" />
+    <Observation Value="30.8042292117184" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="AvgShipLoadingTime">
+    <Observation Value="27.3690054581949" />
+    <Observation Value="27.1857881930359" />
+    <Observation Value="26.9707363824397" />
+    <Observation Value="26.9088895334787" />
+    <Observation Value="26.4983503295404" />
+    <Observation Value="27.2200507868821" />
+    <Observation Value="27.2923464967211" />
+    <Observation Value="27.1981627268748" />
+    <Observation Value="27.3483556609828" />
+    <Observation Value="27.5097719061624" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="135276.385644338" />
+    <Observation Value="109740.075102328" />
+    <Observation Value="131897.989178528" />
+    <Observation Value="130977.931132765" />
+    <Observation Value="129100.206805234" />
+    <Observation Value="133941.640508097" />
+    <Observation Value="134085.655663167" />
+    <Observation Value="131367.19517277" />
+    <Observation Value="136052.859508151" />
+    <Observation Value="137329.636207023" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="164850.394905547" />
+    <Observation Value="254717.626568063" />
+    <Observation Value="163052.838564954" />
+    <Observation Value="164569.223414503" />
+    <Observation Value="162368.896013626" />
+    <Observation Value="164676.183399178" />
+    <Observation Value="160609.508166956" />
+    <Observation Value="159984.679262641" />
+    <Observation Value="162862.399160482" />
+    <Observation Value="165835.829201271" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="PortStockpileAvgTotalContents">
+    <Observation Value="300126.780549887" />
+    <Observation Value="364455.531806984" />
+    <Observation Value="294950.827743476" />
+    <Observation Value="295547.154547262" />
+    <Observation Value="291469.102818863" />
+    <Observation Value="298617.823907264" />
+    <Observation Value="294699.362916877" />
+    <Observation Value="291351.874435416" />
+    <Observation Value="298915.258668634" />
+    <Observation Value="303165.465408299" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="ShiploadingIdleTime">
+    <Observation Value="3699.09313562759" />
+    <Observation Value="1152.95375164971" />
+    <Observation Value="4302.3610002822" />
+    <Observation Value="3929.96041770519" />
+    <Observation Value="3668.77243904466" />
+    <Observation Value="4220.8374796805" />
+    <Observation Value="3859.53516966143" />
+    <Observation Value="3864.1520036808" />
+    <Observation Value="3580.41959162253" />
+    <Observation Value="3983.55916550818" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="ShiploadingWeatherDownTime">
+    <Observation Value="232.083408287832" />
+    <Observation Value="255.74851799409" />
+    <Observation Value="305.609745249554" />
+    <Observation Value="247.51554583263" />
+    <Observation Value="355.840197736704" />
+    <Observation Value="255.6999404229" />
+    <Observation Value="373.030918436606" />
+    <Observation Value="253.807932138318" />
+    <Observation Value="405.796662339392" />
+    <Observation Value="298.105162122571" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1500" />
+    <Observation Value="588" />
+    <Observation Value="1500" />
+    <Observation Value="1489.31689502337" />
+    <Observation Value="1492.18734041953" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1498.91831623837" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="ShiploadingPositioningTime">
+    <Observation Value="1666.79990341512" />
+    <Observation Value="675.424794711574" />
+    <Observation Value="1756.60123106645" />
+    <Observation Value="1691.9056530282" />
+    <Observation Value="1789.33364875571" />
+    <Observation Value="1645.53383780488" />
+    <Observation Value="1791.79696236005" />
+    <Observation Value="1830.62967807904" />
+    <Observation Value="1695.31351457169" />
+    <Observation Value="1720.09540409505" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="ShiploadingOccupiedTime">
+    <Observation Value="36702.0235526695" />
+    <Observation Value="41127.8729356446" />
+    <Observation Value="35935.4280234018" />
+    <Observation Value="36441.3014884106" />
+    <Observation Value="36493.8663740434" />
+    <Observation Value="36177.9287420917" />
+    <Observation Value="36275.6369495419" />
+    <Observation Value="36351.4103861018" />
+    <Observation Value="36618.4702314664" />
+    <Observation Value="36299.3219520358" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="DumperIdleTime">
+    <Observation Value="11409.6326892032" />
+    <Observation Value="4357.957686915" />
+    <Observation Value="11665.8988732029" />
+    <Observation Value="11319.2703114307" />
+    <Observation Value="11467.9658178076" />
+    <Observation Value="11634.4368098452" />
+    <Observation Value="11820.9343870001" />
+    <Observation Value="11541.5587423012" />
+    <Observation Value="11661.7290279117" />
+    <Observation Value="11857.3010167533" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="DumperWeatherDownTime">
+    <Observation Value="34.4197790693857" />
+    <Observation Value="46.0760585338995" />
+    <Observation Value="54.9170022913954" />
+    <Observation Value="39.9516957406029" />
+    <Observation Value="59.1602161684272" />
+    <Observation Value="61.3625328369224" />
+    <Observation Value="48.8422245038096" />
+    <Observation Value="47.8885295779857" />
+    <Observation Value="40.3907443088503" />
+    <Observation Value="57.9031015342163" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1740" />
+    <Observation Value="696" />
+    <Observation Value="1720.90821524129" />
+    <Observation Value="1740" />
+    <Observation Value="1653.94283544672" />
+    <Observation Value="1732.37608067464" />
+    <Observation Value="1713.25641527884" />
+    <Observation Value="1734.13576350719" />
+    <Observation Value="1714.52384779355" />
+    <Observation Value="1735.38171728023" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="DumperPositioningTime">
+    <Observation Value="2292.30089973085" />
+    <Observation Value="938.115582828091" />
+    <Observation Value="2281.64623498098" />
+    <Observation Value="2317.19892342055" />
+    <Observation Value="2328.60559189815" />
+    <Observation Value="2288.08379338394" />
+    <Observation Value="2274.45603960409" />
+    <Observation Value="2280.03843484453" />
+    <Observation Value="2295.8230007675" />
+    <Observation Value="2281.8818613471" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="DumperUnloadingTime">
+    <Observation Value="28323.6466319965" />
+    <Observation Value="37761.850671723" />
+    <Observation Value="28076.6296742834" />
+    <Observation Value="28383.5790694081" />
+    <Observation Value="28290.3255386791" />
+    <Observation Value="28083.7407832593" />
+    <Observation Value="27942.5109336132" />
+    <Observation Value="28196.3785297691" />
+    <Observation Value="28087.5333792184" />
+    <Observation Value="27867.5323030852" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="PortShiploaderThroughput">
+    <Observation Value="36.2941902521738" />
+    <Observation Value="14.7879999901212" />
+    <Observation Value="36.1347142615913" />
+    <Observation Value="36.6678492072356" />
+    <Observation Value="36.8699999750967" />
+    <Observation Value="36.2362816356938" />
+    <Observation Value="36.0061428330783" />
+    <Observation Value="36.0971428330183" />
+    <Observation Value="36.3724285471834" />
+    <Observation Value="36.1450714047669" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="PortDumperThroughput">
+    <Observation Value="36.3349003418053" />
+    <Observation Value="14.8690579999798" />
+    <Observation Value="36.1926659032321" />
+    <Observation Value="36.737877099653" />
+    <Observation Value="36.918857267563" />
+    <Observation Value="36.282366802483" />
+    <Observation Value="36.064801164627" />
+    <Observation Value="36.1507263262023" />
+    <Observation Value="36.4173219169841" />
+    <Observation Value="36.1845872802514" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="TrainUnloadingTime">
+    <Observation Value="3.73811342853303" />
+    <Observation Value="3.72375149062674" />
+    <Observation Value="3.70357100188288" />
+    <Observation Value="3.6952646210731" />
+    <Observation Value="3.6567355304346" />
+    <Observation Value="3.69466180868467" />
+    <Observation Value="3.70191655657031" />
+    <Observation Value="3.74411321742992" />
+    <Observation Value="3.69136420102839" />
+    <Observation Value="3.68797055434131" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="TrainLoadingTime">
+    <Observation Value="2.99695594414612" />
+    <Observation Value="3.00167587138375" />
+    <Observation Value="3.00247506867996" />
+    <Observation Value="2.99855916570207" />
+    <Observation Value="3.00199873814666" />
+    <Observation Value="2.99909659083492" />
+    <Observation Value="2.99831311276984" />
+    <Observation Value="2.99750348852179" />
+    <Observation Value="2.99815585514976" />
+    <Observation Value="2.99617604691596" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="TrainProvisioningTime">
+    <Observation Value="2.68987573542095" />
+    <Observation Value="2.67845957309235" />
+    <Observation Value="2.69259356555855" />
+    <Observation Value="2.69036222509734" />
+    <Observation Value="2.68505598959835" />
+    <Observation Value="2.68831543202559" />
+    <Observation Value="2.68580653554395" />
+    <Observation Value="2.68965290313423" />
+    <Observation Value="2.68868441638415" />
+    <Observation Value="2.68884802488967" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.987288739805168" />
+    <Observation Value="0.9732520656734" />
+    <Observation Value="0.983157037821102" />
+    <Observation Value="0.97179350691597" />
+    <Observation Value="0.976921850923519" />
+    <Observation Value="1.00597762466312" />
+    <Observation Value="1.05732681527955" />
+    <Observation Value="1.01174891891353" />
+    <Observation Value="1.01482182427945" />
+    <Observation Value="1.10137109723284" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.62312193400159" />
+    <Observation Value="1.62707706732759" />
+    <Observation Value="1.63831505408562" />
+    <Observation Value="1.53428473924047" />
+    <Observation Value="1.51187655348834" />
+    <Observation Value="1.55129380612357" />
+    <Observation Value="1.59851017519728" />
+    <Observation Value="1.69100849404569" />
+    <Observation Value="1.54366292036504" />
+    <Observation Value="1.57645999202658" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.327712234934466" />
+    <Observation Value="0.297942388534271" />
+    <Observation Value="0.332220072417136" />
+    <Observation Value="0.294879435240629" />
+    <Observation Value="0.283177348594621" />
+    <Observation Value="0.304990486615322" />
+    <Observation Value="0.307021699414863" />
+    <Observation Value="0.329948316196151" />
+    <Observation Value="0.28992910387077" />
+    <Observation Value="0.309590020054158" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.433700504167391" />
+    <Observation Value="0.449641622104855" />
+    <Observation Value="0.441213180512528" />
+    <Observation Value="0.407878298478836" />
+    <Observation Value="0.406181051916768" />
+    <Observation Value="0.422701901777113" />
+    <Observation Value="0.430684857419724" />
+    <Observation Value="0.441464479557327" />
+    <Observation Value="0.418858059102842" />
+    <Observation Value="0.412519525336119" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.415665927050852" />
+    <Observation Value="0.385720860086973" />
+    <Observation Value="0.400003420805536" />
+    <Observation Value="0.387114648535311" />
+    <Observation Value="0.376076171637885" />
+    <Observation Value="0.367559052595109" />
+    <Observation Value="0.400291816660859" />
+    <Observation Value="0.4194090283146" />
+    <Observation Value="0.398044225101513" />
+    <Observation Value="0.380819283294863" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.241157111912975" />
+    <Observation Value="0.252486732719436" />
+    <Observation Value="0.258840592044677" />
+    <Observation Value="0.234938025576274" />
+    <Observation Value="0.237475514522675" />
+    <Observation Value="0.237187618773787" />
+    <Observation Value="0.251227349478575" />
+    <Observation Value="0.257188181484447" />
+    <Observation Value="0.24361737448747" />
+    <Observation Value="0.238584549133409" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.204773490328347" />
+    <Observation Value="0.239904463338524" />
+    <Observation Value="0.206047381471709" />
+    <Observation Value="0.2093668054237" />
+    <Observation Value="0.208966470093969" />
+    <Observation Value="0.218747806001732" />
+    <Observation Value="0.209306811950136" />
+    <Observation Value="0.242744344857111" />
+    <Observation Value="0.193105245688142" />
+    <Observation Value="0.234969756923443" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="1.03311623082983" />
+    <Observation Value="0.991267203376622" />
+    <Observation Value="0.789326089676628" />
+    <Observation Value="1.01369267577094" />
+    <Observation Value="0.910659769386543" />
+    <Observation Value="1.2937716991857" />
+    <Observation Value="1.19673803159633" />
+    <Observation Value="0.922772941639501" />
+    <Observation Value="0.955497968540787" />
+    <Observation Value="0.94198653499267" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.599260963715229" />
+    <Observation Value="0.659857436637276" />
+    <Observation Value="0.610370775618614" />
+    <Observation Value="0.616189219405525" />
+    <Observation Value="0.640242171316774" />
+    <Observation Value="0.63754454936769" />
+    <Observation Value="0.665786553435718" />
+    <Observation Value="0.597530751827229" />
+    <Observation Value="0.700369460249438" />
+    <Observation Value="0.657953074195168" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.683868380091883" />
+    <Observation Value="0.693140259207031" />
+    <Observation Value="0.734955929104664" />
+    <Observation Value="0.661587044970089" />
+    <Observation Value="0.635092371513255" />
+    <Observation Value="0.739615967286191" />
+    <Observation Value="0.699311643929569" />
+    <Observation Value="0.645458848800171" />
+    <Observation Value="0.684231598556159" />
+    <Observation Value="0.702032115498507" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.72666401193775" />
+    <Observation Value="0.783352507641825" />
+    <Observation Value="0.749719692455788" />
+    <Observation Value="0.752245682095172" />
+    <Observation Value="0.764395074359955" />
+    <Observation Value="0.75640661042424" />
+    <Observation Value="0.856971631371901" />
+    <Observation Value="0.728609058977962" />
+    <Observation Value="0.768384966510858" />
+    <Observation Value="0.855317282052068" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.08184299045897" />
+    <Observation Value="0.928048981522241" />
+    <Observation Value="1.00089496023515" />
+    <Observation Value="0.993017078038255" />
+    <Observation Value="1.01234848916991" />
+    <Observation Value="0.997162912609564" />
+    <Observation Value="1.06135206534236" />
+    <Observation Value="1.20172066956119" />
+    <Observation Value="1.0601131004599" />
+    <Observation Value="1.16596535005069" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="LoadedTravelTime">
+    <Observation Value="10.1215090405917" />
+    <Observation Value="10.1786266929904" />
+    <Observation Value="10.3671675844259" />
+    <Observation Value="10.1293167042961" />
+    <Observation Value="10.0004848290275" />
+    <Observation Value="10.274166876592" />
+    <Observation Value="10.3403791750043" />
+    <Observation Value="10.4087641885329" />
+    <Observation Value="10.3210587597577" />
+    <Observation Value="10.1465044452655" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="EmptyTravelTime">
+    <Observation Value="8.02391903685338" />
+    <Observation Value="7.97833612576555" />
+    <Observation Value="8.0890663112269" />
+    <Observation Value="8.05226493792592" />
+    <Observation Value="7.97726534219817" />
+    <Observation Value="8.20096793841162" />
+    <Observation Value="8.34082927026157" />
+    <Observation Value="8.25185108552757" />
+    <Observation Value="8.25421370904238" />
+    <Observation Value="8.30959928628798" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="RailOperatingCycleTime">
+    <Observation Value="28.9988216095103" />
+    <Observation Value="28.9804585351548" />
+    <Observation Value="28.9909634619118" />
+    <Observation Value="28.733756374532" />
+    <Observation Value="28.5855736388821" />
+    <Observation Value="28.8420749799653" />
+    <Observation Value="29.0343764432988" />
+    <Observation Value="28.9644442810717" />
+    <Observation Value="28.8030378769533" />
+    <Observation Value="28.8910288984347" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="RailCycleTime">
+    <Observation Value="31.7758784698515" />
+    <Observation Value="31.76351153325" />
+    <Observation Value="32.1280572994537" />
+    <Observation Value="31.7635520763621" />
+    <Observation Value="31.3809783305617" />
+    <Observation Value="32.1570683915924" />
+    <Observation Value="32.4121058764624" />
+    <Observation Value="32.2898310261804" />
+    <Observation Value="32.2735034456121" />
+    <Observation Value="32.0704622351222" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.06249277872485" />
+    <Observation Value="1.93688755296379" />
+    <Observation Value="2.07980198459685" />
+    <Observation Value="1.99809338448739" />
+    <Observation Value="1.96763890536336" />
+    <Observation Value="2.06856314636596" />
+    <Observation Value="2.10471790374507" />
+    <Observation Value="2.09111040206453" />
+    <Observation Value="2.04798135219992" />
+    <Observation Value="2.08790085354507" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="MineTLOProductLoaded">
+    <Observation Value="181.740240000045" />
+    <Observation Value="74.4875999999956" />
+    <Observation Value="181.020748783347" />
+    <Observation Value="183.759840000045" />
+    <Observation Value="184.638960000046" />
+    <Observation Value="181.478880000045" />
+    <Observation Value="180.362160000044" />
+    <Observation Value="180.813600000044" />
+    <Observation Value="182.167920000045" />
+    <Observation Value="180.956160000044" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="95972.2724465819" />
+    <Observation Value="128451.572858767" />
+    <Observation Value="100599.254495706" />
+    <Observation Value="97563.6533972227" />
+    <Observation Value="94994.4452824224" />
+    <Observation Value="99928.172859156" />
+    <Observation Value="101661.326302584" />
+    <Observation Value="100858.109818753" />
+    <Observation Value="101750.378514961" />
+    <Observation Value="100440.414111413" />
+  </Observations>
+  <Observations Scenario="2500tph Bypass-2000t Surge Bin" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="74742.8114232716" />
+    <Observation Value="119568.6745914" />
+    <Observation Value="78399.6424823511" />
+    <Observation Value="75254.3657395172" />
+    <Observation Value="73191.0744633411" />
+    <Observation Value="79020.4425901384" />
+    <Observation Value="81029.5774809862" />
+    <Observation Value="80063.7553912419" />
+    <Observation Value="79614.0593688706" />
+    <Observation Value="78554.1252481678" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="PercentDirectLoading">
+    <Observation Value="28.5743881149891" />
+    <Observation Value="28.5316349308023" />
+    <Observation Value="28.2662479945866" />
+    <Observation Value="28.2732272096156" />
+    <Observation Value="28.9191288920826" />
+    <Observation Value="28.7114420858379" />
+    <Observation Value="28.2934653988368" />
+    <Observation Value="28.9195013976229" />
+    <Observation Value="29.2986664909628" />
+    <Observation Value="28.8261281677266" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.73811930252057" />
+    <Observation Value="4.66340417436982" />
+    <Observation Value="4.36719327497295" />
+    <Observation Value="4.21147317690975" />
+    <Observation Value="4.83022255923483" />
+    <Observation Value="4.10685570776699" />
+    <Observation Value="4.16497410559603" />
+    <Observation Value="4.21211890309742" />
+    <Observation Value="4.321200942381" />
+    <Observation Value="4.03764321469682" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.1441054234652" />
+    <Observation Value="1.15544221436166" />
+    <Observation Value="1.06864235842779" />
+    <Observation Value="1.12683478427752" />
+    <Observation Value="1.16536417279014" />
+    <Observation Value="1.07889925983366" />
+    <Observation Value="1.09606164147511" />
+    <Observation Value="1.06712678919317" />
+    <Observation Value="0.953395185744965" />
+    <Observation Value="1.07631312949854" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="AvgShipTTIP">
+    <Observation Value="2097.61773423374" />
+    <Observation Value="1591.67741103123" />
+    <Observation Value="1804.13567108524" />
+    <Observation Value="1813.74365619785" />
+    <Observation Value="1863.43952210431" />
+    <Observation Value="1454.24791844232" />
+    <Observation Value="1585.42822916457" />
+    <Observation Value="1540.74422948617" />
+    <Observation Value="1207.24455606186" />
+    <Observation Value="1575.39157716632" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="AvgShipTimeInBerth">
+    <Observation Value="30.8562173812879" />
+    <Observation Value="30.5557251219345" />
+    <Observation Value="30.5925076417708" />
+    <Observation Value="30.940511931471" />
+    <Observation Value="30.4478601285451" />
+    <Observation Value="30.3090368806217" />
+    <Observation Value="30.5610300167173" />
+    <Observation Value="30.2370435107207" />
+    <Observation Value="30.3292819591664" />
+    <Observation Value="30.4056207420282" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="AvgShipLoadingTime">
+    <Observation Value="27.5541179373123" />
+    <Observation Value="27.333877926189" />
+    <Observation Value="27.3116372307515" />
+    <Observation Value="27.6645608949587" />
+    <Observation Value="27.2203852298931" />
+    <Observation Value="27.0941424895521" />
+    <Observation Value="27.3673793157461" />
+    <Observation Value="27.0570713675388" />
+    <Observation Value="27.1279778978769" />
+    <Observation Value="27.2095834500773" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="133606.127774115" />
+    <Observation Value="133975.08898152" />
+    <Observation Value="132443.579613364" />
+    <Observation Value="133730.061584232" />
+    <Observation Value="138828.994796587" />
+    <Observation Value="132451.305528333" />
+    <Observation Value="128860.844088191" />
+    <Observation Value="134737.233447262" />
+    <Observation Value="175025.483990678" />
+    <Observation Value="137688.078594054" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="161858.45502586" />
+    <Observation Value="165311.477635571" />
+    <Observation Value="162020.975240806" />
+    <Observation Value="165685.620875051" />
+    <Observation Value="169884.021290489" />
+    <Observation Value="168576.188591377" />
+    <Observation Value="164896.932308541" />
+    <Observation Value="162782.754190956" />
+    <Observation Value="224132.997226952" />
+    <Observation Value="166206.709034798" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="PortStockpileAvgTotalContents">
+    <Observation Value="295464.582799962" />
+    <Observation Value="299286.566617104" />
+    <Observation Value="294464.55485417" />
+    <Observation Value="299415.68245928" />
+    <Observation Value="308705.001475207" />
+    <Observation Value="301027.494119719" />
+    <Observation Value="293757.776396728" />
+    <Observation Value="297516.915492086" />
+    <Observation Value="399151.397884343" />
+    <Observation Value="303886.130438429" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="ShiploadingIdleTime">
+    <Observation Value="4116.32066437048" />
+    <Observation Value="4034.7930868477" />
+    <Observation Value="3748.29945417634" />
+    <Observation Value="3526.54154064513" />
+    <Observation Value="4254.58446491851" />
+    <Observation Value="3500.07515546001" />
+    <Observation Value="3568.22611765512" />
+    <Observation Value="3671.28869439831" />
+    <Observation Value="2198.19798548605" />
+    <Observation Value="3411.32806596931" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="ShiploadingWeatherDownTime">
+    <Observation Value="356.951860510192" />
+    <Observation Value="279.119866333944" />
+    <Observation Value="266.015056941414" />
+    <Observation Value="256.007370847758" />
+    <Observation Value="269.217052849388" />
+    <Observation Value="256.273133726416" />
+    <Observation Value="261.309742369657" />
+    <Observation Value="289.895006663008" />
+    <Observation Value="260.776817690213" />
+    <Observation Value="336.059375835798" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1484.84042680969" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1490.55940494603" />
+    <Observation Value="1490.85916547456" />
+    <Observation Value="888" />
+    <Observation Value="1500" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="ShiploadingPositioningTime">
+    <Observation Value="1691.70022989548" />
+    <Observation Value="1671.66768627861" />
+    <Observation Value="1700.60669848908" />
+    <Observation Value="1744.09097049564" />
+    <Observation Value="1761.2238981356" />
+    <Observation Value="1761.10985968517" />
+    <Observation Value="1743.49802209316" />
+    <Observation Value="1725.25450548406" />
+    <Observation Value="1004.9457225342" />
+    <Observation Value="1820.06124357359" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="ShiploadingOccupiedTime">
+    <Observation Value="36150.1868184142" />
+    <Observation Value="36314.4193605398" />
+    <Observation Value="36585.0787903932" />
+    <Observation Value="36773.3601180115" />
+    <Observation Value="36014.9745840965" />
+    <Observation Value="36782.5418511284" />
+    <Observation Value="36736.406712936" />
+    <Observation Value="36622.7026279801" />
+    <Observation Value="39448.0794742895" />
+    <Observation Value="36732.5513146213" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="DumperIdleTime">
+    <Observation Value="11916.6658350746" />
+    <Observation Value="11500.0819573812" />
+    <Observation Value="11069.7862503592" />
+    <Observation Value="11286.5830395101" />
+    <Observation Value="11546.5619005751" />
+    <Observation Value="11023.5407371346" />
+    <Observation Value="10986.8366742663" />
+    <Observation Value="11262.0156355096" />
+    <Observation Value="6528.17640369505" />
+    <Observation Value="11092.292536285" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="DumperWeatherDownTime">
+    <Observation Value="39.9784474167707" />
+    <Observation Value="31.5444637619838" />
+    <Observation Value="59.1775190613825" />
+    <Observation Value="40.1051999655919" />
+    <Observation Value="69.0122892972617" />
+    <Observation Value="27.0894774576798" />
+    <Observation Value="38.1933634276946" />
+    <Observation Value="37.1585310474978" />
+    <Observation Value="65.8546443971368" />
+    <Observation Value="24.1937701520679" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1731.91681254669" />
+    <Observation Value="1740" />
+    <Observation Value="1736.51255956602" />
+    <Observation Value="1700.26373610662" />
+    <Observation Value="1727.46564849966" />
+    <Observation Value="1740" />
+    <Observation Value="1739.24354040917" />
+    <Observation Value="1655.39346135158" />
+    <Observation Value="984" />
+    <Observation Value="1726.9169911277" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="DumperPositioningTime">
+    <Observation Value="2264.44915090757" />
+    <Observation Value="2298.73711350668" />
+    <Observation Value="2297.87369068192" />
+    <Observation Value="2297.69337840664" />
+    <Observation Value="2283.12850775246" />
+    <Observation Value="2323.91524259834" />
+    <Observation Value="2322.29415058434" />
+    <Observation Value="2329.36809316153" />
+    <Observation Value="1367.593885167" />
+    <Observation Value="2334.96910270391" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="DumperUnloadingTime">
+    <Observation Value="27846.9897540544" />
+    <Observation Value="28229.6364653501" />
+    <Observation Value="28636.6499803314" />
+    <Observation Value="28475.3546460111" />
+    <Observation Value="28173.8316538755" />
+    <Observation Value="28685.4545428094" />
+    <Observation Value="28713.4322713125" />
+    <Observation Value="28516.0642789298" />
+    <Observation Value="34854.3750667408" />
+    <Observation Value="28621.6275997313" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="PortShiploaderThroughput">
+    <Observation Value="35.865027221919" />
+    <Observation Value="36.4019999760553" />
+    <Observation Value="36.3898571187524" />
+    <Observation Value="36.4049424311339" />
+    <Observation Value="36.1520660258222" />
+    <Observation Value="36.8037142612491" />
+    <Observation Value="36.7939999757343" />
+    <Observation Value="36.8739999755359" />
+    <Observation Value="21.5679999856409" />
+    <Observation Value="36.9879285469645" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="PortDumperThroughput">
+    <Observation Value="35.9144257846334" />
+    <Observation Value="36.4389052675515" />
+    <Observation Value="36.4270334522254" />
+    <Observation Value="36.4478400000068" />
+    <Observation Value="36.2052675399427" />
+    <Observation Value="36.8475772675593" />
+    <Observation Value="36.8142866008907" />
+    <Observation Value="36.9263096632836" />
+    <Observation Value="21.677522000002" />
+    <Observation Value="37.035544897697" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="TrainUnloadingTime">
+    <Observation Value="3.7249656384192" />
+    <Observation Value="3.69530950275953" />
+    <Observation Value="3.76763309535611" />
+    <Observation Value="3.75598665008855" />
+    <Observation Value="3.71894941037001" />
+    <Observation Value="3.7388203373983" />
+    <Observation Value="3.74332410068296" />
+    <Observation Value="3.68535872564596" />
+    <Observation Value="3.76691711110849" />
+    <Observation Value="3.70791084465297" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="TrainLoadingTime">
+    <Observation Value="2.99680200070181" />
+    <Observation Value="2.99985845649491" />
+    <Observation Value="3.00142022873176" />
+    <Observation Value="2.99950125091534" />
+    <Observation Value="2.99861924332281" />
+    <Observation Value="3.00123537172703" />
+    <Observation Value="2.99892832401854" />
+    <Observation Value="2.99983031987087" />
+    <Observation Value="2.99671018844281" />
+    <Observation Value="3.00033448952257" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="TrainProvisioningTime">
+    <Observation Value="2.69438856482348" />
+    <Observation Value="2.68984089657703" />
+    <Observation Value="2.6929941274925" />
+    <Observation Value="2.68822532275089" />
+    <Observation Value="2.69112627939835" />
+    <Observation Value="2.68654887821825" />
+    <Observation Value="2.69069317087942" />
+    <Observation Value="2.68455399588668" />
+    <Observation Value="2.68748081804961" />
+    <Observation Value="2.68745027589132" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.02088792795641" />
+    <Observation Value="1.01896662384246" />
+    <Observation Value="0.94673195804938" />
+    <Observation Value="0.971789452320664" />
+    <Observation Value="1.04163547983823" />
+    <Observation Value="0.984127416948499" />
+    <Observation Value="1.00003629670764" />
+    <Observation Value="1.0238193668479" />
+    <Observation Value="1.0554283260303" />
+    <Observation Value="0.988540956711218" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.60121956792474" />
+    <Observation Value="1.60030068161646" />
+    <Observation Value="1.80664091161567" />
+    <Observation Value="1.71484878037287" />
+    <Observation Value="1.69882889294648" />
+    <Observation Value="1.64395453094132" />
+    <Observation Value="1.71500840492096" />
+    <Observation Value="1.55135152847003" />
+    <Observation Value="1.75640562507671" />
+    <Observation Value="1.60764331765675" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.302420182992181" />
+    <Observation Value="0.31543443650371" />
+    <Observation Value="0.380410802942883" />
+    <Observation Value="0.344096641067771" />
+    <Observation Value="0.331671098992235" />
+    <Observation Value="0.329324426044028" />
+    <Observation Value="0.343919585657229" />
+    <Observation Value="0.295476190960309" />
+    <Observation Value="0.346225464743806" />
+    <Observation Value="0.304051144558614" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.43736687211595" />
+    <Observation Value="0.433317514706358" />
+    <Observation Value="0.490417470459975" />
+    <Observation Value="0.446373400212883" />
+    <Observation Value="0.455306188986755" />
+    <Observation Value="0.423409998239584" />
+    <Observation Value="0.457652733360502" />
+    <Observation Value="0.413557581468513" />
+    <Observation Value="0.467697402749767" />
+    <Observation Value="0.398608632945025" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.391104887062293" />
+    <Observation Value="0.391496133941879" />
+    <Observation Value="0.460123862199535" />
+    <Observation Value="0.439679966601882" />
+    <Observation Value="0.421484622000869" />
+    <Observation Value="0.427176510674204" />
+    <Observation Value="0.445369560271069" />
+    <Observation Value="0.368354802950507" />
+    <Observation Value="0.447276545997788" />
+    <Observation Value="0.426274426507212" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.257529292985403" />
+    <Observation Value="0.241804265072426" />
+    <Observation Value="0.272103980918258" />
+    <Observation Value="0.256603197532363" />
+    <Observation Value="0.286688636276705" />
+    <Observation Value="0.243652673623529" />
+    <Observation Value="0.240766227347609" />
+    <Observation Value="0.254185826166136" />
+    <Observation Value="0.258829855441793" />
+    <Observation Value="0.250138011999905" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.212856136969472" />
+    <Observation Value="0.218248325849041" />
+    <Observation Value="0.203584801263808" />
+    <Observation Value="0.227975084694553" />
+    <Observation Value="0.203863683373354" />
+    <Observation Value="0.220469744168972" />
+    <Observation Value="0.227378675146977" />
+    <Observation Value="0.219836824586131" />
+    <Observation Value="0.23556175883913" />
+    <Observation Value="0.228571107772423" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.962578724418129" />
+    <Observation Value="0.859268723113409" />
+    <Observation Value="0.87890163136492" />
+    <Observation Value="0.838908064198083" />
+    <Observation Value="1.24137550393169" />
+    <Observation Value="0.870151623197614" />
+    <Observation Value="1.01229966189944" />
+    <Observation Value="1.27008487078277" />
+    <Observation Value="1.21959808358869" />
+    <Observation Value="0.858839363808392" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.711759373522839" />
+    <Observation Value="0.696735790820345" />
+    <Observation Value="0.613481334472524" />
+    <Observation Value="0.56872984852667" />
+    <Observation Value="0.611284021053895" />
+    <Observation Value="0.627987509359869" />
+    <Observation Value="0.726469039241907" />
+    <Observation Value="0.620871922384703" />
+    <Observation Value="0.662259379214149" />
+    <Observation Value="0.608535714440615" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.644365412897827" />
+    <Observation Value="0.702684188086992" />
+    <Observation Value="0.649819438972036" />
+    <Observation Value="0.674391079087563" />
+    <Observation Value="0.686017641779275" />
+    <Observation Value="0.68156390844335" />
+    <Observation Value="0.6498728897273" />
+    <Observation Value="0.724918411985617" />
+    <Observation Value="0.736629659464819" />
+    <Observation Value="0.671881367840814" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.785213350063195" />
+    <Observation Value="0.803070552289202" />
+    <Observation Value="0.751835579312513" />
+    <Observation Value="0.718604800627814" />
+    <Observation Value="0.835037811600407" />
+    <Observation Value="0.759320597800748" />
+    <Observation Value="0.760370388359244" />
+    <Observation Value="0.774731325115104" />
+    <Observation Value="0.799703699524697" />
+    <Observation Value="0.773108349019275" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.05368235220675" />
+    <Observation Value="1.00444999284369" />
+    <Observation Value="0.956803124677417" />
+    <Observation Value="1.09908930974261" />
+    <Observation Value="1.077161926509" />
+    <Observation Value="1.02212295833549" />
+    <Observation Value="0.974353851803923" />
+    <Observation Value="1.05341386970087" />
+    <Observation Value="0.973317667066263" />
+    <Observation Value="1.04846773580456" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="LoadedTravelTime">
+    <Observation Value="10.4653647301756" />
+    <Observation Value="10.371433561126" />
+    <Observation Value="10.5196875728183" />
+    <Observation Value="10.2931239500209" />
+    <Observation Value="10.4372617170549" />
+    <Observation Value="10.1584080603751" />
+    <Observation Value="10.3042664828624" />
+    <Observation Value="10.1194711599688" />
+    <Observation Value="10.4601315554416" />
+    <Observation Value="10.0778255952488" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="EmptyTravelTime">
+    <Observation Value="8.34071928207333" />
+    <Observation Value="8.09682519467845" />
+    <Observation Value="8.0467023409772" />
+    <Observation Value="8.04710881631122" />
+    <Observation Value="8.33290761305216" />
+    <Observation Value="8.00321592575707" />
+    <Observation Value="8.06382909700653" />
+    <Observation Value="8.12317584740717" />
+    <Observation Value="8.11195102215086" />
+    <Observation Value="8.00293405812524" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="RailOperatingCycleTime">
+    <Observation Value="29.1278751116355" />
+    <Observation Value="28.927374342092" />
+    <Observation Value="29.3685927324273" />
+    <Observation Value="28.9974449482154" />
+    <Observation Value="29.1953504799632" />
+    <Observation Value="28.903741392984" />
+    <Observation Value="29.0583701092263" />
+    <Observation Value="28.8394507376508" />
+    <Observation Value="29.5262772527744" />
+    <Observation Value="28.9095518044814" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="RailCycleTime">
+    <Observation Value="32.7071128789448" />
+    <Observation Value="32.1243972730767" />
+    <Observation Value="32.3816264205996" />
+    <Observation Value="31.9679780978845" />
+    <Observation Value="32.5108669158662" />
+    <Observation Value="31.7721050115401" />
+    <Observation Value="32.0003024897556" />
+    <Observation Value="31.8574571548089" />
+    <Observation Value="32.5672667932256" />
+    <Observation Value="31.6229688425893" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.12980363911358" />
+    <Observation Value="2.04433606447056" />
+    <Observation Value="2.04514290644343" />
+    <Observation Value="2.04212785417907" />
+    <Observation Value="2.08169705967905" />
+    <Observation Value="1.97890815341454" />
+    <Observation Value="1.98631525133784" />
+    <Observation Value="1.96789687412407" />
+    <Observation Value="2.00738358810652" />
+    <Observation Value="1.95209946359078" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="MineTLOProductLoaded">
+    <Observation Value="179.628785832529" />
+    <Observation Value="182.223663171438" />
+    <Observation Value="182.144174915779" />
+    <Observation Value="182.310480000045" />
+    <Observation Value="181.074960000044" />
+    <Observation Value="184.290783171478" />
+    <Observation Value="184.124463171467" />
+    <Observation Value="184.698922346695" />
+    <Observation Value="108.511920000007" />
+    <Observation Value="185.2049946555" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="106419.764950297" />
+    <Observation Value="104250.685946785" />
+    <Observation Value="103997.423549763" />
+    <Observation Value="100622.641313889" />
+    <Observation Value="103967.476942252" />
+    <Observation Value="100961.090914873" />
+    <Observation Value="104077.679011513" />
+    <Observation Value="101291.335192824" />
+    <Observation Value="124810.00266292" />
+    <Observation Value="100594.585738116" />
+  </Observations>
+  <Observations Scenario="2700tph Bypass-2000t Surge Bin" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="84644.1625055151" />
+    <Observation Value="81092.5070182596" />
+    <Observation Value="81106.7780155166" />
+    <Observation Value="78930.5756934506" />
+    <Observation Value="81880.2919517076" />
+    <Observation Value="77647.496227936" />
+    <Observation Value="78971.7914768863" />
+    <Observation Value="77876.5015607545" />
+    <Observation Value="111805.318174871" />
+    <Observation Value="77521.8589354214" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="PercentDirectLoading">
+    <Observation Value="28.6234863418506" />
+    <Observation Value="29.5870282514219" />
+    <Observation Value="28.5541747222118" />
+    <Observation Value="28.6846940554425" />
+    <Observation Value="28.6071768468178" />
+    <Observation Value="28.6472970134984" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.36667246149525" />
+    <Observation Value="7.48149064742994" />
+    <Observation Value="4.72193546542153" />
+    <Observation Value="4.34744756295059" />
+    <Observation Value="4.59615749367127" />
+    <Observation Value="4.0243229160861" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.10675282792052" />
+    <Observation Value="0.86354904797948" />
+    <Observation Value="1.11013932179329" />
+    <Observation Value="1.04458356963187" />
+    <Observation Value="1.14858683565828" />
+    <Observation Value="1.09879577332994" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="AvgShipTTIP">
+    <Observation Value="1907.62323317589" />
+    <Observation Value="63.0060714145683" />
+    <Observation Value="1649.35200399134" />
+    <Observation Value="1574.74695529787" />
+    <Observation Value="2044.65754950751" />
+    <Observation Value="1685.5301630567" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="AvgShipTimeInBerth">
+    <Observation Value="31.1846622596968" />
+    <Observation Value="29.8231803921569" />
+    <Observation Value="30.0217451943532" />
+    <Observation Value="30.1197094789965" />
+    <Observation Value="30.6133078327768" />
+    <Observation Value="30.7669297617083" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="AvgShipLoadingTime">
+    <Observation Value="27.8860233759603" />
+    <Observation Value="27.4906088235294" />
+    <Observation Value="26.8095355814539" />
+    <Observation Value="26.985328270822" />
+    <Observation Value="27.5108920226492" />
+    <Observation Value="27.4689792754821" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="135118.326549378" />
+    <Observation Value="1415.71544477665" />
+    <Observation Value="131054.530402122" />
+    <Observation Value="134360.48559413" />
+    <Observation Value="134852.876176076" />
+    <Observation Value="136070.757223031" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="162913.741649" />
+    <Observation Value="335049.694973923" />
+    <Observation Value="161246.741610953" />
+    <Observation Value="167093.870379496" />
+    <Observation Value="161459.258210924" />
+    <Observation Value="161748.203318793" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="PortStockpileAvgTotalContents">
+    <Observation Value="298032.068198377" />
+    <Observation Value="336457.715441531" />
+    <Observation Value="292301.272013063" />
+    <Observation Value="301457.857698229" />
+    <Observation Value="296312.134387009" />
+    <Observation Value="297818.960541818" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="ShiploadingIdleTime">
+    <Observation Value="3683.56633935584" />
+    <Observation Value="134.666831653739" />
+    <Observation Value="4239.82847624788" />
+    <Observation Value="3814.31066895279" />
+    <Observation Value="3986.77365702368" />
+    <Observation Value="3364.50215474512" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="ShiploadingWeatherDownTime">
+    <Observation Value="362.834129466662" />
+    <Observation Value="341.398340946329" />
+    <Observation Value="218.117129680052" />
+    <Observation Value="266.946440319582" />
+    <Observation Value="314.608021493342" />
+    <Observation Value="255.092947092775" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1490.63987804251" />
+    <Observation Value="0" />
+    <Observation Value="1497.05375930607" />
+    <Observation Value="1492.96540743054" />
+    <Observation Value="1476" />
+    <Observation Value="1499.08216310155" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="ShiploadingPositioningTime">
+    <Observation Value="1760.75121002452" />
+    <Observation Value="22.998039978346" />
+    <Observation Value="1757.31078154095" />
+    <Observation Value="1760.29524996654" />
+    <Observation Value="1743.03338457089" />
+    <Observation Value="1735.99731189885" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="ShiploadingOccupiedTime">
+    <Observation Value="36502.2084431105" />
+    <Observation Value="43300.9367874216" />
+    <Observation Value="36087.689853225" />
+    <Observation Value="36465.4822333305" />
+    <Observation Value="36279.5849369121" />
+    <Observation Value="36945.3254231617" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="DumperIdleTime">
+    <Observation Value="11134.7658348264" />
+    <Observation Value="140.188474333292" />
+    <Observation Value="11222.7277848817" />
+    <Observation Value="11062.9653224013" />
+    <Observation Value="11284.2600830341" />
+    <Observation Value="11346.1531254763" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="DumperWeatherDownTime">
+    <Observation Value="86.5303936830118" />
+    <Observation Value="48.888106493747" />
+    <Observation Value="70.2592532929248" />
+    <Observation Value="31.882376402164" />
+    <Observation Value="43.2871840614418" />
+    <Observation Value="22.872051394459" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1659.18227858168" />
+    <Observation Value="0" />
+    <Observation Value="1675.54423497315" />
+    <Observation Value="1738.01096331346" />
+    <Observation Value="1740" />
+    <Observation Value="1698.18189404521" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="DumperPositioningTime">
+    <Observation Value="2284.17449655576" />
+    <Observation Value="39.5802855658836" />
+    <Observation Value="2298.48284360176" />
+    <Observation Value="2317.04059098887" />
+    <Observation Value="2292.50827762981" />
+    <Observation Value="2302.07731951235" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="DumperUnloadingTime">
+    <Observation Value="28635.3469963531" />
+    <Observation Value="43571.3431336071" />
+    <Observation Value="28532.9858832505" />
+    <Observation Value="28650.1007468942" />
+    <Observation Value="28439.9444552746" />
+    <Observation Value="28430.7156095717" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="PortShiploaderThroughput">
+    <Observation Value="36.1645714048466" />
+    <Observation Value="0.555583999659997" />
+    <Observation Value="36.3844253865732" />
+    <Observation Value="36.6693571184114" />
+    <Observation Value="36.2995087826642" />
+    <Observation Value="36.4519999757951" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="PortDumperThroughput">
+    <Observation Value="36.2115618232243" />
+    <Observation Value="0.622992000000003" />
+    <Observation Value="36.4445849387576" />
+    <Observation Value="36.72641312022" />
+    <Observation Value="36.3410929835994" />
+    <Observation Value="36.5080687285262" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="TrainUnloadingTime">
+    <Observation Value="3.77930270244485" />
+    <Observation Value="3.69795046857132" />
+    <Observation Value="3.74275553235107" />
+    <Observation Value="3.71853815955824" />
+    <Observation Value="3.75531627689915" />
+    <Observation Value="3.74035145489419" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="TrainLoadingTime">
+    <Observation Value="3.00018718820248" />
+    <Observation Value="2.99439387093469" />
+    <Observation Value="2.99907634977789" />
+    <Observation Value="3.00040969538233" />
+    <Observation Value="2.99613242359664" />
+    <Observation Value="3.00009168161379" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="TrainProvisioningTime">
+    <Observation Value="2.68889763497144" />
+    <Observation Value="2.64503815587109" />
+    <Observation Value="2.69068857610983" />
+    <Observation Value="2.6882748787078" />
+    <Observation Value="2.68918530021764" />
+    <Observation Value="2.68824524727723" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.989426292357249" />
+    <Observation Value="0.762040269751116" />
+    <Observation Value="1.04062508447346" />
+    <Observation Value="1.04100216676806" />
+    <Observation Value="1.0094129179614" />
+    <Observation Value="0.957728764012378" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.81271148507098" />
+    <Observation Value="1.158532972317" />
+    <Observation Value="1.69438666741426" />
+    <Observation Value="1.68604670346482" />
+    <Observation Value="1.79496667711222" />
+    <Observation Value="1.62262434473587" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.381692559472413" />
+    <Observation Value="0.167874561865574" />
+    <Observation Value="0.34013134479138" />
+    <Observation Value="0.343561211804411" />
+    <Observation Value="0.35637200269968" />
+    <Observation Value="0.324303774873398" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.48117387482811" />
+    <Observation Value="0.270894757962794" />
+    <Observation Value="0.458124657847704" />
+    <Observation Value="0.441211303314789" />
+    <Observation Value="0.471814591508183" />
+    <Observation Value="0.424971623429994" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.448291142806626" />
+    <Observation Value="0.209596847178669" />
+    <Observation Value="0.446424569243472" />
+    <Observation Value="0.424965706431292" />
+    <Observation Value="0.462927208675943" />
+    <Observation Value="0.406561858061564" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.2719345542419" />
+    <Observation Value="0.311802080078684" />
+    <Observation Value="0.252669408200419" />
+    <Observation Value="0.238150751369195" />
+    <Observation Value="0.249696012733092" />
+    <Observation Value="0.254612611681187" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.229661194804605" />
+    <Observation Value="0.184035369035769" />
+    <Observation Value="0.196936425033319" />
+    <Observation Value="0.237965315608481" />
+    <Observation Value="0.254008649227886" />
+    <Observation Value="0.21218807189526" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.863511920771614" />
+    <Observation Value="NaN" />
+    <Observation Value="1.19367563310351" />
+    <Observation Value="1.02337804510171" />
+    <Observation Value="0.799143660038335" />
+    <Observation Value="0.977580844084491" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.621577137195442" />
+    <Observation Value="0.656326758008141" />
+    <Observation Value="0.674517894128665" />
+    <Observation Value="0.622494386628533" />
+    <Observation Value="0.731453910560495" />
+    <Observation Value="0.639986363056923" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.653182237060213" />
+    <Observation Value="0.709893464827534" />
+    <Observation Value="0.688241532154189" />
+    <Observation Value="0.770980197877259" />
+    <Observation Value="0.668971162102036" />
+    <Observation Value="0.627390010788332" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.744714845273932" />
+    <Observation Value="0.688551310348986" />
+    <Observation Value="0.784657412540397" />
+    <Observation Value="0.770638565546221" />
+    <Observation Value="0.825692217222639" />
+    <Observation Value="0.770180637419657" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.03680847926945" />
+    <Observation Value="0.956467694332257" />
+    <Observation Value="1.01987901366258" />
+    <Observation Value="1.04732038690839" />
+    <Observation Value="0.925623036004617" />
+    <Observation Value="0.908574861395701" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="LoadedTravelTime">
+    <Observation Value="10.7093915719213" />
+    <Observation Value="8.33043387319498" />
+    <Observation Value="10.5087336584381" />
+    <Observation Value="10.3573268842184" />
+    <Observation Value="10.6082674424869" />
+    <Observation Value="10.4867618735808" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="EmptyTravelTime">
+    <Observation Value="8.12820796535571" />
+    <Observation Value="6.64441420009381" />
+    <Observation Value="8.30928985977373" />
+    <Observation Value="8.22868199268138" />
+    <Observation Value="8.13603618138157" />
+    <Observation Value="8.26373019379951" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="RailOperatingCycleTime">
+    <Observation Value="29.4060185845897" />
+    <Observation Value="27.213350208458" />
+    <Observation Value="29.1577633562966" />
+    <Observation Value="29.1358207431254" />
+    <Observation Value="29.2404364159716" />
+    <Observation Value="29.0170655928415" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="RailCycleTime">
+    <Observation Value="32.7443388239843" />
+    <Observation Value="27.213350208458" />
+    <Observation Value="32.5491577887467" />
+    <Observation Value="32.344359549487" />
+    <Observation Value="32.5378897765919" />
+    <Observation Value="32.5153570582929" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.0785824242862" />
+    <Observation Value="1.63402443227638" />
+    <Observation Value="2.0427784641588" />
+    <Observation Value="1.99794375774824" />
+    <Observation Value="2.06226224722414" />
+    <Observation Value="2.03305753683869" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="MineTLOProductLoaded">
+    <Observation Value="181.123498696628" />
+    <Observation Value="3.25512000000002" />
+    <Observation Value="182.301496589778" />
+    <Observation Value="183.699745426393" />
+    <Observation Value="181.771081335143" />
+    <Observation Value="182.573826676603" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="109234.90675615" />
+    <Observation Value="148763.094825426" />
+    <Observation Value="106897.84240529" />
+    <Observation Value="105631.270810382" />
+    <Observation Value="104506.15071637" />
+    <Observation Value="105579.939668257" />
+  </Observations>
+  <Observations Scenario="3000tph Bypass-2000t Surge Bin" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="86764.7399571136" />
+    <Observation Value="148239.901147314" />
+    <Observation Value="82955.203835472" />
+    <Observation Value="82461.0989247725" />
+    <Observation Value="83060.1956606971" />
+    <Observation Value="83642.4402492748" />
+  </Observations>
+</ResponseResults>

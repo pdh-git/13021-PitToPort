@@ -14,6 +14,18 @@
     <DataSource ComponentName="dataSource10" Name="Table.TST" />
     <DataSource ComponentName="dataSource11" Name="Tally Observation Log" />
     <DataSource ComponentName="dataSource12" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource13" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource14" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource15" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource16" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource17" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource18" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource19" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource20" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource21" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource22" Name="Table.TST" />
+    <DataSource ComponentName="dataSource23" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource24" Name="Transporter Usage Log" />
   </DataSources>
   <Items>
     <Chart ComponentName="chartDashboardItem1" Name="Chart 1" DataSource="dataSource11" FilterString="StartsWith([DataItem3], 'Hourly_StockpileProduct1LAC') Or StartsWith([DataItem3], 'Hourly_StockpileProduct2UGC')">
