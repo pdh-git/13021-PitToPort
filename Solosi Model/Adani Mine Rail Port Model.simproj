@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-23T07:35:27" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-23T23:04:27" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -11,7 +11,7 @@
     <Model Definition="RailPortModel">
       <RunSetup AnimationInterval="1000" StatusMassUnits="Metric Tons" ReplicationNumber="1" LogInteractiveRuntimeData="True">
         <StartDate>2019-12-31T23:59:59</StartDate>
-        <RunLength Units="Hours">8760</RunLength>
+        <RunLength Units="Hours">43800</RunLength>
         <CompatibilitySettings AssumeInputNodeEntriesAreToAssociatedObjectIfNoDrawnOutboundLinks="False" />
       </RunSetup>
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -1923,6 +1923,7 @@
                   <Column Name="T1DivertAmount_ExperimentControl" Width="173" VisibleIndex="48" />
                   <Column Name="IsCampaignRailing_ExperimentControl" Width="106" VisibleIndex="49" />
                   <Column Name="CampaignRailingTrainInterval_ExperimentControl" Width="198" VisibleIndex="50" />
+                  <Column Name="MineBypassRate_ExperimentControl" Width="98" VisibleIndex="43" />
                   <Column Name="MineLACProductStockpileAvgContents_ExperimentResponse" Width="202" VisibleIndex="51" />
                   <Column Name="MineUGCProductStockpileAvgContents_ExperimentResponse" Width="204" VisibleIndex="52" />
                   <Column Name="MineTLOProductLoaded_ExperimentResponse" Width="132" VisibleIndex="53" />
@@ -1968,7 +1969,6 @@
                   <Column Name="AvgIdleTimeAtBerth_ExperimentResponse" Width="115" VisibleIndex="93" />
                   <Column Name="PercentDirectLoading_ExperimentResponse" Width="121" VisibleIndex="94" />
                   <Column Name="EndTime_ExperimentResponse" Width="59" VisibleIndex="95" />
-                  <Column Name="MineBypassRate_ExperimentControl" Width="98" VisibleIndex="43" />
                 </Columns>
               </ScenarioTable>
             </ExperimentDesign>
@@ -1977,10 +1977,10 @@
             </ExperimentPivotGrid>
           </ViewInfo>
         </Experiment>
-        <Experiment Name="CaseRuns23_04_14" ConfidenceLevel="Point95" LowerPercentile="25" UpperPercentile="75" DefaultReplications="10" ConcurrentReplicationLimit="3">
+        <Experiment Name="CaseRuns23_04_14" ConfidenceLevel="Point95" LowerPercentile="25" UpperPercentile="75" DefaultReplications="10" ReplicationRunner="External32Bit">
           <Warmup Units="Hours">0</Warmup>
           <Scenarios>
-            <Scenario Name="Case 1 Base- 150kt Stockpile">
+            <Scenario Name="Case 1 Base- 150kt Stockpile" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -1991,7 +1991,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 1 A- 250kt Stockpile">
+            <Scenario Name="Case 1 A- 250kt Stockpile" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2004,7 +2004,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 1 B- 500kt Stockpile">
+            <Scenario Name="Case 1 B- 500kt Stockpile" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2017,7 +2017,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 2 Base- 2300 Bypass Rate">
+            <Scenario Name="Case 2 Base- 2300 Bypass Rate" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2028,7 +2028,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 2 A- 2500 Bypass Rate">
+            <Scenario Name="Case 2 A- 2500 Bypass Rate" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2040,7 +2040,7 @@
                 <Property Name="MineBypassRate">2500</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 2 B- 2700 Bypass Rate">
+            <Scenario Name="Case 2 B- 2700 Bypass Rate" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2052,7 +2052,7 @@
                 <Property Name="MineBypassRate">2700</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 2 C- 3000 Bypass Rate">
+            <Scenario Name="Case 2 C- 3000 Bypass Rate" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2064,7 +2064,7 @@
                 <Property Name="MineBypassRate">3000</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 3 - Ship Mix" Active="False">
+            <Scenario Name="Case 3 - Ship Mix" ReplicationsRequired="25" Active="False">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2075,7 +2075,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 4 Base- Port Surge Bin 1125t">
+            <Scenario Name="Case 4 Base- Port Surge Bin 1125t" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2086,7 +2086,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 4 A- Port Surge Bin 1500t">
+            <Scenario Name="Case 4 A- Port Surge Bin 1500t" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2097,7 +2097,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1500</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 4 B- Port Surge Bin 2000t">
+            <Scenario Name="Case 4 B- Port Surge Bin 2000t" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2107,7 +2107,7 @@
                 <Property Name="EnableRollingStockpile">False</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 4 C- Port Surge Bin 2500t">
+            <Scenario Name="Case 4 C- Port Surge Bin 2500t" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2118,7 +2118,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">2500</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 5 Base- Rolling Stockpile Disabled">
+            <Scenario Name="Case 5 Base- Rolling Stockpile Disabled" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2129,7 +2129,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 5 A- Rolling Stockpile Enabled">
+            <Scenario Name="Case 5 A- Rolling Stockpile Enabled" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2139,18 +2139,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 6- Campaign Railing" Active="False">
-              <Properties>
-                <Property Name="InitialCost" Units="USD">0.0</Property>
-                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
-                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
-                <Property Name="EnableRollingStockpile">False</Property>
-                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
-              </Properties>
-            </Scenario>
-            <Scenario Name="Case 7 Base- Port LAC Stockpile 365000t">
+            <Scenario Name="Case 6- Campaign Railing" ReplicationsRequired="25" Active="False">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2161,7 +2150,18 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 7 A- Port LAC Stockpile 465000t">
+            <Scenario Name="Case 7 Base- Port LAC Stockpile 365000t" ReplicationsRequired="25" ReplicationsCompleted="25">
+              <Properties>
+                <Property Name="InitialCost" Units="USD">0.0</Property>
+                <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceIdleCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="ResourceCostPerUse" Units="USD">0.0</Property>
+                <Property Name="ResourceUsageCostRate" Units="USD per Hour">0.0</Property>
+                <Property Name="EnableRollingStockpile">False</Property>
+                <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
+              </Properties>
+            </Scenario>
+            <Scenario Name="Case 7 A- Port LAC Stockpile 465000t" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2173,7 +2173,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 7 B- Port LAC Stockpile 565000t">
+            <Scenario Name="Case 7 B- Port LAC Stockpile 565000t" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2185,7 +2185,7 @@
                 <Property Name="PortShiploadingSurgeBinWeightCapacity">1125</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Case 7 C- Port LAC Stockpile 665000t">
+            <Scenario Name="Case 7 C- Port LAC Stockpile 665000t" ReplicationsRequired="25" ReplicationsCompleted="25">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2293,7 +2293,13 @@
             <Response Name="PercentDirectLoading" Expression="(Port.DumperStates.TotalTime(3) / Math.If((Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3)) &gt; 0, Port.DumperStates.TotalTime(2) + Port.DumperStates.TotalTime(3), 1)) * 100" />
             <Response Name="EndTime" Expression="Run.EndingTime" />
           </Responses>
-          <ViewInfo ActiveExperiment="True" ActiveView="Design">
+          <BinaryResults>
+            <FileRef Name="Results\RailPortModel\CaseRuns23_04_14 Results.stats" />
+          </BinaryResults>
+          <ResponseResults>
+            <FileRef Name="Results\RailPortModel\CaseRuns23_04_14 ResponseResults.xml" />
+          </ResponseResults>
+          <ViewInfo ActiveExperiment="True" ActiveView="Responses">
             <ExperimentDesign>
               <ScenarioTable FilterEnabled="True">
                 <Columns>
@@ -2416,23 +2422,19 @@
           <Categories>
             <Category Name="Logging Processes" />
             <Category Name="TrainYard AddOn Processes" Expanded="True" />
-            <Category Name="TrainOutput@DummyMine AddOn Processes" />
             <Category Name="TrainOutput@DummyPort AddOn Processes" />
             <Category Name="To Port" Expanded="True" />
-            <Category Name="RequestProcessing AddOn Processes" />
             <Category Name="TrainInput@DummyMine AddOn Processes" Expanded="True" />
             <Category Name="TrainInput@DummyPort AddOn Processes" Expanded="True" />
             <Category Name="PortSig4 AddOn Processes" Expanded="True" />
             <Category Name="Resource1 AddOn Processes" />
             <Category Name="Weather ShutDown Processes" />
-            <Category Name="TrackSpeed AddOn Processes" />
             <Category Name="Track1 AddOn Processes" Expanded="True" />
             <Category Name="ChannelExit AddOn Processes" />
             <Category Name="ChannelEntrance AddOn Processes" />
             <Category Name="Ship Queue Processes" />
             <Category Name="B1Exit AddOn Processes" Expanded="True" />
             <Category Name="B2Exit AddOn Processes" />
-            <Category Name="Port AddOn Processes" />
             <Category Name="Input@ShipExit AddOn Processes" />
             <Category Name="Rail Outage Train Check Process" Expanded="True" />
             <Category Name="B2Entry AddOn Processes" />
@@ -2447,19 +2449,20 @@
             <Category Name="Input@RequestProcessing AddOn Processes" />
             <Category Name="Monitor1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="Section2Entry AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="To Mine" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="TrackResource AddOn Processes" Expanded="True" />
-            <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="MS1 AddOn Processes" Expanded="True" />
             <Category Name="Group " Expanded="True" />
+            <Category Name="TrainOutput@DummyMine AddOn Processes" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="RequestProcessing AddOn Processes" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="TrackSpeed AddOn Processes" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Port AddOn Processes" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -2472,8 +2475,11 @@
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
-            <Category Name="Group " Expanded="True" />
             <Category Name="PosThresholdMonitor AddOn Processes" Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
+            <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
             <Category Name="Group " Expanded="True" />
@@ -17727,7 +17733,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1668" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1669" Author="Sales and Support" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -27007,7 +27013,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2362" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2364" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -42103,7 +42109,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="911" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="912" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -43522,7 +43528,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>2362</Revision>
+        <Revision>2364</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -43554,7 +43560,7 @@
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>911</Revision>
+        <Revision>912</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -43570,7 +43576,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1668</Revision>
+        <Revision>1669</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -61026,4 +61032,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- BZ7HxzBbpD22sQACIWARZqFYDSjJRSUuWw7artb901hXxvURPG4cQU27O6g4pfVA7tPesai5d9AwNzhnpHGnwA== -->
+<!-- kPCDR/6lluYhIrey5rJlXK7feeC6r8FsKihqcXJwGEKhmDz2SAHjec/XVaUOMDmCyTumiQmu2n0Bc4zNDXIm8g== -->
