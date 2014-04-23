@@ -50,6 +50,42 @@
     <DataSource ComponentName="dataSource46" Name="Table.TST" />
     <DataSource ComponentName="dataSource47" Name="Tally Observation Log" />
     <DataSource ComponentName="dataSource48" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource49" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource50" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource51" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource52" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource53" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource54" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource55" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource56" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource57" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource58" Name="Table.TST" />
+    <DataSource ComponentName="dataSource59" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource60" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource61" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource62" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource63" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource64" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource65" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource66" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource67" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource68" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource69" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource70" Name="Table.TST" />
+    <DataSource ComponentName="dataSource71" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource72" Name="Transporter Usage Log" />
+    <DataSource ComponentName="dataSource73" Name="Constraint Log" />
+    <DataSource ComponentName="dataSource74" Name="Material Usage Log" />
+    <DataSource ComponentName="dataSource75" Name="Resource Capacity Log" />
+    <DataSource ComponentName="dataSource76" Name="Resource State Log" />
+    <DataSource ComponentName="dataSource77" Name="Resource Usage Log" />
+    <DataSource ComponentName="dataSource78" Name="State Observation Log" />
+    <DataSource ComponentName="dataSource79" Name="Table.PTPSummaryLogValues" />
+    <DataSource ComponentName="dataSource80" Name="Table.ShipTable" />
+    <DataSource ComponentName="dataSource81" Name="Table.ShipTableOriginal" />
+    <DataSource ComponentName="dataSource82" Name="Table.TST" />
+    <DataSource ComponentName="dataSource83" Name="Tally Observation Log" />
+    <DataSource ComponentName="dataSource84" Name="Transporter Usage Log" />
   </DataSources>
   <Items>
     <Chart ComponentName="chartDashboardItem1" Name="Chart 1" DataSource="dataSource11" FilterString="StartsWith([DataItem2], 'Tally_RailOperatingCycleTime')">
@@ -74,29 +110,7 @@
         </Pane>
       </Panes>
     </Chart>
-    <Chart ComponentName="chartDashboardItem2" Name="Chart 2" DataSource="dataSource11" FilterString="StartsWith([DataItem0], 'Tally_PortInloadingOutage') Or StartsWith([DataItem0], 'Tally_TrackOutages')">
-      <DataItems>
-        <Dimension DataMember="DataSource" SortOrder="Descending" Name="DataItem0" />
-        <Measure DataMember="Value" Name="DataItem1" />
-        <Dimension DataMember="TimeOffset" Name="DataItem2" />
-      </DataItems>
-      <SeriesDimensions>
-        <SeriesDimension Name="DataItem0" />
-      </SeriesDimensions>
-      <Arguments>
-        <Argument Name="DataItem2" />
-      </Arguments>
-      <Panes>
-        <Pane Name="Pane 1">
-          <Series>
-            <Simple>
-              <Value Name="DataItem1" />
-            </Simple>
-          </Series>
-        </Pane>
-      </Panes>
-    </Chart>
-    <Card ComponentName="cardDashboardItem1" Name="Cards 1" DataSource="dataSource11" FilterString="StartsWith([DataItem1], 'Tally_RailOperatingCycleTime') Or StartsWith([DataItem1], 'Tally_TimeInMineLoop') Or StartsWith([DataItem1], 'Tally_TimeInPortLoop')">
+    <Card ComponentName="cardDashboardItem1" Name="Cards 1" DataSource="dataSource11" FilterString="StartsWith([DataItem1], 'Tally_RailOperatingCycleTime') Or StartsWith([DataItem1], 'Tally_TrainCycleTime') Or StartsWith([DataItem1], 'Tally_TimeInPortLoop') Or StartsWith([DataItem1], 'Tally_TimeInMineLoop')">
       <DataItems>
         <Measure DataMember="Value" SummaryType="Average" Name="DataItem0" />
         <Dimension DataMember="DataSource" Name="DataItem1" />
@@ -108,59 +122,52 @@
         <ActualValue Name="DataItem0" />
       </Card>
     </Card>
-    <Chart ComponentName="chartDashboardItem3" Name="Chart 3" DataSource="dataSource11" FilterString="StartsWith([DataItem1], 'Tally_BlockedS9ToMine') Or StartsWith([DataItem1], 'Tally_TimeInMineLoop')">
+    <Chart ComponentName="chartDashboardItem3" Name="Chart 1" DataSource="dataSource11" FilterString="StartsWith([DataItem2], 'Tally_TrainCycleTime')">
       <DataItems>
         <Measure DataMember="Value" Name="DataItem0" />
-        <Dimension DataMember="DataSource" Name="DataItem1" />
-        <Dimension DataMember="TimeOffset" Name="DataItem2" />
+        <Dimension DataMember="TimeOffset" Name="DataItem1" />
+        <Dimension DataMember="DataSource" Name="DataItem2" />
       </DataItems>
       <SeriesDimensions>
-        <SeriesDimension Name="DataItem1" />
+        <SeriesDimension Name="DataItem2" />
       </SeriesDimensions>
       <Arguments>
-        <Argument Name="DataItem2" />
+        <Argument Name="DataItem1" />
       </Arguments>
       <Panes>
         <Pane Name="Pane 1">
           <Series>
-            <Simple SeriesType="StackedLine">
+            <Simple SeriesType="Point">
               <Value Name="DataItem0" />
             </Simple>
           </Series>
         </Pane>
       </Panes>
     </Chart>
-    <Chart ComponentName="chartDashboardItem4" Name="Chart 3" DataSource="dataSource11" FilterString="StartsWith([DataItem1], 'Tally_BlockedS1ToPort') Or StartsWith([DataItem1], 'Tally_TimeInPortLoop')">
+    <RangeFilter ComponentName="rangeFilterDashboardItem1" Name="Range Filter 1" DataSource="dataSource11" FilterString="StartsWith([DataItem2], 'Tally_RailOperatingCycleTime')">
       <DataItems>
         <Measure DataMember="Value" Name="DataItem0" />
-        <Dimension DataMember="DataSource" Name="DataItem1" />
-        <Dimension DataMember="TimeOffset" Name="DataItem2" />
+        <Dimension DataMember="TimeOffset" Name="DataItem1" />
+        <Dimension DataMember="DataSource" Name="DataItem2" />
       </DataItems>
       <SeriesDimensions>
-        <SeriesDimension Name="DataItem1" />
+        <SeriesDimension Name="DataItem2" />
       </SeriesDimensions>
-      <Arguments>
-        <Argument Name="DataItem2" />
-      </Arguments>
-      <Panes>
-        <Pane Name="Pane 1">
-          <Series>
-            <Simple SeriesType="StackedLine">
-              <Value Name="DataItem0" />
-            </Simple>
-          </Series>
-        </Pane>
-      </Panes>
-    </Chart>
+      <Argument UniqueName="DataItem1" />
+      <Series>
+        <Simple SeriesType="Line">
+          <Value Name="DataItem0" />
+        </Simple>
+      </Series>
+    </RangeFilter>
   </Items>
   <LayoutTree>
     <LayoutGroup>
-      <LayoutItem Weight="23.336006415396952" DashboardItem="cardDashboardItem1" />
-      <LayoutGroup Weight="76.663993584603048" Orientation="Vertical">
-        <LayoutItem Weight="30.528846153846153" DashboardItem="chartDashboardItem3" />
-        <LayoutItem Weight="26.682692307692307" DashboardItem="chartDashboardItem4" />
-        <LayoutItem Weight="15.384615384615385" DashboardItem="chartDashboardItem1" />
-        <LayoutItem Weight="27.403846153846153" DashboardItem="chartDashboardItem2" />
+      <LayoutItem Weight="23.276983094928479" DashboardItem="cardDashboardItem1" />
+      <LayoutGroup Weight="76.723016905071518" Orientation="Vertical">
+        <LayoutItem Weight="36.660929432013766" DashboardItem="chartDashboardItem1" />
+        <LayoutItem Weight="39.586919104991395" DashboardItem="chartDashboardItem3" />
+        <LayoutItem Weight="23.752151462994835" DashboardItem="rangeFilterDashboardItem1" />
       </LayoutGroup>
     </LayoutGroup>
   </LayoutTree>
