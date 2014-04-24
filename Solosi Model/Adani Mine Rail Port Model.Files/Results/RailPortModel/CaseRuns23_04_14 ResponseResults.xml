@@ -15840,6 +15840,20 @@
     <Observation Value="65160.0397562947" />
     <Observation Value="66521.8692900149" />
   </Observations>
+  <Observations Scenario="Case 6- Campaign Railing" Response="LoadedTrainBlockedSiding9ToPort" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="EmptyTrainBlockedSiding9ToMine" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="EmptyTrainBlockedSiding7ToMine" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="EmptyTrainBlockedSiding5ToMine" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="EmptyTrainBlockedSiding3ToMine" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="EmptyTrainBlockedSiding1ToMine" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="LoadedTravelTime" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="EmptyTravelTime" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="RailOperatingCycleTime" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="RailCycleTime" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="AvgTimeBetweenTrainsAtTLO" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="MineTLOProductLoaded" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="MineUGCProductStockpileAvgContents" />
+  <Observations Scenario="Case 6- Campaign Railing" Response="MineLACProductStockpileAvgContents" />
   <Observations Scenario="Case 7 Base- Port LAC Stockpile 365000t" Response="EndTime">
     <Observation Value="43800" />
     <Observation Value="43800" />
@@ -20700,4 +20714,32 @@
     <Observation Value="100448.249543975" />
     <Observation Value="87146.0745663019" />
   </Observations>
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="LoadedTrainBlockedSiding9ToPort" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="EmptyTrainBlockedSiding9ToMine" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="EmptyTrainBlockedSiding7ToMine" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="EmptyTrainBlockedSiding5ToMine" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="EmptyTrainBlockedSiding3ToMine" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="EmptyTrainBlockedSiding1ToMine" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="LoadedTravelTime" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="EmptyTravelTime" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="RailOperatingCycleTime" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="RailCycleTime" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="AvgTimeBetweenTrainsAtTLO" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="MineTLOProductLoaded" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="MineUGCProductStockpileAvgContents" />
+  <Observations Scenario="Case 5 B -Rolling Stock 2000t port Stockpile" Response="MineLACProductStockpileAvgContents" />
+  <Observations Scenario="Case 5 C" Response="LoadedTrainBlockedSiding9ToPort" />
+  <Observations Scenario="Case 5 C" Response="EmptyTrainBlockedSiding9ToMine" />
+  <Observations Scenario="Case 5 C" Response="EmptyTrainBlockedSiding7ToMine" />
+  <Observations Scenario="Case 5 C" Response="EmptyTrainBlockedSiding5ToMine" />
+  <Observations Scenario="Case 5 C" Response="EmptyTrainBlockedSiding3ToMine" />
+  <Observations Scenario="Case 5 C" Response="EmptyTrainBlockedSiding1ToMine" />
+  <Observations Scenario="Case 5 C" Response="LoadedTravelTime" />
+  <Observations Scenario="Case 5 C" Response="EmptyTravelTime" />
+  <Observations Scenario="Case 5 C" Response="RailOperatingCycleTime" />
+  <Observations Scenario="Case 5 C" Response="RailCycleTime" />
+  <Observations Scenario="Case 5 C" Response="AvgTimeBetweenTrainsAtTLO" />
+  <Observations Scenario="Case 5 C" Response="MineTLOProductLoaded" />
+  <Observations Scenario="Case 5 C" Response="MineUGCProductStockpileAvgContents" />
+  <Observations Scenario="Case 5 C" Response="MineLACProductStockpileAvgContents" />
 </ResponseResults>
