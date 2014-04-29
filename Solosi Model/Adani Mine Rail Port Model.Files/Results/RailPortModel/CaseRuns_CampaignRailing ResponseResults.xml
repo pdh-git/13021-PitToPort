@@ -1,0 +1,2208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ResponseResults Model="RailPortModel" Experiment="CaseRuns_CampaignRailing" FileVersion="94" xmlns="http://www.simio.com/projects/v1">
+  <Observations Scenario="BaseCase" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="PercentDirectLoading">
+    <Observation Value="27.7440798238654" />
+    <Observation Value="30.9352155306339" />
+    <Observation Value="20.4615328938068" />
+    <Observation Value="21.122582474178" />
+    <Observation Value="28.45781371247" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="AvgIdleTimeAtBerth">
+    <Observation Value="5.5475830002285" />
+    <Observation Value="5.09810164163198" />
+    <Observation Value="13.7969016637586" />
+    <Observation Value="3.76550335155466" />
+    <Observation Value="4.58116989089531" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.26997794133477" />
+    <Observation Value="1.23112094092461" />
+    <Observation Value="1.03042514982766" />
+    <Observation Value="0.847716424855359" />
+    <Observation Value="1.08107156833564" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="AvgShipTTIP">
+    <Observation Value="2921.95952794546" />
+    <Observation Value="1886.45950254238" />
+    <Observation Value="678.085548002852" />
+    <Observation Value="5909.84765372488" />
+    <Observation Value="2195.98679024257" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="AvgShipTimeInBerth">
+    <Observation Value="31.106744881504" />
+    <Observation Value="29.8307058441589" />
+    <Observation Value="31.2858275400916" />
+    <Observation Value="37.9893004575807" />
+    <Observation Value="31.9044277364833" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="AvgShipLoadingTime">
+    <Observation Value="28.920035273675" />
+    <Observation Value="27.6197758913765" />
+    <Observation Value="29.1069368971936" />
+    <Observation Value="35.8155680908594" />
+    <Observation Value="29.6993204196678" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="168108.988960228" />
+    <Observation Value="153457.423242664" />
+    <Observation Value="279936.224994351" />
+    <Observation Value="213933.842619471" />
+    <Observation Value="168545.945793727" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="197350.556140279" />
+    <Observation Value="197383.059846123" />
+    <Observation Value="328252.700027053" />
+    <Observation Value="206675.768900152" />
+    <Observation Value="203988.664015999" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="PortStockpileAvgTotalContents">
+    <Observation Value="365457.826423828" />
+    <Observation Value="350841.610029441" />
+    <Observation Value="608188.925021474" />
+    <Observation Value="420601.823009111" />
+    <Observation Value="372534.609809771" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="ShiploadingIdleTime">
+    <Observation Value="4820.23143742002" />
+    <Observation Value="4579.61009104087" />
+    <Observation Value="2409.39619733414" />
+    <Observation Value="2453.34188738019" />
+    <Observation Value="3804.2362271061" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="ShiploadingWeatherDownTime">
+    <Observation Value="271.267041936043" />
+    <Observation Value="276.066668066324" />
+    <Observation Value="222.831746037442" />
+    <Observation Value="268.335998656878" />
+    <Observation Value="294.558968072349" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1500" />
+    <Observation Value="1498.72093875931" />
+    <Observation Value="297.257780602471" />
+    <Observation Value="1396.26278105958" />
+    <Observation Value="1498.84198390979" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="ShiploadingPositioningTime">
+    <Observation Value="1596.53592068344" />
+    <Observation Value="1700.32994353302" />
+    <Observation Value="279.762243195786" />
+    <Observation Value="1396.0748027682" />
+    <Observation Value="1638.34891094571" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="ShiploadingOccupiedTime">
+    <Observation Value="35611.9655999605" />
+    <Observation Value="35745.2723586005" />
+    <Observation Value="40590.7520328302" />
+    <Observation Value="38285.9845301351" />
+    <Observation Value="36564.013909966" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="DumperIdleTime">
+    <Observation Value="11866.6673193953" />
+    <Observation Value="12243.7695036283" />
+    <Observation Value="1747.13820427872" />
+    <Observation Value="7970.79235618765" />
+    <Observation Value="10803.9061902776" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="DumperWeatherDownTime">
+    <Observation Value="49.006036656119" />
+    <Observation Value="37.976453226305" />
+    <Observation Value="56.6983647325462" />
+    <Observation Value="44.0514558533266" />
+    <Observation Value="36.6536291894153" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1714.06301642301" />
+    <Observation Value="1735.28020971511" />
+    <Observation Value="348" />
+    <Observation Value="1706.80280193717" />
+    <Observation Value="1724.5462975716" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="DumperPositioningTime">
+    <Observation Value="2186.35912963745" />
+    <Observation Value="2279.68501639856" />
+    <Observation Value="390.600000000002" />
+    <Observation Value="1918.60956715189" />
+    <Observation Value="2225.45763035612" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="DumperUnloadingTime">
+    <Observation Value="27983.9044978882" />
+    <Observation Value="27503.2888170317" />
+    <Observation Value="41257.5634309887" />
+    <Observation Value="32159.74381887" />
+    <Observation Value="29009.4362526053" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="PortShiploaderThroughput">
+    <Observation Value="34.6052119837178" />
+    <Observation Value="36.0513453413234" />
+    <Observation Value="6.04999961000003" />
+    <Observation Value="30.3479979680019" />
+    <Observation Value="35.2539976860039" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="PortDumperThroughput">
+    <Observation Value="34.6696085302483" />
+    <Observation Value="36.1390055550425" />
+    <Observation Value="6.18578399999995" />
+    <Observation Value="30.4158967860784" />
+    <Observation Value="35.2794172675093" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="TrainUnloadingTime">
+    <Observation Value="3.85627612862562" />
+    <Observation Value="3.63140025636568" />
+    <Observation Value="5.06315171182774" />
+    <Observation Value="5.04041316423904" />
+    <Observation Value="3.94242999471285" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="TrainLoadingTime">
+    <Observation Value="2.99980508400384" />
+    <Observation Value="2.99798945057024" />
+    <Observation Value="2.99746719872285" />
+    <Observation Value="2.99859399351353" />
+    <Observation Value="2.99954047872428" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="TrainProvisioningTime">
+    <Observation Value="2.69027968300929" />
+    <Observation Value="2.68744082111894" />
+    <Observation Value="2.68647194503026" />
+    <Observation Value="2.67793405157748" />
+    <Observation Value="2.68607219758722" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.03162899174512" />
+    <Observation Value="1.04632352191111" />
+    <Observation Value="0.939890482340716" />
+    <Observation Value="1.02747601395784" />
+    <Observation Value="0.965650682162528" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.95984531983836" />
+    <Observation Value="1.23958904392839" />
+    <Observation Value="5.67561116954692" />
+    <Observation Value="5.59476190206116" />
+    <Observation Value="2.05106770873928" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.413479345142904" />
+    <Observation Value="0.167290474583742" />
+    <Observation Value="1.6609248191403" />
+    <Observation Value="1.63712464675821" />
+    <Observation Value="0.461008395435164" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.556498924997089" />
+    <Observation Value="0.275788131238097" />
+    <Observation Value="1.8068547923435" />
+    <Observation Value="1.75356119842752" />
+    <Observation Value="0.592188812515246" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.516684859998619" />
+    <Observation Value="0.298970682726426" />
+    <Observation Value="1.71064180580711" />
+    <Observation Value="1.73386399021674" />
+    <Observation Value="0.545620772432939" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.238390152262546" />
+    <Observation Value="0.276894986953597" />
+    <Observation Value="0.233543540583816" />
+    <Observation Value="0.245537692570165" />
+    <Observation Value="0.255320884219395" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.23468858304506" />
+    <Observation Value="0.22071537500001" />
+    <Observation Value="0.254880050390506" />
+    <Observation Value="0.224244060648007" />
+    <Observation Value="0.196794470841471" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="1.22915094726294" />
+    <Observation Value="1.39712534090259" />
+    <Observation Value="0.960425654022692" />
+    <Observation Value="0.929859242302341" />
+    <Observation Value="1.79963312228392" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.679216385302394" />
+    <Observation Value="0.669474347631901" />
+    <Observation Value="0.576776681486085" />
+    <Observation Value="0.685777847344123" />
+    <Observation Value="0.608352382288134" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.801436722436226" />
+    <Observation Value="0.721330076931481" />
+    <Observation Value="0.614308749467432" />
+    <Observation Value="0.736685473872336" />
+    <Observation Value="0.623541016438765" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.726887984135496" />
+    <Observation Value="0.784225597406193" />
+    <Observation Value="0.694328627398046" />
+    <Observation Value="0.743054564862123" />
+    <Observation Value="0.7935499145275" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.07645947497848" />
+    <Observation Value="1.0645736001106" />
+    <Observation Value="1.11801274776711" />
+    <Observation Value="0.945419519237573" />
+    <Observation Value="0.977179219432399" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="LoadedTravelTime">
+    <Observation Value="10.9047892308482" />
+    <Observation Value="9.85849920346804" />
+    <Observation Value="15.3618375341892" />
+    <Observation Value="15.5599964916396" />
+    <Observation Value="10.892821313229" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="EmptyTravelTime">
+    <Observation Value="8.3265981266016" />
+    <Observation Value="8.43060150432072" />
+    <Observation Value="8.20290398884833" />
+    <Observation Value="8.05379588833939" />
+    <Observation Value="8.24357664424285" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="RailOperatingCycleTime">
+    <Observation Value="27.62162680746" />
+    <Observation Value="27.0396963128225" />
+    <Observation Value="28.718365095099" />
+    <Observation Value="29.494767187977" />
+    <Observation Value="27.793088969104" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="RailCycleTime">
+    <Observation Value="33.2788260313016" />
+    <Observation Value="31.8339382727892" />
+    <Observation Value="40.0592066177179" />
+    <Observation Value="40.211661221057" />
+    <Observation Value="33.3383500768377" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.33425374046059" />
+    <Observation Value="2.09251378657612" />
+    <Observation Value="3.28947655714877" />
+    <Observation Value="3.17358670936195" />
+    <Observation Value="2.23161841907239" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="MineTLOProductLoaded">
+    <Observation Value="173.424240000041" />
+    <Observation Value="180.764581549647" />
+    <Observation Value="31.0543199999993" />
+    <Observation Value="152.135280000036" />
+    <Observation Value="176.443219253915" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="98566.4315326544" />
+    <Observation Value="89672.582795209" />
+    <Observation Value="141652.994970598" />
+    <Observation Value="131445.371020379" />
+    <Observation Value="101727.803090454" />
+  </Observations>
+  <Observations Scenario="BaseCase" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="83254.3915484578" />
+    <Observation Value="71164.7195751783" />
+    <Observation Value="137869.06479625" />
+    <Observation Value="119941.524037186" />
+    <Observation Value="84345.1583148663" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PercentDirectLoading">
+    <Observation Value="24.2236912757251" />
+    <Observation Value="29.3460930129503" />
+    <Observation Value="24.53924030813" />
+    <Observation Value="29.4593258026916" />
+    <Observation Value="29.7664410363959" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgIdleTimeAtBerth">
+    <Observation Value="5.47768092868807" />
+    <Observation Value="5.43236478126131" />
+    <Observation Value="4.48276137616235" />
+    <Observation Value="5.5108949053507" />
+    <Observation Value="5.29413352176701" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.22399065796537" />
+    <Observation Value="1.31071236742885" />
+    <Observation Value="1.15549964641386" />
+    <Observation Value="1.34077928075066" />
+    <Observation Value="1.33498514381058" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgShipTTIP">
+    <Observation Value="1618.98325439718" />
+    <Observation Value="1644.08461971948" />
+    <Observation Value="3634.63948337229" />
+    <Observation Value="1597.0832316553" />
+    <Observation Value="1465.20987735298" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgShipTimeInBerth">
+    <Observation Value="33.8450062130835" />
+    <Observation Value="29.5931547841045" />
+    <Observation Value="32.8840271996067" />
+    <Observation Value="29.4656399686492" />
+    <Observation Value="29.9703960481172" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgShipLoadingTime">
+    <Observation Value="31.6372136606774" />
+    <Observation Value="27.4216110381453" />
+    <Observation Value="30.6726687841691" />
+    <Observation Value="27.2974720195943" />
+    <Observation Value="27.7850537803347" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="118262.970024165" />
+    <Observation Value="128703.405614589" />
+    <Observation Value="161665.888201622" />
+    <Observation Value="134390.902072871" />
+    <Observation Value="129032.575707191" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="163811.119130982" />
+    <Observation Value="155259.938808873" />
+    <Observation Value="163846.284715697" />
+    <Observation Value="159922.509577188" />
+    <Observation Value="157517.872645579" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PortStockpileAvgTotalContents">
+    <Observation Value="282074.089155149" />
+    <Observation Value="283963.344423452" />
+    <Observation Value="325508.321852733" />
+    <Observation Value="294313.411650055" />
+    <Observation Value="286550.448352784" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="ShiploadingIdleTime">
+    <Observation Value="4469.2789424434" />
+    <Observation Value="5061.66263467664" />
+    <Observation Value="3542.89591054025" />
+    <Observation Value="5137.53628838025" />
+    <Observation Value="4811.72567278252" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="ShiploadingWeatherDownTime">
+    <Observation Value="343.866654581428" />
+    <Observation Value="308.329128729503" />
+    <Observation Value="283.291372626925" />
+    <Observation Value="226.455846689285" />
+    <Observation Value="353.555547896339" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1445.47087987855" />
+    <Observation Value="1482.14101498985" />
+    <Observation Value="1487.01196390104" />
+    <Observation Value="1500" />
+    <Observation Value="1490.4497652682" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="ShiploadingPositioningTime">
+    <Observation Value="1484.81770289386" />
+    <Observation Value="1678.64554459694" />
+    <Observation Value="1658.97710895743" />
+    <Observation Value="1720.53714223843" />
+    <Observation Value="1761.08677922864" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="ShiploadingOccupiedTime">
+    <Observation Value="36056.5658202028" />
+    <Observation Value="35269.2216770071" />
+    <Observation Value="36827.8236439743" />
+    <Observation Value="35215.470722692" />
+    <Observation Value="35383.1822348243" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="DumperIdleTime">
+    <Observation Value="11348.472247362" />
+    <Observation Value="12696.3050695041" />
+    <Observation Value="10760.3936958565" />
+    <Observation Value="12697.8225539374" />
+    <Observation Value="12478.7018192565" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="DumperWeatherDownTime">
+    <Observation Value="56.9659492785808" />
+    <Observation Value="52.2180499466535" />
+    <Observation Value="55.7515422866224" />
+    <Observation Value="53.5235793635962" />
+    <Observation Value="36.3731135746001" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1699.82244091358" />
+    <Observation Value="1728.95747853642" />
+    <Observation Value="1740" />
+    <Observation Value="1740" />
+    <Observation Value="1740" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="DumperPositioningTime">
+    <Observation Value="2084.22724204489" />
+    <Observation Value="2304.01040933436" />
+    <Observation Value="2152.52502120009" />
+    <Observation Value="2299.65900638484" />
+    <Observation Value="2316.815379448" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="DumperUnloadingTime">
+    <Observation Value="28610.5121204009" />
+    <Observation Value="27018.5089926785" />
+    <Observation Value="29091.3297406568" />
+    <Observation Value="27008.9948603142" />
+    <Observation Value="27228.1096877209" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PortShiploaderThroughput">
+    <Observation Value="33.0039978479967" />
+    <Observation Value="36.4779074274501" />
+    <Observation Value="34.0688830038716" />
+    <Observation Value="36.4459975899951" />
+    <Observation Value="36.6842833242813" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PortDumperThroughput">
+    <Observation Value="33.055991739012" />
+    <Observation Value="36.5354404381988" />
+    <Observation Value="34.1277538370201" />
+    <Observation Value="36.4811040000066" />
+    <Observation Value="36.7288991027692" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="TrainUnloadingTime">
+    <Observation Value="4.15975936398959" />
+    <Observation Value="3.53665800316037" />
+    <Observation Value="4.09045935843739" />
+    <Observation Value="3.54289543706099" />
+    <Observation Value="3.53642169038174" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="TrainLoadingTime">
+    <Observation Value="2.99799121109712" />
+    <Observation Value="2.99861714931057" />
+    <Observation Value="3.00067499782983" />
+    <Observation Value="3.00152838267687" />
+    <Observation Value="2.9993620591352" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="TrainProvisioningTime">
+    <Observation Value="2.68785046797374" />
+    <Observation Value="2.68458436331317" />
+    <Observation Value="2.68367687966044" />
+    <Observation Value="2.68505732053862" />
+    <Observation Value="2.68313923479379" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.02037474051354" />
+    <Observation Value="1.02952854687934" />
+    <Observation Value="1.04976976124404" />
+    <Observation Value="1.08708730617473" />
+    <Observation Value="1.02933000617981" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="3.07682088302906" />
+    <Observation Value="1.19829728600456" />
+    <Observation Value="2.82905818171502" />
+    <Observation Value="1.13505376937878" />
+    <Observation Value="1.26289115678937" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.764498995154106" />
+    <Observation Value="0.161752318054324" />
+    <Observation Value="0.699759318509606" />
+    <Observation Value="0.157544551164477" />
+    <Observation Value="0.180652265868594" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.917902252670765" />
+    <Observation Value="0.295783397793477" />
+    <Observation Value="0.843856650590041" />
+    <Observation Value="0.288124178711231" />
+    <Observation Value="0.315947174258771" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.889992735822341" />
+    <Observation Value="0.281848080903265" />
+    <Observation Value="0.818034092874527" />
+    <Observation Value="0.258496082030187" />
+    <Observation Value="0.297281583877" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.301686145615524" />
+    <Observation Value="0.257426924515984" />
+    <Observation Value="0.228058974322197" />
+    <Observation Value="0.221513705812408" />
+    <Observation Value="0.242022043210677" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.202379345675015" />
+    <Observation Value="0.201390249615468" />
+    <Observation Value="0.23905275140249" />
+    <Observation Value="0.209227421083172" />
+    <Observation Value="0.226927429500358" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.875979810567182" />
+    <Observation Value="1.07008949077027" />
+    <Observation Value="0.922221507371125" />
+    <Observation Value="0.993364304062999" />
+    <Observation Value="1.36454742944042" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.610899000474176" />
+    <Observation Value="0.629659091603331" />
+    <Observation Value="0.71630573046282" />
+    <Observation Value="0.596827107819402" />
+    <Observation Value="0.644782984671349" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.718798680792254" />
+    <Observation Value="0.761367591875856" />
+    <Observation Value="0.706587015993778" />
+    <Observation Value="0.805720295496603" />
+    <Observation Value="0.664240506469713" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.800571191147763" />
+    <Observation Value="0.727003471555255" />
+    <Observation Value="0.787817883673938" />
+    <Observation Value="0.851524078730018" />
+    <Observation Value="0.762790570351199" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.12928074856178" />
+    <Observation Value="1.10627062745455" />
+    <Observation Value="1.01296881307565" />
+    <Observation Value="1.1741768135565" />
+    <Observation Value="1.1434304550887" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTravelTime">
+    <Observation Value="12.0608461986364" />
+    <Observation Value="9.4658241661619" />
+    <Observation Value="11.982572146702" />
+    <Observation Value="9.60565242701991" />
+    <Observation Value="9.57635044549188" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTravelTime">
+    <Observation Value="8.29973406410924" />
+    <Observation Value="8.17634749339574" />
+    <Observation Value="8.35408405714534" />
+    <Observation Value="8.26884038744084" />
+    <Observation Value="8.27052368437407" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="RailOperatingCycleTime">
+    <Observation Value="27.5035358381786" />
+    <Observation Value="26.6433674215149" />
+    <Observation Value="27.6933832375525" />
+    <Observation Value="26.6200276821471" />
+    <Observation Value="26.7701566260317" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="RailCycleTime">
+    <Observation Value="34.8300338946052" />
+    <Observation Value="30.6989954388664" />
+    <Observation Value="34.7684377303257" />
+    <Observation Value="30.9453526542628" />
+    <Observation Value="30.8285335652228" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.62882027599897" />
+    <Observation Value="2.02938307703754" />
+    <Observation Value="2.42906971117462" />
+    <Observation Value="2.03562061241058" />
+    <Observation Value="1.99910189300791" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="MineTLOProductLoaded">
+    <Observation Value="165.351626866859" />
+    <Observation Value="182.738160000045" />
+    <Observation Value="170.696786276314" />
+    <Observation Value="182.429280000045" />
+    <Observation Value="183.69290202763" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="91695.7323813465" />
+    <Observation Value="80571.9448406936" />
+    <Observation Value="112389.832351985" />
+    <Observation Value="81180.4402419327" />
+    <Observation Value="78780.2053987477" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="75054.1342198164" />
+    <Observation Value="62567.8911872704" />
+    <Observation Value="98313.8184276859" />
+    <Observation Value="63089.3934745426" />
+    <Observation Value="61132.797775294" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PercentDirectLoading">
+    <Observation Value="28.0455697759396" />
+    <Observation Value="24.4444043341894" />
+    <Observation Value="29.6242760896069" />
+    <Observation Value="29.7114665036632" />
+    <Observation Value="29.4985746284254" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.26732954519607" />
+    <Observation Value="4.55359162238474" />
+    <Observation Value="4.33156787063549" />
+    <Observation Value="4.63544521361526" />
+    <Observation Value="4.60233923420559" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.09653568610703" />
+    <Observation Value="1.01637766057088" />
+    <Observation Value="1.13121158364949" />
+    <Observation Value="1.1752667356746" />
+    <Observation Value="1.15584810604925" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgShipTTIP">
+    <Observation Value="1084.334024076" />
+    <Observation Value="3646.30559325132" />
+    <Observation Value="1066.33971778068" />
+    <Observation Value="1390.72206954732" />
+    <Observation Value="1430.1891047612" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgShipTimeInBerth">
+    <Observation Value="30.1953561292962" />
+    <Observation Value="33.290954160201" />
+    <Observation Value="29.5752633467634" />
+    <Observation Value="29.5199832539682" />
+    <Observation Value="29.8398124395838" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgShipLoadingTime">
+    <Observation Value="28.0231342541825" />
+    <Observation Value="31.1028774020193" />
+    <Observation Value="27.3211832375325" />
+    <Observation Value="27.3530906220689" />
+    <Observation Value="27.6116516475878" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="134378.706500475" />
+    <Observation Value="168607.68293604" />
+    <Observation Value="132659.316606113" />
+    <Observation Value="136441.450642636" />
+    <Observation Value="134776.138507633" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="170281.347842981" />
+    <Observation Value="168592.759139345" />
+    <Observation Value="169695.088593802" />
+    <Observation Value="168894.395906542" />
+    <Observation Value="170235.720221461" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PortStockpileAvgTotalContents">
+    <Observation Value="304660.054343458" />
+    <Observation Value="337196.776147949" />
+    <Observation Value="302354.405199918" />
+    <Observation Value="305337.940924233" />
+    <Observation Value="305009.778168097" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="ShiploadingIdleTime">
+    <Observation Value="3695.78230114959" />
+    <Observation Value="3557.07114899352" />
+    <Observation Value="3818.69007280071" />
+    <Observation Value="4197.94672023654" />
+    <Observation Value="4088.7187086684" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="ShiploadingWeatherDownTime">
+    <Observation Value="319.079107922001" />
+    <Observation Value="264.89021809353" />
+    <Observation Value="397.304051122287" />
+    <Observation Value="346.053885626159" />
+    <Observation Value="274.865820144167" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1499.91809735966" />
+    <Observation Value="1488" />
+    <Observation Value="1500" />
+    <Observation Value="1500" />
+    <Observation Value="1491.78104964442" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="ShiploadingPositioningTime">
+    <Observation Value="1708.95156980685" />
+    <Observation Value="1655.06814362956" />
+    <Observation Value="1726.55305281204" />
+    <Observation Value="1763.40937126724" />
+    <Observation Value="1715.20357124702" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="ShiploadingOccupiedTime">
+    <Observation Value="36576.2689237619" />
+    <Observation Value="36834.9704892834" />
+    <Observation Value="36357.452823265" />
+    <Observation Value="35992.5900228701" />
+    <Observation Value="36229.430850296" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="DumperIdleTime">
+    <Observation Value="11162.1098204695" />
+    <Observation Value="10169.4680749505" />
+    <Observation Value="11573.2871747224" />
+    <Observation Value="12042.2115995966" />
+    <Observation Value="11974.8871818626" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="DumperWeatherDownTime">
+    <Observation Value="41.6294669059085" />
+    <Observation Value="57.9583603933078" />
+    <Observation Value="61.9229846801309" />
+    <Observation Value="40.2487242374514" />
+    <Observation Value="57.5802186823354" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1735.85347581277" />
+    <Observation Value="1736.44285357546" />
+    <Observation Value="1740" />
+    <Observation Value="1695.29741446309" />
+    <Observation Value="1718.29538455655" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="DumperPositioningTime">
+    <Observation Value="2310.67845316627" />
+    <Observation Value="2158.8174341437" />
+    <Observation Value="2377.77454921941" />
+    <Observation Value="2349.15484884494" />
+    <Observation Value="2335.1126036062" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="DumperUnloadingTime">
+    <Observation Value="28549.7287836456" />
+    <Observation Value="29677.313276937" />
+    <Observation Value="28047.015291378" />
+    <Observation Value="27673.0874128579" />
+    <Observation Value="27714.1246112923" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PortShiploaderThroughput">
+    <Observation Value="36.5627396118974" />
+    <Observation Value="34.1939977659973" />
+    <Observation Value="37.6504975179941" />
+    <Observation Value="37.1939261074224" />
+    <Observation Value="36.9699975539948" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PortDumperThroughput">
+    <Observation Value="36.6252641649296" />
+    <Observation Value="34.2271705511284" />
+    <Observation Value="37.6895790212573" />
+    <Observation Value="37.2330598537236" />
+    <Observation Value="37.0261593338545" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="TrainUnloadingTime">
+    <Observation Value="3.73719101128585" />
+    <Observation Value="4.13639410158301" />
+    <Observation Value="3.55482406234475" />
+    <Observation Value="3.54296117197985" />
+    <Observation Value="3.57564352898616" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="TrainLoadingTime">
+    <Observation Value="3.00327747169201" />
+    <Observation Value="3.00089666948352" />
+    <Observation Value="2.99866686371869" />
+    <Observation Value="3.00163395097687" />
+    <Observation Value="3.0016965011151" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="TrainProvisioningTime">
+    <Observation Value="2.6810407475623" />
+    <Observation Value="2.68321299681465" />
+    <Observation Value="2.67950819329512" />
+    <Observation Value="2.67854225268805" />
+    <Observation Value="2.68421052731061" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="0.970308407382685" />
+    <Observation Value="1.02159705877741" />
+    <Observation Value="1.05349516167637" />
+    <Observation Value="1.04402531851584" />
+    <Observation Value="1.06350589959027" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.73835148904083" />
+    <Observation Value="3.12205874193493" />
+    <Observation Value="1.18210933421274" />
+    <Observation Value="1.22008248869863" />
+    <Observation Value="1.33401371517427" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.341355302756956" />
+    <Observation Value="0.783792285668304" />
+    <Observation Value="0.139157462994033" />
+    <Observation Value="0.16219222531905" />
+    <Observation Value="0.187747086785541" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.460688907910199" />
+    <Observation Value="0.914855270460003" />
+    <Observation Value="0.285191592943054" />
+    <Observation Value="0.282396762236476" />
+    <Observation Value="0.344878980067495" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.478562184928957" />
+    <Observation Value="0.913522652033928" />
+    <Observation Value="0.263059738292512" />
+    <Observation Value="0.274193000581117" />
+    <Observation Value="0.323479839721103" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.227375775833752" />
+    <Observation Value="0.292856791506344" />
+    <Observation Value="0.27052214257244" />
+    <Observation Value="0.287466185929692" />
+    <Observation Value="0.2694036783839" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.230562535667197" />
+    <Observation Value="0.216977215552258" />
+    <Observation Value="0.22400114545365" />
+    <Observation Value="0.213837896737269" />
+    <Observation Value="0.208429569442242" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.971684444314794" />
+    <Observation Value="0.791414223075923" />
+    <Observation Value="0.973579605516061" />
+    <Observation Value="1.10412083496342" />
+    <Observation Value="1.44705865362793" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.577614445591802" />
+    <Observation Value="0.666104810886686" />
+    <Observation Value="0.574244748136229" />
+    <Observation Value="0.600660839257036" />
+    <Observation Value="0.694882973186969" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.686907524254515" />
+    <Observation Value="0.679958446051205" />
+    <Observation Value="0.667638834810136" />
+    <Observation Value="0.643909511241764" />
+    <Observation Value="0.68198015696424" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.789549808407629" />
+    <Observation Value="0.758555254539999" />
+    <Observation Value="0.763567635927258" />
+    <Observation Value="0.831710799581062" />
+    <Observation Value="0.796742261148431" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="0.995491086946592" />
+    <Observation Value="1.00312836407597" />
+    <Observation Value="1.2057890920619" />
+    <Observation Value="1.12418991746031" />
+    <Observation Value="1.08102488240847" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTravelTime">
+    <Observation Value="10.1993464558441" />
+    <Observation Value="12.3818141425138" />
+    <Observation Value="9.56785947082524" />
+    <Observation Value="9.59175469549211" />
+    <Observation Value="9.97286389024626" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTravelTime">
+    <Observation Value="7.97454918174852" />
+    <Observation Value="8.1220250104361" />
+    <Observation Value="8.06209221319793" />
+    <Observation Value="8.09986887476028" />
+    <Observation Value="8.5089178755778" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="RailOperatingCycleTime">
+    <Observation Value="27.0097323740593" />
+    <Observation Value="27.5786602212508" />
+    <Observation Value="26.7054995636166" />
+    <Observation Value="26.6929416733128" />
+    <Observation Value="27.060797156809" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="RailCycleTime">
+    <Observation Value="31.7064410947664" />
+    <Observation Value="35.072503031643" />
+    <Observation Value="30.773793579697" />
+    <Observation Value="30.866213953536" />
+    <Observation Value="31.8443054853051" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.0104404805681" />
+    <Observation Value="2.41198752169153" />
+    <Observation Value="1.85467924588417" />
+    <Observation Value="1.91955272074391" />
+    <Observation Value="1.95076379533074" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="MineTLOProductLoaded">
+    <Observation Value="183.204726634352" />
+    <Observation Value="171.168402456277" />
+    <Observation Value="188.528084927692" />
+    <Observation Value="186.230880000047" />
+    <Observation Value="185.203362789508" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="124589.210564589" />
+    <Observation Value="187303.241555709" />
+    <Observation Value="124862.479891282" />
+    <Observation Value="120262.095948217" />
+    <Observation Value="138611.037092522" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="92763.2708292076" />
+    <Observation Value="163690.845122456" />
+    <Observation Value="89502.2024695121" />
+    <Observation Value="89128.1468477715" />
+    <Observation Value="104000.168328457" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PercentDirectLoading">
+    <Observation Value="30.3487940907375" />
+    <Observation Value="30.2811445183125" />
+    <Observation Value="24.3538378885774" />
+    <Observation Value="30.6539707991926" />
+    <Observation Value="29.8833932512643" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgIdleTimeAtBerth">
+    <Observation Value="3.68606493313115" />
+    <Observation Value="3.39667808997693" />
+    <Observation Value="3.92790056513966" />
+    <Observation Value="3.30707887995237" />
+    <Observation Value="4.15898062022201" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.02350140826161" />
+    <Observation Value="1.0004626122363" />
+    <Observation Value="0.967564709365276" />
+    <Observation Value="0.975992409833195" />
+    <Observation Value="0.922585487096325" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgShipTTIP">
+    <Observation Value="784.901751853286" />
+    <Observation Value="945.029629269499" />
+    <Observation Value="3671.80882866858" />
+    <Observation Value="719.07106007578" />
+    <Observation Value="87.4653907607323" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgShipTimeInBerth">
+    <Observation Value="29.5613357133439" />
+    <Observation Value="29.3462705284923" />
+    <Observation Value="33.6115894461729" />
+    <Observation Value="29.6965716190975" />
+    <Observation Value="26.8280747277778" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgShipLoadingTime">
+    <Observation Value="27.3744448896801" />
+    <Observation Value="27.1493576465749" />
+    <Observation Value="31.4331101412346" />
+    <Observation Value="27.4859379392512" />
+    <Observation Value="24.4359059833333" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="131216.362364538" />
+    <Observation Value="137720.71937198" />
+    <Observation Value="148760.692475521" />
+    <Observation Value="142573.490287013" />
+    <Observation Value="4038.99103719736" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="176693.219512186" />
+    <Observation Value="173236.04538737" />
+    <Observation Value="165338.403249854" />
+    <Observation Value="187673.908007029" />
+    <Observation Value="359820.005250342" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PortStockpileAvgTotalContents">
+    <Observation Value="307909.581876721" />
+    <Observation Value="310956.764759342" />
+    <Observation Value="314094.459958509" />
+    <Observation Value="330239.624380556" />
+    <Observation Value="363858.99628754" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="ShiploadingIdleTime">
+    <Observation Value="3180.8262431433" />
+    <Observation Value="2838.16211091344" />
+    <Observation Value="2905.23707707614" />
+    <Observation Value="2696.3159334948" />
+    <Observation Value="187.632551594796" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="ShiploadingWeatherDownTime">
+    <Observation Value="227.457099757395" />
+    <Observation Value="399.207457718859" />
+    <Observation Value="317.663665811176" />
+    <Observation Value="245.86970663134" />
+    <Observation Value="10272.4388351613" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1494.48077360785" />
+    <Observation Value="1493.66146770676" />
+    <Observation Value="1496.96051568342" />
+    <Observation Value="1499.60627419661" />
+    <Observation Value="24" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="ShiploadingPositioningTime">
+    <Observation Value="1845.5323555096" />
+    <Observation Value="1910.44972925175" />
+    <Observation Value="1648.10105186672" />
+    <Observation Value="1788.3299567947" />
+    <Observation Value="68.7332763444149" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="ShiploadingOccupiedTime">
+    <Observation Value="37051.7035279819" />
+    <Observation Value="37158.5192344092" />
+    <Observation Value="37432.0376895625" />
+    <Observation Value="37569.8781288825" />
+    <Observation Value="33247.1953368994" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="DumperIdleTime">
+    <Observation Value="10840.1654106266" />
+    <Observation Value="10975.3395687174" />
+    <Observation Value="9532.59688789395" />
+    <Observation Value="10586.2541155969" />
+    <Observation Value="360.939492411118" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="DumperWeatherDownTime">
+    <Observation Value="42.1580420477049" />
+    <Observation Value="34.7095994492544" />
+    <Observation Value="62.8177432177184" />
+    <Observation Value="48.1821802522958" />
+    <Observation Value="37.6477876615862" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1730.02522371708" />
+    <Observation Value="1740" />
+    <Observation Value="1660.06889911868" />
+    <Observation Value="1740" />
+    <Observation Value="24" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="DumperPositioningTime">
+    <Observation Value="2432.09988304452" />
+    <Observation Value="2423.92835005334" />
+    <Observation Value="2167.98616582678" />
+    <Observation Value="2442.73808887713" />
+    <Observation Value="91.7999999999913" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="DumperUnloadingTime">
+    <Observation Value="28755.5514405641" />
+    <Observation Value="28626.0224817801" />
+    <Observation Value="30376.5303039429" />
+    <Observation Value="28982.8256152737" />
+    <Observation Value="43285.6127199273" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PortShiploaderThroughput">
+    <Observation Value="38.543997471995" />
+    <Observation Value="38.3999974319938" />
+    <Observation Value="34.3164835872948" />
+    <Observation Value="38.6873974539932" />
+    <Observation Value="1.37945589999998" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PortDumperThroughput">
+    <Observation Value="38.5672320000071" />
+    <Observation Value="38.429424000007" />
+    <Observation Value="34.3649084186416" />
+    <Observation Value="38.719296000007" />
+    <Observation Value="1.452456" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="TrainUnloadingTime">
+    <Observation Value="3.55959099148491" />
+    <Observation Value="3.554563473029" />
+    <Observation Value="4.23429165357907" />
+    <Observation Value="3.60780032426869" />
+    <Observation Value="3.75152661335913" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="TrainLoadingTime">
+    <Observation Value="2.9984310322596" />
+    <Observation Value="3.00090107363277" />
+    <Observation Value="3.00134388828639" />
+    <Observation Value="2.99803249727775" />
+    <Observation Value="3.00507861704963" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="TrainProvisioningTime">
+    <Observation Value="2.68115835027417" />
+    <Observation Value="2.68118970997307" />
+    <Observation Value="2.67822960070154" />
+    <Observation Value="2.67377854250466" />
+    <Observation Value="2.68196721677812" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="1.02108047468618" />
+    <Observation Value="1.03698303773069" />
+    <Observation Value="0.997865551999379" />
+    <Observation Value="1.01015141844201" />
+    <Observation Value="0.949824138475674" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.31917299981031" />
+    <Observation Value="1.3028579496251" />
+    <Observation Value="3.36937568466351" />
+    <Observation Value="1.28982185478649" />
+    <Observation Value="1.32032830015573" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.19001831315335" />
+    <Observation Value="0.174342898191976" />
+    <Observation Value="0.855065123549487" />
+    <Observation Value="0.18430385608498" />
+    <Observation Value="0.254680291404528" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.320867561772857" />
+    <Observation Value="0.316923686008518" />
+    <Observation Value="1.00773661270323" />
+    <Observation Value="0.314116706682493" />
+    <Observation Value="0.324318194888935" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.330653346253097" />
+    <Observation Value="0.312149685662579" />
+    <Observation Value="0.991743934185167" />
+    <Observation Value="0.328714265155193" />
+    <Observation Value="0.301783137985741" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.261719741365742" />
+    <Observation Value="0.269612527396752" />
+    <Observation Value="0.287445089422603" />
+    <Observation Value="0.26111385392719" />
+    <Observation Value="0.205613804737031" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.215774931061942" />
+    <Observation Value="0.229737535479182" />
+    <Observation Value="0.227075623586611" />
+    <Observation Value="0.201591165286621" />
+    <Observation Value="0.225306303317297" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="0.856016371842628" />
+    <Observation Value="0.765289091320371" />
+    <Observation Value="1.19112308470664" />
+    <Observation Value="0.880191640763321" />
+    <Observation Value="1.07432394986218" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="0.661401660463954" />
+    <Observation Value="0.652140630292732" />
+    <Observation Value="0.574723607895798" />
+    <Observation Value="0.66940433789402" />
+    <Observation Value="0.613333713029746" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="0.644279248421863" />
+    <Observation Value="0.715154502703661" />
+    <Observation Value="0.71419819107583" />
+    <Observation Value="0.69867857742343" />
+    <Observation Value="0.621367836556819" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.725014953875748" />
+    <Observation Value="0.708695313569869" />
+    <Observation Value="0.828638390830479" />
+    <Observation Value="0.792756210170143" />
+    <Observation Value="0.691405692282183" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="1.07920101753317" />
+    <Observation Value="1.06372099067146" />
+    <Observation Value="0.962527470993849" />
+    <Observation Value="0.947631505478076" />
+    <Observation Value="1.00548837803136" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTravelTime">
+    <Observation Value="9.7855452071513" />
+    <Observation Value="9.84658423035714" />
+    <Observation Value="12.4825522173025" />
+    <Observation Value="9.7889195834966" />
+    <Observation Value="9.32439417793792" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTravelTime">
+    <Observation Value="8.03291058394661" />
+    <Observation Value="8.11749021955857" />
+    <Observation Value="8.06895446569447" />
+    <Observation Value="7.92796678653117" />
+    <Observation Value="8.19950456674219" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="RailOperatingCycleTime">
+    <Observation Value="26.9837970441919" />
+    <Observation Value="27.0284639066681" />
+    <Observation Value="27.890035507293" />
+    <Observation Value="27.1377553679406" />
+    <Observation Value="28.0110328421239" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="RailCycleTime">
+    <Observation Value="31.0462799560795" />
+    <Observation Value="31.2346253788933" />
+    <Observation Value="35.2250506090771" />
+    <Observation Value="31.0145101585329" />
+    <Observation Value="30.714336954483" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="1.72412108147866" />
+    <Observation Value="1.74740431401615" />
+    <Observation Value="2.38600208143915" />
+    <Observation Value="1.70762056710061" />
+    <Observation Value="1.5848606618021" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="MineTLOProductLoaded">
+    <Observation Value="192.90744000005" />
+    <Observation Value="192.183768272635" />
+    <Observation Value="171.89244085378" />
+    <Observation Value="193.64400000005" />
+    <Observation Value="7.38936000000004" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="217659.629070879" />
+    <Observation Value="234707.640242853" />
+    <Observation Value="369158.304612513" />
+    <Observation Value="250601.577915195" />
+    <Observation Value="488946.678324389" />
+  </Observations>
+  <Observations Scenario="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="146941.113542477" />
+    <Observation Value="161305.364168631" />
+    <Observation Value="321760.457760754" />
+    <Observation Value="166265.395302811" />
+    <Observation Value="483610.014157771" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PercentDirectLoading">
+    <Observation Value="16.1561105444468" />
+    <Observation Value="19.2839305673488" />
+    <Observation Value="18.148971956823" />
+    <Observation Value="15.4510484819196" />
+    <Observation Value="18.7048681525175" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgIdleTimeAtBerth">
+    <Observation Value="6.30161529968742" />
+    <Observation Value="7.04909406029053" />
+    <Observation Value="7.54048657247249" />
+    <Observation Value="5.96305165720266" />
+    <Observation Value="6.90437235099259" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.55978562264123" />
+    <Observation Value="1.80463374153097" />
+    <Observation Value="1.94350841572024" />
+    <Observation Value="1.58929563709175" />
+    <Observation Value="1.79815367319129" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgShipTTIP">
+    <Observation Value="5042.5605831156" />
+    <Observation Value="2773.39553122027" />
+    <Observation Value="3033.44677356459" />
+    <Observation Value="5729.24439425043" />
+    <Observation Value="2552.85346046371" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgShipTimeInBerth">
+    <Observation Value="33.658995956353" />
+    <Observation Value="30.0245841764218" />
+    <Observation Value="29.9949404782716" />
+    <Observation Value="33.8195414196951" />
+    <Observation Value="29.9768249587579" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgShipLoadingTime">
+    <Observation Value="31.4759531095897" />
+    <Observation Value="27.824469684421" />
+    <Observation Value="27.8107852365432" />
+    <Observation Value="31.6313845856829" />
+    <Observation Value="27.7402615519166" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="79329.4195036224" />
+    <Observation Value="74999.9708332296" />
+    <Observation Value="73914.8181990786" />
+    <Observation Value="85339.8962111034" />
+    <Observation Value="71141.0645303566" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="132651.674213974" />
+    <Observation Value="124427.669637378" />
+    <Observation Value="124141.897922561" />
+    <Observation Value="122261.164814142" />
+    <Observation Value="124460.63352781" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PortStockpileAvgTotalContents">
+    <Observation Value="211981.093717604" />
+    <Observation Value="199427.640470604" />
+    <Observation Value="198056.145422258" />
+    <Observation Value="207601.06102524" />
+    <Observation Value="195601.698058163" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="ShiploadingIdleTime">
+    <Observation Value="5136.9823311282" />
+    <Observation Value="6472.7092269805" />
+    <Observation Value="6869.90851461667" />
+    <Observation Value="4812.4706108664" />
+    <Observation Value="6414.421178435" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="ShiploadingWeatherDownTime">
+    <Observation Value="290.253048066336" />
+    <Observation Value="336.28784775443" />
+    <Observation Value="261.215417427774" />
+    <Observation Value="327.418963885146" />
+    <Observation Value="359.660474355741" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1500" />
+    <Observation Value="1494.05743914521" />
+    <Observation Value="1500" />
+    <Observation Value="1485.00407946684" />
+    <Observation Value="1495.8889460822" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="ShiploadingPositioningTime">
+    <Observation Value="1476.9473291133" />
+    <Observation Value="1675.41092189864" />
+    <Observation Value="1692.57995576941" />
+    <Observation Value="1455.55946006326" />
+    <Observation Value="1692.09646561395" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="ShiploadingOccupiedTime">
+    <Observation Value="35395.8172916922" />
+    <Observation Value="33821.5345642212" />
+    <Observation Value="33476.2961121861" />
+    <Observation Value="35719.5468857184" />
+    <Observation Value="33837.9329355131" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="DumperIdleTime">
+    <Observation Value="12355.9775482414" />
+    <Observation Value="15191.111175398" />
+    <Observation Value="15426.5575512179" />
+    <Observation Value="12611.9561081849" />
+    <Observation Value="15020.6530693769" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="DumperWeatherDownTime">
+    <Observation Value="79.4576977567264" />
+    <Observation Value="53.6938204919466" />
+    <Observation Value="44.339876514157" />
+    <Observation Value="35.6117745537675" />
+    <Observation Value="38.4511003816081" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1740" />
+    <Observation Value="1732.4942804725" />
+    <Observation Value="1709.69282920219" />
+    <Observation Value="1611.66964716932" />
+    <Observation Value="1740" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="DumperPositioningTime">
+    <Observation Value="1998.75436628353" />
+    <Observation Value="2176.48433996978" />
+    <Observation Value="2145.06774276798" />
+    <Observation Value="2015.41890626024" />
+    <Observation Value="2172.24187081531" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="DumperUnloadingTime">
+    <Observation Value="27625.8103877183" />
+    <Observation Value="24646.2163836678" />
+    <Observation Value="24474.3420002978" />
+    <Observation Value="27525.3435638318" />
+    <Observation Value="24828.6539594261" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PortShiploaderThroughput">
+    <Observation Value="31.6616613050095" />
+    <Observation Value="34.4554977219958" />
+    <Observation Value="33.9939977499961" />
+    <Observation Value="31.9254978719972" />
+    <Observation Value="34.3899977099951" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="PortDumperThroughput">
+    <Observation Value="31.6907867753748" />
+    <Observation Value="34.4995200000068" />
+    <Observation Value="34.005312000007" />
+    <Observation Value="31.9595864672277" />
+    <Observation Value="34.4441945443846" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="TrainUnloadingTime">
+    <Observation Value="4.18050691482926" />
+    <Observation Value="3.42754205955446" />
+    <Observation Value="3.43813191509181" />
+    <Observation Value="4.13630329292057" />
+    <Observation Value="3.44371878357959" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="TrainLoadingTime">
+    <Observation Value="3.71589273322552" />
+    <Observation Value="3.97497928500739" />
+    <Observation Value="3.98242986938851" />
+    <Observation Value="3.76669913762069" />
+    <Observation Value="3.94094213666382" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="TrainProvisioningTime">
+    <Observation Value="2.69484103246162" />
+    <Observation Value="2.70050978177535" />
+    <Observation Value="2.70468138554182" />
+    <Observation Value="2.69040749724724" />
+    <Observation Value="2.69637091067127" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="3.45450188008479" />
+    <Observation Value="4.19994525676398" />
+    <Observation Value="4.2935515215378" />
+    <Observation Value="3.4114612106284" />
+    <Observation Value="4.02409735152215" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="3.46720819407435" />
+    <Observation Value="1.23503272266777" />
+    <Observation Value="1.27507843732206" />
+    <Observation Value="3.28692644286676" />
+    <Observation Value="1.28922614164494" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.868905877192452" />
+    <Observation Value="0.1244829921954" />
+    <Observation Value="0.1629363617876" />
+    <Observation Value="0.819699850031168" />
+    <Observation Value="0.15089070311012" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="1.03442758761479" />
+    <Observation Value="0.280827653752156" />
+    <Observation Value="0.286747580872777" />
+    <Observation Value="0.970223147029642" />
+    <Observation Value="0.311762471803763" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="1.01963636067219" />
+    <Observation Value="0.263490764548379" />
+    <Observation Value="0.303769914635503" />
+    <Observation Value="0.96975984560846" />
+    <Observation Value="0.299695084179283" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.236327721770653" />
+    <Observation Value="0.226274311997631" />
+    <Observation Value="0.209657674802099" />
+    <Observation Value="0.237518467175778" />
+    <Observation Value="0.234915793694529" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.307983555102956" />
+    <Observation Value="0.33984274819356" />
+    <Observation Value="0.311993415386144" />
+    <Observation Value="0.289649117658477" />
+    <Observation Value="0.291805077466104" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="6.77510094032534" />
+    <Observation Value="6.41513599265588" />
+    <Observation Value="6.79116170181382" />
+    <Observation Value="5.97891542229795" />
+    <Observation Value="6.39574204221336" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="2.59517164400555" />
+    <Observation Value="3.04351744142117" />
+    <Observation Value="3.2205158428384" />
+    <Observation Value="2.59626176192763" />
+    <Observation Value="2.96391167036551" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="2.16510681021821" />
+    <Observation Value="2.1932498752306" />
+    <Observation Value="2.20106597469067" />
+    <Observation Value="1.88693758841241" />
+    <Observation Value="2.09948315340305" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="1.15936243401541" />
+    <Observation Value="1.24438656972701" />
+    <Observation Value="1.29147524279975" />
+    <Observation Value="1.07667000418432" />
+    <Observation Value="1.11321776450722" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="0.855693768298438" />
+    <Observation Value="0.961084175849049" />
+    <Observation Value="0.857774176336082" />
+    <Observation Value="0.952065816671035" />
+    <Observation Value="0.916981838054468" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="LoadedTravelTime">
+    <Observation Value="12.6071039198563" />
+    <Observation Value="9.60912496590392" />
+    <Observation Value="9.84180476384874" />
+    <Observation Value="12.4332965811536" />
+    <Observation Value="9.84910323585394" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="EmptyTravelTime">
+    <Observation Value="11.6291814882799" />
+    <Observation Value="12.8144616776159" />
+    <Observation Value="13.0398002180241" />
+    <Observation Value="11.5967559358862" />
+    <Observation Value="12.5932757575391" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="RailOperatingCycleTime">
+    <Observation Value="31.3773744877577" />
+    <Observation Value="31.5443962920981" />
+    <Observation Value="31.7621775189014" />
+    <Observation Value="31.3529241832596" />
+    <Observation Value="31.4554353693969" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="RailCycleTime">
+    <Observation Value="39.3768546383655" />
+    <Observation Value="36.175407804111" />
+    <Observation Value="36.6381322837391" />
+    <Observation Value="39.0525446898491" />
+    <Observation Value="36.2416015775756" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="2.18207884169967" />
+    <Observation Value="1.38888068192703" />
+    <Observation Value="1.47010121268531" />
+    <Observation Value="2.0760940116078" />
+    <Observation Value="1.43276445544946" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="MineTLOProductLoaded">
+    <Observation Value="158.526720000038" />
+    <Observation Value="172.568880000034" />
+    <Observation Value="170.05518993504" />
+    <Observation Value="159.872839538133" />
+    <Observation Value="172.283760000034" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="78557.2425250518" />
+    <Observation Value="59767.032742678" />
+    <Observation Value="62689.1213387189" />
+    <Observation Value="75458.6601291048" />
+    <Observation Value="61166.9502828483" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="119501.68977381" />
+    <Observation Value="117788.519641723" />
+    <Observation Value="116267.724772282" />
+    <Observation Value="120232.780251075" />
+    <Observation Value="118922.705671321" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PercentDirectLoading">
+    <Observation Value="19.6485952648367" />
+    <Observation Value="20.5176363189323" />
+    <Observation Value="21.1416373410028" />
+    <Observation Value="19.5122167148675" />
+    <Observation Value="19.5375710155495" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgIdleTimeAtBerth">
+    <Observation Value="5.81490045536596" />
+    <Observation Value="5.49042051139046" />
+    <Observation Value="5.44891004983006" />
+    <Observation Value="6.16330381424748" />
+    <Observation Value="5.39717731472221" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.58011337165776" />
+    <Observation Value="1.40024854961061" />
+    <Observation Value="1.49683311147202" />
+    <Observation Value="1.63258511568737" />
+    <Observation Value="1.62414081659139" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgShipTTIP">
+    <Observation Value="2119.97306241428" />
+    <Observation Value="1869.48419263336" />
+    <Observation Value="1936.21717724828" />
+    <Observation Value="2237.45301800783" />
+    <Observation Value="575.436540002101" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgShipTimeInBerth">
+    <Observation Value="29.8940169893687" />
+    <Observation Value="29.8026007377128" />
+    <Observation Value="29.5513880564784" />
+    <Observation Value="29.3415469065338" />
+    <Observation Value="31.0263892520492" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgShipLoadingTime">
+    <Observation Value="27.7094968647097" />
+    <Observation Value="27.6278521450086" />
+    <Observation Value="27.3729486381045" />
+    <Observation Value="27.1634478105402" />
+    <Observation Value="28.871109913479" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="81414.2723913039" />
+    <Observation Value="87714.1683690906" />
+    <Observation Value="81008.9227921835" />
+    <Observation Value="80612.1199220373" />
+    <Observation Value="241219.951713949" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="130911.41080767" />
+    <Observation Value="139466.998562068" />
+    <Observation Value="135991.629585664" />
+    <Observation Value="131709.457860768" />
+    <Observation Value="269936.274126513" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PortStockpileAvgTotalContents">
+    <Observation Value="212325.683198978" />
+    <Observation Value="227173.47930458" />
+    <Observation Value="217004.208998861" />
+    <Observation Value="212325.892630238" />
+    <Observation Value="511156.225840462" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="ShiploadingIdleTime">
+    <Observation Value="5355.10690437497" />
+    <Observation Value="4887.40297889013" />
+    <Observation Value="4999.63302757142" />
+    <Observation Value="5789.786203613" />
+    <Observation Value="1011.25293695327" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="ShiploadingWeatherDownTime">
+    <Observation Value="244.899259682168" />
+    <Observation Value="336.635824592608" />
+    <Observation Value="312.597751013406" />
+    <Observation Value="434.060903828667" />
+    <Observation Value="353.401277079256" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1500" />
+    <Observation Value="1476" />
+    <Observation Value="1498.75025991753" />
+    <Observation Value="1500" />
+    <Observation Value="300" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="ShiploadingPositioningTime">
+    <Observation Value="1669.75244671135" />
+    <Observation Value="1648.63578916792" />
+    <Observation Value="1727.90541400137" />
+    <Observation Value="1620.60457659614" />
+    <Observation Value="377.175155330438" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="ShiploadingOccupiedTime">
+    <Observation Value="35030.2413892315" />
+    <Observation Value="35451.3254073493" />
+    <Observation Value="35261.1135474963" />
+    <Observation Value="34455.5483159622" />
+    <Observation Value="41758.170630637" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="DumperIdleTime">
+    <Observation Value="13826.0181867027" />
+    <Observation Value="13180.9648113214" />
+    <Observation Value="13580.9852094967" />
+    <Observation Value="14210.6288161893" />
+    <Observation Value="2949.61661530581" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="DumperWeatherDownTime">
+    <Observation Value="63.6450694655942" />
+    <Observation Value="53.4169495001147" />
+    <Observation Value="34.1128049804685" />
+    <Observation Value="53.3644074688312" />
+    <Observation Value="39.210609191715" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1697.42169580425" />
+    <Observation Value="1668" />
+    <Observation Value="1700.84814216223" />
+    <Observation Value="1689.01367451237" />
+    <Observation Value="348" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="DumperPositioningTime">
+    <Observation Value="2265.86841027817" />
+    <Observation Value="2231.04260195953" />
+    <Observation Value="2278.87632222312" />
+    <Observation Value="2242.62662404536" />
+    <Observation Value="485.161976782309" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="DumperUnloadingTime">
+    <Observation Value="25947.0466377492" />
+    <Observation Value="26666.5756372189" />
+    <Observation Value="26205.1775211375" />
+    <Observation Value="25604.3664777841" />
+    <Observation Value="39978.0107987202" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PortShiploaderThroughput">
+    <Observation Value="35.8945690665661" />
+    <Observation Value="35.2499976739964" />
+    <Observation Value="36.1014975919948" />
+    <Observation Value="35.5118547688533" />
+    <Observation Value="7.57399951000024" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="PortDumperThroughput">
+    <Observation Value="35.939376000007" />
+    <Observation Value="35.3773039980047" />
+    <Observation Value="36.1356017142928" />
+    <Observation Value="35.5565037226857" />
+    <Observation Value="7.69272600000007" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="TrainUnloadingTime">
+    <Observation Value="3.45153140599104" />
+    <Observation Value="3.48021085363229" />
+    <Observation Value="3.46520990954395" />
+    <Observation Value="3.43709471142844" />
+    <Observation Value="3.46232502827118" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="TrainLoadingTime">
+    <Observation Value="3.72246498467253" />
+    <Observation Value="3.61045606060717" />
+    <Observation Value="3.702297548553" />
+    <Observation Value="3.6949553307543" />
+    <Observation Value="3.69746344702924" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="TrainProvisioningTime">
+    <Observation Value="2.69349378557478" />
+    <Observation Value="2.69750134378124" />
+    <Observation Value="2.6892410897102" />
+    <Observation Value="2.69874348164042" />
+    <Observation Value="2.6893695935954" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="3.319655467291" />
+    <Observation Value="2.98669738984073" />
+    <Observation Value="3.25653341729355" />
+    <Observation Value="3.27171734779402" />
+    <Observation Value="3.28303344678551" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.29412639650756" />
+    <Observation Value="1.28882910817012" />
+    <Observation Value="1.24834416812732" />
+    <Observation Value="1.27406786094759" />
+    <Observation Value="1.1640716466512" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.159719667666568" />
+    <Observation Value="0.154216265559354" />
+    <Observation Value="0.154134271306234" />
+    <Observation Value="0.143893326690801" />
+    <Observation Value="0.107893562238816" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.310485901884572" />
+    <Observation Value="0.289442840131389" />
+    <Observation Value="0.295576337411691" />
+    <Observation Value="0.293807092567524" />
+    <Observation Value="0.294976904189404" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.287757863044858" />
+    <Observation Value="0.293008400023492" />
+    <Observation Value="0.309484606327244" />
+    <Observation Value="0.288167966458963" />
+    <Observation Value="0.230469662517282" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.236562445613052" />
+    <Observation Value="0.264085993957746" />
+    <Observation Value="0.222585657433634" />
+    <Observation Value="0.224078328182759" />
+    <Observation Value="0.209953603225451" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.299554466546503" />
+    <Observation Value="0.287668975214329" />
+    <Observation Value="0.266619315050782" />
+    <Observation Value="0.323911067149636" />
+    <Observation Value="0.319178984600981" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="6.19527081555447" />
+    <Observation Value="6.00616322269771" />
+    <Observation Value="6.10605450605796" />
+    <Observation Value="6.65757555277266" />
+    <Observation Value="6.1923617183681" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="2.60499855337703" />
+    <Observation Value="2.22705969152194" />
+    <Observation Value="2.38574133095062" />
+    <Observation Value="2.50464899944409" />
+    <Observation Value="2.44074425938337" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="1.75676466347277" />
+    <Observation Value="1.75828336417978" />
+    <Observation Value="1.71893681152521" />
+    <Observation Value="1.82051214711632" />
+    <Observation Value="1.74673280521819" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="1.02741120017472" />
+    <Observation Value="1.0932596660811" />
+    <Observation Value="1.08217022217524" />
+    <Observation Value="1.05412355464661" />
+    <Observation Value="1.34657356987988" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="0.901528277515646" />
+    <Observation Value="0.874511196775631" />
+    <Observation Value="0.916332896460832" />
+    <Observation Value="0.865456019794615" />
+    <Observation Value="0.793019404650048" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="LoadedTravelTime">
+    <Observation Value="9.68566665543526" />
+    <Observation Value="9.72681993037293" />
+    <Observation Value="9.69574228965914" />
+    <Observation Value="9.89956167889312" />
+    <Observation Value="9.59105068797854" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="EmptyTravelTime">
+    <Observation Value="11.4722521804228" />
+    <Observation Value="11.0539685817637" />
+    <Observation Value="11.2217762931366" />
+    <Observation Value="11.5892254530159" />
+    <Observation Value="11.6385764914043" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="RailOperatingCycleTime">
+    <Observation Value="30.5538307057446" />
+    <Observation Value="29.8421771075428" />
+    <Observation Value="30.3932325617852" />
+    <Observation Value="30.3214333049953" />
+    <Observation Value="30.4714382059152" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="RailCycleTime">
+    <Observation Value="34.6996270280665" />
+    <Observation Value="34.4376399963499" />
+    <Observation Value="34.5312623793693" />
+    <Observation Value="35.0967929895049" />
+    <Observation Value="34.6521782677129" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="1.40025083813936" />
+    <Observation Value="1.46424603634981" />
+    <Observation Value="1.3888785241648" />
+    <Observation Value="1.48957062806441" />
+    <Observation Value="1.41109460438158" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="MineTLOProductLoaded">
+    <Observation Value="179.757103089433" />
+    <Observation Value="177.012000000036" />
+    <Observation Value="180.742320000037" />
+    <Observation Value="177.859602502477" />
+    <Observation Value="38.5862400000004" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="99642.7730370848" />
+    <Observation Value="108394.218051346" />
+    <Observation Value="101112.366815163" />
+    <Observation Value="103853.051537697" />
+    <Observation Value="221400.455238611" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="208143.667943045" />
+    <Observation Value="210658.501589468" />
+    <Observation Value="209963.501045388" />
+    <Observation Value="212407.036285767" />
+    <Observation Value="236860.833821879" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EndTime">
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+    <Observation Value="43800" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PercentDirectLoading">
+    <Observation Value="22.222975617016" />
+    <Observation Value="21.4250528086749" />
+    <Observation Value="19.185153354453" />
+    <Observation Value="6.70926999734542" />
+    <Observation Value="21.4180857206816" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgIdleTimeAtBerth">
+    <Observation Value="4.16476016633441" />
+    <Observation Value="4.73352790154429" />
+    <Observation Value="4.78241382712399" />
+    <Observation Value="7.14188737828819" />
+    <Observation Value="4.67822208674631" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgIdleTimeAtDumper">
+    <Observation Value="1.25462239138462" />
+    <Observation Value="1.30014912845616" />
+    <Observation Value="1.29236884303857" />
+    <Observation Value="1.66801696541431" />
+    <Observation Value="1.2901979356821" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgShipTTIP">
+    <Observation Value="1247.21119074536" />
+    <Observation Value="559.514574746248" />
+    <Observation Value="3488.32040790506" />
+    <Observation Value="1717.48919004146" />
+    <Observation Value="1617.63092614846" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgShipTimeInBerth">
+    <Observation Value="29.4081203128048" />
+    <Observation Value="29.5078171484674" />
+    <Observation Value="33.6826904996968" />
+    <Observation Value="64.6494795809793" />
+    <Observation Value="29.7694423322422" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgShipLoadingTime">
+    <Observation Value="27.191607603751" />
+    <Observation Value="27.3295746216475" />
+    <Observation Value="31.5001495938226" />
+    <Observation Value="62.487110195386" />
+    <Observation Value="27.5509219162575" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PortUndergroundStockpileAvgContents">
+    <Observation Value="91890.5453141972" />
+    <Observation Value="105214.678449841" />
+    <Observation Value="87211.5046607819" />
+    <Observation Value="283300.14302788" />
+    <Observation Value="87917.0712731894" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PortOpenCutStockpileAvgContents">
+    <Observation Value="145295.053049915" />
+    <Observation Value="312735.102940365" />
+    <Observation Value="151582.967712638" />
+    <Observation Value="261268.058231045" />
+    <Observation Value="144304.360864129" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PortStockpileAvgTotalContents">
+    <Observation Value="237185.59836412" />
+    <Observation Value="417949.781390411" />
+    <Observation Value="238794.361363795" />
+    <Observation Value="544563.644181375" />
+    <Observation Value="232221.432137323" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="ShiploadingIdleTime">
+    <Observation Value="3718.13470770257" />
+    <Observation Value="1113.42901714504" />
+    <Observation Value="3688.41024947725" />
+    <Observation Value="599.034501422145" />
+    <Observation Value="4196.2017610858" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="ShiploadingWeatherDownTime">
+    <Observation Value="233.995506958435" />
+    <Observation Value="263.305147768676" />
+    <Observation Value="407.469815433903" />
+    <Observation Value="374.298562441707" />
+    <Observation Value="362.311349086858" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="ShiploadingMaintenanceDownTime">
+    <Observation Value="1500" />
+    <Observation Value="311.85133693721" />
+    <Observation Value="1499.84291390414" />
+    <Observation Value="240" />
+    <Observation Value="1500" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="ShiploadingPositioningTime">
+    <Observation Value="1786.83673851427" />
+    <Observation Value="487.987111250128" />
+    <Observation Value="1566.50455451186" />
+    <Observation Value="165.421737823041" />
+    <Observation Value="1810.87571122813" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="ShiploadingOccupiedTime">
+    <Observation Value="36561.0330468247" />
+    <Observation Value="41623.4273868989" />
+    <Observation Value="36637.7724666728" />
+    <Observation Value="42421.2451983131" />
+    <Observation Value="35930.6111785992" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="DumperIdleTime">
+    <Observation Value="12411.7082463008" />
+    <Observation Value="3098.5760363914" />
+    <Observation Value="11226.3922562022" />
+    <Observation Value="1441.18011256603" />
+    <Observation Value="12616.8514715473" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="DumperWeatherDownTime">
+    <Observation Value="56.7391981254596" />
+    <Observation Value="47.3670665421719" />
+    <Observation Value="71.8031768825005" />
+    <Observation Value="71.7369031292022" />
+    <Observation Value="41.7486938507233" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="DumperMaintenanceShutdownTime">
+    <Observation Value="1677.05144188221" />
+    <Observation Value="372" />
+    <Observation Value="1740" />
+    <Observation Value="216.065469298375" />
+    <Observation Value="1740" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="DumperPositioningTime">
+    <Observation Value="2373.48860445695" />
+    <Observation Value="553.134855406267" />
+    <Observation Value="2090.02668548785" />
+    <Observation Value="234.299999999963" />
+    <Observation Value="2341.4965108967" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="DumperUnloadingTime">
+    <Observation Value="27281.0125092345" />
+    <Observation Value="39728.9220416602" />
+    <Observation Value="28671.7778814274" />
+    <Observation Value="41836.7175150064" />
+    <Observation Value="27059.9033237052" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PortShiploaderThroughput">
+    <Observation Value="37.5899974939934" />
+    <Observation Value="8.66599941800038" />
+    <Observation Value="33.0911453187042" />
+    <Observation Value="3.58599976200002" />
+    <Observation Value="37.0804261274232" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="PortDumperThroughput">
+    <Observation Value="37.6217798832747" />
+    <Observation Value="8.76063199999994" />
+    <Observation Value="33.1380196114165" />
+    <Observation Value="3.71047199999995" />
+    <Observation Value="37.1194226357403" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="TrainUnloadingTime">
+    <Observation Value="3.48820451203858" />
+    <Observation Value="3.44540451303155" />
+    <Observation Value="4.13335125228296" />
+    <Observation Value="8.86790953746596" />
+    <Observation Value="3.48164513422768" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="TrainLoadingTime">
+    <Observation Value="3.30911002677932" />
+    <Observation Value="3.31341310325878" />
+    <Observation Value="3.37062542402369" />
+    <Observation Value="3.53298384168252" />
+    <Observation Value="3.43662375472252" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="TrainProvisioningTime">
+    <Observation Value="2.68407224880458" />
+    <Observation Value="2.68562127131171" />
+    <Observation Value="2.68300344329654" />
+    <Observation Value="2.70166666467578" />
+    <Observation Value="2.68778489348155" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedTimeAvg">
+    <Observation Value="2.03940105914023" />
+    <Observation Value="2.24726272619656" />
+    <Observation Value="2.29801924417376" />
+    <Observation Value="2.85935470962385" />
+    <Observation Value="2.47567684896076" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedTimeAvg">
+    <Observation Value="1.26791643015615" />
+    <Observation Value="1.08484478932159" />
+    <Observation Value="3.35021415486415" />
+    <Observation Value="17.5662597777606" />
+    <Observation Value="1.30136439294317" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedSiding1ToPort">
+    <Observation Value="0.143360698992802" />
+    <Observation Value="0.0954290118793165" />
+    <Observation Value="0.844255390125174" />
+    <Observation Value="5.55344525694674" />
+    <Observation Value="0.167204789444361" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedSiding3ToPort">
+    <Observation Value="0.294304512311227" />
+    <Observation Value="0.291545616998609" />
+    <Observation Value="0.987810327214095" />
+    <Observation Value="5.68658178167276" />
+    <Observation Value="0.296359250290396" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedSiding5ToPort">
+    <Observation Value="0.327172121854657" />
+    <Observation Value="0.236623013590916" />
+    <Observation Value="1.00913688191172" />
+    <Observation Value="5.66405654764008" />
+    <Observation Value="0.325312076463523" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedSiding7ToPort">
+    <Observation Value="0.255375522478219" />
+    <Observation Value="0.242051458474757" />
+    <Observation Value="0.248607547435349" />
+    <Observation Value="0.28773094939501" />
+    <Observation Value="0.257507685802969" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTrainBlockedSiding9ToPort">
+    <Observation Value="0.247729880980575" />
+    <Observation Value="0.217831710122205" />
+    <Observation Value="0.260186349478857" />
+    <Observation Value="0.328928532802631" />
+    <Observation Value="0.254914997396307" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedSiding9ToMine">
+    <Observation Value="5.77093494620299" />
+    <Observation Value="6.94558050238138" />
+    <Observation Value="6.23839090847598" />
+    <Observation Value="8.1476281394531" />
+    <Observation Value="5.93368880385646" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedSiding7ToMine">
+    <Observation Value="1.57367742715911" />
+    <Observation Value="1.51804847497787" />
+    <Observation Value="1.75285729162519" />
+    <Observation Value="2.1554223742998" />
+    <Observation Value="1.92369865436026" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedSiding5ToMine">
+    <Observation Value="1.15263215658689" />
+    <Observation Value="1.73554058058551" />
+    <Observation Value="1.45867247831728" />
+    <Observation Value="1.89142390984317" />
+    <Observation Value="1.39210106990761" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedSiding3ToMine">
+    <Observation Value="0.875435133823662" />
+    <Observation Value="1.09707875201095" />
+    <Observation Value="1.01029153599801" />
+    <Observation Value="1.38886716366542" />
+    <Observation Value="0.931949705650142" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTrainBlockedSiding1ToMine">
+    <Observation Value="0.921616765466215" />
+    <Observation Value="0.823403282123574" />
+    <Observation Value="0.845596804365591" />
+    <Observation Value="0.912000514892906" />
+    <Observation Value="0.839199715452078" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="LoadedTravelTime">
+    <Observation Value="9.91661986759232" />
+    <Observation Value="10.0242402777511" />
+    <Observation Value="12.69362465178" />
+    <Observation Value="32.013393387329" />
+    <Observation Value="9.90484302454311" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="EmptyTravelTime">
+    <Observation Value="9.84276524936466" />
+    <Observation Value="10.236130165447" />
+    <Observation Value="10.066132067222" />
+    <Observation Value="10.8142211987004" />
+    <Observation Value="10.1895038129225" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="RailOperatingCycleTime">
+    <Observation Value="28.2551029012162" />
+    <Observation Value="28.3044613001962" />
+    <Observation Value="29.6536023618736" />
+    <Observation Value="35.0326336823211" />
+    <Observation Value="29.085961881432" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="RailCycleTime">
+    <Observation Value="33.1345401688922" />
+    <Observation Value="33.6891252831885" />
+    <Observation Value="37.6566983527359" />
+    <Observation Value="67.5119803473681" />
+    <Observation Value="33.6298840921229" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="AvgTimeBetweenTrainsAtTLO">
+    <Observation Value="1.55451718680376" />
+    <Observation Value="1.65405946092418" />
+    <Observation Value="2.24149617713677" />
+    <Observation Value="7.02691200114555" />
+    <Observation Value="1.50232650540695" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="MineTLOProductLoaded">
+    <Observation Value="188.179200000044" />
+    <Observation Value="43.9322399999993" />
+    <Observation Value="165.749016021449" />
+    <Observation Value="18.6753599999993" />
+    <Observation Value="185.648714332472" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="MineUGCProductStockpileAvgContents">
+    <Observation Value="225168.039309856" />
+    <Observation Value="453790.559322413" />
+    <Observation Value="305331.923388526" />
+    <Observation Value="487961.586305042" />
+    <Observation Value="213045.286939318" />
+  </Observations>
+  <Observations Scenario="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" Response="MineLACProductStockpileAvgContents">
+    <Observation Value="422263.014643887" />
+    <Observation Value="452567.253049267" />
+    <Observation Value="436296.793124838" />
+    <Observation Value="471155.46854659" />
+    <Observation Value="437388.886018168" />
+  </Observations>
+</ResponseResults>
