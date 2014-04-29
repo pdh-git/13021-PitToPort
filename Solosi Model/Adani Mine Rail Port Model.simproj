@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ProductVersion="6.100.10916.24513" FileVersion="94" Id="5dcb7d0a-ec4b-4633-b157-088ab74ec885" xmlns="http://www.simio.com/projects/v1">
-  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-29T03:49:58" />
+  <DocumentInfo LicenseInfo="9:1" Organization="Solosi Pty Ltd" SaveDate="2014-04-29T07:03:05" />
   <Models>
     <Model Definition="RequestEntity" Runnable="False">
       <TargetSettings HighRiskThreshold="50" MediumRiskThreshold="80" HighRiskColor="ff0000" MediumRiskColor="ffff00" LowRiskColor="90ee90" />
@@ -2899,7 +2899,7 @@
         <Experiment Name="CaseRuns_CampaignRailing" ConfidenceLevel="Point95" LowerPercentile="25" UpperPercentile="75" DefaultReplications="10" ConcurrentReplicationLimit="3" ReplicationRunner="External32Bit">
           <Warmup Units="Hours">0</Warmup>
           <Scenarios>
-            <Scenario Name="BaseCase" ReplicationsCompleted="5">
+            <Scenario Name="BaseCase" ReplicationsRequired="25" ReplicationsCompleted="17">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2909,7 +2909,7 @@
                 <Property Name="CampaignShipArrivalLookahead">48</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Rolling Stockpile, DirectLoad, 2000t Port Surge" ReplicationsCompleted="5">
+            <Scenario Name="Rolling Stockpile, DirectLoad, 2000t Port Surge" ReplicationsRequired="25" ReplicationsCompleted="17">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2921,7 +2921,7 @@
                 <Property Name="CampaignShipArrivalLookahead">48</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" ReplicationsCompleted="5">
+            <Scenario Name="Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" ReplicationsRequired="25" ReplicationsCompleted="17">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2935,7 +2935,7 @@
                 <Property Name="CampaignShipArrivalLookahead">48</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" ReplicationsCompleted="5">
+            <Scenario Name="Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" ReplicationsRequired="25" ReplicationsCompleted="17">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2949,7 +2949,7 @@
                 <Property Name="CampaignShipArrivalLookahead">48</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" ReplicationsCompleted="5">
+            <Scenario Name="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge" ReplicationsRequired="25" ReplicationsCompleted="17">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2962,7 +2962,7 @@
                 <Property Name="CampaignShipArrivalLookahead">48</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" ReplicationsCompleted="5">
+            <Scenario Name="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 250k Mine Stockpiles" ReplicationsRequired="25" ReplicationsCompleted="17">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -2977,7 +2977,7 @@
                 <Property Name="CampaignShipArrivalLookahead">48</Property>
               </Properties>
             </Scenario>
-            <Scenario Name="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" ReplicationsCompleted="5">
+            <Scenario Name="Campaign Railing, Rolling Stockpile, DirectLoad, 2000t Port Surge, 500k Mine Stockpiles" ReplicationsRequired="25" ReplicationsCompleted="17">
               <Properties>
                 <Property Name="InitialCost" Units="USD">0.0</Property>
                 <Property Name="InitialCostRate" Units="USD per Hour">0.0</Property>
@@ -3095,7 +3095,7 @@
           <ResponseResults>
             <FileRef Name="Results\RailPortModel\CaseRuns_CampaignRailing ResponseResults.xml" />
           </ResponseResults>
-          <ViewInfo ActiveExperiment="True" ActiveView="Design">
+          <ViewInfo ActiveExperiment="True" ActiveView="Responses">
             <ExperimentDesign>
               <ScenarioTable FilterEnabled="True">
                 <Columns>
@@ -18538,7 +18538,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1682" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="PortModelRev2" Id="106dffe5-f294-4920-a22c-d219b46118ed" Revision="1683" Author="Sales and Support" ResourceLogic="True">
         <Lists>
           <ObjectList Name="Stockpiles">
             <Items>
@@ -27818,7 +27818,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2380" Author="Sales and Support">
+      <FixedDefinition Name="RailPortModel" Id="90284877-156d-45a4-884c-1f793777333e" Revision="2381" Author="Sales and Support">
         <Lists>
           <ObjectList Name="BerthLocationList">
             <Items>
@@ -43076,7 +43076,7 @@
           <AnimationSetup MinimumNumberOfFramesToDisplayIdleAnimation="10" />
         </Graphics>
       </EntityDefinition>
-      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="923" Author="Sales and Support" ResourceLogic="True">
+      <FixedDefinition Name="ShipGenerator" Id="b9fd5c50-558d-442f-9bb4-e5f62af3d564" Revision="924" Author="Sales and Support" ResourceLogic="True">
         <PropertyDefinitions>
           <Categories>
             <Category Name="Basic Logic" Description="Basic Logic" />
@@ -44503,7 +44503,7 @@
       </DefinitionRef>
       <DefinitionRef Name="RailPortModel">
         <Id>90284877-156d-45a4-884c-1f793777333e</Id>
-        <Revision>2380</Revision>
+        <Revision>2381</Revision>
       </DefinitionRef>
       <DefinitionRef Name="DummyMineModel">
         <Id>ab516494-1c39-441d-875e-b20a30d5758b</Id>
@@ -44535,7 +44535,7 @@
       </DefinitionRef>
       <DefinitionRef Name="ShipGenerator">
         <Id>b9fd5c50-558d-442f-9bb4-e5f62af3d564</Id>
-        <Revision>923</Revision>
+        <Revision>924</Revision>
       </DefinitionRef>
       <DefinitionRef Name="ROMModel">
         <Id>4b4b29de-51c8-4e67-a0e4-248099bc33b7</Id>
@@ -44551,7 +44551,7 @@
       </DefinitionRef>
       <DefinitionRef Name="PortModelRev2">
         <Id>106dffe5-f294-4920-a22c-d219b46118ed</Id>
-        <Revision>1682</Revision>
+        <Revision>1683</Revision>
       </DefinitionRef>
       <DefinitionRef Name="TideTracker">
         <Id>0376dc38-c8b5-4226-8eb8-1bb464e6737d</Id>
@@ -62007,4 +62007,4 @@ The capacity will be automatically adjusted to the maximum allowable value. Howe
     </Materials>
   </CommonItems>
 </Project>
-<!-- MpPMcdeTqjcinJHaY+BG1xO83rNUVLWDRgA+2gBxk1D6i6mxJlZMAhXqKQkTHRNlmB+oag9IHGWDoc5ExjaQNg== -->
+<!-- /BXMJt+8nWYW8mMe7qpGt3fQvqwU9C69q/wWt1tEGp8BoMdVKKW2Ao9hqPvgm0L+KOiFwbjf99WkWjiwcRu1kw== -->
