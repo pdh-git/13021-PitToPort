@@ -48,9 +48,9 @@
       <property name="IsFloating">false</property>
       <property name="TypeName">Document</property>
       <property name="Name">ShipTable</property>
-      <property name="IsActive">true</property>
+      <property name="IsActive">false</property>
       <property name="Index">2</property>
-      <property name="IsSelected">true</property>
+      <property name="IsSelected">false</property>
       <property name="ParentName">DocumentGroup0</property>
       <property name="Pinned">false</property>
       <property name="Properties" isnull="true" iskey="true" />
@@ -62,9 +62,9 @@
       <property name="IsFloating">false</property>
       <property name="TypeName">Document</property>
       <property name="Name">PTPSummaryLogValues</property>
-      <property name="IsActive">false</property>
+      <property name="IsActive">true</property>
       <property name="Index">3</property>
-      <property name="IsSelected">false</property>
+      <property name="IsSelected">true</property>
       <property name="ParentName">DocumentGroup0</property>
       <property name="Pinned">false</property>
       <property name="Properties" isnull="true" iskey="true" />
@@ -74,7 +74,7 @@
       <property name="Index">0</property>
       <property name="Name">DocumentGroup0</property>
       <property name="TypeName">DocumentGroup</property>
-      <property name="Length">924</property>
+      <property name="Length">967</property>
       <property name="Properties" isnull="true" iskey="true" />
     </property>
   </property>
