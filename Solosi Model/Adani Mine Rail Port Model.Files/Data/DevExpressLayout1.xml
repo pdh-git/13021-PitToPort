@@ -48,9 +48,9 @@
       <property name="IsFloating">false</property>
       <property name="TypeName">Document</property>
       <property name="Name">LW1InputSchedule</property>
-      <property name="IsActive">true</property>
+      <property name="IsActive">false</property>
       <property name="Index">3</property>
-      <property name="IsSelected">true</property>
+      <property name="IsSelected">false</property>
       <property name="ParentName">DocumentGroup0</property>
       <property name="Pinned">false</property>
       <property name="Properties" isnull="true" iskey="true" />
@@ -90,9 +90,9 @@
       <property name="IsFloating">false</property>
       <property name="TypeName">Document</property>
       <property name="Name">LWDevInputSchedule</property>
-      <property name="IsActive">false</property>
+      <property name="IsActive">true</property>
       <property name="Index">5</property>
-      <property name="IsSelected">false</property>
+      <property name="IsSelected">true</property>
       <property name="ParentName">DocumentGroup0</property>
       <property name="Pinned">false</property>
       <property name="Properties" isnull="true" iskey="true" />
@@ -130,7 +130,7 @@
       <property name="Index">0</property>
       <property name="Name">DocumentGroup0</property>
       <property name="TypeName">DocumentGroup</property>
-      <property name="Length">1186</property>
+      <property name="Length">967</property>
       <property name="Properties" isnull="true" iskey="true" />
     </property>
   </property>
